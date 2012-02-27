@@ -1,0 +1,144 @@
+#NEXUS
+[written Fri Sep 05 14:29:51 EDT 2008 by Mesquite  version 2.0 (build i69) at NI4308.local/10.0.5.185]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=28;
+	TAXLABELS
+		Acestrorhynchus_lacustris Alestes_lateralis Boulengerella_cuvieri Brycon_guatemalensis Bryconops_affinis Characidium_cf._zebra Charax_sp. Chilodus_punctatus Citharinus_gibbosus Crenuchus_spilurus Ctenolucius_hujeta Cynopotamus_argenteus Distichodus_maculatus Hemiodus_notatus Hepsetus_odoe Hoplias_malabaricus Lebiasina_panamensis Nannostomus_unifasciatus Oligosarcus_paranensis Parodon_suborbitalis Phenacogaster_microstictus Prochilodus_lineatus Pyrrhulina_australis Schizodon_fasciatus Steindachnerina_elegans Tetragonopterus_argenteus Xenocharax_spilurus 0ut 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=80;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R S T U V W X Y Z a b c d e f g h j k m n p q r s t u";
+	MATRIX
+	Acestrorhynchus_lacustris   10101110000000000000001000010100101100000001111110000000000001011001020000000100
+	Alestes_lateralis           10100000100010000010010001000101101100000001111010000000000001001001120200?00000
+	Boulengerella_cuvieri       1?101100101000110101000000010110101100100001011110100000011?01010011110011000100
+	Brycon_guatemalensis        10000010000010000000010000000101101100000001111010000000000001011001?20200000001
+	Bryconops_affinis           10000011000010000000010000000101101000000001111010000000000001011001020200000001
+	Characidium_cf._zebra       01100010110??0000010000000000110100100000000?10010000001000011010001110200000001
+	Charax_sp.                  10000001000010000000110010000101111000000001110010000000100001011101010000000001
+	Chilodus_punctatus          1110000000101000000001010000000010?000001101011010100000000001000001110?00?21010
+	Citharinus_gibbosus         01110000000010000010010001001110000000000000001100000000000101001001011100100000
+	Crenuchus_spilurus          0010001011101000001010100000021010110000000111011000001100011010?000111120000000
+	Ctenolucius_hujeta          1?10110010100011010100000001011?101100100001011110100000011?01010011110011000100
+	Cynopotamus_argenteus       10000001000010000000110010000101111000000001110010100000100001011101010000000001
+	Distichodus_maculatus       01110000000010000010001000000011110010000000001100000000000100100001011100100000
+	Hemiodus_notatus            0110001000001000001001000100010010010100000111?110000000000001100001121200000000
+	Hepsetus_odoe               1?001100101000110100010000110100101100000000010110100000011?01010001110001000000
+	Hoplias_malabaricus         10100000101000100101100000100200111100000000110110100011000001010000010000000100
+	Lebiasina_panamensis        101000001000001101001001000001001?1100000001010111100000000001010000010200000100
+	Nannostomus_unifasciatus    ?010000010?10111110010010000001000011000000101?011111100000001010001010200000000
+	Oligosarcus_paranensis      10000011000010000000100010000101001000000001110010000000000001011001020200000001
+	Parodon_suborbitalis        01100000100010100110010001000110000?0100000101??10100000000001000001020200100000
+	Phenacogaster_microstictus  10000011000010000000110010000101101000000001?10110000000100001011101010200000001
+	Prochilodus_lineatus        1110000000001000000001000000111?000000011111110010100000000001000001120?00?01010
+	Pyrrhulina_australis        1010000010?10111110011010000001?1?1110000001010111111100001001010000010000000000
+	Schizodon_fasciatus         11100000000010000000010000000100000000001101110010100000000001010000010000000000
+	Steindachnerina_elegans     0110000000001000001001000000111000?000011111011010100000000001000001120?00?01010
+	Tetragonopterus_argenteus   10000011000010000000110010000101101000000001010010000000000001011101010200000001
+	Xenocharax_spilurus         01??00000000100?001000000000011110010000000000?100000?000001001000?1011100100000
+	0ut                         0???000?00?0?0000?000?00000?0?1??00?0000000??01100?00??0000000?000????0?0??00?00
+
+;
+
+END;
+BEGIN CODONS;
+CODESET * UNTITLED   =  universal:  1 -  80;
+
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  80;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  80;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1771314665004538462;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1568237810431300848;
+			checksum 0 4168732896 null;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1568237810431300848 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1727 833;
+					setLocation 622 358;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleTight off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					setColumnWidth 16;
+					toggleBirdsEye off;
+					toggleColorsPanel off;
+					birdsEyeWidth 2;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

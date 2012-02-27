@@ -1,0 +1,302 @@
+#NEXUS
+[written Thu Sep 08 13:48:41 EDT 2011 by Mesquite  version 2.74 (build 550) at Ben-Frables-MacBook-Pro.local/10.0.1.8]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=42;
+	TAXLABELS
+		Outgroup Heterodontus_francisci Chiloscyllium_punctatum Ginglymostoma_cirratum Hemiscyllium_ocellatum Pseudocarcarcharius_kamoharai Cetorhinus_maximus Carcharhinus_leucas Galeocerdo_cuvieri_ Prionace_glauca Scyliorhinus_retifer Scyliorhinus_canicula Mustelus_cf._dorsalis Mustelus_laevis Pseudotriakis_microdon Sphyrna_lewini Sphyrna_tiburo Chlamydoselachus_anguineus Hexanchus_griseus Hexanchus_vitulus Notorynchus_cepedianus Heptranchias_perlo Echinorhinus Etmopterus_princeps Centroscymnus_coelolepis Centroscymnus_crepidator Oxynotus Dalatias_licha Squaliolus_laticaudus Euprotomicrininae Centrophoridae Squalus_acanthias Squatina_californica Pliotrema_warreni Pristophorus_cirratus Anoxypristis_cuspidata Pristis_pristis Pristis_zijsron Platyrhina_sinensis Rhinobatos_percellens Narcine_brasiliensis Torpedo_torpedo 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=67;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 'Rostral process ("rostrum")' /  'a single (ventral) projection, formed solely by the trabecula' tripodal_rostral_cartilages absence_of_rostral_process_, 2 Lateral_line_canal_ /  Open Closed, 3 Precerebral_fossa_ /  Absent_or_uncovered Roofed, 4 Ethmoidal_region_of_neurocranium_ /  '[shape downcurved?]' not_downcurved_ethmoidal_area, 5 Ethmoidal_canal_ /  Absent Present Present_with_exit_on_dorsal_surface_of_nasal_capsules, 6 Subnasal_fenestra_ /  Absent Present, 7 Superficial_ophthalmic_nerve__ /  exits_neurocranium_through_prootic_foramen separate_foramen_for_superficial_ophthalmic_nerve, 8 Ectethmoid_process_ /  Absent 'present (as in Carvalho and Maisey, 1996)' 'present as "unchondrified antorbital cartilage"' Present_as_antorbital_cartilage, 9 Orbital_articulation_ /  Absent Present, 10 Suborbital_shelf_ /  Present Absent, 11 Basitrabecular_process_ /  Absent Present, 12 'Post-orbital articulation ' /  Absent Present_but_without_complete_articular_facet Present_with_complete_articular_facet, 13 Hyomandibular_fossa_location /  in_the_posterior_part_of_otic_region_ anteriorly_situated_in_otic_region, 14 Hyomandibular_fossa_composition /  not_composed_of_two_horizontally_adjacent_concavities composed_of_two_horizontally_arranged_concavities, 15 Concavity_ventral_to_hyomandibular_fossa_ /  Absent Present, 16 Basioccipital_fovea_ /  Present Absent, 17 Occipital_hemicentrum_ /  Present_ Absent, 18 Obliquus_inferior_?_ /  Absent Present, 19 Extrabranchial_cartilages_on_hyoid_arch_ /  Absent 'Present, on dorsal side only ' present_on_entire_arch, 20 Sixth_branchial_unit_ /  Absent Present, 21 Seventh_branchial_unit /  Absent PResent, 22 Anterior_basibranchials /  Present Absent, 23 Hypobranchial_bar_ /  Absent Present, 24 Posteriormost_elements_of_dorsal_gill_arches_ /  not_completely_fused_ 'complete fusion ("gill pickaxe")', 25 Adductor_mandibulae_composition /  composed_of_dorsal_and_ventral_components 'composed of "lateralis i and ii"', 26 Suborbitalis_muscle_origin /  originating_on_suborbital_surface_ originating_on_interorbital_wall originating_on_posterior_aspect_of_nasal_capsule originating_on_ectethmoid_process originating_on_upper_preorbital_wall, 27 Suborbitalis_insertion /  ' inserting on adductor mandibulae and/or dermal tissues around mouth corner ' 'inserting directly on mandibula anterior suborbitalis inserting directly on mandibula anterior^nto adductor mandibulae ' inserting_on_mandibula_via_elongate_tendon, 28 Adductor_mandibulae_superficialis_ /  Absent Present, 29 Adductor_mandibulae_superficialis_insertion /  inserting_on_subcutaneous_tissue_around_the_eye_opening inserting_on_ectethmoid_process_ inserting_on_posterior_aspect_of_nasal_capsule_ inserting_on_mandibula, 30 Levator_palatoquadrati_muscle_ /  not_separated_from_spiracularis seperated, 31 Constrictor_hyoideus_dorsalis_insertion /  inserting_on_hyomandibula inserting_on_palatoquadrate_ 'inserting partly on both [hyomandibula and palatoquadrate', 32 Arcualis_dorsalis_muscle_origin_ /  with_single_origin originating_from_two_heads, 33 Subspinalis_muscle /  absent present, 34 lnterpharyngobranchialis_muscles_ /  present absent, 35 'Genio-coracoideus oirign' /  'originating on fascia covering coraco-arcualis (rectus cervicis)' originating_from_coracoid_or_pericardial_membrane_, 36 'Coraco-hyomandibularis muscle ' /  absent present, 37 Right_and_left_coracoids_ /  seperate 'fused and originating on the coraco-arcualis muscle', 38 pectoral_basals /  Single_facet_for_the_articulation_of_pectoral_basals separate_articular_condyle_for_pectoral_metapterygium_present all_three_basals_with_separate_condyles_for_articulation_with_scapulacoracoid, 39 pectoral_fin_ /  Tribasal_ propterygium_and_mesopterygium_fused mesopterygium_and_metapterygium_fused all_three_basals_fused, 40 Pectoral_propterygium_relationship_with_radials /  articulating_with_radials_ not_contacting_radials, 41 Pectoral_propterygium_ /  not_elongated_anteriorly_ extended_forward, 42 Pectoral_metapterygium_ /  without_short_proximal_segment contacts_short_proximal_segment_, 43 Ventral_marginal_cartilage_of_clasper /  not_elongated elongated, 44 Notochord_ /  constricted_along_entire_vertebral_column 'constricted only anteriorly and posteriorly, or primarily absent', 45 _columns_of_heart_valves_ /  Three four, 46 Supraneurals /  not_enlarged_anterior_to_second_dorsal_fin_ enlarged_supraneurals_preceding_second_dorsal_fin_ _enlarged_supraneurals_also_in_abdominal_and_precaudal_regions_, 47 Hemal_spines_ /  not_forming_complete_arches_in_precaudal_region forming_complete_arches_in_precaudal_region, 48 Precaudal_hemal_process /  not_elongated _elongated_similar_to_lower_caudal_skeleton, 49 Dorsal_fin_endoskeleton_composition /  composed_of_basal_cartilage_with_a_finspine _with_basal_cartilage_and_no_finspine 'composed of radials only (no finspine)', 50 Number_of_dorsal_fins /  Two One, 51 Anal_fin_skeleton_composition /  composed_of_basal_cartilage_and_radials composed_of_radials_only, 52 Inclinator_dorsalis_muscle_origin /  originating_on_epaxial_musculature originating_from_vertebrae, 53 Ventral_tail_muscle_bundle_ /  not_developed well_developed_, 54 Flexor_caudalis_muscle_ /  restricted_to_hemal_processes_of_caudal_fin extending_to_origin_of_caudal_fin extending_anterior_to_origin_of_caudal_fin, 55 Nasoral_groove /  absent present, 56 Mesonarial_flap /  present absent, 57 Circumnarial_folds_and_grooves_ /  absent present, 58 Tooth_row_arrangment /  Diagonal_tooth_rows_ linearly_arranged_tooth_rows linearly_arranged_rows_with_teeth_overlapping_each_other_, 59 Teeth_ /  'devoid of "aprons"' 'with "aprons" ', 60 Spiracle_valve_ /  absent present, 61 Luminous_organs_ /  absent_from_body_surface present, 62 Upper_precaudal_pit /  absent present, 63 Longitudinal_precaudal_keel /  absent present, 64 Intestinal_valve /  sprial_valve ring_valve, 65 Basihyal_ /  enlongated broad_as_long, 66 Anal_fin /  present absent, 67 Pharyngobranchial_blade_ /  absent present ; 
+	MATRIX
+	Outgroup                       00000000000000000??00000????????????00000000?000000??????00??????00
+	Heterodontus_francisci         2101000000001000001000000411000000001000000000000000001010100000001
+	Chiloscyllium_punctatum        010100100000100000100001?410?100000010000010000020100010?010000?001
+	Ginglymostoma_cirratum         010100100000100000100001?410?100000010000010000020100010?010000?001
+	Hemiscyllium_ocellatum         010100100000100000100001?410?100000010000010000020100010?010000?001
+	Pseudocarcarcharius_kamoharai  1100001000001000001000010200?00000001000001000002010000000000000001
+	Cetorhinus_maximus             1100001000001000001000010200?00000001000001000002010000000000000001
+	Carcharhinus_leucas            1100001000001000001000010200?00000001000001000002010000000000000001
+	Galeocerdo_cuvieri_            1100001000001000001000010200?00000001000001000002010000000000000001
+	Prionace_glauca                1100001000001000001000010200?00000001000001000002010000000000000001
+	Scyliorhinus_retifer           1100001000001000001000010200?00000001000001000002010000000000000001
+	Scyliorhinus_canicula          1100001000001000001000010200?00000001000001000002010000000000000001
+	Mustelus_cf._dorsalis          1100001000001000001000010200?00000001000001000002010000000000000001
+	Mustelus_laevis                1100001000001000001000010200?00000001000001000002010000000000000001
+	Pseudotriakis_microdon         1100001000001000001000010200?00000001000001000002010000000000000001
+	Sphyrna_lewini                 1100001000001000001000010200?00000001000001000002010000000000000001
+	Sphyrna_tiburo                 1100001000001000001000010200?00000001000001000002010000000000000001
+	Chlamydoselachus_anguineus     0000000111110000000100000300?00000000001000110002110000000000000100
+	Hexanchus_griseus              0100110111120010101100000301101100000001010110101100000001000000000
+	Hexanchus_vitulus              0100110111120010101100000301101100000001010110101100000001000000000
+	Notorynchus_cepedianus         0000000111120000101110000301101100000001010110101100000001000000000
+	Heptranchias_perlo             0100110111120010101110000301101100000001010110101100000001000000100
+	Echinorhinus                   00001001111000001020000103013001000010300001001010?0000101100000010
+	Etmopterus_princeps            01001100111000000020000101010021001010000000001000?0000102111000010
+	Centroscymnus_coelolepis       01001100111000000020001101110021001010100000001010?0000102111000010
+	Centroscymnus_crepidator       01001100111000000020001101110021001010100000001010?0000102111000010
+	Oxynotus                       01001000111000000020001101110021001010100000001000?0000102111000010
+	Dalatias_licha                 01001100111000000020001101110021111010300000001010?0000102111000010
+	Squaliolus_laticaudus          01001100111000000020001101110021111010300000001010?0000102111000010
+	Euprotomicrininae              01001100111000000020001101110021001010300000001010?0000102111000010
+	Centrophoridae                 01001100111000000020000101010021000010200000001000?0000102110000010
+	Squalus_acanthias              01001100111000000020000100010021000010000000011100?0010102110110010
+	Squatina_californica           0100200011100001002000010??1000100?011001000011110?1121100100010010
+	Pliotrema_warreni              01102002111001011120010110210021000112000000021110?1020100110010010
+	Pristophorus_cirratus          01102002111001011120010110210021000112000000021110?1020100110010010
+	Anoxypristis_cuspidata         01102003000001011120010110211100110112001000021110?1120122110010010
+	Pristis_pristis                01102003000001011120010110211100110112001000021110?1120122110010010
+	Pristis_zijsron                01102003000001011120010110211100110112001000021110?1120122110010010
+	Platyrhina_sinensis            01102003000001011120010110211100110112001000021110?1120122110010010
+	Rhinobatos_percellens          01102003000001011120010110211100110112001000021110?1120122110010010
+	Narcine_brasiliensis           01102003000001011120010110211100110112001000021110?1120122110010010
+	Torpedo_torpedo                01102003000001011120010110211100110112001000021110?1120122110010010
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  67;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  67;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1315504121711;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6171893110819401691;
+			tell It;
+				setDefaultOrder  0 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 25 23 25 26 27 30 28 30 31 34 32 34 35 36 38 50 39 50 41 42 43 46 44 45;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 3929079237567749520;
+			mqVersion 274;
+			checksumv 0 2 3225730129 null  getNumChars 67 numChars 67 getNumTaxa 42 numTaxa 42   short true   bits 31   states 31   sumSquaresStatesOnly 9165.0 sumSquares 9165.0   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1920 1060;
+			setLocation 0 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #6171893110819401691 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #6171893110819401691;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultTaxaOrder.DefaultTaxaOrder;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1820 993;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #3929079237567749520 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 110;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1820 993;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel on;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 996;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1820 993;
+						setLocation 0 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #3929079237567749520 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.stochchar.CharListProbModels.CharListProbModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1820 993;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.wand;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

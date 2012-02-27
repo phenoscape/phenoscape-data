@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.1.4" version="0.9">
+  <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">P. Mabee</meta>
+  <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000167</meta>
+  <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Contains only one character for gill rakers.</meta>
+  <otus id="b621262d-eabd-4eb0-b15a-737163c416ce">
+    <otu id="3c73a0dd-03ae-4d12-8972-9694b6787ae9" label="" about="#3c73a0dd-03ae-4d12-8972-9694b6787ae9">
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1320"/>
+    </otu>
+  </otus>
+  <characters xmlns:ns="http://www.nexml.org/2009" id="d49c3322-e7a6-4fd7-9c80-7b2f83fd6328" xsi:type="ns:StandardCells" otus="b621262d-eabd-4eb0-b15a-737163c416ce">
+    <format>
+      <states id="932f2ebe-7f6a-4117-8050-d0757eacd38b">
+        <state id="93e175bd-2a6b-4dc3-9e59-132341a3d58e" label="absent" symbol="0" about="#93e175bd-2a6b-4dc3-9e59-132341a3d58e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="TAO:0000356"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char id="b0bca8a3-1a41-45cc-b23e-adf33958a0b3" label="Gill rakers" states="932f2ebe-7f6a-4117-8050-d0757eacd38b"/>
+    </format>
+    <matrix>
+      <row id="29cdd05b-1184-474d-a444-dd1a547d7299" otu="3c73a0dd-03ae-4d12-8972-9694b6787ae9">
+        <cell char="b0bca8a3-1a41-45cc-b23e-adf33958a0b3" state="93e175bd-2a6b-4dc3-9e59-132341a3d58e"/>
+      </row>
+    </matrix>
+  </characters>
+</nexml>

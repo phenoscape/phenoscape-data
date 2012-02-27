@@ -1,0 +1,285 @@
+#NEXUS
+[written Wed Feb 18 15:35:19 EST 2009 by Mesquite  version 2.6 (build 486) at macmini2.nescent.org/152.3.58.201]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=42;
+	TAXLABELS
+		Albula Alosa Anodontostoma Brevoortia Chanos Chirocentridae Chirocentrodon Denticeps Dorosoma Dussumieriinae Engrauloidea Harengula Hollandichthys Ilisha_africana Ilisha_amazonica Ilisha_elongata Ilisha_kampeni Ilisha_megaloptera Ilisha_melastoma Ilisha_striatula Kneria Lile Neoopistopterus Odontognathus_compressus Odontognathus_mucronatus Opisthonema Opisthopterus_dovii Opisthopterus_equitorialis Opisthopterus_tardoore Osmerus Pellona_castelnaeana Pellona_ditchela Pellona_flavipinnis Pellona_harroweri Pellonulinae Plantanichthys Pliosteostoma Pristigaster Raconda Rhinosardina Sardina Sardinella 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=0;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1";
+	MATRIX
+	Albula                      
+	Alosa                       
+	Anodontostoma               
+	Brevoortia                  
+	Chanos                      
+	Chirocentridae              
+	Chirocentrodon              
+	Denticeps                   
+	Dorosoma                    
+	Dussumieriinae              
+	Engrauloidea                
+	Harengula                   
+	Hollandichthys              
+	Ilisha_africana             
+	Ilisha_amazonica            
+	Ilisha_elongata             
+	Ilisha_kampeni              
+	Ilisha_megaloptera          
+	Ilisha_melastoma            
+	Ilisha_striatula            
+	Kneria                      
+	Lile                        
+	Neoopistopterus             
+	Odontognathus_compressus    
+	Odontognathus_mucronatus    
+	Opisthonema                 
+	Opisthopterus_dovii         
+	Opisthopterus_equitorialis  
+	Opisthopterus_tardoore      
+	Osmerus                     
+	Pellona_castelnaeana        
+	Pellona_ditchela            
+	Pellona_flavipinnis         
+	Pellona_harroweri           
+	Pellonulinae                
+	Plantanichthys              
+	Pliosteostoma               
+	Pristigaster                
+	Raconda                     
+	Rhinosardina                
+	Sardina                     
+	Sardinella                  
+
+;
+
+END;
+BEGIN TREES;
+	Title Trees;
+	LINK Taxa = Taxa;
+	TRANSLATE
+		1 Albula,
+		2 Alosa,
+		3 Anodontostoma,
+		4 Brevoortia,
+		5 Chanos,
+		6 Chirocentridae,
+		7 Chirocentrodon,
+		8 Denticeps,
+		9 Dorosoma,
+		10 Dussumieriinae,
+		11 Engrauloidea,
+		12 Harengula,
+		13 Hollandichthys,
+		14 Ilisha_africana,
+		15 Ilisha_amazonica,
+		16 Ilisha_elongata,
+		17 Ilisha_kampeni,
+		18 Ilisha_megaloptera,
+		19 Ilisha_melastoma,
+		20 Ilisha_striatula,
+		21 Kneria,
+		22 Lile,
+		23 Neoopistopterus,
+		24 Odontognathus_compressus,
+		25 Odontognathus_mucronatus,
+		26 Opisthonema,
+		27 Opisthopterus_dovii,
+		28 Opisthopterus_equitorialis,
+		29 Opisthopterus_tardoore,
+		30 Osmerus,
+		31 Pellona_castelnaeana,
+		32 Pellona_ditchela,
+		33 Pellona_flavipinnis,
+		34 Pellona_harroweri,
+		35 Pellonulinae,
+		36 Plantanichthys,
+		37 Pliosteostoma,
+		38 Pristigaster,
+		39 Raconda,
+		40 Rhinosardina,
+		41 Sardina,
+		42 Sardinella;
+	TREE Figure_1 = (1,30,((8,((11,(10,(6,(35,(36,(2,((3,9),40),4,12,22,26,41,42)))))),(34,(32,((31,33),((17,(19,20)),((16,18),(15,(38,((7,23),(14,(29,(39,((27,37),(24,25,28))))))))))))))),((5,21),13)));
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6903907973744494821;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5489619293759300588;
+			checksumv 0 2 0 null;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 107;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1113 750;
+			setLocation 8 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #6903907973744494821 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #6903907973744494821;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultTaxaOrder.DefaultTaxaOrder;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1006 683;
+					setLocation 8 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #6903907973744494821  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1686.1234988643756.291439195665491897;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1006 683;
+					setLocation 8 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.arrow;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareTree.SquareTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+						endTell;
+						setEdgeWidth 6;
+						orientRight;
+						toggleCorners off;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						toggleColorPartition on;
+						toggleShadePartition off;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					setDigits 4;
+					writeAsPercentage off;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

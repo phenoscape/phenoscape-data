@@ -1,0 +1,225 @@
+#NEXUS
+[written Thu Oct 20 16:02:21 EDT 2011 by Mesquite  version 2.74 (build 550) at Ben-Frables-MacBook-Pro.local/10.0.1.8]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=37;
+	TAXLABELS
+		Acanthostega Allenypterus Barameda Beelarongia Cheirolepis Crassigyrinus Diabolepis Diplocercides_kaeseri D._heligenstockiensis Dipnorynchus Dipterus Elpistostege Eusthenopteron Glyptolepis Gyroptychius Holoptychius Howqualepis Ichthyostega Miguashaia Mimia Moythomasia Onychodus Osteolepis Panderichthys Polypterus Porolepis Powichthys Speonesydrion Strepsodus Strunius Uranolophus Ventastega Youngolepis Psarolepis Dicksonosteus Ctenacanthus Acanthodes 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=149;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	CHARSTATELABELS 
+		1 Cosmine /  absent present, 2 Mesh_canals /  pore_cavity_with_horizontal_partition pore_cavity_without_horizontal_partition, 3 Condition_of_scales /  rhombic_scales rounded_scales, 4 Peg_of_rhombic_scale /  narrow broad, 5 Boss_of_internal_face_of_scale /  absent present, 6 Ganoine /  absent present, 7 Acrodin /  absence_of_acrodin_caps_on_teeth presence_of_acrodin_caps_on_teeth, 8 Marginal_teeth_on_dentary /  present absent, 9 Dental_plate /  'denticles on entopterygoid, or naked bone' tooth_plate_on_entopterygoid dentine_plate_on_entopterygoid, 10 Dentition_on_coronoids /  narrow_marginal_tooth_row 'broad marginal "tooth field."', 11 Spiral_parasymphysial_teeth /  absent present, 12 Fang_pairs_in_inner_tooth_arcade /  absent present, 13 Fang_pair_on_anterior_end_of_dentary. /  absent present, 14 Plicidentine /  absent polyplocodont_plicidentine dendrodont_plicidentine, 15 Skull_shape /  'lateral orbits, interorbital skull roof wide and arched' 'dorsal orbits, interorbital skull roof narrow and flat or concave', 16 Premaxilla /  present absent, 17 Position_of_premaxilla /  marginal ventral_part_turned_in, 18 Position_of_premaxilla /  Premaxilla_forming_part_of_orbit Premaxilla_not_forming_part_of_orbit, 19 Maxilla /  present absent, 20 Posterodorsal_process_of_maxilla /  present absent, 21 Shape_of_posterodorsal_process_of_maxilla /  'smooth, convex posterodorsal margin' distinct_posterodorsal_angle, 22 Position_of_median_rostral /  rostral_does_not_contribute_to_jaw_margin rostral_contributes_to_jaw_margin, 23 Postrostrals /  postrostral_mosaic_of_small_variable_bones 'large median postrostral, with or without accessory bones', 24 aired_nasals_meeting_in_midline_of_skul /  absent present, 25 Paired_frontals /  absent_ present, 26 'E-bone' /  absent present, 27 'C-bone' /  absent present, 28 Supraorbitals /  absent present, 29 'Number of supraorbitals (including the "pesterior tectal" of Jarvik)' /  one two more_than_two, 30 'B-bone' /  absent present, 31 Position_of_anterior_margin_of_parietal /  between_or_in_front_of_orbits slightly_posterior_to_orbits much_posterior_to_orbits, 32 Pineal_opening /  open closed, 33 'Median supraorbital ridges ("eyebrows")' /  absent present, 34 'Parietal-supraorbital contact' /  absent present, 35 Extratemporal /  absent present, 36 Intertemporal /  present absent, 37 Supertemporal_series /  bone_which_contacts_the_extrascapular_posteriorly_and_the_intertemporal_or_dermosphenotic_anteriorly 'two bones (supratemporal and tabular) between extrascapular and intertemporal or postorbital' 'single bone (probably the tabular) in posterior position, bounded anteriorly by lateral extension of postparietal', 38 Spiracle /  'small hole on kinetic margin be- tween skull roof and cheek' 'large, posteriorly open notch', 39 Extrascapulars /  present absent, 40 Number_of_extrascapulars /  four two three five, 41 Median_extrascapular_overlap /  median_extrascapular_overlapped_by_lateral_extrascapulars median_extrascapular_overlaps_lateral_extrascapuIars median_extrascapular_abuts_the_lateral_extrascapulars, 42 Tectals /  absent present, 43 'Number of tectals (not counting the "posterior tectal" of Jarvik; see char. 29)' /  one three_or_more, 44 Anterior_and_posterior_nares /  both_present only_anterior_naris_present, 45 Position_of_posterior_naris /  'external, far from jaw margin' 'external, close to jaw margin' 'palatal (palatal posterior naris of lungfishes deemed nonhomologous with tetrapod choana)', 46 Position_of_posterior_naris /  associated_with_the_orbit not_associated_with_the_orbit, 47 Position_of_anterior_naris /  facial marginal palatal, 48 'Palatal opening ("choana") surrounded by premaxilla, maxilla, dermopalatine, and vomer' /  absent present, 49 Number_of_sclerotic_plates /  four_or_less more_than_four, 50 Condition_of_lacrimal_and_jugal /  separate_bones fused_together, 51 Prespiracular /  absent present, 52 Dermohyal /  present absent, 53 Postspiracular /  absent present, 54 Squamosal_and_preopercular /  'one bone ("preopercular")' two_separate_bones, 55 Subsquamosals /  absent present, 56 'Preopercular-maxillary contact' /  'preopercular contacts maxilla (if maxilla absent, preopercular reaches ventral margin of cheek)' 'preopercular does not contact maxilla (if maxilla absent, preopercular does not reach ventral margin of cheek)', 57 Quadratojugal /  'present, small' 'present, large' absent, 58 'Jugal-quadratojugal contact' /  absent present, 59 Preoperculosubmandibular /  absent present, 60 Opercular /  present absent, 61 Subopercular /  present absent, 62 Branchiostegal_rays /  present absent, 63 Number_of_branchiostegal_rays_per_side /  10_or_more two_to_seven one, 64 Submandibulars /  absent present, 65 Width_of_submandibulars /  narrow broad, 66 Median_gular /  present absent, 67 Relative_size_of_median_gular /  small large, 68 Lateral_gular /  present absent, 69 Size_of_lateral_gular /  lateral_gular_and_branchiostegal_rays_of_similar_size lateral_gular_covering_approximately_half_the_intermandibular_space, 70 Posterior_process_of_vomer /  absent present, 71 Articulation_of_vomer /  vomers_do_not_articulate_with_eacthother vomers_articulate_with_eachother, 72 Articulation_of_pterygoid /  pterygoids_do_not_articulate_with_eachother pterygoids_articulate_with_eachother, 73 Articulation_of_parasphenoid /  parasphenoid_not_sutured_to_vomer parasphenoid_sutured_to_vomer, 74 Denticulated_spiracular_groove_on_parasphenoid /  present absent, 75 Buccohypophysial_foramen_of_parasphenoid /  single double, 76 Rostral_organ /  absent present, 77 Rostral_tubuli /  absent present, 78 Fossa_autopalatina /  absent present, 79 Paired_intervomerine_pits /  absent present, 80 Labial_cavity /  absent present, 81 Dermal_joint_between_parietal_and_postparietal /  absent present, 82 Dorsal_endoskeletal_articulation_between_otoccipital_and_ethmosphenoid_blocks_of_braincase /  absent present, 83 Ventral_endoskeletal_articulation_between_otoccipital_and_ethmosphenoid_blocks_of_braincase /  absent present, 84 Basicranial_fenestra_with_arcual_plates /  absent present, 85 Unconstricted_cranial_notochord /  absent present, 86 'Otico-sphenoid bridge' /  present absent, 87 Position_of_intracranial_joint_relative_to_cranial_nerves /  joint_passes_through_profundus_foramen joint_passes_through_trigeminal_foramen, 88 Condition_of_hyomandibular /  hyomandibular_with_one_proximal_articular_head hyomandibular_with_two_proximal_articular_heads, 89 Posttemporal_fossae /  absent present, 90 'Postorbital process on braincase (equivalent to^ncharacter A3 of Chang and Smith, 1992)' /  present absent, 91 Dentary /  long short, 92 Anterior_end_of_dentary /  not_modified modified_into_support_for_parasymphysial_tooth_whor, 93 Number_of_infradentaries /  one_ two four, 94 Number_of_coronoids /  four_or_more three two, 95 Condition_of_most_posterior_coronoid /  not_distinctly_differentiated_from_other_coronoids well_developed_and_oriented_vertically, 96 Prearticular_position /  'at posterior end of coronoid series, contacts dentary dorsally' 'ventral to the coronoid series, does not contact the dentary dorsally', 97 Articulation_of_symplectic_with_articular /  absent present, 98 Trajectory_of_supraorbital_canal /  canal_passing_between_anterior_and_posterior_nares canal_passing_anterior_to_both_nare, 99 Contact_of_supraorbital_canal /  supraorbital_and_infraorbital_canals_in_contact_rostrally canals_not_in_contact_rostrally, 100 Relationship_of_infraorbital_canal_to_premaxilla /  infraorbital_canal_enters_premaxilla infraorbital_canal_follows_dorsal_margin_of_premaxilla, 101 Trajectory_of_otic_canal /  otic_canal_does_not_pass_through_growth_center_of_postparietal otic_canal_passes_through_growth_center_of_postparietal, 102 Contact_of_otic_canal /  otic_canal_not_joining_supraorbital_canal otic_canal_joining_supraorbital_canal, 103 Position_of_anterior_pit_line /  anterior_pit_line_on_postparietal anterior_pit_line_on_parietal, 104 Position_of_posterior_pit_line /  posterior_pit_line_on_posterior_half_of_postparieta posterior_pit_line_on_anterior_half_of_postparieta, 105 Preopercular_canal /  preopercular_canal_ends_at_dorsal_margin_of_preopercular canal_does_not_end_at_dorsal_margin_of_preopercular, 106 Jugal_canal /  absent present, 107 Position_of_infraorbital_canal /  ventral_to_an­terior_naris dorsal_to_anterior_naris, 108 Pit_lines_of_lower_jaw /  'middle pit line not^ndeveloped into enclosed canal ("oral canal")' middle_pit_line_developed_into_enclosed_oral_canal_or_intermediate_morphology, 109 Pit_line_of_lower_jaw /  anterior_pit_line_not_developed_into_enclosed_canal anterior_pit_line_developed_into_enclosed_canal_linking_oral_and_mandibular_canals, 110 Trajectory_of_mandibular_canal /  mandibular_canal_passing_through_dentary mandibular_canal_not_passing_through_dentary, 111 Trajectory_of_mandibular_canal /  mandibular_canal_passing_through_most_posterior_infradentary mandibular_canal_not_passing_through_most_posterior_infradentary, 112 Anocleithrum /  element_developed_as_post­_cleithrum element_developed_as_anocleithrum_sensu_stricto element_absent, 113 'Condition of anocleithrum/postcleithrum' /  exposed_on_surface subdermal, 114 Depressed_lamina_of_cleithrum /  absent present, 115 Dorsal_end_of_cleithrum /  pointed broad_and_rounded, 116 Relationship_of_clavicle_to_cleithrum /  ascending_process_of_clavicle_overlaps_cleithrum_laterally 'ascending process of clavicle wraps round anterior edge of cleithrum, overlapping it both laterally and mesially', 117 Extracleithrum /  absent present, 118 Interclavicle /  present absent, 119 Proximal_articular_surface_of_humerus /  concave flat convex, 120 Endoskeletal_supports_in_pectoral_fins /  multiple_elements_articulating_with_girdle 'single element ("humerus") articulating with girdle', 121 Entepicondylar_foramen /  absent present, 122 Deltoid_and_supinator_processes /  absent present, 123 Number_of_mesomeres_in_pectoral_fin /  three_to_five seven_or_more, 124 'Trifurcations in pectoral fin skeleton (i.e., mesomeres carrying both pre- and postaxial radials)' /  absent present, 125 Digits /  present absent, 126 Pelvis_contacting_vertebral_column /  no yes, 127 Dorsal_and_anal_fins /  present absent, 128 Basal_plates_in_dorsal_fin_supports /  absent present, 129 Anterior_dorsal_fin_support /  separate_radials_and_basal_plate single_element, 130 Posterior_branched_radial_complex_in_posterior_dorsal_fin /  absent present, 131 Basal_scutes_on_fins /  absent present, 132 Relative_length_of_proximal_unsegmented_part_of_lepidotrichium /  much_less_than_segmented_part similar_to_segmented_part much_greater_than_segmented_part, 133 Distal_end_of_lepidotrichium /  branched single, 134 Epichordal_lepidotrichia_in_tail /  absent present, 135 Relative_size_of_epichordal_and_hypochordal_lepidotrichia /  epichordals_less_developed_than_hypochordals epichordals_and_hypochordals_equally_developed '=epichordals more developed than hypochordals', 136 Neural_arches /  bilateral_halves_of_neural_arch_separated halves_fused, 137 Supraneural_spines /  present_on_thoracic_and_abdominal_vertebrae 'restricted to a few vertebrae at anterior end of column, or absent', 138 Condition_of_intercentra /  ossified not_ossified, 139 Condition_of_pleurocentra /  not_ossified ossified, 140 Ribs /  'absence of well-ossified ribs' 'presence of well-ossified ribs', 141 Large_dermal_plates /  absent present, 142 Paired_pectoral_spines /  absent present, 143 Median_fin_spines /  absent present, 144 Denticulate_postbranchial_lamina_of_the_cleithrum /  absent present, 145 Wide_suborbital_ledge /  absent present, 146 Eye_stalk_or_unfinished_area_for_similar_structure /  absent present, 147 'Ventral and otico-occipital fissures' /  absent present, 148 Basipterygoid_articulation /  absent present, 149 Endochondral_bone /  absent present ; 
+	MATRIX
+	Acanthostega           0?0??000010111100101?0?1100110000101111??101??1110010101110111?0?1?1?01101?0?0000000???1100021010100????110??111?01?002111?0111???0??1201011100000111
+	Allenypterus           0?1?000000000000011??0000001200101011003?1?0010011011100110001?0?1?0100011010???111???????101?111??001?111?00111100?11?1????00011?00111111001000001?1
+	Barameda               0?1?100001011100010???00000110000110100201????0??0010??????0?????00010101??0????1?????????00?????1000110??0??1???1110?2101110??????2?????0??100000???
+	Beelarongia            1?010000??????0???001???0001?0000110?002???10?0??001010??0?00???????????????????1?????????0????????????01????????0110?21110???????100???????100000???
+	Cheirolepis            0?0?0100000000000?00000000010001000?0001?0?00000000010002?000000?0000??0??0?????0??????0??00000000?000?00000?000000000?0???00?0???000000???0100100??1
+	Crassigyrinus          0?0?0000010?11100101???1100110000100111??101??01?0010101110111?0?1?1?11011?0??000?000?????0021010????????????112?01?002111??111???0????01001100000111
+	Diabolepis             11???0001?00000011???0??0001?12100?010?????0111??????????????????????00010001?010?????????102????10?0010???001??????????????????????????????100000??1
+	Diplocercides_kaeseri  0?1?000000000000011???00000120010101200201?0010011?11100110001?0?1?01??0?1010?001111111111101?1111??01011100011??01001??????0??????01111?100100000111
+	D._heligenstockiensis  0?1?0000000?0000011???000001200101012002?1?0010?11011100110001?0?1?01????1?10???111???????101?111???0???11?0011??01001??????0?0???001111?1001000001?1
+	Dipnorynchus           1?0100?12?000?01??1???000011?12000001003?1102120???????????????????????101?01??100000?????102???011?0010??11110?????????????????????????????100000111
+	Dipterus               111?00011?000001??1???000111112100001002?1?0212010010101110000211??01??101001??100000?????102???011?011011111101101101????1100010101010?0001100000111
+	Elpistostege           0?010000??0???100101?0001001100011011????101??1??0?????????????1001?????????????0?????????0????????????????????????????????????????????0100?100000???
+	Eusthenopteron         0?1?1000010101000100101000011000010010020101??0110011101100000210000111011000000111111011100210101000110110001110011002111000001001001111011100000111
+	Glyptolepis            0?1?0000011102000101?000000100010111200211100101101101111010001101?0100000100110111111011101210101001111110001111011010100110001110001010010100000111
+	Gyroptychius           1?010000010101000100001000011000011010020101??0??001010110000021000011101100??00111111????002?0?0100011011000111001?0???????0?01??100110101?100000111
+	Holoptychius           0?1?0000011102000101?000000120010111200211100101101101111010001101?010000010011011111101??0121010100111111000111101100?1????0?0???00010?????100000111
+	Howqualepis            0?00011000000000000001?00000?0000?000001?0?0000?0000000000000000?0000??0?000???00?0??0?0??00000100000000000000?000000??0???00?0???00000?????1001001?1
+	Ichthyostega           0?1??000010111100101?0?1100110000101111??101??11?0010101110111?0?1?1?0110100?00000001?????0021010100????110??112?011002111??111???0??1211011100000111
+	Miguashaia             0?1?000000000000011??000000120010100100201?0010?10011100110001?0?1?01??0??0?????1?????????101?11???001?011?00111?00011??????0?01??00010??100100000???
+	Mimia                  0?00011000000000000000?00000?0000?000001?0?000000000000000000000?000000000000000000000?00000000000000000000000?0000000?000?00000?00000000000100100111
+	Moythomasia            0?00011000000000000001?00000?0000?000000?0?000000000000000000000?000000000000000000000?0000000000000000000000000000000?000?00000?00000000000100100111
+	Onychodus              0?1?00000?1100000100000000012001011110022100010?100101002?0001?101?01??0?1000010111?110???0121010??00110110??1011000010110??0?0????00110?010100000111
+	Osteolepis             1001000001010?000100101000011000011010020101??01100101011000002100001??0?1?000?011111101??002?0??100011011000111001100??????0?01?01001001010100000111
+	Panderichthys          0?010000010111100101?00010011000110011020101??11?0010101110000210010111011?000000??????1??002101010001??11000111001100211?000?1???0001201001100000??1
+	Polypterus             0?00010000000000000????01000?0010?00?000?0?001000??0?00?1?0001?0?1?010?010?00000000001?00100020001000110000000100010010000?00000?00001110??1100100111
+	Porolepis              11010000010102000101?00000010011001120021110010??011011110100011000010000010?11011111101?10121010100111011000111?0110???????0?0?????????????100000111
+	Powichthys             1101000000?1010001???0000001?01000?010021110010???????????1000???0001000?00010100111101?0001210101010110??000111????????????????????????????100000111
+	Speonesydrion          1?0?00012?000001??????00001??120000010?????????????????????000?11000???101001???000?0?????102????11?00?????1110?????????????????????????????100000111
+	Strepsodus             0?1?10000101110001001????0011???0???100??1????0?10???1?????????10??01???????????1?????????0?2???????01?????????11111002111010?010?02011?????100000??1
+	Strunius               0?1?00000?1?000001000000000??00101?11002?1??????1001?100??0001?101?01???????????1?????????01???????0011011?0011??00001??????0?0???00011????0100000??1
+	Uranolophus            110100?10?000001??1???00011??12100001003??102120?????????????021100010?101?01??10000??????102?????1?00101??111?1101100??????0?0???000?01?00010000011?
+	Ventastega             0????000010111100101?0?????1????0????1???1?1??11?00??101110??????????0110??0??00??????????002201?100?????1???11????0?0???????1??????????????100000??1
+	Youngolepis            1101000000?10100010010?0000??0110?10100????0110??0???10?10?0???100001000100010100000101100012101010100101100011??0?10?11????????????????????100000111
+	Psarolepis             11???000?0?10100000001?0000??0100??????????00100?0???000??????????????000100?010111?1?1??00120010?1000100000011???0????0????????????????????111111111
+	Dicksonosteus          0????00???0000?1??1??????000?0?00?????01?0?????00?010?0?1?0??????????0????0000000000???000????????1??0???1??????????00?000?000????0??0?????0110111000
+	Ctenacanthus           0????00???000001??1??????000?0??0????????0?????0???1?????????????????0?????000000000????00????????1?????01?1????????0???00?000????0??0?????00010?1?00
+	Acanthodes             0?0??00???000001??1??????000?0??0????????0?????00?010?0?1?0??00??????0????0000000000????00??????????????01?1????????0???00?0000???0??0?????0011000110
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  149;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  149;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1319140942117;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7639874472773035516;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1189448695243044155;
+			mqVersion 274;
+			checksumv 0 2 3559424300 null  getNumChars 149 numChars 149 getNumTaxa 37 numTaxa 37   short true   bits 15   states 15   sumSquaresStatesOnly 9153.0 sumSquares 9153.0   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 883 1009;
+			setLocation 1037 35;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1189448695243044155 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 783 942;
+					setLocation 1037 35;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 324;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 783 942;
+						setLocation 1037 35;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

@@ -1,0 +1,227 @@
+#NEXUS
+[written Fri Oct 21 17:05:19 EDT 2011 by Mesquite  version 2.74 (build 550) at wl-10-180-84-150.wireless.duke.local/10.180.84.150]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=39;
+	TAXLABELS
+		Outgroup Iniopteryx Promyxele Belantsea Netsepoye ElWeir L2SP Gregorius_rexi Srianta_dawsoni Srianta_iarlais Srianta_srianta Bealbonn_rogaire H._elegantulus Debeerius Oradus Chom2 Helodus Callorhinchus Erismacanthus E._meltoni E._snyderi Squaloraja Ha._Volsellorhinus Traquairiusnudus T._spinosus T._agkistrocephalus Menaspis Cochliodont1 Harpacanthus Caseodus Ornithoprion S._altonensis Falcatus Damocles Tristychius Squalus Diplodoselache Squatinactis Hamiltonichthys 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=99;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 mineralized_endoskeletal_tissue /  perichondral_bone prismatic_calcified_cartilage superficially_continuous trabecular, 2 ampullary_system /  not_present skin_tightIthin_if_present rostral_ampullary_dome, 3 supraorbital_cartilage /  present absent, 4 frontal_clasper /  absent median single_pair median_long multiple_pairs, 5 anterior_braincase_opening /  'closed/ small opening' largeIprecerebral_fontanelle, 6 'rostrum:basal plane' /  180_degrees greater_than_180_degrees, 7 ethmoid_%_of_neurocranium /  '< 25 %' '25-40' '40-50' '> 50', 8 orbital_%_of_neurocranium /  '35-46' '>46' '< 35 %', 9 postorbital_%_of_neurocranium /  '25-40' '15-25' '>40', 10 'anterior braincase (X-section)' /  'narrow v-shaped' 'platybasic, narrow' platybasic_wide, 11 'posterior braincase (X-section)' /  'narrow v-shaped' narrow_shelf wide_shelf, 12 palatine_area_shape /  generalized medial_shelf, 13 'palatoquadrate : basitrabecular joint' /  present absent fused, 14 'pq-postorbital articulation' /  absent under_postorbital_process on_rear_of_postorbital_process 'otic-postotic', 15 basitrabecular_process_attitude /  in_line_with_postorbital ventrolateral_to_postorbital 'flared antero-ventrolaterally' absent, 16 basitrabecularIpq_articular_position /  postorbital orbital antorbital absent, 17 suspensorium /  autodiastyly hyostyly amphistyly holostyly methyostyly, 18 extravisceral_cephalic_cartilages /  prominent_labials fewIreduced_labials none 'Pre-mandibular jaw bones', 19 palatoquadrate_anteriad /  separate median_symphysis 'parallel (parasymphysial) extension', 20 'palatoquadrate-otic process shape' /  slight_I_postorbital dorsally_recurved posteriorly_extended dorsally_expanded, 21 'meckel''s-quadate articulation' /  postorbital orbital preorbital, 22 mandibular_mineralization /  bone prismatic_calcified_cartilage solid_fibrocartilage other_mineralization, 23 'Upper parasymphysial cartilage(s)' /  small anteriorly_extended absent, 24 Lower_symphysial_element /  present_between_mandibles extended_anteriad, 25 gill_openings /  single_opercular_valve separate_gill_openings, 26 epihyal /  opercular_support mandibular_support, 27 branchial_denticles /  present absent, 28 ventral_hyoid_and_branchials /  normal anteriorly_elongate, 29 branchial_basket /  subotic_to_postcranial subcranial principally_postcranial, 30 tooth_families_per_jaw /  'about 10-15' '<9' '<4', 31 extended_neurocrania!_rostrum /  absent present, 32 functional_jaw_tooth_families /  '1-2 per family' pavement_occlusion reduced_or_absent, 33 tooth_shapes_on_jaw /  homodont heterodont teeth_&_tooth_plates plates_alone, 34 occlusion /  'cutting/ piercing' crushing_I_grinding both 'absent/na', 35 lower_symphysial_family /  generalized prominent whorl fused_plate absent, 36 upper_parasymphysial_family /  generalized prominent whorl fused_plate absent, 37 cusps_on_teeth /  single 'multiple in-line' 'reduced / suppressed' absent, 38 cusp_shape /  'high, sharp' 'low, rounded' bladed heterodont absent, 39 crown_base /  generalized 'lingual, labial ridges' lingual_basin basin_and_ridges absent, 40 tooth_root /  short_below_crown long_below_crown extended_lingual fused lingual_edge, 41 root_shape /  straight_below_crown 'lingual s-shape' lingual_shelf fused, 42 enameloid_layers /  radial_crystallite complex absent, 43 orthodentine /  present absent, 44 osteodentine /  absent present, 45 'paired, upper dental positions' /  '>3 (teeth)' '2 anterior, 1 posterior' '1 anterior, 1 posterior' 1_posterior absent, 46 paired_anterior_lowers /  '>3 (teeth)' 2_anterior 1_anterior absent, 47 'middle, lower condition' /  tooth whorl plate absent, 48 posterior_dental_histology /  coronal_tooth_tissues tritoral_dentine pleromin_tritors other, 49 anterior_and_middle_dental_surfaces /  coronal_tooth_tissues limited_tritors complete_coverage 'bone, no tritor' absent, 50 anterior_dental_histology /  coronal_tooth_tissues tritoral_dentine pleromin_tritors 'bone, no tritor' absent, 51 scale_type /  placoid zonal_growth fused_placoid absent ganoid, 52 head_scale_coverage /  generalized both_generalized_&_specialized specialized_areas_only absent, 53 head_scale_modifications /  generalized enlarged_scalesIspines plates absent, 54 head_dermal_bones /  absent present, 55 head_lateral_line_scales /  'small, simple, oriented' thin_rings bones 'canal(s) enclosed in plates' absent, 56 'ethmo-rostral scales' /  generalized spikes enlarged_denticles few_plates absent, 57 supraorbital_scales /  generalized enlarged_scalesIspines plates absent, 58 otic_scales /  generalized enlarged_scalesIspines plates absent, 59 occipital_scales /  generalized enlarged_scalesIspines absent, 60 mandibular_squamation /  generalized posterior_specialization 'longitudinal specialization (plates)' absent, 61 mandibular_bones /  present absent, 62 posterior_mandibular_scales /  generalized small_sharp_spine broad_spine buttressed_plate absent, 63 basitrabecular_rim_scales /  generalized few_large_denticles plate plate_and_spine absent, 64 body_scales /  generalized generalized_and_specialized_areas only_specialized_areas absent, 65 enlarged_paired_dorsal_body_scales /  generalized 1st_dorsal_to_caudal between_fins past_2nd_dorsal absent, 66 dorsal_fin_squamation /  complete_covering crest_of_fin_only upon_radials absent, 67 'squamation/sex' /  monomorphic sexually_dimorphic, 68 lateral_line_scales_of_body /  'small, simple, oriented' rings canal_through_scales none, 69 pectoral_fin_position /  ventrolateral 'mid-flank' nape_of_the_neck, 70 pectoral_girdle /  principally_endoskeletal principally_exoskeletal, 71 coracoid_length /  normal extended_anteriorly truncated_anteriorly, 72 pectoral_fin_radial_support /  '> 50 % on anterior basals' '>50 % on metapterygium' '>50 % on postmetapterygial axis', 73 pectoral_fin /  uniserial partially_biserial entirely_biserial, 74 pectoral_fin_base /  'multibasal, eurybasal' 'unibasal, stenobasal' tribasal, 75 'pectoral post-metapterygial axis' /  absent '1-4 small elements' '>4 small elements', 76 pelvic_girdle_mineralization /  bone prismatic_calcified_cartilage 'solid, 3-dimensional', 77 pelvic_dorsal_process /  absent short tall, 78 pelvic_basipterygium /  minor_or_absent elongate triangular, 79 pelvic_radials /  majority_on_girdle ~_50_%_on_basipterygium majority_on_basipterygium, 80 prepelvic_tenaculum /  absent adjacent_to_fin anterior_to_fin, 81 anal_fin_andIor_anal_plate /  absent present, 82 dorsal_fin_numbers /  two_fins one_fin, 83 dorsal_spines /  anterior_fin_only two_spines no_spines, 84 anterior_dorsal_fin /  large small_flap absent rod, 85 'anterior dorsal fin/spine support' /  basal_plateIradials synarcuum on_head shoulder_girdle absent, 86 anterior_dorsal_spine /  deeply_fixed 'long, mobile' superficial_insertion absent, 87 anterior_dorsal_presence /  found_in_both_sexes absent_in_both_sexes sexually_dimorphic, 88 'anterior dorsal fin/spine development' /  at_birth at_puberty, 89 anterior_dorsal_spine_shape /  'posteriorly directed, narrow' triangular forwardly_curved absent, 90 anterior_dorsal_spine_enameloid /  present absent no_spine, 91 posterior_dorsal_fin /  short elongate absent, 92 posterior_dorsal_fin_base /  all_radials basal_plate_&_radials basal_plate, 93 posterior_dorsal_spine /  absent superficial_insertion deeply_fixed, 94 caudal_fin /  heterocercal extended_heterocercal homocercal, 95 caudal_endoskeleton /  serial_hypochordal epichordal_component 'fusions/expansions' homocercal, 96 notochordal_calcification /  uncalcified chordacentra complete_centra, 97 vertebral_arcual_mineralization /  uncalcified regionalized entire_column, 98 Pelvic_girdles /  separate_across_midline puboischiadic_bar_in_males puboischiadic_bar_both_sexes, 99 Tooth_crown_linguo_I_labial_buttresses /  absent crenellated buttressed ; 
+	MATRIX
+	Outgroup             000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+	Iniopteryx           110000100001101002?001?000111100001100000?0?0000003230433322144303132011010112200122431032020220000
+	Promyxele            110000020001101002?001?00000110000?110000?0?0000003230433322144303132011010112200122431032000220000
+	Belantsea            211001321220?02?321011220?1?11001200223410110000002000000000100000?0000?002?01??002003?0321?0000000
+	Netsepoye            211001203220202?3210222?001011001200233410110000000210443321114303?0000?002?2120002003?0321000?0000
+	ElWeir               3111000120200001000012?200110?02004400000???4300000200000323144003100022011?02100021230032100310000
+	L2SP                 22000?22012000010?00112?0010010000??12010???0000000210221123144243111022111?01101011010000001000000
+	Gregorius_rexi       11100032012000200?2021000010100000221111000?0000000000200000100000000002?1?10??01011000000001010000
+	Srianta_dawsoni      11100112222000010?00110000?011000000111100000000000000000000100000?0000201110??0102003?032000000000
+	Srianta_iarlais      21000132012000210100211100101?0000001111000?0000000??0??????1???????0002011???????2???????100??00?0
+	Srianta_srianta      111001220120001101001100000001000000111100000000000000200000000000?00002011?0??0?02003?032000??00?0
+	Bealbonn_rogaire     1?100132112000220000210000?11100000011110000000000000000000000000400000100?10110102???????000000000
+	H._elegantulus       111000120120001000200100001001001002232410000000003330243323144303011002210101200102420000100310000
+	Debeerius            1110003211200020002021000011110010022324100000000033302433231443020010021111002000000100001001000?0
+	Oradus               21000?20022000210??01300?0100?0101222100001?0000001000000000100120?0000000??0???000003??32??0?00001
+	Chom2                211001201220200032100322000011001200231000110000000110101000100000?1002101??????00000??000010000000
+	Helodus              110001120220202232102111001001000110010000110000000000000000100000?00002110101200000010000100000000
+	Callorhinchus        211101201220202230202112001012013143340332112332120210143113144213011001111121221000110000100101200
+	Erismacanthus        21100132222020223?20221?001?12012142340332112231210120022111121112?1000101122121?000110000?10111?00
+	E._meltoni           21100121122020223?20221200101201324334033211233311011000101010013210100111112121100011??000?0111200
+	E._snyderi           21100121122020223?20221200101201224234033211233311011000101010013210100?111121211000112000010111000
+	Squaloraja           11130020322020103020211200101211314334033211223121021011332?14114311002101110120012213?032100101200
+	Ha._Volsellorhinus   21120022022020103?200?12001102013133340332112221113230243323144303111002212101200122430032100311200
+	Traquairiusnudus     11000?221220202230202112?????201214234033211213133???0?????1133??????0????????????????????????????0
+	T._spinosus          11000122322020223?202112001012012142340332112131330120012211133103?000012111112?112243?032000311000
+	T._agkistrocephalus  11000?22122020223?202312001012012142340332112?31330120?12211133113?0000?1111?????12?43?032?????0000
+	Menaspis             11000122322020223?202312001012013143340332113331342120?12211133113?000?111110120?02243?032?30??0000
+	Cochliodont1         21100120122020223?202212001012012142340332112111110120002211122012?0000?011122211000110000020011200
+	Harpacanthus         21140012022000210?00111100000102111?340332100011213330043323144343?3000?????0110012243103210??12200
+	Caseodus             11100022122010010?000121001?2?01012?34010?1?000??????0???3??144??30?0001001?????012003?03?230220002
+	Ornithoprion         11100032111010030100012100102211012434010?1?000????2?0?203?3144???0?000???????????????????????????2
+	S._altonensis        1200100002201233210301221100200000001002200?0000000210111103144301110001002100000000002111000000000
+	Falcatus             120010002120123321030122110020000000100220010000000210111103144301110001002100000003002121000200100
+	Damocles             1200100011201233210301221100200000001002200?0000000210111103144301110001002101100003002121000200100
+	Tristychius          12001002222011?31010112201002000100011022?0?0000000330443320144243130002222101101010300000022000000
+	Squalus              120010002220103311100122110020000000100001000000000000000000100000000000020101201010000000022002220
+	Diplodoselache       12?01????22012112103012211?1200000001002200100000020?0?00000100000??000102110110110100?000100000000
+	Squatinactis         12?01002222010331100012201100000000010022???0000003333?44323144343??10000011????0011?1000?021??00?0
+	Hamiltonichthys      12101000222010331?10012?010001000110210000010000000110000100100000100001020101201010000000012000011
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  99;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  99;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1319231119403;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4828918729649783276;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6689864268714028345;
+			mqVersion 274;
+			checksumv 0 2 995336473 null  getNumChars 99 numChars 99 getNumTaxa 39 numTaxa 39   short true   bits 31   states 31   sumSquaresStatesOnly 55440.0 sumSquares 55440.0   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1280 716;
+			setLocation 0 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6689864268714028345 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1180 649;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 232;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1180 649;
+						setLocation 0 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

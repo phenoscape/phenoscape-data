@@ -1,0 +1,277 @@
+#NEXUS
+[written Wed Oct 12 08:39:50 CDT 2011 by Mesquite  version 2.75 (build 566) at sereno-assistant-3.local/10.0.1.67]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=20;
+	TAXLABELS
+		'DINOSAUROMORPH_ANC   ' LAGERPETIDAE_ Marasuchus__ SILESAURIDAE HETERODONTOSAURIDAE Lesothosaurus_ GENASAURIA Eoraptor__ Panphagia_ Saturnalia__ SAUROPODIFORMES Herrerasaurus_____ Staurikosaurus_ Eodromaeus_____ Tawa Coelophysis 'Syntarsus_r.         ' '''"Syntarsus" k.''     ' Dilophosaurus______ Ceratosaurus__ 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=139;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R S T U V W X";
+	CHARSTATELABELS 
+		1 Skull_length_relative_to_3_times_posterior_skull_height /  less more, 2 'External naris, size' /  'small, set within tapered snout end' 'large, expanded narial margin', 3 Subnarial_foramen /  absent present, 4 'Antorbital fossa, ventral margin, rounded laterally-protruding rim' /  absent present, 5 'Antorbital fossa and fenestra, size relative to snout (lateral view)' /  'large, near maxilla-nasal suture' 'small, separated from maxilla-nasal suture', 6 'Premaxilla, medial premaxillary foramen' /  absent present, 7 'Premaxilla, posterolateral process, length' /  short 'long, extending at least to the posterior end of the external naris, subequal to premaxillary body in length', 8 'Premaxilla, posterolateral process, articulation' /  lateral_aspect_of_snout dorsal_aspect_of_maxillary_anteromedial_process, 9 'Premaxilla-maxilla, diastema' /  absent present, 10 'Premaxilla, posteroventral flange (backing dorsal portion of arched diastema)' /  absent present, 11 'Premaxilla-nasal, suture, form' /  'V-shaped' 'W-shaped', 12 'Premaxilla-maxilla, alveolar suture' /  present absent, 13 'Premaxilla, palatal process' /  present absent, 14 'Premaxilla, palate, depth' /  as_deep_as_broad broader_than_deep, 15 'Maxilla, anteriormost alveolar margin, form (lateral view)' /  'approximately horizontal, maxillary tooth 1 vertical' 'anterodorsally upturned, maxillary tooth 1 inclined anteroventrally at about 45° from the vertical', 16 'Maxilla, buccal emargination (cheek)' /  absent present, 17 'Maxilla, border of external nares' /  absent present, 18 'Maxilla, promaxillary fenestra and antrum' /  absent present, 19 'Nasal, posterolateral process' /  absent present, 20 'Lacrimal, ventral half of ventral process, subtriangular flange medial to antorbital fossa (exposed in lateral view)' /  absent present, 21 'Lacrimal, mid section of ventral process, lateral antorbital fossa wall (lateral view)' /  _straight_border crescentic_flange_dividing_dorsal_and_ventral_exposures_of_the_medial_antorbital_wall_, 22 'Jugal, posterior process, quadratojugal articulation, form' /  subtriangular deeply_forked, 23 'Postorbital, participation in supratemporal fossa' /  present absent, 24 'Squamosal, ventral process, shape' /  transversely_compressed_flange slender_prong_3_or_more_times_basal_width, 25 'Squamosal, anterior process, orientation (lateral view)' /  anterior anterodorsal_inclined_30°_or_more, 26 Palpebral /  absent present, 27 'Palatine, anterior process, shape' /  'triangular, tapering distally' ' lobe-shaped with basal constriction ', 28 'Exoccipital-opisthotic, process forming lateral margin of basal tubera' /  absent present, 29 'Laterosphenoid-frontal, contact' /  present 'absent (head contacts postorbital only)', 30 Basisphenoid_fontanelle /  present absent, 31 Intramandibular_joint /  absent present, 32 'Intramandibular joint, polarity of articulation' /  'splenial convex, angular concave' 'splenial concave, angular convex', 33 'External mandibular fenestra, anteroposterior diameter relative to the maximum depth of dentary ramus' /  more subequal_or_less, 34 Predentary /  absent present, 35 'Dentary symphysis, form' /  'transversely narrow, V-shaped' 'spout-shaped ', 36 'Dentary, coronoid process' /  absent present, 37 'Dentary, coronoid process, length relative to depth of the dentary at mid length' /  _approximately_35%_or_less 50%_or_more, 38 'Prearticular-angular/splenial foramen' /  absent present, 39 Premaxillary_tooth_number /  4 3 5_or_6, 40 'Premaxillary tooth 1, position' /  adjacent_to_midline 'inset posteriorly (distally) the width of one or more crowns', 41 'Premaxillary teeth, position of posteriormost tooth relative to external naris' /  ventral anterior, 42 'Maxillary/dentary teeth, position of largest tooth in tooth row' /  'anterior (mesial) end' center, 43 'Maxillary/dentary crowns, shape' /  recurved subtriangular lanceolate, 44 'Maxillary/dentary crowns, marginal ornamentation, form' /  serrations denticles, 45 'Dentary tooth 1, position' /  terminal inset, 46 Pterygoid_teeth /  present absent, 47 'Axis, intercentrum, width relative to maximum width of axial centrum' /  less more, 48 'Axis, neural canal diameter relative to 25% centrum diameter' /  more less, 49 'Cervical centra (postatlantal), rimmed pleurocoels in some or all' /  absent present, 50 'Cervical centra (postatlantal), posterior articular surface' /  _flat_or_shallow_concavity 'deeply cupped (opisthocoelous) ', 51 'Mid cervical (C3-C6) centra, length relative to centrum height' /  less_than_3 3 more_than_4, 52 'Mid or posterior cervicals, epipophyses' /  absent_or_low_crest 'prong-shaped, overhanging process ', 53 'Posterior cervical and dorsal vertebrae, transverse process shape' /  subrectangular subtriangular, 54 'Dorsal centra, length relative to height' /  subequal more_than_2.5_times, 55 'Dorsal vertebrae, hyposphene-hypantrum articulation' /  absent present, 56 'Sacrals, shape (dorsal view)' /  subrectangular subtriangular, 57 'Sacrals, transverse processes, relation' /  separate joined, 58 'Dorsosacral 1 (transverse process contacting preacetabular process)' /  absent present, 59 'Caudosacrals 1 (transverse process contacting postacetabular process)' /  absent present, 60 'Caudosacrals 2 (transverse process contacting postacetabular process)' /  absent present, 61 'Caudosacral ribs, attachment on postacetabular process' /  ventral_margin inclined_from_ventral_margin_to_posterodorsal_corner, 62 'Distal caudal centra, length relative to centrum height' /  3_to_5_times_ 7_times, 63 'Distal caudals, prezygapophyses, length' /  'short, little overlap' 'elongate, overlap 25% or more of preceding centrum', 64 'Mid cervical ribs, length relative to centrum length' /  less 'more (overlapping) ', 65 'Sternal plates (paired, ossified)' /  absent present, 66 Gastralia /  present absent, 67 'Epaxial tendons (ossified)' /  absent present, 68 'Scapula, blade, length relative to distal width' /  less_than_3_times more_than_3_times, 69 'Humerus, deltopectoral crest, length relative to humeral length' /  30%_or_less '35-44%' 45%_or_more, 70 'Manus, length (longest digit) relative to humerus + radius' /  '20-30%' approximately_40% '50-70%', 71 'Manus, digits and metacarpals, longest' /  'digit III, metacarpal 3 ' 'digit II, metacarpal 2', 72 Manus_digit_V /  present absent, 73 'Metacarpals 1-3, base, flat intermetacarpal articular facets' /  absent present, 74 'Metacarpals 1-3, distal end, extensor depressions' /  absent present, 75 'Metacarpals 4 and 5, mid shaft diameter relative to metacarpal 2 or 3' /  subequal _less_than_50%, 76 'Manus digit I phalanx 1, rotation of axis through distal condyles' /  no_rotation_or_slight_ventrolateral_rotation rotated_45°_ventromedially rotated_60°_ventromedially, 77 'Manus digit I phalanx 1, length relative to metacarpal 1' /  shorter subequal_to_or_longer, 78 'Manus digits I-III and penultimate phalanx (digits II, III), length; and ungual (digits I-III), form' /  'shorter or subequal to preceding phalanx, moderately recurved unguals' 'longer than preceding phalanx, trenchant unguals', 79 'Ilium, preacetabular process, shape' /  'tab-shaped' 'strap-shaped' subtriangular semicircular, 80 'Ilium, preacetabular process, position of distal end relative to the distal end of pubic peduncle' /  posterior anterior, 81 'Ilium, preacetabular process, attachment scar' /  absent present, 82 'Ilium, ischial peduncle, axis of process' /  ventrally_directed ventrolaterally_directed, 83 'Ilium, ventral acetabular flange' /  present absent, 84 'Ilium, supraacetabular crest, form' /  'shelflike, gently transversely arched' 'pendant, overhanging femoral head', 85 'Ilium, postacetabular process, posterior margin, shape' /  convex concave, 86 'Ilium, postacetabular process, lateral attachment scar, form' /  subtle pronounced_rim, 87 'Ilium, postacetabular process, brevis fossa' /  absent present, 88 'Ilium, bevis fossa, shape and orientation' /  'broad laterally-open depression' shallow_groove_or_absent 'arched ventrally-opening ovate or parallel-sided depression ' 'arched ventrally-opening posteriorly-expanding to a width approximately 50% of its length ', 89 'Ischium, obturator process' /  absent present, 90 'Ischium, mid shaft, cross-sectional shape' /  oval_or_elliptical subtriangular, 91 'Ischium, mid shaft, variation in transverse width' /  uniform_or_gently_decreasing_distally_ expanding_distally, 92 'Ischium, distal end, foot (= anteroposterior expansion)' /  absent present, 93 'Ischium, length relative to pubis length' /  subequal at_least_25%_shorter_, 94 'Ischium, antitrochanter, nonarticular acetabular margin' /  concave notch_that_undercuts_antitrochanter, 95 'Ischium, antitrochanter, anteroposterior length relative to adjacent length of the articular surface for the ilium' /  greater less, 96 'Puboischial symphysis (distal ends)' /  absent present, 97 'Puboischial contact below acetabulum (lateral view), depth relative to width of pubic peduncle of ischium' /  subequal 25%_or_less, 98 'Pubis, pubic fenestra, partial or complete opening' /  absent present, 99 'Pubis, shaft axis (lateral view)' /  straight bowed_anteriorly, 100 'Pubis, prepubic process' /  absent present, 101 'Pubis, obturator opening, form' /  foramen notch, 102 'Pubis, shaft, orientation (lateral view)' /  anteroventral vertical posteroventral, 103 'Pubis, shaft, shape' /  'blade-shaped ' 'rod-shaped', 104 'Pubis, symphysis, location' /  along_entire_pubic_blade at_distal_end_only, 105 'Pubis, distal end of blade, transverse width relative to proximal blade' /  subequal 65%_or_less, 106 'Pubis, distal end, foot (= distal anteroposterior expansion)' /  present present, 107 'Pubis, foot, symphyseal area, location' /  none_or_limited_to_distal_edge broad_median_contact, 108 'Femur, posterior aspect of head, ligament depression, shape' /  groove_or_shallow_trough broad_fossa, 109 'Femur, proximal shaft, anterolateral margin' /  rounded crested, 110 'Femur, anterior trochanter, form' /  _pyramidal_prominence ' fusiform (bullet-shaped)' 'flange-shaped ', 111 'Femur, trochanteric shelf' /  absent present, 112 'Femur, anterior trochanter, dimorphism' /  absent present, 113 'Femur, fourth trochanter, shape' /  'crescentic, distal end variable corner' 'trapezoidal, proximal and distal corners' pendant_distal_margin, 114 'Femur, distal end, anterior attachment scar/fossa' /  absent present, 115 'Tibia, proximal shaft, fibular crest' /  absent present, 116 'Tibia-fibula, shafts, articular relation' /  separated in_articulation_, 117 'Tibia, distal end, posterolateral flange, lateral extension' /  does_not_reach_fibula extends_posterior_to_medial_margin_of_fibula extends_posterior_to_entire_distal_end_of_fibula_and_calcaneum, 118 'Tibia, distal end, lateral flange, shape (anterior view)' /  subtriangular 'tab-shaped with distinct proximolateral corner', 119 'Fibula, minimum anteroposterior diameter at mid-shaft relative to maximum dimension of proximal end' /  40% '10-25% ', 120 'Astragalus-calcaneum, suture and mutual processes' /  ' open, present' ' fused, absent', 121 'Astragalus, fibular facet' /  present absent, 122 'Astragalus, fibular facet, primary orientation' /  dorsolateral lateral, 123 'Astragalus, (anterior) ascending process, fibular articulation, orientation' /  lateral anterior, 124 'Astragalus, (anterior) ascending process, shape' /  'wedge-shaped (projecting into tibia)' 'plate-shaped (set in anteriorly facing tibial facet)', 125 'Astragalus, anteromedial corner, shape (dorsal view)' /  subrectangular anteriorly_projecting_at_least_25%_width_of_the_medial_side_of_the_astragalus, 126 'Astragalus, anterolateral process for calcaneum' /  present absent, 127 'Astragalus, posteromedial crest (to posteromedial corner)' /  absent present, 128 'Calcaneum, medial process, size (correlated with width of distal articular surface)' /  'subtriangular flange (maximum width of distal articular surface greater than depth of lateral face)' 'rudimentary prominence (maximum width of distal articular surface subequal or less than depth of lateral face)', 129 'Calcaneum, posterior tuber' /  present absent, 130 'Calcaneum, fibular facet, form' /  flat_or_very_gently_concave markedly_concave, 131 'Calcaneum, distal articular surface, form' /  flat strongly_dorsoventrally_convex, 132 'Distal tarsal 4, heel (projection posterior to ankle joints)' /  present absent, 133 'Metatarsal 1, length relative to metatarsal 2' /  more_than_50%_ less_than_50%, 134 'Metatarsal 1, articular position on metatarsal 2' /  'medial side, proximal half' 'posteromedial side, mid shaft', 135 'Metatarsals 2-4, basal articulation, dorsoventral overlap' /  minor mt2_over_mt3_over_mt4, 136 'Metatarsal 4, shaft axis, curvature (dorsal view)' /  straight 'sigmoid (curving away from mt3)', 137 'Metatarsal 4, distal end (and phalanx IV-1, base), proportions' /  broader_than_deep_or_subequal deeper_than_broad, 138 'Metatarsal 5, length relative to metatarsal 3' /  '35-50%' less_than_25%_, 139 Pedal_digit_V_phalanges /  absent present ; 
+	MATRIX
+	'DINOSAUROMORPH_ANC   ' 0000000000000000000000000000000X000000000000000000000000000?000000000000000000000000000X000000000000000000X000000000X0000X00000000000000000
+	LAGERPETIDAE_          ?????????????????????????????????????????????????????????0????????????????????200000000X00000XX00000000000X000(0 1)00000X0010X0X1X0X10001000000
+	Marasuchus__           0??000000??????????????????0?0???????????000??000000?000000?000?0?000?????????000000000X000000000000000000X0001000000000000X000000000000000
+	SILESAURIDAE           0000?0?000000000000???0????0?0???0000?00011(0 1)X10000000000000000000?000?????????0010000010000000000010000000X002101000000000000000000???00000
+	HETERODONTOSAURIDAE    0000101011000101000110001100000X111110110111010000000000011100011111120011001111011000110000?00110011211X0X00200201020111X110??101110000010
+	Lesothosaurus_         00001010000?0100000100000100000X11110021011101000000000001100001011?100000000011000000101010000110011211X0X00200200020001X11010101110000010
+	GENASAURIA             00001010(0 1)0000101000000000100000X11111021011101000000000001100001111?10000000001101(0 1)000101?10000110011211X0X00200200020001X1101010111000(0 1)(0 1)10
+	Eoraptor__             0110001010000000001101?10000?0100000X10000(0 2)(0 1)10??0001001001000?00000?21000101102010000012010100100000000000X000100000000001001?0?00000010000
+	Panphagia_             01????????0???????????????????0X0000X1???0(0 2)(0 1)1???00010010???0?00???????????????20?000001201010010?000000000X0???0??00000001001?????????1????
+	Saturnalia__           ?????????????????????????????????0???????021????000100100010000?0?0?2??????????0?0000012010100100000000000X01010100000000100100000000011100
+	SAUROPODIFORMES        011000010000000010110101(0 1)000000X0000X1000021110000(0 1)100100(0 1)(0 1)00000000?21000001102010100010010100000000000000X00100100000000100110100100010001
+	Herrerasaurus_____     00100?10000000000101010010000?110000X100000001100001001001000010?00112001110110000100001000000000000010011001010010000000000000000000010001
+	Staurikosaurus_        ??????????????????????????????110000X????0000???000?00100??0001???01??????????000010101000000000?000?0001100101?0100000????????????????????
+	Eodromaeus_____        00?00?1000?0?00001?????0???0?1???000X?0000000010101100100?000010?001120011101130001000120001000000100000110000100110000000000000000000?00??
+	Tawa                   0000010111?11010110001?010???0??0000X?0010000???101??01????0?01???011201111011?0?0100010???1?0000010000011110010010000?0000001?11???00?0000
+	Coelophysis            10010?011111101010010110101??0100000X?00100001111021111111111110?00112111110113100111113000111100110000011110011011111110000011111101101100
+	'Syntarsus_r.         ' 10010?011111101010?10110101110100000X?00100001111?21111111111110?00112111110113100111113000111100110000011110011011111110?0001?111101101100
+	'''"Syntarsus" k.''     ' 10010?0111111010110111?010????100000X?0010000???10?11????111??????011?????????3100111113000??11??????????1110011011111110?0??X?1111?11?????
+	Dilophosaurus______    ?0000101111110101101110010?111100000X?0010000?1111011010011?10100001121111101131001110130001011000001000?1110011011110110001011111101111100
+	Ceratosaurus__         ?01001000010000011111100101111100000X11000000111110100100111?0100?0112111110?131001000120001000000001000?10002100111101100000X?1111???111??
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  139;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  139;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1318426790854;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4416051113476419723;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8642840944337520989;
+			mqVersion 275;
+			checksumv 0 3 2165914947 null  getNumChars 139 numChars 139 getNumTaxa 20 numTaxa 20   short false   bits 1073741839   states 1073741839   sumSquaresStatesOnly 5.8798996734949196E19 sumSquares 5.8798996734949196E19 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 99;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1420 718;
+			setLocation 20 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #4416051113476419723 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #4416051113476419723;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultTaxaOrder.DefaultTaxaOrder;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1321 651;
+					setLocation 20 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.arrow;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8642840944337520989 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1321 651;
+					setLocation 20 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.SortChar.SortChar.charSort;
+					endTell;
+					setTool mesquite.charMatrices.SortChar.SortChar.charSort;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 709;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1321 651;
+						setLocation 20 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #8642840944337520989 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.stochchar.CharListProbModels.CharListProbModels;
+					getTable;
+					tell It;
+						rowNamesWidth 1562;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1321 651;
+					setLocation 20 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

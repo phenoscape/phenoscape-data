@@ -1,0 +1,202 @@
+#NEXUS
+[written Tue Feb 07 14:51:47 EST 2012 by Mesquite  version 2.74 (build 550) at wl-10-180-73-30.wireless.duke.local/10.180.73.30]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=11;
+	TAXLABELS
+		Apateon Doleserpeton Caudata Triadobatrachus Alytes Ascaphus Bombina Discoglossus Leiopelma Notobatrachus Vieraella 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=50;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 General_shape_of_the_skull /  skull_wider_than_long skull_longer_than_wide skull_as_long_as_wide_, 2 Medial_contact_of_nasals /  nasals_in_medial_contact nasals_widely_separated_medially, 3 Rostral_process_of_nasal /  Nasal_rostral_process_present Nasal_rostral_process_absent, 4 Fusion_of_frontal_and_parietal /  Frontal_and_parietal_separate Frontal_and_Parietal_fused_to_form_a_frontoparietal, 5 Dorsal_exposure_of_frontoparietal_fontanelle /  Fontanelle_not_exposed_ Fontanelle_exposed_50%_of_its_length_or_less Fontanelle_exposed_more_than_50%_of_its_length, 6 Frontoparietal_shelf_ /  absent present, 7 'Prootic-exoccipital fusion' /  separate fused_, 8 Perilymphatic_foramen_on_the_posterior_wall_of_otic_capsurle /  absent present, 9 Palatine_process_of_premaxilla /  absent_or_barely_present well_developed_, 10 'Premaxilla-maxilla articulation' /  absent present, 11 'Premaxilla-nasal contact' /  articulates_with_nasal meets_rostral_process_of_nasal_ well_separated_from_nasal, 12 Anterior_margin_of_the_orbit /  'Maxilla and nasal excluded from the anterior margin of the orbit, prefrontal bone present' Maxilla_and_nasal_forming_the_anterior_margin_of_the_orbit 'Nasal forming most of the anterior margin of the orbit; maxilla may have a minor participation ' Anterior_ramus_of_pterygoid_excluding_maxilla_from_the_anterior_margin_of_the_orbit, 13 Quadratojugal /  present absent, 14 Squamosal_shape /  nontriradiate triradiate, 15 Zygomatic_ramus_of_squamosal_ /  'if present, shorter than ventral ramus ' as_long_as_ventral_ramus_, 16 Medial_articulation_of_squamosal_ /  squamosal_in_contact_with_the_parietal_or_the_supratemporal squamosal_not_in_contact_with_the_dermal_bones_of_the_skull_table, 17 Sphenethmoid /  single_ bilaterally_paired_, 18 Vomer /  Vomers_broadly_in_contact_with_the_maxillary_arcade_ Vomers_not_in_contact_with_the_maxillary_arcade_, 19 Position_of_anterior_process_of_vomer_ /  lying_immediately_behind_the_premaxilla 'if well developed, lying near the premaxilla-maxilla articulation ', 20 'Vomer-choana relationship' /  surrounding_choanae far_medially_from_the_internal_choanae, 21 Postchoanal_process_of_vomer /  wide_angle narrow_angle_, 22 Dentigerous_process_of_vomer_ /  absent present, 23 Vomerine_teeth /  linear_series_ oval_patch, 24 Cultriform_process_of_parasphenoid /  extending_anteriorly_to_the_level_of_the_vomers not_reaching_the_level_of_the_vomers_, 25 Parasphenoid_alae /  'wide (width larger 1/3 distance between lateral ends)' 'narrow (width less than 1/3 distance between lateral ends)', 26 Posterolateral_notch_of_parasphenoid_alae /  without_posterolateral_notch with_posterolateral_notch, 27 Posteromedial_process_of_the_parasphenoid_ /  absent present, 28 Overlap_of_medial_ramus_of_pterygoid_and_parasphenoid_ala /  not_overlapping_the_parasphenoid_ala overlapping_the_parasphenoid_ala, 29 Dentary_teeth /  present absent, 30 Number_of_presacral_vertebrae /  more_than_fourteen_ fourteen ten nine_ eight, 31 Morphology_of_vertebral_centra /  'Vertebral centra "amphicoeloud" or notochordal' vertebral_centra_opisthocoelous_, 32 Neural_arches_of_presacral_vertebrae /  completely_or_weakly_imbricated not_imbricated_, 33 Atlantal_cotyle_orientation_ /  completely_ventral_to_the_neural_canal ventrolateral_to_the_neural_canal, 34 Number_of_free_ribs_ /  'free ribs present on all postatlantal, presacral vertebrae' 'free ribs usually present on presacrals II, III, IV and V' 'Free ribs usually present only on presacrals II, III and IV' Free_ribs_usually_present_only_on_presacrals_III_and_IV_, 35 Transverse_processes_of_posterior_presacral_vertebrae_ /  almost_as_wide_as_distance_between_sacral_diaphphysis_ shorter_than_the_distance_between_sacral_diaphphysis_, 36 Dilation_of_sacral_diaphphyses_ /  narrow_or_slightly_dilated_ moderately_to_widely_dilated_, 37 Postsacral_vertebrae_ /  caudal_vertebrae_unmodified_ separate_caudal_vertebra_frequently_present_between_sacrum_and_urostyle Separate_caudal_vertebra_between_sacrum_and_urostyle_absent, 38 Sacrococcygeal_articulation_ /  cartilaginous_joint monocondylar_joint bicondylar_joint, 39 Endochondral_components_of_pectoral_girdle /  Scapulocoracoid_present_in_adults_ separate_scapula_and_coracoid_bones_, 40 Interclavicle_ /  present absent, 41 Scapula_length /  maximum_lenght_about_half_that_of_humerus_ maximum_lenght_of_scapula_less_than_half_that_of_humerus_, 42 Scapula_shape_ /  leading_edge_concave_ leading_edge_straight_, 43 Coracoid_shape_ /  medial_end_of_coracoid_expanded_anteriorly_ 'coracoid elongate, medial end little expanded anteriorly', 44 Hemeral_condyle_ /  two 'one, small (<60% distal humerus width)' 'one, large (>60% distal humerus width)', 45 Ossification_of_humeral_condyle_ /  unossified_ ossified_, 46 Zeugopodium /  separate_radius_and_ulna compound_radioulna, 47 Free_intermedium_in_carpus_ /  present absent, 48 Illium_orientation /  dorsally_directed_ elongated_and_anteriorly_directed, 49 Illium_length /  'Illium length / Vertebral column length ratio <0.30' 'Illium length / Vertebral column length ratio 0.31 - 0.60' 'Illium length / Vertebral column length ratio 0.61-0.90' 'Illium length / Vertebral column length ratio >1.00', 50 Dorsal_acetabular_expansion_of_illium /  dorsal_acetabular_expansion_of_ilium_not_extending_ot_the_dorsal_limit_of_iscium ; 
+	MATRIX
+	Apateon          001000-?000000-0-0-000000000000??0??0-00---?00?00-
+	Doleserpeton     1000000?000000-000-000000000000?00??0-00---??0000-
+	Caudata          ?0000000000000-0-0-0-000---0000000-0001---0000000-
+	Triadobatrachus  00?1000????000-00???????00001100000-00110001000100
+	Alytes           00112011102201010110110110101411021122111112111131
+	Ascaphus         211120000121110111-1--1010101301021020111-01111120
+	Bombina          00012011102301010110110110101410121121111112111130
+	Discoglossus     00012011102201010110110110101410121122111112111130
+	Leiopelma        01112000012111011110110010111300010010111001011120
+	Notobatrachus    00011100101111111100010001001300010010111001010110
+	Vieraella        2001100??02?1101011001?100011200??00?011000?01?1??
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  50;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  50;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1328644307479;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 8720827686857870327;
+			tell It;
+				setSelected  1 -  11;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8376408122523183372;
+			mqVersion 274;
+			checksumv 0 2 3346820659 null  getNumChars 50 numChars 50 getNumTaxa 11 numTaxa 11   short true   bits 31   states 31   sumSquaresStatesOnly 2702.0 sumSquares 2702.0   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 640 716;
+			setLocation 0 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8376408122523183372 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 540 649;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 174;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 540 649;
+						setLocation 0 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
