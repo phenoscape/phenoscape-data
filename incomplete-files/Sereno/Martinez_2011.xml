@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.1.4" version="0.9">
-  <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator"/>
-  <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references"/>
-  <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description"/>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.2" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="438528f4-bd70-4a6a-aff5-bfc5dc7a5d55">
     <otu id="612327ba-44d8-4f52-a717-ef3fd15150b7" label="DINOSAUROMORPH_ANC   "/>
     <otu id="b81834a3-47ed-461e-810b-d9cbfd16a0d8" label="LAGERPETIDAE "/>
@@ -30,7 +30,31 @@
   <characters xmlns:ns="http://www.nexml.org/2009" id="6abfc77f-4948-4ad2-91a9-525e887bf146" xsi:type="ns:StandardCells" otus="438528f4-bd70-4a6a-aff5-bfc5dc7a5d55">
     <format>
       <states id="25db0da4-d64f-4dbd-9e1c-565f26575195">
-        <state id="c325dd36-2b10-4234-8f16-4660e17967f4" label="less" symbol="0"/>
+        <state id="c325dd36-2b10-4234-8f16-4660e17967f4" label="less" symbol="0" about="#c325dd36-2b10-4234-8f16-4660e17967f4">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="AMAO:0000146"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573">
+                    <phen:qualifier relation="increased_in_magnitude_relative_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000119"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="inheres_in">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="AMAO:0000146"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="f57e4ef4-327c-4793-955d-5d69f15a3dc9" label="more" symbol="1"/>
       </states>
       <states id="0ab1bd41-bc0c-48cf-be91-6e79caf43d49">
@@ -316,31 +340,214 @@
         <state id="a68bcd09-dd32-471b-8b36-1f411654892d" label="present" symbol="1"/>
       </states>
       <states id="67a04aba-9a78-4cc6-a155-8bd299cf2754">
-        <state id="d402b49a-8cf1-48a0-aef7-f37269706c48" label="less than 3 times" symbol="0"/>
-        <state id="6c9b4387-0dd7-4e1c-9b59-1a9be78866eb" label="more than 3 times" symbol="1"/>
+        <state id="d402b49a-8cf1-48a0-aef7-f37269706c48" label="less than 3 times" symbol="0" about="#d402b49a-8cf1-48a0-aef7-f37269706c48">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>less than 3 times</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0005001"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                  <phen:related_entity>
+                    <phen:typeref about="PATO:0000921">
+                      <phen:qualifier relation="inheres_in">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="BSPO:0000078">
+                            <phen:qualifier relation="OBO_REL:part_of">
+                              <phen:holds_in_relation_to>
+                                <phen:typeref about="VAO:0005001"/>
+                              </phen:holds_in_relation_to>
+                            </phen:qualifier>
+                          </phen:typeref>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="6c9b4387-0dd7-4e1c-9b59-1a9be78866eb" label="more than 3 times" symbol="1" about="#6c9b4387-0dd7-4e1c-9b59-1a9be78866eb">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>More than 3 times bigger.</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0005001"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                  <phen:related_entity>
+                    <phen:typeref about="PATO:0000921">
+                      <phen:qualifier relation="inheres_in">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="BSPO:0000078">
+                            <phen:qualifier relation="OBO_REL:part_of">
+                              <phen:holds_in_relation_to>
+                                <phen:typeref about="VAO:0005001"/>
+                              </phen:holds_in_relation_to>
+                            </phen:qualifier>
+                          </phen:typeref>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="e98dd172-5026-4768-b91b-7b88ae475098">
-        <state id="d01c0b33-2522-4db0-afae-20eb6f3bd824" label="30% or less" symbol="0"/>
+        <state id="d01c0b33-2522-4db0-afae-20eb6f3bd824" label="30% or less" symbol="0" about="#d01c0b33-2522-4db0-afae-20eb6f3bd824">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>30% or less</phen:description>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                  <phen:related_entity>
+                    <phen:typeref about="VAO:0005034"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="86a61139-b776-4dcf-ba83-c54f95085e25" label="35-44%" symbol="1"/>
         <state id="68144209-5231-495e-84fc-d8f519f66bcb" label="45% or more" symbol="2"/>
       </states>
       <states id="ed91eb2e-21c3-4625-b886-2606ef58aa46">
-        <state id="ec23d2eb-77a3-472f-bcfa-d64166ba6e21" label="20-30%" symbol="0"/>
+        <state id="ec23d2eb-77a3-472f-bcfa-d64166ba6e21" label="20-30%" symbol="0" about="#ec23d2eb-77a3-472f-bcfa-d64166ba6e21">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>20-30%</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0005020"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                  <phen:related_entity>
+                    <phen:typeref about="CARO:0000041"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="5c900081-27b0-43d8-b308-4aab296f1ecf" label="approximately 40%" symbol="1"/>
         <state id="d9d147ea-4bc0-464d-8434-c045a5eb6e5e" label="50-70%" symbol="2"/>
       </states>
       <states id="185935d7-5217-4657-8b6c-f3e30a62ca9a">
-        <state id="2435406d-0582-4f83-bcab-840ab41c914e" label="digit III, metacarpal 3 " symbol="0"/>
-        <state id="d6047b44-cac7-4715-ab8a-6446fd4c1765" label="digit II, metacarpal 2" symbol="1"/>
+        <state id="2435406d-0582-4f83-bcab-840ab41c914e" label="digit III, metacarpal 3 " symbol="0" about="#2435406d-0582-4f83-bcab-840ab41c914e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="AMAO:0000081"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="d6047b44-cac7-4715-ab8a-6446fd4c1765" label="digit II, metacarpal 2" symbol="1" about="#d6047b44-cac7-4715-ab8a-6446fd4c1765">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="AMAO:0000081"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="f336274d-f54b-4f90-9a48-359d3580e8c4">
-        <state id="b11ea382-c305-4212-9445-edf622733e31" label="present" symbol="0"/>
-        <state id="8e75a417-76bd-4930-9398-5b8e752e9e04" label="absent" symbol="1"/>
-        <state id="5f9c60ad-17ac-465e-b3f2-eee6d19175c6" label="" symbol="2"/>
+        <state id="b11ea382-c305-4212-9445-edf622733e31" label="present" symbol="0" about="#b11ea382-c305-4212-9445-edf622733e31">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="AMAO:0000081"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="8e75a417-76bd-4930-9398-5b8e752e9e04" label="absent" symbol="1" about="#8e75a417-76bd-4930-9398-5b8e752e9e04">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description/>
+                <phen:bearer>
+                  <phen:typeref about="AMAO:0000081"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="07b4c736-161e-4052-9911-cddc3834c436">
-        <state id="dc91eb3d-ec72-4d14-9a88-cacc117e7d0c" label="absent" symbol="0"/>
-        <state id="6cd49b08-1fdf-4415-91d0-8fd8f630b6ac" label="present" symbol="1"/>
+        <state id="dc91eb3d-ec72-4d14-9a88-cacc117e7d0c" label="absent" symbol="0" about="#dc91eb3d-ec72-4d14-9a88-cacc117e7d0c">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000074"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000407"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="6cd49b08-1fdf-4415-91d0-8fd8f630b6ac" label="present" symbol="1" about="#6cd49b08-1fdf-4415-91d0-8fd8f630b6ac">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000074"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000407"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="8224349b-107e-4682-b008-30bde88d89b6">
         <state id="0afa1004-20ed-4c7e-915e-1dfb55310f0e" label="absent" symbol="0"/>
@@ -370,16 +577,54 @@
         <state id="67ca9a77-d6f4-4b40-ac7d-314d960ea4b0" label="semicircular" symbol="3"/>
       </states>
       <states id="8875fedc-d8f1-44bb-9cb8-51eda4eaef9a">
-        <state id="4d040ef3-5aed-48e7-959e-9bcb2aa99003" label="posterior" symbol="0"/>
+        <state id="4d040ef3-5aed-48e7-959e-9bcb2aa99003" label="posterior" symbol="0" about="#4d040ef3-5aed-48e7-959e-9bcb2aa99003">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000078"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="1f030bea-3736-4045-9a85-53e947c671e0" label="anterior" symbol="1"/>
         <state id="ec3923c7-3a66-4787-b604-06b4fd81f1fc" label="" symbol="2"/>
       </states>
       <states id="337ae1b5-1d48-4e45-8a0f-ba05a274ad9c">
-        <state id="c0f5d955-15ad-42be-85b7-8d6f35bbaa36" label="absent" symbol="0"/>
+        <state id="c0f5d955-15ad-42be-85b7-8d6f35bbaa36" label="absent" symbol="0" about="#c0f5d955-15ad-42be-85b7-8d6f35bbaa36">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="e7b09268-8b93-4904-861c-1525f18ec8da" label="present" symbol="1"/>
       </states>
       <states id="ceccf74a-3740-447b-b346-b11c9157619f">
-        <state id="e49e00b1-c32f-4679-a3f5-f3509d9e086e" label="ventrally directed" symbol="0"/>
+        <state id="e49e00b1-c32f-4679-a3f5-f3509d9e086e" label="ventrally directed" symbol="0" about="#e49e00b1-c32f-4679-a3f5-f3509d9e086e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000010">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="VAO:0000180"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="AMAO:0000135"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001659"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="91b2af43-2ddf-4605-9326-ce995ad10e58" label="ventrolaterally directed" symbol="1"/>
         <state id="dad4c5fc-56f4-4b7e-aadd-5fb62d0abcfa" label="" symbol="2"/>
       </states>
@@ -409,7 +654,6 @@
         <state id="1af15713-a2cc-4d84-9263-9bb18092f34f" label="shallow groove or absent" symbol="1"/>
         <state id="b80911cc-07e2-4666-85e4-b060ce838ae5" label="arched ventrally-opening ovate or parallel-sided depression " symbol="2"/>
         <state id="080fd287-ff0a-4aea-965e-c3aac3919b9b" label="arched ventrally-opening posteriorly-expanding to a width approximately 50% of its length " symbol="3"/>
-        <state id="8f70ace1-930c-48ef-a33a-3932e2b3713c" label="" symbol="X"/>
       </states>
       <states id="4e91e036-ca98-4be0-b7bd-16d4375bba1a">
         <state id="b379c21a-9aa4-4398-9d11-1d8bc23c61f5" label="absent" symbol="0"/>
@@ -429,8 +673,42 @@
         <state id="3a524e69-05fe-41af-a1e4-bfddebb83767" label="present" symbol="1"/>
       </states>
       <states id="42ce32a8-87df-4cff-b10a-3d2cc927404e">
-        <state id="b1ec1360-e0d5-4806-9cc6-734a6316613b" label="subequal" symbol="0"/>
-        <state id="341752e4-6638-436c-950a-e353cda84bb0" label="at least 25% shorter " symbol="1"/>
+        <state id="b1ec1360-e0d5-4806-9cc6-734a6316613b" label="subequal" symbol="0" about="#b1ec1360-e0d5-4806-9cc6-734a6316613b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>subequal</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0005006"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                  <phen:related_entity>
+                    <phen:typeref about="VAO:0005004"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="341752e4-6638-436c-950a-e353cda84bb0" label="at least 25% shorter " symbol="1" about="#341752e4-6638-436c-950a-e353cda84bb0">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>at least 25% shorter</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0005006"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                  <phen:related_entity>
+                    <phen:typeref about="VAO:0005004"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="bcfe8351-1435-4424-8637-53ac3d471aad">
         <state id="88e0753e-efbd-4e7f-8442-728a75ebb17f" label="concave" symbol="0"/>
@@ -438,7 +716,11 @@
         <state id="3d0039c8-562d-4d2c-ae78-43b3d79679b3" label="" symbol="X"/>
       </states>
       <states id="1e89246f-a9ed-41cc-85f1-bcb2988e3ea1">
-        <state id="4b90e1c7-c477-42b3-a795-dba9f26c59b0" label="greater" symbol="0"/>
+        <state id="4b90e1c7-c477-42b3-a795-dba9f26c59b0" label="greater" symbol="0" about="#4b90e1c7-c477-42b3-a795-dba9f26c59b0">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="954a89bd-4fa3-4441-ab7c-eca1323b2314" label="less" symbol="1"/>
         <state id="81561e29-196d-445f-9b4a-3dd5fbff4a5d" label="" symbol="X"/>
       </states>
@@ -640,11 +922,7 @@
         <state id="007226bd-9867-4ed5-aba0-e26b3ed7f28f" label="less than 25% " symbol="1"/>
       </states>
       <states id="8d721069-5a84-4a7e-a0b7-0765aee437ea">
-        <state id="0da5527f-2f35-4487-90fb-5d2af0697a52" label="absent" symbol="0" about="#0da5527f-2f35-4487-90fb-5d2af0697a52">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="0da5527f-2f35-4487-90fb-5d2af0697a52" label="absent" symbol="0" about="#0da5527f-2f35-4487-90fb-5d2af0697a52"/>
         <state id="0e0e2697-b001-4476-befc-b27e84ad98d2" label="present" symbol="1"/>
       </states>
       <char id="010b4017-8753-430a-bdcd-14842a7a10e5" label="Skull length relative to 3 times posterior skull height" states="25db0da4-d64f-4dbd-9e1c-565f26575195"/>
@@ -723,24 +1001,38 @@
       <char id="f1e0953e-595c-4ef9-8c55-09abb0dacff6" label="Metacarpals 1-3, distal end, extensor depressions" states="8224349b-107e-4682-b008-30bde88d89b6"/>
       <char id="8a360faf-2cae-4cfa-9d16-cbb7853c5ba7" label="Metacarpals 4 and 5, mid shaft diameter relative to metacarpal 2 or 3" states="aa6011c6-13a2-4d53-ac6f-eec518322ae6"/>
       <char id="3fe6a78d-1fc9-4078-b54f-cfe95cf1d6a4" label="Manus digit I phalanx 1, rotation of axis through distal condyles" states="d5652fa4-c780-4c2b-88a9-9dd0cb527e7b"/>
-      <char id="05fa083b-6c03-45c8-99b4-80e4392a1012" label="Manus digit I phalanx 1, length relative to metacarpal 1" states="bd2746b9-4564-4ff7-86d3-4196aa34a8ec"/>
-      <char id="a1b0ff1c-7f7a-4d9c-b575-49c956ad29bb" label="Manus digits I-III and penultimate phalanx (digits II, III), length; and ungual (digits I-III), form" states="50df719b-18fa-4e19-b095-68eaee69bfc6"/>
+      <char id="05fa083b-6c03-45c8-99b4-80e4392a1012" label="Manus digit I phalanx 1, length relative to metacarpal 1" states="bd2746b9-4564-4ff7-86d3-4196aa34a8ec" about="#05fa083b-6c03-45c8-99b4-80e4392a1012">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need to add "subequal" and/or "subequal length" to PATO</meta>
+      </char>
+      <char id="a1b0ff1c-7f7a-4d9c-b575-49c956ad29bb" label="Manus digits I-III and penultimate phalanx (digits II, III), length; and ungual (digits I-III), form" states="50df719b-18fa-4e19-b095-68eaee69bfc6" about="#a1b0ff1c-7f7a-4d9c-b575-49c956ad29bb">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need to add "trenchant" to PATO; also, explore how to modify "moderately" qualities</meta>
+      </char>
       <char id="04d02863-dea3-4697-8e53-c0623d40ad73" label="Ilium, preacetabular process, shape" states="7c71c43e-eadd-4276-8f27-793a71ee30e1"/>
       <char id="b23651a0-baef-4bd6-860b-502d5f0f78d0" label="Ilium, preacetabular process, position of distal end relative to the distal end of pubic peduncle" states="8875fedc-d8f1-44bb-9cb8-51eda4eaef9a"/>
       <char id="e935469b-30db-4cc5-819c-8b46686b3181" label="Ilium, preacetabular process, attachment scar" states="337ae1b5-1d48-4e45-8a0f-ba05a274ad9c"/>
-      <char id="a705277f-c3a8-4721-b959-694368edcd8e" label="Ilium, ischial peduncle, axis of process" states="ceccf74a-3740-447b-b346-b11c9157619f"/>
+      <char id="a705277f-c3a8-4721-b959-694368edcd8e" label="Ilium, ischial peduncle, axis of process" states="ceccf74a-3740-447b-b346-b11c9157619f" about="#a705277f-c3a8-4721-b959-694368edcd8e">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need to add "ventrolaterally directed" and "ventrally directed" to PATO.</meta>
+      </char>
       <char id="993cdd4d-32cd-4b51-9324-2fb93f69e3db" label="Ilium, ventral acetabular flange" states="2280a2f1-d72e-4834-be21-936b7d5a4728"/>
-      <char id="326027ef-f64b-4d54-96cf-6c87804bcda3" label="Ilium, supraacetabular crest, form" states="c3bebe18-f295-44d4-9738-ac64b8b030f4"/>
+      <char id="326027ef-f64b-4d54-96cf-6c87804bcda3" label="Ilium, supraacetabular crest, form" states="c3bebe18-f295-44d4-9738-ac64b8b030f4" about="#326027ef-f64b-4d54-96cf-6c87804bcda3">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need to add "shelflike", "transversely arched", "pendant", "overhanging"</meta>
+      </char>
       <char id="254da0a0-e37d-4463-ac23-dc519f318fe5" label="Ilium, postacetabular process, posterior margin, shape" states="a9a21212-b4d3-4723-a3b5-58f9fc3c893c"/>
       <char id="d6bea10a-7052-4dc8-89a7-250ddd7bb0b6" label="Ilium, postacetabular process, lateral attachment scar, form" states="9825a9c9-6617-4c8e-93e2-796dd2dd2a67"/>
       <char id="9f008ed8-8709-42e1-8629-1961449d249d" label="Ilium, postacetabular process, brevis fossa" states="ad79efbf-7baf-4ef2-aef4-f99d68ae4c0d"/>
-      <char id="dfc96e63-3a1e-4824-8c0b-e1f51a4897c6" label="Ilium, bevis fossa, shape and orientation" states="c48adb24-7bca-4509-9ffd-0c5406a8511f"/>
+      <char id="dfc96e63-3a1e-4824-8c0b-e1f51a4897c6" label="Ilium, bevis fossa, shape and orientation" states="c48adb24-7bca-4509-9ffd-0c5406a8511f" about="#dfc96e63-3a1e-4824-8c0b-e1f51a4897c6">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need to add "laterally open" and "ventrally open" to PATO</meta>
+      </char>
       <char id="1b3500c7-8eb5-4f32-b49a-3fddb587d827" label="Ischium, obturator process" states="4e91e036-ca98-4be0-b7bd-16d4375bba1a"/>
-      <char id="536a776b-51ff-4a09-bd29-05e3c2f9491d" label="Ischium, mid shaft, cross-sectional shape" states="cfb77ffb-210b-4082-9a26-b063af408ba1"/>
+      <char id="536a776b-51ff-4a09-bd29-05e3c2f9491d" label="Ischium, mid shaft, cross-sectional shape" states="cfb77ffb-210b-4082-9a26-b063af408ba1" about="#536a776b-51ff-4a09-bd29-05e3c2f9491d">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need to sort out "oval" and "elliptical" definitions in PATO</meta>
+      </char>
       <char id="7edffba2-2054-4cb5-aaf1-7e84ae385890" label="Ischium, mid shaft, variation in transverse width" states="2063c068-44c0-4ded-915d-9fe157c43ab4"/>
       <char id="d73cbadc-09a1-4a12-8fc0-54bbb546fe01" label="Ischium, distal end, foot (= anteroposterior expansion)" states="e8225698-fa0c-4413-80bb-73edb8866b76"/>
       <char id="fb8b650e-f7bf-4016-aa9b-ea16498ca23b" label="Ischium, length relative to pubis length" states="42ce32a8-87df-4cff-b10a-3d2cc927404e"/>
-      <char id="70a96d66-fdcd-4168-91d6-20d6ee038091" label="Ischium, antitrochanter, nonarticular acetabular margin" states="bcfe8351-1435-4424-8637-53ac3d471aad"/>
+      <char id="70a96d66-fdcd-4168-91d6-20d6ee038091" label="Ischium, antitrochanter, nonarticular acetabular margin" states="bcfe8351-1435-4424-8637-53ac3d471aad" about="#70a96d66-fdcd-4168-91d6-20d6ee038091">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need to add "nonarticular margin" and "articular margin" to BSPO</meta>
+      </char>
       <char id="fba0c47d-dfe0-4198-b6ef-70bddf11b454" label="Ischium, antitrochanter, anteroposterior length relative to adjacent length of the articular surface for the ilium" states="1e89246f-a9ed-41cc-85f1-bcb2988e3ea1"/>
       <char id="fca2a2a8-bb5f-4f21-b345-108b3bb67b5e" label="Puboischial symphysis (distal ends)" states="f8f3fd3e-e22e-4928-aca5-a69abfe35db6"/>
       <char id="6e29b415-73ba-4013-b596-963e021544d7" label="Puboischial contact below acetabulum (lateral view), depth relative to width of pubic peduncle of ischium" states="38ecaa20-6af3-4d22-9993-ddc6c4f41e01"/>
@@ -748,9 +1040,13 @@
       <char id="34128d72-b89b-4c0b-bf4e-9aee04c67cf7" label="Pubis, shaft axis (lateral view)" states="c8c3edba-f836-4dfc-9181-56db473eb4bd"/>
       <char id="d4908a95-fc6c-4c90-98db-44ef81c4f792" label="Pubis, prepubic process" states="3eca4581-111b-4d60-8b66-fa5c0a44dcaa"/>
       <char id="91469824-a5da-4d34-bb75-057e620c34ed" label="Pubis, obturator opening, form" states="f16bf3bb-758b-4089-ae08-23d239d4e02a"/>
-      <char id="fc222ef4-ea9a-46c5-8509-c06444c1b04e" label="Pubis, shaft, orientation (lateral view)" states="12c3a6df-61f3-4490-bc3b-698a0538bb4a"/>
+      <char id="fc222ef4-ea9a-46c5-8509-c06444c1b04e" label="Pubis, shaft, orientation (lateral view)" states="12c3a6df-61f3-4490-bc3b-698a0538bb4a" about="#fc222ef4-ea9a-46c5-8509-c06444c1b04e">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need to add "anteroventral" and "posteroventral" to BSPO</meta>
+      </char>
       <char id="cdc13831-582d-4d45-a03c-41ad9f906551" label="Pubis, shaft, shape" states="26fd294d-11cc-400d-8ff2-3c4a1f1f488a"/>
-      <char id="55c0bca7-6339-4a62-9bd8-e4867eb19a11" label="Pubis, symphysis, location" states="533bd684-3c9d-4a15-8358-9aba4b6d200e"/>
+      <char id="55c0bca7-6339-4a62-9bd8-e4867eb19a11" label="Pubis, symphysis, location" states="533bd684-3c9d-4a15-8358-9aba4b6d200e" about="#55c0bca7-6339-4a62-9bd8-e4867eb19a11">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need a way to express "along entire structure x".</meta>
+      </char>
       <char id="9b0ac0d1-d5d6-473a-b0b7-2a60f5198418" label="Pubis, distal end of blade, transverse width relative to proximal blade" states="f2ea7103-5bd0-4d56-a4bb-418caa4d1242"/>
       <char id="fc46d063-71f3-4f07-b057-6aa550815caf" label="Pubis, distal end, foot (= distal anteroposterior expansion)" states="e54ed723-e7d4-44aa-bb98-5a581f06a6b2"/>
       <char id="a2c38fff-416b-432a-bc43-ec760881939f" label="Pubis, foot, symphyseal area, location" states="b954fd9f-12b7-4086-9457-d3b076ae28d7"/>
@@ -875,7 +1171,6 @@
         <cell char="254da0a0-e37d-4463-ac23-dc519f318fe5" state="94d83764-b0f5-4485-a057-38b662b9d613"/>
         <cell char="d6bea10a-7052-4dc8-89a7-250ddd7bb0b6" state="35b401c5-fa9a-4662-afa4-653c700fb123"/>
         <cell char="9f008ed8-8709-42e1-8629-1961449d249d" state="3637e441-f9bc-4b34-8cd5-896874174da1"/>
-        <cell char="dfc96e63-3a1e-4824-8c0b-e1f51a4897c6" state="8f70ace1-930c-48ef-a33a-3932e2b3713c"/>
         <cell char="1b3500c7-8eb5-4f32-b49a-3fddb587d827" state="b379c21a-9aa4-4398-9d11-1d8bc23c61f5"/>
         <cell char="536a776b-51ff-4a09-bd29-05e3c2f9491d" state="95a066c7-b90e-4d6b-9ca4-e0034a6ce034"/>
         <cell char="7edffba2-2054-4cb5-aaf1-7e84ae385890" state="10d373de-e914-4ef4-8014-700dfbabf4a3"/>
@@ -939,7 +1234,6 @@
         <cell char="254da0a0-e37d-4463-ac23-dc519f318fe5" state="94d83764-b0f5-4485-a057-38b662b9d613"/>
         <cell char="d6bea10a-7052-4dc8-89a7-250ddd7bb0b6" state="35b401c5-fa9a-4662-afa4-653c700fb123"/>
         <cell char="9f008ed8-8709-42e1-8629-1961449d249d" state="3637e441-f9bc-4b34-8cd5-896874174da1"/>
-        <cell char="dfc96e63-3a1e-4824-8c0b-e1f51a4897c6" state="8f70ace1-930c-48ef-a33a-3932e2b3713c"/>
         <cell char="1b3500c7-8eb5-4f32-b49a-3fddb587d827" state="b379c21a-9aa4-4398-9d11-1d8bc23c61f5"/>
         <cell char="536a776b-51ff-4a09-bd29-05e3c2f9491d" state="95a066c7-b90e-4d6b-9ca4-e0034a6ce034"/>
         <cell char="7edffba2-2054-4cb5-aaf1-7e84ae385890" state="10d373de-e914-4ef4-8014-700dfbabf4a3"/>
@@ -1032,7 +1326,6 @@
         <cell char="254da0a0-e37d-4463-ac23-dc519f318fe5" state="94d83764-b0f5-4485-a057-38b662b9d613"/>
         <cell char="d6bea10a-7052-4dc8-89a7-250ddd7bb0b6" state="35b401c5-fa9a-4662-afa4-653c700fb123"/>
         <cell char="9f008ed8-8709-42e1-8629-1961449d249d" state="3637e441-f9bc-4b34-8cd5-896874174da1"/>
-        <cell char="dfc96e63-3a1e-4824-8c0b-e1f51a4897c6" state="8f70ace1-930c-48ef-a33a-3932e2b3713c"/>
         <cell char="1b3500c7-8eb5-4f32-b49a-3fddb587d827" state="b379c21a-9aa4-4398-9d11-1d8bc23c61f5"/>
         <cell char="536a776b-51ff-4a09-bd29-05e3c2f9491d" state="95a066c7-b90e-4d6b-9ca4-e0034a6ce034"/>
         <cell char="7edffba2-2054-4cb5-aaf1-7e84ae385890" state="10d373de-e914-4ef4-8014-700dfbabf4a3"/>
@@ -1959,7 +2252,6 @@
         <cell char="221c66b4-3b1f-43f8-8086-8a3abfa8ad2a" state="d402b49a-8cf1-48a0-aef7-f37269706c48"/>
         <cell char="3a87b89b-3a2e-44dd-bdfc-6b9a47b652fe" state="d01c0b33-2522-4db0-afae-20eb6f3bd824"/>
         <cell char="96f665e1-cadc-46c5-a7ee-75d4dff25c5a" state="ec23d2eb-77a3-472f-bcfa-d64166ba6e21"/>
-        <cell char="f63dd32b-d0bd-4b4d-9a78-4f5df27f7634" state="5f9c60ad-17ac-465e-b3f2-eee6d19175c6"/>
         <cell char="20054be1-7e12-491a-90f5-8e22a1a85836" state="6cd49b08-1fdf-4415-91d0-8fd8f630b6ac"/>
         <cell char="f1e0953e-595c-4ef9-8c55-09abb0dacff6" state="0afa1004-20ed-4c7e-915e-1dfb55310f0e"/>
         <cell char="8a360faf-2cae-4cfa-9d16-cbb7853c5ba7" state="4288594b-6d8b-4334-bcdc-a23c428f2c91"/>
