@@ -1,6 +1,6 @@
 Phenex-files Read Me
 --------------------
-Phenex-files contains the work-in-progress NEXml data files created byPhenoscape to record evolutionary phenotypes using ontologies.PhenoscapeKB's data policy is given below. For more information, visitwww.phenoscape.org, or contact Wasila Dahdul (wasila.dahdul@usd.edu).
+Phenex-files contains the work-in-progress NeXML data files created byPhenoscape to record evolutionary phenotypes using ontologies.PhenoscapeKB's data policy is given below. For more information, visitwww.phenoscape.org, or contact Wasila Dahdul (wasila.dahdul@usd.edu).
 
 
 PhenoscapeKB Data Policy version 5.12.09
