@@ -1115,6 +1115,9 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000651"/>
+                  <phen:related_entity>
+                    <phen:typeref about="VAO:0005031"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1362,7 +1365,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="VAO:0000157"/>
+                  <phen:typeref about="PATO:0002240"/>
                 </phen:bearer>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1371,8 +1374,40 @@
         <state id="b55758cd-8e78-4905-9b4a-415abf037542" label="present" symbol="1"/>
       </states>
       <states id="70766495-b97a-4e34-97a1-d70fd9635f05">
-        <state id="373b3352-97b9-4355-b4ce-330e78233625" label="in the about the same plane as ventral edge of the scapula" symbol="0"/>
-        <state id="d42b0562-9763-49b6-bf6e-53acca463bb7" label="distinctly raised above the ventral edge of the scapula" symbol="1"/>
+        <state id="373b3352-97b9-4355-b4ce-330e78233625" label="in the about the same plane as ventral edge of the scapula" symbol="0" about="#373b3352-97b9-4355-b4ce-330e78233625">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0005067"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="d42b0562-9763-49b6-bf6e-53acca463bb7" label="distinctly raised above the ventral edge of the scapula" symbol="1" about="#d42b0562-9763-49b6-bf6e-53acca463bb7">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0005067"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001369"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000084">
+                      <phen:qualifier relation="OBO_REL:part_of">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="VAO:0000157"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="76ddd54d-db16-478d-abc9-db2588932f16">
         <state id="d4fdce39-5b66-47a6-9742-75a5fa8f5434" label="distinct notch between the two elements" symbol="0" about="#d4fdce39-5b66-47a6-9742-75a5fa8f5434">
@@ -1418,11 +1453,38 @@
         </state>
       </states>
       <states id="3e082511-c54e-4b07-980e-2ea88aabfff3">
-        <state id="8607619d-d51d-4b1b-b640-89c7fc17e47d" label="subcircular in lateral view " symbol="0"/>
-        <state id="23889ac6-8b1d-4d82-9f15-68d1a94e0072" label="with post-glenoid process (notch ventral to glenoid)" symbol="1"/>
+        <state id="8607619d-d51d-4b1b-b640-89c7fc17e47d" label="subcircular in lateral view " symbol="0" about="#8607619d-d51d-4b1b-b640-89c7fc17e47d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0000158"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002091"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="23889ac6-8b1d-4d82-9f15-68d1a94e0072" label="with post-glenoid process (notch ventral to glenoid)" symbol="1" about="#23889ac6-8b1d-4d82-9f15-68d1a94e0072">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0000158"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="403305dd-d33b-4858-b168-e28462dc4c41">
-        <state id="e70038d4-b029-45e0-9f83-ac0febcf619b" label="short" symbol="0"/>
+        <state id="e70038d4-b029-45e0-9f83-ac0febcf619b" label="short" symbol="0" about="#e70038d4-b029-45e0-9f83-ac0febcf619b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="8e09cc75-bb8b-41a0-bcf9-dba58fc64fe3" label="elongate and expanded posteriorly only" symbol="1"/>
         <state id="11c62768-55c5-453b-8a4c-b467ff40f68c" label="elongate  and expanded posteriorly and anteriorly" symbol="2"/>
         <state id="b46961cd-63f4-4d25-920b-fc5195b124f5" label="" symbol="-"/>
@@ -1471,8 +1533,47 @@
         <state id="cc6edd0b-3036-46a6-b2c7-76b16e0aa01e" label="" symbol="-"/>
       </states>
       <states id="4196883e-414e-4a8c-a3d2-c8402ec0abcc">
-        <state id="e30e57d9-3227-4430-8605-435366d169dd" label="smooth " symbol="0"/>
-        <state id="149a7b8c-3b65-4ebd-aded-544e8eeb646a" label="possesses a &quot;swollen&quot; tuber" symbol="1"/>
+        <state id="e30e57d9-3227-4430-8605-435366d169dd" label="smooth " symbol="0" about="#e30e57d9-3227-4430-8605-435366d169dd">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000035">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="VAO:0000158"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000701"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="149a7b8c-3b65-4ebd-aded-544e8eeb646a" label="possesses a &quot;swollen&quot; tuber" symbol="1" about="#149a7b8c-3b65-4ebd-aded-544e8eeb646a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>possesses a 'swollen' tuber</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000035">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="VAO:0000158"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001851"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="c88fb929-dced-48ab-8870-8ff0c8cc7a2e" label="" symbol="-"/>
       </states>
       <states id="d8da303e-a75d-41fb-9662-6294a328caa6">
@@ -1485,7 +1586,7 @@
                   <phen:typeref about="BSPO:0000671">
                     <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="AMAO:0000107"/>
+                        <phen:typeref about="VAO:0000158"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -1505,7 +1606,7 @@
                   <phen:typeref about="BSPO:0000671">
                     <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="AMAO:0000107"/>
+                        <phen:typeref about="VAO:0000158"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -1519,8 +1620,22 @@
         </state>
       </states>
       <states id="8bd2dcdb-15ec-4486-b573-6176e9d56c48">
-        <state id="e553da13-7e91-4496-8516-8079c090c604" label="posterolaterally " symbol="0"/>
-        <state id="b6d186e9-77e2-4eb6-8245-596d462fb2ab" label="directed posteroventrally" symbol="1"/>
+        <state id="e553da13-7e91-4496-8516-8079c090c604" label="posterolaterally " symbol="0" about="#e553da13-7e91-4496-8516-8079c090c604">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0005034"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="b6d186e9-77e2-4eb6-8245-596d462fb2ab" label="directed posteroventrally" symbol="1" about="#b6d186e9-77e2-4eb6-8245-596d462fb2ab">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
       </states>
       <states id="fb7e1466-57d2-4cc8-b9e2-95d786c0e7f3">
         <state id="45a1b285-4668-4a50-a869-5bfa7a33ac48" label="absent " symbol="0" about="#45a1b285-4668-4a50-a869-5bfa7a33ac48">
@@ -1577,7 +1692,17 @@
         </state>
       </states>
       <states id="a561258f-1553-429e-aef9-6db752b20ecb">
-        <state id="4a7ef175-c881-4d7a-8e9a-e3436d0f6460" label="absent " symbol="0"/>
+        <state id="4a7ef175-c881-4d7a-8e9a-e3436d0f6460" label="absent " symbol="0" about="#4a7ef175-c881-4d7a-8e9a-e3436d0f6460">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="VAO:0000158"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="24d45aa4-705c-4a09-a342-68f8bfb11a4a" label="present" symbol="1"/>
       </states>
       <states id="dc8b3c59-235c-432d-a291-a09d48ccaa7a">
