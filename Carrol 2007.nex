@@ -1,0 +1,180 @@
+#NEXUS
+[written Sat Jul 14 12:04:50 CDT 2012 by Mesquite  version 2.74 (build 550) at alex-PC/132.216.227.110]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=23;
+	TAXLABELS
+		Acanthostega Whatcheeridae Crassigyrinus Anthracosauroidea Baphetidae Caerorhachis Colosteidae Basal_temnospondyls Branchiosauridae Amphibamidae Rhynchonkos Acherontiscus Aïstopoda Adelospondyli Lysorophia Microsauria Nectridea Early_amniotes Albanerpetontidae Urodela Triadobatrachidae Anura Caecilia 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=118;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Acanthostega         000000000000000000100000100000000001000000000?0000000000000000000000000000000000000000000000000000000000000000??0????0
+	Whatcheeridae        000210111100000000200010001000000011001?????1?0000010120100?110001?000001000011100????0001000011001000011???11???????0
+	Crassigyrinus        00030011111000000130001000000000???0??11????1?0010?2?100000?120027?00000000000110?????1101?0?011112100012????????????1
+	Anthracosauroidea    020310111000000001310010201100000110002100001?0121011100100102000200001110000111011?110001100011211010010010121???00?0
+	Baphetidae           101?200?12000000013000100010000000100020?0?02?0?20???100?00?11000??000001000011100????100100?????12000011???13?????0?0
+	Caerorhachis         1002100??000?0000230001000100000??????????????0121011101100?1?00???0??????????110?????000100?0113?210101?0101????????0
+	Colosteidae          0311000210001000013000110010000000110121100030022101010010001100030000002000011100??12100110101131211001301013?0?????0
+	Basal_temnospondyls  102?20011000200002301010001100000010122111004000?0?1110010001200010010111002111101212310111010113111??01201014100000?0
+	Branchiosauridae     222121012000210102401010411100000?101?211100420000?001???0001200??0020113?12111101??231111?0?0114021??010??01411001001
+	Amphibamidae         12212021?00020000240101041110000001012311100110520?111??10041200020020223112111101212311111010115021?10121?01410?000?0
+	Rhynchonkos          24310201101010000251001050111000111212312202??0123112121101?1401???02012311211110?3124101110?0116121110120201????????0
+	Acherontiscus        243?0103?01?100001????13?0?????0????????????5?01?2?122???026140027203233422322222292382232223233{0 1}2323223435338???????1
+	Aïstopoda            143?110?30101000124000107011210000000240?3101?04231123111026120027203233422322222292382232223233{0 1}23232234353382??201?1
+	Adelospondyli        1??1010?40100000026200109011?0000013??51????6?04220123201026120027203233422322222292382232223233{0 1}23232234353382??201?1
+	Lysorophia           243332245311100122710110601131001010126112107?0331112320000412000??020?03112101101??25111????000712111???0?0152??201?1
+	Microsauria          233?21011000100002510010301100001011123122028?002311212110011200020010?2111211110141241001101011311000013020162??200?0
+	Nectridea            134?210410001000024100105011210000101231????1?0523112321100212000??000?01?0011110141161011102011211000012??0172??201?0
+	Early_amniotes       132221016000100002410012{0 1}01111001012027112009?00231121101012120002002022100111110151110011101011812110012230163322?110
+	Albanerpetontidae    22322225730110002282??10?011320001032032????1?0023112321110314111??0202231121111016127101110?011?121??01201011???????0
+	Urodela              2341222183011101229211108111231001132131141142152311232110041411040121223112111101712711111020119121100120211411001001
+	Triadobatrachidae    134?312?9300200022{0 1}2111????1???101?3223?111???2523112?2110051201051021223112111101?1??11211021226021?10121????2?1????0
+	Anura                113?32269301201022{0 1}2111081113411011322311111{0 1}?262311232110051301151221223112111111812311211121226131011231421412112010
+	Caecilia             24410106{0 1}011110102{1 2}1001051113500010331322201{1 2}?022311212110141411060020213002111101???????????1016121?10120??2?1?003??0
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  118;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  118;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1342285490907;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 709697096833757992;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4713002198200376122;
+			mqVersion 274;
+			checksumv 0 2 678045826 null  getNumChars 118 numChars 118 getNumTaxa 23 numTaxa 23   short true   bits 2305843009213694975   states 1023   sumSquaresStatesOnly 3581594.0 sumSquares -5.534023222112518E19   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 239;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 500;
+			setLocation 8 8;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4713002198200376122 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 461 433;
+					setLocation 8 8;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
