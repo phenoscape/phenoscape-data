@@ -1,0 +1,254 @@
+#NEXUS
+[written Mon Oct 24 15:31:37 EDT 2011 by Mesquite  version 2.74 (build 550) at Ben-Frables-MacBook-Pro.local/10.0.1.8]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=11;
+	TAXLABELS
+		Chondrichthyes Osteichthyes Placodermi acanthothoracids rhenanids Antiarchs Arthrodires phyllolepids quasipetalichthyids petalichthyids ptyctodontids 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=16;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1";
+	CHARSTATELABELS 
+		1 'a third horizontal semicircular canal in the labyrinth adding to the two vertical^nones present in agnathans', 2 'two pairs of paired fins - pectoral and pelvic - articulating on endoskelctal^ngirdles.', 3 'an exoskeletal shoulder-girdle forming a rigid ring encircling the trunk, and articulating with the skull through a paired dermal neckjoint', 4 a_distinctive_pattern_of_dermal_bones_in_the_skull_roof_and_cheek_cover, 5 simple_jaws_with_only_two_or_three_pairs_of_bony_tooth_plates, 6 'a special type of opercular suspension with a large dermal submarginal plate connected directly to the braincase via a hyoidian cartilage {Goujet 1975; 1984)', 7 'a special hard tissue, semidentine, in the dermal bones', 8 The_presence_of_a_clasper_on_the_male_pelvic_fin, 9 'The presence of an eye-stalk in the orbit showing the same position relative to the eye muscles (Figure 13.1) and the presence of processes for muscle attachment on the ossified eye capsule.', 10 Loss_of_occipital_and_ventral_fissures_in_the_neurocranium._, 11 Extensive_subocular_shelf, 12 Internal_rectus_eye_muscle_inserting_in_a_posterior_position_in_the_orbit, 13 superior_and_inferior_oblique_eye_muscle_with_an_anterior_insertion_in_the_orbit, 14 'fusion of nasal capsule to the rest of the chondrocranium (incomplete in chondrichthyans if the precerebral fontanel is considered as a remnant of the ethmoidian fissure present in placoderms)', 15 'presence ofa dental lamina (Schaeffer 1975)', 16 postorbital_connection_between_palatoquadrate_and_neurocranium ; 
+	MATRIX
+	Chondrichthyes       11?????11??11111
+	Osteichthyes         11??????1??11111
+	Placodermi           1111111?1??11111
+	acanthothoracids     1111111?1??11111
+	rhenanids            1111111?1??11111
+	Antiarchs            1111111?1??11111
+	Arthrodires          1111111?1??11111
+	phyllolepids         1111111?1??11111
+	quasipetalichthyids  1111111?1??11111
+	petalichthyids       1111111?1??11111
+	ptyctodontids        1111111????11111
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  16;
+
+END;
+
+BEGIN NOTES;
+
+	SU  C = 8 N = color I = 5;
+	SU  T = 1 C = 8 N = color I = 5;
+	SU  T = 2 C = 8 N = color I = 5;
+	SU  T = 3 C = 8 N = color I = 5;
+	SU  T = 4 C = 8 N = color I = 5;
+	SU  T = 5 C = 8 N = color I = 5;
+	SU  T = 6 C = 8 N = color I = 5;
+	SU  T = 7 C = 8 N = color I = 5;
+	SU  T = 8 C = 8 N = color I = 5;
+	SU  T = 9 C = 8 N = color I = 5;
+	SU  T = 10 C = 8 N = color I = 5;
+	SU  T = 11 C = 8 N = color I = 5;
+
+	SU  C = 9 N = color I = 5;
+	SU  T = 1 C = 9 N = color I = 5;
+	SU  T = 2 C = 9 N = color I = 5;
+	SU  T = 3 C = 9 N = color I = 5;
+	SU  T = 4 C = 9 N = color I = 5;
+	SU  T = 5 C = 9 N = color I = 5;
+	SU  T = 6 C = 9 N = color I = 5;
+	SU  T = 7 C = 9 N = color I = 5;
+	SU  T = 8 C = 9 N = color I = 5;
+	SU  T = 9 C = 9 N = color I = 5;
+	SU  T = 10 C = 9 N = color I = 5;
+	SU  T = 11 C = 9 N = color I = 5;
+
+	SU  C = 10 N = color I = 5;
+	SU  T = 1 C = 10 N = color I = 5;
+	SU  T = 2 C = 10 N = color I = 5;
+	SU  T = 3 C = 10 N = color I = 5;
+	SU  T = 4 C = 10 N = color I = 5;
+	SU  T = 5 C = 10 N = color I = 5;
+	SU  T = 6 C = 10 N = color I = 5;
+	SU  T = 7 C = 10 N = color I = 5;
+	SU  T = 8 C = 10 N = color I = 5;
+	SU  T = 9 C = 10 N = color I = 5;
+	SU  T = 10 C = 10 N = color I = 5;
+	SU  T = 11 C = 10 N = color I = 5;
+
+	SU  C = 11 N = color I = 5;
+	SU  T = 1 C = 11 N = color I = 5;
+	SU  T = 2 C = 11 N = color I = 5;
+	SU  T = 3 C = 11 N = color I = 5;
+	SU  T = 4 C = 11 N = color I = 5;
+	SU  T = 5 C = 11 N = color I = 5;
+	SU  T = 6 C = 11 N = color I = 5;
+	SU  T = 7 C = 11 N = color I = 5;
+	SU  T = 8 C = 11 N = color I = 5;
+	SU  T = 9 C = 11 N = color I = 5;
+	SU  T = 10 C = 11 N = color I = 5;
+	SU  T = 11 C = 11 N = color I = 5;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  16;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1319484697478;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3275443891195814476;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 390144836525902783;
+			mqVersion 274;
+			checksumv 0 2 1620371954 null  getNumChars 16 numChars 16 getNumTaxa 11 numTaxa 11   short true   bits 2   states 2   sumSquaresStatesOnly 532.0 sumSquares 532.0   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1920 1066;
+			setLocation 0 44;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #390144836525902783 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1820 999;
+					setLocation 0 44;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Dark Gray;
+					removeColor on;
+				endTell;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 1130;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1820 999;
+						setLocation 0 44;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

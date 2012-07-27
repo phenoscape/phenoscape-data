@@ -1,0 +1,241 @@
+#NEXUS
+[written Mon Jul 23 11:40:54 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.64.56]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=18;
+	TAXLABELS
+		Bombina_orientalis Bombina_igneus Eopelobates Pelobates_cultripes Macropelobates_osborni Scaphiopus_couchii Scaphiopus_holbrookii _Scaphiopus_Hurterii Spea_bombifrons Spea_intermontana Spea_multiplicata Spea_hammondii Spea_neuter Elkobatachus Leptobrachium_hasselti Leptobrachium_montanum Scutiger_mammatus Pelodytes_punctatus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=37;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B";
+	CHARSTATELABELS 
+		1 Sculpturing_on_dermal_skull_roof /  absent present, 2 Frontoparietal_comprised_ /  two_ossifications three_ossifications, 3 Supraorbital_flange_of_frontoparietal /  absent present, 4 Frontoparietal_fontanelle_exposed /  exposed_dorsally not_exposed_dorsally, 5 Frontoparietal_boss /  absent present, 6 Posterolateral_process_of_frontoparietal /  absent present, 7 Contact_between_frontoparietal_and_nasal /  absent present, 8 Medial_contact_between_nasals /  present absent, 9 Posterior_divergence_of_nasals_ /  present absent, 10 Nasal_crescent /  'cresent-shaped' 'rod-like', 11 Lingual_process_of_premaxilla /  abuts_maxilla overlaps_maxilla, 12 Ventral_margin_of_maxilla_ /  extends_beyond_midlength_of_orbit reaches_approximately_the_midlength_of_orbit, 13 Pterygoid_process_of_maxilla /  present absent, 14 'Squamosal-maxilla articulation' /  absent present, 15 Quadratojugal /  present absent, 16 Zygomatic_ramus_of_squamosal /  long short absent, 17 Otic_ramus_of_squamosal /  absent present, 18 Parasphenoid_posteromedial_process_ /  posteriorly_directed_apex distally_rounded distally_rectangular concave_distal_margin, 19 Vomer /  does_not_contact_inner_surface_of_pars_facialis_of_maxilla contacts_inner_surface_of_pars_facialis_maxilla, 20 Postchoanal_ramus /  short present_and_elongate absent, 21 Occipital_canal /  open covered_and_exits_laterally covered_and_exits_dorsally, 22 Septum_nasi_at_anterior_terminus /  narrow_vertical_bar laterally_expanded_plate, 23 Prootic_foramen /  broadly_emarginated narrowly_emarginated, 24 Neural_arch_of_presacral_vertebrae /  imbricate nonimbricate, 25 Transverse_processes_of_seventh_and_eighth_vertebrae_oriented /  strongly_anteriorly moderately_anteriorly, 26 Sacral_diapophyses_ /  broadly_expanded expanded, 27 Lateral_margins_of_sacral_diapophyses /  convex straight, 28 Sacral_vertebra_and_urostyle /  unfused fused, 29 Anterior_lamina_of_scapula /  present_ absent, 30 Clavicle_ /  overlaps_scapula_anteriorly abuts_ventral_edge_of_scapula, 31 Sternum /  cartilaginous ossified, 32 Medial_end_of_coracoid /  narrow expanded, 33 Notch_in_dorsal_rim_of_coracoid /  absent present, 34 Ischium_ /  'long with sub-rectangular outline' short_with_convex_distal_margin, 35 Humeral_shaft /  straight ventrally_bowed, 36 Distal_prehallux_bone /  not_modified_into_a_spade modified_into_a_spade, 37 'Shape of spade, when present' /  scaphoid cuneiform ; 
+	MATRIX
+	Bombina_orientalis      000000000000000000000?00000000000000?
+	Bombina_igneus          000000000000000000000?00000000000000?
+	Eopelobates             1111011010?0?1001B?2???0001?01110010?
+	Pelobates_cultripes     111101101010010011A2200000100111A1110
+	Macropelobates_osborni  111101???0????0?1???2??01010011100110
+	Scaphiopus_couchii      1011011010010110111120001101110001110
+	Scaphiopus_holbrookii   1011011010000110111120001101110001110
+	_Scaphiopus_Hurterii    1011011010000110111120001101110001110
+	Spea_bombifrons         0000110100111011011111101101110011111
+	Spea_intermontana       0000110100111012011111101101110011111
+	Spea_multiplicata       0000011100111011011110101101110011111
+	Spea_hammondii          0000011100111012011110101101110011111
+	Spea_neuter             1000011??0?110110??1111011??11?011?11
+	Elkobatachus            000001??10???????3??1??01100101??1110
+	Leptobrachium_hasselti  000100011110100102021001001011110000?
+	Leptobrachium_montanum  000100011110100102021001001011110000?
+	Scutiger_mammatus       000100010111101102001011001011110000?
+	Pelodytes_punctatus     0000000100101001020000?1000000100000?
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  37;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  37;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1343061654506;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2766838229353933843;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8317059275310719498;
+			mqVersion 275;
+			checksumv 0 3 3085235675 null  getNumChars 37 numChars 37 getNumTaxa 18 numTaxa 18   short false   bits 3087   states 3087   sumSquaresStatesOnly 6293184.0 sumSquares 6293184.0 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1272 632;
+			setLocation 623 36;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8317059275310719498 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 112;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1172 565;
+					setLocation 623 36;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1172 565;
+						setLocation 623 36;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #8317059275310719498 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.stochchar.CharListProbModels.CharListProbModels;
+					getTable;
+					tell It;
+						rowNamesWidth 376;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1172 565;
+					setLocation 623 36;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

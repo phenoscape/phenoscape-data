@@ -1,0 +1,230 @@
+#NEXUS
+[written Thu Jan 19 15:40:53 EST 2012 by Mesquite  version 2.74 (build 550) at wl-10-180-83-88.wireless.duke.local/10.180.83.88]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=42;
+	TAXLABELS
+		Ascaphus_truei Leiopelma_hochstetteri Alytes_obstetricans Barbourula_busuangensis Bombina_orientalis B._maxima B._bombina B._variegata Discoglossus_pictus Rhinophrynus_dorsalis Xenopus_borealis X._clivii X._epitropicalis X._fraseri X._laevis X._muelleri X._tropicalis X._wittei Hymenochirus_boettgeri Pipa_carvalhoi P._arrabali P._myersi P._parva P._pipa P._snethlageae Leptobrachium_hasseltii Megophrys_aceras M._montana Pelobates_cultripes P._syriacus P._varaldii P._fuscus Scaphiopus_bombifrons S._hammondii S._intermontanus S._multiplicatus S._couchii S._holbrookii S._hurterii Pelodytes_punctatus Limnodynastes_peronii Hyla_lanciformis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=181;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 'ABDOMLL - Pattern of lateral line organs (wben present) on the abdomen and ventral surfaces of the legs' /  absent present_in_one_row present_in_two_rows_ present_in_a_scattered_arrangement_, 2 'ACCARTC - Presence/absence of accessory articulations between the vertebrae.' /  absent present, 3 'ADDLONG - Presence/absence of the adductor longus muscle' /  absent present, 4 'ADDMAGN - Presence/absence of an accessory head of the adductor magnus' /  absent present, 5 'ALAEPS - Presence/absence of lateral alae of the parasphenoid' /  present absent, 6 'ALARYPMX - Alary process of the premaxilla' /  vertical_and_distinct_from_pars_facialis not_distinct_from_pars_facialis, 7 'ALHYOID1 - Presence/absence of alary process of hyoid' /  absent present, 8 'ALHYOID2 - Base of alary process of hyoid' /  narrow wide_, 9 'ALHYOID3 - Fusion of alary process to hyale' /  not_fused_to_hyale_ 'fused to hyale, forming a foramen for the hypoglossal nerve', 10 'ANALGLND - Presence/absence of cloacal glands' /  absent present, 11 'ANGLECLV - Angle formed by clavicle and midsternal line' /  '41-70 degrees' '85-90 degrees ', 12 'ANGLECOR - Orientation of long axis of coracoid to longitudinal axis of body.' /  '62-80 degrees' '53-55 degrees' '33-48 degrees', 13 'ANTALFP - Anterolateral processes of the frontoparietal bone' /  absent 'present, but not reaching maxilla' 'present, reaching maxillae', 14 'ANTALPS - Presence/absence of anterolateral alae of the parasphenoid' /  absent present, 15 'ANTRAMPT - Presence/absence of anterior ramus of the pterygoid ' /  present absent, 16 'ARTTYPE - Type of iliosacral articulation' /  Type_2_iliosacral_articulation Tyle_1_iliosacral_articulation, 17 'ATLASAXS - Condition of vertebrae I and II' /  Vertebrae_I_and_II_not_fused 'Vertebrae I and II fused; large spinal foramen persists' 'Vertebrae I and II fused; spinal foramen greatly reduced or absent', 18 'ATLASMD - Condition of anterior margin of lamina of neural arch of atlas' /  'Margin concave or with slight notch, eY.posing the spinal cord dorsally' 'Margin straight; spinal cord largely concealed in dorsal view' 'Middorsal process present; margin convex; spinal cord concealed in dorsal view', 19 'ATLASMV - Condition of intercotylar region of atlas' /  notch_present_between_cotyles 'margin between cotyles straight, lacking notch or process' 'process present between cotyles, forming convex margin', 20 'AXILLGL - Presence/absence of axillary glands' /  absent_ present, 21 'BARBELS - Presence/absence of complex barbels on larvae' /  absent present, 22 'CARPAL1 - Carpal bones: fusion of ulnare and postaxial centrale' /  free fused_, 23 'CARPAL2 - Carpal bones: fusion of carpalia 3 and 4 to postaxial centrale' /  free fused_to_postaxial_centrale fused_to_postaxial_centrale, 24 'CARPAL3 - Carpal bones: Presence/absence of distal carpalia 2 and 3' /  present_and_unfused_ 'absent, possibly fused to preaxial centrale' 'absent, possibly both fused to preaxial centrale', 25 'CARPAL4 - Carpal bones: Fusion of pre- and postaxial centrale' /  free fused_, 26 'CAUDISC - Presence/absence of caudalipuboischiotibialis muscle' /  present absent, 27 'CLAVSCAP - Articulation of clavicle and scapula' /  separated fused_, 28 'COLUMEL1 - Condition of the columella' /  absent present greatly_elongated, 29 'COLUMEL2 - Reduction of columella' /  'normal size (when present), extending entire length of middle ear cavity' reduced_in_size_, 30 'CORONFLG - Coronoid flange of mandible' /  poorly_developed 'flange well developed, bladelike', 31 'CRISCOID - Condition of cricoid ring' /  entire divided_dorsally, 32 'CRSTHL - Presence/absence of crests on the tibiale, fibulare, and metatarsals' /  absent present, 33 'CULTRPS - Presence/absence of cultriform process of the parasphenoid' /  not_present_between_nasal_capsules 'present, lying ventral to septum nasi ', 34 'DCSACRUM - Presence/absenc~ of midsagittal crest on neural arch on sacrum' /  absent present, 35 'DENTPMMX - Presence/absence of pars dentalis of premaxilla and maxilla' /  present absent_, 36 'DEPRMAN1 - Condition of the depressor mandibulae muscle' /  consisting_of_one_head_or_two_slightly_divided_parts_with_origin_from_the_dorsal_fascia 'two discrete bellies that are at least partially separated by the insertion of the cucullaris; pars externa orginating from dorsal fascia' pars_externa_originates_from_bony_crests_of_otic_capsule pars_externa_is_absent, 37 'DEPRMAN2 - Condition of the depressor mandibulae muscle.' /  in_part_from_fascia_or_bone_of_otic_region only_from_fascia_over_suprascapula, 38 'DEVELOP - Mode of development' /  YQung_hatch_as_tadpoles 'Young emerge from dorsum as froglets (direct development)', 39 'DORPRIL1 - Shape of the dorsal prominence of the ilium' /  barely_developed_or_broad_and_low 'well developed; broad basally, acute terminally', 40 'DORPRIL2 - Shape of the dorsal prominence of the ilium' /  not_knobbed_distally 'narrow basally, knobbed distally', 41 'EPICORCD - Condition of body of epicoracoid cartilages.' /  'overlapping, not fused' ' fused anteriorly, but overlapping posteriorly, in the region between the coracoids' fused_throughout_their_length 'fused throughout their length, and no suture line persists', 42 'EPIPUBIS - Presence/absence of epipubic cartila~e' /  present_as_a_large_plate present_as_a_narrow_strip absent, 43 'EPIPUBM1 - Presence/absence of epipubic muscle' /  'present, either single or paired' absent, 44 'EPIPUBM2 - Condition of epipubic muscle, when present' /  paired_ azygous, 45 'EUSTAPT - Exposure of Eustachian canal ventrally by pterygoid and otic capsule' /  'Eustachian canal not bounded by medial (otic) ramus of pterygoid; two ostia pharyngea present at posterodorsal corners of mouth' 'Canal not completely encased by otic ramus of pterygoid; a single m~dian fleshy opening present' 'Canal completely encased by otic ramus of pterygoid; two bony openings into a single median fleshy opening' 'Canal completely encased by otic ramus of pterygoid; one bony opening that is directed posteriorly', 46 'EUSTTUBE - Presence/absence of Eustachian tubes' /  present absent, 47 'EXOSTOS - Exostosis of the dermal roofing bones' /  absent present, 48 'EXPCOR - Expansion of sternal end of coracoid' /  slightly_expanded expanded_into_a_large_plate, 49 'EXPEPCOR - Condition of the posterior ends of epicoracoid cartilages' /  not_expanded 'expanded, but expansion does not extend beyond thP. lateral margin of the sternum' 'expanded, and expansion extends beyond the lateral margin of the sternum', 50 'EYELID - Presence/absence of eyelid' /  present absent, 51 'FACPROMX - Pars facialis of the maxilla' /  well_developed greatly_reduced_, 52 'FEMCRST - Condition of ventral crest of femur {crista femoris)' /  present 'absent (or occasionally poorly developed)', 53 'FINGTIP1 - Shape of the tips of the fingers' /  'Tips of fingers simple, unmodified' 'Tips of fingers quadripartite, with one pair of lobes proximal and the other pair distal' 'Tips of fingers quadripartite, with all lobes termina' 'Tips of fingers quadripartite with terminal lobes, and each lobe divided at tip', 54 'FINGTIP2 - Shape of the tips of the fingers' /  tips_of_fingers_simple_or_quadripartite_ 'Tips of fingers tripartite, the distal pair of lobes having fused in ontogeny', 55 'FINGWEB - Presence/absence of webbing between the fingers' /  absent present, 56 'FLANGEPT - Presence/absence of ventral flange of the anterior ramus of the pterygoid' /  absent_ present, 57 'FPFONT - Exposure of the frontoparietal fontanelle' /  exposed_ concealed_by_frontoparietal_bones_, 58 'FPFUSION - Fusion of the frontoparietals' /  paired fused_, 59 'FREEPAL - Presence/absence of palatine bone' /  absent_as_a_free_element present_as_a_free_element, 60 'FREERIBS - Presence/absence of free ribs' /  present_in_larvae_and_adults 'present in larvae, but not adults' never_present, 61 'GENIOHYD - Insertion of geniohyoid' /  anterior_to_origin_of_sternohyoid posterior_to_origin_of_sternohyoid, 62 'GRACMIN1 - Presence/ahsence of gracilis minor.' /  present absent, 63 'GRACMIN2 - Cutaneous origin of gracilis minor' /  origin_of_gracilis_minor_at_least_partially_cutaneous gracilis_minor_lacking_cutaneous_origin, 64 'GRACMIN3 - Cutaneous origin of gracilis minor' /  weakly_developed_ well_developed_, 65 'GRACMIN4 - "Accessory head" of gracilis minor' /  absent present, 66 'HEADLAT - Shape of skull in lateral profile' /  Skull_generally_domed_and_rounded 'Skull moderately deep and wedge-shaped' 'Skull moderately deep and wedge-shaped, with an obvious^ndepression in lateral view in the region between the^nnasals and frontoparietal' 'Skull shallow and flat, wedge-shaped, with an obvious^ndepression in lateral view in the region between the nasals and frontoparietal', 67 'HEADSCAP - Condition of glenoid head of scapula' /  lacking_notch with_notch, 68 'HUMHEAD - Head of humerus' /  'cartilaginous, not calcified' calcified_, 69 'HWHL - Ratio of head width to head length as measured from skeletons' /  'Ratio of head width to head length 84-94%' 'Ratio of head width to head length 129--134%', 70 'HYALE1 - Disjunction of hyalia' /  'continuous, unbroken' 'divided; otic portion present' 'divided; otic portion absent', 71 'HYALOSS - Ossification of hyalia' /  not_ossified_ ossified_, 72 'HYOGLSN1 - Presence/absence of hyoglossal foramen in the hyoid plate' /  absent 'present; hyale present' 'present; hyale absent', 73 'HYOGLSN2 - Presence/absence of hyoglossal sinus' /  'not bounded; hyalia lacking expanded laminae' sinus_partially_bounded_by_expanded_laminae_of_hyalia, 74 'ICSTDIR - Orientation of lateral crests (when present) on the ilium' /  directed_dorsolaterally directed_laterally, 75 'ILCREST - Presence/absence of crest on the ilial shaft' /  absent present, 76 'IMBRIVC - Condition of processes of the neural arches of vertebral column.' /  'Median, single spinous process present, if any' Broad_parasagittal_processes_present Narrow_parasagittal_spines_present, 77 'INMETTUB - Presence/absence of inner metatarsal tubercle' /  present absent, 78 'INTERFR - Presence/absence of interfrontal bone.' /  absent present, 79 'ISCHCUTA - Presence/absence of the ischiocutaneous muscle' /  absent present, 80 'JAWFLAP - Presence/absence of dermal flap on margin of lower jaw' /  absent present, 81 'JUNCTIL - Shape of the junction between the two ilia.' /  'V-shaped' 'U-shaped ', 82 'LATEXPPS - Presence/absence of lateral expansions of the posterior end of the parasphenoid' /  present absent, 83 'LATLINE - Presence/absence of lateral line organs in adults' /  absent present, 84 'LENSCAP - Length of the scapula' /  very_short_and_stocky relatively_long, 85 'LIP - Dermal modifications of lips' /  No_modification_of_the_skin_at_the_corner_of_the_mouth Small_pocket_present_at_corner_of_mouth Large_fold_present_at_corner_of_mouth, 86 'MAJMINOR - Condition of the gracilis complex' /  Gracilis_major_and_minor_separate_only_to_the_level_of_the_tendinous_inscription Gracilis_major_and_minor_separate_for_most_of_their_length, 87 'MANDIBL - Shape of posterior end of mandible' /  continuous_arc_with_body_of_mandible strongly_recurved_medially, 88 'MAXILPT - Articulation of the maxilla and the anterior ramus of pterygoid' /  Anterior_ramus_articulating_medial_to_facial_shelf_of_maxilla ~~terior_ramus_articulating_with_rod_of_cartilage_dorsal_to_the_maxilla_in_an_extensive_area_of_overlap 'Anterior ramus articulating dorsal to maxilla; area of overlap with maxilL:! very smaJ.l (or slightly separated)', 89 'MEDCOR - Shape of the sternal end of the coracoid' /  gently_rounded strongly_arched_ 'rounded, but with a posterior straight margin', 90 'MEDCRSIL - Presence/absence of the medially directed crest of the ilium.' /  absent present, 91 'MEDLCLV - Condition of the sternal end of the clavicle' /  sternal_end_narrower_than_the_body 'sternal end expanded, broader than body, owing to fusion with ossified portion of procoracoid cartilage ', 92 'MEDRAMPT - Presence/absence of medial ramus of the pterygoid' /  present absent, 93 'MEDRAMSH - Shape of medial ramus of the pterygoid' /  'not expanded, not concealing Eustachian tubes' 'expanded, but elongate transversely with a well-developed lateral process' expanded_into_circular_plate_that_forms_at_least_part_of_floor_of_Eustachian_tube, 94 'MENTOMEC - Presence/absence of mentomeckelian ossifications' /  present absent, 95 'MXPREMX - Articulation between pars palatina of premaxilla and pars palatina of maxilla' /  'not overlapping that of maxilla; edges of bones juxtaposed' ventrally_overlaps_the_pars_palatina_of_the_maxilla, 96 'NASAL1 - Shape of nasal bones' /  'Nasals sickle-shaped, with concave area embracing nostrils, but not covering septomaxillae' 'Nasals large and more circular, concealing the septomaxillae', 97 'NASAL2 - Shape of nasal bones' /  'Nasals sickle-shapedi with concave area embracing nostrils' Nasals_relatively_straight_and_lacking_concave_anterior_margins, 98 'NASAL3 - Fusicn of nasal bones' /  Nasals_separate Nasals_fused_along_medial_margins, 99 'NASAL4 - Shape of nasal bones' /  'Nasals sickle-shaped, with concave area embracing nostrils' 'Nasals crescent-shaped, slender, and lacking margin that borders the nostrils', 100 'NICTMEM - Condition of palpebral membrane' /  well_developed_ reduced absent, 101 'NUMVERT - Number of presacral vertebrae' /  nine_ eight_ seven, 102 'OCCCONOR - Orientation of the occipital condyles' /  diverging_posteriorly converging_posteriorly, 103 'OCCIPCON - Shape of occipital condyles' /  rounded_and_reniform flat_and_subcircular_, 104 'OPTICFOR - Condition of the optic foramen' /  bound_in_cartilage bound_in_bone, 105 'ORBFPOS - Position of orbitonasal foramen' /  'positioned forward, located in the anterior part of the orbit' 'positioned more posterior, at midlength of the orbit, owing to enlargement of the nasal region', 106 'ORBFSPH - Relation of orbitonasal foramen and bony sphenethmoid' /  'not completely encircling the orbitonasal nerve, producing either an incomplete orbitonasal foramen in the sphenethmoid, or the absence of a foramen in bone' 'completely encircles the orbitonasal nerve, forming orbitonasal foramen.', 107 'OSSHYOID - Endochondral ossification in the hyoid plate' /  lacking_endochondral_ossifications with_endochondral_ossifications, 108 'OSSPUBIS - Ossification of the pubis' /  not_ossified ossified, 109 'OTICSQU - Otic ramus of the squamosal.' /  'present, not reduced' greatly_reduced_, 110 'OVERLPMX - Overlap of maxilla and premaxilla ' /  not_overlapping slightly_overlapping_slary_process_of_premaxilla_ventrally completely_displaced_from_maxillary_arcade_by_maxilla_, 111 'OVIPOSIT - Site of oviposition' /  not_deposited_on_dorsum_of_female deposited_on_dorsum_of_female, 112 'PALMAX - Presence/absence of palatine process of pars facialis of maxilla' /  absent present_, 113 'PALPRMX - Presence/absence of anterior process on pars palatina of maxilla' /  absent present, 114 'PALTPMX1 - Presence/absence of palatine process of premaxilla' /  'present; broad, not very distinct from pars palatina' absent, 115 'PALTPMX2 - Palatine process of premaxilla' /  moderately_developed_and_distinct_from_pars_palatina long_and_daggerlike, 116 'PARAHYD1 - Presence/absence of parahyoid bone.' /  present absent, 117 ' - Shape of parahyoid bone, when present' /  'single, median' 'paired, V-shaped ', 118 'PARPALMX - Presence/absence of pars palatina of maxilla' /  present absent, 119 'PECTGLND - Presence/absence of pectoral glands.' /  absent present, 120 'PINEAL - Condition of the pineal foramen in the frontoparietal' /  present absent, 121 'PIRIFORM - Condition of the piriformis muscle' /  present reduced_in_thickness absent, 122 'PLANANT - Condition of planum antorbitale' /  cartilaginous_and_not_a_discrete_element ossified_as_a_discrete_element, 123 'PLANPT - Relation of anterior ramus of pterygoid to planum antorbitale' /  not_in_contact_with_planum_antorbitale in_contact_with_planum_antorbitale, 124 'POSNOSTR - Position of the nostrils' /  dorsally_on_snout terminally_on_snout, 125 'PREACET - Orientation of preacetabular zone.' /  transversely longitudinally, 126 'PREMAXIL - Size and condition of the premaxilla' /  not_reduced 'reduced, with loss of the lateral portion of the body', 127 'PREZONL1 - Presence/absence of "prezonal element"' /  Procoracoid_cartilage_not_extending_anterior_to_medial_I_ends_of_clavicles. Procoracoid_cartilage_extending_anterior_to_medial_ends_of_clavicles, 128 'PREZONL2 - Presence/absence of prezonal element' /  absent present_as_a_cartilaginous_plate present_as_a_bony_style, 129 'PROCPS - Process on the acuminate posterior end of the parasphenoid' /  absent_on_posterolateral_margin_of_parasphenoid present_on_posterolateral_margin_of_parasphenoid, 130 'PUPIL1 - Shape of pupil' /  vertically_elliptical round, 131 'PUPIL2 - Shape of pupil' /  vertically_elliptical triangular, 132 'QUADRAT1 - Presence/absence of quadratojugal' /  absent present, 133 'QUADRAT2 - Presence/absence of flange on quadratojugal' /  absent present, 134 'RIDGEFP - Parasagittal ridges on the posterior end of the frontoparietal' /  absent present, 135 'SARTSEM1 - Relationship of sartorius and semitendinosus tendons.' /  Sartorius_and_semitendinosus_fused_in_distal_one_third_of_their_length 'Bellies of sartorius and semitendinosus ~istinct; sartorius tendon inserts on semitendinosus tendon' 'Bellies of sartorius and semitendinosus distinct; sartorius tendon inserts on gracilis tendon', 136 'SARTSEM2 - Distal separation of bellies of sartorius and semitendinosus' /  'Bellies of sartorius-semitendinosus complex separate distally for one fourth of length of muscle' 'Bellies of sartorius-semitendinosus complex separate distally for three fourths of length of muscle', 137 'SARTSEM3 - Degree of exposure of sartorius and its tendon' /  Sartorius_muscle_superficial Sartorius_muscle_and_its_tendon_partially_concealed_by_gracilis_major, 138 'SARTSEM4 - Separation of the sartorius and semitendinosus' /  not_completely_distinct completely_distinc_from_semitendinosus_and_gracilis_complex, 139 'SEMIGRAC - Relation of the tendons of the semitendinosus and gracilis muscles' /  Semitendinosus_tendon_ventral_to_that_of_gracilis_complex 'Semitendinosus tendon dorsal to, and piercing tendon of gracilis complex' 'Semitendinosus tendon dorsal to, and fre,e of tendon of gracilis complex', 140 'SEPNAS - Condition of septum nasi' /  cartilaginous 'bony posteriorly, extending about one-half the length of the nasals ' bony_along_most_of_the_length_of_the_nasals_, 141 'SEPNASWI - Width of the septum nasi' /  wide_in_horizontal_section narrow_in_horizontal_section, 142 'SEPTOMAX - Shape of the septomaxillae' /  'small and U-shaped' long_and_flattened_, 143 'SESAMTAR - Presence/absence of sesamoid bones at the tibiofibular-tarsal joint' /  absent present, 144 'SHAPECLV - Shape of the clavicle' /  bowed_medially_from_glenoid_to_sternal_end bowed_laterally_from_glenoid_to_sternal_end_, 145 'SHPNOSIR - Shape of the nostrils' /  round 'slitlike, elongate', 146 'SNASSPH - Relationship of the osseus septum nasi to the body of the sphenetr~oid' /  contiguous_with_body_of_sphenethmoid separate_from_body_of_sphenethmoid, 147 'SPADTUB1 - Shape of inner metatarsal tubercle' /  not_modified_into_a_spade modified_into_a_spade, 148 'SPADTUB2 - Shape of inner metatarsal tubercle' /  not_scaphate_or_scaphate_and_elongate cuneiform, 149 'SPHENDIV - Condition of sphenethmoid' /  divided_ entire_, 150 'SPHENPS - Relationship of parasphenoid and sphenethmoid' /  'separate, no fusion' at_least_partially_fused_, 151 'SPIKETUB - Presence/absence of a pointed keratinous tip on the inner metatarsal tubercle' /  absent present, 152 'SQUAMOS - Condition of the squamosal' /  'unmodified, triradiate, separate from tympanic annulus' 'elaborated to form funnel, fused with the tympanic ring', 153 'STERNEPI - Condition of epicoracoid cartilages relative the sternum ' /  not_fused_to_sternum fused_to_sternum, 154 'STERNOSS - Ossification of the sternum' /  cartilaginous bony_style, 155 'STERNUM - Presence/absence of sternum' /  present absent, 156 'STERNSH - The sternum, when cartilaginous, is a flat, broad plate in Ascaphus (although very short anteroposteriorly), Scaphiopus, pipids, Limnodynastes, and Hyla. The sternum has paired, posterolaterally directed arms in Leiopelma and Alytes, Barbourula, Bombina, and Discoglossus' /  flate_plate posterolaterally_directed_arm, 157 'SUPFLFP - Presence/absence of supraorbital flange of frontoparietal' /  absent present, 158 'SUPRSCAP - Shape of suprascapula' /  moderately_narrow 'very wide, fan-shaped ', 159 'TEETH1 - Condition of the teeth' /  'present; not fused to bone' 'present but reduced in number; fused to bone' absent, 160 'TEETH2 - Shape of teeth' /  'pedicellate, bicuspid, if present' 'non-pedicellate and monocuspid', 161 'TENTACLE - Presence/absence of tentacle at ventral margin of eye' /  absent present, 162 'TEXTSKIN - Texture of the skin' /  smooth tubercular_or_spiny, 163 'TOEINTEG - Modification of integument of the first three distal phalanges of the foot' /  unmodified_ 'modified into a pointed, keratinous brown tip' 'modified into a pointed, keratinous black tip', 164 'TONGUE - Presence/absence of tongue' /  present absent, 165 'TORSION - Torsion of the first finger' /  absent present, 166 'TPROC4TH - Shape of transverse processes of the fourth vertebra' /  straight curved_posteriorly, 167 'TPRODIRP - Orientation of transverse processes of posterior vertebrae' /  oriented_laterally oriented_anteriorly, 168 'TYMPANUM - Presence/absence of tympanic annulus' /  absent present, 169 'TYMPSHAP - Shape of tympanic annulus' /  round elliptical, 170 'TYPE1TAD - Presence/absence of Type 1 larvae' /  larva_of_Type_3_or_4 larva_of_Type_1, 171 'TYPE4TAD - Presence/absence of Type 4 tadpole' /  larva_of_Type_3_ 'larva of Type 4 (or Type 1; see TYPE1TAD above)', 172 'UROSACRM - Articulation of sacrum and coccyx' /  'separate; joint synchondrotic' 'separate; joint synovial and monocondylar' 'separate; joint synovial and bicondylar' fused, 173 'VOCSAC - Presence/absence of vocal sacs in adult males' /  absent present, 174 'VOMER1 - Presence/absence of vomers' /  present absent, 175 'VOMER2 - Condition of vomers' /  paired azygous, 176 'VOMER3 - Presence/absence of postchoanal ramus of vomer' /  absent present, 177 'VOMER4 - Condition of postcnoanal ramus of vomer' /  not_elongate elongate, 178 'ZYGAPOP1 - Condition of zygapophyseal articulation' /  flat possessing_ridges_and_sulci, 179 'ZYPROSQ1 - Zygomatic process of the squamosa' /  present absent, 180 'ZYPROSQ2 - Zygomatic process of the squamosal' /  not_a~ticulating_with_the_anterior_ramus_of_the_pterygoid 'very long, articulating with the anterior ramt:r.£ of the pterygoid', 181 'ZYPROSQ3 - Zygomatic process of the squamosal' /  not_articulating_with_the_pars_facialis_of_maxilla articulating_with_the_pars_facialis_of_maxilla ; 
+	MATRIX
+	Ascaphus_truei           0000000--0000000000000000000-00000000000000000000000000000000000000000000-000000000000000000000000000000000000000000000-000000000000000-00000000000000000000000000000000-000000000000
+	Leiopelma_hochstetteri   0000001000000000000000000000-00000000000010000000000000000000000001000000-000000000000000000000000000000000000000000000-000000000000000-00000000000000000001000000000000-000000100000
+	Alytes_obstetricans      0000001100000001000000000101000000000000021-01000001000000001000001000000-000000000001000000000000001000010000000000100-000000010001000-000010000000100000010000000000110002000100000
+	Barbourula_busuangensis  0010001100000001000090000101010000000900020101000001001110001000001000000-000000100001000010000000001000011000910000000-000000000011100-000010000000100000010001100000110991000100000
+	Bombina_orientalis       0000001100000001010000000100-00000000000020101000001000000001000001000000-000100000001000000000000001000011010000000000-001000000011100-00001000000010000001000100000010-001000100000
+	B._maxima                0000001100000001010000000100-00000000000020101000001000000001000001000000-000000000001000000000000001000011010000000000-001000000011100-00001000000010000001000100000010-001000100000
+	B._bombina               0000001100000001010000000100-00000000000020101000001000000001000001000000-000000000001000000000000001000011010000000000-001000000011100-00001000000010000001000100000010-001000100000
+	B._variegata             0000001100000001010000000100-00000000000010101000001000000001000001000000-000000000001000000000000001000011010000000000-001000000011100-00001000000010000001000100000010-001000100000
+	Discoglossus_pictus      0010001100000001000000000101000000000000021-01000001000100001000001000000-000000000001000000000000001000110000010000100-000000010011000-000010000000100000010000000000110002000100001
+	Rhinophrynus_dorsalis    0000100-00000000000000000100?01010000000001--0000001000011021001101101001-000010011101000001-1000000100-0100000001-00001000010000001001-00101000001010000-1-002-00001010-10210010010-
+	Xenopus_borealis         100010100001000100001000011201001011001010011100111100011101101--0110001-0100000111001010010211001101001000101000001-000100000000100-021002011000000110100000102102101110103001--1010
+	X._clivii                100010100001000100001000011201001011001010011100111100011101101--0110001-0100000111001010010211001101001000101000001-001100000000100-021002011000000111100000102102101110103001--1010
+	X._epitropicalis         100010100001100110001000011201001011001020011100111100011101101--0110001-0100000111001010010211000011001000101000001-000200000000100-02000101100000011111000010210210011110301---1010
+	X._fraseri               100010100001000100001000011201001011001010011100111100011101101--0110001-0100000111001010010211001101001000101000001-001100000000100-021002011000000111100000102102101110103001--1010
+	X._laevis                100010100001000100001000011201001011001010011100111100011101101--0110001-0100000111001010010211001101001000101000001-000100000000100-021002011000000110100000102102101110103001--1010
+	X._muelleri              100010100001000100001000011201001011001010011100111100011101101--0110001-0100000111001010010211001101001000101000001-000100000000100-021002011000000110100000102102101110103001--1010
+	X._tropicalis            100010100001100110001000011201001011001020011100111100011101101--0110001-0100000111001010010211000011001000101000001-001200000000100-02000101100000011111000010210210011110301---1010
+	X._wittei                100010100001000100001000011201001011001012011100111100011101101--0110001-0100000111001010010211001101001000101000001-000100000000100-021002011000000110100000102102101110103001--1010
+	Hymenochirus_boettgeri   9100110--01210112101010201120101011200-1320131011111001-110111---1110-11-112100110100-0-1100210100022001000102000021-10021-101000100-00-0012111101--11-11000112-01210011010301---0000
+	Pipa_carvalhoi           2100110--002110121100101010201011112001012012101211120011101101--1010--2-1110000101011021000210100021111010101101011-100200100100100-10-00121110100011010000110201110011010301---0100
+	P._arrabali              2100110--002110121100101010201011112011012011101211120011109101--2010--2-1110000101011022000110100021111010101101011-101200100101100-10-00121110100011010000111201110011010301---0100
+	P._myersi                210011999002110121200109110201911113001012992101211111011101901--10109-9911210001010110210002101000211110191011000199101200100100100-00-0012111010--11-10000112-01110011010301---0100
+	P._parva                 2100110--002110121200101110201011113001012012101211110011101101--1010--2-0121000101011021000210100021111010101100011-101200100100100-00-0012111010--11-10000112-01110011010301---0100
+	P._pipa                  3100110--002210122100101010200011112010012011101211130011101101--3011--2-0110000101021112000111100021111010101101011-101200100101100-00-00111110100011010000112-01010011010301---0100
+	P._snethlageae           3199119990022101212001010902009110199100129911012111200111099999930119-9901100901000291120001101000211110191011010199100900100101100-19999911110100011010000112-01010011010301---0100
+	Leptobrachium_hasseltii  0010000--0000001000000000101000000000000021-01000001000010021000101112-01-000000000101000000000010001000010000010001-00-000010020001000-0000100000001000010-1000000010010010100000000
+	Megophrys_aceras         0010000--0000001000000000101001000000000021-01000001000010021000101112-01-000000000101000000000010001000010000010001-00-000010020001000-0000100000001000010-1000000010010013100000000
+	M._montana               0010000--0000001000000000101901000000000021-01000001000010021000101112-00-100000000101000000000010001000010000010001-00-000010020001000-0000100000001000010-1000000010010010100000000
+	Pelobates_cultripes      0010001010000001000000000109100000001000021-01100001000011029001101001001-000000000101000000000000001000010000010001-00-200010010001000-0002100000101000010-100000001019-013000000001
+	P._syriacus              0010001010000001000000000101000000001000021-01100001000011021001101001001-000000000101000000000000001000010000010001-00-200010010001000-0002100000101000010-100000001019-013000000001
+	P._varaldii              0010001010000001000000000101100000001000021-01100001000011021001101001001-000000000101000000000000001000010000010001-00-200010010001000-0002100000101000010-1000000010110013000000001
+	P._fuscus                0010001010000001000000000101001000001000021-01100001000011021001101001001-000000000101000000000000001000010000010001-00-200010010001000-0002100000101000010-100000001019-013000000001
+	Scaphiopus_bombifrons    0010001011000001000000000101000000001000021-01000001000000021001101001001-000000000101000000000000001000010000010001-00-000010010000000-100210000011100000001000000010110013100110000
+	S._hammondii             0010001011000001000000000101000000001000021-01000001000000021001101001001-000000000101000000000000001000010000010001-00-000010010000000-100210000011100000001000000010110013100110000
+	S._intermontanus         0010001011000001000000000101000000001000021-01000001000000021001101001001-000000000101000000000000001000010000010001-00-000010010000000-100210000011100000001000000010110013100110000
+	S._multiplicatus         0010001011000001000000000101000000001000021-01000001000000021001101001001-000000000101000000000000001000010000010001-00-000010010000000-100210000011100000001000000010110013100110000
+	S._couchii               0000001010000001000000000101000000001000021-01100001000010021001101001001-000010000101000000000000001000010000010001-00-000010010000000-100210000010100000001000000010110013100110001
+	S._holbrookii            0000001010000001000000000101000000001000021-01100001000010021001101001001-000010000101000000000000001000010000010001-01-000010010000000-100210000010100000001000000010110013100110001
+	S._hurterii              0000001010000001000000000101000000001000021-01100001000010021001101001001-000010000101000000000000001000010000010001-01-000010010000000-100210000010100000001000000010110013100110001
+	Pelodytes_punctatus      0010001010000001000000100101000000001000021-01000001000000021001101001001-000000000001000000000010001000010000010000100-000010010001000-0000100000001000010-0000000010110011100100000
+	Limnodynastes_peronii    0011001000000000010000200101000000000000021-01000001000000121000101000000-000000000101000000000010001000000000000001-00-00001001000100--010010000000100000000001000010010012100000000
+	Hyla_lanciformis         0001001000000001000000200?01?000000000000?1-01000001000000121000001100000-00000000?101000000000010001000?10000000001?00-00001001000100--010010000000100000001000000010010012100100000
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  181;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  181;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1327005654016;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3233690771285110654;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2551848009606967594;
+			mqVersion 274;
+			checksumv 0 2 649884825 null  getNumChars 181 numChars 181 getNumTaxa 42 numTaxa 42   short true   bits 527   states 527   sumSquaresStatesOnly 1.5222853E7 sumSquares 1.5222853E7   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1280 716;
+			setLocation 0 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2551848009606967594 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1180 649;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 197;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1180 649;
+						setLocation 0 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

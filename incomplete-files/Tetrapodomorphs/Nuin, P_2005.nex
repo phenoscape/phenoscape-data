@@ -1,0 +1,247 @@
+#NEXUS
+[written Fri Jun 29 08:49:19 CDT 2012 by Mesquite  version 2.75 (build 566) at NI5231.local/172.20.224.93]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=24;
+	TAXLABELS
+		Hylodes_asper Hylodes_phyllodes Hylodes_lateristrigatus Hylodes_sazimai Hylodes_ornatus Hylodes_nasus Hylodes_meridionalis Hylodes_dactylocinus Hylodes_perplicatus Crossodactylus_caramaschii Crossodactylus_dantei Crossodactylus_schmidti Megaelosia_goeldii Physalaemus_cuvieri Eleutherodactylus_fenestratus Leptodactylus_knudseni Leptodactylus_ocellatus Cycloramphus_semipalmatus Cycloramphus_boraceiensis Eupsophus_calcaratus Proceratophrys_boiei Thoropa_miliaris Odontophrynus_americanus Alsodes_gargola 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=49;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	CHARSTATELABELS 
+		1 Pupil_shape /  pupil_round pupil_horizontal, 2 Tympanum_visibility /  'tympanum well developed,^nvisible externally' 'tympanum partially covered, still visible^nexternally' tympanum_fully_covered_or_not_present, 3 Male_thumb /  'male thumb with no nuptial pad or^nspines' 'some nuptial modification present, nuptial pad^npresent', 4 Body_glands /  parotoid 'inguinal and dorsolateral^nglands not defined' inguinal_glands_present_and_well_defined dorsolateral_glands_present_and_well_defined, 5 Adhesive_disks /  disks_not_defined disks_present disks_present_with_a_circular_ridge 'disks present with a^ndorsal scute', 6 Tarsal_decoration /  tarsum_with_fold_or_not_modified tarsum_with_tarsal_tubercle tarsum_with_extensible_fold, 7 Outer_metatarsal_tubercle /  not_present present, 8 Inner_metatarsal_tubercle /  regular_or_acute cornified_spade, 9 Interdigital_membrane /  membrane_present 'membrane^nnot present' lateral_fringe_present, 10 Musculus_adductor_mandibulae /  'posterior subexternal^nadductor mandibular and superficial external adductor^nmandibular muscles present [?s + e? (Starret, 1968)]' 'only posterior subexternal adductor mandibular present [?e?^n(Starret, 1968)]', 11 Musculus_depressor_mandibulae /  'originating from^nthe dorsal fascia, the squamosal and the otic region, and^nfrom the tympanic ring, or from the squamosal, otic region^nand tympanic ring' 'originating from the dorsal fascia, and^nthe squamosal and the otic region' 'originating from the^nsquamosal and otic region', 12 _Musculus_geniohyoideus_medialis /  'muscle contiguous^nin the medial line' muscle_divided_at_the_medial_line, 13 Musculus_anterior_petrohyoideus /  'muscle insertion^non the lateral border of the hyoid plate' 'muscle insertion^non the ventral body of hyoid', 14 Insertion_of_the_musculus_sternohyoideus /  'muscle^ninsertion close to the border of the hyoid body' 'part of^nthe muscle fibers insertion close to the medial line of the^nhyoid and part of the fibers insertion close to the lateral of^nthe hyoid body', 15 Musculus_homohyoideus /  present not_present, 16 Musculus_iliacus_externus /  'muscle extending up to^nhalf of anterior portion of the ilium' 'muscle extending^nfrom half to three quarters of the anterior portion of the^nilium' 'muscle extending from three quarters to the total^nof the anterior portion of the ilium', 17 Musculus_tensor_fascia_latae /  'muscle insertion^ndistally to the anterior extension of the iliacus on the ilium' 'muscle insertion at the same level of the iliacus extension^non the ilium' 'muscles insertion anteriorly to the distal^nextension of the iliacus on the ilium' 'muscle insertion^non the anterior region of the ilium immediately anterior to^nthe external iliacus, both muscles are contiguous in part of^ntheir extension [for detailed drawings please refer to Heyer^n(1975)]', 18 Musculus_semitendinosus /  'inner and outer portions^nequal size, outer portion connected by a tendon to the inner,^nboth portions dislocated' 'outer portion smaller and^nconnected to the inner by a tendon' 'inner and outer portions^nof same volume or outer portion with larger volume' 'outer portion rudimental, connected to the inner portion^nby a tendon or outer portion not present', 19 Musculus_adductor_longus /  'muscle well developed,^ninsertion close or on the knee, muscle generally visible on^nthe surface' 'muscle poorly developed, inserting totally on^nthe adductor magnus, covered in its totality by the muscle^nsartorius' muscle_not_present, 20 Quadratojugal /  'quadratojugal present, in contact with the maxilla' quadratojugal_not_present, 21 'Nasal-maxillary contact' /  'nasal bone is in contact^nwith the maxilla or both are near' 'nasal fused with the^nmaxilla', 22 'Nasal-frontoparietal contact' /  'nasal not connected to^nthe frontoparietal' nasal_in_contact_with_the_frontoparietal nasal_fused_to_the_frontoparietal, 23 Extension_of_the_fontanelle_covered_by_the_frontoparietals /  'frontoparietal approaching each other medially, but^nwith no exposure of the fontanella (any dubious state was^nplaced in this state)' 'frontoparietals not meeting medially,^nexposing the fontanella', 24 Squamosal /  'zygomatic ramus slightly bigger,^nslightly smaller or of the same size than the otic ramus,^nno ramus modified with a expanded bony plate' 'similar^nto state 1, with a possible contact of zygomatic ramus^nwith maxilla' 'zygomatic ramus bigger than the otic ramus,^nwith possible contact with maxilla and/or otic plate' otic_ramus_much_bigger_than_the_zygomatic_ramus., 25 Vomerine_teeth /  teeth_present teeth_not_present, 26 Medial_contact_of_the_vomers /  'vomers with no^nmedial contact' vomers_in_medial_contact, 27 Fusion_of_the_prootic_and_the_frontoparietal /  'bones^nnot fused' bones_fused, 28 Occipital_condyles /  condyles_confluent_or_close condyles_separated, 29 Anterior_process_of_the_hyale /  'anterior process^npresent (only well defined structures were included)' anterior_process_not_present, 30 Alary_process_of_the_hyoid /  'alary process narrow,^nstem like' alary_process_rudimental 'alary process^nnot present' 'alary process not stem-like, generally broad^nwing-shape', 31 Posterior_sternum /  'posterior sternum like a cartilaginous^nplate, both sides of this plate broad posterior to^nthe connection with the pectoral girdle, a posterior bifurcation^ncan be present or not' 'posterior sternum cartilaginous,^nboth sides are parallel or get slender posterior to the^nconnection with the pectoral girdle' 'similar to state 1,^nwith mineral deposits in the mesosternum' 'posterior sternum^ndifferentiated in a bony mesosternum and a xiphisternum', 32 'Relation of the transverse process of the last presacral^nvertebrae with the sacral vertebrae' /  'last presacral vertebrae^nthe same width as the sacral vertebrae' 'last presacral^nvertebrae much smaller than the sacral vertebrae', 33 Sacral_diapophysis /  sacral_diapophysis_expanded sacral_diapophysis_rounded, 34 Terminal_phalanges /  'terminal phalanges simple,^nround or claw shaped' 'terminal phalanges T-shaped', 35 Ilium_dorsal_crest /  no_dorsal_crest 'dorsal crest^nwell defined', 36 Frontoparietals_and_exoccipitals /  'frontoparietals superimposed^non the exocciptals' bones_not_superimposed, 37 Prevomer_shape /  'dentary process flexed to the front^nin relation to the bone axis' 'dentary process follows the^nsame line of the bone axis', 38 Joint_position_of_the_quadratum /  'maxillary arch^nreaches the quadratum joint in an anterior position to the^nparasphenoid wings' 'maxillary arch reaches the quadratum^njoint posteriorly to parasphenoid wings', 39 Position_of_the_ilium_in_relation_to_the_sacral_diapophysis /  'ilium anterior extreme considerably overpasses the^nlevel of the sacral diapophysis, reaching half of the presacral^nvertebra VIII' 'ilium anterior extreme never overpasses the^ndiapophysis level', 40 Inclination_of_the_sacral_diapophysis /  'sacral diapophysis^nwith a 90 degree angle to the body axis' 'sacral^ndiapophysis flexed back', 41 Maxillary_teeth /  present not_present, 42 Nasal_bones /  nasal_bones_fused_or_just_separated nasals_noticeably_separated, 43 Anterior_joint_of_vomer /  'vomers do not articulate^nwith premaxilla or with maxilla' 'vomers articulate with^npremaxilla or maxilla', 44 Relation_of_the_sphenethmoid_with_the_optical_foramen /  'sphenethmoid outer portion well apart from the optical^nforamen' 'outer portion of sphenethmoid closer to the^noptical foramen' 'outer portion of sphenethmoid borders^nthe optical foramen', 45 Anterior_extension_of_sphenethmoid /  'sphenethmoid^nanteriorly extends up to half the length of the vomerine^nbones' 'sphenethmoid anteriorly extends over half the^nlength of the vomerine bones', 46 Pterygoid_parasphenoid_superposition /  no_superposition 'bones superimposed in antero-posterior plane but^nwith no contact' bones_superimposed_and_in_contact, 47 Hyoid_posterolateral_process /  present not_present, 48 Omosternum /  'present, expanded' not_present, 49 Mesosternum /  'bony, broad, only posteriorly' 'bony, broad, bifurcated posteriorly' 'bony, amorphous' composed_by_cartilaginous_plaques ; 
+	MATRIX
+	Hylodes_asper                  0010321021100001031010000011112011110111010211001
+	Hylodes_phyllodes              0000321021100001031010000011112011110111010211001
+	Hylodes_lateristrigatus        0010321021100001031010000011112011110111010211001
+	Hylodes_sazimai                0010321021100001031010000011112011110111010211001
+	Hylodes_ornatus                0010321021100001031010000011112011110111010211001
+	Hylodes_nasus                  0010321021100002030010000011112011110100000211001
+	Hylodes_meridionalis           0010321021100002030010000011112011110100000211001
+	Hylodes_dactylocinus           0010321021100001030010000011112011110100000211001
+	Hylodes_perplicatus            0010321021100002030010000011112011110100000211001
+	Crossodactylus_caramaschii     0000321021100000330110001001132011111000010210001
+	Crossodactylus_dantei          0000321021100000330110001001132011111000010210001
+	Crossodactylus_schmidti        0000321021100000330110001001132011111000010210001
+	Megaelosia_goeldii             0000321021100001010000020000122011101111010211003
+	Physalaemus_cuvieri            0210011111101111032000001001123010101001000200001
+	Eleutherodactylus_fenestratus  0010101011100002332000000001102011101101100101100
+	Leptodactylus_knudseni         0000001011100002000012000101103010100111001210002
+	Leptodactylus_ocellatus        0000001021100002000012000101103010100111001210002
+	Cycloramphus_semipalmatus      0210101011100010030000101000102001111111100001103
+	Cycloramphus_boraceiensis      0210101011100010030000101000102001111111100001103
+	Eupsophus_calcaratus           0210001011100001031001000001101010111101001012013
+	Proceratophrys_boiei           0210000101100001031001010000130010101100000201101
+	Thoropa_miliaris               0000101011100001011010100001103001111011010201112
+	Odontophrynus_americanus       0201001101000011020000000100100100011111011100103
+	Alsodes_gargola                0210001001100001031001000001101010111101001012013
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  49;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  49;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1340977759984;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2425582850924070260;
+			tell It;
+				setDefaultOrder  0 1 2 3 4 5 6 7 8 10 11 12 13 14 15 16 17 18 19 20 21 22 9 23;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 3598730264449669269;
+			mqVersion 275;
+			checksumv 0 3 2021545668 null  getNumChars 49 numChars 49 getNumTaxa 24 numTaxa 24   short true   bits 15   states 15   sumSquaresStatesOnly 6960.0 sumSquares 6960.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 974 472;
+			setLocation 38 48;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #3598730264449669269 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 116;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 874 405;
+					setLocation 38 48;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 874 405;
+						setLocation 38 48;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #3598730264449669269 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.stochchar.CharListProbModels.CharListProbModels;
+					setExplanationSize 30;
+					setAnnotationSize 40;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 874 385;
+					setLocation 38 48;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel on;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

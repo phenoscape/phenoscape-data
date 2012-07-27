@@ -1,0 +1,202 @@
+#NEXUS
+[written Fri Oct 07 11:05:15 EDT 2011 by Mesquite  version 2.74 (build 550) at Ben-Frables-MacBook-Pro.local/10.0.1.8]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=14;
+	TAXLABELS
+		Hyp._ancestor Yunnanolepis Euantiarcha Petalichthyida Rhenanida Acanthothoraci Ptyctodontida Actinolepids Aethaspis Phlyctaeniida Brachythoraci Phyllolepididae Wuttagoonaspis Brindabellaspis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=49;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 Paranuchal_plates /  several one, 2 'Central plates (number of fusion)' /  several one_only no_ centronuchal_compound, 3 'Central plates (contacts)' /  separate in_contact, 4 Premedian_plate /  absent present, 5 Postmarginal_plates /  absent present, 6 Suborbital_plate /  present absent, 7 Rostral_plate /  present absent, 8 Endolymphatic_pore /  vertical 'long, oblique tube', 9 'Opening of nerve VII Hm /epihyal facet' /  anterior posterior, 10 Anterior_postorbital_process /  broad narrow, 11 Posterior_postorbital_process /  double simple, 12 Subpituitary_fenetstra /  absent present, 13 Lateral_groove_or_notch_on_Paraspeno1d /  absent present, 14 Post_vagal_muscular_depression /  deep extensive shallow absent, 15 IG_on_meckelian_cartilage /  absent present, 16 Differenciated_biting_area_on_IG /  absent present, 17 'Meckel''s cartilage' /  entirely_perichondrally_ossified posterior_element_only two_separate_elements, 18 ASG_on_endocranium /  absent present, 19 _PSG_on_Palatoquadrate /  absent present, 20 Palatoquadrate /  one_single_unit two_units three_units, 21 Median_dorsal_plates /  one two, 22 Median_dorsal_shape /  broad_and_short elongate, 23 Ventral_ridge_or_keel_on_median_dorsal_ /  absent present_ keel_with_cupula, 24 PDL_plate /  present_ absent, 25 PL_plate /  present absent, 26 IL_plate /  absent present fused_to_AVL, 27 AV_plates /  absent present, 28 AL_plates /  present absent_or_fused_to_AVL, 29 Spinal_plate /  present absent, 30 AMV_plate /  present absent, 31 PMV_plate_ /  absent 'present (large)' small, 32 'AMV-PMV contact' /  absent present, 33 'Contact between AVL''s' /  no short long, 34 'PVL''s' /  absent no_contact long_contact, 35 Dermal_pectoral_fenestra /  open_posteriorly closed, 36 Contour_of_pectoral_fenestra /  'closed by PL+PVL' PL_excluded 'AVL only (antiarcha)', 37 Form_of_pectoral_articular_facet /  round elongate_short elongate_long, 38 Number_of_potential_radials /  three two more_than_three one, 39 Pelvic_girdle /  'dermal +endoskel' endoskel._only, 40 Sensory_line /  grooves_only 'grooves+tubes' tubes_with_pores, 41 'Posterior pit-line (pp) and occipital line (occ)' /  on_separate_plates on_the_same, 42 Converging_sensory_line /  non_convergent soc_and_pp 'soc, cc and pp on central plate' soc_cc_et_pp_on_nuchal_plate, 43 Body_scale /  large_ no, 44 Dermal_ornamentation /  stellate_or_flat_tubercules dentine_tubercules bony_ridges_or_tubercules, 45 Nostrils /  terminal ventral dorsal, 46 Dermal_cervical_joint /  limited_overlap transverse_condyle_on_head simple_transverse_overlap longitudinal_joint complex_glenoid, 47 Scapular_complex /  present 'absent (dissociated plates)' other_pattern, 48 Palatoquadrate_anterior_articulation /  lateral ventral_on_ectethmoid_process_of_neurocranium, 49 Tesserae /  absent present ; 
+	MATRIX
+	Hyp._ancestor    00000?0000000000000000000000010-0?0-0000000000000
+	Yunnanolepis     12-11000?????3??????1--001011110221103?00?00210?0
+	Euantiarcha      12-11000?????31110001--001011110221103100002210?0
+	Petalichthyida   010001000000?1??????0020000001001210??02010113100
+	Rhenanida        ?111?000?0?000000000000111?0010-210-0300?0002?201
+	Acanthothoraci   00010000000100???1?00000000000--020-0?01000020001
+	Ptyctodontida    110001????????11111200201210001-000-01020112?3000
+	Actinolepids     1110100100011210?11?00100000001102101000120112110
+	Aethaspis        11001011000??211?11?00?000100011021?1??012?1121?0
+	Phlyctaeniida    111010011101131??11001000010001102101010121114110
+	Brachythoraci    1110100111111311211101100000001102102210121114110
+	Phyllolepididae  13-0101??00?1?10?00?00?110000010220-??101312?21?0
+	Wuttagoonaspis   13-01001?0???2??????00?0001000110?1????013?1121?0
+	Brindabellaspis  000100000001?0???????????0?00?00???????1000000000
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  49;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  49;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1317999915590;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1950134811520490164;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8679445585200897743;
+			mqVersion 274;
+			checksumv 0 2 1112988141 null  getNumChars 49 numChars 49 getNumTaxa 14 numTaxa 14   short true   bits 31   states 31   sumSquaresStatesOnly 3075.0 sumSquares 3075.0   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1920 1060;
+			setLocation 0 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8679445585200897743 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1820 993;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames off;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 141;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1820 993;
+						setLocation 0 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

@@ -1,0 +1,230 @@
+#NEXUS
+[written Mon Sep 26 16:12:28 EDT 2011 by Mesquite  version 2.74 (build 550) at wl-10-180-89-210.wireless.duke.local/10.180.89.210]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=43;
+	TAXLABELS
+		Hypothetical_ancestor_ Acanthodians Diabolepis_ 'Miguas/zaia ' Onychodus_ Psarolepis Acipenser? Amia_calva_ Amblyptems_latus_ Aesopichthys_erinaceus_ Dialipina_markae Dialipina_salgueiroensis_ Cheirolepis_trailli_ Cheirolepis_canadensis_ Cheirolepis_n._sp._ Coccoceplwlus_wildi Cyranorhis_bergeraci_ Discoserra_pectinodon_ Guildayiclzthys_camegiei_ Howqualepis_rostridens_ Kalops_diophrys Kalops_monophrys Kentuckia_hlavini_ Lepisosteus? Leptolepis_coryphaenoides Linmomis_delaneyi Mansfieldiscus_sweeti_ Melanecta_mmeae_ Mesopoma_planti_ Minlia_toombsi_ Moythomasia_nitida Novogonatodus_kasantsevae Osorioichthys_marginis_ Paramblypterus_decants_ Paratarrasius_hibbardi_ Polypterus_bichir Proceramala_montanensis_ Pteronisculus_ Stegotrachelus ?Tarrasius_problematicus Tegeolepis_clarki Wendyichthys_dicksoni_ Woodichthys_bearsdeni 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=185;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5";
+	CHARSTATELABELS 
+		1 'Lateral cranial canal GARDINER & SCHAEFFER (1989, char. 5, C1) and COATES (1999, char. 32)' /  absent present, 2 'Spiracular groove (GARDINER & SCHAEFFER 1989, char. 32; COATES 1999, char. 28)' /  not_enclosed_within_canal enclosed_within_canal, 3 'Ventral cranial-otic fissure (COATES 1999, char. 29)' /  'ventral cranial-otic fissure separated from lateral-otico-occipital fissure' 'ventral otic and otico-occipital fissures confluent via vestibular fontanelle' fissure_pattern_obscured_by_cartilage fissures_closed_by_bone, 4 'Post-temporal fossa (GARDINER & SCHAEFFER 1989, char. 28; COATES 1999, char. 33)' /  absent present, 5 'Dilatator fossa (COATES 1999, char. 34)' /  absent present, 6 'Dermal basipterygoid process (GARDINER & SCHAEFFER 1989, char. G2; COATES 1999, char. 37)' /  absent present, 7 'Dorsal articulation between otoccipital and ethmosphenoid (CLOUTIER & AHLBERG 1996, char. 82; SCHULTZE & CUMBAA 2001, char. 57; ZHU & SCHULTZE 2001, char. 130)' /  absent present, 8 Ventral_articulation_between_otoccipital_and_ethmosphenoid /  absent present, 9 'Premaxillae (CLOUTIER & AHLBERG 1996, char. 16; LUND et al. 1995, char. 2; POPLIN & LUND 2000, char. 6; SCHULTZE & CUMBAA 2001, char. 26; ZHU & SCHULTZE 2001, char. 6; LUND & POPLIN 2002, char. 3 and 4 in part)' /  present absent, 10 'Premaxillae, nasal process of (COATES 1999, char. 14)' /  absent present, 11 'Premaxillae LUND et al. (1995, char. 2 in part), LUND (2000, char. 2 in part), and LUND & POPLIN (2002, char. 3 in part) ' /  premaxillae_abutting_medially premaxillae_separated_medially, 12 'Premaxillae, position of (CLOUTIER & AHLBERG 1996, char. 18; SCHULTZE & CUMBAA 2001, char. 27; ZHU & SCHULTZE 2001, char. 7)' /  premaxillae_not_forming_part_of_the_orbit premaxillae_forming_part_of_the_orbit, 13 'Premaxillae, relation of (DIETZE 2000, char. 37; SCHULTZE & CUMBAA 2001, char. 15)' /  premaxillae_contact_posteriorly_lacrimal_bones premaxillae_contact_ventrally_lacrimal_bones premaxillae_not_in_contact_with_lacrimal_bones, 14 'Premaxillae, relation of' /  premaxillae_not_in_contact_with_nasal_bones premaxillae_in_contact_with_nasal_bones, 15 'Premaxillary teeth (LUND et al. 1995, char. 0 in part; SCHULTZE & CUMBAA 2001, char. 29)' /  premaxillary_teeth_present_in_midline premaxillary_teeth_absent_in_midline, 16 'Maxillae (CLOUTIER & AHLBERG 1996, char. 19; LUND 2000, char. 30 in part; SCHULTZE & CUMBAA 2001, char. 30; ZHU & SCHULTZE 2001, char. 53)' /  present absent, 17 'Maxillae, anterior end of LUND et al. (1995, char. 51), LUND (2000, char. 30), and LUND & POPLIN (2002, char. 29) ' /  posterior_to_orbit orbital preorbital 'complete maxilla lim- ited to the preorbital region', 18 'Maxilla, height of the posterior part of (CLOUTIER & AHLBERG 1996, char. 20-21; SCHULTZE & CUMBAA 2001, char. 31; ZHU & SCHULTZE 2001, char. 54; LUND & POPLIN 2002, char. 30 in part)' /  low medium deep, 19 'Maxilla, ventral margin of (SCHULTZE & CUMBAA 2001, char. 32)' /  straight_ventral_margin_of_maxilla curved_ventral_margin_of_maxilla, 20 'Maxillary teeth LUND (2000, char. 36 in part)' /  maxillary_teeth_present_on_the_complete_ventral_length_of_maxilla maxillary_teeth_present_on_the_anterior_part_of_maxilla 'teeth present only on the maxillary body, not on the anterior articulatory region', 21 'Marginal teeth (LUND & POPLIN 2002, char. 35 in part)' /  vertical forward posteriad, 22 'Maxilla-preopercular ornamentation LUND (2000, char. 35)' /  circumferential_ridges_of_ganoine mainly_vertical_ridges_of_ganoine mainly_tuberculations_of_ganoine ridges_and_tubercles_of_ganoine absence_of_ornamentation, 23 'Maxillae (LUND et a!. 1995, char. 50; COATES 1999, char. 16)' /  not_mobile mobile, 24 'Supramaxillae (COATES 1999, char. 17)' /  absent present, 25 'Adductor mandibulae fossa (LUND 2000, char. 32) and (LUND & POPLIN 2002, char. 31)' /  rear_of_mandible most_of_mandible, 26 'Splenial (CLOUTIER & AHLBERG 1996, char. 93 in part)' /  present absent_as_an_independent_bone, 27 'Surangular (CLOUTIER & AHLBERG 1996, char. 93 in part; COATES 1999, char. 18; ZHU & SCHULTZE 2001, char. 87)' /  absent present, 28 'Prearticular, anterior end of (SCHULTZE & CUMBAA 2001, char. 38; ZHU & SCHULTZE 2001, char. 93)' /  far_from_symphysis near_symphysis, 29 'Prearticular, condition of (CLOUTIER & AHLBERG 1996, char. 96; SCHULTZE & CUMBAA 2001, char. 39; ZHU & SCHULTZE 2001, char. 94)' /  prearticular_in_contact_with_dentary prearticular_not_in_contact_with_dentary, 30 'Dentition on coronoid bones (SCHULTZE & CUMBAA 2001, char. 47; ZHU & SCHULTZE 2001, char. 91)' /  broad_tooth_field narrow_marginal_tooth_rows single_tooth_row, 31 'Coronoid process (LUND 2000, char. 34; POPLIN & LUND 2000, char. 20; LUND & POPLIN 2002, char. 34)' /  absent present, 32 'Acrodin caps on teeth (PATTERSON 1982, char. 12; MAISEY 1986, char. N6; GARDINER & SCHAEFFER 1989, char. 2, B1; CLOUTIER & AHLBERG 1996, char. 7; TAVERNE 1997, char. 7; COATES 1999, char. 1; POPLIN & LUND 2000, char. 21; SCHULTZE & CUMBAA 2001, char. 35; ZHU & SCHULTZE 2001, char. 210)' /  absent present, 33 'Dentary and maxillary teeth  (DIETZE 2000, char. 27; SCHULTZE & CUMBAA 2001, char. 36; ZHU & SCHULTZE 2001, char. 77 in part)' /  dentary_and_maxillary_teeth_organized_in_two_series dentary_and_maxillary_teeth_not_organized_in_two_series, 34 'Ganoine ornamentation of skull roofing bones (DIETZE 2000, char. 27; SCHULTZE & CUMBAA 2001, char. 36; ZHU & SCHULTZE 2001, char. 77 in part)' /  dense 'moderate;', 35 'Preparietal, relative length (SCHULTZE & CUMBAA 2001); ZHU & SCHULTZE 2001)' /  short elongated, 36 'Snout, shape of (LUND et al. 1995), char 8; DIETZE 2000, char. 38)' /  rounded sharp_bump pointed_snout, 37 'Rostral, condition of (LUND et al. 1995, char. 3; POPLIN & LUND 2000, char. 4; LUND & POPLIN 2002, char. 5)' /  present_as_a_distinct_bone absent_as_a_distinct_bone, 38 'Position of median rostral (CLOUTIER & AHLBERG 1996, char. 22; SCHULTZE & CUMBAA 2001, char. 28; ZHU & SCHULTZE 2001, char. 9)' /  median_rostral_does_not_contribute_to_jaw_margin median_rostral_contributes_to_jaw_margin, 39 'Median rostral, shape of' /  widening_anteriorly equal_width_anterior_and_posterior narrowing_anteriorly, 40 'Teeth on rostral (LUND et al. 1995, char. 4; LUND & POPLIN 1997, char. 4; SCHULTZE & CUMBAA 2001, char. 8)' /  absent present, 41 'Rostral notch (LUND et al. 1995, char. 9 in part; LUND 2000, char. 9 in part; POPLIN & LUND 2000, char. 7; LUND & POPLIN 2002, char. 10 in part)' /  absent present, 42 'Nasal bone (DIETZE 2000, char. 33 in part)' /  present absent, 43 'Nasal bones, number of (TAVERNE 1997, char. 11)' /  numerous two_on_each_side single_on_each_side, 44 'Nasal bones (COATES 1998, char. AS; POPLIN & LUND 2000, char. 9; SCHULTZE & CUMBAA 2001, char. 11)' /  nasal_bone_without_notches_for_anterior_and_posterior_nares nasal_bone_with_notches_for_the_anterior_and_posterior_nares, 45 'Rear of nasal bone(s) (LUND et al. 1995, char. 11)' /  preorbital midorbital, 46 'Nasal bone (GARDINER & SCHAEFFER 1989, char. 26, D2, G1) ' /  nasal_bone_not_in_contact_with_intertemporal nasal_bone_in_contact_with_intertemporal, 47 'Postrostral bone(s) (CLOUTIER & AHLBERG 1996, char. 23 in part; LUND 2000, char. 6 in part; SCHULTZE & CUMBAA 2001, char. 9; ZHU & SCHULTZE 2001, char. 10; LUND & POPLIN 2002, char. 7 in pad)' /  present absent, 48 'Postrostral, number of (LUND et al. 1995, char. 7 in part; CLOUTIER & AHLBERG 1996, char. 23 in part; LUND 2000, char. 6 in part; SCHULTZE & CUMBAA 2001, char. 9; ZHU & SCHULTZE 2001, char. 11; LUND & POPLIN 2002, char. 7 in part)' /  postrostral_mosaic_of_small_variable_bones two_postrostrals one_postrostral three_postrostrals, 49 'Postrostral, number of (LUND et al. 1995, char. 6-7 in part; LUND 2000, char. 6 in part; LUND & POPLIN 2002, char. 7 in part)' /  median_postrostrals paired_postrostrals, 50 'Pineal opening (LUND et al. 1995, char. 20 in part; CLOUTIER & AHLBERG 1996, char. 32; TAVERNE 1997, 2; DIETZE 2000, char. 1; SCHULTZE & CUMBAA 2001, char. 1; ZHU & SCHULTZE 2001, char. 21)' /  present absent, 51 'Pineal opening, position of (LUND et al. 1995, char. 20 in part)' /  in_postrostral_area in_parietal_area, 52 'Pineal plate (LONG 1988, JANVIER 1996)' /  present absent, 53 'Parietal, number of (LUND & POPLIN 2002, char. 14)' /  one_pair_of_parietals two_pairs_of_parietals, 54 'Parietal, contact of (CLOUTIER & AHLBERG 1996, char. 34; ZHU & SCHULTZE 2001, char. 23)' /  parietal_contacts_supraorbital parietal_not_in_contact_with_supraorbital, 55 'Postparietal (TAVERNE 1997, char. 1)' /  without_pointed_anterolateral_process with_pointed_anterolateral_process, 56 'Postparietal, shape of  (DIETZE 2000, char. 6; SCHULTZE & CUMBAA 2001, char. 9)' /  long_and_rectangular squared short_and_rectangular, 57 'Postparietal, relative size of (TAVERNE 1997, char. 3; POPLIN & LUND 2000, char. 10; SCHULTZE & CUMBAA 2001, char. 70; LUND & POPLIN 2002, char. 15)' /  postparietal_longer_than_parietal postparietal_almost_equal_to_parietal 'postparietal shorter than parietal (parietal up to two times length of postparietal)' 'postpa- rietal shorter than parietal (parietal over two times length of postparietal)', 58 'Postparietal, contact of' /  postparietal_contacts_intertemporal postparietal_not_in_contact_with_intertemporal, 59 'Postparietal, contact of (DIETZE 2000, char. 5; SCHULTZE & CUMBAA 2001, char. 71)' /  'postparietal contacts lateral extrascapular(s)' 'postparietal not in con- tact with lateral extrascapular(s)', 60 'Extrascapular, number of (LUND & POPLIN 2002, char. 21)' /  three_extrascapulars two_extrascapulars four_extrascapulars, 61 'Dermal supraoccipital (LUND et al. 1995, char. 27; LUND 2000, char. 1S)' /  absent present, 62 'Supraorbital bones  (DIETZE 2000, char. 33 in part; ZHU & SCHULTZE 2001, char. 17; LUND & POPLIN 2002, char. 12 in part)' /  present_with_a_supraorbital_canal present_without_supraorbital_canal supraorbital_bones_absent, 63 'Supraorbitals (LUND et al. 1995, char. 13 in part; LUND 2000, char. 11 in part; LUND & POPLIN 2002, char. 12 in part)' /  single_series double_series, 64 'Dermosphenotic (LUND et al. 1995, char. 24 in part, 26 in part)' /  absent present, 65 'Dermosphenotic, shape of (SCHULTZE & CUMBAA 2001, char. 77).' /  'T-shaped' rectangular elongate, 66 'Dermosphenotic, contact of (GARDINER & SCHAEFFER 1989, char. 19; COATES 1999, char. 6)' /  dermosphenotic_contacts_nasal_bone dermosphenotic_not_in_contact_with_nasal_bone, 67 'Dermosphenotic, relative size of (LONG 1988; DIETZE 2000, char. 10)' /  almost_equal_length_of_supratemporal_and_dermosphenotic supratemporal_longer_than_dermosphenotic supratemporal_more_than_two_times_longer_than_dermosphenotic supratemporal_shorter_than_dermosphenotic, 68 'Dermosphenotic, contact of' /  dermosphenotic_in_contact_with_dermohyal dermosphenotic_not_in_contact_with_dermohyal, 69 'Dermosphenotic (POPLIN in press; DIETZE 2000, char. 13; SCHULTZE & CUMBAA 2001, char. 76)' /  one_bone two_bones, 70 'Dermopterotic (GARDINER & SCHAEFFER 1989, char. 1; COATES 1999, char. 5 in part)' /  absent present, 71 'Intertemporal (CLOUTIER & AHLBERG 1996, char. 36; COATES 1999, char. 4 in part; $CHULTZE & CUMBAA 2001, char. 75; ZHU & SCHULTZE 2001, char. 25)' /  present_as_a_distinct_bone absent, 72 'Supratemporal, contact of (DIETZE 2000, char. 12; SCHULTZE & CUMBAA 2001, char. 79)' /  supratemporal_not_in_contact_with_parietal 'anterior third of su- pratemporal contacts parietal' _more_than_a_third_of_supratemporal_contacts_parietal, 73 'Supratemporal, contact of (DIETZE 2000, char. 43; SCHULTZE & CUMBAA 2001, char. 80)' /  supratemporal_not_in_contact_with_operculum supratemporal_ventrally_in_contact_with_operculum supratemporal_ventroposteriorly_in_contact_with_operculum, 74 'Ventral protuberance of the supratemporal (DIETZE 2000, char. 11)' /  present absent, 75 'Tabular (LUND et al. 1995, char. 21)' /  present absent, 76 'Spiracle, shape of (CLOUTIER & AHLBERG 1996, char. 38 in part; SCHULTZE & CUMBAA 2001, char. 78)' /  angular_shape round absent, 77 'Cheek fit (LUND et al. 1995, char. 38) ' /  'tight, abutting' 'thin, overlapping' 'thick, peripheral gaps', 78 'Antorbital bone (LUND & POPLIN 2002, char. 8 in part)' /  absent present, 79 'Antorbital, shape of (LUND et al. 1995, char. 15; LUND 2000, char. 25; POPLIN & LUND 2000, char. 4; LUND & POPLIN 2002, char. 9)' /  rhombic inverted_L vertical_pillar triangular, 80 'Tectal (LUND & POPLIN 2002, char. 13)' /  present absent, 81 Postorbital_notch_in_jugal /  absent present, 82 'Jugal, contact of (DIETZE 2000, char. 21 in part)' /  jugal_contacts_suborbital_posteriorly jugal_contacts_suborbital_posterodorsally jugal_not_in_contact_with_suborbital, 83 'Infraorbital bones, number of (COATES 1998, char. A9; POPLIN & LUND 2000, char. 14; SCHULTZE & CUMBAA 2001, char. 25)' /  two_bones more_than_two_bones, 84 'Suborbital bones (LUND & POPLIN 2002, char. 26-28 in part)' /  absent present, 85 'Suborbital bones, number of (LUND et al. 1995, char. 37 in part; DIETZE 2000, char. 19; POPLIN & LUND 2000, char. 17)' /  one_to_three four_to_six more_than_six, 86 'Suborbital bone, arrangement of (LUND et al. 1995, char. 36 in part; LUND 2000, char. 26 in part; LUND & POPLIN 2002, char. 26 in part)' /  one_row two_rows many, 87 'Suborbital fit (LUND 2000, char. 27; POPLIN & LUND 2000, char. 16; LUND & POPLIN 2002, char. 27)' /  sutured 'loose, with gaps', 88 'Suborbital, contact of (LUND et al. 1995, char. 40; DIETZE 2000, char. 24; LUND 2000, char. 29)' /  maxilla_not_in_contact_with_suborbitals maxilla_contacts_suborbitals, 89 'Sclerotic ring (DIETZE 2000, char. 55; LUND & POPLIN 2002, char. 52 in part)' /  present absent, 90 'Sclerotic plates, number of (WATSON 1925, LUND et al. 1995, char. 70; CLOUTIER & AHLBERG 1996, char. 49; LUND 2000, char. 55; ZHU & SCHULTZE 2001, char. 41; LUND & POPLIN 2002, char. 52)' /  many four two, 91 'Squamosal (SCHULTZE & CUMBAA 2001, char. 82; ZHU & SCHULTZE 2001, char. 63; LUND & POPLIN 2002, char. 37 in part)' /  present absent, 92 'Quadratojugal (LUND et al. 1995, char. 47 in part; CLOUTIER & AHLBERG 1996, char. 57 in part: DIETZE 2000, char. 31; SCHULTZE & CUMBAA 2001, char. 83; ZHU & SCHULTZE 2001, char. 65 in part)' /  present absent, 93 'Quadratojugal, size of (LUND et al. 1995, char. 47 in part; CLOUTIER & AHL- BERG 1996, char. 57 in part; SCHULTZE & CUMBAA 2001, char. 83; ZHU & SCHULTZE 2001, char. 65 in part)' /  small large, 94 'Postspiracular (CLOUTIER & AHLBERG 1996, char. 53; DIETZE 2000, char. 48; LUND 2000, char. 53; ZHU & SCHULTZE 2001, char. 61; LUND & POPLIN 2002, char. 50)' /  present absent, 95 'Dermohyal (LUND et al. 1995, char. 48 in part; CLOUTIER & AHLBERG 1996, char. 52; LUND 2000, char. 44 in part; DIETZE 2000, char. 41; SCHULTZE & CUMBAA 2001, char. 2; ZHU & SCHULTZE 2001, char. 60; LUND & POPLIN 2002, char. 41 in part)' /  absent present, 96 'Dermohyal (LUND et al. 1995, char. 48 in part; DIETZE 2000, char. 41 in part; LUND 2000, char. 44 in part; LUND & POPLIN 2002, char. 41 in part)' /  single series, 97 'Supraopercular bone (LUND et al. 1995, char. 58)' /  absent present, 98 'Preoperculum, condition of (GARDINER & SCHAEFFER 1989, char. All; COATES 1998, char. All) ' /  preoperculum_without_distinct_regions preoperculum_with_distinct_anterodorsal_and_ventral_regions, 99 'Preoperculum, anterodorsal region of (POPLIN & LUND 2000, char. 23) ' /  'sub-horizontal' 'sub-vertical or vertical', 100 'Preoperculum, angle of (DIETZE 2000, char. 40)' /  angle_between_the_anterior_and_ventral_portions_of_preoperculum_wider_than_90_degrees angle_between_anterior_and_ventral_portions_of_preoperculum_narrower_than_90_degrees, 101 'Preoperculum, number of (LUND & POPLIN 2002, char. 36 in part)' /  one_bone two_bones, 102 'Preoperculum, contact of' /  preoperculum_contacts_maxilla preoperculum_not_in_contact_with_maxilla, 103 'Gap between opercular series and skull roofing bones (DIETZE 2000, char. 45)' /  present absent, 104 'Accessory operculum (SCHULTZE & CUMBAA 2001, char. 3)' /  absent present, 105 'lnteroperculum (GARDINER 1984; GARDINER & SCHAEFFER 1989, char. 18; COATES 1999, char. 10)' /  absent present, 106 'Operculum (ZHU & SCHULTZE 2001, char. 103)' /  present absent, 107 'Operculum, shape of' /  first_axis_longer_than_second_axis both_axes_approximately_equal second_axis_longer_than_first_axis, 108 'Operculum, position of' /  operculum_located_dorsally_to_preoperculum operculum_located_posteriorly_to_preoperculum, 109 'Operculum, relative size of (LUND et al. 1995, char. 60; LUND 2000, char. 45; LUND & POPLIN 2002, char. 43)' /  operculum_three_times_higher_than_suboperculum operculum_two_times_higher_than_suboperculum operculum_approximately_same_height_as_suboperculum, 110 'Operculum, contact of (DIETZE 2000, char. 4 in part)' /  operculum_not_in_contact_with_lateral_extrascapular operculum_contacts_lateral_extrascapular, 111 'Branchiostegals rays (LUND et al. 1995, char. 62 in part; CLOUTIER & AHLBERG 1996, char. 62; DIETZE 2000, char. 39; SCHULTZE & CUMBAA 2001, char. 87; ZHU & SCHULTZE 2001, char. 105)' /  present absent, 112 'Branchiostegals (LUND & POPLIN 2002, char. 44 in part)' /  between_mandible not_below_mandible, 113 'First branchiostegal ray, relative size of (LUND et al. 1995, char. 59 in part)' /  'approximately as deep as second branchiostegal ray;' deeper_than_second_branchiostegal_ray, 114 'Branchiostegal rays per side, number of (LUND et al. 1995, char. 61 in part; CLOUTIER & AHLBERG 1996, char. 63; ZHU & SCHULTZE 2001, char. 106)' /  12_branchiostegal_rays_or_more fewer_than_12_branchiostegal_rays, 115 'Median gular (LUND et al. 1995, char. 64 in part; CLOUTIER & AHLBERG 1996, char. 66; COATES 1999, char. 11 in part; LUND 2000, char. 49; SCHULTZE & CUMBAA 2001, char. 84; ZHU & SCHULTZE 2001, char. 109; LUND & POPLIN 2002, char. 47)' /  present absent, 116 'Extralateral gular (LUND & POPLIN 2002, char. 46)' /  absent present, 117 'Lateral gular (CLOUTIER & AHLBERG 1996, char. 68; LUND & POPLIN 1997; LUND 2000, char. 50 in part; SCHULTZE & CUMBAA 2001, char. 85; ZHU & SCHULTZE 2001, char. 111; LUND & POPLIN 2002, char. 48 in part).' /  present absent, 118 'Lateral gular, shape of (COATES 1999, char. 11 in part)' /  rounded_posterolateral_profile posterior_and_anterior_angle, 119 'Lateral gular, size of' /  lateral_gular_and_branchiostegal_rays_of_similar_size lateral_gular_larger_thanbranchiostegalrays lateral_gular_covering_approximately_half_the_intermandibular_space lateral_gular_smaller_than_branchiostegal_rays, 120 'Submandibular (CLOUTIER & AHLBERG 1996, char. 64; SCHULTZE & CUMBAA 2001, char. 86; ZHU & SCHULTZE 2001, char. 107)' /  present absent, 121 'Parasphenoid, size of (LUND et al. 1995, char. 71; SCHULTZE & CUMBAA 2001, char. 51; ZHU & SCHULTZE 2001, char. 124; LUND & POPLIN 2002, char. 53)' /  short long, 122 'Buccohypophysial foramen (CLOUTIER & AHLBERG 1996, char. 75 in part; SCHULTZE & CUMBAA 2001, char. 50; ZHU & SCHULTZE 2001, char. 122)' /  present_ absent, 123 'Posterior ascending process of parasphenoid (DIETZE 2000, char. 54 in part; SCHULTZE & CUMBAA 2001, char. 52; ZHU & SCHULTZE 2001, char. 125).' /  present absent, 124 'Parasphenoid (CLOUTIER & AHLBERG 1996, char. 73; SCHULTZE & CUMBAA 2001, char. 49; ZHU & SCHULTZE 2001, char. 120)' /  not_sutured_to_vomer sutured_to_vomer, 125 'Ethmoid commissure (GAR- DINER & SCHAEFFER 1989, char. A4; COATES 1998, char. A4; LUND 2000, char. 5 in part; SCHULTZE & CUMBAA 2001, char. 5; ZHU & SCHULTZE 2001, char. 42; LUND & POPLIN 2002, char. 6 in part)' /  present_ absent, 126 'Ethmoid commissure, trajectory of (LUNDetal.1995,char.5inpart;CLOUTIER&AHLBERG1996,char.100;SCHULTZE & CUMBAA 2001, char. 6; ZHU & SCHULTZE 2001, char. 43)' /  through_median_rostral sutural_course through_bone_centreofpremaxilla, 127 'Ethmoid commissure, trajectory of (LUND et al. 1995, char. 5 in part; LUND 2000, char. 5 in part; LUND & POPLIN 2002, char. 6)' /  across_midline not_across_midline, 128 'Supraorbital canal, trajectory of (LUND et al. 1995, char. 14; ZHU & SCHULTZE 2001, char. 44)' /  anterior_to_nasal_openings between_anterior_and_posterior_nasal_openings, 129 'Supraorbital canal, trajectory of (SCHULTZE & CUMBAA 2001, char. 64; ZHU & SCHULTZE 2001, char. 48)' /  in_postparietal in_parietal in_intertemporal, 130 'Supraorbital canal (CLOUTIER & AHLBERG 1996, char. 102; SCHULTZE & CUMBAA 2001, char. 65; ZHU & SCHULTZE 2001, char. 49)' /  not_in_contact_with_otic_canal in_contact_with_otic_canal, 131 'Supraorbital and infraorbital canals (CLOUTIER & AHLBERG 1996, char. 99; SCHULTZE & CUMBAA 2001, char. 66; ZHU & SCHULTZE 2001, char. 45)' /  contact_rostrally not_in_contact_rostrally, 132 'Otic canal, trajectory of (LUND 2000, char. 15; LUND & POPLIN 2002, char. 16)' /  three_bones two_bones one_bone, 133 'Profundus canal (LUND et al. 1995, char. 31)' /  absent present., 134 'Supratemporal commissure, trajectory of (LUND et al. 1995, char. 29; LUND 2000, char. 19 in part; POPLIN & LUND 2000, char. 13; LUND & POPLIN 2002, char. 20 in part)' /  across_midline not_across_midline, 135 'Supratemporal commissure, trajectory of (LUND & POPLIN 2002, char. 20 in part)' /  through_the_extrascapulars_only 'on the skull roof (dermal supraoccipital)', 136 'Jugal canal (MAISEY 1986, char. N4 in part; GARDINER &  SCHAEFFER 1989, char. A12; LUND et al. 1995, char. 46 in part; CLOUTIER & AHLBERG 1996, char. 106; SCHULTZE & CUMBAA 2001, char. 55; ZHU & SCHULTZE 2001, char. 75).' /  present absent, 137 'Horizontal pit-line (LUND & POPLIN 2002, char. 40 in part)' /  absent present, 138 'Vertical preopercular pit line (LUND 2000, char. 42; LUND & POPLIN 2002, char. 39 in part)' /  present absent, 139 'Preopercular canal (LUND 2000, char. 40; LUND & POPLIN 2002, char. 38)' /  'to mid-otic region' to_postorbital_corner to_postotic_region, 140 'Preopercular canal, trajectory of (CLOUTIER & AHLBERG 1996, char. 105; LUND 2000, char. 41; SCHULTZE & CUMBAA 2001, char. 81; ZHU & SCHULTZE 2001, char. 74)' /  ends_blindly_in_half_length_of_preoperculum from_dorsal_part_of_cheek_to_mandible, 141 'Mandibular canal, trajectory of (PATTERSON 1982, char. 7). (GARDINER & SCHAEFFER 1989, char. A14; CLOUTIER & AHLBERG 1996, char. 110; COATES 1998, char. A14; SCHULTZE & CUMBAA 2001, char. 43; ZHU & SCHULTZE 2001, char. 101)' /  through_dentary not_through_dentary, 142 'Mandibular canal, trajectory of (CLOUTIER & AHLBERG 1996, char. 111; SCHULTZE & CUMBAA 2001, char. 44; ZHU & SCHULTZE 2001, char. 102).' /  through_posterior_infradentary 'not through posterior in- fradentary (surangular)', 143 'Pectoral fin (COATES 1999, char. 58; LUND 2000, char. 61)' /  lobed_base not_lobed, 144 'Pectoral fin rays (COATES 1999, char. 60)' /  anteriormost_pectoral_lepidotrichia_segmented_proximally anteriormost_pectorallepidotrichia_segmented_only_distally, 145 'Presupracleithrum (SCHULTZE & CUMBAA 2001, char. 96; ZHU & SCHULTZE 2001, char. 160)' /  absent present, 146 'Postcleithrum (GARDINER & SCHAEFFER 1989, char. B2; LUND et al. 1995, char. 69; CLOUTIER & AHLBERG 1996, char. 112; DIETZE 2000, char. 46; POPLIN & LUND 2000, char. 28; SCHULTZE & CUMBAA 2001, char. 92; ZHU & SCHULTZE 2001, char. 153).' /  present absent, 147 'Cleithrum, number of (CLOUTIER & AHLBERG 1996, char. 115; SCHULTZE & CUMBAA 2001, char. 94; ZHU & SCHULTZE 2001, char. 164)' /  one_cleithrum two_cleithra, 148 'Cleithrum, dorsal end of (CLOUTIER & AHLBERG 1996, char. 115; SCHULTZE & CUMBAA 2001, char. 94; ZHU & SCHULTZE 2001, char. 164)' /  pointed broad_and_rounded, 149 'Posterior process of cleithrum (SCHULTZE & CUMBAA 2001, char. 95; ZHU & SCHULTZE 2001, char. 165)' /  present absent, 150 'Clavicle (LUND et al. 1995, char. 66; COATES 1999, char. 53; LUND 2000, cl:far. 51,52 in part; ZHU & SCHULTZE 2001, char. 167; LUND & POPLIN 2002, char. 49 in part)' /  present absent, 151 'Clavicle, length of (LUND 2000, char. 52)' /  short_ elongate, 152 'Clavicle contact (LUND et al. 1995, char. 67)' /  absent short elongate, 153 'Interclavicle (CLOUTIER & AHLBERG 1996, char. 118; DIETZE 2000, char. 47; SCHULTZE & CUMBAA 2001, char. 91; ZHU & SCHULTZE 2001, char. 170)' /  present absent, 154 Body_form /  'fusiform/elongate' deep_ round, 155 'Basal fulcra between dorsal and caudal fins (GARDINER & SCHAEFFER 1989, char. Al9; ZHU & SCHULTZE 2001, char. 188)' /  absent present, 156 'Fringing fulcra (COATES 1999, char. 61 in part; SCHULTZE & CUMBAA 2001, char. 90)' /  absent present, 157 'Fringing fulcra (COATES 1999, char. 61 in part)' /  formed_by_terminal_lepidotrichial_segments_expanded_in_leading_edge_of_fin formed_by_terminal_expansion_and_multiple_branching_of_a_distal_lepidotrichial_segment, 158 'Basal fulcra anterior to dorsal fin (PATTERSON 1982, char. 19)' /  absent present, 159 'Predorsal scutes (LUND 2000, char. 65; POPLIN & LUND 2000, char. 33)' /  few many complete_to_occiput, 160 'Dorsal fin, base of (LUND 2000, char. 60; POPLIN & LUND 2000, char. 38)' /  no_specialization scaled_lobe guard_scales, 161 'Dorsal fin, length of (LUND 2000, char. 58)' /  rear_far_from_caudal_fin rear_close_to_caudal_fin merged_with_caudal_fin, 162 'Dorsal fin, origin of (POPLIN & LUND 2000, char. 36)' /  behind_anal above_or_anterior_to_anal, 163 'Dorsalfin, shape of (GARDINER & SCHAEFFER 1989, char. A17; SCHULTZE & CUMBAA 2001, char. 98; ZHU & SCHULTZE 2001, char. 184)' /  triangular sigmoidal 'long,acuminate' very_high_and_long 'long, low (more than 60 rays)' short_rounded, 164 'Dorsal fin, number of (GARDINER & SCHAEFFER 1989, char. A17; SCHULTZE & CUMBAA 2001, char. 98; ZHU & SCHULTZE 2001, char. 184)' /  two_dorsal_fins one_dorsal_fin, 165 'Pelvic fin (LUND & MELTON 1982, TAVERNE, 1996)' /  present Absent, 166 'Pelvic fin, insertion of (LUND 2000, char. 62; SCHULTZE & CUMBAA 2001, char. 99)' /  long_base short_base reduced_base, 167 Basal_fulcra_between_pelvic_and_anal_fins /  absent present, 168 'Anal fin, base of (LUND 2000, char. 66; POPLIN & LUND 2000, char. 39)' /  anal_ends_far_to_caudal_fin anal_ends_close_to_caudal_fin merged_with_caudal_fin, 169 Basal_fulcra_between_anal_and_caudal_fins /  absent_ present, 170 Median_neural_spines /  absent_in_the_caudal_region present_in_the_caudal_region, 171 'Caudal fin (GARDINER & SCHAEFFER 1989, char. A18)' /  without_hinge_line with_hinge_line, 172 'Caudal fin, shape of (LUND 2000, char. 63, 64 in part; SCHULTZE & CUMBAA 2001, char. 100)' /  heterocercal triphycercal diphycercal hypocercal, 173 'Epichordal fin rays of caudal fin (CLOUTIER & AHLBERG 1996, char. 134; SCHULTZE & CUMBAA 2001, char. 101; ZHU & SCHULTZE 2001, char. 191)' /  present absent, 174 'Epichordal fin rays of caudal fin (COATES 1999, char. 57)' /  short elongated, 175 'Scale, size of' /  macromeric micromeric, 176 'Scale, shape of' /  '"acanthodian" shape' rhombic rounded., 177 'Peg-and-socket articulation of scales (MAISEY 1986, char. N7; CLOUTIER & AHL- BERG 1996, char. 4; DIETZE 2000, char. 57; POPLIN & LUND 2000, char. 30; SCHULTZE & CUMBAA 2001, char. 88)' /  absent present, 178 'Peg-and-socket articulation of scales (CLOUTIER & AHLBERG 1996, char. 4; DIETZE 2000, char. 57; SCHULTZE & CUMBAA 2001, char. 88; ZHU & SCHULTZE 2001, char. 199)' /  broad narrow, 179 'Anterodorsal extension of scale (GARDINER 1984, char. 1; GARDINER & SCHAEFFER 1989, char. A20; SCHULTZE & CUMBAA 2001, char. 89; ZHU & SCHULTZE 2001, char. 201)' /  absent present, 180 'Posterior edges of rhombic scales (DIETZE 2000, char. 49)' /  serrated straight not_applicable, 181 'Ganoine (CLOUTIER & AHLBERG 1996, char. 6; COATES 1998, char. A3; ZHU & SCHULTZE 2001, char. 211)' /  absent present, 182 'Occipital scale row (LUND et al. 1995, char. 28)' /  absent present, 183 'Enlarged postcleithral scales (DIETZE 2000, char. 44; POPLIN & LUND 2000, char. 29)' /  absent present, 184 'Flank scales (LUND 2000, char. 70; POPLIN & LUND 2000, char. 31)' /  same_size_as_others high, 185 'Ventrolateral flank scales (LUND 2000, char. 71; POP- LIN & LUND 2000, char. 32)' /  same_proportions_as_others narrow ; 
+	MATRIX
+	Hypothetical_ancestor_     000000000000000000000?00000000000?000000000000000000000000000000?????000000000?00?00????0000000?00??00000000000000000000000000000000000000000000000000000000?0000?00000000000000000?00000
+	Acanthodians               ????????1??????1???????0?10???00???01???01????1????1????????02?0?????01???1?00?1???0????0?11?10?0???1110011111011110111111111111111????0??????1?00???1??1000?0?0010000010?00??100?0200000
+	Diabolepis_                ??????000000??00??????00?0?10?000?1010?000??00???1??0?010???00?0?????00???020???????????????????1???1110111111111111111100010111201????0????10???????0????????????????????????0110?10????
+	'Miguas/zaia '             ????????0000?001????0?0000?110000?0000?000000000?1?1000000000020?????000000200?00?00?????000100?00??0110001111111110001100111111211??000???01100001010101000?0?00?5001000?0000020?0200000
+	Onychodus_                 ??????110000010020112?00001111000?000020000?000?01?1000000000100?????00?010000?00?00????0001?00?00??00100000111111000020000102002100???0???01000010010??1000?0?00?5001000?0?00020?0200000
+	Psarolepis                 ??????1100?1??10?0000?00?0?111000?00?1110????0???0??0?00??000??0?????0?0??0?00?????0??????????0?00??0110011111011101111110110011101????0???110????0000??0?????????????????????0?????0????
+	Acipenser?                 012000001??????1?????4?0?10???0??21200?0?0?0000??1?1000?0?0?02?1?1??011???1??1010?10??????10110?0???110011111101011011111100110010110??00?0111110000?0110000?0201101010100001???1?02000??
+	Amia_calva_                113110000100200020020411011000111200000000200?1??1?100012?0102?111??011???122111??10????1?11?10?0???01001011100001001111100100000102?00101010111000001??0000?0?01?510200010?00020?0200000
+	Amblyptems_latus_          ????????0001010022111?00?1????0?11000020002?111??1?10?01210002?110211002101200?1010100010?100010010100000000100001000111110111110000010?0000?1??101101????1??????0101?0???01?011??1??0000
+	Aesopichthys_erinaceus_    ????????0010001022101300?10???1?10100020102?111??1?10?02310002?100010002111201210201001?0111?110011000100001110111000101111100010001000110010?0?1100000??111?121011101101?121?011??010000
+	Dialipina_markae           ?????????????????????????????????00?0????020100201??0?100???00?1????????????????????????????????????1111111111111111111111111111101????????????????0???????????????????????????111101????
+	Dialipina_salgueiroensis_  ????????0000??0000100100?0???000000000000020??0201?10?112?000??11?1?0012??110?????????????1???0?????111001111111111000110111111110110?????????00001110???011?1000100001010010101111010000
+	Cheirolepis_trailli_       ????0000000000002210?300011000000000000000211002000101100001010101300000201100?11200????011100100100000100001000000000010001011000100000110101000000000110010000110100000?101?100?0210000
+	Cheirolepis_canadensis_    ??????00000000002210?3000110000000000000002010030?101010011010101013000?10201?00?11200????0111?011000001000010000000000100010210001?0000110101000000000110010000110100000?101?10010210000
+	Cheirolepis_n._sp._        ????????000000002210?100?1????00000000????2010??????01001101010121300011201?00?11200????0?11?01000000001000010000011111111111110011???????????000?0?00011???0?0???????????????100?0210000
+	Coccoceplwlus_wildi        ?1000???0????1?0?01????0?????????1?0????????????????0?0????????1?01?1????1?????1??????????11?11?01?01011011111011110111111111111111????????????1??0??????????????????????????????????????
+	Cyranorhis_bergeraci_      ????????1??????011101200010???0?101100201021101??1?10?02310202?10021000211121101000100010111?110010000100000110000010111111100010000010100210100110100121011?102010102100?121?0111?010001
+	Discoserra_pectinodon_     ????????0000210030010100110???0?1112002000110003?1?1110220021111113?00000112013101112?110011?00?10??111000010000011001311111011110100101??210?00100101??121??12111?02?1??0131?0111?110010
+	Guildayiclzthys_camegiei_  ????????000021003001010011????0?1112000000011003?1?1110220011111113?000001120101001122010011?00?00??111000010101011000111111011100101011??210?00100101??121??121114102?1??131?0111?110010
+	Howqualepis_rostridens_    ?00?00?0001101102110220001100201001101110021101??0110?00210102?100300001211000?10?00????011001100100001000001100000001111000000100000001002101001000001110111100010100001?121?01111010000
+	Kalops_diophrys            ????????0000200021101000?10?????0010000000210?02?0110?00210102?100300001211000?10?00????01100110010000000000000010000111111100010001010100010?0?100100121011?100011101100?1?1?0111?010000
+	Kalops_monophrys           ????????0000200021101000?10?????0010000000210?0201?10002??0001211101101201120101001110010?11?110010000000000010000000111110100010001010100010?0?100100121011?120011101101?121?0111?010000
+	Kentuckia_hlavini_         111001??00?111?0201???00?1?????1?01000000021111??1?10?01300102?1003??000?11200?100?1??01??1???1001000011100111011111111111111111111??????????????????????????????????1?01??0??01???110?0?
+	Lepisosteus?               11301100010021002000?4?101100111121000?000200?1??1?100003?02010111??011???1200?1??1122001?10010?0???01100011000111101111101101001101000101010111010001???000?0?01?51020000001?01110110?00
+	Leptolepis_coryphaenoides  0?31?1000000200020120311010???01120010?0?0200?1??1?100013?01010111??011???121111??1100000211?10?0???01001001100000001111100100000011000101010111000001???000?0?001010200010?1?020?0210000
+	Linmomis_delaneyi          ??????????10201021012?00?1????0??01101110021101??0110?01200102?100310000011200?10?00??????1??11001000000000000000100010111111111111???????????1?110000101011?12001011?101?001?011110?0000
+	Mansfieldiscus_sweeti_     ????????000001002100100001000?0?001100?000211?1??1?10?022?0102?100010011211201010101000?011001100100001100001100000101111111001100010001??010?111000?0???0111100010101101?101?01111010100
+	Melanecta_mmeae_           ????????0011?11020101000?1?????10101012100210?1????10?012???02?1????0011201?00?1???0????0111?1??010000100000110000111111111100011001???1??010?110000001??011?110010101101?101?01?????0100
+	Mesopoma_planti_           ????????00?101?021100?00?11???0??01000?000211?1??1?10?013?0101?1000?0012111200?1010100100?100110010000000010210001110111111111111011??????????11000000???1111100010102101?121?01111010000
+	Minlia_toombsi_            10000000011100102111?30001000001000100200011101??0110?1010010??100010000201?00?10200????0110001001?00000001120000000000100110000001000001101011110000012001110200101011010101?01111010000
+	Moythomasia_nitida         11000000011100102210?30001100001000000100011111??0110?1010?20??100110000201100?11200????0110001001000000002010000000001100110000001001?0?10101111000001200?11??00??10??0?0?01?01111010???
+	Novogonatodus_kasantsevae  ???????????????012101100?10???0??0???????02?1????????????????2?100?10???????0???01010001??11?110?1000010000011010111111111111111111????1??01??1?0101101??2110120011100101?121?01111010000
+	Osorioichthys_marginis_    ????????0001110021110?00?11???011?0000000021101??1?10?00100202?10011000011120121000100010110011001000010002010001000001111110011000001010?010101100000020??10?????????????????011?1010100
+	Paramblypterus_decants_    ????????00?111?021000?00?1????0??00000000011101??1?10?01211000011?010001211?00?10101211101100?1101?1001000011100010001111101111100110001?021??1?100100??001101000?0100111?001?01111010100
+	Paratarrasius_hibbardi_    ????????0000200021000?00011???????1000200011000201?11002210?01010131000101120121000122010011?110110000100010100011000111011100011110?001??210?0?1?0??001?000?0?021211?02??030111?????1000
+	Polypterus_bichir          002000000101010020010100010000011200000000100?1??1?10?00300202?111??001???1200?10?00????1?10010?11000000001100111110001110110000000??00001210100000010121000?0022?410201010?1?01110110000
+	Proceramala_montanensis_   ????????0??????022101000?10??????0100????021111??1?10?02311202?10001000211120???001121010111?110011000100001010110111111111111111110???11011??0?100000???111?121111101?11?121?0111?010110
+	Pteronisculus_             111001??00?0?100??10??00?1????01?1???0?0?0?????????10?0?3?120??1?02?00?1?11?0??1??11000101110?0?01?00011001111000011111111111111111????1??????11100??0??10?11??????100???0??1?01?????0000
+	Stegotrachelus             ????????000101001110??00?1????010?1000100021111??0?10?01310101?1010?0001201200?10?10??????11?10?01?0001000011100011001111111010100000?01??2101??0100001???1????????10????1?????1?????????
+	?Tarrasius_problematicus   ????????00002?0022110?00?1????0??0100020001?000201?110012101010101010001111201210?00????0?11?11000??000000111000011011111111000100100001?1110?00100110??1000?0?021311?02??020111?????0000
+	Tegeolepis_clarki          ????????0000200011102?00?10???010?120000002?101??1?10?0021??02?1001?1001101201310?10????1?11?10?010000100001100000001111?011111000?00??1??110?1??????????0?1????????0?????????01??1??????
+	Wendyichthys_dicksoni_     ????????1??????02110140001??????111000101021111??1?10?02310202?10011000211120111010100110111?110010000100101110010010011010100010000010100010110100000111011?102010101100?121?01111010001
+	Woodichthys_bearsdeni      ?00001?000?1010021101100?11???01011100200021101??1?10?02310202?120110002101200?10?00????0111?1100100000000001100011001110001000100000001??1101110000001??1111100010101101?101?01111010000
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  185;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  185;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1317067948861;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2721657153586017236;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5778963197923983188;
+			mqVersion 274;
+			checksumv 0 2 2175392677 null  getNumChars 185 numChars 185 getNumTaxa 43 numTaxa 43   short true   bits 63   states 63   sumSquaresStatesOnly 25737.0 sumSquares 25737.0   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1280 716;
+			setLocation 0 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5778963197923983188 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1180 649;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 520;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1180 649;
+						setLocation 0 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

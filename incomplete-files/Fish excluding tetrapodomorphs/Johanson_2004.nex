@@ -1,0 +1,193 @@
+#NEXUS
+[written Mon Sep 19 16:21:45 EDT 2011 by Mesquite  version 2.74 (build 550) at wl-10-180-87-213.wireless.duke.local/10.180.87.213]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=10;
+	TAXLABELS
+		Gooloogongia Aztecirz Sauripterus Barrnnedal Rhizodus Screbinodus Strepsodus Glyptolepis Medoevia Eustlzenoptermz 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=31;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2";
+	CHARSTATELABELS 
+		1 Parasymphysial_plate_contacts_anterior_first_coronoid /  no yes, 2 Premaxillary_fang /  absent present, 3 Posterior_border_of_postparietals_form_midline_process /  no yes, 4 Postotic_canal_enters_parietal /  no yes, 5 Extratemporal_contacts_supratemporal /  no yes extratemporal_absent, 6 Preopercular /  large narrow_and_barshaped, 7 External_nostrils /  two one, 8 Depressed_flange_on_cleithrum /  absent poorly_developed 'well developed (ordered)', 9 Narrow_waist_on_cleithrum /  no yes, 10 Ventral_lamina_of_cleithrum_broader_than_dorsal /  no yes, 11 Scapulocoracoid_attachment_on_cleithrum /  ventral dorsal, 12 Overlap_relationships_of_cleithrum_and_clavicle /  normal rhizodont_condition, 13 Anocleithrum_exposed /  no_ yes, 14 Caput_humeri /  concave gently_convex 'bulbous (ordered)', 15 Trifurcations_in_pectoral_fin_skeleton /  yes_ no, 16 Branched_radials_in_pectoral_fin_skeleton /  no_ yes, 17 Long_basallepidotrichial_segments_in_pectoral_fin /  no_ yes, 18 Long_basallepidotrichial_segments_in_other_fins /  no_ yes, 19 'Short, jointed lepidotrichial segments in other fins' /  yes_ no, 20 Main_lateral_line_canal_on_body /  single more_than_one_parallel_along_body, 21 Tail_shape /  heterocercal diphycercal, 22 Braincase /  ossified unossified, 23 Lateral_line_pores_on_cleithrum /  absent present_pores_or_pitlines, 24 Number_of_nasal_bones /  many reduced_in_number, 25 Postaxial_process_on_ulnare /  present absent_, 26 Ethmosphenoid_region /  elongate 'shorter, more rounded', 27 Orientation_of_dorsal_ridge_on_the_humerus /  'towards the ulnar condyle (or towards postaxial condylar region' separated_from_this_condyle, 28 Position_of_radius_and_ulna_articulations /  on_distal_surface_of_humerus also_present_on_dorsal_surface_of_humerus, 29 'Separation of ulna/radius condyles' /  distinct largely_continuous, 30 Pelvic_girdle /  elongate_with_pubis triangular_with_ilium_and_pubis, 31 Position_of_scapulocoracoid_attachment_on_cleithrum /  on_main_part_of_cleithrum 'more posterior,^nassociated with the posterior flange' ; 
+	MATRIX
+	Gooloogongia     101010100?1?0?0?1001001111???10
+	Aztecirz         ???????11?1102?11?????1???111?0
+	Sauripterus      ?????0?01111020111111?1?1?1?1?0
+	Barrnnedal       11101?121111?2011????01111000?1
+	Rhizodus         0111???21111?2011????11???010?1
+	Screbinodus      ?1110??20111???1111??11????????
+	Strepsodus       0111??121111020111111?1?11010?1
+	Glyptolepis      00010000000000100?0000001110?00
+	Medoevia         10000110100011??0?0??00??1?0??0
+	Eustlzenoptermz  000021100000111000001000001001?
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  31;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  31;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1316463706017;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7927705286961535747;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8104375459282932571;
+			mqVersion 274;
+			checksumv 0 2 1474144637 null  getNumChars 31 numChars 31 getNumTaxa 10 numTaxa 10   short true   bits 7   states 7   sumSquaresStatesOnly 719.0 sumSquares 719.0   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1280 716;
+			setLocation 0 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8104375459282932571 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1180 649;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1180 649;
+						setLocation 0 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

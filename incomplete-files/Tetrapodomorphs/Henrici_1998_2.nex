@@ -1,0 +1,227 @@
+#NEXUS
+[written Fri Jul 13 13:48:12 CDT 2012 by Mesquite  version 2.6 (build 486) at sc2-177.sc.usd.edu/206.176.6.177]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=13;
+	TAXLABELS
+		Hyla Pelodytes Scaphiopus Rhadinosteus Chelomophrynus Rhinophrynus Cordicephalus Thoraciliacus Eoxenopoides Saltenia Xenopus Palaeobatrachus Pliobatrachus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=18;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2";
+	CHARSTATELABELS 
+		1 'Frontoparietal (Cannatella, 1985)' /  paired azygous, 2 'Parasphenoid lateral alae (Cannatella, 1985)' /  present absent, 3 'Tooth type (Cannatella and Trueb, 1988a)' /  bicuspid conical, 4 'Maxilla-premaxilla suture (Cannatella and Trueb, 1988a)' /  maxilla_does_not_overlap_the_premaxilla pars_facialis_of_the_maxilla_forms_an_anterior_process_that_overlaps_the_premaxilla, 5 'Atlantal neural arch length (Henrici, 1991)' /  not_elongate elongate, 6 'Vertebral centrum type (Griffiths, 1963)' /  stegochordal ectochordal holochordal, 7 Vertebral_articulation /  procoelous_ 'functionally opisthocoelous, which in macerated Recent skeletons and fossil specimens are iden- tical to amphicoelous vertebrae (Estes, 1975)', 8 Ribs /  absent present, 9 'Synsacrum (Spinar, 1972)' /  absent present, 10 'Sacrum-urostyle articulation (Trueb, 1973)' /  bicondylar monocondylar fused, 11 'Rostriform process of lateral end of coracoid (Vergnaud-Grazzini and Mlynarski, 1969)' /  absent_ present, 12 'Interiliac tubercle (Estes and Sanchfz, 1982)' /  interiliac_tubercle_absent interiliac_tubercle_present, 13 'Pubis (Cannatella and Trueb, 1988a)' /  unossified ossified, 14 'Distal condyle of femur (Henrici, 1991)' /  single divided_into_large_lateral_condyle_and_smaller_medial_condyle, 15 Shape_of_femur /  shaft_has_sigmoid_curve shaft_bowed, 16 'Stoutness of tibiale and fibulare (Henrici, 1991)' /  slender_with_slightly_expanded_proximal_and_distal_ends_ stout_with_extremely_expanded_proximal_and_distal_ends, 17 Metapodial_length /  short elongated, 18 'Spades (Henrici, 1991)' /  Spades_absent 'two bony spades, formed from modified prehallux and distal phalanx of the first digit, present on each hind foot' ; 
+	MATRIX
+	Hyla             000000000000000000
+	Pelodytes        001000000?00000000
+	Scaphiopus       000002000200001102
+	Rhadinosteus     1100?1???0?0??000?
+	Chelomophrynus   112011100000011101
+	Rhinophrynus     112011100000011101
+	Cordicephalus    11??0121010?1?0010
+	Thoraciliacus    111?0121010?1?0010
+	Eoxenopoides     1121?02?02011?0010
+	Saltenia         11210021020???0010
+	Xenopus          111100210201100010
+	Palaeobatrachus  1111?0011011100010
+	Pliobatrachus    1?1??0001011??????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  18;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  18;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5516209607421000224;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4595323528748757099;
+			checksumv 0 2 406339874 null;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 141;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 971 713;
+			setLocation 443 92;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4595323528748757099 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 830 646;
+					setLocation 443 92;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+					getInfoPanel;
+					tell It;
+						btspOpen true;
+						apOpen true;
+						fpOpen true;
+					endTell;
+					toggleInfoPanel on;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 216;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 830 646;
+						setLocation 443 92;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #4595323528748757099 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.stochchar.CharListProbModels.CharListProbModels;
+					getTable;
+					tell It;
+						rowNamesWidth 429;
+						columnWidth 1 91;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 830 646;
+					setLocation 443 92;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

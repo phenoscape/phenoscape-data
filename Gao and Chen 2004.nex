@@ -1,0 +1,198 @@
+#NEXUS
+[written Wed Jul 25 15:40:23 CDT 2012 by Mesquite  version 2.6 (build 486) at sc2-177.sc.usd.edu/206.176.6.177]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=25;
+	TAXLABELS
+		Caudata Triadobatrachus Czatkobatrachus Prosalirus Ascaphus Leiopelma Alytes Barbourula Bombina Discoglossus Eodiscoglossus Notobatrachus Vieraella Callobatrachus Mesophryne Pelobates Eopelobates Megophrys Pelodytes Pipa Xenopus Rhinophrynus Palaeobatrachus Yizhoubatrachus Neusibatrachus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=65;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 General_shape_of_the_skull, 2 Sculpture_on_dermal_skull_roof_, 3 Medial_contact_of_nasals, 4 Anterolateral_margin_of_nasal_, 5 Rostral_process_of_nasal, 6 Fusion_of_frontal_and_parietal, 7 Frontoparietal_in_adults, 8 Dorsal_exposure_of_frontoparietal_fontanelle, 9 Posterolateral_process_of_frontoparietal_, 10 Frontoparietal_shelf_, 11 'Formation of prootic-occipital region', 12 Perilymphatic_foramen, 13 Palatine_process_of_premaxilla, 14 'Premaxilla-maxilla articulation', 15 'Premaxilla-nasal contact ', 16 Prefrontal_and_anterior_margin_of_the_orbit, 17 Quadratojugal_, 18 Shape_of_squamosal, 19 'Squamosal-maxilla contact', 20 Expansion_of_otic_ramus_of_squamosal_in_lateral_view_, 21 Medial_articulation_of_squamosal_, 22 Sphenethmoid, 23 Position_of_anterior_process_of_vomer_, 24 Postchoanal_processes_of_vomer, 25 Palatine_, 26 Cultriform_process_of_parasphenoid, 27 Posterolateral_alae_of_parasphenoid_, 28 Posterolateral_notch_of_parasphenoid_alae_, 29 Posteromedial_process_of_parasphenoid_, 30 Medial_ramus_of_pterygoid, 31 Parahyoid_bone, 32 Columella_, 33 Mentomeckelian_bone, 34 Marginal_teeth, 35 Number_of_presacral_vertebrae, 36 Fusion_of_Presacrals_I_and_II_, 37 Centrum_of_presacral_vertebrae, 38 Neural_arch_of_presacral_vertebrae, 39 Morphology_of_atlantal_cotyles_, 40 Free_ribs_on_presacral_vertebrae, 41 Transverse_process_of_posterior_presacral_vertebrae, 42 Fusion_of_sacral_ribs_, 43 Dilation_of_sacral_diapophysis_ ; 
+	MATRIX
+	Caudata          000000000000000000000000000?00?0000000?00000?00000?00000??0000000
+	Triadobatrachus  000??100000????0000001??0?000000?10?000000000000??0100010000?????
+	Czatkobatrachus  ????????????????????????????????????0?0??10????????110?1?0???????
+	Prosalirus       ?????1??00??1????????1????0?0??0????0?0??10{1 2}??10?0??01?1?210????0
+	Ascaphus         0111110210100111110010?0101111010120012211120011100111110?1101010
+	Leiopelma        0111110210200111110010121011110101200122111200100001?111021101110
+	Alytes           01001102102110120100111211111010013011021112101111121111121101100
+	Barbourula       01000100102100120100111211111010013010021122201111121111011101100
+	Bombina          010001021021101301001112111110100130100211222011111211110{0 1}1101100
+	Discoglossus     0100010{1 2}102110120110111211111010013010021112101111121111121101100
+	Eodiscoglossus   0100010?101?10?201001??????????0?13010?2112210?1?11?11110211?1??0
+	Notobatrachus    00000101011010011100100110000100012?002101010010000101010210????0
+	Vieraella        1?0?0101001??01??10011111?010???011?00?20?0????0?00?01?1??1??????
+	Callobatrachus   010?010??02??0?2010011121??????0012010?211121011110??111?211?1?00
+	Mesophryne       010?01????2?00??01101??????1???0012020?20122?01??0??1101?211?0?0?
+	Pelobates        000001{0 1}01121101201111111011111200130200411222110000?1111111112201
+	Eopelobates      0001010011?????2011111?1?11111?0?13?20?41122210000??11?102110????
+	Megophrys        01000100112?1012010111?111111?200130200411221110000?1111111112201
+	Pelodytes        0{0 1}101102102?0012010011?101111010013120041122201{0 1}00??1111111201201
+	Pipa             0101111010220101130012??102111201{1 2}31100311223210101?1111001111201
+	Xenopus          {0 1}121011010230101130012??102110201130102311223211211?1111001111211
+	Rhinophrynus     11000110112100110200111110210201123010041122121010221111121111201
+	Palaeobatrachus  1100011010210002{0 1}100111?102100000131202301121211101111{0 1}1?21111??1
+	Yizhoubatrachus  ?????1?101??01??0????????001?100012?1????112?201?????1?1??10???0?
+	Neusibatrachus   0????11?????????0?????1?0021?000?1??2??????2?2???????????????????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  65;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  65;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 8304888739584539741;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6446569623716662881;
+			checksumv 0 2 1646788203 null;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 239;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 599 955;
+			setLocation 481 193;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6446569623716662881 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 360 888;
+					setLocation 481 193;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #6446569623716662881 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.stochchar.CharListProbModels.CharListProbModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 360 888;
+					setLocation 481 193;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+					setActive;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

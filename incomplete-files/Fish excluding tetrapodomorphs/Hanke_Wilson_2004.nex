@@ -1,0 +1,212 @@
+#NEXUS
+[written Mon Oct 03 15:25:12 EDT 2011 by Mesquite  version 2.74 (build 550) at Ben-Frables-MacBook-Pro.local/10.0.1.8]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=20;
+	TAXLABELS
+		Lupopsyroides_macracanthus_ 0btusacanthus_corroconis Brachyacanthus_scutiger Brochoadmones_milesi Cassidiceps_vermiculatus_ Cheiracanthus_latus Climatius_reticulatus Culmacanthus_stewarti Diplacanthus_ellsi Diplacanthus_horridus_ Euthacanthus_macnicolli Gladiobranchus_probaton Homalacanthus_concinnus Ischnacanthus_gracilis Lupopsyrus_pygmaeus Mesacanthus_mitchelli Paucicanthus_vanelsti Tetanopsyrus_lindoei Tetanopsyrus_breviacanthias_ Triazeugacanthus_affinis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=59;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2";
+	CHARSTATELABELS 
+		1 Circumorbital_scales /  'small, undifferentiated from head scales' 'different from head scales, circumorbitals approximately the same size' 'different from head scales, anterior imd posterior circumorbitals enlarged.', 2 Sclerotic_plates /  absent present, 3 Endocranium /  cartilaginous mineralized, 4 'Hyoidean gill covers (hyoidean gill plates above the angle of the jaw)' /  absent 'plate-like' fillamentous, 5 'Branchiostegals (hyoidean gill plates below the angle of the jaw)' /  absent 'plate-like' fillamentous, 6 Extent_of_gill_chamber_cover /  multiple_slits 'single flap, covers up to ventral two-thirds of the lateral wall of gill chamber' 'single flap, completely covers lateral wall of gill chamber', 7 Branchial_chamber_length /  'elongate, longer than jaw' 'compact, shorter than jaw', 8 Palatoquadrate /  cartilaginous mineralized, 9 Palatoquadrate_adductor_fossa /  over_half_the_length_ofthe_upper_jaw under_half_the_length_ofthe_upper_jaw, 10 'Meckel''s cartilage' /  cartilaginous mineralized, 11 'Meckel''s cartilage with prominent prearticular "coronoid" flange' /  absent present, 12 'Meckel''s cartilage cover' /  naked small_sclaes 'polygonal or plate-like scales', 13 'Dentigerous jaw element on Meckel''s cartilage' /  absent present, 14 Dentigerous_jaw_element_on_palatoquadrate /  absent present, 15 'Toothless plates on Meckel''s cartilage' /  absent present, 16 Toothless_plates_on_palatoquadrate /  absent present, 17 Mandibular_splint /  absent present, 18 Adsymphyseal_tooth_whorl /  absent one_pair many_pairs, 19 Lower_jaw_articulation_with_palatoquadrate /  'condyle-socket articulation' no_articular_surfaces, 20 Scale_growth_pattern /  monodontode superpositional, 21 Scale_growth_origin /  no_well_defined_origin_of_scale_growth 'first scales develop below the second dorsal fin (indicated by larger body scales in this region).', 22 Body_scale_alignment /  unaligned aligned_in_oblique_rows, 23 Ascending_canals_in_body_scales /  wide_diameter 'thin, resemble dentine tubules', 24 Scale_primordium /  'large, greater than half the crown width' 'small, less than half the crown width', 25 Ossified_basal_tissue_in_body_scales /  absent present, 26 Body_scale_neck_tissue /  only_as_a_low_rim prominent_neck_developed, 27 'Head scale-body scale transition' /  'gradual transition, no definable demarcation' abrupt_transition, 28 Body_scales_along_anterior_end_of_the_main_sensory_canal /  undifferentiated 'enlarged, irregularly shaped', 29 'Scale transition from body to fins:' /  'gradual, the proximal margin of the fin web is difficult to identify' 'abrupt, the proximal margin of the fin web is obvious', 30 Fin_scale_alignment /  unaligned aligned_in_rows, 31 Scales_around_the_bases_of_the_paired_fin_spines /  unmodified_and_similar_to_body_scales enlarged, 32 Scales_at_the_base_of_the_median_fin_spines /  'undifferentiated, similar to body' enlarged_scales_present, 33 Fin_spine_ornament /  'round, elevated nodes' 'flat lepidotrich-like nodes' smooth, 34 Fin_spine_ribs /  five_or_more_per_side _fewer_than_five_per_side, 35 Fin_spine_rib_orientation /  converge_on_leading_edge_of_most_of_the_fin_spine_length parallel_the_leading_edge_to_near_the_distal_tip, 36 Fin_spine_rib_spacing /  'well-spaced, troughs as wide or wider than ribs' 'compact, troughs narrower than ribs', 37 Fin_spine_reinforcement /  only_with_ribs ribs_and_fine_posterolateral_striations, 38 Number_of_dorsal_fins /  both_dorsal_fins_present 'only one (posterior?) dorsal fin present', 39 Anterior_dorsal_spine_length /  shorter_than_posterior_dorsal_spine longer_than_posterior_dorsal_spine, 40 Ossified_dorsal_spine_basals /  absent present, 41 Dorsal_fin_spine_denticles /  absent present_along_trailing_edge, 42 Anterior_dorsal_fin_spine_curvature /  straight curved_for_most_of_its_length, 43 Dorsal_fin_spine_insertion /  'shallow, inserted into the skin' 'deep, prominent insertion area', 44 Prepectoral_spines /  free_in_skin absent fused_to_ornamented_dermal_plates, 45 Pectoral_spine_denticles /  absent present_along_trailing_edge, 46 Pectoral_fin_spine_curvature /  curved_for_most_of_its_length straight 'plate-like', 47 Ornamented_pinnal_plates_lacking_spines /  absent present, 48 Ornamented_pinnal_plates_with_spines /  absent one_pair_present two_pair_present, 49 Lorical_plates /  absent present, 50 Pectoral_fin_spine_attachment_and_ornamented_dermal_plates /  not_attached_to_dermal_plates firmly_attached_to_ornamented_dermal_plates, 51 Scapulocoracoid /  cartilaginous ossified, 52 Procoracoid /  cartilaginous ossified, 53 Scapulocoracoid /  'a single element, ventral portion relatively flat' 'a single element, post-branchial lamina separated from the posterior flange by a prominent crest' 'two centers, ventral portion relatively flat', 54 Pectoral_fin_spine_and_scapulocoracoid /  'loosely associated, forms a movable joint' 'firmly fixed to the scapulocoracoid, fin spine held erect', 55 'Prepelvic spines (includes both ademdian and intermediate spines)' /  none one_pair two_or_more_pairs, 56 Prepelvic_spine_series /  'positioned in-line posteriorly along abdomen' 'anteriormost prepelvic spine pair enlarged and separated from the abdominal set;' prepelvic_spines_absent, 57 Prepelvic_spine_structure /  'compressed, blade-like' 'conical, sub-oval in cross-section', 58 Anal_fin_spine_insertion /  'shallow, inserted into the skin' ' deep, prominent insertion area', 59 Length_of_the_base_of_the_anal_fin /  the_fin_base_length_is_similar_to_fin_height 'short fin base, fin base is less than 25 % of the fin height' 'elongate, fin base is more than 75 % of the fin height' ; 
+	MATRIX
+	Lupopsyroides_macracanthus_   00000??0?0?0000000?000000000000020000000000010000000?020000
+	0btusacanthus_corroconis      00000200?0?1000000?00000000000002000000000?001000000?002?00
+	Brachyacanthus_scutiger       1001020101?20000000111??11101100000100000002000211100020000
+	Brochoadmones_milesi          10000000?0?2000002?111001111010020110000101102000000??20111
+	Cassidiceps_vermiculatus_     200111110100000010011111111111112111100001010100001100201?0
+	Cheiracanthus_latus           0112221101000000000111001100111?211111?10?11010000110002?10
+	Climatius_reticulatus         1001010101020000020110001110??00000100000102000211100020000
+	Culmacanthus_stewarti         20000?00?0?1000000?111??111011112?1100100111011000101002?10
+	Diplacanthus_ellsi            20000210?10200100011110011??1100211100100111100101111121110
+	Diplacanthus_horridus_        20000211?11200110011110011??1100211100100111100101111121110
+	Euthacanthus_macnicolli       0101210000?1000000?1110011101111200100000000010100100020100
+	Gladiobranchus_probaton       20010110?11100100011110011111111101100100010000000111121110
+	Homalacanthus_concinnus       0112221101000000100111??11011110211101?00?01010000112002?00
+	Ischnacanthus_gracilis        00022111010211000101111111111111201100000111000000100002?10
+	Lupopsyrus_pygmaeus           00010110?0?0000000?0100001000000000000000000100000110020000
+	Mesacanthus_mitchelli         010112110?00000010011101110?1111211111?00?01010000100010100
+	Paucicanthus_vanelsti         00000?10?1000000001111??11001110?11110000001??000000??02?02
+	Tetanopsyrus_lindoei          00000211111100110001110011011111101100010011000000111102?00
+	Tetanopsyrus_breviacanthias_  00000211111100110001110011011111101100010011010000111102?00
+	Triazeugacanthus_affinis      0101121101000000?00111??110011??211101?00?01000000100010100
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  59;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  59;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1317669912856;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 8862557995097369463;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7939339353597083842;
+			mqVersion 274;
+			checksumv 0 2 1917438247 null  getNumChars 59 numChars 59 getNumTaxa 20 numTaxa 20   short true   bits 7   states 7   sumSquaresStatesOnly 3369.0 sumSquares 3369.0   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1280 716;
+			setLocation 528 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7939339353597083842 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 110;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1180 649;
+					setLocation 528 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 232;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1180 649;
+						setLocation 528 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
