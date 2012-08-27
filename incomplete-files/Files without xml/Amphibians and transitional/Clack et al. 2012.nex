@@ -1,0 +1,210 @@
+#NEXUS
+[written Mon Aug 27 12:20:31 CDT 2012 by Mesquite  version 2.75 (build 566) at sc2-108.sc.usd.edu/206.176.6.108]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=22;
+	TAXLABELS
+		Acanthostega Balanerpeton Baphetes Crassigyrius Dendrepteon Densignathus Elginerpeton Elpistostega Eoherpeton Eusthenopteron Greererpeton Ichthyostega Metaxygnathus Panderichthys Pederpes Proterogyrius Silvanerpeton Tiktaalik Ventastega Chatcheeria Ymeria ANSP_21350 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=115;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B";
+	CHARSTATELABELS 
+		1 'Anterior tectal/septomaxilla' /  'anterior tectal (external bone, dorsal to nostril)' 'septomaxilla (external or internal bone, posterior to nostril)' absent, 2 'Ectopterygoid /palatine exposure' /  more_or_less_confined_to_tooth_row_ broad_mesial_exposure_additional_to_tooth_row_, 3 Ectopterygoid_as_long_or_longer_than_palatines /  yes no, 4 Ectopterygoid_reaches_subtemporal_fossa /  no yes, 5 Frontal /  absent present, 6 Intertemporal /  present absent, 7 Jugal /  does_not_extend_anterior_to_orbit_ extends_anterior_to_orbit_, 8 Lacrimal /  contributes_to_orbital_margin_ excluded_from_margin_, 9 Lateral_rostral_present /  yes_ no, 10 Maxilla_makes_interdigitating_suture_with_vomer /  no yes, 11 Maxilla_external_contact_with_premaxilla /  narrow_contact_point_not_interdigitated interdigitating_suture, 12 Maxilla_extends_behind_level_of_posterior_margin_of_orbit /  yes no, 13 Median_rostral /  single paired absent, 14 Opercular /  present absent, 15 Prefrontal /  'twice as long as broad, or less' three_times_as_long_as_broad, 16 Prefrontal /  transverse_anterior_suture_with_tectal_ tapers_to_point_anteriorly, 17 Preopercular /  present absent, 18 Pterygoids /  separate_in_midline_ meet_in_midline_anterior_to_cultriform_process, 19 Pterygoid_quadrate_ramus_margin_in_subtemporal_fossa /  concave_ with_some_convex_component_, 20 'Vomers separated by parasphenoid > half length' /  yes no, 21 Vomers_excluded_from_margin_of_interpterygoid_vacuity /  yes no, 22 Vomers /  as_broad_as_long_or_broader_ about_twice_as_long_as_broad_or_longer, 23 Basipterygoid_process /  not_strongly_projecting_with_concave_anterior_face strongly_projecting_with_flat_anterior_face__, 24 Ethmoid /  fully_ossified_ partly_or_wholly_unossified_, 25 Hypophysial_region /  solid_side_wall_pierced_by_small_foramina_for_pituitary_vein_and_other_vessels_ single_large_foramen_, 26 Otic_capsule_lateral_commissure_bearing_hyomandibular_facets /  present absent, 27 Parasphenoid /  does_not_overlap_basioccipital_ overlaps_basioccipital, 28 Parasphenoid_denticulated_field /  present absent, 29 Sphenoid /  'fully ossified, terminating posteriorly in intracranial joint or fused to otoccipital ' separated_from_otoccipital_by_unossified_gap_, 30 Ectopterygoid_fang_pairs /  present absent, 31 'Ectopterygoid row (3+) of smaller teeth' /  present absent, 32 'Ectopterygoid / palatine shagreen field' /  absent present, 33 Maxilla_tooth_number /  '> 40 ' '30-40 ' '< 30 ', 34 Palatine_row_of_smaller_teeth /  present absent, 35 Pterygoid_shagreen /  dense a_few_discontinuous_patches_or_absent_, 36 Premaxillary_tooth_proportions /  all_approximately_same_size_ posteriormost_teeth_at_least_twice_height_of_anteriormost_teeth_, 37 Vomerine_fang_pairs /  present absent, 38 Vomerine_fang_pairs_noticeably_smaller_than_other_palatal_fang_pairs /  no yes, 39 Vomer_anterior_wall_forming_posterior_margin_of_palatal_fossa_bears_tooth_row_meeting_in_midline /  yes_ no, 40 Vomerine_row_of_small_teeth /  present absent, 41 Vomerine_shagreen_field /  absent present, 42 Adductor_fossa_faces_ /  dorsally mesially, 43 Adductor_crest /  absent 'peak anterior to adductor fossa, dorsal margin of fossa concave' 'peak above anterior part of adductor fossa, dorsal margin of fossa convex ', 44 Angular_?_prearticular_contact /  prearticular_contacts_angular_edge_to_edge absent mesial_lamina_of_angular_sutures_with_prearticular, 45 'Coronoid (anterior) contacts splenial' /  no yes, 46 'Coronoid (middle) separated from splenial' /  'yes, by prearticular ' no 'yes, by postsplenial ', 47 'Coronoid (middle) contacts postsplenial' /  no yes, 48 'Coronoid (posterior) posterodorsal process' /  no yes, 49 'Coronoid (posterior) posterodorsal process visible in lateral view' /  no yes, 50 'Dentary external to angular + surangular, with chamfered ventral edge and no interdigitations' /  no_ yes, 51 Dentary_ventral_edge /  smooth_continuous_line_ abruptly_tapering_or_?stepped?_margin, 52 'Dentary suture with splenial + postsplenial marked by deep furrow' /  no_ yes, 53 Mandibular_sensory_canal /  present absent, 54 Mandibular_canal_exposure /  'entirely enclosed, opens through lines of pores' ', mostly enclosed, short sections of open grooves ' 'mostly open grooves, short sections opening through pores ' entirely_open_, 55 'Mandible: oral sulcus/surangular pit line' /  present absent, 56 Meckelian_bone_floors_precoronoid_fossa /  yes no_, 57 Meckelian_bone_ossified_in_middle_part_of_jaw /  yes little_or_no_ossification, 58 Meckelian_bone_exposure_in_middle_part_of_jaw /  depth_much_less_than_prearticular depth_similar_to_prearticular_, 59 'Meckelian foramina/ fenestrae, dorsal margins formed by' /  Meckelian_bone prearticular infradentary, 60 'Meckelian foramina/ fenestrae, height' /  much_lower_than_adjacent_prearticular_ equal_to_or_greater_than_depth_of_adjacent_prearticular_, 61 Parasymphysial_lateral_foramen_present /  no yes, 62 Parasymphysial_mesial_foramen_present /  no yes, 63 Postsplenial_with_mesial_lamina /  no yes, 64 Postsplenial_pit_line_present /  yes no, 65 Postsplenial_suture_with_prearticular_present /  no yes_but_interrupted_by_Meckelian_foramina_or_fenestrae_ uninterrupted_suture, 66 Prearticular_sutures_with_surangular /  no yes, 67 Prearticular_sutures_with_mesial_lamina_of_splenial /  'no, mesial lamina of splenial absent' yes 'no, mesial lamina of splenial separated from prearticular by postsplenial', 68 Prearticular_with_longitudinal_ridge_below_coronoids /  no yes, 69 Prearticular_with_mesially_projecting_flange_on_dorsal_edge_along_posterior_border_of_adductor_fossa /  no yes, 70 Prearticular_centre_of_radiation_of_striations /  level_with_posterior_end_of_posterior_coronoid_ level_with_middle_of_adductor_fossa_ level_with_posterior_end_of_adductor_fossa_, 71 Splenial_has_free_ventral_flange /  yes no, 72 'Splenial, rearmost extension of mesial lamina' /  closer_to_anterior_end_of_jaw_than_to_adductor_fossa equidistant closer_to_anterior_margin_of_adductor_fossa_than_to_the_anterior_end_of_the_jaw_, 73 'Coronoids: at least one has fang pair recognisable because at least twice the height of coronoid teeth' /  yes no, 74 'Coronoids: at least one has fangs recognisable because noticeably mesial to vertical lamina of bone and to all other teeth' /  yes no, 75 'Coronoids: at least one has organised tooth row' /  yes no, 76 'Coronoids: at least one carries shagreen' /  no yes, 77 'Coronoids: size of teeth (excluding fangs) on anterior and middle coronoids relative to dentary tooth size' /  about_the_same_ half_height_or_less, 78 Dentary_tooth_row /  homodont markedly_heterodont_, 79 Dentary_with_parasymphysial_fangs_internal_to_marginal_tooth_row /  yes no, 80 Dentary_teeth /  same_size_as_maxillary_teeth_ larger_than_maxillary_teeth smaller_than_maxillary_teeth_, 81 Dentary_with_a_row_of_very_small_teeth_or_denticles_lateral_to_tooth_row /  yes no, 82 Parasymphysial_tooth_plate /  present absent, 83 Parasymphysial_plate_dentition /  shagreen_or_irregular_tooth_field_ organised_dentition_aligned_parallel_to_jaw_margin_ no_dentition_, 84 Parasymphsial_plate_has_fang_pair /  no yes, 85 Parasymphysial_plate_has_tooth_row /  no 'short tooth row, separated from coronoid tooth row by diastema' long_tooth_row_reaching_coronoid, 86 'Prearticular shagreen field, distribution' /  gradually_decreasing_from_dorsal_to_ventral well_defined_dorsal_longitudinal_band_ scattered_patches_or_absent_, 87 Anterior_palatal_fenestra /  single double absent, 88 Dorsal_fontanelle_on_snout /  absent present, 89 Interpterygoid_vacuities /  absent at_least_2_x_longer_than_wide_ '< 2 x longer than wide ', 90 Intracranial_joint /  present_in_dermal_skull_roof_ absent, 91 Nature_of_dermal_ornament /  tuberculate_ fairly_regular_pit_and_ridge_ irregular absent_or_almost_absent_, 92 Nature_of_ornament_starbursts?_of_radiating_ornament_on_at_least_some_bones /  no yes, 93 Anocleithrum /  oblong_with_distinct_anterior_overlap_area_ 'drop-shaped with no anterior overlap area' absent, 94 Cleithrum /  ornamented not_ornamented_, 95 'Cleithrum, postbranchial lamina' /  present_ absent, 96 Digits /  absent present, 97 Humerus /  narrow_tapering_entepicondyle_ 'square or parallelogram-shaped entepicondyle', 98 'Ilium, iliac canal' /  absent present, 99 'Ilium, posterior process' /  oriented_posterodorsally_ ', oriented approximately horizontally posteriorly ', 100 Interclavicle /  small_and_concealed_or_absent_ large_and_exposed_, 101 Interclavicle_shape /  ovoid 'kite-shaped ' with_posterior_stalk_, 102 Lepidotrichia_in_paired_appendages /  present absent, 103 'Posttemporal + supracleithrum' /  present absent, 104 Radius_and_ulna /  radius_much_longer_than_ulna_ approximately_equal_length_, 105 'Ribs, trunk' /  no_longer_than_diameter_of_intercentrum_ longer, 106 'Ribs, trunk' /  all_straight_ at_least_some_curving_ventrally_, 107 'Ribs, trunk' /  all_cylindrical_ some_or_all_bear_flanges_from_posterior_margin_which_narrow_distally some_or_all_flare_distally_, 108 Scapular_blade /  absent_ small_with_narrow_top_ large_with_broad_top_, 109 Scapulocoracoid /  small_and_tripodal_ large_plate_pierced_by_large_coracoid_foramen_ very_large_plate_without_large_coracoid_foramen_, 110 Subscapular_fossa /  broad_and_shallow_ deeply_impressed_posteriorly, 111 Squamation /  'complete body covering of scales, all similar ' ventral_armour_of_gastralia_, 112 Pectoral_process /  absent present, 113 Proximal_limb_of_oblique_ridge /  'present, separated from anterior margin of humerus by prepectoral space' 'absent, replaced by deltopectoral crest ', 114 Latissimus_dorsi_attachment /  diffuse_ridged_area_ distinct_process_, 115 Foramina_piercing_oblique_ventral_ridge /  many one_moderately_large_foramen_in_addition_to_entepicondylar_foramen 'entepicondylar foramen is the only large opening, other foramina are tiny pinpricks or absent ' ; 
+	MATRIX
+	Acanthostega    000111111000111?0101?011110001000001000000011000?100011110100101001100001100100010111111011111011001111010202011112
+	Balanerpeton    2101100011?0210110111011??101011110000111112121??0101?111?20001120200?101111?00111?002202111211110011111102?2?11112
+	Baphetes        010110??101011011101?01111100011110000111????????????????????????????????????????0010?200111?111100??1?1??????11112
+	Crassigyrius    1000100?111021011101?0????10?0001000000000020000001003111?100001001??1121111?101101101110121?1111??11111110???11111
+	Dendrepteon     100110001?10210110111111111A10110100011111B21??110101?1?1?11??1111??0?111111?0?11????220211121111001111111022?11112
+	Densignathus    ?????????????????????????????????????????0011000?10000010000110?001000000000100?101111????31????1??????????????????
+	Elginerpeton    ????????????0????????????????????0?0???????1?00??0010001010011000011???11000000?001111????11?11??11????????0?1?????
+	Elpistostega    0???1?100?001?1??0????????10???????0?????????????00000?????????0??????0????????????????0?00????????????????????????
+	Eoherpeton      200?10111?01?101111???11?111?0002110?????12?100??0101?111?10??111?1?1212110110?01????2?10120???1100??11111022??1112
+	Eusthenopteron  00000000000000000000??00000000000000000000010000?00000000000000000000?0000000010000000000000000000?0000000000?00010
+	Greererpeton    21011A001000211011010011111010002001011101221001101001011?11000100100?120101100110110211111121011001111110112?11112
+	Ichthyostega    01011111?10001110101?011?1000A002011001000001000?1000?1100000101001?000011001002101112000111?10111112111111021?1001
+	Metaxygnathus   ?????????????????????????????????????????0000000?10001010000?10?001000000100100?101111????31???????????????????????
+	Panderichthys   000?1000000000000000?000000000000000000000000000?00000000000000000000?000000000000000000010000000??0?0001?101?0000?
+	Pederpes        ?10110001000?10101?1??1??110?001200?????????????????????????????????????????????????????0111?1111011211110112?11112
+	Proterogyrius   20001000100121011111?11???11?0100000?????1221????0101?111?11001111?11?12???1?0001????2?00121?1111001?11111022?11112
+	Silvanerpeton   21001000101121011111?11???10???111000011111??000?0101?111?10??11???00??11111?0?01????220012121111011211111022?11112
+	Tiktaalik       ????1?1???00?11?0000??00?0000???0?00?????0000000?00000?000?0000??0000???0000000?10?0?0?0010000000??0?0?0???010?0000
+	Ventastega      ?0??10111000111?0101?01101000??0000100?000001000?10000010000110000110000010010001010210101111110?0011?1????020?????
+	Chatcheeria     200010111?0021010101?11??11??000200100110100100100000201000000010011010211001002101011?00131?1011011211?11122??1112
+	Ymeria          ?101??????00??????0??0???????00?20?100?0?00??000?100021?0000??010??0?00?010000001011110?0?31???????????????????????
+	ANSP_21350      ???????????????????????????????????????????????????????????????????????????????????????????????????????????????1000
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  115;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  115;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1346088031511;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6576572570764092188;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7669492607691865028;
+			mqVersion 275;
+			checksumv 0 3 1459887727 null  getNumChars 115 numChars 115 getNumTaxa 22 numTaxa 22   short false   bits 3087   states 3087   sumSquaresStatesOnly 7345623.0 sumSquares 7345623.0 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1277 669;
+			setLocation -82 483;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7669492607691865028 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1177 602;
+					setLocation -82 483;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 221;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1177 602;
+						setLocation -82 483;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
