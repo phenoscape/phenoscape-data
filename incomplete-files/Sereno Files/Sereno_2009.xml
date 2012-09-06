@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.2" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.4.3" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -365,7 +365,11 @@
         <state id="9e38f56c-ab4f-45ae-a2f5-6bf10e674cfc" label="L-shaped" symbol="1"/>
       </states>
       <states id="b4453354-d041-4892-bd89-542bbdad0bfb">
-        <state id="7527fab6-2471-41c1-8399-aff699c9909e" label="overlapping" symbol="0"/>
+        <state id="7527fab6-2471-41c1-8399-aff699c9909e" label="overlapping" symbol="0" about="#7527fab6-2471-41c1-8399-aff699c9909e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="0ad283e4-a465-4959-b25c-d45887821c19" label="obliterating fusion with subtriangular anterior process" symbol="1"/>
       </states>
       <states id="a82342f8-f454-45da-bb55-9161693a6d2c">
@@ -457,7 +461,11 @@
         </state>
       </states>
       <states id="387021d1-395c-4b5b-bb1a-42cf41cb4aaf">
-        <state id="1829ff75-d23d-48a4-97e7-c16717dc9e6f" label="40-50% " symbol="0" about="#1829ff75-d23d-48a4-97e7-c16717dc9e6f"></state>
+        <state id="1829ff75-d23d-48a4-97e7-c16717dc9e6f" label="40-50% " symbol="0" about="#1829ff75-d23d-48a4-97e7-c16717dc9e6f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="2bdb9da2-b111-4012-9053-a8547841b731" label="20-30% " symbol="1"/>
       </states>
       <states id="66bed388-7cd2-4ae6-a77d-7e2b0e56b170">
@@ -495,7 +503,7 @@
         <state id="e2dc6b2c-e8ef-4a64-a694-a579495d611a" label="flat" symbol="1"/>
       </states>
       <states id="64baa469-b21a-40e5-bc86-3c7a6607624f">
-        <state id="2db70c06-0edd-48c1-9c14-b33950970177" label="rounded, blunt" symbol="0" about="#2db70c06-0edd-48c1-9c14-b33950970177"></state>
+        <state id="2db70c06-0edd-48c1-9c14-b33950970177" label="rounded, blunt" symbol="0" about="#2db70c06-0edd-48c1-9c14-b33950970177"/>
         <state id="4459b7c3-2951-4d8f-bcd7-1740c61d98a9" label="pointed, prominent" symbol="1" about="#4459b7c3-2951-4d8f-bcd7-1740c61d98a9">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
@@ -509,7 +517,7 @@
         </state>
       </states>
       <states id="f5903333-4402-4d17-a0a9-5aeeecbe7e74">
-        <state id="1cc2036e-2f56-4e85-8f54-a1814c1848e6" label="well formed" symbol="0" about="#1cc2036e-2f56-4e85-8f54-a1814c1848e6"></state>
+        <state id="1cc2036e-2f56-4e85-8f54-a1814c1848e6" label="well formed" symbol="0" about="#1cc2036e-2f56-4e85-8f54-a1814c1848e6"/>
         <state id="99e39443-cc5d-486b-874a-84a194b40d51" label="rudimentary" symbol="1"/>
       </states>
       <states id="339da433-55ca-40fe-8a24-ca6cde52348e">
@@ -700,7 +708,7 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="fb8aa63e-d285-4d54-a843-ebd42c0c0c2a" label="concave (depth at least 15% of the length of the concave margin) " symbol="1" about="#fb8aa63e-d285-4d54-a843-ebd42c0c0c2a"></state>
+        <state id="fb8aa63e-d285-4d54-a843-ebd42c0c0c2a" label="concave (depth at least 15% of the length of the concave margin) " symbol="1" about="#fb8aa63e-d285-4d54-a843-ebd42c0c0c2a"/>
       </states>
       <states id="cecba48d-07d0-49ce-9b91-897c322f3a4e">
         <state id="af0a047b-1f09-40c1-a30f-5866b2aaaca3" label="subtriangular" symbol="0" about="#af0a047b-1f09-40c1-a30f-5866b2aaaca3">
@@ -730,7 +738,7 @@
       </states>
       <states id="ef365efa-9285-459a-8888-49cf1614dbe9">
         <state id="a8cb5775-626e-450c-bf6d-47d3799e01d1" label="significantly greater" symbol="0"/>
-        <state id="5192172b-8aa7-4a3b-b214-42323189fe8b" label="subequal" symbol="1" about="#5192172b-8aa7-4a3b-b214-42323189fe8b"></state>
+        <state id="5192172b-8aa7-4a3b-b214-42323189fe8b" label="subequal" symbol="1" about="#5192172b-8aa7-4a3b-b214-42323189fe8b"/>
       </states>
       <states id="a1e0f301-86c3-49eb-93f5-6537027293ce">
         <state id="db42260a-3590-4375-8c75-4809cb7e71fd" label="concavity" symbol="0"/>
