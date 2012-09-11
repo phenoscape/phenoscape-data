@@ -1,0 +1,234 @@
+#NEXUS
+[written Mon Sep 10 14:57:35 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.76.160]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=42;
+	TAXLABELS
+		Hypothetical_ancestor Arthroleptis_variabilis Barbourula_busuangensis Batrachyla_antartandica Batrachylodes_elegans_ Bombina_orientalis_ Boophis_madagascariensis_ Buergeria_japonica Bufo_chanchanensis Ceratophrys_cornuta Colostethus_inguinalis Colostethus_talamancae Cophixalus_cryptotympanum Crossodactylus_gaudichaudi Cycloramphus_fuliginosus Dimorphognathus_africanus Discoglossus_pictus Eupsophus_roseus Hylactophryne_occidentalis Hyla_lanciformis Hylodes_nasus_ Ischnocnema_quixensis Kassina_senegalensis Leptodactylus_melanonotus_ Leptopelis_natalensis Limnodynastes_ornatus_ Mantella_aurantiaca Mantidactylus_bicalcaratus_ Mantidactylus_liber Mantidactylus_opiparis_ Pelobates_fuscus Pelodytes_punctatus_ Petropedetes_cameronesis Phrynobatrachus_natalensis Platymantis_papuensis_ Ramanella_variegates Staurois_natator Telmatobius_schreiteri Telmatobufo_venustus Thoropa_lutzi Tomopterna_breviceps_rolandae Zachaenus_parvulus_ 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix2;
+	DIMENSIONS  NCHAR=124;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 'Nasals, extent of medial contact' /  nasals_lacking_medial_contact naslas_with_extensive_medial_contact, 2 nasal_shape /  nasal_triangular 'nasal spindle- shaped' 'nasal club- shaped' nasal_only_a_narrow_slip_of_bone nasal_square_with_posterolateral_flange_directed_posteroventrally nasal_rectanglar_with_posterolateral_flange_directed nasal_square_with_posterolateral_flange_directed_ventrolaterally, 3 'Frontoparietal, Shape' /  frontoparietal_rectangular anterior_frontoparietal_wider_than_posterior_portion posterior_frontoparietal_wider_than_anterior_portion, 4 cranial_exostosis /  cranial_exostosis_absent cranial_exostosis_present_with_simple_reticulations cranial_exostosis_present_with_extensive_configurations, 5 Frontoparietal_fenestra /  no_fenestra_ 'fenestra large, wide' 'fenestra small, narrow', 6 'Sphenethmoid, nasal component' /  nasal_component_overlaps_nasal_capsules nasal_component_extends_to_posterior_ends_of_nasal_capsules nasal_component_does_not_extend_anteriorly_past_plane_of_the_planum_antorbitale, 7 'Sphenethmoid, ventral portion' /  midventral_portion_fused midventral_portion_unfused, 8 'Sphenethmoid, braincase component' /  braincase_component_anterior_to_and_does_not_contact_the_optic_foramen braincase_component_contacts_anterior_margin_of_optic_foramen, 9 'prootic, fusion with frontoparietal' /  prootic_and_frontoparietal_not_fused prootic_and_frontoparietal_fused, 10 'Exoxxipital, occipital condyles and intercotylar' /  vertebral_cotyles_widely_separated verteral_cotyles_narrowly_separated, 11 columella /  columella_present columella_absent, 12 'premaxilla, projection of alary process' /  angle_of_projection_of_alary_process_dorsal angle_of_projection_of_alary_process_anterodorsal angle_of_projection_of_alary_process_posterodorsal, 13 'premaxilla, size of pars palatina' /  pars_palatina_of_premaxillae_small pars_palatina_of_premaxillae_large, 14 'premaxilla, shape of pars palatina' /  medial_larger_than_lateral_end_of_pars_palatina 'medial and lateral ends equal of pars palatina, forming an emargination' medial_smaler_than_lateral_ends_of_pars_palatina, 15 'Maxilla, contact of pars facialis with nasal' /  maxilla_separated_from_the_nasal maxilla_contacts_the_nasal, 16 'Maxilla, Shape of pars facialis' /  pars_facialis_of_maxilla_rectangular pars_facialis_of_maxilla_triangular, 17 'Maxilla, anteromedial flange of pars palatina' /  anteromedial_flange_of_pars_palatina_absent anteromedial_flange_of_pars_palatina_present, 18 'Maxilla, expansion of pars palatina' /  pars_palatina_of_maxilla_equal_to_lateral_pars_palatina_of_premaxilla pars_palatina_of_maxilla_narrower_than_the_lateral_pars_palatina_of_premaxilla, 19 'Maxilla, pterygoid process of pars palatina' /  pterygoid_process_of_maxilla_present pterygoid_process_of_maxilla_absent, 20 'Maxilla-premaxilla, pars dentalis (teeth)' /  'maxillary-premaxillary teeth present' 'maxillary-premaxillary teeth absent', 21 Quadratojugal /  Quadratojugal_present Quadratojugal_absent, 22 'Quadratojugal, overlap with maxilla' /  Quadratojugal_contaction_maxilla Quadratojugal_not_contacting_maxilla, 23 'Quadratojugal, dorsal enlargment' /  Quadratojugal_dorsally_eual_or_higher_than_pars_facialis_of_maxilla Quadratojugal_dorsally_less_than_pars_facialis_of_maxilla, 24 'sqamosal, orientatin in realtion to the skull roof' /  'zygomatic/otic-rami crossbar tilted anteroventrally' 'zygomatic/otic-rami crossbar parallel to skull roof', 25 'sqamosal, profile of ventral ramus' /  ventral_ramus_of_squamosal_straight ventra_ramus_of_squamosal_a_simple_curve ventral_ramus_of_suamosal_sigmoid, 26 'squamosal, length of ventral ramus' /  ventral_ramus_length_much_longer_than_otic_ramus ventral_ramus_length_approximately_equal_that_of_otic_ramus, 27 'squamosal, angle of ventral ramus to maxillary arcade' /  'ventral ramus oriented posteroventrally (closer to 45degrees ' 'ventral ramus oriented ventrally (closer to 90 degrees)', 28 'Squamosal, otic ramus' /  otic_ramus_of_squamosal_present otic_ramus_of_squamosal_rudimentary_or_absent, 29 'squamosal, otic ramus, degree of development of the otic plate and its relationship with the prootic' /  otic_ramus_of_squamosal_overlaps_cartilaginous_margin_of_crista_parotic 'otic ramus of squamosal does not contract, or abuts lateral margin of crista parotica' otic_ramus_of_squamosal_overlaps_ossified_prootic, 30 'Squamosal, length of zygomatic ramus' /  zygomatic_approximately_equal_to_otic_ramus zygomatic_much_longer_than_otic_ramus zygomatic_much_shorter_than_otic_ramus, 31 'Pterygoid, anterior ramus' /  anterior_ramus_of_pterygoid_not_bowed_laterally anterior_ramus_of_pterygoid_bowed_laterally, 32 'Pterygoid, relationship of anterior ramus with palatine and planus antorbitale' /  anterior_ramus_overlapping_maxilla_to_the_midorbital_level anterior_ramus_separated_by_a_small_gap_from_planum_antorbitale anterior_ramus_overlapping_posterolateral_border_of_planum_antorbitale anterior_ramus_curving_medially_and_prominently_overlapping_posterolateral_border_planum_antorbitale, 33 'pterygoid, medial ramus' /  medial_ramus_of_pterygoid_present medial_ramus_of_pterygoid_rudimentary_or_absent, 34 'pterygoid, articulation of medial ramus' /  medial_ramus_contaction_anteroventral_surface_of_the_ossified_prootic medial_ramus_contacting_ventrolateral_edge_of_the_cartilaginous_otic_capsule medial_ramus_contacting_lateral_alae_of_parasphenoid medial_ramus_contacting_both_the_posteroventral_surface_of_ossified_prootic_and_lateral_alae_of_parashenoid, 35 Palatine /  palatine_absent palatine_present, 36 'Vomer, orientation in relatiion to the palate' /  vomer_lies_in_horizontal_plane_in_relation_to_the_palate vomer_lies_in_vertical_plane_in_realtion_to_the_palate, 37 'Vomer, anterior process' /  anterior_process_of_vomer_present anterior_process_of_vomer_absent, 38 'Vomer, length of anterior process' /  'anterior process of vomer not reaching premailla/maxilla' 'anterior process of vomer overlapping premaxilla/ maxilla', 39 'Vomer, prechoanal process' /  prechoanal_process_of_vomer_present prechoanal_process_of_vomer_absent, 40 'vomer, postchoanal process' /  postchoanal_process_of_vomer_present postchoanal_process_of_vomer_absent, 41 'vomer, length of postchoanal process' /  postchoanal_approximately_equal_to_length_of_prechoanal_process postchoanal_shorther_than_length_of_prechoanal_process postchoanal_longer_than_length_of_prechoanal_process, 42 'Vomer, posterior (dentigenous) process' /  posterior_process_of_vomer_present posterior_process_of_vomer_absent, 43 'Vomer, Teeth' /  vomerine_teeth_present vomerine_teeth_absent, 44 'Vomer, configuration of tooth row' /  configuration_of_vomerine_tooth_row_straight configuration_of_vomerine_tooth_row_curved 'configuration of vomerine teeth clustered, not forming a row', 45 'Parasphenoid, shape of cultriform process' /  anterior_end_of_cultriform_process_rounded_with_lateral_borders_straight_and_parallel anterior_end_of_cultriform_process_moderately_pointed_with_lateral_borders_biconvex anterior_end_of_cultriform_process_pointed_with_lateral_borders_that_taper_straight_tot_he_anterior_point, 46 'parasphenoid, lenght of cultriform process' /  'cultriform process extending to anterior region of the prbit, immediately short of the planum antorbitale' cultriform_process_extending_to_around_the_midorbital_region cultriform_process_extending_to_and_between_planum__antorbitale, 47 'Parasphenoid, alae in relation to cultriform process' /  alae_width_less_than_length_of_cultriform alae_width_approximately_equal_to_length_of_cultriform, 48 'Ethmoid cartilage, septum nasi' /  septum_nasi_thin_and_capsules_border_medially septm_nasi_thick_and_capsules_widely_seperated, 49 'Otic cartilage, crista parotica' /  crista_parotica_cartilaginous crista_parotica_ossified, 50 'Endocranium cartilages, shape of optic foramen' /  shape_of_optic_foramen_round shape_of_optic_foramen_oval, 51 'Mentomechelian bone, midsection constiction' /  mentomeckelian_bone_not_constricted_at_midsection mentomeckelian_bone_constricted_evenly_around_midsection mentomeckelian_bone_constricted_with_ends_bent_slightly_dorsally, 52 'Mentomecklian bone, shape' /  mentomeckelian_bone_equal_in_width_at_medial_and_lateral_ends mentomeckelian_bone_expands_greater_at_medial_end mentomeckelian_bone_expands_greater_at_lateral_end, 53 Angulosplenial /  angulospenial_terminates_at_jaw_articulation angulosplenial_extends_posterior_to_jaw_articulation, 54 parahyoid_ossification /  parahyoid_ossification_present parahyoid_ossification_absent, 55 'Hyoid, hyale, medial branch of anterior process' /  medial_branch_of_anterior_process_absent medial_branch_of_anterior_process_present, 56 'Hyoid, hyale, lateral banch of anterior process' /  lateral_branch_of_anterior_process_absent lateral_branch_of_anterior_process_present, 57 'Hyoid, hyolaryngeal sinus' /  hyolaryngeal_sinus_deep hyolaryngeal_sinus_shallow, 58 'Hyoid, alary process' /  alary_process_of_hyoid_present alary_process_of_hyoid_absent, 59 'Hyoid, shape of alary process' /  alary_process_of_hyoid_stalked_and_club_shaped alary_of_process_of_hyoid_blade_shaped alary_process_base_of_hyoid_not_stalked_and_extremely_broad, 60 'Hyoid, posterolateral process' /  posterolateral_process_present posterolateral_process_absent, 61 'Hyoid, shape of posterolateral process' /  posterolateral_process_long posterolateral_process_very_short posterolateral_process_rudimentary, 62 'Hyoid, posteromedial process' /  cartilaginious_stalk_of_posteromedial_process_absent cartilaginious_stalk_of_posteromedial_process_present, 63 'Hyoid, distance between posteromedial processes (thyrohyal)' /  proximal_ends_of_posteromedial_process_dilated_and_separated_narrowly proximal_ends_of_posteromedial_process_may_be_dilated_and_separated_largely proximal_ends_of_posteromedial_process_dilated_and_in_contact, 64 cricoid_ring /  cricoid_ring_as_complete_ring cricoid_ring_with_dorsal_gap cricoid_ring_with_ventral_gap, 65 'Posterior surfaces of vertebral centra 1-7 in realtin to posterior surface of vertebral posterior centrum' /  'posterior end of centra V1-8 convex' 'posterior end of centrum V8 concave and equal to V1-7', 66 'Vertebrae 1-2, fusion' /  'V1-2 separated' 'V1-2 fused', 67 'Vertebra 1 (atlas), cervical cotyles' /  cervical_cotyles_not_stalked cervical_cotyles_stalked, 68 'Vertebra 2 (axis), lateral ends of transverse process' /  lateral_ends_of_transverse_process_of_V2_expanded lateral_ends_of_transverse_process_of_V2_not_expanded, 69 'Vertebra 3, orientation of transverse processes' /  transverse_processes_of_V3_project_laterally transverse_processes_of_V3_project_posterolaterally transverse_processes_of_V3_project_anterolaterally, 70 'Vertebra 3-4, lengths of transverse processes' /  transverse_process_of_V3_longest_f_vertebral_column transverse_process_of_V4_longest_of_vertebral_column, 71 'Vertebrae 5-8, relative lengths of transvers processes' /  'transverse processes of v%-8 short' 'transverse processes of V5-8 long', 72 'Vertebrae 5-8, imbrication of neural arches' /  'widths of neural arches of V5-8 equal lengths' 'widths of neural arches of V5-8 twice that of lengths', 73 'Vertebrae 5-8, ventral shape of centrum' /  'centrum shapes of V5-8 not cylindrical' 'centrum shapes of V5-8 slightly cylindrical' 'centrum shapes of V5-8 distinctly cylindrical', 74 'Vertebra 8, orientation of transverse processes' /  transverse_processes_of_V8_with_acute_anterolateral_orientation transverse_processes_of_V8_with_slight_anterolateral_orientation transverse_processes_of_V8_oriented_laterally, 75 'Sacral diapophyses, dilation' /  sacral_diapophyses_broadly_dilated sacral_diapophyses_slightly_dilated sacral_diapophyses_not_dilated, 76 'Sacrum and coccyx, fusion' /  sacrum_and_coccyx_separated sacrum_and_coccyx_fused, 77 'coccyx, transverse processes' /  transverse_processes_of_coccyx_present transverse_processes_of_coccyx_absent, 78 'coccyx, length' /  length_of_coccyx_approximately_equal_to_vertebral_column length_of_coccyx_one_vertebral_length_shorter_than_vertebral_column length_of_coccyx_much_shorter_than_vertebral_column length_of_coccyx_much_longer_than_vertebral_column, 79 'coccyx, anterior process on dorsal coccygeal ridge' /  anterior_process_of_dorsal_coccygeal_ridge_absent anterior_process_of_dorsal_coccygeal_ridge_present, 80 'Coracoid, size' /  lateral_end_of_coracoid_wider_than_medial_end medial_end_of_coracoid_equal_to_lateral_end_width medial_end_of_coracoid_wider_than_lateral_end, 81 'coracoid, orientation of posterior margin in realtion to longitudinal axis of body' /  coracoid_slightly_projected_posteromedially coracoid_perpendicular_to_body_length coracoid_prominately_projected_posteromedially, 82 'Coracoid, pectoral fenestra' /  medial_margin_of_pectoral_fenestra_composed_of_coracoid_and_epicoracoid medial_margin_of_pectoral_fenestra_composed_of_coracoid_only, 83 Clavicle /  clavicle_present clavicle_absent, 84 'clavicle, condition and orientation' /  clavicle_arched_medioanteriorly clavicle_oriented_horizontally, 85 'clavicle and scapula, suture between' /  clavicle_overlaps_scapula clavicle_does_not_overlap_scapula, 86 'procoracoid cartilage, composition' /  procoracoid_cartilaginous procoracoid_ossified procoracoid_absent, 87 'Procoracoid cartilage, width' /  procoracoid_not_equal_in_width_in_entirety procoracoid_equal_in_width_in_entirety, 88 'Epicoracoid cartilage, fusion' /  epicoracoid_cartilages_free_and_overlapping_medially epicoracoid_cartilages_completely_fused_medially, 89 omosternum /  omosternum_present omosternum_absent, 90 'omosternum, composition and shape' /  omosternum_cartiaginous_only 'omosternum with ossified style, base not bifurcate' 'omosternum with ossified style, base bifrcate', 91 'omosternum, shape of base of cartilage' /  omosternum_base_narrow omosternum_base_broad, 92 'sternum, bony style' /  bony_style_of_sternum_absent bony_style_of_sternum_present, 93 'sternum, length of bony style' /  bony_style_of_sternum_short bony_style_of_sternum_long, 94 'Sternum, shape of base of bony style' /  base_of_bony_style_of_sternum_not_bifurcate base_of_bony_style_of_sternum_bifurcate, 95 'xiphisternum, calcification' /  xiphisternal_calcification_absent_or_sporadic xiphisternal_calcification_intense_proximally, 96 Sternum_base_attachment_of_xiphisternum /  base_of_xiphisternum_broad base_of_xiphisternum_narrow, 97 'scapula, ventral end' /  ventral_end_not_expanded_anteriorly ventral_end_with_prominent_anterior_expansion_that_extends_anterior_to_clavicle, 98 'suprascapula, size' /  suprascapula_expanded_medially suprascapula_not_expanded_medially, 99 'surascapula, composition' /  suprascapula_with_extensive_calcification suprascapula_with_sporadic_or_no_calcification, 100 'Cleithrum, fusion' /  cleithrum_separated_from_suprascapula cleithrum_fused_to_suprascapula, 101 'ilium, dorsal protuberance' /  dorsal_protuberance_of_ilium_absent dorsal_protuberance_of_ilium_present, 102 'ilium, dorsal crest' /  dorsal_ilial_crest_absent dorsal_ilial_crest_present, 103 'ilia, relative widths of distal and proximal ends of ilial shafts' /  ilia_V_shaped_with_proximal_end_wide ilial_U_shaped_with_proximal_end_narrow, 104 'Pubo-ilial, preacetabular zone (ventral acetabular expansion)' /  preacetabular_region_not_expanded_ventrally preacetabular_region_expanded_ventrally, 105 'Ischium- ilial, postacetabular zone ( dorsal acetabular expansion)' /  'postacetabular zone not expanded, ossified' 'postacetabular zone not expanded, not ossified' postacetabular_zone_expanded_ossified, 106 'Preaxial centrale, size in realtion to the postaxial centrale' /  preaxial_equal_in_size_to_the_postaxial_centrale 'preaxial one- half the size of the postaxial centrale' 'preaxial one -third the size of the postaxial centrale', 107 'Preaxial and postaxial centrale, fusion' /  preaxial_and_postaxial_centrales_separated preaxial_and_postaxial_centrales_fused, 108 'Crista transversa carpi, palmar sesamoid bone' /  palmar_sesamoid_bone_absent palmar_sesamoid_bone_present, 109 'Distal carpale III, fusion' /  distal_carpale_bone_III_present distal_carpale_bone_III_absent_as_independent_bone, 110 'Distal carpale II, fusion' /  distal_carpale_bone_II_present distal_carpale_bone_II_absent_as_independent_bone, 111 'Distal carpale I, fusion' /  distal_carpale_bone_I_present distal_carpale_bone_I_absent_as_independent_bone, 112 'Prepollex, number' /  prepollex_composed_of_one_element prepollex_composed_of_two_elements prepollex_composed_of_three_elements prepollex_composed_of_more_than_three_elements, 113 Digital_sesamoids /  digital_sesamoids_absent digital_sesamoids_present, 114 'Metacarpals, formula length' /  'metacarpal formula 3-2-4-1' 'metacarpal formula 1-3-2-4' 'metacarpal formula 3-1-2-4' 'metacarpal formula 3-1-4-2' 'metacarpal formula 3-2-1-4', 115 'Metacarpal of digit III, preaxial process' /  metacarpal_III_lacks_bony_knob metacarpal_III_possesses_bony_knob, 116 'Phalanges, intercalary elements' /  intercalary_elements_absent intercalary_elements_presetn_and_cartilaginous intercalary_elements_present_and_ossified, 117 'Terminal phalanges, shape' /  'terminal phalanges simple, rounded or claw-shaped' 'terminal phalanges T-shaped' terminal_phalanges_bifurcated, 118 'T-shaped terminal phalanges, shape of distal transverse process' /  'distal transverse process of T-Shaped terminal phalanges short' 'distal transverse process of T-shaped terminal phalanges long', 119 'Tarsale II, fusion' /  tarsale_I_present tarsale_II_absent_as_independent_element, 120 'Tarsale I, presence' /  tarsal_I_present tarsal_I_absent_as_independent_element, 121 'Tarsal bones, ossification' /  tarsal_bones_not_all_ossified tarsal_bones_ossified, 122 'prehallical element, number' /  prehallux_composed_of_two_elements 'prehallux composed of more than two elements (five)' Prehallux_composed_of_one_element, 123 Tarsal_sesamoid_bones /  tarsal_sesamoid_bone_absent tarsal_sesamoid_bone_composed_of_one_element tarsal_sesamoid_bones_composed_of_two_elements, 124 'Metatarsals, formula length' /  'Metatarsal formula 4-3-5-2-1' 'metatarsal formula 4-5-3-2-1' ; 
+	MATRIX
+	Hypothetical_ancestor          0000990909000000000000000000090000000000900090000000000000900000000000000000090090000000000999090000999009000000000009009000
+	Arthroleptis_variabilis        000100001000100010100000100002110011000001??1000001201101021?0000001001111201012010110110200??011000110112001100110010001210
+	Barbourula_busuangensis        102000---1----0---0----0000-01-0-00----------0000----9999-9-9-99---00----0-000-01---00-----0??-9----100----------0---?--91--
+	Batrachyla_antartandica        060012000000000000101??110100111001000001000000000010199999999000001000101101111100010000000??100001110002001100000011011200
+	Batrachylodes_elegans_         0400010910001101101000001000021101110100101?00010022010099999909101110111220101201011011010100011000110122001110000011011100
+	Bombina_orientalis_            000021---0----0---1----1000-?1-3-10----------0000----0000-2-0-09---00----0-000-01---00-----0??-1----000----------0---?--10--
+	Boophis_madagascariensis_      0502000000021101011000000000221103100000100000010011001011?00011001100111210111211011111021110011000110012001100000221111100
+	Buergeria_japonica             0522000001021101101000000100221103110000000012019012011010000000100000110220111201011011021110111000110122001100010201111100
+	Bufo_chanchanensis             042011000110100000110100001002010010000001??001100010100000000100001111022000211000010000000??00010000000201110000000?010000
+	Ceratophrys_cornuta            0412021091020210100000010000110302100100001?02009000010001?000000001010122101211000010000000??00010010002200100103000?990000
+	Colostethus_inguinalis         040100001001110010100000010002111?011?0001??011100121110102000000011001111201112110110110100??011000110122011110120010011020
+	Colostethus_talamancae         040000010001110000100100010002111?011?0001??010100121110102000000011001100201112010110110200??011000110122011111120010011020
+	Cophixalus_cryptotympanum      0000011900001100101100010010101201100001?01?000000320199999999900010000021000002091??2?11??0??119010100112001100000011011000
+	Crossodactylus_gaudichaudi     040100000000000000101??12010000000100000001?001000010199999990000100001110111111000010000010??101000110112011100100010011120
+	Cycloramphus_fuliginosus       10000200000200000010000020000100001000000000101000010100000010000001000110101110100010000000??00000111011201110200002?011100
+	Dimorphognathus_africanus      010100000000110110100000000000110111000001??00000012010010200000101190111120131201011111020100001000110129111102040010011000
+	Discoglossus_pictus            04002200000000000000000000000000000000000000000000000000002000000001000001000000000000000000??00000011000100000000000?000000
+	Eupsophus_roseus               04001100010000000010000000000011001001001000001000010111000000000001000112101010100010000000??00010011001200110000000?010100
+	Hylactophryne_occidentalis     00000100000011000110000010100001001001002000000000110110001010000001201121101110100010000000??001000110012001109020010090211
+	Hyla_lanciformis               05111000000000100010000100000010031000002001100000010000000000000001101020001112000011000000??10000011002200110000010?011001
+	Hylodes_nasus_                 04010000000000000010001120100000001100001000000900010110001000000000101021101111000010000000??101000110112011101000010011110
+	Ischnocnema_quixensis          10000210000010000110001120100000001000101001100000100110000000000001001122101010000010000000??10100111012201110012000?011121
+	Kassina_senegalensis           002002090000110001100000000002010111000020022200001001111001?1101011201022101102110111110200??11100011110200110010012?011000
+	Leptodactylus_melanonotus_     100001000000000000100011100001010010010010000000102000100000000000000011001010110000110000011001000011011200110311002?001120
+	Leptopelis_natalensis          050100000002110001100000000022110011000010091010901001100001?0001011001022201012110110110200??11100111101100100000110?011201
+	Limnodynastes_ornatus_         02202001000000000010000010000211001000001000001000110010100000020101201120001011000010000000??10000011002100110101000?101000
+	Mantella_aurantiaca            040100091000110110110000000011111?111?0001??0001911201101000100100110011122012120101101102010101100011111200110004012?101220
+	Mantidactylus_bicalcaratus_    0400011910001101101000000000001100110100101?0001011201101000200000110011122011121101101102011101100011111200110000012?101010
+	Mantidactylus_liber            040100090002110110100000010020010011010010000001011001101001?010001100111220111211011011020111011000110112001100000121101210
+	Mantidactylus_opiparis_        040101001000110110100000000000110011010000000001011001101000200010010011122011121101101102011101100011911200110004012?101201
+	Pelobates_fuscus               102200010100001000000000011021000310000010001029100001000090002100001000000112021000100000011001000001100200000001000?001000
+	Pelodytes_punctatus_           000010020100000000100001200000010000000020002200000000991000100900000000000002000000090000011101000000100000000000000?000200
+	Petropedetes_cameronesis       0121010010001101101000000000001200111?00001?20000012011000000000101100111220101211011011020100001000110102001100000011011000
+	Phrynobatrachus_natalensis     0320200000001100101000001000021101110000101?0100002201001000010010110011112010121101101102110101100011012910111000002?001000
+	Platymantis_papuensis_         000001001000110110100000000000110011000010000000002201101020100010010011122013121101101102011001100011112910111011000?011200
+	Ramanella_variegates           00000119000111011011000?0001?01201000001?01?000000320199999990201011000020000002291??2?11??0??119010101102001100000010011000
+	Staurois_natator               0121000010001101101000000000021100110000201?20010012011010102000101100111220120211011011010110011000111122001100100011011101
+	Telmatobius_schreiteri         06101200010200001000001000001101001000001000000000010999999999900001200101101011000010000000??10000010000100110201000?011000
+	Telmatobufo_venustus           0500000001120000000000000000211103100001?000121990010999999999900100100020000101100011000000??10000110010209100099000?091090
+	Thoropa_lutzi                  04001209000000000000001110101011001000001000100000010199999990000001001100100110100010000000??010000100112011101000010011000
+	Tomopterna_breviceps_rolandae  011000001000110010000000100022010111010010000000002201000000000010110011112011120101101102011001100011102200110011000?011200
+	Zachaenus_parvulus_            10000009000200000000000020000100001001000000000000010199999990200001000112101210100010000000??00000110001201110900002?011100
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  124;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  124;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1347307055861;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1479177047643345637;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 169000959456950810;
+			mqVersion 275;
+			checksumv 0 3 2519063596 null  getNumChars 124 numChars 124 getNumTaxa 42 numTaxa 42   short true   bits 639   states 639   sumSquaresStatesOnly 3.8305031E7 sumSquares 3.8305031E7 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1261 464;
+			setLocation -8 328;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #169000959456950810 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 288;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1161 397;
+					setLocation -8 328;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 376;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1161 397;
+						setLocation -8 328;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

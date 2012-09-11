@@ -1913,13 +1913,7 @@
               <phen:phenotype_character>
                 <phen:description>30% down the length of the humerus</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="VAO:0005037">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="VAO:0005034"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:0000976"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000140"/>
@@ -1960,7 +1954,7 @@
               <phen:phenotype_character>
                 <phen:description>longer than or subequal to 0.6 of the length of the femur</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="VAO:0005034"/>
+                  <phen:typeref about="UBERON:0000976"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000573"/>
@@ -1992,8 +1986,64 @@
         </state>
       </states>
       <states id="8d82cb23-db62-4ce6-b07f-68895b149789">
-        <state id="da50c3d4-0132-46a8-be0b-725d0c74d356" label="confined to the proximal surface" symbol="0"/>
-        <state id="07858be9-b223-40ee-b500-b440bb51471a" label="posteriorly expanded and hooked " symbol="1"/>
+        <state id="da50c3d4-0132-46a8-be0b-725d0c74d356" label="confined to the proximal surface" symbol="0" about="#da50c3d4-0132-46a8-be0b-725d0c74d356">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>Proximal region refers to the head of the humerus here</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000077">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000976"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002261"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000377"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="07858be9-b223-40ee-b500-b440bb51471a" label="posteriorly expanded and hooked " symbol="1" about="#07858be9-b223-40ee-b500-b440bb51471a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000077">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000976"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000077">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000976"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002215"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="ddbc9dc5-f2f1-4f5d-9180-8c30d9619ffc">
         <state id="48e299c3-2b33-4ff4-85bf-9537dd62e4d8" label="continuous with the deltopectoral crest " symbol="0" about="#48e299c3-2b33-4ff4-85bf-9537dd62e4d8">
@@ -2005,7 +2055,7 @@
                   <phen:typeref about="BSPO:0000377">
                     <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="VAO:0005034"/>
+                        <phen:typeref about="UBERON:0000976"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -2039,7 +2089,11 @@
         </state>
       </states>
       <states id="f05bb37b-fb43-41fb-b776-4c0a5b25672d">
-        <state id="45ba8f95-837e-4faf-b423-8d0b2a2f45ee" label="present" symbol="0"/>
+        <state id="45ba8f95-837e-4faf-b423-8d0b2a2f45ee" label="present" symbol="0" about="#45ba8f95-837e-4faf-b423-8d0b2a2f45ee">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="56183cb1-076a-474c-b518-4deeab7ab818" label="absent" symbol="1"/>
       </states>
       <states id="48b9fdfd-bdea-4c11-8636-ede76cd174ac">
