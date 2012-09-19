@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex 1.2" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.4.3" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Taxon:
 Matrix:
@@ -678,12 +678,64 @@ Fin/limb characters added to googledoc (12/8/11)</meta>
         <state id="dc3349a6-c145-4d6e-acda-1f6e1c7d20db" label="" symbol="-"/>
       </states>
       <states id="f0a6036f-08d9-41a1-862e-ff050e9ccc10">
-        <state id="60188525-8bd4-4e17-bfa6-ad6b3e78b978" label="absent" symbol="0"/>
-        <state id="ef2765a4-5010-47fe-836a-a6cfc1f9629d" label="present" symbol="1"/>
+        <state id="60188525-8bd4-4e17-bfa6-ad6b3e78b978" label="absent" symbol="0" about="#60188525-8bd4-4e17-bfa6-ad6b3e78b978">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="ef2765a4-5010-47fe-836a-a6cfc1f9629d" label="present" symbol="1" about="#ef2765a4-5010-47fe-836a-a6cfc1f9629d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="a4708054-dcc8-42e6-b1ee-8fa52a3d34b7">
-        <state id="b95e848c-38ab-424f-8a59-326867927993" label="absent" symbol="0"/>
-        <state id="e846af48-56a7-4f07-a034-abfef7c16700" label="present" symbol="1"/>
+        <state id="b95e848c-38ab-424f-8a59-326867927993" label="absent" symbol="0" about="#b95e848c-38ab-424f-8a59-326867927993">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000152"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="e846af48-56a7-4f07-a034-abfef7c16700" label="present" symbol="1" about="#e846af48-56a7-4f07-a034-abfef7c16700">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000152"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="8ef9237d-dbda-4f4d-9278-5824c410dca9">
         <state id="455b00b8-3d1a-42d5-91ab-5215f22ebff6" label="absent" symbol="0"/>
@@ -691,10 +743,71 @@ Fin/limb characters added to googledoc (12/8/11)</meta>
         <state id="13d9dc52-36b9-4f97-8fd6-2fecb5a67a11" label="" symbol="-"/>
       </states>
       <states id="f8513b30-f6bb-409b-91ab-239cfa195a90">
-        <state id="0f01a7e2-70b2-471c-a1aa-5939807e4fca" label="no distinct lobes developed" symbol="0"/>
-        <state id="1fd19ce0-66b0-4d6b-8725-a455cdeb40de" label="ventral lobe much larger than dorsal" symbol="1"/>
-        <state id="18e8eda8-f6c2-4942-8122-531436861736" label="dorsal lobe much larger than ventral" symbol="2"/>
-        <state id="531b4772-bb13-424d-8df8-64b839c45838" label="dorsal and ventral lobes almost equally developed" symbol="3"/>
+        <state id="0f01a7e2-70b2-471c-a1aa-5939807e4fca" label="no distinct lobes developed" symbol="0" about="#0f01a7e2-70b2-471c-a1aa-5939807e4fca">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="VSAO:0000164"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="1fd19ce0-66b0-4d6b-8725-a455cdeb40de" label="ventral lobe much larger than dorsal" symbol="1" about="#1fd19ce0-66b0-4d6b-8725-a455cdeb40de">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="TAO:0001594"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                  <phen:related_entity>
+                    <phen:typeref about="TAO:0001593"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="18e8eda8-f6c2-4942-8122-531436861736" label="dorsal lobe much larger than ventral" symbol="2" about="#18e8eda8-f6c2-4942-8122-531436861736">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="TAO:0001593"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                  <phen:related_entity>
+                    <phen:typeref about="TAO:0001594"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="531b4772-bb13-424d-8df8-64b839c45838" label="dorsal and ventral lobes almost equally developed" symbol="3" about="#531b4772-bb13-424d-8df8-64b839c45838">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="TAO:0001593"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/45bb6a27-5bc5-4e24-9127-c4f7dd70846a"/>
+                  <phen:related_entity>
+                    <phen:typeref about="TAO:0001594"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="2f660f7a-4297-458d-bc51-4a2a9af1503a">
         <state id="fef30c46-35d3-45ba-9801-9ce98076f47a" label="isochondral" symbol="0"/>
