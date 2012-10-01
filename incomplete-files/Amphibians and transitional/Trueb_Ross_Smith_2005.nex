@@ -1,5 +1,5 @@
 #NEXUS
-[written Fri Jun 29 10:01:57 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.20.224.68]
+[written Wed Sep 26 13:36:01 EDT 2012 by Mesquite  version 2.75 (build 564) at NI7549.local/10.0.1.4]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -23,12 +23,12 @@ BEGIN CHARACTERS;
 	Rhinophrynus               00000000011100000000012000100100000120100?1000000
 	Chelomophrynus             0?00?0?0011??0?000000???00100100000120100?100?010
 	Palaeobatrachus            00001020001010001001100101101001200210101?1011000
-	Xenopus                    01100110101111111011121111102011110?1121110111111
+	Xenopus                    01100110101111111011121111102011110(0 2)1121110111111
 	Silurana                   0110011010111012101112111110201111001121110111111
 	Shelania_pascuali          00?00111?01111?1111110111110201110001110110111111
 	Shelania_laurenti          000001111?11?0?1?1111???1?102?111002?12?1??11????
 	Pipa                       10000112011110121011020111112111101211000?2111011
-	Hymenochirini              11011112011?10121011030110112111121211200?2111011
+	Hymenochirini              11011112011(0 1)10121011030110112111121211200?2111011
 	Eoxenopoides_reuningi      0?011?1??01110?11011020111102111100211?0000011???
 	Saltenia                   ?00?011??11110?111?1100111102111100011000?001?11?
 	Xenopus_romeri             000001111?1110?1????1???1?10???11002?12?1??11????
@@ -53,7 +53,7 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1340982117572;
+		timeSaved 1348680961404;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 7457833465343159917;
@@ -62,7 +62,7 @@ Begin MESQUITE;
 		tell It;
 			setID 0 5805204598822027424;
 			mqVersion 275;
-			checksumv 0 3 2287187351 null  getNumChars 49 numChars 49 getNumTaxa 18 numTaxa 18   short true   bits 15   states 15   sumSquaresStatesOnly 2658.0 sumSquares 2658.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			checksumv 0 3 1414276375 null  getNumChars 49 numChars 49 getNumTaxa 18 numTaxa 18   short true   bits 15   states 15   sumSquaresStatesOnly 2692.0 sumSquares 2692.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -74,8 +74,8 @@ Begin MESQUITE;
 			setAnnotationSize 0;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
-			setSize 1272 599;
-			setLocation 2 47;
+			setSize 1272 553;
+			setLocation 4 93;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -93,21 +93,22 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1172 532;
-					setLocation 2 47;
+					setSize 1172 486;
+					setLocation 4 93;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
 						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
+					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
 					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
 					colorText  #mesquite.charMatrices.NoColor.NoColor;
 					setBackground White;
-					toggleShowNames on;
+					toggleShowNames off;
 					toggleShowTaxonNames on;
 					toggleTight off;
 					toggleThinRows off;
@@ -153,15 +154,14 @@ Begin MESQUITE;
 						setAnnotationSize 20;
 						setFontIncAnnot 0;
 						setFontIncExp 0;
-						setSize 1172 532;
-						setLocation 2 47;
+						setSize 1172 486;
+						setLocation 4 93;
 						setFont SanSerif;
 						setFontSize 10;
 						getToolPalette;
 						tell It;
 							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
 						endTell;
-						setActive;
 						rowsAreCharacters on;
 						toggleConstrainChar on;
 						toggleConstrainCharNum 3;
@@ -215,8 +215,8 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1172 532;
-					setLocation 2 47;
+					setSize 1172 486;
+					setLocation 4 93;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;

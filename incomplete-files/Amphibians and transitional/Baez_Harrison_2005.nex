@@ -1,5 +1,5 @@
 #NEXUS
-[written Tue Jan 31 14:26:15 EST 2012 by Mesquite  version 2.74 (build 550) at wl-10-180-71-130.wireless.duke.local/10.180.71.130]
+[written Tue Sep 25 13:45:33 CDT 2012 by Mesquite  version 2.75 (build 566) at NI8137.local/172.21.16.71]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -7,6 +7,7 @@ BEGIN TAXA;
 	TAXLABELS
 		Ascaphus Chelomophrynus_ Cordicephalus_ Discoglossus_ Eoxenopoides_ Hymenochirus_ Llankibatrachus_ Pachycentrata_ Palaeobatrachus_ Pipa_ Pseudhymenochirus_ Rhinophrynus_ Saltenia_ ?Shelania?laurenti_ Shelania_pascuali_ Silurana Singidella_ Xenopus_ ?Xenopus?romeri 
 	;
+	BLOCKID 0139febf25703;
 
 END;
 
@@ -21,15 +22,15 @@ BEGIN CHARACTERS;
 	Ascaphus             00000021000020000001000000000000000000000000000101010000
 	Chelomophrynus_      0?0?10?000?000000000?00100010?????0?010000001201000100??
 	Cordicephalus_       010010001002??000?01?0011?00?10100000??01100210101000010
-	Discoglossus_        000000000000000000000000000001000000000001000000010?0000
+	Discoglossus_        000000000000000000000000000001000000000001000000010{0 1}0000
 	Eoxenopoides_        010110001111??011011?111102102010010???01100211?00000110
-	Hymenochirus_        110?1010111120112011121101210301111101111121211200021111
+	Hymenochirus_        110{0 1}1010111120112011121101210301111101111121211200021111
 	Llankibatrachus_     010110???101??01?1111?1110201211??1011?011002112011011?0
 	Pachycentrata_       1???11?01111?????????21101??0??110?0???011212?1??0??????
 	Palaeobatrachus_     01001000001200010001000110101001000000001200210101010010
 	Pipa_                11011010011120010011121111210201001101101101211100021111
 	Pseudhymenochirus_   110?1010111120112011121101210301111101111121211200021111
-	Rhinophrynus_        0001100000100000000000010001012NN?0100000000120100010000
+	Rhinophrynus_        0001100000100000000000010001012--?0100000000120100010000
 	Saltenia_            ?10110000101??0101?1?111102110?1001111?01100011101?001??
 	?Shelania?laurenti_  0?011000010111???111?111?02?1?????1????011002?12?1??11??
 	Shelania_pascuali_   011110000101??01?111111110201011001011101100011101101110
@@ -54,20 +55,16 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1328037975866;
+		timeSaved 1348598733284;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
-			setID 0 26406373022940126;
-			tell It;
-				setSelected  1 -  19;
-				attachments ;
-			endTell;
+			setID 0 26406373022940126 0139febf25703;
 		endTell;
 		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
 		tell It;
 			setID 0 7588572158861693156;
-			mqVersion 274;
-			checksumv 0 2 97128110 null  getNumChars 56 numChars 56 getNumTaxa 19 numTaxa 19   short false   bits 2097167   states 2097167   sumSquaresStatesOnly 8.79609302542E12 sumSquares 8.79609302542E12   NumFiles 1 NumMatrices 1;
+			mqVersion 275;
+			checksumv 0 3 3812242194 null  getNumChars 56 numChars 56 getNumTaxa 19 numTaxa 19   short true   bits 2305843009213693967   states 15   sumSquaresStatesOnly 3230.0 sumSquares -9.223372036854776E18 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -79,8 +76,8 @@ Begin MESQUITE;
 			setAnnotationSize 0;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
-			setSize 640 716;
-			setLocation 640 22;
+			setSize 1440 664;
+			setLocation 37 141;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -98,20 +95,26 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 540 649;
-					setLocation 640 22;
+					setSize 1340 597;
+					setLocation 37 141;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
-					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
-					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
 					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
 					colorText  #mesquite.charMatrices.NoColor.NoColor;
 					setBackground White;
-					toggleShowNames on;
+					toggleShowNames off;
 					toggleShowTaxonNames on;
 					toggleTight off;
 					toggleThinRows off;
@@ -139,11 +142,6 @@ Begin MESQUITE;
 				tell It;
 					forceAutosize;
 				endTell;
-				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
-				tell It;
-					setStateLimit 9;
-					toggleUniformMaximum on;
-				endTell;
 				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
 				tell It;
 					setColor Red;
@@ -161,15 +159,14 @@ Begin MESQUITE;
 						setAnnotationSize 20;
 						setFontIncAnnot 0;
 						setFontIncExp 0;
-						setSize 540 649;
-						setLocation 640 22;
+						setSize 1340 597;
+						setLocation 37 141;
 						setFont SanSerif;
 						setFontSize 10;
 						getToolPalette;
 						tell It;
 							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
 						endTell;
-						setActive;
 						rowsAreCharacters on;
 						toggleConstrainChar on;
 						toggleConstrainCharNum 3;
