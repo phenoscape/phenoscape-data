@@ -7056,6 +7056,15 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:description>with distal and proximal margins forming similar well angled slopes to the shaft</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/31ea111e-d743-4f31-b151-5b1167e88696">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000981"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000632"/>
                 </phen:quality>
@@ -7068,6 +7077,15 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:description>with distal margin forming a steeper angle to the shaft</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/31ea111e-d743-4f31-b151-5b1167e88696">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000981"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000616"/>
                 </phen:quality>
@@ -7078,8 +7096,47 @@
         <state id="eff0320e-1a8d-45bb-9f1f-09a5b47ac74e" label="" symbol="-"/>
       </states>
       <states id="607112c8-1187-4957-b6c8-150de9906f5c">
-        <state id="a22258b3-e245-4943-8917-0f11ff8a5f1f" label="prominent " symbol="0"/>
-        <state id="9600e18c-2f47-4ff5-905f-4cedcabc6f74" label="not projecting markedly beyond shaft " symbol="1"/>
+        <state id="a22258b3-e245-4943-8917-0f11ff8a5f1f" label="prominent " symbol="0" about="#a22258b3-e245-4943-8917-0f11ff8a5f1f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0009980">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000078"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001482"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="9600e18c-2f47-4ff5-905f-4cedcabc6f74" label="not projecting markedly beyond shaft " symbol="1" about="#9600e18c-2f47-4ff5-905f-4cedcabc6f74">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>not projecting markedly beyond shaft</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0009980">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000078"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002254"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="b4a17753-56fb-4dc6-aa14-7b1615f9646c">
         <state id="6e62abd5-2337-47fa-9a23-bde0695f217b" label="obtuse " symbol="0"/>

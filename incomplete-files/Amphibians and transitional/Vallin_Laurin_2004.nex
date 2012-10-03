@@ -1,5 +1,5 @@
 #NEXUS
-[written Mon Nov 07 16:29:24 EST 2011 by Mesquite  version 2.74 (build 550) at wl-10-180-76-229.wireless.duke.local/10.180.76.229]
+[written Wed Oct 03 10:50:13 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.71.110]
 
 BEGIN TAXA;
 	TITLE M2056;
@@ -95,7 +95,7 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1320701364921;
+		timeSaved 1349279413192;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 496210175818242684;
@@ -103,8 +103,8 @@ Begin MESQUITE;
 		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
 		tell It;
 			setID 0 8513022888576109316;
-			mqVersion 274;
-			checksumv 0 2 3823194812 null  getNumChars 161 numChars 161 getNumTaxa 49 numTaxa 49   short true   bits 63   states 63   sumSquaresStatesOnly 40977.0 sumSquares 40977.0   NumFiles 1 NumMatrices 1;
+			mqVersion 275;
+			checksumv 0 3 3823194812 null  getNumChars 161 numChars 161 getNumTaxa 49 numTaxa 49   short true   bits 63   states 63   sumSquaresStatesOnly 40977.0 sumSquares 40977.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -143,7 +143,6 @@ Begin MESQUITE;
 					tell It;
 						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
-					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
@@ -208,6 +207,7 @@ Begin MESQUITE;
 						tell It;
 							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
 						endTell;
+						setActive;
 						rowsAreCharacters on;
 						toggleConstrainChar on;
 						toggleConstrainCharNum 3;
