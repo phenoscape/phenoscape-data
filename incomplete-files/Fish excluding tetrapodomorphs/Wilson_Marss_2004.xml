@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Taxon: 
 Matrix:
@@ -108,6 +108,10 @@ Need further annotation</meta>
         <state id="a4f3cd82-e731-447c-a066-59e86f39f057" label="orthodentine" symbol="1"/>
         <state id="1249dba7-2a48-4824-a0a4-45eb537fc941" label="aspidine (acellular bone) or aspidine and orthodentine" symbol="2"/>
         <state id="2439afea-a8c6-4078-94e4-cb4f6ddd2240" label="mesodentine and/or cellular bone" symbol="3"/>
+        <uncertain_state_set id="8909e636-e7ef-49a2-bc5d-610919c4b70a">
+          <member state="1249dba7-2a48-4824-a0a4-45eb537fc941"/>
+          <member state="2439afea-a8c6-4078-94e4-cb4f6ddd2240"/>
+        </uncertain_state_set>
       </states>
       <states id="a08037c8-a8d4-4fc2-864e-8d8adfcc8e35">
         <state id="e70fae6d-5c14-4b91-973a-8e0409cf4734" label="absent" symbol="0"/>
@@ -1967,6 +1971,7 @@ Need further annotation</meta>
         <cell char="211e1516-9693-41f4-a9fa-3555c19b1a16" state="69d25f48-86c2-48ff-884f-914dea852f2d"/>
       </row>
       <row id="2bc6f4db-0a1c-436a-83a3-4c30abce61b4" otu="20fd9680-26f4-4f49-9004-23c646bee6ef">
+        <cell char="69144d52-98d0-47c6-95e0-97433acf5a65" state="8909e636-e7ef-49a2-bc5d-610919c4b70a"/>
         <cell char="47165f02-6104-4fbb-a4f9-99a526a2cf90" state="fc92dce0-985d-46ff-a6e5-c0f3f3a9613b"/>
         <cell char="a68c93e8-8c16-4b20-96e0-90772bc346c6" state="9bd45351-d5f1-460c-8dd5-dd7853a6a8c6"/>
         <cell char="d9ac1672-7335-4cd5-b882-8524973946cd" state="4da4b6a8-ea3b-49d3-9a93-14c7bfe3c494"/>
