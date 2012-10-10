@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.5" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.5.1" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable, Johnny Kim</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Matrix: Johnny Kim, Ben Frable
 Taxon:
@@ -757,6 +757,20 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
                   <phen:typeref about="PATO:0000587"/>
                 </phen:quality>
               </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011655"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001925">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2136a3fe-bc87-4206-9b15-3f2ad3e54757"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
@@ -776,7 +790,7 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
                   <phen:typeref about="UBERON:0011655"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001925"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2136a3fe-bc87-4206-9b15-3f2ad3e54757"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
