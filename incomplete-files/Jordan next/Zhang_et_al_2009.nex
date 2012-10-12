@@ -1,5 +1,5 @@
 #NEXUS
-[written Wed Nov 30 16:55:40 EST 2011 by Mesquite  version 2.74 (build 550) at wl-10-180-66-52.wireless.duke.local/10.180.66.52]
+[written Fri Oct 12 11:45:39 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.67.149]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -54,20 +54,16 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1322690140809;
+		timeSaved 1350060339389;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 3141408704801006337;
-			tell It;
-				setSelected  1 -  19;
-				attachments ;
-			endTell;
 		endTell;
 		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
 		tell It;
 			setID 0 2831762256156357648;
-			mqVersion 274;
-			checksumv 0 2 2961674152 null  getNumChars 72 numChars 72 getNumTaxa 19 numTaxa 19   short true   bits 31   states 31   sumSquaresStatesOnly 3941.0 sumSquares 3941.0   NumFiles 1 NumMatrices 1;
+			mqVersion 275;
+			checksumv 0 3 2961674152 null  getNumChars 72 numChars 72 getNumTaxa 19 numTaxa 19   short true   bits 31   states 31   sumSquaresStatesOnly 3941.0 sumSquares 3941.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -105,13 +101,14 @@ Begin MESQUITE;
 					getToolPalette;
 					tell It;
 					endTell;
+					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
 					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
 					colorText  #mesquite.charMatrices.NoColor.NoColor;
 					setBackground White;
-					toggleShowNames on;
+					toggleShowNames off;
 					toggleShowTaxonNames on;
 					toggleTight off;
 					toggleThinRows off;
@@ -169,7 +166,6 @@ Begin MESQUITE;
 						tell It;
 							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
 						endTell;
-						setActive;
 						rowsAreCharacters on;
 						toggleConstrainChar on;
 						toggleConstrainCharNum 3;
