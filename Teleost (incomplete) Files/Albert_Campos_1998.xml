@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">None</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000001</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Specimens not recorded in xml file (WD 10.24.08) See Materials and Methods:
@@ -1553,6 +1553,10 @@
       <states id="c6ddd076-e768-458f-855a-232c59b4764d">
         <state id="31e5420c-5b2d-42a5-aa8d-71cd7699d3b3" label="small streams and rivers/river margins" symbol="0"/>
         <state id="510ccde7-acda-4a14-af3a-01243c760309" label="large river channels" symbol="1"/>
+        <polymorphic_state_set id="eae0e71c-492a-40b1-bc71-451398caeb54">
+          <member state="510ccde7-acda-4a14-af3a-01243c760309"/>
+          <member state="31e5420c-5b2d-42a5-aa8d-71cd7699d3b3"/>
+        </polymorphic_state_set>
       </states>
       <states id="765526ce-70a5-4fdd-8080-891a3db2879e">
         <state id="9d258658-739d-4335-948a-6bc8b8024711" label="rostral probing" symbol="0"/>
@@ -2050,7 +2054,7 @@
         <cell char="ad31806b-920c-4943-9375-9e2c348ca088" state="5c96cf40-0db8-4502-8f4c-ad06ee72cfa1"/>
         <cell char="615c0b42-b58b-4bf0-bffc-d71084df784b" state="1d94dec1-cf52-433a-abb5-c8785e04c7f9"/>
         <cell char="ae79a308-17e5-4861-8c96-1d2a1f38cbeb" state="49fbf1f4-3d61-4cae-b102-6e2dd1523a6d"/>
-        <cell char="3936832a-48d6-4a4f-a4e2-90fa45c72277" state="31e5420c-5b2d-42a5-aa8d-71cd7699d3b3"/>
+        <cell char="3936832a-48d6-4a4f-a4e2-90fa45c72277" state="eae0e71c-492a-40b1-bc71-451398caeb54"/>
         <cell char="4ef093ea-fa2e-4c99-bf9e-b4f1757f81ec" state="9d258658-739d-4335-948a-6bc8b8024711"/>
       </row>
       <row id="8674b122-0a0f-4aef-b2c5-b5263e65afdd" otu="ad1b791c-6a3e-47d8-aa13-28afc8ad94fd">
