@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Sandrine Tercerie</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000086</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">doi:10.1111/j.1096-3642.2004.00111.x
-Character 12: Author Question: 3 states are listed in the matrix (0, 1 and 2) whereas only 2 states are described. Solution: (0) absent; (1) present; (2) strongly reduced?</meta>
+Character 12: Author Question: 3 states are listed in the matrix (0, 1 and 2) whereas only 2 states are described. Solution: (0) absent; (1) present; (2) strongly reduced?
+
+Added polymorphs. AB 10/17/12</meta>
   <otus id="859e3b44-5840-4d71-a3f7-4c46cd1c1866">
     <otu id="38b8bfdf-1828-474e-b4a9-6cad02724329" label="Eolates gracilis" about="#38b8bfdf-1828-474e-b4a9-6cad02724329">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:hasMatrixName">Problem with state of character 12 (Metapterygoid lamina). Not existing state 2.</meta>
@@ -280,7 +282,6 @@ Character 12: Author Question: 3 states are listed in the matrix (0, 1 and 2) wh
     </otu>
     <otu id="c50d8994-a72d-41fb-b698-8c032d41e1b0" label="Ambassis wolffii" about="#c50d8994-a72d-41fb-b698-8c032d41e1b0">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1022002"/>
-      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">polymorphic (0/1) for character 14</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000501"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">31.200 [1898-4-2-67], dry skeleton, Siam</meta>
@@ -984,6 +985,10 @@ Character 12: Author Question: 3 states are listed in the matrix (0, 1 and 2) wh
             </phen:phenotype>
           </meta>
         </state>
+        <uncertain_state_set id="aaed2e3e-6be5-4bf5-82ba-f5e0da297caf">
+          <member state="c25c9eae-b0f4-4254-a53c-a0113cf6bc97"/>
+          <member state="157595e0-23bc-40b2-95a6-8ba64a141a4d"/>
+        </uncertain_state_set>
       </states>
       <states id="5444d9c1-ea7b-4571-b6a4-78304fa21ba1">
         <state id="29de66c5-bc54-4901-a709-08be9b4113ce" label="the sensory canal runs in an open groove along the vertical limb of the preoperculum" symbol="0" about="#29de66c5-bc54-4901-a709-08be9b4113ce">
@@ -2153,6 +2158,7 @@ Character 12: Author Question: 3 states are listed in the matrix (0, 1 and 2) wh
         <cell char="20c4557e-f6c7-45b6-9d96-da5cee9a7226" state="afa0aacb-0afc-4269-838a-3a8d43ecc45e"/>
         <cell char="274d21e5-3d48-4366-a600-e6429164caf7" state="df24438d-7122-4ae1-84d9-938def8d650c"/>
         <cell char="02dd01b7-34f0-4521-9776-f80ec53ada3c" state="00ac14ef-101d-4d2a-87b8-aa10f44e16b8"/>
+        <cell char="d70bae85-d4e6-4067-8efc-b851b1fa0c01" state="aaed2e3e-6be5-4bf5-82ba-f5e0da297caf"/>
         <cell char="b3716c6b-2168-4c03-84de-d998069ccf28" state="29de66c5-bc54-4901-a709-08be9b4113ce"/>
         <cell char="0b633032-4695-436b-a94b-53a3933bde82" state="215fc1a3-98a3-44aa-9361-171c36beceff"/>
         <cell char="4e92fa5a-9a0a-43f6-9efd-3762e0e7b256" state="c1908944-dac2-4372-a312-b24ea3cf0d24"/>

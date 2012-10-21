@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">John G. Lundberg</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000080</meta>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Added polymorphs. There are some taxa comments concerning polymorphs for taxa that do not appear in the publication matrix. Also, several taxa (Chrysichthys mabusi, Parauchenoglanis punctatus, Ictalurus punctatus, Synodontis acanthomias, and Synodontis contracta) have taxa comments concerning polymorphs that occur in characters beyond character 93, which is where the publication matrix ends. Does anyone know where this data came from? AB 10/17/12
+
+I checked the Mesquite file for this publication, and characters 94-113 were marked with an 'X' in the Inclusion column, so perhaps this data was intentionally left out. AB 10/17/12</meta>
   <otus id="51dd11c9-ca79-4679-bbea-da9f1a19d946">
     <otu id="4eb0195f-66e2-4f1f-bedc-1b311335d640" label="Amphilius cryptobullatus" about="#4eb0195f-66e2-4f1f-bedc-1b311335d640">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1007751"/>
@@ -54,7 +56,7 @@
     </otu>
     <otu id="9e8d4b03-ad2e-4432-87b3-d884d1e54152" label="Phractura lindica" about="#9e8d4b03-ad2e-4432-87b3-d884d1e54152">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1048632"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic character: char 23 (states 0&amp;1), char 52 (states 1&amp;2)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">For polymorphic character 23, the polymorphism is listed as 0,1, which I interpreted as 0/1. AB 10/17/12</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">91607</meta>
@@ -173,7 +175,7 @@
     </otu>
     <otu id="9f91b2c2-8be2-4881-9a13-6be7f7414764" label="Chrysichthys mabusi" about="#9f91b2c2-8be2-4881-9a13-6be7f7414764">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1048846"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 96 (states 0&amp;1)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 96 (states 0&amp;1); unsure where this polymorphic data came from as the publication matrix only goes to character 93. AB 10/17/12</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">91695</meta>
@@ -181,7 +183,7 @@
     </otu>
     <otu id="3ec29bef-feb7-4d75-a068-6912f5fbe628" label="Parauchenoglanis punctatus" about="#3ec29bef-feb7-4d75-a068-6912f5fbe628">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1050711"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic character: char 107 (states 0&amp;1)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic character: char 107 (states 0&amp;1); unsure where this polymorphic data came from as the publication matrix only goes to character 93. AB 10/17/12</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">91865</meta>
@@ -223,7 +225,7 @@
     </otu>
     <otu id="2a1a70b4-f325-4990-aaeb-bc9f9539949d" label="Centrodoras sp." about="#2a1a70b4-f325-4990-aaeb-bc9f9539949d">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_10000439"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 61 (states 1&amp;2)  Centrodoras sp. Vigliotta (2008) TTO request May 24, 2009, JGL</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Centrodoras sp. Vigliotta (2008) TTO request May 24, 2009, JGL</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">81181</meta>
@@ -323,7 +325,7 @@
     </otu>
     <otu id="037c138d-76fd-4707-999f-af85686becd9" label="Ictalurus punctatus" about="#037c138d-76fd-4707-999f-af85686becd9">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1054206"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 64 (states 0&amp;1), char 107 (states 0&amp;1)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 107 (states 0&amp;1); unsure where this polymorphic data came from as the publication matrix only goes to character 93. AB 10/17/12</meta>
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">1A, 2A, 3A, 6A, 8A, 11, 16A, 18A, 19A, 19B, 21A, 22A, 23A, 24A, 25A</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
@@ -423,7 +425,6 @@
     </otu>
     <otu id="6f9ea5a9-e23e-4d84-b0db-720e0583d9a2" label="Atopochilus savorgnani" about="#6f9ea5a9-e23e-4d84-b0db-720e0583d9a2">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1005728"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 52 (states 0&amp;1), char 71 (states 1&amp;2)</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">86329</meta>
@@ -489,7 +490,6 @@
     </otu>
     <otu id="c0848bc0-67f0-4678-88b2-c761dbbfa059" label="Chiloglanis disneyi" about="#c0848bc0-67f0-4678-88b2-c761dbbfa059">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1006219"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 47 (states 0&amp;1)</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000417"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">303505</meta>
@@ -497,7 +497,6 @@
     </otu>
     <otu id="be97afb4-8ff0-44b4-97fa-0bfa3ebf7867" label="Chiloglanis macropterus" about="#be97afb4-8ff0-44b4-97fa-0bfa3ebf7867">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1004733"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 64 (states 1&amp;2)</meta>
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">20B</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
@@ -518,7 +517,6 @@
     </otu>
     <otu id="26e94f09-5b8e-4e43-8599-f8f724c87a8b" label="Chiloglanis polypogon" about="#26e94f09-5b8e-4e43-8599-f8f724c87a8b">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1057309"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 47 (states 0&amp;1)</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000009"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">222889</meta>
@@ -547,7 +545,7 @@
     </otu>
     <otu id="11577aee-2100-4004-8a9c-edc715933045" label="Chiloglanis sp. igamba" about="#11577aee-2100-4004-8a9c-edc715933045">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_10000442"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 52 (states 2&amp;3)  Chiloglanis sp. C Vigliotta (2008) TTO request May 24, 2009, JGL</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Chiloglanis sp. C Vigliotta (2008) TTO request May 24, 2009, JGL</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">94005</meta>
@@ -590,7 +588,6 @@
     </otu>
     <otu id="5279b36e-9688-4365-a341-1a501734d95e" label="Euchilichthys royauxi" about="#5279b36e-9688-4365-a341-1a501734d95e">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1054124"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 64 (states 0&amp;1)</meta>
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">1C, 2C, 3C, 9B, 13, 17B, 18C, 20A, 21B, 23C, 24C, 25B</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
@@ -735,7 +732,7 @@
     </otu>
     <otu id="5605b058-9e70-4964-8e94-ae9e17b6632f" label="Synodontis acanthomias" about="#5605b058-9e70-4964-8e94-ae9e17b6632f">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1044746"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 111 (states 0&amp;1)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 111 (states 0&amp;1); unsure where this polymorphic data came from as the publication matrix only goes to character 93. AB 10/17/12</meta>
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">1B, 2B, 3B, 8B, 9A, 12, 18B, 19B, 19C, 22B, 23B, 24B, 25C</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
@@ -916,7 +913,7 @@
     </otu>
     <otu id="c6b19fb5-8286-4fbc-84a1-6d41a2c5607b" label="Synodontis haugi" about="#c6b19fb5-8286-4fbc-84a1-6d41a2c5607b">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1054140"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 61 (states 0&amp;1)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">A previous comment concerning a polymorphic state (0&amp;1) for character 61 is not supported by the publication. The polymorphism assigned in the previous comment appears in the Phenex matrix, but should be verified. This taxa is only mentioned in Appenidix I. AB 10/17/12</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">80694</meta>
@@ -939,7 +936,6 @@
     </otu>
     <otu id="0117f337-8df7-4002-8e0e-0a7cb57606d5" label="Synodontis longirostris" about="#0117f337-8df7-4002-8e0e-0a7cb57606d5">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1054141"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 52 (states 0&amp;1)</meta>
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">17B</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000065"/>
@@ -995,7 +991,6 @@
     </otu>
     <otu id="469a2d51-f4cf-4664-8ee8-4baa8001fc53" label="Synodontis nigrita" about="#469a2d51-f4cf-4664-8ee8-4baa8001fc53">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1049799"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 19 (states 0&amp;1),</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000417"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">230125</meta>
@@ -1255,11 +1250,11 @@
     </otu>
     <otu id="f2cc4f1f-c9e2-4e7d-9c75-2b90a6783bb1" label="Amphilius uranoscopus " about="#f2cc4f1f-c9e2-4e7d-9c75-2b90a6783bb1">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1005758"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">not listed in materials and methods; poymorphic characters: char 72 (states 0&amp;1)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">not listed in materials and methods; A previous comment concerning a polymorphic state (0&amp;1) for character 72 is not supported by the publication. The polymorphism assigned in the previous comment appears in the Phenex matrix, but should be verified. AB 10/17/12</meta>
     </otu>
     <otu id="38fc0e86-b7e5-4c86-a5b9-e12c45c44dbd" label="Amphilius jacksoni Tanzania " about="#38fc0e86-b7e5-4c86-a5b9-e12c45c44dbd">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1048204"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">not listed in materials and methods; polymorphic characters: char 61 (states 0&amp;1)  Amphilius sp. A Vigliotta (2008) TTO request May 24, 2009, JGL</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">not listed in materials and methods;  Amphilius sp. A Vigliotta (2008) TTO request May 24, 2009, JGL; A previous comment concerning a polymorphic state (0&amp;1) for character 61 is not supported by the publication. The polymorphism assigned in the previous comment appears in the Phenex matrix, but should be verified. AB 10/17/12</meta>
     </otu>
     <otu id="ee9a6228-1282-4f73-8d74-23b1168d7fef" label="Amphilius jacksoni Zambia " about="#ee9a6228-1282-4f73-8d74-23b1168d7fef">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1048204"/>
@@ -1267,7 +1262,7 @@
     </otu>
     <otu id="f2f2843b-9790-43dd-8b47-5629b6317d60" label="Zaireichthys sp. Zambia " about="#f2f2843b-9790-43dd-8b47-5629b6317d60">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_10000463"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">not listed in materials and methods; polymorphic characters: char 61 (states 2&amp;3), char 64 (states 1&amp;2), char 74 (states 2&amp;3)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">not listed in materials and methods; A previous comment concerning polymorphic states (2&amp;3; 1&amp;2) for characters 61 &amp; 74 and 64, respectively,  is not supported by the publication matrix. The polymorphism assigned in the previous comment appears in the Phenex matrix, but should be verified.AB 10/17/12</meta>
     </otu>
     <otu id="b6785184-ca21-4389-80b1-363ceebede85" label="Doumea gracila " about="#b6785184-ca21-4389-80b1-363ceebede85">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1069748"/>
@@ -1313,7 +1308,7 @@
     </otu>
     <otu id="85b54355-57a5-4f8c-a194-23d5e6fe2df1" label="Euchilichthys sp. Zambia " about="#85b54355-57a5-4f8c-a194-23d5e6fe2df1">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_10000449"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">not listed in materials and methods; polymorphic characters: char 61 (states 0&amp;1)  Euchilichthys sp. B Vigliotta (2008) TTO request May 24, 2009, JGL</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">not listed in materials and methods;  Euchilichthys sp. B Vigliotta (2008) TTO request May 24, 2009, JGL; A previous comment concerning a polymorphic state (0&amp;1) for character 61 is not supported by the publication matrix. The polymorphism assigned in the previous comment appears in the Phenex matrix, but should be verified.AB 10/17/12</meta>
     </otu>
     <otu id="2a06ec2e-6e6f-423d-9bd0-5d14fb13f25f" label="Euchilichthys sp. Congo " about="#2a06ec2e-6e6f-423d-9bd0-5d14fb13f25f">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_10000450"/>
@@ -1374,7 +1369,6 @@
     </otu>
     <otu id="d73816cf-f508-40f1-a23a-b66e6f9ea240" label="Microsynodontis sp. Odzala" about="#d73816cf-f508-40f1-a23a-b66e6f9ea240">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_10000455"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic character: char 74 (states 3&amp;5)</meta>
     </otu>
     <otu id="8e2beac5-4d93-4b0b-8f29-14a2f1d91136" label="Microsynodontis emarginatus" about="#8e2beac5-4d93-4b0b-8f29-14a2f1d91136">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1068018"/>
@@ -1402,7 +1396,7 @@
     </otu>
     <otu id="20c41b45-b511-4fbb-b91c-c01f076dece6" label="Synodontis contractus" about="#20c41b45-b511-4fbb-b91c-c01f076dece6">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1054273"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 111 (states 0&amp;1)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 111 (states 0&amp;1); unsure where this polymorphic data came from as the publication matrix only goes to character 93. AB 10/17/12</meta>
     </otu>
     <otu id="1970277c-b822-47f1-bcbe-d12fd2a9ea91" label="Synodontis decorus" about="#1970277c-b822-47f1-bcbe-d12fd2a9ea91">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1046811"/>
@@ -1418,7 +1412,7 @@
     </otu>
     <otu id="01d74ca7-06b3-4108-841c-df174de91b12" label="Synodontis notatus" about="#01d74ca7-06b3-4108-841c-df174de91b12">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1054146"/>
-      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">polymorphic characters: char 61 (states 0&amp;1)</meta>
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">A previous comment concerning a polymorphic state (0&amp;1) for character 61 is not supported by the publication. The polymorphism assigned in the previous comment appears in the Phenex matrix, but should be verified. This taxa is only mentioned in Appenidix I. AB 10/17/12</meta>
     </otu>
     <otu id="58d64ce9-78c3-443a-818a-4ece167fd57d" label="Synodontis eupterus" about="#58d64ce9-78c3-443a-818a-4ece167fd57d">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/TTO_1047154"/>
@@ -2533,6 +2527,10 @@
             </phen:phenotype>
           </meta>
         </state>
+        <polymorphic_state_set id="822dd56c-63ce-4444-9a6a-0d5221374579">
+          <member state="1d7a1c76-c535-4485-99a3-ad0d29e54081"/>
+          <member state="484a6d8f-8f5b-4d34-aa07-178c4a23e75f"/>
+        </polymorphic_state_set>
       </states>
       <states id="db865c09-74dc-4012-9dcd-fa6ad99bf80c">
         <state id="eb0fb75c-9be6-4f89-a548-308dc6c8ca2e" label="middle nuchal plate not sutured to parietosupraoccipital" about="#eb0fb75c-9be6-4f89-a548-308dc6c8ca2e" symbol="0">
@@ -2761,6 +2759,10 @@
             </phen:phenotype>
           </meta>
         </state>
+        <uncertain_state_set id="e38473a3-6737-43df-b410-063eeec6ad9f">
+          <member state="77ab7193-e71e-480e-af20-b53bf1378b5c"/>
+          <member state="08846251-2971-4da1-841a-18c77c6e5724"/>
+        </uncertain_state_set>
       </states>
       <states id="8e90bf1b-33d3-4a3a-bdf9-e8c23b4a6e83">
         <state id="06ca49f2-51ad-4ddc-bfbe-b49458e2cd35" label="ascending branch of Meckel’s cartilage present" about="#06ca49f2-51ad-4ddc-bfbe-b49458e2cd35" symbol="0">
@@ -3811,6 +3813,10 @@
             </phen:phenotype>
           </meta>
         </state>
+        <polymorphic_state_set id="b06683a5-ca8c-4e92-9fa1-e5c6a2596614">
+          <member state="ecc989a9-cb95-4254-9ec3-f4731158da58"/>
+          <member state="8d355c9f-c845-4491-a224-1ad7fa291b6f"/>
+        </polymorphic_state_set>
       </states>
       <states id="1546e14c-bfce-478d-b99b-a627bef1124a">
         <state id="70ed113b-f609-4121-9b14-aba58e2d37c2" label="posterohyal subtriangular, with distal point" about="#70ed113b-f609-4121-9b14-aba58e2d37c2" symbol="0">
@@ -4015,6 +4021,18 @@
             </phen:phenotype>
           </meta>
         </state>
+        <polymorphic_state_set id="37f79dcd-4f68-4ac8-be23-f443d43e8f12">
+          <member state="a6181e8f-47d5-4dbe-96b4-b6c3c233007e"/>
+          <member state="a2b3946b-cd61-409d-aa8b-4b6421268e29"/>
+        </polymorphic_state_set>
+        <polymorphic_state_set id="86427ca6-0455-44d6-aa27-87f209324a95">
+          <member state="a6181e8f-47d5-4dbe-96b4-b6c3c233007e"/>
+          <member state="490ff35b-02a0-40a9-a3fd-ad215a9a8e6e"/>
+        </polymorphic_state_set>
+        <polymorphic_state_set id="a457153f-b6b8-4fb4-b767-c9646731d3e3">
+          <member state="925bbea9-f6df-4ec6-8226-f1f9d93f5deb"/>
+          <member state="a2b3946b-cd61-409d-aa8b-4b6421268e29"/>
+        </polymorphic_state_set>
       </states>
       <states id="00c5e36e-6d37-4ba2-9b87-4b2877a9be80">
         <state id="581350db-ac70-4a9e-9b82-a9f2b3375624" label="postcleithral process short" about="#581350db-ac70-4a9e-9b82-a9f2b3375624" symbol="0">
@@ -4559,6 +4577,18 @@
             </phen:phenotype>
           </meta>
         </state>
+        <polymorphic_state_set id="84b3b02c-efd0-4df6-b0e3-03192bc32d8d">
+          <member state="ba3157b9-0560-4c82-9a67-f89a7cf731b9"/>
+          <member state="2e11f03a-4c76-46e0-be4f-e496aa985289"/>
+        </polymorphic_state_set>
+        <polymorphic_state_set id="650893c2-2aa4-47b4-8592-3ac55c523fca">
+          <member state="ba3157b9-0560-4c82-9a67-f89a7cf731b9"/>
+          <member state="64690779-638d-42fa-8612-4d9218e81272"/>
+        </polymorphic_state_set>
+        <polymorphic_state_set id="34e6f18f-1925-4a11-9c1f-acb30967b6a9">
+          <member state="e5f1c36b-e69c-445e-890c-2231c8651f92"/>
+          <member state="2e11f03a-4c76-46e0-be4f-e496aa985289"/>
+        </polymorphic_state_set>
       </states>
       <states id="b60ae577-6082-4380-bffb-854d6e73557d">
         <state id="2bfcbe88-45c1-47fc-b505-f35925575bd1" label="anterior margin of dorsal spine without well-formed serrae; ﬁn rays is notably reduced in most chiloglanidins (usually)" symbol="0" about="#2bfcbe88-45c1-47fc-b505-f35925575bd1">
@@ -4708,6 +4738,14 @@
             </phen:phenotype>
           </meta>
         </state>
+        <polymorphic_state_set id="71c182b7-ed7a-433b-94df-73dd861cb102">
+          <member state="8628733c-877e-4944-a452-244e870df3b9"/>
+          <member state="e4141721-9bfc-4a0e-9fd7-c5f24fd7cf8e"/>
+        </polymorphic_state_set>
+        <polymorphic_state_set id="7b0777ef-db76-4f7e-b158-18f8650106ae">
+          <member state="6ce06cd3-eba9-42cc-b6c2-1a0e51c361b8"/>
+          <member state="e4141721-9bfc-4a0e-9fd7-c5f24fd7cf8e"/>
+        </polymorphic_state_set>
       </states>
       <states id="c36cfedb-3eb8-4113-99a4-b89515816f84">
         <state id="58bf73f5-b3fb-4cc1-bb58-f0faffeb042a" label="six pelvic-ﬁn rays" symbol="0" about="#58bf73f5-b3fb-4cc1-bb58-f0faffeb042a">
@@ -5059,6 +5097,10 @@
             </phen:phenotype>
           </meta>
         </state>
+        <polymorphic_state_set id="9e67bd1d-31b7-4778-b23a-6e29acb77b6a">
+          <member state="34270ebe-c27d-4a87-bc0c-380a659048b3"/>
+          <member state="7d671105-ac1e-49de-9a32-09d8a9b663f4"/>
+        </polymorphic_state_set>
       </states>
       <states id="13942584-4785-4cc1-b12a-2a704dffc8ec">
         <state id="558ac3d1-75af-413f-b4d3-4cc73c353cd8" label="all upper hypurals autonomous" about="#558ac3d1-75af-413f-b4d3-4cc73c353cd8" symbol="0">
@@ -5115,6 +5157,10 @@
             </phen:phenotype>
           </meta>
         </state>
+        <polymorphic_state_set id="3985bd59-c2aa-48dc-b127-b31ff221123b">
+          <member state="558ac3d1-75af-413f-b4d3-4cc73c353cd8"/>
+          <member state="1d0b6c92-5a08-4e07-8a0e-6279892bb270"/>
+        </polymorphic_state_set>
       </states>
       <states id="11682304-0bd3-40c2-a495-11cf8c9c4ae3">
         <state id="505e86e4-e416-48da-b61a-f0badcea2db7" label="hypurals two and three divided by obvious space" about="#505e86e4-e416-48da-b61a-f0badcea2db7" symbol="0">
@@ -5245,6 +5291,14 @@
             </phen:phenotype>
           </meta>
         </state>
+        <polymorphic_state_set id="9d34c7ee-b1a0-4979-8500-0fc1ccfa94de">
+          <member state="fd3b6c13-8daa-47d2-8259-c8ce90497319"/>
+          <member state="19b6a617-0aad-4740-a86f-202f3ad20748"/>
+        </polymorphic_state_set>
+        <polymorphic_state_set id="64b96fd6-fcbc-4de3-b491-e0221a7b5d6b">
+          <member state="19b6a617-0aad-4740-a86f-202f3ad20748"/>
+          <member state="0ce75b9b-f23b-47b3-ab85-c85da9ba15d6"/>
+        </polymorphic_state_set>
       </states>
       <states id="4481b708-d54f-4694-9f54-4dcddf9f1175">
         <state id="6d44792b-f8fd-4291-80a8-f9a4e501afef" label="caudal ﬁn forked" symbol="0" about="#6d44792b-f8fd-4291-80a8-f9a4e501afef">
@@ -6838,7 +6892,7 @@
         <cell char="cb5a2f66-2fcc-4ab2-b58d-eb2d4d521003" state="eb0fb75c-9be6-4f89-a548-308dc6c8ca2e"/>
         <cell char="64342904-970d-4813-bee4-d0feb233c388" state="5e0174ee-7c31-42c7-81ea-de03683e1819"/>
         <cell char="2d65798f-0070-40f8-9878-98822a479e4b" state="7ad1acf1-1279-4055-b122-bacc80ea588f"/>
-        <cell char="c1dc4e58-43d3-4111-9136-e18404f42950" state="77ab7193-e71e-480e-af20-b53bf1378b5c"/>
+        <cell char="c1dc4e58-43d3-4111-9136-e18404f42950" state="e38473a3-6737-43df-b410-063eeec6ad9f"/>
         <cell char="f51f01d9-aeb4-4f7f-8449-a8adb57aed70" state="c8980fd1-20ed-427a-bbfd-7c206173f59d"/>
         <cell char="357a87c2-b9ba-4085-9fcf-6949ca50eddc" state="463fe469-0d73-40f3-8f81-c3f019624e06"/>
         <cell char="fcb78b4b-0aa5-4da5-99fc-4084415917b9" state="9bc097db-4d91-4a8d-8509-a3e9284b16e6"/>
@@ -6867,7 +6921,7 @@
         <cell char="b557191a-2974-45ec-949a-53c055d7fbbd" state="e3fbaaa5-8e85-46a8-8b27-a536a5f06aaf"/>
         <cell char="7ebc2ffe-f229-4da1-b848-097261434d32" state="5e0027a6-45fc-4e63-a5b5-08c9892eb600"/>
         <cell char="fc3e4c07-ed9d-4512-98b9-d9d3f397ef23" state="23b73d14-c61f-409b-9aa8-1098398ea544"/>
-        <cell char="8ba32bab-b2b5-4d4f-86c1-0c4206b82d19" state="a6181e8f-47d5-4dbe-96b4-b6c3c233007e"/>
+        <cell char="8ba32bab-b2b5-4d4f-86c1-0c4206b82d19" state="37f79dcd-4f68-4ac8-be23-f443d43e8f12"/>
         <cell char="e9d27fa2-10ee-424c-8885-9d35dbc8c4e2" state="145d1430-d110-4e8f-95ab-6c5a7b24ec77"/>
         <cell char="f023458d-0f55-49d6-b960-07278f416262" state="29ca37dd-4b1e-4a1d-8f0b-86ccfb5946b5"/>
         <cell char="57b8e2cd-3e5b-4180-a79a-04087ea5e811" state="96e9dbbf-55ec-444a-ad93-d7602e236775"/>
@@ -7916,7 +7970,7 @@
         <cell char="822f748d-a451-4efe-8e05-f816728fcb44" state="9c858c76-a55d-4f89-b4f6-4c0414667f92"/>
         <cell char="1740eb08-057c-43fd-abda-a2ab9a36b715" state="a27e4711-2688-4253-85de-78847c42c81c"/>
         <cell char="bd52ac53-a65a-41ed-a6d7-b4508c135550" state="de1cce0f-e858-42fc-845f-16e2272183f4"/>
-        <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="ba3157b9-0560-4c82-9a67-f89a7cf731b9"/>
+        <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="84b3b02c-efd0-4df6-b0e3-03192bc32d8d"/>
         <cell char="aa6f4475-2e6c-480c-9ed8-5f9528e03100" state="c0b067bf-124f-49cb-936f-d37a3304197d"/>
         <cell char="ff3b05fb-c2d3-41be-a552-ae60cfc779ea" state="06ff7af9-78e9-40ce-92a0-05187872c2d8"/>
         <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="e4141721-9bfc-4a0e-9fd7-c5f24fd7cf8e"/>
@@ -8488,7 +8542,7 @@
         <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="64690779-638d-42fa-8612-4d9218e81272"/>
         <cell char="aa6f4475-2e6c-480c-9ed8-5f9528e03100" state="2bfcbe88-45c1-47fc-b505-f35925575bd1"/>
         <cell char="ff3b05fb-c2d3-41be-a552-ae60cfc779ea" state="23593177-c189-4925-9bc7-906ed84d33ab"/>
-        <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="8628733c-877e-4944-a452-244e870df3b9"/>
+        <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="71c182b7-ed7a-433b-94df-73dd861cb102"/>
         <cell char="b1f28dff-6e83-494f-a786-5e3ef54b9bd3" state="94d967a4-3581-4126-bca9-da046e44813c"/>
         <cell char="d2acf003-02f1-4274-a6cf-ec2a30bdf0f0" state="5229c541-5439-4754-8162-449365994b0d"/>
         <cell char="1fd3d9a0-9fbf-4bf9-a206-2a64bad78917" state="2a80b382-4b41-4254-931a-d44a0d453ae2"/>
@@ -8939,7 +8993,7 @@
         <cell char="b557191a-2974-45ec-949a-53c055d7fbbd" state="e3fbaaa5-8e85-46a8-8b27-a536a5f06aaf"/>
         <cell char="7ebc2ffe-f229-4da1-b848-097261434d32" state="82e5b3b9-6d5b-41f3-b987-b0bbe58b5b20"/>
         <cell char="fc3e4c07-ed9d-4512-98b9-d9d3f397ef23" state="23b73d14-c61f-409b-9aa8-1098398ea544"/>
-        <cell char="8ba32bab-b2b5-4d4f-86c1-0c4206b82d19" state="490ff35b-02a0-40a9-a3fd-ad215a9a8e6e"/>
+        <cell char="8ba32bab-b2b5-4d4f-86c1-0c4206b82d19" state="86427ca6-0455-44d6-aa27-87f209324a95"/>
         <cell char="e9d27fa2-10ee-424c-8885-9d35dbc8c4e2" state="581350db-ac70-4a9e-9b82-a9f2b3375624"/>
         <cell char="f023458d-0f55-49d6-b960-07278f416262" state="d859e269-9245-459d-93a8-a5e4d1468aaa"/>
         <cell char="57b8e2cd-3e5b-4180-a79a-04087ea5e811" state="96e9dbbf-55ec-444a-ad93-d7602e236775"/>
@@ -8958,7 +9012,7 @@
         <cell char="b7440914-56e6-45b0-8705-a3516ce50cff" state="269251be-d922-4010-a44b-008ec8dd3d79"/>
         <cell char="a779a57c-a75b-41b6-9dc7-67d0dacd1ba2" state="ea5148f0-42e7-4248-937a-335cee67c213"/>
         <cell char="94679460-bb45-48f7-8bc1-7f422a7bdf51" state="1ee007e0-4eca-4739-ac06-6586227ecc54"/>
-        <cell char="0fc69921-36ae-442d-9e9b-c20ad59c1027" state="7d671105-ac1e-49de-9a32-09d8a9b663f4"/>
+        <cell char="0fc69921-36ae-442d-9e9b-c20ad59c1027" state="9e67bd1d-31b7-4778-b23a-6e29acb77b6a"/>
         <cell char="38e46a26-bc8b-4782-82fb-bc5547701bdf" state="1d0b6c92-5a08-4e07-8a0e-6279892bb270"/>
         <cell char="b473777b-e0b4-41b0-b642-78413e39a7a4" state="505e86e4-e416-48da-b61a-f0badcea2db7"/>
         <cell char="acd6f2b7-612b-42b3-a2bf-4e418f0e943a" state="9b106ca6-d32c-4e50-9289-09794be5887a"/>
@@ -9409,7 +9463,7 @@
         <cell char="d5cab16f-67a6-46a5-923c-bf649cb05bb3" state="6e728f3a-38a7-4bc8-a864-5c0a6fc61ff8"/>
         <cell char="4df010cb-e188-43c2-960e-5315ac5b80e2" state="7993a389-f8cd-46df-b078-6f0576ce9197"/>
         <cell char="7647914e-e6bb-4532-a8a5-9938f578e153" state="9e4dea60-bbc6-4194-a770-e8cbfad4b041"/>
-        <cell char="b8d24607-7688-40bb-a0da-966ea5fa9036" state="8d355c9f-c845-4491-a224-1ad7fa291b6f"/>
+        <cell char="b8d24607-7688-40bb-a0da-966ea5fa9036" state="b06683a5-ca8c-4e92-9fa1-e5c6a2596614"/>
         <cell char="046bf345-607d-4f82-9874-4e11b0f60fba" state="d5e98dd9-28bb-4b1b-8d65-675af8787c1c"/>
         <cell char="b557191a-2974-45ec-949a-53c055d7fbbd" state="e3fbaaa5-8e85-46a8-8b27-a536a5f06aaf"/>
         <cell char="7ebc2ffe-f229-4da1-b848-097261434d32" state="5e0027a6-45fc-4e63-a5b5-08c9892eb600"/>
@@ -9521,7 +9575,7 @@
         <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="2e11f03a-4c76-46e0-be4f-e496aa985289"/>
         <cell char="aa6f4475-2e6c-480c-9ed8-5f9528e03100" state="2bfcbe88-45c1-47fc-b505-f35925575bd1"/>
         <cell char="ff3b05fb-c2d3-41be-a552-ae60cfc779ea" state="06ff7af9-78e9-40ce-92a0-05187872c2d8"/>
-        <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="e4141721-9bfc-4a0e-9fd7-c5f24fd7cf8e"/>
+        <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="7b0777ef-db76-4f7e-b158-18f8650106ae"/>
         <cell char="b1f28dff-6e83-494f-a786-5e3ef54b9bd3" state="fb407f22-61cd-4abc-a2f7-72a949f9e6c9"/>
         <cell char="d2acf003-02f1-4274-a6cf-ec2a30bdf0f0" state="5229c541-5439-4754-8162-449365994b0d"/>
         <cell char="1fd3d9a0-9fbf-4bf9-a206-2a64bad78917" state="8da4550a-9b64-4099-9ec3-50b7833fa03f"/>
@@ -9693,7 +9747,7 @@
         <cell char="d5cab16f-67a6-46a5-923c-bf649cb05bb3" state="6e728f3a-38a7-4bc8-a864-5c0a6fc61ff8"/>
         <cell char="4df010cb-e188-43c2-960e-5315ac5b80e2" state="7993a389-f8cd-46df-b078-6f0576ce9197"/>
         <cell char="7647914e-e6bb-4532-a8a5-9938f578e153" state="9e4dea60-bbc6-4194-a770-e8cbfad4b041"/>
-        <cell char="b8d24607-7688-40bb-a0da-966ea5fa9036" state="8d355c9f-c845-4491-a224-1ad7fa291b6f"/>
+        <cell char="b8d24607-7688-40bb-a0da-966ea5fa9036" state="b06683a5-ca8c-4e92-9fa1-e5c6a2596614"/>
         <cell char="046bf345-607d-4f82-9874-4e11b0f60fba" state="d5e98dd9-28bb-4b1b-8d65-675af8787c1c"/>
         <cell char="b557191a-2974-45ec-949a-53c055d7fbbd" state="e3fbaaa5-8e85-46a8-8b27-a536a5f06aaf"/>
         <cell char="7ebc2ffe-f229-4da1-b848-097261434d32" state="5e0027a6-45fc-4e63-a5b5-08c9892eb600"/>
@@ -9982,7 +10036,7 @@
         <cell char="b557191a-2974-45ec-949a-53c055d7fbbd" state="e3fbaaa5-8e85-46a8-8b27-a536a5f06aaf"/>
         <cell char="7ebc2ffe-f229-4da1-b848-097261434d32" state="5e0027a6-45fc-4e63-a5b5-08c9892eb600"/>
         <cell char="fc3e4c07-ed9d-4512-98b9-d9d3f397ef23" state="23b73d14-c61f-409b-9aa8-1098398ea544"/>
-        <cell char="8ba32bab-b2b5-4d4f-86c1-0c4206b82d19" state="a2b3946b-cd61-409d-aa8b-4b6421268e29"/>
+        <cell char="8ba32bab-b2b5-4d4f-86c1-0c4206b82d19" state="a457153f-b6b8-4fb4-b767-c9646731d3e3"/>
         <cell char="e9d27fa2-10ee-424c-8885-9d35dbc8c4e2" state="581350db-ac70-4a9e-9b82-a9f2b3375624"/>
         <cell char="f023458d-0f55-49d6-b960-07278f416262" state="d859e269-9245-459d-93a8-a5e4d1468aaa"/>
         <cell char="57b8e2cd-3e5b-4180-a79a-04087ea5e811" state="96e9dbbf-55ec-444a-ad93-d7602e236775"/>
@@ -10371,7 +10425,7 @@
         <cell char="822f748d-a451-4efe-8e05-f816728fcb44" state="40dd5990-7abe-432b-b678-3affa2a3766f"/>
         <cell char="1740eb08-057c-43fd-abda-a2ab9a36b715" state="0ab3050d-5b01-4d00-ad77-b420ef535303"/>
         <cell char="bd52ac53-a65a-41ed-a6d7-b4508c135550" state="d96c8447-fb3d-4d5b-bef9-30aed74aa512"/>
-        <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="64690779-638d-42fa-8612-4d9218e81272"/>
+        <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="650893c2-2aa4-47b4-8592-3ac55c523fca"/>
         <cell char="aa6f4475-2e6c-480c-9ed8-5f9528e03100" state="2bfcbe88-45c1-47fc-b505-f35925575bd1"/>
         <cell char="ff3b05fb-c2d3-41be-a552-ae60cfc779ea" state="23593177-c189-4925-9bc7-906ed84d33ab"/>
         <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="e4141721-9bfc-4a0e-9fd7-c5f24fd7cf8e"/>
@@ -10469,7 +10523,7 @@
         <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="64690779-638d-42fa-8612-4d9218e81272"/>
         <cell char="aa6f4475-2e6c-480c-9ed8-5f9528e03100" state="2bfcbe88-45c1-47fc-b505-f35925575bd1"/>
         <cell char="ff3b05fb-c2d3-41be-a552-ae60cfc779ea" state="23593177-c189-4925-9bc7-906ed84d33ab"/>
-        <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="8628733c-877e-4944-a452-244e870df3b9"/>
+        <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="71c182b7-ed7a-433b-94df-73dd861cb102"/>
         <cell char="b1f28dff-6e83-494f-a786-5e3ef54b9bd3" state="fb407f22-61cd-4abc-a2f7-72a949f9e6c9"/>
         <cell char="d2acf003-02f1-4274-a6cf-ec2a30bdf0f0" state="5229c541-5439-4754-8162-449365994b0d"/>
         <cell char="1fd3d9a0-9fbf-4bf9-a206-2a64bad78917" state="8da4550a-9b64-4099-9ec3-50b7833fa03f"/>
@@ -11988,6 +12042,7 @@
         <cell char="822f748d-a451-4efe-8e05-f816728fcb44" state="f7f997e3-ab8b-4d32-93ce-ed1f624af2c9"/>
         <cell char="1740eb08-057c-43fd-abda-a2ab9a36b715" state="a27e4711-2688-4253-85de-78847c42c81c"/>
         <cell char="bd52ac53-a65a-41ed-a6d7-b4508c135550" state="de1cce0f-e858-42fc-845f-16e2272183f4"/>
+        <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="650893c2-2aa4-47b4-8592-3ac55c523fca"/>
         <cell char="ff3b05fb-c2d3-41be-a552-ae60cfc779ea" state="23593177-c189-4925-9bc7-906ed84d33ab"/>
         <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="e4141721-9bfc-4a0e-9fd7-c5f24fd7cf8e"/>
         <cell char="b1f28dff-6e83-494f-a786-5e3ef54b9bd3" state="58bf73f5-b3fb-4cc1-bb58-f0faffeb042a"/>
@@ -12162,7 +12217,7 @@
         <cell char="b557191a-2974-45ec-949a-53c055d7fbbd" state="e3fbaaa5-8e85-46a8-8b27-a536a5f06aaf"/>
         <cell char="7ebc2ffe-f229-4da1-b848-097261434d32" state="5e0027a6-45fc-4e63-a5b5-08c9892eb600"/>
         <cell char="fc3e4c07-ed9d-4512-98b9-d9d3f397ef23" state="23b73d14-c61f-409b-9aa8-1098398ea544"/>
-        <cell char="8ba32bab-b2b5-4d4f-86c1-0c4206b82d19" state="490ff35b-02a0-40a9-a3fd-ad215a9a8e6e"/>
+        <cell char="8ba32bab-b2b5-4d4f-86c1-0c4206b82d19" state="86427ca6-0455-44d6-aa27-87f209324a95"/>
         <cell char="e9d27fa2-10ee-424c-8885-9d35dbc8c4e2" state="8703c534-4f64-4b99-8029-f7c878c430d1"/>
         <cell char="f023458d-0f55-49d6-b960-07278f416262" state="d859e269-9245-459d-93a8-a5e4d1468aaa"/>
         <cell char="57b8e2cd-3e5b-4180-a79a-04087ea5e811" state="96e9dbbf-55ec-444a-ad93-d7602e236775"/>
@@ -12407,7 +12462,7 @@
         <cell char="23048b22-a871-4dd1-b017-bdeb10452007" state="9106f85b-d893-4709-8c29-4b87e6a51207"/>
         <cell char="ec9fab6d-5344-4de1-8cc8-75dab929359a" state="fb681ef8-a756-413f-bf4a-a25e61133583"/>
         <cell char="645d98fb-ea57-4c6d-aec0-c2bd67e1ed79" state="17651b38-670b-42c4-8c36-9ece40121f97"/>
-        <cell char="2506a82f-f0d8-442e-93a2-eef500e13836" state="1d7a1c76-c535-4485-99a3-ad0d29e54081"/>
+        <cell char="2506a82f-f0d8-442e-93a2-eef500e13836" state="822dd56c-63ce-4444-9a6a-0d5221374579"/>
         <cell char="cb5a2f66-2fcc-4ab2-b58d-eb2d4d521003" state="e1ab9041-2118-4c61-842d-dd45b85fc7df"/>
         <cell char="64342904-970d-4813-bee4-d0feb233c388" state="53fcc3ac-adc1-4c0e-8ef6-6bdf5933f521"/>
         <cell char="2d65798f-0070-40f8-9878-98822a479e4b" state="eaeaa927-cfe6-4083-b1d5-9db68e436ce1"/>
@@ -13604,10 +13659,18 @@
       <row id="a85be0eb-367e-4bdf-af63-f02363d5f7ae" otu="5851c03c-c590-4f9e-b3df-7256eb260e1b"/>
       <row id="ef05f10f-5f3e-486e-b5a1-d4c74cd5ba2f" otu="9adb006a-41f4-465b-b33d-7518fd8f0a2b"/>
       <row id="bf05bcd5-51e8-482c-854c-ebe3eb160a2f" otu="1034c213-4e23-4e71-9ac5-c5e9407543b9"/>
-      <row id="0a33143e-2f01-45a1-88e6-74a6c125f649" otu="f2cc4f1f-c9e2-4e7d-9c75-2b90a6783bb1"/>
-      <row id="0de7c8d8-97d4-48f9-acaf-a22f195f311b" otu="38fc0e86-b7e5-4c86-a5b9-e12c45c44dbd"/>
+      <row id="0a33143e-2f01-45a1-88e6-74a6c125f649" otu="f2cc4f1f-c9e2-4e7d-9c75-2b90a6783bb1">
+        <cell char="38e46a26-bc8b-4782-82fb-bc5547701bdf" state="3985bd59-c2aa-48dc-b127-b31ff221123b"/>
+      </row>
+      <row id="0de7c8d8-97d4-48f9-acaf-a22f195f311b" otu="38fc0e86-b7e5-4c86-a5b9-e12c45c44dbd">
+        <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="650893c2-2aa4-47b4-8592-3ac55c523fca"/>
+      </row>
       <row id="69348e57-3f0d-42c5-961c-ed9a988df740" otu="ee9a6228-1282-4f73-8d74-23b1168d7fef"/>
-      <row id="cf026f05-2bcf-48bd-ba5d-12523973a4cf" otu="f2f2843b-9790-43dd-8b47-5629b6317d60"/>
+      <row id="cf026f05-2bcf-48bd-ba5d-12523973a4cf" otu="f2f2843b-9790-43dd-8b47-5629b6317d60">
+        <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="34e6f18f-1925-4a11-9c1f-acb30967b6a9"/>
+        <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="7b0777ef-db76-4f7e-b158-18f8650106ae"/>
+        <cell char="acd6f2b7-612b-42b3-a2bf-4e418f0e943a" state="9d34c7ee-b1a0-4979-8500-0fc1ccfa94de"/>
+      </row>
       <row id="cdb0038d-dcab-4f23-8669-c07433dbade2" otu="b6785184-ca21-4389-80b1-363ceebede85"/>
       <row id="573d6279-01fe-4e7f-86ea-d089af714323" otu="1d19fb34-00e9-4bb6-9280-adc266b58bcb"/>
       <row id="46b4728a-d6a3-472d-8099-43bfefb3de6a" otu="b17feabe-5c12-45aa-aa75-0608ebe46a92"/>
@@ -13804,7 +13867,9 @@
         <cell char="6ee152ed-66b8-4183-bc68-ed336e2e6e18" state="45c9484a-a62f-44d7-b534-d57c7dd731d5"/>
         <cell char="46235430-dd8f-4b6c-8231-b9278bdd2419" state="711fe61b-cd0c-4bf6-930e-f13a42439f2b"/>
       </row>
-      <row id="6fad72df-6cde-4d93-8f60-89f0a8eae7ac" otu="85b54355-57a5-4f8c-a194-23d5e6fe2df1"/>
+      <row id="6fad72df-6cde-4d93-8f60-89f0a8eae7ac" otu="85b54355-57a5-4f8c-a194-23d5e6fe2df1">
+        <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="650893c2-2aa4-47b4-8592-3ac55c523fca"/>
+      </row>
       <row id="1b94aa49-fa92-4b96-93e7-c3b884f65c15" otu="2a06ec2e-6e6f-423d-9bd0-5d14fb13f25f"/>
       <row id="53db63b3-0380-445b-9951-65c50dec9d1a" otu="b1b07cad-32cc-43c2-8fc9-9ea51fb91594"/>
       <row id="1bd90a8f-26da-44e3-b52d-e0621185eb3e" otu="40f1c8f6-4aaa-4ee9-850c-0a55964dfd83"/>
@@ -14991,7 +15056,7 @@
         <cell char="0fc69921-36ae-442d-9e9b-c20ad59c1027" state="34270ebe-c27d-4a87-bc0c-380a659048b3"/>
         <cell char="38e46a26-bc8b-4782-82fb-bc5547701bdf" state="5994570e-4f9a-4484-b30c-05a122ae38f9"/>
         <cell char="b473777b-e0b4-41b0-b642-78413e39a7a4" state="505e86e4-e416-48da-b61a-f0badcea2db7"/>
-        <cell char="acd6f2b7-612b-42b3-a2bf-4e418f0e943a" state="19b6a617-0aad-4740-a86f-202f3ad20748"/>
+        <cell char="acd6f2b7-612b-42b3-a2bf-4e418f0e943a" state="64b96fd6-fcbc-4de3-b491-e0221a7b5d6b"/>
         <cell char="50031cae-46fa-464a-b48e-c3bea8661a39" state="247c2b24-4558-46dc-ae60-2d167ba33157"/>
         <cell char="d9ee4e82-02f7-43b0-a131-0898c9f0c1e1" state="4635d82b-0a61-4751-8ade-3134626c2747"/>
         <cell char="0fb2bd69-667f-4c0f-81b0-f2f755a369c6" state="487067cd-ab1b-4c2b-bb0d-05cebb1b6e15"/>
@@ -16263,6 +16328,7 @@
         <cell char="822f748d-a451-4efe-8e05-f816728fcb44" state="f7f997e3-ab8b-4d32-93ce-ed1f624af2c9"/>
         <cell char="1740eb08-057c-43fd-abda-a2ab9a36b715" state="a27e4711-2688-4253-85de-78847c42c81c"/>
         <cell char="bd52ac53-a65a-41ed-a6d7-b4508c135550" state="de1cce0f-e858-42fc-845f-16e2272183f4"/>
+        <cell char="ed468a16-a83a-49ea-b7de-fd073c44a2c4" state="650893c2-2aa4-47b4-8592-3ac55c523fca"/>
         <cell char="ff3b05fb-c2d3-41be-a552-ae60cfc779ea" state="23593177-c189-4925-9bc7-906ed84d33ab"/>
         <cell char="1a46bce4-631e-48dc-8257-db32137ef65a" state="e4141721-9bfc-4a0e-9fd7-c5f24fd7cf8e"/>
         <cell char="b1f28dff-6e83-494f-a786-5e3ef54b9bd3" state="58bf73f5-b3fb-4cc1-bb58-f0faffeb042a"/>
