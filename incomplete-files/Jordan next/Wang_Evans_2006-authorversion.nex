@@ -1,5 +1,5 @@
 #NEXUS
-[written Fri Oct 12 11:26:26 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.67.149]
+[written Mon Oct 22 12:10:33 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.82.178]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -16,7 +16,7 @@ BEGIN CHARACTERS;
 	DIMENSIONS  NCHAR=72;
 	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5";
 	CHARSTATELABELS 
-32  /  _ 2, 67 Character_67 / , 68 Character_68 / , 69 Character_69 / , 70 Character_70 / , 71 Character_71 / , 72 Character_72 /  ; 
+32  /  _ 2, 67 Character_67, 68 Character_68, 69 Character_69, 70 Character_70, 71 Character_71, 72 Character_72 ; 
 	MATRIX
 	Liaoxitriton       010?0?1?0???11??0000?1???????{1 2}000{1 2}0????01??????????????11110001??0??????
 	Jeholotriton       011?0?1?200??1???130?1?00????10000000???????????????????1110000??2??????
@@ -61,7 +61,7 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1350059187075;
+		timeSaved 1350925833571;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 5941197949389966710;
@@ -70,7 +70,7 @@ Begin MESQUITE;
 		tell It;
 			setID 0 6767068367027271015;
 			mqVersion 275;
-			checksumv 0 3 1361444718 null  getNumChars 72 numChars 72 getNumTaxa 25 numTaxa 25   short true   bits 2305843009213693983   states 31   sumSquaresStatesOnly 5997.0 sumSquares -5.995191823955604E19 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			checksumv 0 3 1361444718 null  getNumChars 72 numChars 72 getNumTaxa 25 numTaxa 25   short true   bits 2305843009213693983   states 31   sumSquaresStatesOnly 5997.0 sumSquares -5.995191823955604E19 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -108,7 +108,6 @@ Begin MESQUITE;
 					getToolPalette;
 					tell It;
 					endTell;
-					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
@@ -152,6 +151,30 @@ Begin MESQUITE;
 				tell It;
 					setColor Red;
 					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 586 397;
+						setLocation 8 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
 				endTell;
 				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
 				tell It;
