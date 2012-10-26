@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -749,7 +749,28 @@
         <state id="0b5b7a54-aefe-4970-a9c5-25dbe9ff915b" label="dual, developed" symbol="0"/>
         <state id="519579c7-e9c2-4cef-96f5-b4e08234f0a6" label="single, developed (Chlamydoselachus)" symbol="1"/>
         <state id="61d5a8dd-2cc9-4957-8b54-67d06e205864" label="single, developed (hexanchoids)" symbol="2"/>
-        <state id="79347583-7f1a-4013-a86f-3ad3be976025" label="reduced or absent" symbol="3"/>
+        <state id="79347583-7f1a-4013-a86f-3ad3be976025" label="reduced or absent" symbol="3" about="#79347583-7f1a-4013-a86f-3ad3be976025">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="672b5b3c-a131-4027-ad79-4c0cc1c3a030">
         <state id="e19ed809-68f0-4c62-bdc1-e0ae54f02443" label="a triangular or rectangular basal cartilage and radials" symbol="0"/>
@@ -766,8 +787,34 @@
         <state id="02fd5cf8-4db8-44d5-8300-070f66bcc1c1" label="plesodic" symbol="2"/>
       </states>
       <states id="438a49d5-319e-4488-a6b0-ccd297108a50">
-        <state id="f573a23f-dbc1-4d3d-9464-452443f512bf" label="present" symbol="0"/>
-        <state id="95f29171-a882-47ff-8bdf-93c06d486829" label="absent" symbol="1"/>
+        <state id="f573a23f-dbc1-4d3d-9464-452443f512bf" label="present" symbol="0" about="#f573a23f-dbc1-4d3d-9464-452443f512bf">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="95f29171-a882-47ff-8bdf-93c06d486829" label="absent" symbol="1" about="#95f29171-a882-47ff-8bdf-93c06d486829">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="455ae6f6-5ce3-49d5-89f8-55f68ff7f3c7">
         <state id="b81f3c66-de32-4961-91a6-588731990e19" label="the basal cartilage and radials" symbol="0"/>
