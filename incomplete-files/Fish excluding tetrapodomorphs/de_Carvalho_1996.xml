@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Matrix: Ben Frable
 Taxon: 
@@ -622,18 +622,64 @@ Fin characters in google doc</meta>
         <state id="f694aa94-3e9f-4282-ba4c-2f3ff6c47070" label="present and originating on the coraco-arcualis muscle" symbol="1"/>
       </states>
       <states id="52c5b331-ccc5-4d37-bf24-ca44cfa7a85c">
-        <state id="7a75bccd-b116-4b4a-9e6f-52e497092477" label="seperate" symbol="0" about="#7a75bccd-b116-4b4a-9e6f-52e497092477">
+        <state id="7a75bccd-b116-4b4a-9e6f-52e497092477" label="separate" symbol="0" about="#7a75bccd-b116-4b4a-9e6f-52e497092477">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0004743"/>
+                  <phen:typeref about="UBERON:0004743">
+                    <phen:qualifier relation="BSPO:0000120">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000468"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004743">
+                      <phen:qualifier relation="BSPO:0000121">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0000468"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="5c59b499-2732-40b0-9648-6e504c160f03" label="fused " symbol="1"/>
+        <state id="5c59b499-2732-40b0-9648-6e504c160f03" label="fused " symbol="1" about="#5c59b499-2732-40b0-9648-6e504c160f03">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004743">
+                    <phen:qualifier relation="BSPO:0000120">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000468"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004743">
+                      <phen:qualifier relation="BSPO:0000121">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0000468"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="afbb4147-2a3a-48f2-8f18-ab9ded3d8665">
         <state id="20a8203b-0203-41d0-9a9a-35f99670769a" label="single facet for the articulation of pectoral basals" symbol="0" about="#20a8203b-0203-41d0-9a9a-35f99670769a">
