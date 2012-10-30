@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Matrix:
 Taxon:
@@ -173,11 +173,20 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
       <states id="ac41166c-6887-4a50-b476-43e1c0ea2ac6">
         <state id="431d9650-4c4b-4b67-bb7f-8c32a0cb4bb3" label="present" symbol="0"/>
         <state id="3d1da47c-c884-473c-bca2-bb3cb953e480" label="absent" symbol="1"/>
+        <uncertain_state_set id="2b01f0ff-10b5-463d-9902-1d98cddc6b7b">
+          <member state="431d9650-4c4b-4b67-bb7f-8c32a0cb4bb3"/>
+          <member state="3d1da47c-c884-473c-bca2-bb3cb953e480"/>
+        </uncertain_state_set>
       </states>
       <states id="8d8f3a9f-e422-4d00-8fb4-f58f6acbc4d9">
         <state id="3af57c42-9f08-4ae5-883b-f9c9dedfc3fa" label="large " symbol="0"/>
         <state id="bb9c4228-ea4a-4026-8f81-9fa214a89b6d" label="small" symbol="1"/>
         <state id="6771950b-a89b-4a67-be37-1fa98a136154" label="" symbol="N"/>
+        <uncertain_state_set id="7d6ab7ea-7ea9-4a3a-852d-6a1968a3b79b">
+          <member state="6771950b-a89b-4a67-be37-1fa98a136154"/>
+          <member state="bb9c4228-ea4a-4026-8f81-9fa214a89b6d"/>
+          <member state="3af57c42-9f08-4ae5-883b-f9c9dedfc3fa"/>
+        </uncertain_state_set>
       </states>
       <states id="b8d7dc50-ad51-45e5-adfd-d739a163b588">
         <state id="66464b64-870b-4658-b811-122deec0b216" label="Absent" symbol="0"/>
@@ -186,10 +195,18 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
       <states id="0d038a85-cbb8-4ab4-8459-fd3ceaef499b">
         <state id="f8bcd998-19d4-480f-bffd-011b4da77186" label="Absent" symbol="0"/>
         <state id="2c8f3af0-68c0-4632-879a-7c0be7115875" label="present" symbol="1"/>
+        <uncertain_state_set id="76eb9b82-5aa2-4110-9dfe-329004b338aa">
+          <member state="f8bcd998-19d4-480f-bffd-011b4da77186"/>
+          <member state="2c8f3af0-68c0-4632-879a-7c0be7115875"/>
+        </uncertain_state_set>
       </states>
       <states id="8365f3dc-1524-4097-98d0-cb7db4b276d7">
         <state id="eaf7ee35-aa83-42fe-b746-aa499105602a" label="Originate ventrolaterally" symbol="0"/>
         <state id="a5483694-f782-4976-9b98-c5fed502cb1d" label="dorsolaterally" symbol="1"/>
+        <uncertain_state_set id="3f1003c6-d8fa-4231-a90f-5b7b673cd76f">
+          <member state="a5483694-f782-4976-9b98-c5fed502cb1d"/>
+          <member state="eaf7ee35-aa83-42fe-b746-aa499105602a"/>
+        </uncertain_state_set>
       </states>
       <states id="d16bf286-f545-4b4d-a9a5-09ce13fc8a5c">
         <state id="56f4984f-4f2d-4f2d-9801-8835807aa50d" label="absent" symbol="0"/>
@@ -203,11 +220,19 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
       <states id="987c314a-7430-4b88-af35-2eca7d43db7d">
         <state id="f95c0ba1-0cc5-42de-a856-edf76c562552" label="present" symbol="0"/>
         <state id="96ba5574-caf0-4fbf-8806-6e15fb7120e8" label="absent" symbol="1"/>
+        <uncertain_state_set id="09741a64-c683-4b80-9b59-fb61a981ac7a">
+          <member state="f95c0ba1-0cc5-42de-a856-edf76c562552"/>
+          <member state="96ba5574-caf0-4fbf-8806-6e15fb7120e8"/>
+        </uncertain_state_set>
       </states>
       <states id="f2c0c74b-2b01-4208-a116-99b26f7c984b">
         <state id="2cfbb999-6730-470f-80dc-6c6908b87da3" label="Large and in contact with postorbital" symbol="0"/>
         <state id="69f56be2-4619-4d64-9fa4-17b083fa9074" label="small and separated from postorbital " symbol="1"/>
         <state id="795a0210-fb76-469a-92fd-518d81c2cca9" label="" symbol="N"/>
+        <uncertain_state_set id="0e9fdacf-a14e-4d2d-a095-181e891b2194">
+          <member state="69f56be2-4619-4d64-9fa4-17b083fa9074"/>
+          <member state="795a0210-fb76-469a-92fd-518d81c2cca9"/>
+        </uncertain_state_set>
       </states>
       <states id="8ab39bef-9273-41ff-a785-952a06f5d8be">
         <state id="1d5670a0-4984-48da-8dba-40fdbb623eb0" label="present" symbol="0"/>
@@ -226,10 +251,18 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
       <states id="84ea2947-965c-411a-abf2-509f3499d88d">
         <state id="14c9f02c-457f-4147-a0b2-e5d3ea303981" label="Excluded from" symbol="0"/>
         <state id="4696baa0-f2c4-4f01-961b-47de0c0bcbcf" label="broadly enters into subtemporal fenestra" symbol="1"/>
+        <uncertain_state_set id="6656b006-553c-4bf1-9a4f-1be5a21b9a7c">
+          <member state="4696baa0-f2c4-4f01-961b-47de0c0bcbcf"/>
+          <member state="14c9f02c-457f-4147-a0b2-e5d3ea303981"/>
+        </uncertain_state_set>
       </states>
       <states id="7254a1ce-9f69-4680-8263-3803d21d2aed">
         <state id="4776aa1e-1425-4faa-bf79-21c861955d8e" label="Small and broadly separated" symbol="0"/>
         <state id="607fec47-d3af-476b-baaf-1a94b811d5fe" label="prominent and appressed on midline to form secondary palate" symbol="1"/>
+        <uncertain_state_set id="302a61c6-1592-44d8-a0ba-ed8e3e982465">
+          <member state="607fec47-d3af-476b-baaf-1a94b811d5fe"/>
+          <member state="4776aa1e-1425-4faa-bf79-21c861955d8e"/>
+        </uncertain_state_set>
       </states>
       <states id="c6e1075b-074b-4fa8-ba8c-7bfb16506bb8">
         <state id="b87f279b-0a27-4536-beff-41f0460ae086" label="Horizontal" symbol="0"/>
@@ -246,6 +279,10 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
       <states id="d399bc0c-e3ef-4886-aba1-3b7c6ba6636f">
         <state id="a6a8d30c-6aac-48cb-a641-fe7c913e746d" label="Separates maxilla and nasal and enters margin of naris " symbol="0"/>
         <state id="c51270b3-9ca3-474e-ac3d-3add81d7de4b" label="maxilla contacts nasal and excludes lacrimal from naris " symbol="1"/>
+        <uncertain_state_set id="8c2d5dcd-e772-4a0e-8efc-069de879d2ed">
+          <member state="c51270b3-9ca3-474e-ac3d-3add81d7de4b"/>
+          <member state="a6a8d30c-6aac-48cb-a641-fe7c913e746d"/>
+        </uncertain_state_set>
       </states>
       <states id="b15701f8-d495-4556-841a-92cacbb66442">
         <state id="be95c238-aa78-4980-b792-b167248d7005" label="Extends posteriorly to middle of lower temporal fenestra" symbol="0"/>
@@ -5107,6 +5144,8 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
         <cell char="2170c92c-d18e-4f37-9199-a103ce02a395" state="eaf7ee35-aa83-42fe-b746-aa499105602a"/>
         <cell char="7437ac30-6bd4-4f2f-87c7-d0a52f1f3809" state="c836106b-96ea-49b2-90f2-d49920c73a21"/>
         <cell char="90cc65e0-67ac-401a-ae6e-ad21da338e24" state="14612461-bda4-48ef-acc7-1065fd7dc270"/>
+        <cell char="01606882-e0e1-41d6-9098-b86536a95586" state="09741a64-c683-4b80-9b59-fb61a981ac7a"/>
+        <cell char="24c705ca-c783-47ab-8f47-86730e183dd5" state="0e9fdacf-a14e-4d2d-a095-181e891b2194"/>
         <cell char="f0c63a16-f8c9-4018-a2fe-ac23dc68effb" state="1d5670a0-4984-48da-8dba-40fdbb623eb0"/>
         <cell char="5bb688e2-a319-45aa-be9f-b348e08e8bfd" state="a5074c85-8068-42d3-a176-8c060d7676d5"/>
         <cell char="d334f158-9ffc-44f8-b957-23ae607f027f" state="b47f78dc-540a-448f-b39a-d906fd6cd5a0"/>
@@ -5513,7 +5552,11 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
         <cell char="aed37673-d3f6-4199-8a12-c6cb767e271f" state="9c58c1be-bf8e-4575-8177-466247cc4c53"/>
         <cell char="0915759a-d595-41fc-a6ba-bf2d18ff9cf2" state="b4372ea5-46d2-4101-a84c-033b04341b00"/>
         <cell char="fbe118b7-8cbd-4b0d-9908-c80b9ed1a23a" state="9e6aae95-9bde-4fc3-9cfb-cf8286966e77"/>
+        <cell char="877be69f-96c7-43e3-a5a9-897d367a2860" state="2b01f0ff-10b5-463d-9902-1d98cddc6b7b"/>
+        <cell char="2e3249f8-ab03-4087-9024-6b783994ead6" state="7d6ab7ea-7ea9-4a3a-852d-6a1968a3b79b"/>
         <cell char="ff669bcc-1b83-4418-ba23-5fc2b3d6dadf" state="d59ef7ee-f091-4129-a9c1-432c75735fd7"/>
+        <cell char="ac5939c7-dfe5-497c-85b2-d47153618078" state="76eb9b82-5aa2-4110-9dfe-329004b338aa"/>
+        <cell char="2170c92c-d18e-4f37-9199-a103ce02a395" state="3f1003c6-d8fa-4231-a90f-5b7b673cd76f"/>
         <cell char="7437ac30-6bd4-4f2f-87c7-d0a52f1f3809" state="c836106b-96ea-49b2-90f2-d49920c73a21"/>
         <cell char="90cc65e0-67ac-401a-ae6e-ad21da338e24" state="14612461-bda4-48ef-acc7-1065fd7dc270"/>
         <cell char="01606882-e0e1-41d6-9098-b86536a95586" state="96ba5574-caf0-4fbf-8806-6e15fb7120e8"/>
@@ -5524,6 +5567,7 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
         <cell char="aacc74ed-6292-490a-96c1-c899ebd72e86" state="14c9f02c-457f-4147-a0b2-e5d3ea303981"/>
         <cell char="3a301ecd-75dc-427f-b779-e4160a3379f4" state="2ff6c62a-7e0c-4694-89ae-94e3002ea571"/>
         <cell char="8f0a8df9-8ea4-48ba-87a6-a0f90040d4a0" state="3bb99814-bdc7-44a3-ae36-29e55805f4e1"/>
+        <cell char="636bcfe1-be3d-44b5-aaee-0c43b3acf94d" state="8c2d5dcd-e772-4a0e-8efc-069de879d2ed"/>
         <cell char="85329a39-5641-4a5f-83e4-0f562a82190b" state="be95c238-aa78-4980-b792-b167248d7005"/>
         <cell char="c3ed7f01-fe60-46e7-b614-8b13a28b7f04" state="41d8839b-e8b0-4838-972b-85d1973f6609"/>
         <cell char="4efe4881-ca42-480f-a659-a29c7455c5a5" state="ee4d2ca4-c696-4730-8f7a-c2e1a6b3e176"/>
@@ -5709,6 +5753,8 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
         <cell char="f0c63a16-f8c9-4018-a2fe-ac23dc68effb" state="1d5670a0-4984-48da-8dba-40fdbb623eb0"/>
         <cell char="5bb688e2-a319-45aa-be9f-b348e08e8bfd" state="a5074c85-8068-42d3-a176-8c060d7676d5"/>
         <cell char="d334f158-9ffc-44f8-b957-23ae607f027f" state="b47f78dc-540a-448f-b39a-d906fd6cd5a0"/>
+        <cell char="aacc74ed-6292-490a-96c1-c899ebd72e86" state="6656b006-553c-4bf1-9a4f-1be5a21b9a7c"/>
+        <cell char="73a10b1e-2e9d-4832-ba71-ac00f0f31cbd" state="302a61c6-1592-44d8-a0ba-ed8e3e982465"/>
         <cell char="dfd56a9f-e4c9-4fd2-af96-adf80c5e641c" state="5ca48892-ac6f-4740-9ed8-dca2596b68e1"/>
         <cell char="3a301ecd-75dc-427f-b779-e4160a3379f4" state="2ff6c62a-7e0c-4694-89ae-94e3002ea571"/>
         <cell char="8f0a8df9-8ea4-48ba-87a6-a0f90040d4a0" state="3bb99814-bdc7-44a3-ae36-29e55805f4e1"/>
