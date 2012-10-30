@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.5" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -713,6 +713,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
+                <phen:description>less than 1/3 scapula length</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0006657"/>
                 </phen:bearer>
@@ -730,11 +731,12 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
+                <phen:description>greater than 1/3 scapula length</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0006657"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000586"/>
+                  <phen:typeref about="PATO:0000117"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0006849"/>
                   </phen:related_entity>
@@ -753,7 +755,13 @@
                   <phen:typeref about="UBERON:0004741"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001505"/>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001590"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                   <phen:related_entity>
                     <phen:typeref about="BSPO:0000672">
                       <phen:qualifier relation="OBO_REL:part_of">
@@ -798,13 +806,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="PATO:0000117">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:3000815"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:3000815"/>
                 </phen:bearer>
                 <phen:quality count="1">
                   <phen:typeref about="PATO:0000117"/>
@@ -827,13 +829,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="PATO:0000117">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:3000815"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:3000815"/>
                 </phen:bearer>
                 <phen:quality count="2">
                   <phen:typeref about="PATO:0000117"/>
@@ -856,13 +852,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="PATO:0000117">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:3000815"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:3000815"/>
                 </phen:bearer>
                 <phen:quality count="3">
                   <phen:typeref about="PATO:0000117"/>
