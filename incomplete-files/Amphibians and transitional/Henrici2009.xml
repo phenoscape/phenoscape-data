@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -303,11 +303,19 @@
         <state id="4cd43042-5cd4-4176-9c84-6d22e61aba32" label="distally rectangular" symbol="2"/>
         <state id="e53477eb-6584-47c7-8fc6-54174199e6ba" label="concave distal margin" symbol="3"/>
         <state id="0791ba3d-f7c7-46a6-8a80-193e2f7d9197" label="" symbol="B"/>
+        <uncertain_state_set id="83f0cf70-3a77-4ea5-bccf-e4e56d167f8a">
+          <member state="f1f059a7-a12b-40a4-a478-8c6d81dc1586"/>
+          <member state="e53477eb-6584-47c7-8fc6-54174199e6ba"/>
+        </uncertain_state_set>
       </states>
       <states id="09f5f49c-9e7a-479f-8215-04c81e283b63">
         <state id="b1a93207-0983-4938-8719-5ebc89941657" label="does not contact inner surface of pars facialis of maxilla" symbol="0"/>
         <state id="738810dc-311b-4a97-bde1-440262305480" label="contacts inner surface of pars facialis maxilla" symbol="1"/>
         <state id="47ab7df6-53dd-4c68-bb4c-6f6189b2ec07" label="" symbol="A"/>
+        <uncertain_state_set id="14ff3b69-17ed-46c7-8a33-e78e1717ecfd">
+          <member state="b1a93207-0983-4938-8719-5ebc89941657"/>
+          <member state="738810dc-311b-4a97-bde1-440262305480"/>
+        </uncertain_state_set>
       </states>
       <states id="4b5a232f-c35b-4df4-aa59-94b56588140d">
         <state id="74d6adbf-3c37-4779-87b5-ed0385f356c6" label="short" symbol="0"/>
@@ -513,7 +521,7 @@
         <cell char="e70e5dc9-5dfe-4cb1-9377-85ccef46bb5a" state="ab1cb1b0-5b02-439e-8dae-09ae8d65248e"/>
         <cell char="76866d20-c5ef-44b0-a93a-49c8e9fc8e1b" state="ce0d297e-9c51-4aec-964f-338939678f8f"/>
         <cell char="c89a55cf-1fd4-4103-ad40-583994e64733" state="77ed0f43-a6d6-4cfa-a49f-1a210f402d55"/>
-        <cell char="5970fcf3-353c-4291-85d8-86ac155ec9af" state="0791ba3d-f7c7-46a6-8a80-193e2f7d9197"/>
+        <cell char="5970fcf3-353c-4291-85d8-86ac155ec9af" state="83f0cf70-3a77-4ea5-bccf-e4e56d167f8a"/>
         <cell char="29622e91-ffea-4598-8216-9d72157bf704" state="6a2b9c89-9761-4fed-96e0-08aabbfe6e0d"/>
         <cell char="296e911c-cfa7-4134-8859-eff2383ba6bc" state="d19f6e6d-807c-4412-b8e6-b7d62066eb58"/>
         <cell char="9e1dc837-c920-4180-9125-bb6aa3085275" state="32455718-2560-465b-9847-2cb1d09c4a51"/>
@@ -547,7 +555,7 @@
         <cell char="76866d20-c5ef-44b0-a93a-49c8e9fc8e1b" state="ce0d297e-9c51-4aec-964f-338939678f8f"/>
         <cell char="c89a55cf-1fd4-4103-ad40-583994e64733" state="77ed0f43-a6d6-4cfa-a49f-1a210f402d55"/>
         <cell char="5970fcf3-353c-4291-85d8-86ac155ec9af" state="f1f059a7-a12b-40a4-a478-8c6d81dc1586"/>
-        <cell char="2a7f599c-1df9-46da-964f-6cf2ba63d084" state="47ab7df6-53dd-4c68-bb4c-6f6189b2ec07"/>
+        <cell char="2a7f599c-1df9-46da-964f-6cf2ba63d084" state="14ff3b69-17ed-46c7-8a33-e78e1717ecfd"/>
         <cell char="29622e91-ffea-4598-8216-9d72157bf704" state="6a2b9c89-9761-4fed-96e0-08aabbfe6e0d"/>
         <cell char="7efb46a5-8ff9-4490-96dd-24d196ae3460" state="350d5cdc-82b6-4e42-9cfe-03e90913d5d3"/>
         <cell char="affbe9a2-6818-43e6-a829-ba9c68a86066" state="2a0bf338-9d6d-4a14-8e40-b6daa37e8d73"/>
