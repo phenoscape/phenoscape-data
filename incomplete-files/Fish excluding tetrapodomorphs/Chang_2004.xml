@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable, Johnny Kim</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Matrix: Johnny Kim and Ben Frable
 Taxon: 
@@ -883,7 +883,7 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
         </state>
       </states>
       <states id="e9c6d27b-efae-4ad7-8482-b09d668d74b0">
-        <state id="c1873a17-75bb-462d-ad05-337ae9459ad2" label="absent" symbol="0" about="#c1873a17-75bb-462d-ad05-337ae9459ad2"></state>
+        <state id="c1873a17-75bb-462d-ad05-337ae9459ad2" label="absent" symbol="0" about="#c1873a17-75bb-462d-ad05-337ae9459ad2"/>
         <state id="69740217-52c4-43d3-8b5a-f188a66a87e8" label="present" symbol="1"/>
       </states>
       <states id="44dcf548-21c0-418c-8112-0c737db6596d">
@@ -935,16 +935,84 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
         <state id="4ada9ad6-fc1d-4ac9-9230-622405a8207a" label="single" symbol="1"/>
       </states>
       <states id="08bb79ef-0104-4e3b-b1a9-d0373c697c3f">
-        <state id="71d116b8-1830-4d5b-8e00-a2c8a6687872" label="present" symbol="0"/>
-        <state id="09ce4b96-5db7-4e5d-a03b-84dda5ede757" label="absent" symbol="1"/>
+        <state id="71d116b8-1830-4d5b-8e00-a2c8a6687872" label="present" symbol="0" about="#71d116b8-1830-4d5b-8e00-a2c8a6687872">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="09ce4b96-5db7-4e5d-a03b-84dda5ede757" label="absent" symbol="1" about="#09ce4b96-5db7-4e5d-a03b-84dda5ede757">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="69d7fac0-8a35-4b0d-9488-334bbb2b13ce">
         <state id="6ab3d810-2daf-4635-9534-90ec541924f0" label="absent" symbol="0"/>
         <state id="efdfd3ad-e2d8-41df-9254-95e57c7dac77" label="present" symbol="1"/>
       </states>
       <states id="cc7e2e1d-c426-4dee-b4f7-dcd797b67cef">
-        <state id="93752bbb-abc5-47bc-9d7c-ff975e46175e" label="absent" symbol="0"/>
-        <state id="9129f0f6-e32d-4a09-b13f-34669d31e46f" label="present" symbol="1"/>
+        <state id="93752bbb-abc5-47bc-9d7c-ff975e46175e" label="absent" symbol="0" about="#93752bbb-abc5-47bc-9d7c-ff975e46175e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002082"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="9129f0f6-e32d-4a09-b13f-34669d31e46f" label="present" symbol="1" about="#9129f0f6-e32d-4a09-b13f-34669d31e46f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002082"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="dff981ba-338c-4d3a-a39c-913d0423e875">
         <state id="8b8c27e9-2a3d-458f-9385-bc4bea704714" label="absent" symbol="0"/>
