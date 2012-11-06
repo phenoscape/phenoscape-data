@@ -2843,8 +2843,52 @@
         <state id="state619" label="does not apply" symbol="3"/>
       </states>
       <states id="states620">
-        <state id="state622" label="anterior" symbol="0"/>
-        <state id="state623" label="posterior" symbol="1"/>
+        <state id="state622" label="anterior" symbol="0" about="#state622">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001269"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001632"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000084">
+                      <phen:qualifier relation="OBO_REL:part_of">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0010746"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state623" label="posterior" symbol="1" about="#state623">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001269"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001633"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000084">
+                      <phen:qualifier relation="OBO_REL:part_of">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0010746"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state624" label="does not apply" symbol="2"/>
       </states>
       <states id="states625">
