@@ -703,7 +703,7 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="PATO:0001505"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001787"/>
                   </phen:related_entity>
@@ -720,7 +720,7 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="PATO:0001505"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001787"/>
                   </phen:related_entity>
@@ -870,12 +870,13 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
                     <phen:typeref about="BSPO:0000082">
                       <phen:qualifier relation="OBO_REL:part_of">
                         <phen:holds_in_relation_to>
-                          <phen:typeref about="BSPO:0000055"/>
-                        </phen:holds_in_relation_to>
-                      </phen:qualifier>
-                      <phen:qualifier relation="OBO_REL:part_of">
-                        <phen:holds_in_relation_to>
-                          <phen:typeref about="UBERON:0004741"/>
+                          <phen:typeref about="BSPO:0000055">
+                            <phen:qualifier relation="OBO_REL:part_of">
+                              <phen:holds_in_relation_to>
+                                <phen:typeref about="UBERON:0004741"/>
+                              </phen:holds_in_relation_to>
+                            </phen:qualifier>
+                          </phen:typeref>
                         </phen:holds_in_relation_to>
                       </phen:qualifier>
                     </phen:typeref>
@@ -948,7 +949,13 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
                   <phen:typeref about="UBERON:0004753"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052"/>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/25c48013-89ec-4bce-b1fb-588a47d61ace"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -962,7 +969,7 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
                   <phen:typeref about="UBERON:0004753"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001875"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/25c48013-89ec-4bce-b1fb-588a47d61ace"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -970,8 +977,34 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
         </state>
       </states>
       <states id="e9c6d27b-efae-4ad7-8482-b09d668d74b0">
-        <state id="c1873a17-75bb-462d-ad05-337ae9459ad2" label="absent" symbol="0" about="#c1873a17-75bb-462d-ad05-337ae9459ad2"/>
-        <state id="69740217-52c4-43d3-8b5a-f188a66a87e8" label="present" symbol="1"/>
+        <state id="c1873a17-75bb-462d-ad05-337ae9459ad2" label="absent" symbol="0" about="#c1873a17-75bb-462d-ad05-337ae9459ad2">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/b8309636-aa8c-442c-8aef-ce22283f1529"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="69740217-52c4-43d3-8b5a-f188a66a87e8" label="present" symbol="1" about="#69740217-52c4-43d3-8b5a-f188a66a87e8">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/b8309636-aa8c-442c-8aef-ce22283f1529"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="44dcf548-21c0-418c-8112-0c737db6596d">
         <state id="c92870d4-f5d3-4b2e-a0b2-f74078d7d5bb" label="multiple elements articulating with girdle" symbol="0"/>
