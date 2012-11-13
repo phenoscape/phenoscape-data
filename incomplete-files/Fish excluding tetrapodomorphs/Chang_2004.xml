@@ -1087,11 +1087,7 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
         </state>
       </states>
       <states id="b779da07-5a7c-4011-b65f-c9948c3166d2">
-        <state id="c5edddef-da33-4036-8a6c-ece887baaef2" label="no more than 5 axial elements " symbol="0" about="#c5edddef-da33-4036-8a6c-ece887baaef2">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="c5edddef-da33-4036-8a6c-ece887baaef2" label="no more than 5 axial elements " symbol="0" about="#c5edddef-da33-4036-8a6c-ece887baaef2"></state>
         <state id="c1157baf-3785-46ee-8557-0718035b8d6a" label="more than 5 axial elements" symbol="1"/>
       </states>
       <states id="6c5fb21d-97a2-42e1-b0cc-f3b3a50209aa">
@@ -1136,11 +1132,27 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
                 <phen:bearer>
                   <phen:typeref about="UBERON:0003097"/>
                 </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="4ada9ad6-fc1d-4ac9-9230-622405a8207a" label="single" symbol="1"/>
+        <state id="4ada9ad6-fc1d-4ac9-9230-622405a8207a" label="single" symbol="1" about="#4ada9ad6-fc1d-4ac9-9230-622405a8207a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="08bb79ef-0104-4e3b-b1a9-d0373c697c3f">
         <state id="71d116b8-1830-4d5b-8e00-a2c8a6687872" label="present" symbol="0" about="#71d116b8-1830-4d5b-8e00-a2c8a6687872">
@@ -1194,7 +1206,13 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2002294"/>
+                  <phen:typeref about="UBERON:2002294">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0008897"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462"/>
@@ -1208,7 +1226,13 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2002294"/>
+                  <phen:typeref about="UBERON:2002294">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0008897"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467"/>
