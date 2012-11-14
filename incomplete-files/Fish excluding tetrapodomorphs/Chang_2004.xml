@@ -1087,7 +1087,7 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
         </state>
       </states>
       <states id="b779da07-5a7c-4011-b65f-c9948c3166d2">
-        <state id="c5edddef-da33-4036-8a6c-ece887baaef2" label="no more than 5 axial elements " symbol="0" about="#c5edddef-da33-4036-8a6c-ece887baaef2"></state>
+        <state id="c5edddef-da33-4036-8a6c-ece887baaef2" label="no more than 5 axial elements " symbol="0" about="#c5edddef-da33-4036-8a6c-ece887baaef2"/>
         <state id="c1157baf-3785-46ee-8557-0718035b8d6a" label="more than 5 axial elements" symbol="1"/>
       </states>
       <states id="6c5fb21d-97a2-42e1-b0cc-f3b3a50209aa">
@@ -1273,13 +1273,87 @@ Fin/limb characters listed on Googledoc spreadsheet- characters still need to be
         </state>
       </states>
       <states id="dff981ba-338c-4d3a-a39c-913d0423e875">
-        <state id="8b8c27e9-2a3d-458f-9385-bc4bea704714" label="absent" symbol="0"/>
-        <state id="f59242fe-8c09-4225-b60a-e97a220cfb9e" label="present" symbol="1"/>
+        <state id="8b8c27e9-2a3d-458f-9385-bc4bea704714" label="absent" symbol="0" about="#8b8c27e9-2a3d-458f-9385-bc4bea704714">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/d6fcf51c-c078-46a8-8e3d-a7625878ce4e"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="f59242fe-8c09-4225-b60a-e97a220cfb9e" label="present" symbol="1" about="#f59242fe-8c09-4225-b60a-e97a220cfb9e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/d6fcf51c-c078-46a8-8e3d-a7625878ce4e"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="d40c1dc2-2c13-4a5d-9e74-b7872b309cd4">
-        <state id="adfbc4ef-3ac0-49b6-a09d-67332b2f860e" label="epichordals less developed than hypochordals" symbol="0"/>
-        <state id="6b4bc21b-26f7-44c1-aed7-0d0ce852d7fb" label="epichordals and hypochordals equally developed " symbol="1"/>
-        <state id="b8e7aa7d-4964-415e-be42-450c4dfaf276" label="epichordals more developed than hypochordals" symbol="2"/>
+        <state id="adfbc4ef-3ac0-49b6-a09d-67332b2f860e" label="epichordals less developed than hypochordals" symbol="0" about="#adfbc4ef-3ac0-49b6-a09d-67332b2f860e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/d6fcf51c-c078-46a8-8e3d-a7625878ce4e"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                  <phen:related_entity>
+                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2cad732a-d955-44c7-9ded-e086e7314c7b"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="6b4bc21b-26f7-44c1-aed7-0d0ce852d7fb" label="epichordals and hypochordals equally developed " symbol="1" about="#6b4bc21b-26f7-44c1-aed7-0d0ce852d7fb">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/d6fcf51c-c078-46a8-8e3d-a7625878ce4e"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/45bb6a27-5bc5-4e24-9127-c4f7dd70846a"/>
+                  <phen:related_entity>
+                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2cad732a-d955-44c7-9ded-e086e7314c7b"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="b8e7aa7d-4964-415e-be42-450c4dfaf276" label="epichordals more developed than hypochordals" symbol="2" about="#b8e7aa7d-4964-415e-be42-450c4dfaf276">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/d6fcf51c-c078-46a8-8e3d-a7625878ce4e"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                  <phen:related_entity>
+                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2cad732a-d955-44c7-9ded-e086e7314c7b"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="94bfe6c7-009e-4fc6-9370-c35961269052">
         <state id="0d9bd379-5b53-4fec-8ca2-f181487de1e1" label="present on thoracic and abdominal vertebrae" symbol="0"/>
