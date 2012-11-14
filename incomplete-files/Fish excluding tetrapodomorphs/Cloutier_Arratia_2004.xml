@@ -1930,12 +1930,42 @@ Many characters annotated already, PATo requests filled; however, many TAO/VAO t
         </state>
       </states>
       <states id="00d129e7-62a5-4a2d-ba7b-72e17256fa57">
-        <state id="5a519273-ce24-4179-a643-c8a5f516d662" label="absent" symbol="0" about="#5a519273-ce24-4179-a643-c8a5f516d662"/>
+        <state id="5a519273-ce24-4179-a643-c8a5f516d662" label="absent" symbol="0" about="#5a519273-ce24-4179-a643-c8a5f516d662">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="a5f258b3-3b44-4048-81cf-fa2f17236819" label="present" symbol="1"/>
       </states>
       <states id="06695c2a-c8d5-453f-91fb-2a732fb931ff">
-        <state id="19ed3af3-01d1-49bc-b58c-2fb0965a4a7d" label="present as a distinct bone" symbol="0" about="#19ed3af3-01d1-49bc-b58c-2fb0965a4a7d"/>
-        <state id="54c06dbf-f4da-46ce-a73d-bf78f1c319a6" label="absent" symbol="1"/>
+        <state id="19ed3af3-01d1-49bc-b58c-2fb0965a4a7d" label="present as a distinct bone" symbol="0" about="#19ed3af3-01d1-49bc-b58c-2fb0965a4a7d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011630"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="54c06dbf-f4da-46ce-a73d-bf78f1c319a6" label="absent" symbol="1" about="#54c06dbf-f4da-46ce-a73d-bf78f1c319a6">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011630"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <uncertain_state_set id="94a2ba9b-7454-4bb0-8445-25adafd7e751">
           <member state="19ed3af3-01d1-49bc-b58c-2fb0965a4a7d"/>
           <member state="54c06dbf-f4da-46ce-a73d-bf78f1c319a6"/>
