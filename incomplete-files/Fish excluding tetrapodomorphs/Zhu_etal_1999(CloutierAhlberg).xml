@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -203,6 +203,10 @@
       <states id="8b17d46b-a51d-4b05-92af-9e260327cf62">
         <state id="10ab966e-0a8c-451a-90ab-be8d984917ef" label="premaxilla forming part of orbit" symbol="0"/>
         <state id="01dccd9b-d3f6-4199-867e-6b44bc79a740" label="premaxilla not forming part of orbit" symbol="1"/>
+        <polymorphic_state_set id="2531d0aa-b437-46ec-86b9-dda3974110c3">
+          <member state="01dccd9b-d3f6-4199-867e-6b44bc79a740"/>
+          <member state="10ab966e-0a8c-451a-90ab-be8d984917ef"/>
+        </polymorphic_state_set>
       </states>
       <states id="caeaf893-6b71-4afe-8d5e-c7e4705f09d8">
         <state id="08000cc7-3e52-4f05-8418-02cbd3158d6a" label="present" symbol="0"/>
@@ -1330,6 +1334,7 @@
         <cell char="6be562d2-e2d3-464c-91c4-ae533fc6a9c9" state="00d3213a-459e-4623-9430-6fd49f33f6fe"/>
         <cell char="a93c6eb9-aba9-4c4c-8acf-982e48b4f7f2" state="19a17c5b-219f-497a-adad-9dcb0e93a5ea"/>
         <cell char="9b0f977c-7502-48eb-b7b2-eec86a411e5c" state="54f422d6-bbc7-4c37-bb7e-0eeb7b79a634"/>
+        <cell char="29753f63-1d00-45bf-af85-21e076fb6cf5" state="2531d0aa-b437-46ec-86b9-dda3974110c3"/>
         <cell char="aded422c-fdb7-4ae9-887e-14ae4cc152a2" state="08000cc7-3e52-4f05-8418-02cbd3158d6a"/>
         <cell char="f10b2f96-57b1-47f7-9d70-96e424f9c3f1" state="a6110799-6dbe-4bab-b8d6-65219a11b90b"/>
         <cell char="17019e1f-754f-4854-9352-c83ad18b5b0f" state="c4b0cefe-9945-4bcd-9050-d60b878539c8"/>
