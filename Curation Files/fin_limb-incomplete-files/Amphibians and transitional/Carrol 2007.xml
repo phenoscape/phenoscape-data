@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.4.3" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
@@ -937,7 +937,7 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state483" label="does not apply (scapulocoracoid bone not ossified)" symbol="-" about="#state483"></state>
+        <state id="state483" label="does not apply (scapulocoracoid bone not ossified)" symbol="-" about="#state483"/>
       </states>
       <states id="states484">
         <state id="state486" label="strap-shaped, slightly helical (screw-shaped)" symbol="0" about="#state486">
@@ -1998,7 +1998,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:3010069"/>
+                  <phen:typeref about="AAO:0010069"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0001448"/>
@@ -2007,7 +2007,23 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state573" label="three ossified carpals, including first and second distal" symbol="1"/>
+        <state id="state573" label="three ossified carpals, including first and second distal" symbol="1" about="#state573">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001430"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:description>Need to complete two additional annotations: for carpal bone 2, ossified and "carpal bone has_quality ossified", count</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001431"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state574" label="radiale, intermedium, ulnare, three or four centralia, four distals" symbol="2"/>
         <state id="state575" label="two proximals, three distals" symbol="3"/>
         <state id="state576" label="three proximals, one centrale, four or five distals" symbol="4"/>
@@ -5476,7 +5492,6 @@
         <cell char="char642" state="state645"/>
         <cell char="char647" state="state651"/>
         <cell char="char653" state="state657"/>
-        <cell char="char659" state="uncertain_state_set805"/>
         <cell char="char672" state="state675"/>
         <cell char="char677" state="state681"/>
         <cell char="char683" state="state686"/>
@@ -5585,7 +5600,6 @@
         <cell char="char642" state="state645"/>
         <cell char="char647" state="state651"/>
         <cell char="char653" state="state657"/>
-        <cell char="char659" state="uncertain_state_set805"/>
         <cell char="char672" state="state675"/>
         <cell char="char677" state="state681"/>
         <cell char="char683" state="state686"/>
@@ -5691,7 +5705,6 @@
         <cell char="char642" state="state645"/>
         <cell char="char647" state="state651"/>
         <cell char="char653" state="state657"/>
-        <cell char="char659" state="uncertain_state_set805"/>
         <cell char="char672" state="state675"/>
         <cell char="char677" state="state681"/>
         <cell char="char683" state="state686"/>
@@ -6058,7 +6071,6 @@
         <cell char="char231" state="state232"/>
         <cell char="char235" state="state237"/>
         <cell char="char239" state="state242"/>
-        <cell char="char245" state="uncertain_state_set815"/>
         <cell char="char258" state="state259"/>
         <cell char="char262" state="state264"/>
         <cell char="char266" state="state268"/>
@@ -6387,7 +6399,6 @@
         <cell char="char195" state="state196"/>
         <cell char="char199" state="state202"/>
         <cell char="char204" state="state207"/>
-        <cell char="char209" state="uncertain_state_set819"/>
         <cell char="char223" state="state809"/>
         <cell char="char227" state="state229"/>
         <cell char="char231" state="state233"/>
@@ -6480,7 +6491,6 @@
         <cell char="char195" state="state196"/>
         <cell char="char199" state="state202"/>
         <cell char="char204" state="state207"/>
-        <cell char="char209" state="uncertain_state_set819"/>
         <cell char="char223" state="state809"/>
         <cell char="char227" state="state229"/>
         <cell char="char231" state="state233"/>
@@ -6506,7 +6516,6 @@
         <cell char="char339" state="state341"/>
         <cell char="char346" state="state348"/>
         <cell char="char350" state="state352"/>
-        <cell char="char355" state="uncertain_state_set821"/>
         <cell char="char374" state="state377"/>
         <cell char="char379" state="state386"/>
         <cell char="char388" state="state391"/>
@@ -6589,7 +6598,6 @@
         <cell char="char136" state="state138"/>
         <cell char="char141" state="state142"/>
         <cell char="char146" state="state153"/>
-        <cell char="char155" state="uncertain_state_set823"/>
         <cell char="char168" state="state169"/>
         <cell char="char174" state="state176"/>
         <cell char="char178" state="state180"/>
@@ -6599,7 +6607,6 @@
         <cell char="char195" state="state197"/>
         <cell char="char199" state="state200"/>
         <cell char="char204" state="state207"/>
-        <cell char="char209" state="uncertain_state_set824"/>
         <cell char="char223" state="state225"/>
         <cell char="char227" state="state228"/>
         <cell char="char231" state="state232"/>
@@ -6625,7 +6632,6 @@
         <cell char="char339" state="state342"/>
         <cell char="char346" state="state347"/>
         <cell char="char350" state="state352"/>
-        <cell char="char355" state="uncertain_state_set825"/>
         <cell char="char374" state="state375"/>
         <cell char="char379" state="state382"/>
         <cell char="char388" state="state391"/>
