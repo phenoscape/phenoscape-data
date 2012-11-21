@@ -1,5 +1,5 @@
 #NEXUS
-[written Fri Jan 20 14:47:49 EST 2012 by Mesquite  version 2.74 (build 550) at wl-10-180-67-201.wireless.duke.local/10.180.67.201]
+[written Wed Nov 21 10:10:06 CST 2012 by Mesquite  version 2.75 (build 566) at NI8137.local/172.21.16.120]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -7,6 +7,7 @@ BEGIN TAXA;
 	TAXLABELS
 		Liaoxitriton Jeholotriton Chunerpeton Valdotriton Iridotriton Pangerpeton Sirenidae Hynobiidae Cryptobranchidae Ambystomatidae Salamandra Dicamptodon Plethodontidae Rhyacotriton Karaurus Amphiumidae Marmorerpeton Proteidae 
 	;
+	BLOCKID 013b23bb59871;
 
 END;
 
@@ -53,10 +54,10 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1327088869713;
+		timeSaved 1353514206813;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
-			setID 0 3067102020182162700;
+			setID 0 3067102020182162700 013b23bb59871;
 			tell It;
 				setSelected  1 -  18;
 				attachments ;
@@ -65,8 +66,8 @@ Begin MESQUITE;
 		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
 		tell It;
 			setID 0 3263256497582849488;
-			mqVersion 274;
-			checksumv 0 2 2891184994 null  getNumChars 72 numChars 72 getNumTaxa 18 numTaxa 18   short false   bits 130079   states 130079   sumSquaresStatesOnly 6.472863772E9 sumSquares 6.472863772E9   NumFiles 1 NumMatrices 1;
+			mqVersion 275;
+			checksumv 0 3 2891184994 null  getNumChars 72 numChars 72 getNumTaxa 18 numTaxa 18   short false   bits 130079   states 130079   sumSquaresStatesOnly 6.472863772E9 sumSquares 6.472863772E9 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -104,6 +105,7 @@ Begin MESQUITE;
 					getToolPalette;
 					tell It;
 					endTell;
+					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
@@ -168,7 +170,6 @@ Begin MESQUITE;
 						tell It;
 							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
 						endTell;
-						setActive;
 						rowsAreCharacters on;
 						toggleConstrainChar on;
 						toggleConstrainCharNum 3;
