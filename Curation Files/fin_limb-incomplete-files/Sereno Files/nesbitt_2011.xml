@@ -3101,7 +3101,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>metacarpal 1, distal condyles aligned or slightly offset</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0009979">
                     <phen:qualifier relation="OBO_REL:part_of">
@@ -3131,7 +3131,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>lateral condyle strongly expanded relative to medial condyle</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0009979">
                     <phen:qualifier relation="OBO_REL:part_of">
@@ -3200,6 +3200,11 @@
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006049"/>
+                </phen:bearer>
+              </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
@@ -3265,7 +3270,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>metacarpal II equal to or longer than metacarpal III</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0003646"/>
                 </phen:bearer>
@@ -3285,7 +3290,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>blunt on at least digits II and III</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004300"/>
                 </phen:bearer>
@@ -3300,7 +3305,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>trenchant unguals on digits I-III</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004300"/>
                 </phen:bearer>
@@ -10062,11 +10067,17 @@
       <char id="bacb8908-ee7f-45a9-9b66-e0e90e0cd8ff" label="Manual digit I, first phalanx:" states="cff02be2-c562-43cb-9825-587b8e8f482e" about="#bacb8908-ee7f-45a9-9b66-e0e90e0cd8ff">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">E can be made more specific: phalanx part_of manual digit I</meta>
       </char>
-      <char id="51228abf-d347-4f97-a9e9-370aae88f792" label="Metacarpal I, distal condyles:" states="47aaa9eb-b78d-4484-bd3a-a37ee43640ca"/>
-      <char id="5f5c215b-c535-45e1-8204-26235a2eca1f" label="Manual digit II,  second phalanx (=2.2):" states="3ee0f084-cf64-4b38-8c4d-ff34665ff688"/>
+      <char id="51228abf-d347-4f97-a9e9-370aae88f792" label="Metacarpal I, distal condyles:" states="47aaa9eb-b78d-4484-bd3a-a37ee43640ca" about="#51228abf-d347-4f97-a9e9-370aae88f792">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Related entity for state 1 should be nested</meta>
+      </char>
+      <char id="5f5c215b-c535-45e1-8204-26235a2eca1f" label="Manual digit II,  second phalanx (=2.2):" states="3ee0f084-cf64-4b38-8c4d-ff34665ff688" about="#5f5c215b-c535-45e1-8204-26235a2eca1f">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">'manual phalanx can be used here; then 'skeleton of manus' not needed in post-composition</meta>
+      </char>
       <char id="da9aa217-53e6-45f0-a413-467297685caa" label="Metacarpal II:" states="07c1402a-1d34-4a19-bb6d-2763c2c523f9"/>
       <char id="7dcd5d5b-fada-4e32-8cd3-b493aff8501b" label="Manual digits I-III:" states="2e3f65fe-81a0-4160-bf5c-a6df1a597740"/>
-      <char id="aa74220c-4192-4668-afe4-5baba541e207" label="Manual digit IV:" states="fad8abf4-aa80-4ddf-8101-7966f2cf890d"/>
+      <char id="aa74220c-4192-4668-afe4-5baba541e207" label="Manual digit IV:" states="fad8abf4-aa80-4ddf-8101-7966f2cf890d" about="#aa74220c-4192-4668-afe4-5baba541e207">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">WD: start reviewing again here</meta>
+      </char>
       <char id="3d03f41a-f8d5-44d3-b795-d753e41d5cc4" label="Metacarpal IV:" states="4624bb09-352f-4754-a2c7-a62eff66dd2f"/>
       <char id="c49d1a6d-232a-4418-84c7-3d91bba24660" label="Metacarpal IV, length:" states="6e4beb4f-18a8-4807-9898-83a01ec05653"/>
       <char id="9556f30d-cc5a-4a51-98f3-7bf6ac396e91" label="Metacarpal IV, shaft width:" states="10dd671f-4ba0-4429-9def-7ceed5e9d066"/>
