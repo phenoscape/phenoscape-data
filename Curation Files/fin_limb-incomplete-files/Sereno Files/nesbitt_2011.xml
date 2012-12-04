@@ -1063,7 +1063,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>ratio more than 0.55</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0002102"/>
                 </phen:bearer>
@@ -1081,7 +1081,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>ratio less than 0.55</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0002102"/>
                 </phen:bearer>
@@ -1101,14 +1101,6 @@
         <state id="f10876a0-e83a-44dc-ba8f-a6f672bd5868" label="present and unfused" symbol="0" about="#f10876a0-e83a-44dc-ba8f-a6f672bd5868">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0001105"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
-              </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0001105"/>
@@ -1202,7 +1194,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>annotating up to decreased size</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004529">
                     <phen:qualifier relation="OBO_REL:part_of">
@@ -1232,7 +1224,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>More than 75% of humerus length</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0006849"/>
                 </phen:bearer>
@@ -1250,7 +1242,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>less than 75% of humerus length</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0006849"/>
                 </phen:bearer>
@@ -1284,6 +1276,20 @@
                   <phen:typeref about="PATO:0002180"/>
                 </phen:quality>
               </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000671">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0006849"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001355"/>
+                </phen:quality>
+              </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
@@ -1314,7 +1320,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>Blade height less than 3 times width</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/f2af1912-3826-498c-9f0b-da1205f2e1b2"/>
                 </phen:bearer>
@@ -1364,38 +1370,8 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>Scapula, tear-drop shaped tuber on the posterior edge, just dorsal of the glenoid fossa of the scapula (possible attachment site of the scapular head of M. triceps)</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000672">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="BSPO:0000072"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0006849"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                    <phen:qualifier relation="has_start_point">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9460cdfd-748c-4df9-93e3-97ca0e393da2"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                    <phen:qualifier relation="has_cross_section">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0002240"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0004529">
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9460cdfd-748c-4df9-93e3-97ca0e393da2">
                     <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="BSPO:0000672">
@@ -1420,38 +1396,8 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>Scapula, tear-drop shaped tuber on the posterior edge, just dorsal of the glenoid fossa of the scapula (possible attachment site of the scapular head of M. triceps)</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000672">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="BSPO:0000072"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0006849"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                    <phen:qualifier relation="has_start_point">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9460cdfd-748c-4df9-93e3-97ca0e393da2"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                    <phen:qualifier relation="has_cross_section">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0002240"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0004529">
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9460cdfd-748c-4df9-93e3-97ca0e393da2">
                     <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="BSPO:0000672">
@@ -1471,7 +1417,7 @@
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0004529">
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9460cdfd-748c-4df9-93e3-97ca0e393da2">
                     <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="BSPO:0000672">
@@ -1501,7 +1447,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>acromion process in sma eplane as ventral edge of scapula</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0002497"/>
                 </phen:bearer>
@@ -1525,7 +1471,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>acromion process raised above ventral edge of scapula</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0002497"/>
                 </phen:bearer>
@@ -1551,7 +1497,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>Notch between the two elements</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000671">
                     <phen:qualifier relation="OBO_REL:part_of">
@@ -1594,7 +1540,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>subcircular in lateral view</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004743"/>
                 </phen:bearer>
@@ -1648,7 +1594,13 @@
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/ec99a026-4720-40fb-8872-b9b967b226cc"/>
+                  <phen:typeref about="BSPO:0000072">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0004743"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000586">
@@ -1668,30 +1620,35 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/ec99a026-4720-40fb-8872-b9b967b226cc"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0001154">
-                    <phen:qualifier relation="BSPO:0000122">
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/ec99a026-4720-40fb-8872-b9b967b226cc">
+                    <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/ec99a026-4720-40fb-8872-b9b967b226cc"/>
+                        <phen:typeref about="BSPO:0000071"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0004743"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/ec99a026-4720-40fb-8872-b9b967b226cc"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0001154">
-                    <phen:qualifier relation="BSPO:0000123">
+                  <phen:typeref about="BSPO:0000072">
+                    <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/ec99a026-4720-40fb-8872-b9b967b226cc"/>
+                        <phen:typeref about="UBERON:0004743"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2137,7 +2094,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>this one needs the related entity:deltopectoral crest</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000377">
                     <phen:qualifier relation="OBO_REL:part_of">
@@ -9971,34 +9928,16 @@
       <char id="2ab1a30b-135d-4226-be2c-31695a575dda" label="First primordial sacral, articular surface of sacral rib:" states="2de289ee-beed-4fb0-8dc5-499c68b22470"/>
       <char id="889b352a-d447-482e-91bf-5ee201176194" label="Middle caudal vertebrae, accessory laminar process on anterior face of neural spine:" states="574cc8ed-7d2a-4524-878c-f7faab8a41b0"/>
       <char id="41e1283c-f51a-4519-9bef-b3067be6d192" label="Distal caudal vertebrae, prezygapophyses:" states="d5d8a936-6c04-46e7-bc8d-a27ef55c88a9"/>
-      <char id="7cb70b59-a2ec-4f5f-8f99-eb54db76aa4c" label="Forelimb-hindlimb length ratio: " states="24ff9bad-6167-4865-9455-9d2d5f48560d" about="#7cb70b59-a2ec-4f5f-8f99-eb54db76aa4c">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">remove phenotype comments (redundant with state text)</meta>
-      </char>
-      <char id="cb281f99-4a62-4458-963e-16254c364fde" label="Clavicles:" states="c9c14445-ee0b-4da1-b9f5-bca4c9ef7f8e" about="#cb281f99-4a62-4458-963e-16254c364fde">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">State 0: delete "present" annotation; presence of clavicle is inferred by the other annotation to clavicle.</meta>
-      </char>
+      <char id="7cb70b59-a2ec-4f5f-8f99-eb54db76aa4c" label="Forelimb-hindlimb length ratio: " states="24ff9bad-6167-4865-9455-9d2d5f48560d" about="#7cb70b59-a2ec-4f5f-8f99-eb54db76aa4c"></char>
+      <char id="cb281f99-4a62-4458-963e-16254c364fde" label="Clavicles:" states="c9c14445-ee0b-4da1-b9f5-bca4c9ef7f8e" about="#cb281f99-4a62-4458-963e-16254c364fde"></char>
       <char id="d5e39231-c631-414a-8c4b-df40a868efdb" label="Interclavicle:" states="f1a4e94d-9be1-46d6-9ee0-c21c053df013"/>
-      <char id="032871d6-d4c2-449a-a875-70131e74430f" label="Interclavicle:" states="826882a2-55a2-428e-9300-e4ceb6abcf82" about="#032871d6-d4c2-449a-a875-70131e74430f">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">remove phenotype comment for state 1</meta>
-      </char>
-      <char id="9ed247aa-b093-428e-ad0d-2ce0db9fa7a8" label="Scapula, length: " states="d6cfe302-7eec-441f-9d56-8da5ec84bd21" about="#9ed247aa-b093-428e-ad0d-2ce0db9fa7a8">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">remove phenotype comments (redundant with state text)</meta>
-      </char>
-      <char id="19d20a91-04e0-420c-94ef-3a3ac4de86f6" label="Scapula, entire anterior margin:" states="d7eb4e00-52ec-422e-8061-38f819fd4c8c" about="#19d20a91-04e0-420c-94ef-3a3ac4de86f6">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">state 0 also describes convex or concave shape; we usually include these phenotypes to represent the polymorphism</meta>
-      </char>
-      <char id="4bea7c98-0ec7-40d9-848e-6fe35b019307" label="Scapula, blade height versus distal width:" states="a2ec0039-e5e4-4c9e-aefa-7b2faa5ce2cf" about="#4bea7c98-0ec7-40d9-848e-6fe35b019307">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">remove phenotype comments (redundant with state text)</meta>
-      </char>
-      <char id="ceeebe75-85cb-4c09-91bf-41422fb94854" label="Scapula, tear-drop shaped tuber on the posterior edge, just dorsal of the glenoid fossa of the scapula (possible attachment site of the scapular head of M. triceps):" states="73f9ba69-06f7-4434-887b-574b4f39c10e" about="#ceeebe75-85cb-4c09-91bf-41422fb94854">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">What do you think of the annotations I added (your phenotype in blue; mine below in black)? Is a tuber a type of projection? Seems like state 0 describes the shape of the tuber (projection) and its location; state 0 describes its absence.</meta>
-      </char>
-      <char id="8c9c2b25-7e6f-4d4c-8e71-54f61b63a22f" label="Scapula, acromion process:" states="70766495-b97a-4e34-97a1-d70fd9635f05" about="#8c9c2b25-7e6f-4d4c-8e71-54f61b63a22f">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">remove phenotype comments (redundant with state text)</meta>
-      </char>
-      <char id="721901d6-53c5-473e-9f10-38251784972a" label="Scapulocoracoid, anterior margin:." states="76ddd54d-db16-478d-abc9-db2588932f16" about="#721901d6-53c5-473e-9f10-38251784972a">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">remove phenotype comments (redundant with state text)</meta>
-      </char>
+      <char id="032871d6-d4c2-449a-a875-70131e74430f" label="Interclavicle:" states="826882a2-55a2-428e-9300-e4ceb6abcf82" about="#032871d6-d4c2-449a-a875-70131e74430f"></char>
+      <char id="9ed247aa-b093-428e-ad0d-2ce0db9fa7a8" label="Scapula, length: " states="d6cfe302-7eec-441f-9d56-8da5ec84bd21" about="#9ed247aa-b093-428e-ad0d-2ce0db9fa7a8"></char>
+      <char id="19d20a91-04e0-420c-94ef-3a3ac4de86f6" label="Scapula, entire anterior margin:" states="d7eb4e00-52ec-422e-8061-38f819fd4c8c" about="#19d20a91-04e0-420c-94ef-3a3ac4de86f6"></char>
+      <char id="4bea7c98-0ec7-40d9-848e-6fe35b019307" label="Scapula, blade height versus distal width:" states="a2ec0039-e5e4-4c9e-aefa-7b2faa5ce2cf" about="#4bea7c98-0ec7-40d9-848e-6fe35b019307"></char>
+      <char id="ceeebe75-85cb-4c09-91bf-41422fb94854" label="Scapula, tear-drop shaped tuber on the posterior edge, just dorsal of the glenoid fossa of the scapula (possible attachment site of the scapular head of M. triceps):" states="73f9ba69-06f7-4434-887b-574b4f39c10e" about="#ceeebe75-85cb-4c09-91bf-41422fb94854"></char>
+      <char id="8c9c2b25-7e6f-4d4c-8e71-54f61b63a22f" label="Scapula, acromion process:" states="70766495-b97a-4e34-97a1-d70fd9635f05" about="#8c9c2b25-7e6f-4d4c-8e71-54f61b63a22f"></char>
+      <char id="721901d6-53c5-473e-9f10-38251784972a" label="Scapulocoracoid, anterior margin:." states="76ddd54d-db16-478d-abc9-db2588932f16" about="#721901d6-53c5-473e-9f10-38251784972a"></char>
       <char id="b9feb409-fe1a-4729-a8f2-e81b538866ef" label="Coracoid:" states="3e082511-c54e-4b07-980e-2ea88aabfff3" about="#b9feb409-fe1a-4729-a8f2-e81b538866ef">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">remove phenotype comments (redundant with state text)</meta>
       </char>
