@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="622c03ab-5f4b-4dc8-b64c-64294eb6cb0f">
     <otu id="1f1f1780-8263-4b88-855e-acc6c3aa51fb" label="Mesosuchus browni"/>
     <otu id="8500a26d-74ef-4cbb-ac88-e9642066ce60" label="Prolacerta broomi"/>
@@ -4539,6 +4539,9 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000599"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -4549,15 +4552,10 @@
               <phen:phenotype_character>
                 <phen:description>anterior margin expanded into a process</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="VAO:0000180">
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/c9c44336-7a71-4249-a83d-9589db97f9df">
                     <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="AMAO:0000144"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="VAO:0005004"/>
+                        <phen:typeref about="UBERON:0001275"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -7422,7 +7420,13 @@
                   <phen:typeref about="UBERON:0009980">
                     <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="BSPO:0000078"/>
+                        <phen:typeref about="BSPO:0000078">
+                          <phen:qualifier relation="OBO_REL:part_of">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0000981"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -8282,7 +8286,7 @@
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/472fb284-20bf-4de8-91ae-90d96c24dab0">
                     <phen:qualifier relation="directly_associated_with">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="AAO:0010070"/>
+                        <phen:typeref about="UBERON:3010074"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -8296,7 +8300,7 @@
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/472fb284-20bf-4de8-91ae-90d96c24dab0">
                     <phen:qualifier relation="directly_associated_with">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="AAO:0010070"/>
+                        <phen:typeref about="UBERON:3010074"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -8339,7 +8343,7 @@
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/472fb284-20bf-4de8-91ae-90d96c24dab0">
                     <phen:qualifier relation="directly_associated_with">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="AAO:0010070"/>
+                        <phen:typeref about="UBERON:3010074"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -8611,6 +8615,11 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0000616"/>
                 </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004410"/>
+                </phen:bearer>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -9721,6 +9730,7 @@
       </states>
       <states id="42fd2e0b-3604-435b-ab9d-788dec8f7fb2"/>
       <states id="0a9b7683-e2b5-45a1-bd15-e72239015542"/>
+      <states id="6e009e9e-9e8a-4b63-8e9a-aff97fa635ff"/>
       <char id="b43cf847-8386-4a23-96e4-163f3569100e" label="Premaxilla, anterodorsal process (=nasal process), length: " states="f83c4a67-be95-4d4c-992a-c32117f9b8e9"/>
       <char id="f2d0068e-a19d-4ff0-8c66-f071c506b13a" label="Premaxilla, posterodorsal process (=maxillary process, = subnarial process), length:" states="0c730cd7-1569-472a-813a-05648ea7d815"/>
       <char id="0cd121ad-7fd9-437b-959f-367b9060a1e0" label="Premaxilla, posterodorsal process (=maxillary process, = subnarial process):" states="ecb54b22-6a88-4ae0-a49a-3187d65ac559"/>
@@ -9949,7 +9959,7 @@
       <char id="dcbe1818-b572-41c9-aebd-6ed4e85871d0" label="Coracoid, anterior portion:" states="d8da303e-a75d-41fb-9662-6294a328caa6"/>
       <char id="6ecdea17-add4-4ac4-8b27-284d08461919" label="Glenoid, orientation:" states="8bd2dcdb-15ec-4486-b573-6176e9d56c48"/>
       <char id="e7694664-1969-4c0e-826b-326c334972d5" label="Coracoid, deep fossa on the posterodorsal edge:" states="fb7e1466-57d2-4cc8-b9e2-95d786c0e7f3" about="#e7694664-1969-4c0e-826b-326c334972d5"/>
-      <char id="2c870794-567b-49f9-bc48-47f59ce2fe41" label="Coracoid, sharp ridge leading from the glenoid to anteroventral corner:" states="a561258f-1553-429e-aef9-6db752b20ecb" about="#2c870794-567b-49f9-bc48-47f59ce2fe41"></char>
+      <char id="2c870794-567b-49f9-bc48-47f59ce2fe41" label="Coracoid, sharp ridge leading from the glenoid to anteroventral corner:" states="a561258f-1553-429e-aef9-6db752b20ecb" about="#2c870794-567b-49f9-bc48-47f59ce2fe41"/>
       <char id="88024286-3300-4c4f-81d1-ae90695ea7c9" label="Humerus, apex of deltopectoral crest situated at a point corresponding to:" states="dc8b3c59-235c-432d-a291-a09d48ccaa7a" about="#88024286-3300-4c4f-81d1-ae90695ea7c9">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">remove phenotype comments (redundant with state text)</meta>
       </char>
@@ -10024,7 +10034,9 @@
       <char id="2098695c-0a37-44e4-9525-b3e671f216d6" label="Ilium, anterior (=preacetabular, =cranial) process:" states="1acc5962-b11e-484d-a904-3f7f417b3360"/>
       <char id="45a06b42-58bf-4421-9854-09c7a3590ae6" label="Ilium, orientation:" states="e0d5f515-669a-420a-bbd4-c7a6b3cb46ef"/>
       <char id="af941a07-a2c4-47f8-bc96-e2f78a4ad679" label="Ilium, distinct fossa present for the attachment of the m caudifemoralis brevis:" states="97246c85-320c-4b7a-b7c3-03375ef05847"/>
-      <char id="d22874cc-b7b8-43b3-b6a1-b977dd4d2765" label="Ilium, ridge connecting the posterior portion of the supra-acetabular rim to the posterior portion of the ilium:" states="a0854baf-9922-4078-856a-aa18434c6018"/>
+      <char id="d22874cc-b7b8-43b3-b6a1-b977dd4d2765" label="Ilium, ridge connecting the posterior portion of the supra-acetabular rim to the posterior portion of the ilium:" states="a0854baf-9922-4078-856a-aa18434c6018" about="#d22874cc-b7b8-43b3-b6a1-b977dd4d2765">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">replace with begins at and ends at after jim implements list</meta>
+      </char>
       <char id="9317c9a6-1b5d-4824-ab59-3fad1aa06856" label="Ilium, ventral margin of the acetabulum:" states="70413ade-dcf4-4258-9d6d-b6a7844a20bc"/>
       <char id="ca781fd3-12e6-4aad-82a0-fbac71eb508f" label="Ilium, acetabular antitrochanter: " states="e93c694e-966b-4112-a9b6-042273fe45a7"/>
       <char id="a8e44816-d918-4283-8757-84b15d83255f" label="Ilium, dorsal margin dorsal to the supra-acetabular rim:" states="1abd9d25-d1c4-452c-a999-d395485d6bfc"/>
@@ -10167,6 +10179,7 @@
       <char id="1e7ae2ae-aa01-4e67-a55c-633c382b9b0f" label="Gastralia:" states="39e8db54-4291-4c26-9fdf-3ae769945111"/>
       <char id="98841e6e-83af-44cd-9937-aef16c08f7d1" label="" states="42fd2e0b-3604-435b-ab9d-788dec8f7fb2"/>
       <char id="6ec6ead3-47e8-4664-958f-c45e4bb79013" label="" states="0a9b7683-e2b5-45a1-bd15-e72239015542"/>
+      <char id="bf500c6f-c38d-4ef6-a3c8-7b5e8de400ff" label="" states="6e009e9e-9e8a-4b63-8e9a-aff97fa635ff"/>
     </format>
     <matrix>
       <row id="65d7250c-489c-4a48-a8b3-ffa6b1d330bb" otu="1f1f1780-8263-4b88-855e-acc6c3aa51fb">
