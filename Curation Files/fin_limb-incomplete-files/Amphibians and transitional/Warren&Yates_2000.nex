@@ -1,5 +1,5 @@
 #NEXUS
-[written Thu Dec 06 11:55:58 CST 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.82.10]
+[written Thu Dec 06 14:52:13 CST 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.82.10]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -15,6 +15,8 @@ BEGIN CHARACTERS;
 	TITLE  Character_Matrix;
 	DIMENSIONS  NCHAR=121;
 	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	CHARSTATELABELS 
+		1 Intertemporal /  present 'absent with the resultant space occupied by a postfrontal-supratemporal^nsuture' 'absent with a postorbital-parietal suture', 2 Ventrolateral /  border_of_the_orbit_formed_by_the_jugal_and_lachrymal 'lateral edge of the^ncorpus of the palatine exposed dorsally in the lateral margin of the orbit', 3 Lachrymals /  present absent, 4 'Pre- and post-frontals`' /  form_a_suture fail_to_contact_so_that_the_frontal_contributes_to_the_orbital_margin, 5 Premaxilla /  with_a_triangular_posterior_process_medial_to_the_naris 'triangular process absent, posterior dorsal margin of the premaxilla forming a simple suture with the nasal', 6 Anterior_end /  of_the_jugal_posterior_to_the_anterior_orbital_margin jugal_extending_beyond_the_anterior_orbital_margin, 7 Prefrontal_and_jugal /  not_in_contact form_a_suture, 8 Maxilla_and_quadratojugal /  form_a_suture 'only make point contact, or do not contact at all', 9 Prefrontal ; 
 	MATRIX
 	ancestor           0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 	isodectes          0000100---10000-20-000101-1200?000010-0000-0-0020112-00-00011001-010002111121001-0-0-0101--1-0--001-00---0-011--00-0---00
@@ -53,7 +55,7 @@ BEGIN CHARACTERS;
 	Siderops           10101---00-10-1-1-000---1-0---0-1200110000111012111-12-10010-21-000-0120001-1110-1-000-01001101---0120101000111000100--00
 	Keratobrachyops    101011100001001-110000001101010102001-000011-012111012210010-2110000002010011110-1-0010010110010000100---------0---------
 	Pelorocephalus     101011110001001-1--00000110101011200--0000111012111012210010-21100000120101-1110-1-0-0-010111001000-001010-01110001000100
-	Undescribed_Genus  2010-00-1000000-1--000101-1201-000011-0000-10-020-1202-11110121-0000002001121-00-0-0-01-10--00-0001-2001-0-011-00------0?
+	Undescribed_Genus  2010-00-1000000-1--000101-1201-000011-0000-10-020-1202-11110121-0000002001121-00-0-0-01-10--00-0001-2001-0-011-00------01
 
 ;
 
@@ -71,7 +73,7 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1354816558417;
+		timeSaved 1354827133268;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 7521845368096045595;
@@ -80,7 +82,7 @@ Begin MESQUITE;
 		tell It;
 			setID 0 5497453207018833651;
 			mqVersion 275;
-			checksumv 0 3 3176244856 null  getNumChars 121 numChars 121 getNumTaxa 38 numTaxa 38   short true   bits 15   states 15   sumSquaresStatesOnly 10731.0 sumSquares 10731.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			checksumv 0 3 1658800090 null  getNumChars 121 numChars 121 getNumTaxa 38 numTaxa 38   short true   bits 15   states 15   sumSquaresStatesOnly 10735.0 sumSquares 10735.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -92,8 +94,8 @@ Begin MESQUITE;
 			setAnnotationSize 0;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
-			setSize 1275 444;
-			setLocation 2 22;
+			setSize 1275 675;
+			setLocation 12 22;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -115,15 +117,14 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1161 377;
-					setLocation 2 22;
+					setSize 1161 608;
+					setLocation 12 22;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
 						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
-					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
@@ -167,6 +168,35 @@ Begin MESQUITE;
 				tell It;
 					setColor Red;
 					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 92;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1161 608;
+						setLocation 12 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
 				endTell;
 				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
 				tell It;
