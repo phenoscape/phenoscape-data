@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6.3" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Taxon:
 Matrix:
@@ -445,7 +445,15 @@ Fin/limb terms added to googledoc, need to annotate all characters.  (12/1/11)</
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7de24b5d-e811-40c8-a6be-3c3fb29e5001"/>
+                  <phen:typeref about="PATO:0000411"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001688"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -459,7 +467,7 @@ Fin/limb terms added to googledoc, need to annotate all characters.  (12/1/11)</
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7de24b5d-e811-40c8-a6be-3c3fb29e5001"/>
+                  <phen:typeref about="PATO:0000407"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -473,13 +481,7 @@ Fin/limb terms added to googledoc, need to annotate all characters.  (12/1/11)</
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7de24b5d-e811-40c8-a6be-3c3fb29e5001"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="PATO:0000701"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -620,11 +622,7 @@ Fin/limb terms added to googledoc, need to annotate all characters.  (12/1/11)</
         <state id="6a200ca4-8e53-43ce-a62a-2dd4d1880188" label="present" symbol="1"/>
       </states>
       <states id="d392db60-9b7f-4b2f-86b5-cca44da61adb">
-        <state id="7ab0881f-0a6c-4b55-8b76-ccc934edcabe" label="absent" symbol="0" about="#7ab0881f-0a6c-4b55-8b76-ccc934edcabe">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="7ab0881f-0a6c-4b55-8b76-ccc934edcabe" label="absent" symbol="0" about="#7ab0881f-0a6c-4b55-8b76-ccc934edcabe"></state>
         <state id="e3e2cb74-d9ec-49cb-9666-0f64b5fdf1e5" label="present along trailing edge" symbol="1"/>
       </states>
       <states id="50e97711-58a2-4f13-89cb-fca2d00b4711">
@@ -959,7 +957,7 @@ Fin/limb terms added to googledoc, need to annotate all characters.  (12/1/11)</
       <char id="ec697e2c-21b6-4b76-8ce8-b8eb51599349" label="Fin scale alignment" states="702ec47b-d48a-4050-87f7-88aa410254f9"/>
       <char id="b3975386-7c1d-4425-ad99-6b1d16017519" label="Scales around the bases of the paired fin spines" states="bd31ae08-d1f3-4558-9e88-8deb9cc58a48"/>
       <char id="a41265ee-06b6-4b46-8f9d-0d9b43bfe96f" label="Scales at the base of the median fin spines" states="6587843d-e10c-466f-9426-3a6e5390e508"/>
-      <char id="ad9dadcd-3823-45a3-bf72-4568daf9b6dd" label="Fin spine ornament" states="01ec66b6-b1a8-4b7c-adc3-1414ce2d079e" about="#ad9dadcd-3823-45a3-bf72-4568daf9b6dd"></char>
+      <char id="ad9dadcd-3823-45a3-bf72-4568daf9b6dd" label="Fin spine ornament" states="01ec66b6-b1a8-4b7c-adc3-1414ce2d079e" about="#ad9dadcd-3823-45a3-bf72-4568daf9b6dd"/>
       <char id="2c9d84fd-89c2-4a19-9000-ed752bb8ebdb" label="Fin spine ribs" states="8ffb9258-b2eb-4310-8d04-76108abb10d1"/>
       <char id="fc19df3d-97cb-4e55-890b-0853b07c1124" label="Fin spine rib orientation" states="5b828fca-4f54-4f94-b05f-ae0bb9882f95"/>
       <char id="d070cde1-0763-49e0-a5c2-d9b88d4f23f0" label="Fin spine rib spacing" states="16188d22-2fce-4ea3-89ac-70c8f0e49b56"/>

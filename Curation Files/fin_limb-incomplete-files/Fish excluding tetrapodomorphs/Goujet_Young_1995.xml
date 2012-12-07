@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6.3" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Matrix:
 Taxon:
@@ -231,19 +231,139 @@ fin/limb terms added to google doc, annotation needed. (12/8/11)</meta>
         <state id="8b2fefe6-c610-40d2-9fbd-62513b6b8ae6" label="long contact" symbol="2"/>
       </states>
       <states id="1183f754-83ce-4251-8035-b2f755179fb5">
-        <state id="f591234d-1894-49c8-b971-644bef1730d1" label="open posteriorly" symbol="0"/>
-        <state id="da3e787f-bade-4eb6-b7f6-b0f656c53f2d" label="closed" symbol="1"/>
+        <state id="f591234d-1894-49c8-b971-644bef1730d1" label="open posteriorly" symbol="0" about="#f591234d-1894-49c8-b971-644bef1730d1">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/027d758b-44f0-47be-8e86-9bd268c005a1"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000610"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="da3e787f-bade-4eb6-b7f6-b0f656c53f2d" label="closed" symbol="1" about="#da3e787f-bade-4eb6-b7f6-b0f656c53f2d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/027d758b-44f0-47be-8e86-9bd268c005a1"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000608"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="943513ce-1bdc-496c-ba75-40ec0e6e1b19">
-        <state id="deb56ac0-c795-4b4b-a040-0f6a828afe12" label="closed by PL+ PVL" symbol="0" about="#deb56ac0-c795-4b4b-a040-0f6a828afe12"/>
-        <state id="6ce5ab6f-42c0-477d-b4ef-7679e774e93e" label="PL excluded" symbol="1"/>
-        <state id="ffcec41b-c5a9-45a3-969f-a99cd7a652de" label="AVL only (antiarcha)" symbol="2"/>
+        <state id="deb56ac0-c795-4b4b-a040-0f6a828afe12" label="closed by PL+ PVL" symbol="0" about="#deb56ac0-c795-4b4b-a040-0f6a828afe12">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/027d758b-44f0-47be-8e86-9bd268c005a1"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="6ce5ab6f-42c0-477d-b4ef-7679e774e93e" label="PL excluded" symbol="1" about="#6ce5ab6f-42c0-477d-b4ef-7679e774e93e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/027d758b-44f0-47be-8e86-9bd268c005a1"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="ffcec41b-c5a9-45a3-969f-a99cd7a652de" label="AVL only (antiarcha)" symbol="2" about="#ffcec41b-c5a9-45a3-969f-a99cd7a652de">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/027d758b-44f0-47be-8e86-9bd268c005a1"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="ada06975-a292-46ed-9f00-b55b04cf1485" label="" symbol="-"/>
       </states>
       <states id="df6ba0b3-e291-4ea4-83c1-9706b1ee0280">
-        <state id="7cad9ccb-a041-481f-8154-e5ba6c9a9a44" label="round" symbol="0" about="#7cad9ccb-a041-481f-8154-e5ba6c9a9a44"/>
-        <state id="d19e0ceb-269e-4b89-b74f-5ab2e24857dc" label="elongate short" symbol="1"/>
-        <state id="0acf97df-0cd1-4dc6-87ca-1409fb5265a1" label="elongate long" symbol="2"/>
+        <state id="7cad9ccb-a041-481f-8154-e5ba6c9a9a44" label="round" symbol="0" about="#7cad9ccb-a041-481f-8154-e5ba6c9a9a44">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7c896d9c-e740-40b4-a423-eee6c92e305f"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000411"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="d19e0ceb-269e-4b89-b74f-5ab2e24857dc" label="elongate short" symbol="1" about="#d19e0ceb-269e-4b89-b74f-5ab2e24857dc">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7c896d9c-e740-40b4-a423-eee6c92e305f"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001154"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7c896d9c-e740-40b4-a423-eee6c92e305f"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="0acf97df-0cd1-4dc6-87ca-1409fb5265a1" label="elongate long" symbol="2" about="#0acf97df-0cd1-4dc6-87ca-1409fb5265a1">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7c896d9c-e740-40b4-a423-eee6c92e305f"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001154"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7c896d9c-e740-40b4-a423-eee6c92e305f"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="ab0e3df3-ba84-4b1b-9e3d-c7337631f57b">
         <state id="a9f0f975-77f2-444c-8630-a1b09acda0c9" label="three" symbol="0" about="#a9f0f975-77f2-444c-8630-a1b09acda0c9">
@@ -395,8 +515,34 @@ fin/limb terms added to google doc, annotation needed. (12/8/11)</meta>
         <state id="1f1dce00-8340-41a7-add4-90459a2c5899" label="complex glenoid" symbol="4"/>
       </states>
       <states id="c43537d5-8a04-462b-9141-2677d6b6b556">
-        <state id="b504d58a-0b68-4b52-9aa3-429a6fea5c2f" label="present" symbol="0"/>
-        <state id="dbed219e-e975-4dd8-82b8-a4307a7dcf4a" label="absent (dissociated plates)" symbol="1"/>
+        <state id="b504d58a-0b68-4b52-9aa3-429a6fea5c2f" label="present" symbol="0" about="#b504d58a-0b68-4b52-9aa3-429a6fea5c2f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000171"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="dbed219e-e975-4dd8-82b8-a4307a7dcf4a" label="absent (dissociated plates)" symbol="1" about="#dbed219e-e975-4dd8-82b8-a4307a7dcf4a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000171"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="61f00233-cbf0-4fea-9f3f-5c5d7ca34919" label="other pattern" symbol="2"/>
       </states>
       <states id="b5cc7d97-2103-40d3-b705-660a9a13097a">
@@ -465,15 +611,9 @@ fin/limb terms added to google doc, annotation needed. (12/8/11)</meta>
       <char id="8a1bc530-f8fb-4289-9d3c-7d409a829795" label="PVL's" states="26ffa7ee-cc01-4930-aa70-2ee3673ad916" about="#8a1bc530-f8fb-4289-9d3c-7d409a829795">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">PVL= posterior ventrolateral plate (Goujet and Young, 2004)</meta>
       </char>
-      <char id="b2de76a8-8792-4fe8-acec-7517666cca43" label="Dermal pectoral fenestra" states="1183f754-83ce-4251-8035-b2f755179fb5" about="#b2de76a8-8792-4fe8-acec-7517666cca43">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need term</meta>
-      </char>
-      <char id="34e6f553-9f59-424f-a82b-403bdfad3f77" label="Contour of pectoral fenestra" states="943513ce-1bdc-496c-ba75-40ec0e6e1b19" about="#34e6f553-9f59-424f-a82b-403bdfad3f77">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need term</meta>
-      </char>
-      <char id="5af220b1-d1b2-4039-9fdf-f8334c0d6d9e" label="Form of pectoral articular facet" states="df6ba0b3-e291-4ea4-83c1-9706b1ee0280" about="#5af220b1-d1b2-4039-9fdf-f8334c0d6d9e">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need term</meta>
-      </char>
+      <char id="b2de76a8-8792-4fe8-acec-7517666cca43" label="Dermal pectoral fenestra" states="1183f754-83ce-4251-8035-b2f755179fb5" about="#b2de76a8-8792-4fe8-acec-7517666cca43"></char>
+      <char id="34e6f553-9f59-424f-a82b-403bdfad3f77" label="Contour of pectoral fenestra" states="943513ce-1bdc-496c-ba75-40ec0e6e1b19" about="#34e6f553-9f59-424f-a82b-403bdfad3f77"></char>
+      <char id="5af220b1-d1b2-4039-9fdf-f8334c0d6d9e" label="Form of pectoral articular facet" states="df6ba0b3-e291-4ea4-83c1-9706b1ee0280" about="#5af220b1-d1b2-4039-9fdf-f8334c0d6d9e"></char>
       <char id="8edbf16a-bf6a-47d6-885c-6054131923c9" label="Number of potential radials" states="ab0e3df3-ba84-4b1b-9e3d-c7337631f57b"/>
       <char id="55fecc46-3be4-43c2-8bc1-9f3e371b5c9d" label="Pelvic girdle" states="84bf6f76-b58e-43a2-91c0-68d081c3e313"/>
       <char id="d80b63e6-e3ba-4bbd-9b6d-f6bf6c4894c1" label="Sensory lines" states="d2c478c8-07c8-45bd-beb8-5e123ae993e3"/>
