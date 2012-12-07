@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6.3" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Taxon:
 Matrix:
@@ -313,8 +313,40 @@ A few characters annotated, fin/limb terms on googledoc (12/1/11)</meta>
         <state id="570275f0-dd4c-486c-a153-ab89ce09f31d" label="rhizodont condition" symbol="1"/>
       </states>
       <states id="a8fff2de-f453-45b0-bde9-47d046bbeb66">
-        <state id="a717caee-f3b3-4949-8134-a6731b7ae85a" label="no " symbol="0" about="#a717caee-f3b3-4949-8134-a6731b7ae85a"/>
-        <state id="a402d2cb-ab12-4a40-98ef-c83214629507" label="yes" symbol="1"/>
+        <state id="a717caee-f3b3-4949-8134-a6731b7ae85a" label="no " symbol="0" about="#a717caee-f3b3-4949-8134-a6731b7ae85a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000160"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/5072fedd-f7b0-41bb-a064-8237301d5f7b"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="a402d2cb-ab12-4a40-98ef-c83214629507" label="yes" symbol="1" about="#a402d2cb-ab12-4a40-98ef-c83214629507">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000160"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/5072fedd-f7b0-41bb-a064-8237301d5f7b"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="05a1eba3-1d7b-4bb6-932f-67a8f8b42b0b">
         <state id="cb37e6df-c940-4627-9a66-707a9d23e674" label="concave" symbol="0" about="#cb37e6df-c940-4627-9a66-707a9d23e674"/>
