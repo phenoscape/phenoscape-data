@@ -1,5 +1,5 @@
 #NEXUS
-[written Wed Oct 24 12:17:06 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.78.147]
+[written Mon Dec 10 15:38:41 CST 2012 by Mesquite  version 2.75 (build 566) at NI8137.local/172.21.16.128]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -7,6 +7,7 @@ BEGIN TAXA;
 	TAXLABELS
 		Caudata Triadobatrachus Czatkobatrachus Prosalirus Ascaphus Leiopelma Alytes Barbourula Bombina Discoglossus Eodiscoglossus Notobatrachus Vieraella Callobatrachus Mesophryne Pelobates Eopelobates Megophrys Pelodytes Pipa Xenopus Rhinophrynus Palaeobatrachus Yizhoubatrachus Neusibatrachus 
 	;
+	BLOCKID 013b86c1480130;
 
 END;
 
@@ -60,10 +61,10 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1351099026214;
+		timeSaved 1355175522097;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
-			setID 0 8304888739584539741;
+			setID 0 8304888739584539741 013b86c1480130;
 		endTell;
 		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
 		tell It;
@@ -81,8 +82,8 @@ Begin MESQUITE;
 			setAnnotationSize 0;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
-			setSize 1255 272;
-			setLocation 11 485;
+			setSize 1255 464;
+			setLocation 146 156;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -100,13 +101,14 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1016 205;
-					setLocation 11 485;
+					setSize 1016 397;
+					setLocation 146 156;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
 					endTell;
+					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
@@ -159,15 +161,14 @@ Begin MESQUITE;
 						setAnnotationSize 20;
 						setFontIncAnnot 0;
 						setFontIncExp 0;
-						setSize 1016 205;
-						setLocation 11 485;
+						setSize 1016 397;
+						setLocation 146 156;
 						setFont SanSerif;
 						setFontSize 10;
 						getToolPalette;
 						tell It;
 							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
 						endTell;
-						setActive;
 						rowsAreCharacters on;
 						toggleConstrainChar on;
 						toggleConstrainCharNum 3;
@@ -217,8 +218,8 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1016 205;
-					setLocation 11 485;
+					setSize 1016 397;
+					setLocation 146 156;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;

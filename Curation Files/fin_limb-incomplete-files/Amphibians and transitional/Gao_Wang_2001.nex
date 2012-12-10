@@ -1,5 +1,5 @@
 #NEXUS
-[written Tue Feb 28 16:03:44 EST 2012 by Mesquite  version 2.74 (build 550) at wl-10-180-90-249.wireless.duke.local/10.180.90.249]
+[written Mon Dec 10 15:38:46 CST 2012 by Mesquite  version 2.75 (build 566) at NI8137.local/172.21.16.128]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -7,6 +7,7 @@ BEGIN TAXA;
 	TAXLABELS
 		Caudata Triadobatrachus Czatkobatrachus Prosalirus Ascaphus Leiopelma Alytes Barbourula Bombina Discoglossus Eodiscoglossus Notobatrachus Vieraella Callobatrachus Mesophryne Pelobates Eopelobates Megophrys Pelodytes Pipa Xenopus Rhinophrynus Palaeobatrachus 
 	;
+	BLOCKID 013b86bf5e2729;
 
 END;
 
@@ -21,26 +22,26 @@ BEGIN CHARACTERS;
 	Caudata          000000000000000000000000000?00?0000000?00000?00000?00000??0000000
 	Triadobatrachus  000??100000????0000001??0?000000?10?000000000000??0100010000?????
 	Czatkobatrachus  ????????????????????????????????????0?0??10????????110?1?0???????
-	Prosalirus       ?????1??00??1????????1????0?0??0????0?0??10???10?0??01?1?110????0
+	Prosalirus       ?????1??00??1????????1????0?0??0????0?0??10{1 2}??10?0??01?1?110????0
 	Ascaphus         0111110210100111110010?0101110010120012211120011100111110?1101010
 	Leiopelma        0111110210200111110010121011110101200122111200100001?111011101110
 	Alytes           01000102102110120100111211111010013011021112101111121111111101100
 	Barbourula       01000100102100120100111211111010013010021122201111121111011101100
-	Bombina          010001021021101301001112111110100130100211222011111211110?1101100
-	Discoglossus     0100010?1021101201101112111110100130100211121011111211111111?1100
+	Bombina          010001021021101301001112111110100130100211222011111211110{0 1}1101100
+	Discoglossus     0100010{1 2}1021101201101112111110100130100211121011111211111111?1100
 	Eodiscoglossus   0100010?101?10?201001??????????0?13010?2112210?1?11?11110111?1??0
 	Notobatrachus    00000101011010011100100110000100012?002101010010000101010111????0
 	Vieraella        1?0?0101001??01??10011111?010???011?00??0?0????0?00?01?1??1??????
 	Callobatrachus   010?010??02??0?2010011121??????0012010?211121011110??111?111?1?00
 	Mesophryne       010?01????2?00??01101??????1???0012020?20122?01??0??1101?11110?0?
-	Pelobates        000001?01121101201111111011111200130200411222111000?1111111102201
+	Pelobates        000001{0 1}01121101201111111011111200130200411222111000?1111111102201
 	Eopelobates      0001010011?????2011111?1?11111?0?13?20?4112221?100??11?101111????
 	Megophrys        01000100112?1012010111?111111?200130200411221111000?1111111102201
-	Pelodytes        0?101102102?0012010011?101111010013120041122201100??1111111211201
-	Pipa             0101111010220101130012??102111201?31100311223210101?1111001111201
-	Xenopus          ?121011010230101130012??102110201130102311223211211?1111001111211
+	Pelodytes        0{0 1}101102102?0012010011?101111010013120041122201100??1111111211201
+	Pipa             0101111010220101130012??102111201{1 2}31100311223210101?1111001111201
+	Xenopus          {0 1}121011010230101130012??102110201130102311223211211?1111001111211
 	Rhinophrynus     11000110112100110200111110210201123010041122121110221111111111201
-	Palaeobatrachus  1100011010210002?100111?102100000131202301121211101111?1?11111??1
+	Palaeobatrachus  1100011010210002{0 1}100111?102100000131202301121211101111{0 1}1?11111??1
 
 ;
 
@@ -58,20 +59,16 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1330463024889;
+		timeSaved 1355175526814;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
-			setID 0 6567241072747858191;
-			tell It;
-				setSelected  1 -  23;
-				attachments ;
-			endTell;
+			setID 0 6567241072747858191 013b86bf5e2729;
 		endTell;
 		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
 		tell It;
 			setID 0 3776834384810804065;
-			mqVersion 274;
-			checksumv 0 2 4062433021 null  getNumChars 65 numChars 65 getNumTaxa 23 numTaxa 23   short true   bits 31   states 31   sumSquaresStatesOnly 7552.0 sumSquares 7552.0   NumFiles 1 NumMatrices 1;
+			mqVersion 275;
+			checksumv 0 3 56917219 null  getNumChars 65 numChars 65 getNumTaxa 23 numTaxa 23   short true   bits 2305843009213693983   states 31   sumSquaresStatesOnly 7714.0 sumSquares -5.5340232221128655E19 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -108,14 +105,16 @@ Begin MESQUITE;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
-					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
 					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
 					colorText  #mesquite.charMatrices.NoColor.NoColor;
 					setBackground White;
-					toggleShowNames on;
+					toggleShowNames off;
 					toggleShowTaxonNames on;
 					toggleTight off;
 					toggleThinRows off;
@@ -173,7 +172,6 @@ Begin MESQUITE;
 						tell It;
 							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
 						endTell;
-						setActive;
 						rowsAreCharacters on;
 						toggleConstrainChar on;
 						toggleConstrainCharNum 3;
