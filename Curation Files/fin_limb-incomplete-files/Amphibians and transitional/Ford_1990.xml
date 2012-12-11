@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6.3" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
@@ -1531,13 +1531,77 @@
         </state>
       </states>
       <states id="states598">
-        <state id="state600" label="base of xiphisternum broad" symbol="0"/>
-        <state id="state601" label="base of xiphisternum narrow" symbol="1"/>
+        <state id="state600" label="base of xiphisternum broad" symbol="0" about="#state600">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000074">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002207"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000600"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state601" label="base of xiphisternum narrow" symbol="1" about="#state601">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000074">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002207"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000599"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state739" symbol="9" label=""/>
       </states>
       <states id="states602">
-        <state id="state604" label="ventral end not expanded anteriorly" symbol="0"/>
-        <state id="state605" label="ventral end with prominent anterior expansion that extends anterior to clavicle" symbol="1"/>
+        <state id="state604" label="ventral end not expanded anteriorly" symbol="0" about="#state604">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000684"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state605" label="ventral end with prominent anterior expansion that extends anterior to clavicle" symbol="1" about="#state605">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000684"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state774" symbol="9" label=""/>
       </states>
       <states id="states606">
@@ -1672,6 +1736,7 @@
         <state id="state723" label="Metatarsal formula 4-3-5-2-1" symbol="0"/>
         <state id="state724" label="metatarsal formula 4-5-3-2-1" symbol="1"/>
       </states>
+      <states id="899ed866-5a6f-4bb0-afa7-e2f6cf42819f"/>
       <char about="#char181" id="char181" label="Nasals, extent of medial contact" states="states180">
         <meta content="false" datatype="xsd:boolean" id="meta831" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
@@ -2044,6 +2109,7 @@
       <char about="#char722" id="char722" label="Metatarsals, formula length" states="states721">
         <meta content="false" datatype="xsd:boolean" id="meta954" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
+      <char id="61209377-0569-4f61-86da-3bd7fc5803ee" label="" states="899ed866-5a6f-4bb0-afa7-e2f6cf42819f"/>
     </format>
     <matrix>
       <row id="row725" otu="otu3">
