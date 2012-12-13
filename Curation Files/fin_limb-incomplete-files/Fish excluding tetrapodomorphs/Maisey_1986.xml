@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -270,8 +270,34 @@
         <state id="47cb0737-1929-494e-b6ff-bb3c56dcb1e1" label="present" symbol="1"/>
       </states>
       <states id="6372f9af-0bd7-4aa3-9ec4-084aff1be236">
-        <state id="f9cd34a2-d671-4fee-9567-1aace6050a3b" label="absent" symbol="0"/>
-        <state id="0ff0000f-89e9-45fb-a15e-f48f805cba49" label="present" symbol="1"/>
+        <state id="f9cd34a2-d671-4fee-9567-1aace6050a3b" label="absent" symbol="0" about="#f9cd34a2-d671-4fee-9567-1aace6050a3b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000040"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="0ff0000f-89e9-45fb-a15e-f48f805cba49" label="present" symbol="1" about="#0ff0000f-89e9-45fb-a15e-f48f805cba49">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000040"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="c1426d70-6a07-4ce3-be78-00bc7f1883b7">
         <state id="5538c032-48a3-466e-860d-1797071fef39" label="absent" symbol="0"/>
@@ -2961,7 +2987,7 @@
       <char id="0bd31dfe-4d4f-4b81-9505-8528bc4006b9" label="(H17.) Adult hypophyseal duct closed" states="0ae39862-f650-43fc-9a2a-3eda20beca7b"/>
       <char id="591b5bf4-eded-4b14-a9ed-f1bd9eb4097a" label="(H18.) Triple-layered tooth enameloid" states="60336383-8d7d-48be-9dd0-0e1167a2bb63"/>
       <char id="44c2006e-2291-480c-bae5-60e59ce9cbe1" label="(H19.) Only one or two intermediate segments between pelvic basipterygium and clasper" states="437cbfb9-2eb2-4f4a-8be4-a469ed32ec2e"/>
-      <char id="19f827fc-a4eb-4152-b00d-3317d098f8cc" label="(H20.) Basipterygium spans entire base of pelvic fin" states="f33e5088-8aaf-42da-ac69-b87812280d94" about="#19f827fc-a4eb-4152-b00d-3317d098f8cc"></char>
+      <char id="19f827fc-a4eb-4152-b00d-3317d098f8cc" label="(H20.) Basipterygium spans entire base of pelvic fin" states="f33e5088-8aaf-42da-ac69-b87812280d94" about="#19f827fc-a4eb-4152-b00d-3317d098f8cc"/>
       <char id="53e122a6-2293-4873-8640-ac73b94b9b11" label="(H21.) Ethmoid region lacks ventral keel" states="cb8282eb-c84c-43e6-be32-96f6e5516b95"/>
       <char id="4843796f-f131-491f-95be-ef0120283566" label="(H22.) Postorbital process narrowed and reduced ventrally" states="77f45c69-7438-408d-b6ad-f3f28289345a"/>
       <char id="625810bf-a506-412b-b53c-2985b5293c37" label="(H23.) Calcified radial series in first dorsal fin" states="967cab80-568c-4eb0-a96f-869a23ac57cf"/>
