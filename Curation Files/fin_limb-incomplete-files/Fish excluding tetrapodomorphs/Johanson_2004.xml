@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6.3" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Taxon:
 Matrix:
@@ -287,13 +287,32 @@ A few characters annotated, fin/limb terms on googledoc (12/1/11)</meta>
                   <phen:typeref about="UBERON:0004753"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001667"/>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004741"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="288989ca-b123-4790-87f8-6b41ae004762" label="dorsal" symbol="1"/>
+        <state id="288989ca-b123-4790-87f8-6b41ae004762" label="dorsal" symbol="1" about="#288989ca-b123-4790-87f8-6b41ae004762">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004753"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004741"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="464af79b-96be-48e8-829d-c649eaaa8fe4">
         <state id="eec1d899-9168-4a3c-9fa8-279649e113c4" label="normal" symbol="0" about="#eec1d899-9168-4a3c-9fa8-279649e113c4">
@@ -305,12 +324,31 @@ A few characters annotated, fin/limb terms on googledoc (12/1/11)</meta>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0001590"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0001105"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="570275f0-dd4c-486c-a153-ab89ce09f31d" label="rhizodont condition" symbol="1"/>
+        <state id="570275f0-dd4c-486c-a153-ab89ce09f31d" label="rhizodont condition" symbol="1" about="#570275f0-dd4c-486c-a153-ab89ce09f31d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004741"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001590"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0001105"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="a8fff2de-f453-45b0-bde9-47d046bbeb66">
         <state id="a717caee-f3b3-4949-8134-a6731b7ae85a" label="no " symbol="0" about="#a717caee-f3b3-4949-8134-a6731b7ae85a">
@@ -349,9 +387,48 @@ A few characters annotated, fin/limb terms on googledoc (12/1/11)</meta>
         </state>
       </states>
       <states id="05a1eba3-1d7b-4bb6-932f-67a8f8b42b0b">
-        <state id="cb37e6df-c940-4627-9a66-707a9d23e674" label="concave" symbol="0" about="#cb37e6df-c940-4627-9a66-707a9d23e674"/>
-        <state id="31f12a0b-c276-410a-afcd-5cec174991c9" label="gently convex" symbol="1"/>
-        <state id="7ae7bec5-ac3a-49fb-a15b-8aaabf4a7e63" label="bulbous (ordered)" symbol="2"/>
+        <state id="cb37e6df-c940-4627-9a66-707a9d23e674" label="concave" symbol="0" about="#cb37e6df-c940-4627-9a66-707a9d23e674">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006801"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001857"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="31f12a0b-c276-410a-afcd-5cec174991c9" label="gently convex" symbol="1" about="#31f12a0b-c276-410a-afcd-5cec174991c9">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006801"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001355"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="7ae7bec5-ac3a-49fb-a15b-8aaabf4a7e63" label="bulbous (ordered)" symbol="2" about="#7ae7bec5-ac3a-49fb-a15b-8aaabf4a7e63">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006801"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002210"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="5a19173e-9b9d-46b2-b250-488b717fdc1d">
         <state id="dbd4af51-6d56-48ba-836f-6b47aca9728f" label="yes " symbol="0" about="#dbd4af51-6d56-48ba-836f-6b47aca9728f">
@@ -528,16 +605,110 @@ A few characters annotated, fin/limb terms on googledoc (12/1/11)</meta>
         <state id="06129d88-be08-4845-8b23-82f6190641fc" label="reduced in number" symbol="1"/>
       </states>
       <states id="39cf01f7-1ff1-4f22-ba68-d94fc48ce429">
-        <state id="f173971a-37ba-4939-9fc8-a16a42204d52" label="present" symbol="0"/>
-        <state id="51a1687a-d2af-46ad-b226-644aebbe8aa7" label="absent " symbol="1"/>
+        <state id="f173971a-37ba-4939-9fc8-a16a42204d52" label="present" symbol="0" about="#f173971a-37ba-4939-9fc8-a16a42204d52">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002445"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="51a1687a-d2af-46ad-b226-644aebbe8aa7" label="absent " symbol="1" about="#51a1687a-d2af-46ad-b226-644aebbe8aa7">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002445"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="daa24468-e24a-4da6-9063-7cbd54f1afb6">
         <state id="aa937d47-0967-48a5-abea-83aa32d8fe06" label="elongate" symbol="0"/>
         <state id="537761d4-79ec-4418-87b9-7313e6a12440" label="shorter, more rounded" symbol="1"/>
       </states>
       <states id="7d9bc1b9-3d6a-40ab-ae83-df52486170d7">
-        <state id="c2c2537e-60e6-4701-8e28-e31211455c34" label="towards the ulnar condyle (or towards postaxial condylar region)" symbol="0"/>
-        <state id="c2137bd6-4d4c-41ae-a0dc-1bccbc85bf07" label="separated from this condyle" symbol="1"/>
+        <state id="c2c2537e-60e6-4701-8e28-e31211455c34" label="towards the ulnar condyle (or towards postaxial condylar region)" symbol="0" about="#c2c2537e-60e6-4701-8e28-e31211455c34">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0000976"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/41bfc63b-161a-42bc-9669-abd96df8dbdb"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000784"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="c2137bd6-4d4c-41ae-a0dc-1bccbc85bf07" label="separated from this condyle" symbol="1" about="#c2137bd6-4d4c-41ae-a0dc-1bccbc85bf07">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0000976"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000784"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="386cb198-2ff1-45e0-80cb-01bbb7a563f7">
         <state id="a8d8d951-e02a-4ac1-8ce4-8379283ef21e" label="on distal surface of humerus" symbol="0"/>
@@ -595,7 +766,9 @@ A few characters annotated, fin/limb terms on googledoc (12/1/11)</meta>
       <char id="272d076e-f151-433b-a2cd-627618c455e1" label="Postaxial process on ulnare" states="39cf01f7-1ff1-4f22-ba68-d94fc48ce429"/>
       <char id="418630f4-1d76-4dcf-99da-e74281dbcaa5" label="Ethmosphenoid region" states="daa24468-e24a-4da6-9063-7cbd54f1afb6"/>
       <char id="94bcfc7f-78ff-4965-9db8-c2fc95744b9a" label="Orientation of dorsal ridge on the humerus" states="7d9bc1b9-3d6a-40ab-ae83-df52486170d7"/>
-      <char id="195fe0cd-1c2c-4509-bc82-2eb889e97d75" label="Position of radius and ulna articulations" states="386cb198-2ff1-45e0-80cb-01bbb7a563f7"/>
+      <char id="195fe0cd-1c2c-4509-bc82-2eb889e97d75" label="Position of radius and ulna articulations" states="386cb198-2ff1-45e0-80cb-01bbb7a563f7" about="#195fe0cd-1c2c-4509-bc82-2eb889e97d75">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">WD continue here</meta>
+      </char>
       <char id="9ba322cc-2e00-40a7-bb8a-cc218d28b367" label="Separation of ulna/radius condyles" states="d2fda63a-b832-4232-b664-75f032459ae5"/>
       <char id="4f474f0a-bb24-458f-92d9-aa6a426598bb" label="Pelvic girdle" about="#4f474f0a-bb24-458f-92d9-aa6a426598bb" states="50f12a57-e5d2-4d33-ae18-14011d7a6d15">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">pubis</meta>
