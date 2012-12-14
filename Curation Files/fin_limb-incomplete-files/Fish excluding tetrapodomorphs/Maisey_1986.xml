@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="bbbc5d77-1619-42cc-b36f-2b855abce336">
     <otu id="bbb14449-ee58-4916-a8d4-6cc0d639dffa" label="Enteropneusta" about="#bbb14449-ee58-4916-a8d4-6cc0d639dffa">
       <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request to add to VTO</meta>
@@ -196,7 +196,7 @@
         <state id="0fc32d2e-c338-4182-89d9-615faf8ae1a7" label="present" symbol="1"/>
       </states>
       <states id="6e59a301-ddf9-4515-b779-210732121713">
-        <state id="15921d08-f806-410e-af72-976ba96e8370" label="absent" symbol="0" about="#15921d08-f806-410e-af72-976ba96e8370"></state>
+        <state id="15921d08-f806-410e-af72-976ba96e8370" label="absent" symbol="0" about="#15921d08-f806-410e-af72-976ba96e8370"/>
         <state id="3a975136-3a39-45d7-996d-7289973db3d5" label="present" symbol="1"/>
       </states>
       <states id="8dc38f4f-1d5b-4f3e-9be1-b57aa4a438b5">
@@ -1327,7 +1327,36 @@
       </states>
       <states id="db7bfc2f-4e37-4e3a-ae68-6a615e21fc93">
         <state id="d7ff1e5b-5e0c-48de-915d-f402614f29c8" label="absent" symbol="0"/>
-        <state id="294f18bb-e8ad-463a-a60b-8f720143a039" label="present" symbol="1"/>
+        <state id="294f18bb-e8ad-463a-a60b-8f720143a039" label="present" symbol="1" about="#294f18bb-e8ad-463a-a60b-8f720143a039">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001589"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:1500007"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4400000"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="024ee1c9-b367-4463-8d36-ed92cc5e1f6c">
         <state id="7ad3c4f2-502e-4d5c-ba7e-52a889bb66d8" label="absent" symbol="0"/>
@@ -1335,7 +1364,20 @@
       </states>
       <states id="49e7fdd0-69c6-4a28-92bc-b73e62beea9a">
         <state id="2bacea65-eb91-4e31-bce7-7c36100be07c" label="absent" symbol="0"/>
-        <state id="4e83932f-139a-414c-a209-b726f2bd6244" label="present" symbol="1"/>
+        <state id="4e83932f-139a-414c-a209-b726f2bd6244" label="present" symbol="1" about="#4e83932f-139a-414c-a209-b726f2bd6244">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001589"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="de4f9585-ed87-473d-aa19-ea3455d65fa4">
         <state id="4650a71b-60e7-45ef-a5a1-2e917aaa8d63" label="pectoral attachment not rotated" symbol="0" about="#4650a71b-60e7-45ef-a5a1-2e917aaa8d63">
@@ -1398,7 +1440,7 @@
         <state id="20323f91-516f-4e2a-9573-43a643514a81" label="present" symbol="1"/>
       </states>
       <states id="6d3a275c-c48b-4848-abb9-b18ec8d5825d">
-        <state id="4154a5e7-cccd-43fe-893a-ca45500ed14b" label="absent" symbol="0"/>
+        <state id="4154a5e7-cccd-43fe-893a-ca45500ed14b" label="absent" symbol="0" about="#4154a5e7-cccd-43fe-893a-ca45500ed14b"></state>
         <state id="5f778742-9677-4506-ba95-5d9686d40495" label="present" symbol="1"/>
       </states>
       <states id="a985b230-36c4-4a89-aca1-b30abef4d088">
@@ -1419,11 +1461,88 @@
       </states>
       <states id="e2df5a3c-a48e-46e5-8952-7b77049ec58b">
         <state id="f75b8125-f238-42c3-b648-38f9bf076a46" label="absent" symbol="0"/>
-        <state id="534d1537-2270-47f2-b355-0dbf0c6e3e4d" label="present" symbol="1"/>
+        <state id="534d1537-2270-47f2-b355-0dbf0c6e3e4d" label="present" symbol="1" about="#534d1537-2270-47f2-b355-0dbf0c6e3e4d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000072">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0011692"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="d409a44b-e2f1-4e74-bbef-c8718cb51cfe">
-        <state id="86da3bae-7f5f-4daf-88f7-b1421a3b3dc0" label="absent" symbol="0"/>
-        <state id="9d04a86c-304a-4e4b-b82a-497ef42d7cb7" label="present" symbol="1"/>
+        <state id="86da3bae-7f5f-4daf-88f7-b1421a3b3dc0" label="absent" symbol="0" about="#86da3bae-7f5f-4daf-88f7-b1421a3b3dc0">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4000102"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="9d04a86c-304a-4e4b-b82a-497ef42d7cb7" label="present" symbol="1" about="#9d04a86c-304a-4e4b-b82a-497ef42d7cb7">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4000102"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="689b7940-4b4f-4fdc-80e6-84a11cdfcc3a">
         <state id="f142814f-4d97-47ba-a702-0405cdb9e881" label="absent" symbol="0"/>
@@ -1454,7 +1573,10 @@
                   <phen:typeref about="UBERON:2000623"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001505"/>
+                  <phen:typeref about="PATO:0000141"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0010518"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1467,6 +1589,12 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000623"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0010518"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -1593,18 +1721,29 @@
         <state id="a22f2f4d-b9b5-47a5-bb88-0409031156a2" label="synarcual shorter than neurocranium" symbol="1"/>
       </states>
       <states id="d64862bb-e909-4c46-823e-3084145ccd21">
-        <state id="ac04394a-21ff-4998-b6bc-8daf7abf8e74" label="absent" symbol="0" about="#ac04394a-21ff-4998-b6bc-8daf7abf8e74">
+        <state id="ac04394a-21ff-4998-b6bc-8daf7abf8e74" label="absent" symbol="0" about="#ac04394a-21ff-4998-b6bc-8daf7abf8e74"/>
+        <state id="e6ee2658-8a12-439c-a2c6-fada50f9ca11" label="present" symbol="1" about="#e6ee2658-8a12-439c-a2c6-fada50f9ca11">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001589"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4400000"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="e6ee2658-8a12-439c-a2c6-fada50f9ca11" label="present" symbol="1"/>
       </states>
       <states id="58085f73-ac04-45ca-853d-1a1bf3ab88fd">
         <state id="0179a007-9ceb-4729-8ec1-6f4174f9f7b3" label="absent" symbol="0" about="#0179a007-9ceb-4729-8ec1-6f4174f9f7b3">
@@ -1637,8 +1776,46 @@
         </state>
       </states>
       <states id="8222ae85-c4d2-4075-be16-4bb8b8dc4ccf">
-        <state id="a0b2a094-3af0-462a-9193-d5850d7bcfe5" label="absent" symbol="0"/>
-        <state id="8a7c081f-918d-405c-aee4-2ec951e993cf" label="present" symbol="1"/>
+        <state id="a0b2a094-3af0-462a-9193-d5850d7bcfe5" label="absent" symbol="0" about="#a0b2a094-3af0-462a-9193-d5850d7bcfe5">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4000102"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="8a7c081f-918d-405c-aee4-2ec951e993cf" label="present" symbol="1" about="#8a7c081f-918d-405c-aee4-2ec951e993cf">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4000102"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="56d4d69c-3011-42ea-9a8e-93fe53248cb8">
         <state id="329005da-4eb2-476e-bcad-d471a191f9b3" label="absent" symbol="0"/>
@@ -1665,7 +1842,7 @@
         <state id="48317466-f139-4f33-b603-0ca6b4f42bc3" label="present" symbol="1"/>
       </states>
       <states id="35479768-1a2c-474c-9d4b-a6f61f36a08d">
-        <state id="8b1f18d2-8954-4d5e-bfd8-f039950b88c4" label="?" symbol="0"/>
+        <state id="8b1f18d2-8954-4d5e-bfd8-f039950b88c4" label="?" symbol="0" about="#8b1f18d2-8954-4d5e-bfd8-f039950b88c4"></state>
         <state id="7122028e-7ceb-4608-89c5-a1a8d9e5f1f8" label="?" symbol="1"/>
       </states>
       <states id="09ad7a9f-9e8c-431b-9e14-27123ad57329">
@@ -2840,12 +3017,64 @@
         <state id="d160c059-cf0f-4e3e-89f8-7ccaf3f739c3" label="present" symbol="1"/>
       </states>
       <states id="7030b92f-5c6f-4c96-b533-b1eb2357719a">
-        <state id="d2b108fe-77de-4710-b09e-c4893c7f6f31" label="absent" symbol="0"/>
-        <state id="ca1abdc0-2aa7-433b-a7ec-f5bd826a680e" label="present" symbol="1"/>
+        <state id="d2b108fe-77de-4710-b09e-c4893c7f6f31" label="absent" symbol="0" about="#d2b108fe-77de-4710-b09e-c4893c7f6f31">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4400007"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="ca1abdc0-2aa7-433b-a7ec-f5bd826a680e" label="present" symbol="1" about="#ca1abdc0-2aa7-433b-a7ec-f5bd826a680e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4400007"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="2fe8d2ac-812f-4d1d-829d-91c00fb9731b">
-        <state id="ca7fad88-749d-4be3-a63a-2443b4ec301b" label="absent" symbol="0" about="#ca7fad88-749d-4be3-a63a-2443b4ec301b"/>
-        <state id="97e66ba2-3b0d-4c5a-ab36-e4aa3d375739" label="present" symbol="1"/>
+        <state id="ca7fad88-749d-4be3-a63a-2443b4ec301b" label="absent" symbol="0" about="#ca7fad88-749d-4be3-a63a-2443b4ec301b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/15e5436c-b6e7-46d9-9f8e-ba2fa84f002d"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="97e66ba2-3b0d-4c5a-ab36-e4aa3d375739" label="present" symbol="1" about="#97e66ba2-3b0d-4c5a-ab36-e4aa3d375739">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/15e5436c-b6e7-46d9-9f8e-ba2fa84f002d"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="b6503d27-09d4-431f-813a-e467c9d321ca">
         <state id="f27669dc-c0e9-412a-9a29-238d9c3f8282" label="absent" symbol="0"/>
@@ -2882,13 +3111,38 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001410"/>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002312"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="247e9356-3d52-4e13-aae8-80066314da86" label="muscles segmented" symbol="1"/>
+        <state id="247e9356-3d52-4e13-aae8-80066314da86" label="muscles segmented" symbol="1" about="#247e9356-3d52-4e13-aae8-80066314da86">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000383">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002534"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002312"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="e81a1e34-5b70-4505-89f9-14362bfbc17a">
         <state id="1aa701a0-cd3b-4c19-beb2-d73299f9c27d" label="?" symbol="0"/>
@@ -3032,7 +3286,7 @@
       <char id="63dabb3e-9dde-40d1-8bb6-2f98f83d8b4a" label="(F7.) Postorbital process" states="8d87cb29-36ad-4751-a4c3-e616287c5553"/>
       <char id="14555813-a7b4-4a3e-bfc9-46f7a13a4e7f" label="(F8.) Enlarged forebrain" states="12811252-4933-487c-9246-cebda8233fac"/>
       <char id="4eef0e52-b823-4475-8db5-99f927ed5ac9" label="(F9.) Paired pectoral and pelvic appendages with internal supporting girdles and radials; protractor pectoralis muscles; ossification of lateral plate derivatives" states="822261ab-19ad-4c9a-9717-c5356e0bf194"/>
-      <char id="6da26fac-d378-4547-8e4d-c36a99f7840f" label="(F10.) Perichondrally mineralized neural and haemal elements, and radials of median fins" states="f0048261-4e31-4558-8c5f-af5e649c094a" about="#6da26fac-d378-4547-8e4d-c36a99f7840f"></char>
+      <char id="6da26fac-d378-4547-8e4d-c36a99f7840f" label="(F10.) Perichondrally mineralized neural and haemal elements, and radials of median fins" states="f0048261-4e31-4558-8c5f-af5e649c094a" about="#6da26fac-d378-4547-8e4d-c36a99f7840f"/>
       <char id="5a5b1c05-075b-49f7-af9b-187fb1f289d5" label="(F11.) Basicranial muscle series, arising on braincase and inserting on anteriormost branchial arches" states="f20c9595-5366-4f11-97ea-1c4513493496"/>
       <char id="6be9aae6-9983-4bb3-8ec6-e8fb8c2b5fa1" label="(F12.) Horizontal septum divides epaxial and hypaxial trunk musculature" states="4d656c7f-b05a-4978-bf94-f0f60b96de4e"/>
       <char id="7d09e9eb-03cb-4b67-8faa-26daef7d6fcc" label="(F13.) Rotational action of external ocular muscles" states="a982d9cc-6d08-42be-9389-a7b16aa21716"/>
@@ -3072,8 +3326,8 @@
       <char id="7bcdeaad-07ae-4141-83a1-6f42d1ced100" label="(bii.) Paired fins" states="2395dcd6-207c-4c7a-9995-7a5da38fc4d9"/>
       <char id="cb8dbda4-e8ce-4f46-b639-91cb74116f3f" label="(biii.) Anal fin" states="5a568005-6ab2-4fe9-b266-0a9941d6801e"/>
       <char id="77b7bb40-c505-4ff2-8ec6-05f3e2aa3958" label="(ci.) Trunk squamation pattern" states="321549a0-2188-42d5-b964-897fefbc481d"/>
-      <char id="f808cb66-9d33-496b-a0a3-67abbaf93f4c" label="(cii.) Endoskeletal fin radials" states="a4d24dcd-290d-473c-9da6-72fed86a4d43" about="#f808cb66-9d33-496b-a0a3-67abbaf93f4c"></char>
-      <char id="b45a6baa-d6f2-4a86-84f9-5438a0389501" label="(ciii.) Dermal fin-rays in tail" states="5b3ea69f-da3b-4835-99a3-a92a56555e71" about="#b45a6baa-d6f2-4a86-84f9-5438a0389501"></char>
+      <char id="f808cb66-9d33-496b-a0a3-67abbaf93f4c" label="(cii.) Endoskeletal fin radials" states="a4d24dcd-290d-473c-9da6-72fed86a4d43" about="#f808cb66-9d33-496b-a0a3-67abbaf93f4c"/>
+      <char id="b45a6baa-d6f2-4a86-84f9-5438a0389501" label="(ciii.) Dermal fin-rays in tail" states="5b3ea69f-da3b-4835-99a3-a92a56555e71" about="#b45a6baa-d6f2-4a86-84f9-5438a0389501"/>
       <char id="4199f358-c44c-4b89-9af6-6cc098599d10" label="(civ.) Paired fins extending posteriorly to cloacal region" states="be560a1a-6014-462e-8f57-b9d862f464a5"/>
       <char id="473619d5-e541-466b-8ebf-40c90c43c37a" label="(cv.) Paired and median gular plate series" states="f846cf42-29e4-4b27-be55-338c4c477d31"/>
       <char id="76dd6b96-aa37-4259-b258-fc6c58456784" label="(cvi.) Series of circumorbital bones" states="5d0135ae-f559-4614-a398-30271e29cc28"/>
@@ -3084,33 +3338,47 @@
       <char id="453375b7-195f-4fcd-824e-9c75dcb5365c" label="(G5.) Dorsal fin(s) with basal cartilage" states="123aa622-1545-4305-ac13-9404126bb5fc" about="#453375b7-195f-4fcd-824e-9c75dcb5365c">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
       </char>
-      <char id="a43da112-154f-470d-9997-4bf1093f86bc" label="(G6.) All premetapterygial radials of pectoral fin articulate with basals (more than one radial per basal)" states="e7a36933-bdae-4a5c-916e-b6d5f82e5831"/>
+      <char id="a43da112-154f-470d-9997-4bf1093f86bc" label="(G6.) All premetapterygial radials of pectoral fin articulate with basals (more than one radial per basal)" states="e7a36933-bdae-4a5c-916e-b6d5f82e5831" about="#a43da112-154f-470d-9997-4bf1093f86bc">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
+      </char>
       <char id="22400d8d-db49-47cc-ab6e-95ed52d9da2a" label="(G7.) Pelvic basipterygium articulates with all but the anteriormost few radials" states="85a06f67-0b0e-4b04-8c7c-71b941e4c08b" about="#22400d8d-db49-47cc-ab6e-95ed52d9da2a">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-</meta>
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
       </char>
       <char id="bd9e9be8-890e-4916-b9fa-eecac512bd6b" label="(G8.) Metameric suprarenal paraganglia" states="8edfc5be-07f1-45d2-ac90-aa1d25e27bf3"/>
       <char id="10202110-2fbd-4128-b276-c47de2b5ae9a" label="(G9.) Nidamentary gland secretes horny egg-case" states="33e3e484-1199-4b1e-aad5-2d2e5489603a"/>
-      <char id="132b99c3-64b2-4771-bc7f-8895f14f4bc8" label="(G10.) Multiple jointing of pectoral radials" states="dbe54d71-68e1-4f8a-a564-649d87d43bfc"/>
+      <char id="132b99c3-64b2-4771-bc7f-8895f14f4bc8" label="(G10.) Multiple jointing of pectoral radials" states="dbe54d71-68e1-4f8a-a564-649d87d43bfc" about="#132b99c3-64b2-4771-bc7f-8895f14f4bc8">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
+      </char>
       <char id="27f7b0fb-1421-47e9-b042-2ac3de2e0a55" label="(G11.) Anterior median sinus formed between anterior and posterior cardinal veins" states="bdbd9970-8ca8-43be-8369-ef1441b18ccc"/>
       <char id="368da4c0-91bd-4a70-b0a8-907a8b224eb7" label="(G12.) Labyrinth opens externally via endolymphatic duct" states="94dc5263-39f6-473c-b09a-20bf49e02187"/>
       <char id="ca328f38-b6f5-418e-8a5e-97f4678f789f" label="(G13.) Mesoadenohypophysis with ventral lobe detached from main pituitary body" states="753e1db8-190c-4a15-8d06-316078b6c8b4"/>
       <char id="6f3f9fb2-a3ad-4d19-ae96-59bf7ce764f7" label="(G14.) Replacement tooth rows attached to mesial surface of jaws (inner dental arcade) by basement membrane" states="2feb7b6a-fa40-426f-8049-6ab05f9db109"/>
       <char id="117e6397-ad31-443e-a83d-5eece6244866" label="(G15.) Teeth with specialized nutritive foramina in basal plate" states="deb39c42-13b2-4a93-b82f-b562e1b279aa"/>
       <char id="1a465880-937b-4d1d-9ada-9e2a4698edb1" label="(H1.) Basibranchials separated by gap from basihyal" states="9877da37-eb43-41df-abde-5ea4c5f9607c"/>
-      <char id="b1cceda5-d104-4a72-8816-e5ec39cf2601" label="(H2.) Tribasal pectoral (propterygium, mesopterygium, metapterygium)" states="db7bfc2f-4e37-4e3a-ae68-6a615e21fc93"/>
+      <char id="b1cceda5-d104-4a72-8816-e5ec39cf2601" label="(H2.) Tribasal pectoral (propterygium, mesopterygium, metapterygium)" states="db7bfc2f-4e37-4e3a-ae68-6a615e21fc93" about="#b1cceda5-d104-4a72-8816-e5ec39cf2601">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">state 0?</meta>
+      </char>
       <char id="24cd5047-4739-4cbb-abd3-1c1768223283" label="(H3.) Ectethmoid process" states="024ee1c9-b367-4463-8d36-ed92cc5e1f6c"/>
-      <char id="77fc2579-b738-4ffd-a197-b95e8f8c0b83" label="(H4.) Shoulder-joint narrowed, with emphasis on propterygial support" states="49e7fdd0-69c6-4a28-92bc-b73e62beea9a"/>
+      <char id="77fc2579-b738-4ffd-a197-b95e8f8c0b83" label="(H4.) Shoulder-joint narrowed, with emphasis on propterygial support" states="49e7fdd0-69c6-4a28-92bc-b73e62beea9a" about="#77fc2579-b738-4ffd-a197-b95e8f8c0b83">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">state 0?</meta>
+      </char>
       <char id="c6c7b7e8-8a98-4e8b-9b30-73fbd53119d9" label="(H5.) Pectoral attachment rotated; primitive &quot;metapterygial axis&quot; transverse or oblique to body axis" states="de4f9585-ed87-473d-aa19-ea3455d65fa4"/>
       <char id="7f20e371-419f-483d-9920-43306627e0ba" label="(H6.) Basiventrals calcified anterior to caudal region" states="bb6623a9-e471-4d61-bfbe-f37cdacda26c"/>
       <char id="8c769596-0084-4f5d-b4f5-8186f011b3f6" label="(H7.) Caudal hypaxial skeleton reduced" states="526b794a-4790-4ea4-9d35-e690a3bc3cfd"/>
       <char id="5b83acf8-765e-49d8-aad8-6ef671666edf" label="(H8.) Hypotic lamina fused to floor of optic capsule, leaving glossopharyngeal canal" states="263369b0-f49a-4837-9e5c-3e9299593c0e"/>
-      <char id="21523736-01ca-44d4-b02f-42552597415f" label="(H9.) Fused puboischiadic bar" states="6d3a275c-c48b-4848-abb9-b18ec8d5825d"/>
+      <char id="21523736-01ca-44d4-b02f-42552597415f" label="(H9.) Fused puboischiadic bar" states="6d3a275c-c48b-4848-abb9-b18ec8d5825d" about="#21523736-01ca-44d4-b02f-42552597415f">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
+      </char>
       <char id="e18cf319-c18c-4205-972e-93bc9c67378d" label="(H10.) (a) Non-growing dermal denticles" states="a985b230-36c4-4a89-aca1-b30abef4d088"/>
       <char id="770acbae-6843-4bf3-9b5d-d2b170551fca" label="(H10.) (b) Growing denticles absent" states="45b87901-8362-4d30-9eaf-bfb3d932dd2a"/>
       <char id="295b0e94-49c6-415d-9ece-0adabb0caa0a" label="(H11.) Notochordal sheath segmented and calcified between membrana elastica interna and externa" states="82fec702-f387-45e8-b412-091956c00b5e"/>
       <char id="b521a74d-c2a5-4e42-aa33-1677c1426e83" label="(H12.) Notochord constricted except intervertebrally" states="9bd02dcc-4e0b-4d93-a906-05d490f6d28c"/>
-      <char id="a0f5e9c8-946e-49aa-b051-c4a5aeb01658" label="(H13.) (a) Fin-spines (where present) have shiny enameloid anteriorly, lack posterior denticles" states="e2df5a3c-a48e-46e5-8952-7b77049ec58b"/>
-      <char id="9d652dcc-a115-47fd-9e93-78f0e79c38b0" label="(H13.) (b) Fin-spines lack trabecular osteodentine in outer trunk layer" states="d409a44b-e2f1-4e74-bbef-c8718cb51cfe"/>
+      <char id="a0f5e9c8-946e-49aa-b051-c4a5aeb01658" label="(H13.) (a) Fin-spines (where present) have shiny enameloid anteriorly, lack posterior denticles" states="e2df5a3c-a48e-46e5-8952-7b77049ec58b" about="#a0f5e9c8-946e-49aa-b051-c4a5aeb01658">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">state 0?</meta>
+      </char>
+      <char id="9d652dcc-a115-47fd-9e93-78f0e79c38b0" label="(H13.) (b) Fin-spines lack trabecular osteodentine in outer trunk layer" states="d409a44b-e2f1-4e74-bbef-c8718cb51cfe" about="#9d652dcc-a115-47fd-9e93-78f0e79c38b0">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">state 0?</meta>
+      </char>
       <char id="bc3ad62d-070e-4364-a307-d86d62fbda06" label="(H14.) Occipital condyles" states="689b7940-4b4f-4fdc-80e6-84a11cdfcc3a"/>
       <char id="cedf68c6-c910-45c7-b754-17163819d26d" label="(H15.) Occipital half-centrum" states="991cac65-5cd0-4f82-851c-04d014dec9cc"/>
       <char id="538dc2d7-7401-4fd9-ab05-638dd0e3fa45" label="(H16.) Bell-shaped basicranial carotid-aortic circuit" states="68ac461a-ee8b-4d27-9fc3-0dddb59c9b53"/>
@@ -3128,7 +3396,9 @@
       <char id="6bc0e085-800a-44b4-89b7-53150d630b43" label="(J3.) Branchial arches located below braincase" states="a1031332-9b76-43ad-915c-1c52daef8244"/>
       <char id="7ad0ee1e-1772-48f2-b090-add5a548e40f" label="(J4.) (a) Synarcual articulates with dorsal basal" states="347d5edc-2fd0-42b3-8d85-b270d87498e5"/>
       <char id="3e7e3369-393d-4c32-9a55-b6f02eec1994" label="(J4.) (b) Synarcual shorter than neurocranium" states="6dc6f34f-9720-41b8-88f8-5c4894c4bb6a"/>
-      <char id="0b07b605-8ca4-4d69-83e1-fbe1b2dc88ff" label="(J5.) Dibasal pectoral (&quot;propterygium&quot; + metapterygium)" states="d64862bb-e909-4c46-823e-3084145ccd21"/>
+      <char id="0b07b605-8ca4-4d69-83e1-fbe1b2dc88ff" label="(J5.) Dibasal pectoral (&quot;propterygium&quot; + metapterygium)" states="d64862bb-e909-4c46-823e-3084145ccd21" about="#0b07b605-8ca4-4d69-83e1-fbe1b2dc88ff">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">state 0?</meta>
+      </char>
       <char id="151902f9-0ef8-4b9a-aa11-c9f4050fd33d" label="(J6.) Erectile dorsal spine and associated cartilage" states="58085f73-ac04-45ca-853d-1a1bf3ab88fd"/>
       <char id="e05df121-c2f1-4bf1-a356-528c3d64b3e0" label="(J7.) Lateral walls of fin-spine lack trabecular osteodentine" states="8222ae85-c4d2-4075-be16-4bb8b8dc4ccf"/>
       <char id="3ed40b6e-ee46-42b3-b3ac-b1a156bbbd1e" label="(J8.) Rostral cartilages" states="56d4d69c-3011-42ea-9a8e-93fe53248cb8"/>
@@ -3292,9 +3562,7 @@
       <char id="e0153366-406a-4b4d-acdc-27315b1a4653" label="(T26.) Pterygo-palatine toothplates widely separated" states="e3dacb4e-ea89-41e8-9a3d-f1754a2a4fe6"/>
       <char id="79a1e0da-87c5-4253-804a-d91b0bdcbdc9" label="(U1.) Labial cavity (nasolachrymal duct)" states="a3c80c0e-b5e7-4b3d-a486-1d4155bd17a5"/>
       <char id="7daf94e8-3ead-447a-9b04-773fe4aacb47" label="(U2.) Tetrapodous locomotion" states="e1572233-5580-4765-948d-31d924f4fee0"/>
-      <char id="5a9693d3-6aab-4e8d-8b1a-a02cd385e988" label="(U3.) Muscles in paired fins segmented" states="24edfdc5-b258-4b59-a5ca-5f37b00ddf7a" about="#5a9693d3-6aab-4e8d-8b1a-a02cd385e988">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">segmented</meta>
-      </char>
+      <char id="5a9693d3-6aab-4e8d-8b1a-a02cd385e988" label="(U3.) Muscles in paired fins segmented" states="24edfdc5-b258-4b59-a5ca-5f37b00ddf7a" about="#5a9693d3-6aab-4e8d-8b1a-a02cd385e988"></char>
       <char id="ffe1c2b6-ae42-4a15-9c13-6d3a054d8873" label="(U4.) Internal structure of lung" states="e81a1e34-5b70-4505-89f9-14362bfbc17a"/>
       <char id="b807ea78-cfcc-4a2a-9200-7c79c221faab" label="(U5.) Pulmonary circulation" states="256fa087-e18a-4090-80e9-0c1dd93b6c0a"/>
       <char id="8011de9f-0964-4b60-ba05-afcc05875ce0" label="(U6.) Two-chambered auricle" states="61a7c267-b77e-4d6f-8bea-6202b296db90"/>
