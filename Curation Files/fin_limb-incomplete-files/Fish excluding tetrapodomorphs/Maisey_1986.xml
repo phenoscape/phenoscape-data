@@ -2655,7 +2655,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>≠</phen:description>
+                <phen:description>not equal</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:4000176"/>
                 </phen:bearer>
@@ -2667,7 +2667,7 @@
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
-                <phen:description>≠</phen:description>
+                <phen:description>not equal</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:4000177"/>
                 </phen:bearer>
@@ -2685,7 +2685,7 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>=</phen:description>
+                <phen:description>equal</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:4000177"/>
                 </phen:bearer>
@@ -2697,10 +2697,16 @@
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
-                <phen:description>=</phen:description>
+                <phen:description>equal</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:4000176"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001671"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -2808,7 +2814,36 @@
       </states>
       <states id="87969e4f-b4c7-4860-ab99-dbcde4ccd35f">
         <state id="81ca17e5-3c4a-40d5-b3ea-ad3508e0c49c" label="absent" symbol="0" about="#81ca17e5-3c4a-40d5-b3ea-ad3508e0c49c"/>
-        <state id="f9f1ad23-e3f0-46b0-855a-24d45d57d975" label="present" symbol="1"/>
+        <state id="f9f1ad23-e3f0-46b0-855a-24d45d57d975" label="present" symbol="1" about="#f9f1ad23-e3f0-46b0-855a-24d45d57d975">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4400000"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:1500007"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001589"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="5c53d93e-cfd8-4051-babe-43b6f01933da">
         <state id="9ec834bd-3391-4118-8bd2-8e2d2edcec14" label="absent" symbol="0"/>
@@ -3539,7 +3574,9 @@
       <char id="64843f93-2d8f-4f54-ac2f-b107f2e2bf01" label="(R6.) Last gill arch articulates with base of preceding arch, not with basibranchial" states="7f98d996-1b1c-43eb-9b7a-b22491381ec5"/>
       <char id="d9441d40-84d2-49eb-a45e-3988cc58a09f" label="(R7.) Orientation of mandibular joint, posterior margin of palatoquadrate erect or sloping backward from jaw articulation: hyomandibula held vertically" states="7dd4ed2b-cdc3-41b8-81bd-3d5d01ffac79"/>
       <char id="b8e32783-a1cd-4348-a7cf-9740fd4f1539" label="(R8.) Hyomandibula and interhyal decoupled from hyoid bar, only loosely connected to symplectic; hyomandibular articulation straddling jugular canal" states="e2d02158-1448-4106-9393-ac931279d6cb"/>
-      <char id="b19c550e-720e-446b-b84c-124aca92f1a3" label="(R9.) Exclusively metapterygial paired fins, with long muscular lobes extending below body" states="87969e4f-b4c7-4860-ab99-dbcde4ccd35f" about="#b19c550e-720e-446b-b84c-124aca92f1a3"/>
+      <char id="b19c550e-720e-446b-b84c-124aca92f1a3" label="(R9.) Exclusively metapterygial paired fins, with long muscular lobes extending below body" states="87969e4f-b4c7-4860-ab99-dbcde4ccd35f" about="#b19c550e-720e-446b-b84c-124aca92f1a3">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
+      </char>
       <char id="9b3a9f0f-a15b-4898-b2d9-4a6f10d692db" label="(R10.) Preaxial side of pectoral endoskeleton rotated to dorsal (&quot;postaxial&quot;) position" states="5c53d93e-cfd8-4051-babe-43b6f01933da"/>
       <char id="5e4908c8-4d95-4971-884d-fc303234b706" label="(R11.) Rostral organ or labial cavity" states="67a23d51-9089-4a0b-b7f5-a8b7e2f71696"/>
       <char id="d12adffe-ac92-463a-8b0f-3738b2d92fed" label="(R12.) Enamel" states="c7f1b465-13ed-463c-9e32-a009c5f12a68"/>
