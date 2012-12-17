@@ -1,5 +1,5 @@
 #NEXUS
-[written Fri Jul 13 17:06:27 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/192.168.0.2]
+[written Mon Dec 17 11:28:35 CST 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.73.61]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -20,28 +20,28 @@ BEGIN CHARACTERS;
 	MATRIX
 	Discoglossus_pictus     0000000001110101020001000001010
 	Discoglossus_jeanneae   0000000001110101020001000001010
-	Bombina_variegata       000000a000000000012021000000110
-	Bombina_orientalis      000000a000000000012021000000110
-	Hyla_andersonii         a000000100000000100000110000000
-	Hyla_arenicolor         a000000100000000100000110000000
-	Hyla_cinerea            a000000100000000100000110000000
-	Hyla_meridonalis        a000000100000000100000110000000
-	Hyla_regilla            a000000100000000100000110000000
-	Hyla_vasta              a000000100000000100000110000000
-	Hyla_versicolor         a000000100000000100000110000000
+	Bombina_variegata       000000{0 1}000000000012021000000110
+	Bombina_orientalis      000000{0 1}000000000012021000000110
+	Hyla_andersonii         {0 1}000000100000000100000110000000
+	Hyla_arenicolor         {0 1}000000100000000100000110000000
+	Hyla_cinerea            {0 1}000000100000000100000110000000
+	Hyla_meridonalis        {0 1}000000100000000100000110000000
+	Hyla_regilla            {0 1}000000100000000100000110000000
+	Hyla_vasta              {0 1}000000100000000100000110000000
+	Hyla_versicolor         {0 1}000000100000000100000110000000
 	Xenopus_laevis          0301001200101032012110020100110
 	Rhinophrynus_dorsalis   03110010000?0004020000002021202
-	Eopelobates             12111?1a111?011c0121?a0111?0100
+	Eopelobates             12111?1{0 1}111?011{1 3}0121?{0 1}0111?0100
 	Macropelobates_osborni  101111???1???1??00112001?1?0201
-	Pelobates_cultripes     12111110011a01110121b1011111201
-	Pelobates_fuscus        12111110011a01110121b1011111201
+	Pelobates_cultripes     12111110011{0 1}01110121{1 2}1011111201
+	Pelobates_fuscus        12111110011{0 1}01110121{1 2}1011111201
 	Elkobatrachus           0000?2??11?????3000021101?11201
 	Scaphiopus_holbrooki    1011111001111121000010110011201
 	Scaphiopus_couchi       1011111001111121000010110011201
 	Spea_bombifrons         0000120101011021000010110011201
 	Spea__hammondi          0000120101011021000010110011201
 	Spea__intermontanus     0000120101011021000010110011201
-	Pelodytes_punctatus     00000001a100000211212aa01000110
+	Pelodytes_punctatus     00000001{0 1}100000211212{0 1}{0 1}01000110
 	Leptobrachium_hasselti  0001020121000002102120111110110
 	Leptobrachium_montanum  0001020121000002102120111110110
 	Scutiger_mammatus       0001020121001002111020111100110
@@ -62,7 +62,7 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1342217187803;
+		timeSaved 1355765315426;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 4617030528251694431;
@@ -71,7 +71,7 @@ Begin MESQUITE;
 		tell It;
 			setID 0 6151910906340785790;
 			mqVersion 275;
-			checksumv 0 3 3661465682 null  getNumChars 31 numChars 31 getNumTaxa 27 numTaxa 27   short false   bits 60129542175   states 60129542175   sumSquaresStatesOnly 2948.0 sumSquares 2948.0 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1;
+			checksumv 0 3 1258009711 null  getNumChars 31 numChars 31 getNumTaxa 27 numTaxa 27   short false   bits 2305843009213693983   states 31   sumSquaresStatesOnly 3264.0 sumSquares -1.0145709240540253E20 longCompressibleToShort true usingShortMatrix false   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -117,7 +117,7 @@ Begin MESQUITE;
 					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
 					colorText  #mesquite.charMatrices.NoColor.NoColor;
 					setBackground White;
-					toggleShowNames on;
+					toggleShowNames off;
 					toggleShowTaxonNames on;
 					toggleTight off;
 					toggleThinRows off;
