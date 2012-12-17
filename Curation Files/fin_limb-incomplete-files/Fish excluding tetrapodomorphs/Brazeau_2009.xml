@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6.3" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
@@ -22,11 +22,13 @@
       <meta content="Akmonistion" datatype="xsd:string" id="meta10" property="bean:Name" xsi:type="nex:LiteralMeta"/>
       <meta content="1" datatype="xsd:integer" id="meta9" property="bean:Index" xsi:type="nex:LiteralMeta"/>
       <meta content="1" datatype="xsd:integer" id="meta8" property="msq:taxonUID" xsi:type="nex:LiteralMeta"/>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="nex:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/PaleoDBTaxon_248784"/>
     </otu>
     <otu about="#otu11" id="otu11" label="Bothriolepis">
       <meta content="Bothriolepis" datatype="xsd:string" id="meta14" property="bean:Name" xsi:type="nex:LiteralMeta"/>
       <meta content="2" datatype="xsd:integer" id="meta13" property="bean:Index" xsi:type="nex:LiteralMeta"/>
       <meta content="2" datatype="xsd:integer" id="meta12" property="msq:taxonUID" xsi:type="nex:LiteralMeta"/>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="nex:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/PaleoDBTaxon_176322"/>
     </otu>
     <otu about="#otu15" id="otu15" label="Brachyacanthus">
       <meta content="Brachyacanthus" datatype="xsd:string" id="meta18" property="bean:Name" xsi:type="nex:LiteralMeta"/>
@@ -37,6 +39,7 @@
       <meta content="Brindabellaspis" datatype="xsd:string" id="meta22" property="bean:Name" xsi:type="nex:LiteralMeta"/>
       <meta content="4" datatype="xsd:integer" id="meta21" property="bean:Index" xsi:type="nex:LiteralMeta"/>
       <meta content="4" datatype="xsd:integer" id="meta20" property="msq:taxonUID" xsi:type="nex:LiteralMeta"/>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="nex:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/PaleoDBTaxon_34287"/>
     </otu>
     <otu about="#otu23" id="otu23" label="Brochoadmones">
       <meta content="Brochoadmones" datatype="xsd:string" id="meta26" property="bean:Name" xsi:type="nex:LiteralMeta"/>
@@ -293,8 +296,34 @@
         <state id="state224" label="present" symbol="1"/>
       </states>
       <states id="states225">
-        <state id="state227" label="absent" symbol="0"/>
-        <state id="state228" label="present" symbol="1"/>
+        <state id="state227" label="absent" symbol="0" about="#state227">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000172"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state228" label="present" symbol="1" about="#state228">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000172"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states229">
         <state id="state231" label="monodontode" symbol="0"/>
@@ -670,15 +699,95 @@
         <state id="state600" label="absent" symbol="1"/>
       </states>
       <states id="states601">
-        <state id="state603" label="ventral and dorsal (scapular) components" symbol="0"/>
-        <state id="state604" label="ventral components only" symbol="1"/>
+        <state id="state603" label="ventral and dorsal (scapular) components" symbol="0" about="#state603">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001421"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state604" label="ventral components only" symbol="1" about="#state604">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001421"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states605">
-        <state id="state607" label="present" symbol="0"/>
-        <state id="state608" label="absent" symbol="1"/>
+        <state id="state607" label="present" symbol="0" about="#state607">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001421"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001772"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0002100"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state608" label="absent" symbol="1" about="#state608">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001421"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001772"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0002100"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states609">
-        <state id="state611" label="present" symbol="0"/>
+        <state id="state611" label="present" symbol="0" about="#state611">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000779"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001772"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000779"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state612" label="absent" symbol="1"/>
       </states>
       <states id="states613">
@@ -1262,13 +1371,13 @@
       <char about="#char337" id="char337" label="Branchiostegal ossi?cations" states="states336">
         <meta content="false" datatype="xsd:boolean" id="meta840" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char341" id="char341" label="Imbricated branchiostegal ossi?cations" states="states340">
+      <char about="#char341" id="char341" label="Imbricated branchiostegal ossifications" states="states340">
         <meta content="false" datatype="xsd:boolean" id="meta841" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char345" id="char345" label="Opercular (submarginal) ossi?cation" states="states344">
+      <char about="#char345" id="char345" label="Opercular (submarginal) ossification" states="states344">
         <meta content="false" datatype="xsd:boolean" id="meta842" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char349" id="char349" label="Shape of opercular (submarginal) ossi?cation" states="states348">
+      <char about="#char349" id="char349" label="Shape of opercular (submarginal) ossification" states="states348">
         <meta content="false" datatype="xsd:boolean" id="meta843" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char353" id="char353" label="Gular plates" states="states352">
@@ -1456,6 +1565,7 @@
       </char>
       <char about="#char598" id="char598" label="Macromeric dermal shoulder girdle" states="states597">
         <meta content="false" datatype="xsd:boolean" id="meta905" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">macromeric?</meta>
       </char>
       <char about="#char602" id="char602" label="Dermal shoulder girdle composition" states="states601">
         <meta content="false" datatype="xsd:boolean" id="meta906" property="nr:selected" xsi:type="nex:LiteralMeta"/>
