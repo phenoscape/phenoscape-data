@@ -1,5 +1,5 @@
 #NEXUS
-[written Mon Nov 26 16:57:23 CST 2012 by Mesquite  version 2.75 (build 566) at NI8137.local/172.21.16.13]
+[written Tue Dec 18 09:55:53 CST 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.72.226]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -94,11 +94,17 @@ BEGIN MESQUITECHARMODELS;
 	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  28;
 END;
 
+BEGIN NOTES;
+
+	SU  C = 26 N = selected B = TRUE;
+
+END;
+
 Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1353970643969;
+		timeSaved 1355846154169;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 3292107866836356530 013b3ef035cd1;
@@ -106,6 +112,10 @@ Begin MESQUITE;
 		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
 		tell It;
 			setID 0 322137796194406351;
+			tell It;
+				setSelected  26;
+				attachments ;
+			endTell;
 			mqVersion 275;
 			checksumv 0 3 1926508793 null  getNumChars 28 numChars 28 getNumTaxa 62 numTaxa 62   short true   bits 255   states 255   sumSquaresStatesOnly 488764.0 sumSquares 488764.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
@@ -119,8 +129,8 @@ Begin MESQUITE;
 			setAnnotationSize 0;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
-			setSize 1920 1142;
-			setLocation -1920 0;
+			setSize 1020 649;
+			setLocation 111 22;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -142,8 +152,8 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1820 1075;
-					setLocation -1920 0;
+					setSize 920 582;
+					setLocation 111 22;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
@@ -206,8 +216,8 @@ Begin MESQUITE;
 						setAnnotationSize 20;
 						setFontIncAnnot 0;
 						setFontIncExp 0;
-						setSize 1820 1075;
-						setLocation -1920 0;
+						setSize 920 582;
+						setLocation 111 22;
 						setFont SanSerif;
 						setFontSize 10;
 						getToolPalette;
