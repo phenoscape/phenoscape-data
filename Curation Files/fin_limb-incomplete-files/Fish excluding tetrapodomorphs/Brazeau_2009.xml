@@ -721,8 +721,46 @@
         <state id="state596" label="keeled with sloping lateral margins" symbol="1"/>
       </states>
       <states id="states597">
-        <state id="state599" label="present" symbol="0"/>
-        <state id="state600" label="absent" symbol="1"/>
+        <state id="state599" label="present" symbol="0" about="#state599">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004756">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001421"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state600" label="absent" symbol="1" about="#state600">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004756">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001421"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states601">
         <state id="state603" label="ventral and dorsal (scapular) components" symbol="0" about="#state603">
@@ -801,6 +839,9 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002053"/>
+                </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0001772"/>
                   <phen:related_entity>
@@ -811,11 +852,47 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state612" label="absent" symbol="1"/>
+        <state id="state612" label="absent" symbol="1" about="#state612">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002053"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states613">
-        <state id="state615" label="absent" symbol="0"/>
-        <state id="state616" label="present" symbol="1"/>
+        <state id="state615" label="absent" symbol="0" about="#state615">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/24529b1a-7c5e-4b42-b8e2-fd61c8eaf1a6"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state616" label="present" symbol="1" about="#state616">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/24529b1a-7c5e-4b42-b8e2-fd61c8eaf1a6"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states617">
         <state id="state619" label="absent" symbol="0" about="#state619">
@@ -945,10 +1022,41 @@
       <states id="states629">
         <state id="state631" label="horizontal" symbol="0" about="#state631">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000684">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0006849"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001855"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
-        <state id="state632" label="deeply angled" symbol="1"/>
+        <state id="state632" label="deeply angled" symbol="1" about="#state632">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000684">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0006849"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states633">
         <state id="state635" label="?attened or strongly ovate" symbol="0" about="#state635">
@@ -2014,7 +2122,6 @@
       </char>
       <char about="#char598" id="char598" label="Macromeric dermal shoulder girdle" states="states597">
         <meta content="false" datatype="xsd:boolean" id="meta905" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">macromeric?</meta>
       </char>
       <char about="#char602" id="char602" label="Dermal shoulder girdle composition" states="states601">
         <meta content="false" datatype="xsd:boolean" id="meta906" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -2040,7 +2147,6 @@
       </char>
       <char about="#char630" id="char630" label="Ventral margin of separate scapular ossification" states="states629">
         <meta content="false" datatype="xsd:boolean" id="meta913" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">?</meta>
       </char>
       <char about="#char634" id="char634" label="Shape of scapular process cross section" states="states633">
         <meta content="false" datatype="xsd:boolean" id="meta914" property="nr:selected" xsi:type="nex:LiteralMeta"/>
