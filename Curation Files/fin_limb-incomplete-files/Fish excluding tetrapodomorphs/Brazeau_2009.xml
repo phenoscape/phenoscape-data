@@ -1053,6 +1053,9 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/686e1350-85c3-4e2e-8a44-9b8622d399b4"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -1139,8 +1142,46 @@
         </state>
       </states>
       <states id="states641">
-        <state id="state643" label="present" symbol="0"/>
-        <state id="state644" label="absent" symbol="1"/>
+        <state id="state643" label="present" symbol="0" about="#state643">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/e7ded535-3900-4481-a858-169b44db5192"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state644" label="absent" symbol="1" about="#state644">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/e7ded535-3900-4481-a858-169b44db5192"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states645">
         <state id="state647" label="mineralised all around" symbol="0" about="#state647">
@@ -1419,8 +1460,40 @@
         </state>
       </states>
       <states id="states681">
-        <state id="state683" label="absent" symbol="0"/>
-        <state id="state684" label="present" symbol="1"/>
+        <state id="state683" label="absent" symbol="0" about="#state683">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002053"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0000151"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state684" label="present" symbol="1" about="#state684">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002053"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/236c3478-e06b-479c-a469-835d854feccf"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0000151"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states685">
         <state id="state687" label="absent" symbol="0" about="#state687">
@@ -2131,7 +2204,6 @@
       </char>
       <char about="#char610" id="char610" label="Pectoral fenestra completely encircled by dermal shoulder armour" states="states609">
         <meta content="false" datatype="xsd:boolean" id="meta908" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">dermal shoulder armor?</meta>
       </char>
       <char about="#char614" id="char614" label="Median dorsal plate" states="states613">
         <meta content="false" datatype="xsd:boolean" id="meta909" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -2156,7 +2228,6 @@
       </char>
       <char about="#char642" id="char642" label="Endoskeletal postbranchial lamina on scapular process" states="states641">
         <meta content="false" datatype="xsd:boolean" id="meta916" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">?</meta>
       </char>
       <char about="#char646" id="char646" label="Mineralisation of internal surface of scapular blade" states="states645">
         <meta content="false" datatype="xsd:boolean" id="meta917" property="nr:selected" xsi:type="nex:LiteralMeta"/>
