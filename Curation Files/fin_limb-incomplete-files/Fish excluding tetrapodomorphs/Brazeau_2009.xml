@@ -350,8 +350,34 @@
         <state id="state252" label="absent" symbol="1"/>
       </states>
       <states id="states253">
-        <state id="state255" label="absent" symbol="0"/>
-        <state id="state256" label="present" symbol="1"/>
+        <state id="state255" label="absent" symbol="0" about="#state255">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002291"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state256" label="present" symbol="1" about="#state256">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002291"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states257">
         <state id="state259" label="vertical rows" symbol="0"/>
@@ -1587,8 +1613,46 @@
         </state>
       </states>
       <states id="states725">
-        <state id="state727" label="absent" symbol="0"/>
-        <state id="state728" label="present" symbol="1"/>
+        <state id="state727" label="absent" symbol="0" about="#state727">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state728" label="present" symbol="1" about="#state728">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states729">
         <state id="state731" label="absent" symbol="0"/>
@@ -1750,10 +1814,10 @@
       <char about="#char328" id="char328" label="Branchiostegal plate series along ventral margin of lower jaw" states="states327">
         <meta content="false" datatype="xsd:boolean" id="meta838" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char332" id="char332" label="Branchiostegal ossi?cations" states="states331">
+      <char about="#char332" id="char332" label="Branchiostegal ossifications" states="states331">
         <meta content="false" datatype="xsd:boolean" id="meta839" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char337" id="char337" label="Branchiostegal ossi?cations" states="states336">
+      <char about="#char337" id="char337" label="Branchiostegal ossifications" states="states336">
         <meta content="false" datatype="xsd:boolean" id="meta840" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char341" id="char341" label="Imbricated branchiostegal ossifications" states="states340">
