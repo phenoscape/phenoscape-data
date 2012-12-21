@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6.3" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -17,7 +17,7 @@
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/PaleoDBTaxon_226294"/>
     </otu>
     <otu id="65a79c28-7e54-45a2-bfad-18a3ba3491d8" label="Cheirolepis" about="#65a79c28-7e54-45a2-bfad-18a3ba3491d8">
-      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request in VTO, orphan in PBDB; polymorphic (0/1) for character 18, 36. AB 2/2/12</meta>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/PaleoDBTaxon_209435"/>
     </otu>
     <otu id="c221b060-b36b-481f-8ca7-db90de54461b" label="Crassigyrinus" about="#c221b060-b36b-481f-8ca7-db90de54461b">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/PaleoDBTaxon_36967"/>
@@ -281,6 +281,10 @@
       <states id="99e1c2ab-0654-4f73-b0ce-cfb3d6865ed3">
         <state id="82a5a337-af48-48f9-931a-601956a51e79" label="present" symbol="0"/>
         <state id="e0511ac1-ee4c-4b53-ac58-54c422d832ff" label="absent" symbol="1"/>
+        <polymorphic_state_set id="e44a522f-36b2-4d8e-b111-cb455ba92675">
+          <member state="82a5a337-af48-48f9-931a-601956a51e79"/>
+          <member state="e0511ac1-ee4c-4b53-ac58-54c422d832ff"/>
+        </polymorphic_state_set>
       </states>
       <states id="59e2e555-4f40-4592-a8a6-8afd2686bca8">
         <state id="bc235483-3cbe-4b80-b70c-4054c5202846" label="single bone which contacts the extrascapular posteriorly and the intertemporal or dermosphenotic anteriorly" symbol="0"/>
@@ -292,19 +296,145 @@
         <state id="d8623522-b949-4b2f-9953-cea2f2f5557f" label="large, posteriorly open notch" symbol="1"/>
       </states>
       <states id="71793976-b7f5-445a-8834-c1e65606133f">
-        <state id="27775881-dc34-454f-87b3-f805d5a2da8c" label="present" symbol="0"/>
-        <state id="0f1f0bd3-50ee-4fcf-bb1a-a43c890b575f" label="absent" symbol="1"/>
+        <state id="27775881-dc34-454f-87b3-f805d5a2da8c" label="present" symbol="0" about="#27775881-dc34-454f-87b3-f805d5a2da8c">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="0f1f0bd3-50ee-4fcf-bb1a-a43c890b575f" label="absent" symbol="1" about="#0f1f0bd3-50ee-4fcf-bb1a-a43c890b575f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="d2e5516a-6fcf-4a88-a7fe-71e05bbc1c34">
-        <state id="68ebf3ee-55e6-45ee-8b35-e46306225d00" label="four" symbol="0"/>
-        <state id="6229aa30-3195-465d-934a-9f3d6507fade" label="two" symbol="1"/>
-        <state id="92f45985-a59f-461f-b3c4-5a842f3f5896" label="three" symbol="2"/>
-        <state id="69758fe8-8e75-4fc5-b8d2-f04a9e125fa2" label="five" symbol="3"/>
+        <state id="68ebf3ee-55e6-45ee-8b35-e46306225d00" label="four" symbol="0" about="#68ebf3ee-55e6-45ee-8b35-e46306225d00">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663"/>
+                </phen:bearer>
+                <phen:quality count="4">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="6229aa30-3195-465d-934a-9f3d6507fade" label="two" symbol="1" about="#6229aa30-3195-465d-934a-9f3d6507fade">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663"/>
+                </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="92f45985-a59f-461f-b3c4-5a842f3f5896" label="three" symbol="2" about="#92f45985-a59f-461f-b3c4-5a842f3f5896">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663"/>
+                </phen:bearer>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="69758fe8-8e75-4fc5-b8d2-f04a9e125fa2" label="five" symbol="3" about="#69758fe8-8e75-4fc5-b8d2-f04a9e125fa2">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663"/>
+                </phen:bearer>
+                <phen:quality count="5">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="75938dc2-eb99-44d0-a99c-d79d48712840">
-        <state id="53b468f1-1594-4558-bded-86fdc3e4844f" label="median extrascapular overlapped by lateral extrascapulars" symbol="0"/>
-        <state id="49b8f03b-4b4c-4eaf-b861-2a578f85399b" label="median extrascapular overlaps lateral extrascapuIars" symbol="1"/>
-        <state id="c1fd6a94-6ed2-43e5-8602-2f1169ce3b23" label="median extrascapular abuts the lateral extrascapulars" symbol="2"/>
+        <state id="53b468f1-1594-4558-bded-86fdc3e4844f" label="median extrascapular overlapped by lateral extrascapulars" symbol="0" about="#53b468f1-1594-4558-bded-86fdc3e4844f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/c64df71c-f11b-46d2-af57-e831599b36c2"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/c26ab59e-0ee6-4f36-81c2-c25747e9bbd9"/>
+                  <phen:related_entity>
+                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/06135b78-aaec-4d74-8183-b72d4629d713"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="49b8f03b-4b4c-4eaf-b861-2a578f85399b" label="median extrascapular overlaps lateral extrascapuIars" symbol="1" about="#49b8f03b-4b4c-4eaf-b861-2a578f85399b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/c64df71c-f11b-46d2-af57-e831599b36c2"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/236c3478-e06b-479c-a469-835d854feccf"/>
+                  <phen:related_entity>
+                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/06135b78-aaec-4d74-8183-b72d4629d713"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="c1fd6a94-6ed2-43e5-8602-2f1169ce3b23" label="median extrascapular abuts the lateral extrascapulars" symbol="2" about="#c1fd6a94-6ed2-43e5-8602-2f1169ce3b23">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/c64df71c-f11b-46d2-af57-e831599b36c2"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/43ea288d-dcfb-4bc9-9c2b-b9f43c7f1bf3"/>
+                  <phen:related_entity>
+                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/06135b78-aaec-4d74-8183-b72d4629d713"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="544bb3dd-09e9-4fa1-a18b-eb2ef93b05c0">
         <state id="ff449f5c-c6cf-4663-9249-318e8def1387" label="absent" symbol="0"/>
@@ -779,7 +909,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9bfa53a9-c242-45c2-a092-f2af7e031907"/>
+                  <phen:typeref about="UBERON:4200022"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462"/>
@@ -793,7 +923,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9bfa53a9-c242-45c2-a092-f2af7e031907"/>
+                  <phen:typeref about="UBERON:4200022"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467"/>
@@ -1127,7 +1257,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/80014460-e027-435a-a197-822f1bfa4309"/>
+                  <phen:typeref about="UBERON:4200023"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000141"/>
@@ -1141,7 +1271,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/80014460-e027-435a-a197-822f1bfa4309"/>
+                  <phen:typeref about="UBERON:4200023"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000141"/>
@@ -2143,6 +2273,7 @@
         <cell char="ba728de1-5479-4f61-bcc7-c917d801dd9b" state="712f23b5-55c7-42c2-991a-e28202645108"/>
         <cell char="03786265-41e4-4595-9cb5-1d3c99bfb90b" state="6cdab8c2-2f06-4190-894a-c4fce108fd06"/>
         <cell char="65021072-e228-4633-be47-c8f8f1e49e06" state="24e5d1ed-dce1-4396-805a-accb88d4247d"/>
+        <cell char="81b613c2-fbbe-4a16-9414-45a52cf45348" state="e44a522f-36b2-4d8e-b111-cb455ba92675"/>
         <cell char="a58580a3-f06a-4a8c-a1ce-988f9fd8cedb" state="bc235483-3cbe-4b80-b70c-4054c5202846"/>
         <cell char="340ca173-27ca-4ca6-9d42-c70cb18b9d3a" state="efd07fd6-6069-4b29-8aed-7f03e772e2b6"/>
         <cell char="9f3b3563-e1d4-43c3-8836-0d9548c7b705" state="27775881-dc34-454f-87b3-f805d5a2da8c"/>
