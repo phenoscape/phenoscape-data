@@ -1391,14 +1391,73 @@ Taxa need to be added to PBDB see google doc and Comments field (12/1/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0011692"/>
+                  <phen:typeref about="UBERON:0011692">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:4200023"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="e4e369a9-ca9d-4e71-806b-4d8c54c85416" label="absent" symbol="1"/>
-        <state id="c5fd5e63-9d9b-40b6-a7b8-3de7733ba755" label="no spine" symbol="2"/>
+        <state id="e4e369a9-ca9d-4e71-806b-4d8c54c85416" label="absent" symbol="1" about="#e4e369a9-ca9d-4e71-806b-4d8c54c85416">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011692">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:4200023"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="c5fd5e63-9d9b-40b6-a7b8-3de7733ba755" label="no spine" symbol="2" about="#c5fd5e63-9d9b-40b6-a7b8-3de7733ba755">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/8b4f81bb-0894-4939-95a9-55b8f7696dfa">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4200023"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="a165374c-ab94-49df-9405-0f3741921bbd">
         <state id="d0250843-25c4-4316-9ec7-392c60a6fbe2" label="short" symbol="0" about="#d0250843-25c4-4316-9ec7-392c60a6fbe2">
