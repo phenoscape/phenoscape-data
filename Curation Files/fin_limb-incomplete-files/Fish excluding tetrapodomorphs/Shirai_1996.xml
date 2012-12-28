@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.6" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="9b6b9e56-8b88-4303-a05f-27dd4c80242f">
     <otu id="3dfa8cf2-e775-48b0-b107-4660c385e41e" label="OUTGROUP"/>
     <otu id="5f03806d-3fce-4435-a372-69a686035fb7" label="Heterodontus" about="#5f03806d-3fce-4435-a372-69a686035fb7">
@@ -490,12 +490,37 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/b43707a7-e367-443e-ba07-1d7128a7685e"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="db547647-f2cd-4a66-9036-104426cbf10c" label="articulated with the synarcual by a ball and socket articulation" symbol="3"/>
+        <state id="db547647-f2cd-4a66-9036-104426cbf10c" label="articulated with the synarcual by a ball and socket articulation" symbol="3" about="#db547647-f2cd-4a66-9036-104426cbf10c">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0006849"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002278"/>
+                  <phen:related_entity>
+                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/b43707a7-e367-443e-ba07-1d7128a7685e"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="8d895ac8-ba6d-4d0b-b563-ea1c9e30a9cc">
         <state id="a547330a-5bc8-47b3-9592-c426997b0a56" label="single, irregular-shaped condyle oriented vertically or obliquely" symbol="0" about="#a547330a-5bc8-47b3-9592-c426997b0a56">
@@ -561,12 +586,102 @@
         </state>
       </states>
       <states id="19fc5707-a3c5-421d-9518-7029a8e313e4">
-        <state id="bfb1c898-9c1f-4a18-80ff-37017e5b7d59" label="separated" symbol="0"/>
-        <state id="b738b90c-10a1-4ead-9e3c-3cb4333e42a8" label="fused" symbol="1"/>
+        <state id="bfb1c898-9c1f-4a18-80ff-37017e5b7d59" label="separated" symbol="0" about="#bfb1c898-9c1f-4a18-80ff-37017e5b7d59">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:1500007"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:4400000"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="b738b90c-10a1-4ead-9e3c-3cb4333e42a8" label="fused" symbol="1" about="#b738b90c-10a1-4ead-9e3c-3cb4333e42a8">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:1500007"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:4400000"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="75aefa6a-82ae-46b5-9df3-09b58340e5f1">
-        <state id="69b7d301-0366-4ba3-a3d8-66473875293a" label="not expanded distally" symbol="0"/>
-        <state id="e6c21519-08bd-4bb4-bdc9-02ece53cdf1f" label="expanded distally and curved in opposite directions to make an interspace between them" symbol="1"/>
+        <state id="69b7d301-0366-4ba3-a3d8-66473875293a" label="not expanded distally" symbol="0" about="#69b7d301-0366-4ba3-a3d8-66473875293a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:1500007"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4400000"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="e6c21519-08bd-4bb4-bdc9-02ece53cdf1f" label="expanded distally and curved in opposite directions to make an interspace between them" symbol="1" about="#e6c21519-08bd-4bb4-bdc9-02ece53cdf1f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:1500007"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4400000"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:1500007"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000406"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4400000"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000406"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="5f4807e3-cd4d-4bb2-8768-0c058384a324">
         <state id="4376afcc-4c4a-4340-a126-d2c30613062c" label="with radials" symbol="0" about="#4376afcc-4c4a-4340-a126-d2c30613062c">
@@ -1074,18 +1189,14 @@
       <char id="1ab56648-228e-45f2-aa6f-fb72b245c09d" label="Symphysial fusion of right and left halves of coracoid cartilages" states="f889cdf3-8338-4044-a43e-679dbc4c1c24" about="#1ab56648-228e-45f2-aa6f-fb72b245c09d">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need coracoid cartilage?</meta>
       </char>
-      <char id="f47cbaef-8026-4ec3-b5a6-65f49c4e91b2" label="Scapular process" states="079ac770-da10-453c-a531-7bb91e23d64b" about="#f47cbaef-8026-4ec3-b5a6-65f49c4e91b2">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">synarcual?</meta>
-      </char>
-      <char id="4a8bf7c3-c0c1-4084-a696-975c95fadd86" label="Articular process of the coracoid for the pectoral basals" states="8d895ac8-ba6d-4d0b-b563-ea1c9e30a9cc" about="#4a8bf7c3-c0c1-4084-a696-975c95fadd86">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-- basals?</meta>
-      </char>
-      <char id="db483740-e3b0-487d-a0f8-300ec81911fc" label="Pectoral propterygium and mesopterygium" states="2ec6d3d8-6da7-4939-bf84-a986faf116d1" about="#db483740-e3b0-487d-a0f8-300ec81911fc"></char>
-      <char id="453b25ca-99b5-43a2-80e5-7f8acd4ef4c8" label="Pectoral mesopterygium and metapterygium" states="19fc5707-a3c5-421d-9518-7029a8e313e4" about="#453b25ca-99b5-43a2-80e5-7f8acd4ef4c8"></char>
-      <char id="bb02e098-1d05-4507-8772-8ed00c769bb2" label="Pectoral mesopterygium and metapterygium" states="75aefa6a-82ae-46b5-9df3-09b58340e5f1" about="#bb02e098-1d05-4507-8772-8ed00c769bb2"></char>
+      <char id="f47cbaef-8026-4ec3-b5a6-65f49c4e91b2" label="Scapular process" states="079ac770-da10-453c-a531-7bb91e23d64b" about="#f47cbaef-8026-4ec3-b5a6-65f49c4e91b2"></char>
+      <char id="4a8bf7c3-c0c1-4084-a696-975c95fadd86" label="Articular process of the coracoid for the pectoral basals" states="8d895ac8-ba6d-4d0b-b563-ea1c9e30a9cc" about="#4a8bf7c3-c0c1-4084-a696-975c95fadd86"></char>
+      <char id="db483740-e3b0-487d-a0f8-300ec81911fc" label="Pectoral propterygium and mesopterygium" states="2ec6d3d8-6da7-4939-bf84-a986faf116d1" about="#db483740-e3b0-487d-a0f8-300ec81911fc"/>
+      <char id="453b25ca-99b5-43a2-80e5-7f8acd4ef4c8" label="Pectoral mesopterygium and metapterygium" states="19fc5707-a3c5-421d-9518-7029a8e313e4" about="#453b25ca-99b5-43a2-80e5-7f8acd4ef4c8"/>
+      <char id="bb02e098-1d05-4507-8772-8ed00c769bb2" label="Pectoral mesopterygium and metapterygium" states="75aefa6a-82ae-46b5-9df3-09b58340e5f1" about="#bb02e098-1d05-4507-8772-8ed00c769bb2"/>
       <char id="da2a99ba-207f-4c6b-9eb1-981040720cc1" label="Pectoral propterygium" states="5f4807e3-cd4d-4bb2-8768-0c058384a324"/>
       <char id="70b2dbc1-2a62-4b29-bb50-e17e94ce4888" label="Pectoral propterygium" states="5feec5e1-d826-48dd-97c6-640864aad676"/>
-      <char id="1f44549c-2f95-4b69-a6d6-ee17c5cfe8eb" label="Pectoral metapterygium" states="4464d43e-c277-4a0e-8553-ab3f4ec0db23" about="#1f44549c-2f95-4b69-a6d6-ee17c5cfe8eb"></char>
+      <char id="1f44549c-2f95-4b69-a6d6-ee17c5cfe8eb" label="Pectoral metapterygium" states="4464d43e-c277-4a0e-8553-ab3f4ec0db23" about="#1f44549c-2f95-4b69-a6d6-ee17c5cfe8eb"/>
       <char id="de3428e5-1127-42ba-bfb7-4ccefe8738ab" label="Pectoral fin radials" states="958ef37d-cc69-48cf-babe-84a6fe9d4504"/>
       <char id="43fbbff8-1e6d-4ba4-91b0-07fd7b4403ed" label="Neighboring radials of the pectoral fin" states="dbc51f1e-abc4-49f8-a9da-04c5593cc0d3"/>
       <char id="074d859a-a401-4194-8ebb-da56c3b33c11" label="Pelvic fin" states="b098fa50-879c-454a-bd1a-1a30d3410891"/>
