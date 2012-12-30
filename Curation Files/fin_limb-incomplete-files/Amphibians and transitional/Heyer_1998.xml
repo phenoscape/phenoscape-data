@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex 1.6" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -798,10 +798,86 @@
         <state id="c87bcc1f-eda7-480d-b9f2-8e82e3360acc" label="partially concealed, but still visable externally" symbol="1"/>
       </states>
       <states id="8c8b5e9a-e3d6-4457-a67b-0bb3adc1a384">
-        <state id="23a15906-dfc8-4fe2-bd1c-e0114bd79f78" label="thumb without modifications" symbol="0"/>
-        <state id="f50d402d-b8b6-4766-94c2-8928c78d7f08" label="thumb with one horny spine" symbol="1"/>
-        <state id="3226ed80-95f8-4d6b-b5a2-194a3feed9c3" label="thumb with two horny spines" symbol="2"/>
-        <state id="64e11e3d-4c58-4a78-b096-5728d446f172" label="thumb with pair of nuptial pads" symbol="3"/>
+        <state id="23a15906-dfc8-4fe2-bd1c-e0114bd79f78" label="thumb without modifications" symbol="0" about="#23a15906-dfc8-4fe2-bd1c-e0114bd79f78">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001463">
+                    <phen:qualifier relation="BFO:0000052">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000384"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="f50d402d-b8b6-4766-94c2-8928c78d7f08" label="thumb with one horny spine" symbol="1" about="#f50d402d-b8b6-4766-94c2-8928c78d7f08">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008260">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001463"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="3226ed80-95f8-4d6b-b5a2-194a3feed9c3" label="thumb with two horny spines" symbol="2" about="#3226ed80-95f8-4d6b-b5a2-194a3feed9c3">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008260">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001463"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="64e11e3d-4c58-4a78-b096-5728d446f172" label="thumb with pair of nuptial pads" symbol="3" about="#64e11e3d-4c58-4a78-b096-5728d446f172">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0012243">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001463"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="571c00b4-10f5-4c1b-94eb-cdea8ccf3e95">
         <state id="d00d1615-eefb-4d34-92a1-c7ab0f1d43e9" label="no dorsal folds" symbol="0"/>
@@ -810,21 +886,288 @@
         <state id="5b5471f3-214a-4464-87f6-a693c9041a7c" label="three to five well developed pairs" symbol="3"/>
       </states>
       <states id="4479c0cf-c161-4822-9f67-ff76123967d9">
-        <state id="d03340c7-5dd0-4168-9ecd-fe6ad6faf022" label="toe tips narrow" symbol="0"/>
-        <state id="362adbea-cc46-43bd-a0c3-22f02f3cb275" label="toe tips noticeably expanded without any dorsal modification" symbol="1"/>
-        <state id="20773c0e-ae13-41ac-a35a-24fe7778af48" label="toe tips expanded, usually in the form of small disks with a single dorsal groove in larger disks " symbol="2"/>
-        <state id="3aac1af7-913e-48a3-92d2-3634bdae4656" label="toe tips with small disks, dorsal surfaces with 2-5 grooves" symbol="3"/>
-        <state id="4fa822b4-1c90-4881-90c8-a09bfbf06383" label="toe tips disked with a pair of dorsal scutes" symbol="4"/>
+        <state id="d03340c7-5dd0-4168-9ecd-fe6ad6faf022" label="toe tips narrow" symbol="0" about="#d03340c7-5dd0-4168-9ecd-fe6ad6faf022">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001840">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001466"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000599"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="362adbea-cc46-43bd-a0c3-22f02f3cb275" label="toe tips noticeably expanded without any dorsal modification" symbol="1" about="#362adbea-cc46-43bd-a0c3-22f02f3cb275">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001840">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001466"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="20773c0e-ae13-41ac-a35a-24fe7778af48" label="toe tips expanded, usually in the form of small disks with a single dorsal groove in larger disks " symbol="2" about="#20773c0e-ae13-41ac-a35a-24fe7778af48">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001840">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001466"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001840">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001466"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001874"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006846">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001466"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/43e83028-4821-437f-9e4c-4163b0d379ea"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="3aac1af7-913e-48a3-92d2-3634bdae4656" label="toe tips with small disks, dorsal surfaces with 2-5 grooves" symbol="3" about="#3aac1af7-913e-48a3-92d2-3634bdae4656">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001840">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001466"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001874"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006846">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001466"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002118"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="4fa822b4-1c90-4881-90c8-a09bfbf06383" label="toe tips disked with a pair of dorsal scutes" symbol="4" about="#4fa822b4-1c90-4881-90c8-a09bfbf06383">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001840">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001466"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001874"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002294">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001466"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/77659721-3bbb-473b-bf5f-49cc0d7447cd"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="07989545-6707-4fef-a1d4-22718f2b202f">
-        <state id="6c0fa93b-7b90-4a1d-964b-65ee8634856d" label="fold" symbol="0"/>
-        <state id="0d90079a-a0ff-47b3-8910-7c7af00d9c46" label="tubercle" symbol="1"/>
+        <state id="6c0fa93b-7b90-4a1d-964b-65ee8634856d" label="fold" symbol="0" about="#6c0fa93b-7b90-4a1d-964b-65ee8634856d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010168"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001910"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="0d90079a-a0ff-47b3-8910-7c7af00d9c46" label="tubercle" symbol="1" about="#0d90079a-a0ff-47b3-8910-7c7af00d9c46">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010168"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9460cdfd-748c-4df9-93e3-97ca0e393da2"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="386100cd-bab1-4969-af5f-1902535b5aef">
-        <state id="af0e0fa9-aa64-41fb-8244-a4f695579121" label="without web or fringes" symbol="0"/>
-        <state id="1edbca5b-6bf2-4f9c-9709-73d0ed60f6ec" label="with weak basal fringes and webbing" symbol="1"/>
-        <state id="c2e1bbda-4f7f-4999-b78e-94f8940e7f46" label="fringes extending length of toes except for tips" symbol="2"/>
-        <state id="a111b524-804e-4892-9cf0-114c2051a9b2" label="females with weakly developed lateral toe fringes and maleswith either ridges or weakly developed fringes" symbol="3"/>
+        <state id="af0e0fa9-aa64-41fb-8244-a4f695579121" label="without web or fringes" symbol="0" about="#af0e0fa9-aa64-41fb-8244-a4f695579121">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008439"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="1edbca5b-6bf2-4f9c-9709-73d0ed60f6ec" label="with weak basal fringes and webbing" symbol="1" about="#1edbca5b-6bf2-4f9c-9709-73d0ed60f6ec">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008439"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="c2e1bbda-4f7f-4999-b78e-94f8940e7f46" label="fringes extending length of toes except for tips" symbol="2" about="#c2e1bbda-4f7f-4999-b78e-94f8940e7f46">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008439"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="a111b524-804e-4892-9cf0-114c2051a9b2" label="females with weakly developed lateral toe fringes and males with either ridges or weakly developed fringes" symbol="3" about="#a111b524-804e-4892-9cf0-114c2051a9b2">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008439">
+                    <phen:qualifier relation="BFO:0000052">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000383"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008439">
+                    <phen:qualifier relation="BFO:0000052">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000384"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="084fd332-91f3-4519-83ed-51ff96200ef3">
         <state id="d38373b2-37fe-4da3-b653-a54bc4dd3f5e" label="one tounge" symbol="0"/>
@@ -955,8 +1298,58 @@
         <state id="ade79dd7-8739-40cb-bd7b-eaf79479256c" label="sacral diapophyses rounded" symbol="1"/>
       </states>
       <states id="77ca3a1e-6d9a-4424-8dcc-ea8776a9d8ec">
-        <state id="2db54ded-cdf5-4062-a1cc-2ada43aab8fb" label="simple or knobbed, single or slightly bifurcate" symbol="0"/>
-        <state id="c4dea3a2-f201-4ffd-886c-43a2915d67c9" label="T-shaped, expanded" symbol="1"/>
+        <state id="2db54ded-cdf5-4062-a1cc-2ada43aab8fb" label="simple or knobbed, single or slightly bifurcate" symbol="0" about="#2db54ded-cdf5-4062-a1cc-2ada43aab8fb">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004300"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/96dfeada-1b02-40e0-9519-7739a29556f4"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004300"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001784"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004300"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="c4dea3a2-f201-4ffd-886c-43a2915d67c9" label="T-shaped, expanded" symbol="1" about="#c4dea3a2-f201-4ffd-886c-43a2915d67c9">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004300"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001200"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004300"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="589c64f7-8c79-4c0b-b339-2f3fe47c7839">
         <state id="97b0ab49-6ed9-4979-bd08-ee309a4d7e8d" label="one note per call" symbol="0"/>

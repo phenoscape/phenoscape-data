@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -58,9 +58,48 @@
         <state id="0d0a0272-e3a0-415c-bafa-3b749af97cd4" label="" symbol="2"/>
       </states>
       <states id="3670447d-a55b-48a8-9387-a9c110b48bc6">
-        <state id="3e7ace7b-adec-408a-91af-9c08578634cc" label="Epip~bic cartilage present as a large plate" symbol="0"/>
-        <state id="06c78541-a8f3-4934-af38-b00c9e73357b" label="Epipubic cartilage present as a narrow strip" symbol="1"/>
-        <state id="178b51a9-5cf2-435c-a4b2-6f431013717b" label="Epipubic cartilage absent" symbol="2"/>
+        <state id="3e7ace7b-adec-408a-91af-9c08578634cc" label="Epipubic cartilage present as a large plate" symbol="0" about="#3e7ace7b-adec-408a-91af-9c08578634cc">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000884"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002253"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="06c78541-a8f3-4934-af38-b00c9e73357b" label="Epipubic cartilage present as a narrow strip" symbol="1" about="#06c78541-a8f3-4934-af38-b00c9e73357b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000884"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000599"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="178b51a9-5cf2-435c-a4b2-6f431013717b" label="Epipubic cartilage absent" symbol="2" about="#178b51a9-5cf2-435c-a4b2-6f431013717b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000884"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="bee08deb-b670-470b-b1d8-65bd53470743">
         <state id="bd60dac7-b3fa-4857-8b39-442f58f67845" label="Exostosis absent" symbol="0"/>
@@ -93,8 +132,34 @@
         <state id="eec561d9-7a9b-4d4f-b3e7-48f997cc158b" label="" symbol="2"/>
       </states>
       <states id="5f25b5fe-7b17-4960-9d5c-8dbbf34a99a6">
-        <state id="962fc466-9ffa-4ee7-86ee-9d5f43f7fb85" label="Epiphysis of head of humerus cartilaginous, not calcified" symbol="0"/>
-        <state id="30fd4047-d7fb-4ab7-9840-311a0155af1d" label="Epiphysis of head of humerus calcified" symbol="1"/>
+        <state id="962fc466-9ffa-4ee7-86ee-9d5f43f7fb85" label="Epiphysis of head of humerus cartilaginous, not calcified" symbol="0" about="#962fc466-9ffa-4ee7-86ee-9d5f43f7fb85">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006801"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001449"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="30fd4047-d7fb-4ab7-9840-311a0155af1d" label="Epiphysis of head of humerus calcified" symbol="1" about="#30fd4047-d7fb-4ab7-9840-311a0155af1d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006801"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001447"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="9fa6fcf3-7ad4-418f-9715-a156ac9e7e22" label="" symbol="2"/>
       </states>
       <states id="215b075f-a269-4a4a-900f-d4783078c860">
@@ -112,8 +177,42 @@
         <state id="81cfe997-9d53-42da-bac1-5f5e966a30b8" label="Ischiocutaneous muscle present" symbol="1"/>
       </states>
       <states id="9ae7b60f-7aa0-4c3a-b5a7-d8261c93c957">
-        <state id="fa535288-2404-4ed7-a03e-55c313a80145" label="Scapula very short and stocky" symbol="0"/>
-        <state id="822e9813-8dd2-48d5-9097-5b465b0ceaf8" label="Scapula relatively long" symbol="1"/>
+        <state id="fa535288-2404-4ed7-a03e-55c313a80145" label="Scapula very short and stocky" symbol="0" about="#fa535288-2404-4ed7-a03e-55c313a80145">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006849"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006849"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000600"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="822e9813-8dd2-48d5-9097-5b465b0ceaf8" label="Scapula relatively long" symbol="1" about="#822e9813-8dd2-48d5-9097-5b465b0ceaf8">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006849"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="41df9772-5ac2-4d14-a3f1-88bcd97a4304">
         <state id="0ab7add4-d7f2-43ca-a597-8981c421edb5" label="Nasals sickle-shapedi with concave area embracing nostrils" symbol="0"/>
@@ -124,8 +223,34 @@
         <state id="0f3590be-7a1d-4510-af29-5ea84044282f" label="absent" symbol="1"/>
       </states>
       <states id="fa5e1422-cf93-4c96-b2cd-f4753424a6cc">
-        <state id="6a1e34a6-a00a-4162-bd11-77ac8e1944b9" label="absent" symbol="0"/>
-        <state id="cf24b475-e0a1-4cda-b9be-8bda52abafea" label="present" symbol="1"/>
+        <state id="6a1e34a6-a00a-4162-bd11-77ac8e1944b9" label="absent" symbol="0" about="#6a1e34a6-a00a-4162-bd11-77ac8e1944b9">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010104"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="cf24b475-e0a1-4cda-b9be-8bda52abafea" label="present" symbol="1" about="#cf24b475-e0a1-4cda-b9be-8bda52abafea">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010104"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="336f1410-e7c2-41b8-9d84-5aeb956546ac">
         <state id="0baea91f-99c9-42df-b7a6-970a14b92af1" label="Piriformis present" symbol="0"/>
@@ -154,24 +279,168 @@
         <state id="9f246b69-f096-48e2-b2dc-e32228fd8baf" label="Septum nasi bony along most of the length of the nasals" symbol="2"/>
       </states>
       <states id="526c2ab8-4108-4ceb-8f66-ea4a99e0f5c8">
-        <state id="a264d1ed-7dde-4b00-a427-aa7ddd4aeda6" label="Inner metatarsal tubercle not modified into a spade" symbol="0"/>
-        <state id="1c3684cc-9822-4ba5-bcfb-06c64ac40113" label="Inner metatare~ tubercle modified into a spade" symbol="1"/>
+        <state id="a264d1ed-7dde-4b00-a427-aa7ddd4aeda6" label="Inner metatarsal tubercle not modified into a spade" symbol="0" about="#a264d1ed-7dde-4b00-a427-aa7ddd4aeda6">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010184"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001937"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="1c3684cc-9822-4ba5-bcfb-06c64ac40113" label="Inner metatarsal  tubercle modified into a spade" symbol="1" about="#1c3684cc-9822-4ba5-bcfb-06c64ac40113">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010184"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001937"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="857d6129-2ea9-4cbc-bc77-8ff205974d8e">
-        <state id="75864372-278b-4e7e-b10b-7a8081e25b34" label="Inner metatarsal tubercle not scaphate~ or scaphate and^n211 elongate" symbol="0"/>
-        <state id="bcba8e57-ade1-4e46-a5c1-3fab77aade27" label="Inner metatarsal tubercle cuneiform" symbol="1"/>
+        <state id="75864372-278b-4e7e-b10b-7a8081e25b34" label="Inner metatarsal tubercle not scaphate or scaphate and elongate" symbol="0" about="#75864372-278b-4e7e-b10b-7a8081e25b34">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010184"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/75db22d6-c530-4066-914e-b4dd37246473"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010184"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001427"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010184"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001154"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="bcba8e57-ade1-4e46-a5c1-3fab77aade27" label="Inner metatarsal tubercle cuneiform" symbol="1" about="#bcba8e57-ade1-4e46-a5c1-3fab77aade27">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010184"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001955"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="c103ff81-60ef-4e50-aaa3-09ac42f4fc95">
-        <state id="ea053fa9-5d8b-4e73-8cbd-2ffc07a91b68" label="Sternum cartilaginous" symbol="0"/>
-        <state id="138accd7-54db-4b02-b7f0-a64580129eb6" label="Sternum a bony style" symbol="1"/>
+        <state id="ea053fa9-5d8b-4e73-8cbd-2ffc07a91b68" label="Sternum cartilaginous" symbol="0" about="#ea053fa9-5d8b-4e73-8cbd-2ffc07a91b68">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000975"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001449"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="138accd7-54db-4b02-b7f0-a64580129eb6" label="Sternum a bony style" symbol="1" about="#138accd7-54db-4b02-b7f0-a64580129eb6">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000975"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001448"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="a73c8ae4-9799-429b-bfa0-885dec5ad9cb">
         <state id="972fc53d-25c6-43f2-95f5-8218757a62be" label="absent" symbol="0"/>
         <state id="991ef30e-9acd-47a1-97a5-0b2303b08081" label="present" symbol="1"/>
       </states>
       <states id="08c84aef-7714-4440-98af-9697fca90f23">
-        <state id="2dbfb671-3907-4315-a282-531d34220210" label="absent" symbol="0"/>
-        <state id="9660ceba-c40c-476a-908d-8014c0832f36" label="present" symbol="1"/>
+        <state id="2dbfb671-3907-4315-a282-531d34220210" label="absent" symbol="0" about="#2dbfb671-3907-4315-a282-531d34220210">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6929d4fa-9ffe-40f2-854f-82455afd8fa7">
+                    <phen:qualifier relation="BFO:0000052">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001463"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="9660ceba-c40c-476a-908d-8014c0832f36" label="present" symbol="1" about="#9660ceba-c40c-476a-908d-8014c0832f36">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6929d4fa-9ffe-40f2-854f-82455afd8fa7">
+                    <phen:qualifier relation="BFO:0000052">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001463"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="014abea4-bf56-49af-909f-e369645d7f97">
         <state id="57e89818-6a7e-4f11-b488-e581b8aa1495" label="Transverse processes of posterior vertebrae oriented laterally" symbol="0"/>
