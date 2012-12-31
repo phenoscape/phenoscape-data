@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.8beta1" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -1519,7 +1519,17 @@
         </state>
       </states>
       <states id="aaae0ad8-fb30-4b2e-a247-5c913d41b6dd">
-        <state id="8dd38868-7407-47cc-8eb8-8209a7c39ba7" label="epichordals less developed than hypochordals" symbol="0"/>
+        <state id="8dd38868-7407-47cc-8eb8-8209a7c39ba7" label="epichordals less developed than hypochordals" symbol="0" about="#8dd38868-7407-47cc-8eb8-8209a7c39ba7">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/d6fcf51c-c078-46a8-8e3d-a7625878ce4e"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="24bc63fa-0667-43b2-b7ec-c0ebb9f0e987" label="epichordals and hypochordals equally developed" symbol="1"/>
         <state id="6c833c39-0f57-41be-a6a5-ddab2183e9ff" label="epichordals more developed than hypochordals" symbol="2"/>
       </states>
