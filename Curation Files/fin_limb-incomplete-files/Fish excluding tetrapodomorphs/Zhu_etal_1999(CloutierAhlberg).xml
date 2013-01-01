@@ -1128,7 +1128,11 @@
         </state>
       </states>
       <states id="5611073a-1571-4afd-a671-d8d12bdc6bb1">
-        <state id="d2b79ea6-109d-469e-b189-59cb6e34e662" label="three to five" symbol="0"/>
+        <state id="d2b79ea6-109d-469e-b189-59cb6e34e662" label="three to five" symbol="0" about="#d2b79ea6-109d-469e-b189-59cb6e34e662">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="c5693ea7-f184-4926-bd56-d74441ebdc8b" label="seven or more" symbol="1" about="#c5693ea7-f184-4926-bd56-d74441ebdc8b"/>
       </states>
       <states id="623472f1-9d53-48b2-b63e-1ebb0fadb4a8">
@@ -1526,12 +1530,50 @@
                 <phen:bearer>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/d6fcf51c-c078-46a8-8e3d-a7625878ce4e"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:4200009"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="24bc63fa-0667-43b2-b7ec-c0ebb9f0e987" label="epichordals and hypochordals equally developed" symbol="1"/>
-        <state id="6c833c39-0f57-41be-a6a5-ddab2183e9ff" label="epichordals more developed than hypochordals" symbol="2"/>
+        <state id="24bc63fa-0667-43b2-b7ec-c0ebb9f0e987" label="epichordals and hypochordals equally developed" symbol="1" about="#24bc63fa-0667-43b2-b7ec-c0ebb9f0e987">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/d6fcf51c-c078-46a8-8e3d-a7625878ce4e"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/45bb6a27-5bc5-4e24-9127-c4f7dd70846a"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:4200009"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="6c833c39-0f57-41be-a6a5-ddab2183e9ff" label="epichordals more developed than hypochordals" symbol="2" about="#6c833c39-0f57-41be-a6a5-ddab2183e9ff">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/d6fcf51c-c078-46a8-8e3d-a7625878ce4e"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:4200009"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="2daa8209-3847-4cd8-b363-c4a45eb5d0ce">
         <state id="ab9998b0-5009-4de4-b23f-6bdf748eb953" label="bilateral halves of neural arch separated" symbol="0" about="#ab9998b0-5009-4de4-b23f-6bdf748eb953"/>
@@ -1796,7 +1838,7 @@
       <char id="65eef733-3eca-4ba4-b06c-9ebdc683e0ca" label="Trajectory of mandibular canal" states="0eec6053-fd57-48fd-a106-8b6b08720bbf"/>
       <char id="e0f3a7f4-e5b4-4c4f-8f0e-86760f2ebd84" label="Anocleithrum" states="9045ee66-2e42-40e8-acc9-8206cb03f46e"/>
       <char id="b1558c4e-61da-4883-bcd5-6eda644f365a" label="Condition of anocleithrum/postcleithrum" states="c4036426-bfff-40f8-bbca-cab8089c7e23" about="#b1558c4e-61da-4883-bcd5-6eda644f365a">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Hmm</meta>
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
       </char>
       <char id="823b615b-6edb-4af3-a7b3-a4f3a3839372" label="Depressed lamina of cleithrum" states="445f3b3b-d838-4616-b8fa-efda033447d8"/>
       <char id="db875fda-b34a-44fc-bc3a-04271bd827cf" label="Dorsal end of cleithrum" states="0bb47a41-ef5a-4c04-b2aa-6224cea08996"/>
@@ -1827,9 +1869,7 @@
       <char id="908480c7-bf91-4ced-b559-cc9c7773904a" label="Relative length of proximal unsegmented part of lepidotrichium" states="5002603b-9698-4e66-b680-bfccef7f3115"/>
       <char id="a4c990a2-d490-4379-b265-a2c7fe0d653d" label="Distal end of lepidotrichium" states="e87a8821-dd7d-4f81-99d5-1a1ae6954cca"/>
       <char id="84a7fced-7f88-42c7-abf4-55ed3d259ae0" label="Epichordal lepidotrichia in tail" states="35a7b2b1-e46b-4578-a262-4afc6129ebdf"/>
-      <char id="4f73a79a-23e4-435d-b46a-889a277aa70b" label="Relative size of epichordal and hypochordal lepidotrichia" states="aaae0ad8-fb30-4b2e-a247-5c913d41b6dd" about="#4f73a79a-23e4-435d-b46a-889a277aa70b">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
-      </char>
+      <char id="4f73a79a-23e4-435d-b46a-889a277aa70b" label="Relative size of epichordal and hypochordal lepidotrichia" states="aaae0ad8-fb30-4b2e-a247-5c913d41b6dd" about="#4f73a79a-23e4-435d-b46a-889a277aa70b"></char>
       <char id="26de767d-e3c6-4cc7-9842-c0ac2087ec2b" label="Neural arches" states="2daa8209-3847-4cd8-b363-c4a45eb5d0ce"/>
       <char id="ab3ab0b0-1ef4-4262-8bb5-09d9d66405e0" label="Supraneural spines" states="3fd1ebea-63b2-41b0-aba2-ac3db001618f"/>
       <char id="b28c6e46-0498-4404-972f-914ce79be565" label="Condition of intercentra" states="d243cf8a-bf57-4fb6-bc2f-3e62a88c6148"/>
