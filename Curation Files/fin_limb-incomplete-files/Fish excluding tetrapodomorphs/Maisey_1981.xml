@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="bbbc5d77-1619-42cc-b36f-2b855abce336">
     <otu id="bbb14449-ee58-4916-a8d4-6cc0d639dffa" label="Enteropneusta" about="#bbb14449-ee58-4916-a8d4-6cc0d639dffa">
       <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request to add to VTO</meta>
@@ -2930,7 +2930,20 @@
         <state id="006ab60f-ae4f-47d1-ad99-1113df43b056" label="present" symbol="1"/>
       </states>
       <states id="87969e4f-b4c7-4860-ab99-dbcde4ccd35f">
-        <state id="81ca17e5-3c4a-40d5-b3ea-ad3508e0c49c" label="absent" symbol="0" about="#81ca17e5-3c4a-40d5-b3ea-ad3508e0c49c"/>
+        <state id="81ca17e5-3c4a-40d5-b3ea-ad3508e0c49c" label="absent" symbol="0" about="#81ca17e5-3c4a-40d5-b3ea-ad3508e0c49c">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010713"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="f9f1ad23-e3f0-46b0-855a-24d45d57d975" label="present" symbol="1" about="#f9f1ad23-e3f0-46b0-855a-24d45d57d975">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
@@ -3030,9 +3043,6 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0001505"/>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:2001425"/>
-                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3047,9 +3057,6 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0002278"/>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:2001425"/>
-                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3700,7 +3707,9 @@
       <char id="0544228c-1cdc-48c9-a47b-b4cd69fa44ea" label="(S3.) Maxilla absent" states="1805766b-670d-42c5-aafd-184f1ab114bb"/>
       <char id="d094994e-8ead-4192-9718-36c81cb9aac2" label="(S4.) Extracleithrum present" states="820f9d47-4cd6-4a28-93c4-ec5662091432"/>
       <char id="18eada97-b799-47b5-adec-e215fd81d363" label="(S5.) Ossified swim-bladder" states="42e30b00-2592-4bb6-ac65-bf0bc6f1f692"/>
-      <char id="2aa7250c-cf38-43b5-8782-8a566f545b94" label="(S6.) Anterior dorsal fin-rays articulate directly with basal plate" states="de03f447-4351-496e-80cb-75b9013156c5"/>
+      <char id="2aa7250c-cf38-43b5-8782-8a566f545b94" label="(S6.) Anterior dorsal fin-rays articulate directly with basal plate" states="de03f447-4351-496e-80cb-75b9013156c5" about="#2aa7250c-cf38-43b5-8782-8a566f545b94">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
+      </char>
       <char id="e36fcb9d-09b2-4185-87c4-9525b705cbd5" label="(S7.) Rostral organ" states="bdd44912-0e3f-4729-94ce-05bb45eb879f"/>
       <char id="41b1fd90-0eba-4b47-830d-556ffafc846f" label="(S7.) Highly kinetic intracranial joint" states="fecdafd2-37f1-41a9-a61c-bb7676fd9689"/>
       <char id="8abc208d-e8a4-4070-918a-bc13fff2e30d" label="(S8.) Posterior displacment of dermal component of intracranial joint" states="0a11171a-099b-4b5a-977f-d8d027e95003"/>
