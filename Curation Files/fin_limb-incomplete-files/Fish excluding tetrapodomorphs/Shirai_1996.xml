@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.8beta1" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -1006,9 +1006,48 @@
         <state id="708df838-616a-4f76-834b-e475386a7843" label="independent in part from the basal" symbol="1"/>
       </states>
       <states id="7d260ec7-6829-4c61-be95-39a8138c84cb">
-        <state id="6590a15a-463e-4908-891a-43c59124a61c" label="aplesodic" symbol="0"/>
-        <state id="8c2514eb-28f0-48d7-9dd6-a4ba3ec1c74b" label="semiplesodic" symbol="1"/>
-        <state id="02fd5cf8-4db8-44d5-8300-070f66bcc1c1" label="plesodic" symbol="2"/>
+        <state id="6590a15a-463e-4908-891a-43c59124a61c" label="aplesodic" symbol="0" about="#6590a15a-463e-4908-891a-43c59124a61c">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001672"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="8c2514eb-28f0-48d7-9dd6-a4ba3ec1c74b" label="semiplesodic" symbol="1" about="#8c2514eb-28f0-48d7-9dd6-a4ba3ec1c74b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001672"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="02fd5cf8-4db8-44d5-8300-070f66bcc1c1" label="plesodic" symbol="2" about="#02fd5cf8-4db8-44d5-8300-070f66bcc1c1">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001672"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="438a49d5-319e-4488-a6b0-ccd297108a50">
         <state id="f573a23f-dbc1-4d3d-9464-452443f512bf" label="present" symbol="0" about="#f573a23f-dbc1-4d3d-9464-452443f512bf">
