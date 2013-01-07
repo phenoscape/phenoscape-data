@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="org.nexml.model.impl.DocumentImpl" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
   <otus about="#otus1438" id="otus1438" label="Taxa">
     <meta content="1173555906555044907" datatype="xsd:long" id="meta1743" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
     <meta content="Default Bush (id 2, version 300)" datatype="xsd:anySimpleType" id="meta1742" property="bean:DefaultTree" xsi:type="nex:LiteralMeta"/>
@@ -439,8 +442,149 @@
         </uncertain_state_set>
       </states>
       <states id="states1780">
-        <state id="state1782" label="limited, only proximal section ossified, forming a Y-shaped flange of mineralization with the cleithrum, with fork facing dorsally" symbol="0"/>
-        <state id="state1783" label="heavily ossified, 1 ?3 to 2?3 of blade, forming one rounded, rectangular or triangular flange with the cleithrum on the antero-proximal surface" symbol="1"/>
+        <state id="state1782" label="limited, only proximal section ossified, forming a Y-shaped flange of mineralization with the cleithrum, with fork facing dorsally" symbol="0" about="#state1782">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="GO:0001503">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:3000748"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002058"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="GO:0001503">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:3000748"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002261"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000077">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:3000748"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="GO:0001503">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:3000748"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001201"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state1783" label="heavily ossified, 1/3 to 2/3 of blade, forming one rounded, rectangular or triangular flange with the cleithrum on the antero-proximal surface" symbol="1" about="#state1783">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="GO:0001503">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:3000748"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002057"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="GO:0001503">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:3000748"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001875"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="GO:0001503">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:3000748"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001867"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="GO:0001503">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:3000748"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000411"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states1784">
         <state id="state1786" label="absent or greatly reduced, extending to less than half length of urostyle " symbol="0"/>
@@ -460,14 +604,194 @@
         </uncertain_state_set>
       </states>
       <states id="states1797">
-        <state id="state1799" label="oval, inconspicuous" symbol="0"/>
-        <state id="state1800" label="projected laterally and spike-like, to small, sharp and triangular or slightly rounded" symbol="1"/>
-        <state id="state1801" label="large spike- or flange-like, not oval or adpressed to shaft" symbol="2"/>
+        <state id="state1799" label="oval, inconspicuous" symbol="0" about="#state1799">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000869"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001891"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000869"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state1800" label="projected laterally and spike-like, to small, sharp and triangular or slightly rounded" symbol="1" about="#state1800">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000869"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6a7dc908-15a0-489a-b007-bc9e7a5b6c80"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000869"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001409"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000869"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000869"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001875"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000869"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000411"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state1801" label="large spike- or flange-like, not oval or adpressed to shaft" symbol="2" about="#state1801">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000869"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000869"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001409"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states1802">
-        <state id="state1804" label="absent" symbol="0"/>
-        <state id="state1805" label="0.5 to 1 times height of ilium" symbol="1"/>
-        <state id="state1806" label="1.2 to 2.5 times height of ilium, very well developed" symbol="2"/>
+        <state id="state1804" label="absent" symbol="0" about="#state1804">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/587a12b6-574b-4965-b85b-8ac09b6611df">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001273"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state1805" label="0.5 to 1 times height of ilium" symbol="1" about="#state1805">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/587a12b6-574b-4965-b85b-8ac09b6611df">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001273"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                  <phen:related_entity>
+                    <phen:typeref about="PATO:0000119">
+                      <phen:qualifier relation="BFO:0000052">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0001273"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state1806" label="1.2 to 2.5 times height of ilium, very well developed" symbol="2" about="#state1806">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/587a12b6-574b-4965-b85b-8ac09b6611df">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001273"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000570"/>
+                  <phen:related_entity>
+                    <phen:typeref about="PATO:0000119">
+                      <phen:qualifier relation="BFO:0000052">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0001273"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states1807">
         <state id="state1809" label="ratio of distal end to proximal region (base) greater than 2" symbol="0"/>
@@ -481,13 +805,13 @@
       <states id="states1816">
         <state id="state1818" label="posterolateral" symbol="0"/>
         <state id="state1819" label="anterolateral" symbol="1"/>
-        <state id="state2610" symbol="2"/>
+        <state id="state2610" symbol="2" label=""/>
       </states>
       <states id="states1820">
         <state id="state1822" label="centra cylindrical or subcylindrical, bases of transverse processes not laterally expanded, and not set back entirely against the ventrolateral surface of the dorsal neural arches, but instead positioned laterally and medially of the centra" symbol="0"/>
         <state id="state1823" label="centra rectangularshaped in ventral contour, with a distinct small rectangular narrow gap evident ventrolaterally between vertebrae, with the transverse processes narrow basally, and positioned laterally and medially of the centra" symbol="1"/>
         <state id="state1824" label="centra grading gradually into the base of the transverse processes, which are well developed laterally (wider) at their bases" symbol="2"/>
-        <state id="state2588" symbol="3"/>
+        <state id="state2588" symbol="3" label=""/>
       </states>
       <states id="states1825">
         <state id="state1827" label="procoelous" symbol="0"/>
@@ -501,8 +825,8 @@
       <states id="states1834">
         <state id="state1836" label="approximately equal in width along entire length, bony and thick, meeting the procoracoid cartilage medially" symbol="0"/>
         <state id="state1837" label="approximately equal in width along entire length, but reduced and proportionately thin, meeting the procoracoid cartilage medially" symbol="1"/>
-        <state id="state2597" symbol="3"/>
-        <state id="state2599" symbol="2"/>
+        <state id="state2597" symbol="3" label=""/>
+        <state id="state2599" symbol="2" label=""/>
       </states>
       <states id="states1838">
         <state id="state1840" label="strongly or slightly bowed, pointing distinctly anteromedially more than 35??" symbol="0"/>
@@ -517,7 +841,7 @@
       <states id="states1848">
         <state id="state1850" label="epicoracoids elaborated into posterior epicoracoid horns which overlap medially, usually fused in the interclavicle region (arciferal condition)" symbol="0"/>
         <state id="state1851" label="epicoracoids anteriorly fused, posteriorly free and usually overlapping, coracoids slightly angled ventrally, one side overlapping the other medially, the overlapping coracoid usually fenestrated at its medial edge (modified firmisternal condition, or pseudoarciferal condition, or arciferal-like condition)" symbol="1"/>
-        <state id="state2589" symbol="2"/>
+        <state id="state2589" symbol="2" label=""/>
       </states>
       <states id="states1852">
         <state id="state1854" label="trumpet-shaped" symbol="0"/>
@@ -577,7 +901,7 @@
       <states id="states1907">
         <state id="state1909" label="thin, nasal capsules close together" symbol="0"/>
         <state id="state1910" label="thick, nasal capsules medially separate" symbol="1"/>
-        <state id="state2629" symbol="2"/>
+        <state id="state2629" symbol="2" label=""/>
       </states>
       <states id="states1911">
         <state id="state1913" label="present as separate elements, well developed" symbol="0"/>
@@ -630,7 +954,7 @@
       <states id="states1959">
         <state id="state1961" label="absent" symbol="0"/>
         <state id="state1962" label="present" symbol="1"/>
-        <state id="state2607" symbol="2"/>
+        <state id="state2607" symbol="2" label=""/>
       </states>
       <states id="states1963">
         <state id="state1965" label="in contact with, or adpressed to maxilla" symbol="0"/>
@@ -717,7 +1041,7 @@
         <state id="state2042" label="otic plate present, partly overlapping crista parotica, in some cases posteriorly only or the lateral border of prootic only" symbol="0"/>
         <state id="state2043" label="overlapping all or most of crista parotica and 1/4 to 1/2 of prootic" symbol="1"/>
         <state id="state2044" label="otic plate rudimentary or absent, only a thin rib of bone overlapping outside of crista parotica" symbol="2"/>
-        <state id="state2632" symbol="3"/>
+        <state id="state2632" symbol="3" label=""/>
       </states>
       <states id="states2045">
         <state id="state2047" label="absent or present and very short, not more than a slight bulge" symbol="0"/>
@@ -847,7 +1171,7 @@
       <states id="states2166">
         <state id="state2168" label="wide, width greater than or equal to length" symbol="0"/>
         <state id="state2169" label="narrow, longer than wide" symbol="1"/>
-        <state id="state2594" symbol="2"/>
+        <state id="state2594" symbol="2" label=""/>
       </states>
       <states id="states2170">
         <state id="state2172" label="cartilaginous stalk absent" symbol="0"/>
@@ -981,7 +1305,7 @@
       <states id="states2287">
         <state id="state2289" label="uniformly thickened, noticeably more so than other metacarpals, not penetrating skin, not spike-like" symbol="0"/>
         <state id="state2290" label="thick, enlarged into spike which may or may not penetrate skin, leaving distal phalanges set off at an angle to axis of Digit II" symbol="1"/>
-        <state id="state2590" symbol="2"/>
+        <state id="state2590" symbol="2" label=""/>
       </states>
       <states id="states2291">
         <state id="state2293" label="bifurcate, T- or Y-shaped" symbol="0"/>
