@@ -716,12 +716,24 @@ A few characters annotated, fin/limb terms on googledoc (12/1/11)</meta>
       </states>
       <states id="d2fda63a-b832-4232-b664-75f032459ae5">
         <state id="d5ed7ebf-07b2-4709-a2ed-37086fcb3abf" label="distinct" symbol="0"/>
-        <state id="ec40a24b-e31e-47ef-a233-c4dc61e96432" label="largely continuous" symbol="1"/>
+        <state id="ec40a24b-e31e-47ef-a233-c4dc61e96432" label="largely continuous" symbol="1" about="#ec40a24b-e31e-47ef-a233-c4dc61e96432">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
       </states>
       <states id="50f12a57-e5d2-4d33-ae18-14011d7a6d15">
         <state id="6fe7c451-cff7-4e46-9e16-c02b0a6c0783" label="elongate with pubis" symbol="0" about="#6fe7c451-cff7-4e46-9e16-c02b0a6c0783">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001273"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0007832"/>
@@ -733,11 +745,90 @@ A few characters annotated, fin/limb terms on googledoc (12/1/11)</meta>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="20baee62-0e72-465a-babe-2bb52668fff8" label="triangular with ilium and pubis" symbol="1"/>
+        <state id="20baee62-0e72-465a-babe-2bb52668fff8" label="triangular with ilium and pubis" symbol="1" about="#20baee62-0e72-465a-babe-2bb52668fff8">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001273"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0007832"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001875"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="4978aa29-3577-44c8-98ad-fc18d327f670">
-        <state id="fa0221b4-962f-4772-b4a2-f7fa786e8154" label="on main part of cleithrum" symbol="0" about="#fa0221b4-962f-4772-b4a2-f7fa786e8154"/>
-        <state id="a1e3c8a0-461c-4bdf-9f79-2249def1fb4d" label="more posterior, associated with the posterior flange" symbol="1" about="#a1e3c8a0-461c-4bdf-9f79-2249def1fb4d"/>
+        <state id="fa0221b4-962f-4772-b4a2-f7fa786e8154" label="on main part of cleithrum" symbol="0" about="#fa0221b4-962f-4772-b4a2-f7fa786e8154">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004753"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004741"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="a1e3c8a0-461c-4bdf-9f79-2249def1fb4d" label="more posterior, associated with the posterior flange" symbol="1" about="#a1e3c8a0-461c-4bdf-9f79-2249def1fb4d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004753"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000072">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0004741"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000072">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0004741"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <char id="ee94320b-df81-4e8f-979e-bf4f55bd5aaa" label="Parasymphysial plate contacts anterior first coronoid" states="5f775571-4791-49be-9e7f-c458d6562113"/>
       <char id="591fd9b8-61c0-48eb-91c3-eca1f0a447da" label="Premaxillary fang" states="08fd237e-e5f5-4ce0-9aeb-dd67325f5206"/>
@@ -772,12 +863,8 @@ A few characters annotated, fin/limb terms on googledoc (12/1/11)</meta>
       <char id="9ba322cc-2e00-40a7-bb8a-cc218d28b367" label="Separation of ulna/radius condyles" states="d2fda63a-b832-4232-b664-75f032459ae5" about="#9ba322cc-2e00-40a7-bb8a-cc218d28b367">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
       </char>
-      <char id="4f474f0a-bb24-458f-92d9-aa6a426598bb" label="Pelvic girdle" about="#4f474f0a-bb24-458f-92d9-aa6a426598bb" states="50f12a57-e5d2-4d33-ae18-14011d7a6d15">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">pubis?</meta>
-      </char>
-      <char id="1d4c9c0d-5069-424f-98b9-e7f394d6f074" label="Position of scapulocoracoid attachment on cleithrum" states="4978aa29-3577-44c8-98ad-fc18d327f670" about="#1d4c9c0d-5069-424f-98b9-e7f394d6f074">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
-      </char>
+      <char id="4f474f0a-bb24-458f-92d9-aa6a426598bb" label="Pelvic girdle" about="#4f474f0a-bb24-458f-92d9-aa6a426598bb" states="50f12a57-e5d2-4d33-ae18-14011d7a6d15"></char>
+      <char id="1d4c9c0d-5069-424f-98b9-e7f394d6f074" label="Position of scapulocoracoid attachment on cleithrum" states="4978aa29-3577-44c8-98ad-fc18d327f670" about="#1d4c9c0d-5069-424f-98b9-e7f394d6f074"></char>
     </format>
     <matrix>
       <row id="3453bbeb-9a47-4d58-9f4e-266b1fe2102c" otu="61ee2864-7379-40fc-91d7-a8a51b4d1d8a">

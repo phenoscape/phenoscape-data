@@ -1046,7 +1046,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001447"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/c98afd13-0526-4ce9-b7a5-c06cbe09101b"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1066,7 +1066,13 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000025"/>
+                  <phen:typeref about="PATO:0000025">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/c98afd13-0526-4ce9-b7a5-c06cbe09101b"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1865,9 +1871,7 @@
       <char id="bb81cf49-4c16-4d84-9e0a-260a6e489ecd" label="Flange on trailing edge of scapulocoracoid" states="bc3e1f10-ec2d-41c8-9cf7-52fab37b0a50"/>
       <char id="ec8d3ed1-8bf4-4a9d-b228-6410c46f2e5d" label="Scapular process with posterodorsal angle" states="93d23e4f-063d-437c-8de1-5bd1353bd894" about="#ec8d3ed1-8bf4-4a9d-b228-6410c46f2e5d"/>
       <char id="79d56048-52f7-4078-90b5-423c9cf0e3d4" label="Endoskeletal postbranchial lamina on scapular process" states="a25ad706-8f10-4474-b478-203f4d2a7b0e"/>
-      <char id="ce0011ec-dd5c-4506-a62f-b5237ac9d6fd" label="Mineralisation of internal surface of scapular blade" states="66c9f593-3267-473b-a7fd-d35fe3c13e75" about="#ce0011ec-dd5c-4506-a62f-b5237ac9d6fd">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">used calcified in place of mineralized, check to ensure that some fish pectoral girdles are not primarily composed on non-calcified tissue</meta>
-      </char>
+      <char id="ce0011ec-dd5c-4506-a62f-b5237ac9d6fd" label="Mineralisation of internal surface of scapular blade" states="66c9f593-3267-473b-a7fd-d35fe3c13e75" about="#ce0011ec-dd5c-4506-a62f-b5237ac9d6fd"></char>
       <char id="605b16f2-80a4-4eba-84a2-05d48a36d8a0" label="Coracoid process" states="5d7f62ec-6153-4b33-b38d-3630970ec225"/>
       <char id="3b7aaf86-ea15-4745-94dc-e62179d600fa" label="Procoracoid mineralisation" states="f4ec3bd9-31d1-488c-90f4-34b33c0589c7"/>
       <char id="a8637731-4bbe-4696-93ee-3c26f0be3199" label="Fin base articulation on scapulocoracoid" states="8733f9c5-7b55-4e30-b31b-0ba2ff78ffa8" about="#a8637731-4bbe-4696-93ee-3c26f0be3199"/>
