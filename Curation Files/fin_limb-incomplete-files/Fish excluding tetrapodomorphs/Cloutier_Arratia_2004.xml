@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable, Johnny Kim</meta>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Matrix: Ben Frable
-Taxon: Ben Frable, Johnny Kim
-
-Early diversification of actinopterygians (2004) In: Recent advances in the origin and early radiation of vertebrates. Eds: Arratia, G; Wilson, M; Cloutier, R. PP: 217-270
-
-Need multiple taxa from PBDB, listed in spreadsheet and comment field (12/8/11) 
-Need additional specimen numbers (?- Johnny Kim?)
-
-Many characters annotated already, PATo requests filled; however, many TAO/VAO terms needed-- listed on spreadsheet and in Comment section.</meta>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <otus id="c7b9a68f-698c-42ef-b58f-a3820366d216">
     <otu id="08e65cec-aa8a-47d9-b51e-142c90a5211e" label="" about="#08e65cec-aa8a-47d9-b51e-142c90a5211e">
@@ -80,12 +72,12 @@ Many characters annotated already, PATo requests filled; however, many TAO/VAO t
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">Dialipina salgueiroensis</meta>
     </otu>
     <otu id="3fab20f9-b437-46b4-bace-1c1d7d3a8a7e" label="Cheirolepis trailli " about="#3fab20f9-b437-46b4-bace-1c1d7d3a8a7e">
-      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request from PBDB, Cheirolepis needs to be linked in VTO</meta>
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">Cheirolepis trailli</meta>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/PaleoDBTaxon_218871"/>
     </otu>
     <otu id="7f542842-6b39-4a98-9187-28df9cab92a7" label="Cheirolepis canadensis " about="#7f542842-6b39-4a98-9187-28df9cab92a7">
-      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request from PBDB, Cheirolepis needs to be linked in VTO; polymorphic (0/1) for characters 50, 52, 58, 71 &amp; 132. AB 12/21/11</meta>
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">Cheirolepis canadensis</meta>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/PaleoDBTaxon_218872"/>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000213"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">05-31</meta>
@@ -5289,16 +5281,16 @@ Many characters annotated already, PATo requests filled; however, many TAO/VAO t
         </state>
       </states>
       <states id="ab1c28e5-6f89-4371-adb9-e8066af56d68">
-        <state id="2d842a95-8785-467b-a45a-4caa0225f849" label="same size as others" symbol="0" about="#2d842a95-8785-467b-a45a-4caa0225f849"></state>
+        <state id="2d842a95-8785-467b-a45a-4caa0225f849" label="same size as others" symbol="0" about="#2d842a95-8785-467b-a45a-4caa0225f849"/>
         <state id="52b7b0c5-0c84-451b-9e69-3c0394433896" label="high" symbol="1"/>
       </states>
       <states id="d474d394-94bc-47f1-87fc-f07ba8e81894">
         <state id="98b9bb9f-7068-483c-bdea-02084af3d910" label="same proportions as others" symbol="0"/>
         <state id="47cbc0bb-1562-46b5-ba8e-55087f480786" label="narrow" symbol="1"/>
       </states>
-      <char id="d6e80f39-066f-4365-841c-ce477eb8da04" label="Lateral cranial canal (NIELSEN 1942; GARDINER &amp; SCHAEFFER 1989, char. 5, C1; COATES 1999, char. 32)" about="#d6e80f39-066f-4365-841c-ce477eb8da04" states="6db547d3-0907-4747-8eee-9abfc459feb2"></char>
-      <char id="9b17fdde-b9cf-4884-8e51-2a04d1e7901a" label="Spiracular groove (GARDINER &amp; SCHAEFFER 1989, char. 32; COATES 1999, char. 28)" about="#9b17fdde-b9cf-4884-8e51-2a04d1e7901a" states="69833b82-2145-476c-948a-d45941436e2e"></char>
-      <char id="03c208ab-f869-4b0c-85c6-8e27bc5a956b" label="Ventral cranial-otic fissure (COATES 1999, char. 29)" about="#03c208ab-f869-4b0c-85c6-8e27bc5a956b" states="77c6fdbf-1aac-4945-b0bd-feb3da6969e3"></char>
+      <char id="d6e80f39-066f-4365-841c-ce477eb8da04" label="Lateral cranial canal (NIELSEN 1942; GARDINER &amp; SCHAEFFER 1989, char. 5, C1; COATES 1999, char. 32)" about="#d6e80f39-066f-4365-841c-ce477eb8da04" states="6db547d3-0907-4747-8eee-9abfc459feb2"/>
+      <char id="9b17fdde-b9cf-4884-8e51-2a04d1e7901a" label="Spiracular groove (GARDINER &amp; SCHAEFFER 1989, char. 32; COATES 1999, char. 28)" about="#9b17fdde-b9cf-4884-8e51-2a04d1e7901a" states="69833b82-2145-476c-948a-d45941436e2e"/>
+      <char id="03c208ab-f869-4b0c-85c6-8e27bc5a956b" label="Ventral cranial-otic fissure (COATES 1999, char. 29)" about="#03c208ab-f869-4b0c-85c6-8e27bc5a956b" states="77c6fdbf-1aac-4945-b0bd-feb3da6969e3"/>
       <char id="fb720349-f1ae-4bee-83bc-1d8c555afa8f" label="Post-temporal fossa (GARDINER &amp; SCHAEFFER 1989, char. 28; COATES 1999, char. 33)" states="435a4dfd-4ca2-4984-9e24-c390644e552f"/>
       <char id="eb83c44a-1f9c-4714-9a1b-f29213530426" label="Dilatator fossa (COATES 1999, char. 34)" states="8b36bd86-f94a-45de-8275-0f8fd801f432"/>
       <char id="c98618d0-a69f-4f75-a08b-f735a252dc6d" label="Dermal basipterygoid process (ARRATIA &amp; SCHULTZE 1991; GARDINER &amp; SCHAEFFER 1989; ARRATIA &amp; SCHULTZE 1991; RAYNER 1951; PATTERSON 1975; GARDINER &amp; SCHAEFFER 1989, char. G2; COATES 1999, char. 37)" about="#c98618d0-a69f-4f75-a08b-f735a252dc6d" states="df8a675c-dfdf-405b-bc69-bd0f3f57653c">
@@ -5603,7 +5595,7 @@ Many characters annotated already, PATo requests filled; however, many TAO/VAO t
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-</meta>
       </char>
       <char id="2f476876-e33d-46c9-8fb8-05e10d54cb24" label="Madibular canal, trajectory of (PATTERSON 1982, char. 7; GARDINER &amp; SCHAEFFER 1989, char. A14; CLOUTIER &amp; AHLBERG 1996, char. 110; COATES 1998, char. A14; SCHULTZE &amp; CUMBAA 2001, char. 43; ZHU &amp; SCHULTZE 2001, char. 101)" states="56391655-cf5d-4409-810e-f4d1a949d145"/>
-      <char id="8828037a-3dfb-440c-a75f-d91c71d36d92" label="Madibular canal, trajectory of (CLOUTIER &amp; AHLBERG 1996, char. 111; SCHULTZE &amp; CUMBAA 2001, char. 44; ZHU &amp; SCHULTZE 2001, char. 102)" states="7889ae1f-020e-4dba-9b92-9546acf34ff0" about="#8828037a-3dfb-440c-a75f-d91c71d36d92"></char>
+      <char id="8828037a-3dfb-440c-a75f-d91c71d36d92" label="Madibular canal, trajectory of (CLOUTIER &amp; AHLBERG 1996, char. 111; SCHULTZE &amp; CUMBAA 2001, char. 44; ZHU &amp; SCHULTZE 2001, char. 102)" states="7889ae1f-020e-4dba-9b92-9546acf34ff0" about="#8828037a-3dfb-440c-a75f-d91c71d36d92"/>
       <char id="ab80ab08-0cef-46c9-aa30-a6c9cf0838fe" label="Pectoral fin (POPLIN &amp; LUND 2000, char. 41; COATES 1999, char. 58; LUND 2000, char. 61)" about="#ab80ab08-0cef-46c9-aa30-a6c9cf0838fe" states="958e9985-ebae-4a18-b852-d59f5f940485"/>
       <char id="b06c730e-2aa0-4190-a3ac-5d28a3473d86" label="Pectoral fin rays (COATES 1999, char. 60)" about="#b06c730e-2aa0-4190-a3ac-5d28a3473d86" states="531269dc-a9e7-49fd-a332-f184a857e1ec"/>
       <char id="3accc784-c421-490b-b290-765c445dfaa3" label="Presupracleithrum (NIELSEN 1942;  PATTERSON 1982, char. 13; GARDINER &amp; SCHAEFFER 1989, char. A13; LUND 2000, char. 54; LUND &amp; POPLIN 2002, char. 51; SCHULTZE &amp; CUMBAA 2001, char. 96; ZHU &amp; SCHULTZE 2001, char. 160)" states="aba0e47d-bcaf-4479-bff3-687d7d82cafb" about="#3accc784-c421-490b-b290-765c445dfaa3"/>
@@ -5631,24 +5623,24 @@ Many characters annotated already, PATo requests filled; however, many TAO/VAO t
       <char id="bf495049-4f55-44f8-beb2-027729244dc4" label="Basal fulcra between pelvic and anal fins" states="b2446ea5-5817-4a8b-8ef2-d514534e2f19"/>
       <char id="65b6ecf7-4c79-4e5d-a3dd-6f91e79254e3" label="Anal fin, base of (LUND 2000, char. 66; POPLIN &amp; LUND 2000, char. 39)" states="e06e0034-6fc8-473d-ab1d-be76e40aa495"/>
       <char id="05a6463f-03f3-4db9-acdf-f5995b5a007a" label="Basal fulcra between anal and caudal fins" states="c3f055e1-d9c2-4c4b-9cac-50b6dde21caf"/>
-      <char id="62197f3f-bd31-4c53-966e-ff65fc6f1c0d" label="Median neural spines (COATES 1999, char. 56)" states="5aee531a-0176-4e3c-8382-ebee96a2173b" about="#62197f3f-bd31-4c53-966e-ff65fc6f1c0d"></char>
+      <char id="62197f3f-bd31-4c53-966e-ff65fc6f1c0d" label="Median neural spines (COATES 1999, char. 56)" states="5aee531a-0176-4e3c-8382-ebee96a2173b" about="#62197f3f-bd31-4c53-966e-ff65fc6f1c0d"/>
       <char id="475bd7a6-fab9-452e-9ff7-ff03fb2522c7" label="Caudal fin (GARDINER &amp; SCHAEFFER 1989, char. A18; POPLIN &amp; LUND 2000, char. 35)" states="f7043815-169e-47f2-90cb-cfe53fc906ae" about="#475bd7a6-fab9-452e-9ff7-ff03fb2522c7"/>
       <char id="86dd0a45-a3bc-4f07-bfc7-0cdc135e068e" label="Caudal fin, shape of (LUND &amp; MELTON 1982; LUND 2000, char. 63, 64 in part; SCHULTZE &amp; CUMBAA 2001, char. 100)" states="764a6aff-e433-4bb4-bcf0-bbd59d0173c4" about="#86dd0a45-a3bc-4f07-bfc7-0cdc135e068e"/>
       <char id="0e19c8d1-5017-44f2-bf0e-21408609f87b" label="Epichordal fin rays of caudal fin (CLOUTIER &amp; AHLBERG 1996, char. 134; SCHULTZE &amp; CUMBAA 2001, char. 101; ZHU &amp; SCHULTZE 2001, char. 191)" states="72a8ad9f-23af-4f9a-ace6-1769378da74f" about="#0e19c8d1-5017-44f2-bf0e-21408609f87b"/>
       <char id="7c8821a8-d152-4d13-a8a7-2862e93637c2" label="Epichordal fin rays of caudal fin (COATES 1999, char. 57)" about="#7c8821a8-d152-4d13-a8a7-2862e93637c2" states="b301c2d2-5208-4993-9025-a5daf2476ebd"/>
-      <char id="cdb4e762-a90a-41bf-bffc-061997720927" label="Scale, size of (LONG 1988, TAVERNE 1997, char. 6)" states="9c2724e1-bfe1-4527-a075-f7027dc79675" about="#cdb4e762-a90a-41bf-bffc-061997720927"></char>
+      <char id="cdb4e762-a90a-41bf-bffc-061997720927" label="Scale, size of (LONG 1988, TAVERNE 1997, char. 6)" states="9c2724e1-bfe1-4527-a075-f7027dc79675" about="#cdb4e762-a90a-41bf-bffc-061997720927"/>
       <char id="29ad5f3a-a493-4006-a8c3-7dfad8f51060" label="Scale, shape of (CLOUTIER &amp; AHLBERG 1996, char. 3; ZHU &amp; SCHULTZE 2001, char. 198; LEHMAN 1966)" states="e9b1bdc5-0d40-408c-8813-ef1fb922037f"/>
       <char id="d51a76ca-f939-4ba8-ad9a-30b73c2b8789" label="Peg-and-socket articulation of scales (GARDINER &amp; SCHAEFFER 1989, char. 3, A20; COATES 1999, char. 3; MAISEY 1986, char. N7; CLOUTIER &amp; AHLBERG 1996, char. 4; DIETZE 2000, char. 57; POPLIN &amp; LUND 2000, char. 30; SCHULTZE &amp; CUMBAA 2001, char. 88)" states="cb4097b7-8c2b-499c-9da1-e601c0570e30"/>
       <char id="dea3c480-b637-42f2-bd77-414845f789f4" label="Peg-and-socket articulation of scales (SCHULTZE 1977; PATTERSON 1982, char. 5; CLOUTIER &amp; AHLBERG 1996, char. 4; DIETZE 2000, char. 57; SCHULTZE &amp; CUMBAA 2001, char. 88; ZHU &amp; SCHULTZE 2001, char. 199)" states="2203fa6b-201d-4f7a-8743-a93f00b48c1f"/>
       <char id="63e08315-0af6-4f54-bd1b-1fc62af26bcf" label="Anterodorsal extension of scale (SCHULTZE 1977; PATTERSON 1982, char. 4; GARDINER 1984, char. 1; GARDINER &amp; SCHAEFFER 1989, char. A20; SCHULTZE &amp; CUMBAA 2001, char. 89; ZHU &amp; SCHULTZE 2001, char. 201)" states="d31ff76b-de98-4ddc-9526-184aba478bf5"/>
       <char id="c886a5f0-46fd-4651-a5ad-6f4cd9204117" label="Posterior edges of rhombic scales (DIETZE 2000, char. 49)" states="76c00701-45e1-49f4-99e7-4e117bd02412"/>
-      <char id="1b254495-ec8d-4169-bd37-74ec3a7baaa3" label="Ganoine (SCHULTZE 1977; PATTERSON 1982, char. 3; GARDINER &amp; SCHAEFFER 1989, char. A3; SCHULTZE 1992; DIETZE 2000, char. 50; MAISEY 1986, char. N5; JANVIER 1996; TAVERNE 1997, char. 5; SCHULTZE &amp; CUMBAA 2001, char. 4; CLOUTIER &amp; AHLBERG 1996, char. 6; COATES 1998, char. A3; ZHU &amp; SCHULTZE 2001, char. 211)" states="ffd91e1a-c205-4f64-9607-d3acae5ece5d" about="#1b254495-ec8d-4169-bd37-74ec3a7baaa3"></char>
-      <char id="155b1df8-66ee-4a4e-aede-e281a816749a" label="Occipital scale row (LUND et al. 1995, char. 28)" states="e47ecb13-5702-4d2c-8f51-5b826945160e" about="#155b1df8-66ee-4a4e-aede-e281a816749a"></char>
+      <char id="1b254495-ec8d-4169-bd37-74ec3a7baaa3" label="Ganoine (SCHULTZE 1977; PATTERSON 1982, char. 3; GARDINER &amp; SCHAEFFER 1989, char. A3; SCHULTZE 1992; DIETZE 2000, char. 50; MAISEY 1986, char. N5; JANVIER 1996; TAVERNE 1997, char. 5; SCHULTZE &amp; CUMBAA 2001, char. 4; CLOUTIER &amp; AHLBERG 1996, char. 6; COATES 1998, char. A3; ZHU &amp; SCHULTZE 2001, char. 211)" states="ffd91e1a-c205-4f64-9607-d3acae5ece5d" about="#1b254495-ec8d-4169-bd37-74ec3a7baaa3"/>
+      <char id="155b1df8-66ee-4a4e-aede-e281a816749a" label="Occipital scale row (LUND et al. 1995, char. 28)" states="e47ecb13-5702-4d2c-8f51-5b826945160e" about="#155b1df8-66ee-4a4e-aede-e281a816749a"/>
       <char id="7400a1b4-cc0a-46c9-9136-bb047ba70c7c" label="Enlarged postcleithral scales (DIETZE 2000, char. 44; POPLIN &amp; LUND 2000, char. 29)" states="0e9cc0d5-6326-4d3f-a132-58770d55b42e"/>
       <char id="56f3f43e-170d-41e1-bcab-4af1f9b4898e" label="Flank scales (LUND 2000, char. 70; POPLIN &amp; LUND 2000, char. 31)" states="ab1c28e5-6f89-4371-adb9-e8066af56d68" about="#56f3f43e-170d-41e1-bcab-4af1f9b4898e">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">NEED flank</meta>
       </char>
-      <char id="be676ff4-7cb3-4848-a62e-c39b90aa8b4e" label="Ventrolateral flank scales (LUND 2000, char. 71; POPLIN &amp; LUND 2000, char. 32)" states="d474d394-94bc-47f1-87fc-f07ba8e81894" about="#be676ff4-7cb3-4848-a62e-c39b90aa8b4e"></char>
+      <char id="be676ff4-7cb3-4848-a62e-c39b90aa8b4e" label="Ventrolateral flank scales (LUND 2000, char. 71; POPLIN &amp; LUND 2000, char. 32)" states="d474d394-94bc-47f1-87fc-f07ba8e81894" about="#be676ff4-7cb3-4848-a62e-c39b90aa8b4e"/>
     </format>
     <matrix>
       <row id="f804aeff-a2b9-4243-8a14-9871f39cfbb6" otu="08e65cec-aa8a-47d9-b51e-142c90a5211e">
