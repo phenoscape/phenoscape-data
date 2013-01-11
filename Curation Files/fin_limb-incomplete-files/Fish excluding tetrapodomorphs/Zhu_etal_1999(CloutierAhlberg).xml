@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.8beta1" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -28,6 +28,7 @@
     </otu>
     <otu id="d38bb7c0-224a-404f-8bf6-7b5b6abfec18" label="Diplocercides kaeseri" about="#d38bb7c0-224a-404f-8bf6-7b5b6abfec18">
       <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request in PBDB;JC: Diplocercides kaeseri in publication synonom in valid taxon is diplocercides kayseri</meta>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/PaleoDBTaxon_226297"/>
     </otu>
     <otu id="4e6aaaba-d4b6-46d6-802d-ee9972d807ba" label="Diplocercides heligenstockiensis" about="#4e6aaaba-d4b6-46d6-802d-ee9972d807ba">
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">D. heligenstockiensis</meta>
@@ -1095,7 +1096,7 @@
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/418f83c6-c53b-4969-9a7c-78d18ee4a7e7"/>
+                  <phen:typeref about="UBERON:4200037"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462"/>
@@ -1117,7 +1118,7 @@
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/418f83c6-c53b-4969-9a7c-78d18ee4a7e7"/>
+                  <phen:typeref about="UBERON:4200037"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467"/>
@@ -1128,11 +1129,7 @@
         </state>
       </states>
       <states id="5611073a-1571-4afd-a671-d8d12bdc6bb1">
-        <state id="d2b79ea6-109d-469e-b189-59cb6e34e662" label="three to five" symbol="0" about="#d2b79ea6-109d-469e-b189-59cb6e34e662">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="d2b79ea6-109d-469e-b189-59cb6e34e662" label="three to five" symbol="0" about="#d2b79ea6-109d-469e-b189-59cb6e34e662"></state>
         <state id="c5693ea7-f184-4926-bd56-d74441ebdc8b" label="seven or more" symbol="1" about="#c5693ea7-f184-4926-bd56-d74441ebdc8b"/>
       </states>
       <states id="623472f1-9d53-48b2-b63e-1ebb0fadb4a8">
@@ -1286,8 +1283,34 @@
         </state>
       </states>
       <states id="29abce42-ea91-427c-9a05-39f347d984d2">
-        <state id="f95cc5a4-8abb-4aa7-ab8d-5bf31b8b6e34" label="absent" symbol="0"/>
-        <state id="46df741a-219e-4f0b-9554-78f9fbb73d53" label="present" symbol="1"/>
+        <state id="f95cc5a4-8abb-4aa7-ab8d-5bf31b8b6e34" label="absent" symbol="0" about="#f95cc5a4-8abb-4aa7-ab8d-5bf31b8b6e34">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6f96a57a-39a6-4b14-b393-e4ec2b061a74"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="46df741a-219e-4f0b-9554-78f9fbb73d53" label="present" symbol="1" about="#46df741a-219e-4f0b-9554-78f9fbb73d53">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6f96a57a-39a6-4b14-b393-e4ec2b061a74"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="ac6c3048-e37f-41b8-89fc-3e1be00951ec">
         <state id="82b50b09-4460-4a81-8a4c-4ef88b2d6fbb" label="absent" symbol="0" about="#82b50b09-4460-4a81-8a4c-4ef88b2d6fbb">
@@ -1859,17 +1882,15 @@
       <char id="8ba7538d-1f9b-42b1-a488-857895b793ff" label="Pelvis contacting vertebral column" states="81d8c832-2d11-4a5b-9bfc-e42930a3a0f0"/>
       <char id="5756a9e5-d974-41ef-ab92-12c6ad0bffb9" label="Dorsal and anal fins" states="a7758b50-e84d-4ff4-a239-c0fe5b57e17c"/>
       <char id="4cac4610-e1fa-4689-876d-c81008f2082f" label="Basal plates in dorsal fin supports" states="2aad1a79-c259-43e2-88e1-06d1d605f9f7" about="#4cac4610-e1fa-4689-876d-c81008f2082f">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">dorsal fin basal plate</meta>
       </char>
       <char id="fc089f42-d638-4552-8b49-36e415195972" label="Anterior dorsal fin support" states="bf63b642-a743-4e51-87f2-9ff9911e65ef"/>
-      <char id="bf9c2a72-6c1d-409c-9efd-751a125fc50c" label="Posterior branched radial complex in posterior dorsal fin" states="29abce42-ea91-427c-9a05-39f347d984d2" about="#bf9c2a72-6c1d-409c-9efd-751a125fc50c">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
-      </char>
+      <char id="bf9c2a72-6c1d-409c-9efd-751a125fc50c" label="Posterior branched radial complex in posterior dorsal fin" states="29abce42-ea91-427c-9a05-39f347d984d2" about="#bf9c2a72-6c1d-409c-9efd-751a125fc50c"></char>
       <char id="c3ddd929-b1b0-4ecf-8a57-e2d82edf8ce4" label="Basal scutes on fins" states="ac6c3048-e37f-41b8-89fc-3e1be00951ec"/>
       <char id="908480c7-bf91-4ced-b559-cc9c7773904a" label="Relative length of proximal unsegmented part of lepidotrichium" states="5002603b-9698-4e66-b680-bfccef7f3115"/>
       <char id="a4c990a2-d490-4379-b265-a2c7fe0d653d" label="Distal end of lepidotrichium" states="e87a8821-dd7d-4f81-99d5-1a1ae6954cca"/>
       <char id="84a7fced-7f88-42c7-abf4-55ed3d259ae0" label="Epichordal lepidotrichia in tail" states="35a7b2b1-e46b-4578-a262-4afc6129ebdf"/>
-      <char id="4f73a79a-23e4-435d-b46a-889a277aa70b" label="Relative size of epichordal and hypochordal lepidotrichia" states="aaae0ad8-fb30-4b2e-a247-5c913d41b6dd" about="#4f73a79a-23e4-435d-b46a-889a277aa70b"></char>
+      <char id="4f73a79a-23e4-435d-b46a-889a277aa70b" label="Relative size of epichordal and hypochordal lepidotrichia" states="aaae0ad8-fb30-4b2e-a247-5c913d41b6dd" about="#4f73a79a-23e4-435d-b46a-889a277aa70b"/>
       <char id="26de767d-e3c6-4cc7-9842-c0ac2087ec2b" label="Neural arches" states="2daa8209-3847-4cd8-b363-c4a45eb5d0ce"/>
       <char id="ab3ab0b0-1ef4-4262-8bb5-09d9d66405e0" label="Supraneural spines" states="3fd1ebea-63b2-41b0-aba2-ac3db001618f"/>
       <char id="b28c6e46-0498-4404-972f-914ce79be565" label="Condition of intercentra" states="d243cf8a-bf57-4fb6-bc2f-3e62a88c6148"/>
