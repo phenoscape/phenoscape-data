@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="45600a33-e9cc-489e-b235-c68b79256406">
     <otu id="3e341c5e-c223-4ba1-b441-f0b16ef256d6" label="Cephalochordates" about="#3e341c5e-c223-4ba1-b441-f0b16ef256d6">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/NCBITAXON_7735"/>
@@ -67,44 +67,22 @@
   <characters xmlns:ns="http://www.nexml.org/2009" id="0b367559-486c-4895-81fc-675b314641c3" xsi:type="ns:StandardCells" otus="45600a33-e9cc-489e-b235-c68b79256406">
     <format>
       <states id="0d15ddb0-0aff-48b5-86b7-cf1d240aba00">
-        <state id="e9c24491-8c5e-4785-9864-2303d02114c5" label="absent" symbol="0" about="#e9c24491-8c5e-4785-9864-2303d02114c5">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0003082"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000052">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0002224"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="f81304e5-bd24-467a-8455-5fa5b49a3f18" label="present" symbol="1" about="#f81304e5-bd24-467a-8455-5fa5b49a3f18">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0003082"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0002224"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="e9c24491-8c5e-4785-9864-2303d02114c5" label="absent" symbol="0" about="#e9c24491-8c5e-4785-9864-2303d02114c5"></state>
+        <state id="f81304e5-bd24-467a-8455-5fa5b49a3f18" label="present" symbol="1" about="#f81304e5-bd24-467a-8455-5fa5b49a3f18"></state>
       </states>
       <states id="75081076-2ab5-4f82-af61-d17a8325fb4b">
         <state id="d60e43ea-eb9d-4dcf-b4f5-cf8f75b32a88" label="absent" symbol="0" about="#d60e43ea-eb9d-4dcf-b4f5-cf8f75b32a88"/>
-        <state id="ec34dbf7-c47d-4697-99ed-4625f4051496" label="present" symbol="1"/>
+        <state id="ec34dbf7-c47d-4697-99ed-4625f4051496" label="present" symbol="1" about="#ec34dbf7-c47d-4697-99ed-4625f4051496">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006870"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="009805fa-0656-458d-9e44-9c49bc18fa58">
         <state id="88e61907-b6e1-43fe-8006-2415bf717ea2" label="absent" symbol="0" about="#88e61907-b6e1-43fe-8006-2415bf717ea2">
@@ -231,17 +209,7 @@
         </state>
       </states>
       <states id="4b20a5aa-77c5-457b-a347-65b97e3f24bf">
-        <state id="9cb8c05e-94af-4c45-bd40-5e96f8865b3e" label="absent" symbol="0" about="#9cb8c05e-94af-4c45-bd40-5e96f8865b3e">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0005410"/>
-                </phen:bearer>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="9cb8c05e-94af-4c45-bd40-5e96f8865b3e" label="absent" symbol="0" about="#9cb8c05e-94af-4c45-bd40-5e96f8865b3e"></state>
         <state id="49f6f84f-8b64-4d98-bf50-f37bf73684bd" label="present" symbol="1"/>
       </states>
       <states id="74b53ed2-a564-4579-a0d0-d20e6a9234bc">
@@ -275,26 +243,7 @@
         </state>
       </states>
       <states id="0d49b5ba-addd-4aea-8326-2bdd2cdf856f">
-        <state id="c2d67671-7205-4db5-b69f-8ac79e978193" label="absent" symbol="0" about="#c2d67671-7205-4db5-b69f-8ac79e978193">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0003082"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000052">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0001881"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="c2d67671-7205-4db5-b69f-8ac79e978193" label="absent" symbol="0" about="#c2d67671-7205-4db5-b69f-8ac79e978193"></state>
         <state id="07aaad31-9538-4f36-9ee4-e25efe29ee9b" label="present" symbol="1"/>
       </states>
       <states id="9fc6bb3c-bdd9-4bc9-8311-3d54eb3a8250">
@@ -395,34 +344,8 @@
         </state>
       </states>
       <states id="140f84e0-d443-42cf-8cd7-8bf3d38f5a01">
-        <state id="0ee252e3-f5a1-4841-8d32-9678db431586" label="absent" symbol="0" about="#0ee252e3-f5a1-4841-8d32-9678db431586">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0001840"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="152ba4f3-c714-4b92-bd2c-2521b0595350" label="present" symbol="1" about="#152ba4f3-c714-4b92-bd2c-2521b0595350">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0001840"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="0ee252e3-f5a1-4841-8d32-9678db431586" label="absent" symbol="0" about="#0ee252e3-f5a1-4841-8d32-9678db431586"></state>
+        <state id="152ba4f3-c714-4b92-bd2c-2521b0595350" label="present" symbol="1" about="#152ba4f3-c714-4b92-bd2c-2521b0595350"></state>
       </states>
       <states id="3604ff04-f498-4ae1-a37c-2aa9ca22b03d">
         <state id="ea495739-a565-4596-a0e6-6cc35935152a" label="absent" symbol="0" about="#ea495739-a565-4596-a0e6-6cc35935152a">
@@ -777,27 +700,17 @@
           </meta>
         </state>
       </states>
-      <char id="864459a1-76f4-494f-ae10-0a574c132df9" label="chevron-shaped myomeres" states="0d15ddb0-0aff-48b5-86b7-cf1d240aba00" about="#864459a1-76f4-494f-ae10-0a574c132df9">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">chevron-shaped synonym</meta>
-      </char>
-      <char id="992e997f-5965-462e-ac88-6e200b82ac27" label="endostyle" states="75081076-2ab5-4f82-af61-d17a8325fb4b" about="#992e997f-5965-462e-ac88-6e200b82ac27">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">endostyle**</meta>
-      </char>
+      <char id="864459a1-76f4-494f-ae10-0a574c132df9" label="chevron-shaped myomeres" states="0d15ddb0-0aff-48b5-86b7-cf1d240aba00" about="#864459a1-76f4-494f-ae10-0a574c132df9"></char>
+      <char id="992e997f-5965-462e-ac88-6e200b82ac27" label="endostyle" states="75081076-2ab5-4f82-af61-d17a8325fb4b" about="#992e997f-5965-462e-ac88-6e200b82ac27"></char>
       <char id="8b203f72-d17d-4913-8ef1-a7459a376124" label="sinus venosus in blood vascular system" states="009805fa-0656-458d-9e44-9c49bc18fa58"/>
       <char id="f6fc62dc-6053-4968-8cab-2905d06ac49f" label="segmentally arranged spinal nerves" states="3754783a-101c-4d6e-a668-214717524bfa"/>
       <char id="e8d68f01-9baf-4d5b-acd1-affbc67fe765" label="neural crest and epidermal placodes in development" states="e1cba718-f2d3-4e3c-bac8-6561a7c72529"/>
-      <char id="f72070c1-2da3-4622-9f67-f8f0d6648a25" label="olfactory, optic and otic capsules" states="4b20a5aa-77c5-457b-a347-65b97e3f24bf" about="#f72070c1-2da3-4622-9f67-f8f0d6648a25">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">olfactory and optic capsules**</meta>
-      </char>
+      <char id="f72070c1-2da3-4622-9f67-f8f0d6648a25" label="olfactory, optic and otic capsules" states="4b20a5aa-77c5-457b-a347-65b97e3f24bf" about="#f72070c1-2da3-4622-9f67-f8f0d6648a25"></char>
       <char id="666e4f63-cc7c-4580-9ba9-e18061021411" label="gill filaments" states="74b53ed2-a564-4579-a0d0-d20e6a9234bc"/>
-      <char id="ace28a95-4851-4dff-b250-10cedd4060af" label="W-shaped myomeres" states="0d49b5ba-addd-4aea-8326-2bdd2cdf856f" about="#ace28a95-4851-4dff-b250-10cedd4060af">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">W-SHAPED**</meta>
-      </char>
+      <char id="ace28a95-4851-4dff-b250-10cedd4060af" label="W-shaped myomeres" states="0d49b5ba-addd-4aea-8326-2bdd2cdf856f" about="#ace28a95-4851-4dff-b250-10cedd4060af"></char>
       <char id="9cbdc58f-efa4-46d1-9879-abdecb13bd8c" label="cartilaginous radials in fins" states="9fc6bb3c-bdd9-4bc9-8311-3d54eb3a8250"/>
       <char id="4b892826-d627-4046-ab9e-0230e3b9a02b" label="nonsegmental gonads" states="c1226c9e-620d-4167-8879-16175aba9857"/>
-      <char id="c2873f2d-9266-4e30-a9f3-fb8bd78d51eb" label="extensive dermal skeleton on head and body" states="79e64e64-f352-408c-b4d9-9fc29d5b9fc9" about="#c2873f2d-9266-4e30-a9f3-fb8bd78d51eb">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">dermal skeleton</meta>
-      </char>
+      <char id="c2873f2d-9266-4e30-a9f3-fb8bd78d51eb" label="extensive dermal skeleton on head and body" states="79e64e64-f352-408c-b4d9-9fc29d5b9fc9" about="#c2873f2d-9266-4e30-a9f3-fb8bd78d51eb"></char>
       <char id="14728ec4-300b-441e-9391-b7a6a79f3547" label="well-developed cerebellum" states="b0a39e71-eb87-481f-836b-7677b571d948"/>
       <char id="7e9c8b19-a527-4fbc-a5b6-4821da4278dc" label="well-developed vertical semicircular canals forming distinct loops" states="140f84e0-d443-42cf-8cd7-8bf3d38f5a01" about="#7e9c8b19-a527-4fbc-a5b6-4821da4278dc">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">well-developed</meta>
