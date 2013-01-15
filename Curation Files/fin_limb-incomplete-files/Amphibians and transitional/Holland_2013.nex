@@ -1,11 +1,11 @@
 #NEXUS
-[written Tue Jan 15 12:15:58 CST 2013 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.93.190]
+[written Tue Jan 15 12:56:06 CST 2013 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.93.190]
 
 BEGIN TAXA;
 	TITLE Taxa;
 	DIMENSIONS NTAX=20;
 	TAXLABELS
-		Acanthostega Barameda Beelarongia Cabonnichthys Canowindra Cladarosymblema Eusthenopteron_ Glyptolepis_ Gogonasus_ taxon_10 taxon_11 taxon_12 taxon_13 taxon_14 taxon_15 taxon_16 taxon_17 taxon_18 taxon_19 taxon_20 
+		Acanthostega Barameda Beelarongia Cabonnichthys Canowindra Cladarosymblema Eusthenopteron_ Glyptolepis_ Gogonasus_ Gooloogongia Ichthyostega Mandageria Medoevia Megalichthys Panderichthys_ Porolepis_ Rhizodopsis Sterropterygion_ Tiktaalik Tristichopterus_ 
 	;
 
 END;
@@ -15,27 +15,29 @@ BEGIN CHARACTERS;
 	TITLE  Character_Matrix;
 	DIMENSIONS  NCHAR=81;
 	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	CHARSTATELABELS 
+		1 Parasymphysial_plate /  'Long, sutured to coronoid, denticulated or with tooth row' 'Short, not sutured to coronoid, denticulated' Carrying_tooth_whorl, 2 Splenial_ /  Not_sutured_to_prearticular Sutured_to_prearticular, 3 Prearticular_and_angular_ /  Separated_by_ventral_exposure_of_Meckelian_bone In_contact, 4 Prearticular /  Rear_part_with_conspicuous_horizontal_ledge Rear_part_flat, 5 Retroarticular_process_ /  Absent present, 6 Coronoid_proportions_ /  Posterior_coronoid_similar_in_length_to_middle_coronoid Posterior_coronoid_longer_than_middle_coronoid, 7 Dentary_fang_pair_ /  absent present, 8 Number_of_fang_pairs_on_posterior_coronoid_ /  One Two None, 9 Tooth_folding_ /  Generalized_polyplocodont Labyrinthodont Dendrodont, 10 Number_of_fang_positions_on_ectopterygoid_ /  One two_none, 11 Proportions_of_entopterygoid_ /  Anterior_termination_level_with_processus_ascendens Anterior_termination_considerably_anterior_to_processus_ascendens, 12 Entopterygoids_in_contact_medially_ /  no yes, 13 Posterior_process_of_vomers /  absent present, 14 Relationship_of_vomers_ /  Separated In_contact_medially, 15 Vomer_proportions_ /  Not_much_broader_than_long_ Broader_than_long_, 16 Relationship_of_vomer_to_parasphenoid_ /  'No contact, or simple abutment ' 'dorsal/ventral overlap anteriorly' Side_to_side_overlap_between_posterior_processes_of_vomers_and_lateral_side_of_parasphenoid, 17 Enlarged_anterior_tooth_on_premaxilla_ /  absent present, 18 Orientation_of_anterior_tectal_and_lateral_rostral_relative_to_external_nostril_ /  'Dorsal / ventral ' 'Anterior / posterior ', 19 Width_of_ethmoid_relative_to_length_from_snout_tip_to_posterior_margin_of_parietals /  More_than_80%_ '	70-79% ' '50-69%' Less_than_50%, 20 Extent_of_crista_parotica_ /  Does_not_reach_posterior_margin_of_tabular_ Reaches_posterior_margin_of_tabular_, 21 Cosmine /  present absent, 22 Pineal_foramen_ /  absent present, 23 Location_of_pineal_foramen_or_eminence_ /  'Level with, or anterior to posterior margin of orbits' Well_posterior_to_orbits_, 24 Shape_of_pineal_series_ /  Round_or_oval_ 'Kite-shaped with distinct posterior corner ', 25 Proportions_of_postparietal_shield_ /  Not_very_wide_posteriorly_ Very_wide_posteriorly_, 26 Postparietals_narrow_to_a_point_posteriorly_ /  No Yes_, 27 Posterior_margin_of_tabulars_ /  Anterior_to_posterior_margin_of_postparietals_ Level_with_posterior_margin_of_postparietals_, 28 Median_postrostral_ /  Present_as_mosaic_ '	Present as single ossification ' 'Absent, nasals in contact medially', 29 Number_of_nasals_ /  More_than_two_ One_or_two_, 30 '	Frontals ' /  absent present, 31 Extratemporal /  Present_lateral_to_tabular 'Present, separating lateral extrascapular from squamosal (postspiracular condition)' Absent, 32 Contact_between_extratemporal_and_supratemporal_ /  Seperated In_contact, 33 Shape_of_maxilla_ /  Distinct_posterodorsal_process Posterodorsal_process_weak_or_absent, 34 'Jugal-quadratojugal contact ' /  absent present, 35 Shape_of_posterior_supraorbital_ /  Posterior_process_shorter_than_orbital_margin_ Posterior_process_much_longer_than_orbital_margin_, 36 Position_of_orbits_ /  Lateral_and_widely_separated_ Dorsal_and_close_together_, 37 Anterior_margin_of_median_extrascapular /  Long_ Very_short_, 38 Dermal_intracranial_joint_ /  absent present, 39 Endoskeletal_intracranial_joint_ /  absent present, 40 Basicranial_fenestra_ /  absent present, 41 '^nContact margin for clavicle on cleithrum ' /  Straight_or_faintly_convex_ Strongly_concave_, 42 Anocleithrum /  Exposed_ subdermal, 43 Dorsal_and_anal_fins_ /  present absent, 44 Caudal_fin_ /  Heterocercal_ Diphycercal, 45 Epichordal_radials_in_caudal_fin_ /  absent present, 46 'Well-ossified ribs ' /  absent present, 47 Intercentra_fused_to_solid_ring_ /  no yes, 48 Basal_scutes_ /  absent present, 49 Anterior_margin_of_vestibular_fontanelles_anterior_to_posterior_margin_of_basicranial_fenestra_ /  no yes, 50 Direction_of_posterior_pit_lines_on_parietal_shield_ /  'Anteroposterior, reaching or almost reaching postparietal border ' 'Essentially transverse, anterior or mostly anteriorto pineal foramen/pineal eminence', 51 Relative_positions_of_hyomandibular_facets_ /  Dorsal_directly_above_ventral_ Ventral_anterior_to_dorsal_ Dorsal_anterior_to_ventral, 52 Proportions_of_neurocranium_ /  Ethmosphenoid_shorter_than_or_equal_in_length_to_otoccipital_ Ethmosphenoid_longer_than_otoccipital_, 53 Choana /  absent present, 54 Accessory_postorbitals_ /  no yes, 55 Accessory_Vomers_ /  Absent present, 56 Scapulocoracoid /  'Attached to dermal girdle, not separated by foramina' Attached_to_dermal_girdle_by_buttresses_and_separated_from_dermal_girdle_by_foramina 'Attached to dermal girdle, foramina run through scapulocoracoid', 57 Scale_morphology_ /  Rhomboidal round, 58 Suprapterygoid_process_ /  Absent_or_weakly_developed Present_dosoposteriorly_to_basipterygoid_process Present_dorsoanteriorly_to_basipterygoid_process, 59 Internasal_pit_ /  Single_internasal_pit Internasal_pit_slightly_partitioned_or_apical_fossa_present, 60 Intermedium /  Straight_or_narrow Hour_glass_shaped, 61 Termination_of_radius_ /  Radius_and_intermedium_terminate_at_different_levels Radius_and_intermedium_terminate_at_same_level, 62 Radial_length_ /  Longer_than_humerus Shorter_than_humerus, 63 Radius_shape_ /  'Narrow, tapered or even breadth throughout' 'Broad  (almost as wide as long) or flared distally', 64 Postaxial_process_on_ulnare_ /  present absent, 65 '	Radials ' /  Jointed Unjointed, 66 Intertemporal_bone_ /  present absent, 67 Extrascapular_bones_ /  present absent, 68 Opercular /  present absent, 69 Submandibulars_and_gulars_ /  present absent, 70 Preopercular_ /  'Large, broad' 'Large, bar-like' Small, 71 Short_ventral_process_on_entepicondyle_ /  absent present, 72 Lacrimal_excluded_from_orbit_ /  no yes, 73 Jugal_extends_anterior_to_middle_of_orbit_ /  no yes, 74 Large_median_gular_ /  absent present, 75 Glenoid_position_ /  Elevated_from_plane_formed_by_clavicles Offset_ventrally_to_lie_at_same_level_as_clavicular_plane_, 76 Glenoid_orientation /  'Posterior and/or ventral orientation' Lateral_component_to_glenoid_orientation, 77 Coracoid_plate_ /  absent Present_and_extends_ventromedially, 78 Caput_humeri /  Rounded_to_hemispherical_shaped 'Subrectangular, much wider than high' 'Elongate (bifid or strap-shaped)', 79 Anterior_termination_of_ventral_ridge_ /  Adjacent_to_the_caput_humeri_ 'Offset distally toward the proximodistal mid - region of anterior margin of humerus ', 80 Area_proximal_to_radial_facets_ /  'Short, cylindrical leading edge, with no muscle scars' 'Enlarged, sharp leading edge, with areas for muscles attachment', 81 Basal_segments_of_lepidotrichia_elongated_ /  no yes ; 
 	MATRIX
-	Acanthostega     1111011212110100002?110?00?2112-1101?000?1111100???1100200?1110-011112111???1211-
-	Barameda         ?0????1??1?00100100?110001001001??00111?0????00??0??100012?1001110000?00000000001
-	Beelarongia      ?????????????????00?01001001?000?00011??0?0????1?????1?10????????0000?00000001?00
-	Cabonnichthys    110??11101?01102102?1111001100101010011?10011??1?1??10111?11?0?01000010000000??00
-	Canowindra       ??????????????????0?1110100?0000?00011???000???0?0???1??1??00?011?00010000?????00
-	Cladarosymblema  010010100??00110110000--000100000000011100????1?-0001001001?1?0?100001?000000???0
-	Eusthenopteron_  110001010110110200311100001100100000011110010101111110011201001010000110000001000
-	Glyptolepis_     2?010000200000000-0110--100000000000011101000000?0??0000111-??????0000000000000?0
-	Gogonasus_       00000000000001010010010000010000000001110000??0110001001000010001000011000000200?
-	taxon_10         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_11         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_12         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_13         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_14         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_15         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_16         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_17         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_18         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_19         ?????????????????????????????????????????????????????????????????????????????????
-	taxon_20         ?????????????????????????????????????????????????????????????????????????????????
+	Acanthostega      1111011212110100002?110?00?2112-1101?000?1111100???1100200?1110-011112111???1211-
+	Barameda          ?0????1??1?00100100?110001001001??00111?0????00??0??100012?1001110000?00000000001
+	Beelarongia       ?????????????????00?01001001?000?00011??0?0????1?????1?10????????0000?00000001?00
+	Cabonnichthys     110??11101?01102102?1111001100101010011?10011??1?1??10111?11?0?01000010000000??00
+	Canowindra        ??????????????????0?1110100?0000?00011???000???0?0???1??1??00?011?00010000?????00
+	Cladarosymblema   010010100??00110110000--000100000000011100????1?-0001001001?1?0?100001?000000???0
+	Eusthenopteron_   110001010110110200311100001100100000011110010101111110011201001010000110000001000
+	Glyptolepis_      2?010000200000000-0110--100000000000011101000000?0??0000111-??????0000000000000?0
+	Gogonasus_        00000000000001010010010000010000000001110000??01100010010000100010000110000002000
+	Gooloogongia      0?????1?????????000?1100010010010000111??100???0?0??10??1????????00000?010??????1
+	Ichthyostega      1111011212110100002?110?00?2112-1101?000??111100???11002?00??11-?11110?11?011211-
+	Mandageria        ?1???11?01?0?10210311111001100101010111110011100112110111?11001010000??0000001?00
+	Medoevia          01000000000001010?000100001??0000000011100???00100001001111??????000010000000100?
+	Megalichthys      010?101000000110110?00--000100000000011100000011-00010010?10?00010000100000000?00
+	Panderichthys_    1111011010?011020030111?0010012-110100111011?1000?0110020000110101000210011112011
+	Porolepis_        20010000200000000-0100--1010000?00000111010??????0??000?011???????0000?010??????0
+	Rhizodopsis       ????0?100???????1???10--001??00000?0011?0000?011???0?001?0?0100010000100000001000
+	Sterropterygion_  ????????????????????0???????????????????0?0????1???????10??010001??00?0??00000000
+	Tiktaalik         0????11212101100003?110?0010?12?11?1?011101??1001?0110020?00110101110211111112111
+	Tristichopterus_  110100000010110200211100001100100?000111100001011?10100110?10011100001?000??0???0
 
 ;
 
@@ -53,7 +55,7 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1358273758909;
+		timeSaved 1358276167057;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 9137090495488562297;
@@ -62,7 +64,7 @@ Begin MESQUITE;
 		tell It;
 			setID 0 7630647682441849585;
 			mqVersion 275;
-			checksumv 0 3 2681558029 null  getNumChars 81 numChars 81 getNumTaxa 20 numTaxa 20   short true   bits 15   states 15   sumSquaresStatesOnly 1424.0 sumSquares 1424.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			checksumv 0 3 3999567315 null  getNumChars 81 numChars 81 getNumTaxa 20 numTaxa 20   short true   bits 15   states 15   sumSquaresStatesOnly 3378.0 sumSquares 3378.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -74,7 +76,7 @@ Begin MESQUITE;
 			setAnnotationSize 0;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
-			setSize 1270 318;
+			setSize 1272 608;
 			setLocation 8 22;
 			setFont SanSerif;
 			setFontSize 10;
@@ -89,11 +91,15 @@ Begin MESQUITE;
 			tell It;
 				getWindow;
 				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 110;
+					endTell;
 					setExplanationSize 30;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1156 251;
+					setSize 1158 541;
 					setLocation 8 22;
 					setFont SanSerif;
 					setFontSize 10;
@@ -101,7 +107,6 @@ Begin MESQUITE;
 					tell It;
 						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
-					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
@@ -145,6 +150,35 @@ Begin MESQUITE;
 				tell It;
 					setColor Red;
 					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 236;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1158 541;
+						setLocation 8 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
 				endTell;
 				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
 				tell It;
