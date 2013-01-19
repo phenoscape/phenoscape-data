@@ -11477,6 +11477,15 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6b89c6d2-061c-4f4d-964d-a7bb6e4511b2"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000610">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0003651"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -11491,12 +11500,54 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6b89c6d2-061c-4f4d-964d-a7bb6e4511b2"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000610">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0003653"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state5595" label="distal extent of trochlea III intermediate to trochlea IV and II where trochlea IV projects furthest distally" symbol="3"/>
+        <state id="state5595" label="distal extent of trochlea III intermediate to trochlea IV and II where trochlea IV projects furthest distally" symbol="3" about="#state5595">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000610">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003652"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/bce06b1c-df99-4739-8c01-d7b87ac6a49b"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000610">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0003653"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0003651"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="polymorphic_state_set5748" symbol="127">
           <member state="state5593"/>
           <member state="state5595"/>
@@ -11507,9 +11558,115 @@
         </polymorphic_state_set>
       </states>
       <states id="states5596">
-        <state id="state5598" label="approximately equal in distal extent" symbol="0"/>
-        <state id="state5599" label="metatarsal II shorter than metatarsal IV but reaching distally farther than base of metatarsal IV trochlea" symbol="1"/>
-        <state id="state5600" label="metatarsal II shorter than metatarsal IV, reaching distally only as far as base of metatarsal IV trochlea" symbol="2"/>
+        <state id="state5598" label="approximately equal in distal extent" symbol="0" about="#state5598">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="BFO:0000052">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0004379">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0003651"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6b89c6d2-061c-4f4d-964d-a7bb6e4511b2"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003653"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state5599" label="metatarsal II shorter than metatarsal IV but reaching distally farther than base of metatarsal IV trochlea" symbol="1" about="#state5599">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003653"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001234"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000074">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:3000610">
+                            <phen:qualifier relation="BFO:0000050">
+                              <phen:holds_in_relation_to>
+                                <phen:typeref about="UBERON:0003653"/>
+                              </phen:holds_in_relation_to>
+                            </phen:qualifier>
+                          </phen:typeref>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state5600" label="metatarsal II shorter than metatarsal IV, reaching distally only as far as base of metatarsal IV trochlea" symbol="2" about="#state5600">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003653"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2f8d73ae-584a-4739-b348-3ae5119df877"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000074">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:3000610">
+                            <phen:qualifier relation="BFO:0000050">
+                              <phen:holds_in_relation_to>
+                                <phen:typeref about="UBERON:0003653"/>
+                              </phen:holds_in_relation_to>
+                            </phen:qualifier>
+                          </phen:typeref>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="polymorphic_state_set5654" symbol="66">
           <member state="state5598"/>
           <member state="state5599"/>
@@ -11520,13 +11677,187 @@
         </polymorphic_state_set>
       </states>
       <states id="states5601">
-        <state id="state5603" label="aligned in a single plane" symbol="0"/>
-        <state id="state5604" label="metatarsal II slightly displaced plantarly with respect to III and IV" symbol="1"/>
-        <state id="state5605" label="metatarsal II strongly displaced plantarly in respect to III and IV, such that there is little or no overlap in medial view" symbol="2"/>
+        <state id="state5603" label="aligned in a single plane" symbol="0" about="#state5603">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000610">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000078">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0008195"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6b89c6d2-061c-4f4d-964d-a7bb6e4511b2"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000078">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0008195"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state5604" label="metatarsal II slightly displaced plantarly with respect to III and IV" symbol="1" about="#state5604">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002181"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003652"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/0316c9a9-f5d1-49f1-831c-9d0e8d2faa88"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002181"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003653"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state5605" label="metatarsal II strongly displaced plantarly in respect to III and IV, such that there is little or no overlap in medial view" symbol="2" about="#state5605">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002181"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003652"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002181"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003653"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003652"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003651"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003653"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states5606">
-        <state id="state5608" label="absent" symbol="0"/>
-        <state id="state5609" label="present" symbol="1"/>
+        <state id="state5608" label="absent" symbol="0" about="#state5608">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000610">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003651"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/45bb6a27-5bc5-4e24-9127-c4f7dd70846a"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000610">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0003652"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state5609" label="present" symbol="1" about="#state5609">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000610">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003651"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000600"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000610">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0003652"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states5610">
         <state id="state5612" label="trochlear edges approximately equal in proximal extent" symbol="0"/>
