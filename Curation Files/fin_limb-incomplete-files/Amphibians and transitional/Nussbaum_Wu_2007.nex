@@ -1,5 +1,5 @@
 #NEXUS
-[written Tue Feb 05 11:53:36 CST 2013 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.76.23]
+[written Tue Feb 05 12:47:41 CST 2013 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.76.23]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -15,6 +15,8 @@ BEGIN CHARACTERS;
 	TITLE  Character_Matrix;
 	DIMENSIONS  NCHAR=189;
 	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	CHARSTATELABELS 
+		1 Position_of_nostril_relative_to_level_of_eye /  nostril_at_or_above_ventral_margin_of_eye nostril_above_dorsal_margin_of_eye, 2 Position_of_nostril_relative_to_tip_of_jaw /  nostril_located_anterior_to_tip_of_jaw nostril_located_at_level_or_posterior_to_level_of_tip_of_jaw, 3 Pupil_shape /  round horizontal vertical, 4 Tympanic_membrane /  tympanum_distinct 'tympanum indistinct, covered by skin or absent', 5 Lateral_skin_fold /  dorsolateral_fold_absent dorsolateral_fold_present, 6 Oblique_skin_fold /  oblique_supratympanic_fold_absent oblique_supratympanic_fold_present, 7 Posterior_margin_of_tongue /  free attached, 8 Anterior_palatal_fold /  absent simple papillated, 9 Posterior_palatal_fold /  absent simple papillated, 10 Relative_length_of_1st_and_2nd_fingers /  1st_finger_shorter_than_2nd 1st_finger_longer_than_2nd, 11 Fleshy_tip_of_phalanges_on_forelimb /  simple expanded_into_discs, 12 Webbing_between_fingers /  absent present, 13 Relative_length_between_2nd_and_4th_fingers /  2nd_finger_longer_than_4th 2nd_finger_shorter_than_4th, 14 Lateral_metacarpal_tubercle /  entire divided, 15 Fleshy_tip_of_toes /  simple expanded_into_discs, 16 Shape_of_inner_metatarsal_tubercle /  simple 'large and elevated, skin keratinized', 17 Outer_metatarsal_tubercle /  absent 'present, oval in shape' 'present, elevated into a spade-like shape', 18 Tarsometatarsal_tubercle /  absent 'present, spine-shaped' 'present: spade-shaped', 19 Webbing_between_toes /  web_at_least_at_base absent, 20 Relative_length_between_3rd_and_5th_toes /  3rd_toe_longer_than_5th 3rd_toe_shorter_than_5th, 21 Maxillary_and_premaxillary_teeth /  present absent, 22 Aponeurosis_on_midline_of_m._intermandibularis /  absent present, 23 Lateral_slip_of_m._intermandibularis /  absent 1_lateral_slip 2_lateral_slips, 24 Origin_of_lateral_slip_of_m._intermandibularis /  from_jaw_angle midway_on_mandible absent, 25 Orientation_of_anterior_fibers_of_m._intermandibularis /  'anteromedio-posterolaterally' 'posteromedio-anterolaterally', 26 Position_of_cranial_nerve_V_relative_to_m._adductor_mandibulae_longus /  muscle_absent muscle_medial_to_nerve muscle_lateral_to_nervemuscle_penetrated_by_nerve, 27 'Position of cranial nerve V rela- tive to m. adductor mandibulae internus' /  nerve_anterior_to_muscle nerve_posterior_to_muscle nerve_penetrating_muscle, 28 Insertion_of_m._adductor_mandibulae_internus /  by_muscle_fiber by_ligament, 29 M._adductor_mandibulae_externus_superficialis /  muscle_absent cranial_nerve_V_medial_to_muscle cranial_nerve_V_lateral_to_muscle, 30 Origin_of_m._depressor_mandibulae /  on_dorsal_fascia_and_skull on_skull_only on_dorsal_fascia_only, 31 'Insertion of m. petrohyoideus pos- terior III' /  on_posteromedial_process_of_hyoid 'on posteromedial process and on cricohyoid mem- brane', 32 Origin_of_m._cucularis_relative_to_that_of_m._petrohyoideus_posterior_III /  dorsal_and_lateral ventral, 33 Insertion_of_m._constrictor_laryngis_anterior /  on_medial_margin_of_posteromedial_process on_ventral_hyoid_plate, 34 Number_of_slips_of_m._petrohyoideus_posterior /  2 3, 35 M._omohyoideus /  present absent, 36 ._M._sternohyoideus_dorsalis /  originating_on_lateral_hyoid fibers_connecting_to_each_other, 37 Insertion_of_m._pectoralis_and_m._deltoideus /  insertion_converge pectoralis_dorsal_and_medial_to_deltoideus insertion_separated_by_deltoid_crest_of_humerus pectoralis_inserting_on_axillary_spine, 38 Cutaneous_slip_of_m._pectoralis._ /  absent present, 39 M._rectus_abdominis_pars_anteroreflecta /  absent present, 40 Iliosacral_articulation /  type_I type_II, 41 M._iliolumbaris_insertion_on_transverse_process /  on_1_or_2_transverse_processes on_3_or_more_transverse_processes, 42 Origin_of_m._coccygeoiliacus_on_urostyle /  on_posterior_tip ; 
 	MATRIX
 	Scaphiopus__________________   012100000100010100000002011102000010000001102100100111101001?11?10211100002111020021002111010011100001010000??011000002100100200100010000100202000010000000000121112000000010000200?000000211
 	Megophrys_                     0121000001000000000001101111201001001000011111101112110100012011002110010001000201011020111100100101122220010000100000?0001002002110102101002020000100000222201212130010000000002000200000201
@@ -69,7 +71,7 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1360086817013;
+		timeSaved 1360090061702;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 2633798286484642487;
@@ -117,7 +119,6 @@ Begin MESQUITE;
 					tell It;
 						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
-					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
@@ -161,6 +162,31 @@ Begin MESQUITE;
 				tell It;
 					setColor Red;
 					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1157 397;
+						setLocation 8 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
 				endTell;
 				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
 				tell It;
