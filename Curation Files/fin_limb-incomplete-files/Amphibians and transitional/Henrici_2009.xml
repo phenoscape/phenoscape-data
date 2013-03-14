@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.8" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -53,6 +53,7 @@
     </otu>
     <otu id="91255c3e-2b29-4f86-aee6-28c74528b03f" label="Pelodytes" about="#91255c3e-2b29-4f86-aee6-28c74528b03f">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/ATO_0002886"/>
+      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">stated in appendix</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000095"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">11405</meta>
@@ -205,7 +206,6 @@
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000051"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">54318D-I</meta>
       </meta>
-      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">stated in appendix</meta>
     </otu>
   </otus>
   <characters xmlns:ns="http://www.nexml.org/2009" id="90f53a87-f67d-4d0d-9fc7-1baeda45c7d1" xsi:type="ns:StandardCells" otus="895b678e-a53b-4b04-bbc0-0a7946042504">
@@ -685,7 +685,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/75db22d6-c530-4066-914e-b4dd37246473"/>
+                  <phen:typeref about="PATO:0002426"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
