@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.7" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.8" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -275,7 +275,20 @@
   <characters xmlns:ns="http://www.nexml.org/2009" id="85458882-d619-4175-b636-432032fbbe4d" xsi:type="ns:StandardCells" otus="c7b9a68f-698c-42ef-b58f-a3820366d216">
     <format>
       <states id="6db547d3-0907-4747-8eee-9abfc459feb2">
-        <state id="1e69b32d-1717-48f6-a997-8cbf731161d6" label="absent" symbol="0" about="#1e69b32d-1717-48f6-a997-8cbf731161d6"/>
+        <state id="1e69b32d-1717-48f6-a997-8cbf731161d6" label="absent" symbol="0" about="#1e69b32d-1717-48f6-a997-8cbf731161d6">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002091"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001590"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="d80514c5-14da-44fb-bca5-4b670cbb7291" label="present" symbol="1"/>
       </states>
       <states id="69833b82-2145-476c-948a-d45941436e2e">
@@ -700,13 +713,10 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140">
-                    <phen:qualifier relation="OBO_REL:relative_to">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2001967"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001967"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
