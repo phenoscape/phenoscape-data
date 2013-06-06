@@ -845,7 +845,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality count="2">
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/236c3478-e06b-479c-a469-835d854feccf"/>
+                  <phen:typeref about="PATO:0001590"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:3000762">
                       <phen:qualifier relation="BSPO:0000121">
@@ -874,7 +874,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality count="1">
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/236c3478-e06b-479c-a469-835d854feccf"/>
+                  <phen:typeref about="PATO:0001590"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:3000762">
                       <phen:qualifier relation="BSPO:0000121">
@@ -1066,8 +1066,50 @@
         </state>
       </states>
       <states id="states506">
-        <state id="state508" label="absent" symbol="0" about="#state508"/>
-        <state id="state509" label="present" symbol="1"/>
+        <state id="state508" label="absent" symbol="0" about="#state508">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000931"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000856"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state509" label="present" symbol="1" about="#state509">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000931"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000856"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states510">
         <state id="state512" label="absent" symbol="0" about="#state512">
@@ -1195,6 +1237,20 @@
                 </phen:bearer>
                 <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004765">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0012136"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001499"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1755,7 +1811,6 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state647" symbol="2" label=""/>
       </states>
       <states id="states558">
         <state id="state560" label="one spherical proximal element" symbol="0" about="#state560">
@@ -1773,6 +1828,20 @@
                 </phen:bearer>
                 <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004765">
+                    <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0005880"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001499"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2327,10 +2396,10 @@
       <char about="#char460" id="char460" label="Orientation of transverse processes of 8th presacral vertebra" states="states459">
         <meta content="false" datatype="xsd:boolean" id="meta752" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char465" id="char465" label="Omosternon" states="states464">
+      <char about="#char465" id="char465" label="Omosternum" states="states464">
         <meta content="false" datatype="xsd:boolean" id="meta753" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char471" id="char471" label="Metasternon" states="states470">
+      <char about="#char471" id="char471" label="Metasternum" states="states470">
         <meta content="false" datatype="xsd:boolean" id="meta754" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char476" id="char476" label="Coracoid" states="states475">
