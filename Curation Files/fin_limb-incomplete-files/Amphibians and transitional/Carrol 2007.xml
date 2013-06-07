@@ -1218,26 +1218,6 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000586"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7d4af819-bbf0-4ab5-b24f-29b4008c1e49">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0001470">
-                          <phen:qualifier relation="OBO_REL:part_of">
-                            <phen:holds_in_relation_to>
-                              <phen:typeref about="UBERON:0000976"/>
-                            </phen:holds_in_relation_to>
-                          </phen:qualifier>
-                        </phen:typeref>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
                   <phen:typeref about="PATO:0000404"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -4541,7 +4521,11 @@
         <state id="state787" label="from posterior to anterior" symbol="1"/>
       </states>
       <states id="states788">
-        <state id="state790" label="facultatively terrestrial" symbol="0"/>
+        <state id="state790" label="facultatively terrestrial" symbol="0" about="#state790">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="state791" label="aquatic" symbol="1"/>
       </states>
       <char about="#char105" id="char105" label="Total skull length (cm)" states="states104">
