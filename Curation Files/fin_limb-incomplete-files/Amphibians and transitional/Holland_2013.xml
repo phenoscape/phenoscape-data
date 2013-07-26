@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="org.nexml.model.impl.DocumentImpl" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
   <otus about="#otus1179" id="otus1179" label="Taxa">
     <meta content="9137090495488562297" datatype="xsd:long" id="meta1268" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
     <meta content="Default Bush (id 2, version 84)" datatype="xsd:anySimpleType" id="meta1267" property="bean:DefaultTree" xsi:type="nex:LiteralMeta"/>
@@ -171,7 +174,7 @@
       <states id="states1309">
         <state id="state1311" label="One" symbol="0"/>
         <state id="state1312" label="two none" symbol="1"/>
-        <state id="state1608" symbol="2"/>
+        <state id="state1608" symbol="2" label=""/>
       </states>
       <states id="states1313">
         <state id="state1315" label="Anterior termination level with processus ascendens" symbol="0"/>
@@ -208,7 +211,7 @@
       </states>
       <states id="states1346">
         <state id="state1348" label="More than 80% " symbol="0"/>
-        <state id="state1349" label="&#9;70-79% " symbol="1"/>
+        <state id="state1349" label="	70-79% " symbol="1"/>
         <state id="state1350" label="50-69%" symbol="2"/>
         <state id="state1351" label="Less than 50%" symbol="3"/>
       </states>
@@ -246,7 +249,7 @@
       </states>
       <states id="states1384">
         <state id="state1386" label="Present as mosaic " symbol="0"/>
-        <state id="state1387" label="&#9;Present as single ossification " symbol="1"/>
+        <state id="state1387" label="	Present as single ossification " symbol="1"/>
         <state id="state1388" label="Absent, nasals in contact medially" symbol="2"/>
       </states>
       <states id="states1389">
@@ -554,7 +557,7 @@
       <char about="#char1390" id="char1390" label="Number of nasals " states="states1389">
         <meta content="false" datatype="xsd:boolean" id="meta1672" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char1394" id="char1394" label="&#9;Frontals " states="states1393">
+      <char about="#char1394" id="char1394" label="	Frontals " states="states1393">
         <meta content="false" datatype="xsd:boolean" id="meta1673" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char1398" id="char1398" label="Extratemporal" states="states1397">
@@ -587,7 +590,8 @@
       <char about="#char1435" id="char1435" label="Basicranial fenestra " states="states1434">
         <meta content="false" datatype="xsd:boolean" id="meta1683" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char1439" id="char1439" label="&#10;Contact margin for clavicle on cleithrum " states="states1438">
+      <char about="#char1439" id="char1439" label="
+Contact margin for clavicle on cleithrum " states="states1438">
         <meta content="false" datatype="xsd:boolean" id="meta1684" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char1443" id="char1443" label="Anocleithrum" states="states1442">
@@ -659,7 +663,7 @@
       <char about="#char1534" id="char1534" label="Postaxial process on ulnare " states="states1533">
         <meta content="false" datatype="xsd:boolean" id="meta1707" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char1538" id="char1538" label="&#9;Radials " states="states1537">
+      <char about="#char1538" id="char1538" label="	Radials " states="states1537">
         <meta content="false" datatype="xsd:boolean" id="meta1708" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char1542" id="char1542" label="Intertemporal bone " states="states1541">
