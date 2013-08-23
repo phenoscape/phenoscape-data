@@ -1,0 +1,210 @@
+#NEXUS
+[written Wed Jul 25 09:47:48 CDT 2012 by Mesquite  version 2.75 (build 564) at Jordan-Catletts-MacBook-Pro.local/172.21.64.73]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=23;
+	TAXLABELS
+		Acanthostega Whatcheeridae Crassigyrinus Anthracosauroidea Baphetidae Caerorhachis Colosteidae Basal_temnospondyls Branchiosauridae Amphibamidae Rhynchonkos Acherontiscus Aïstopoda Adelospondyli Lysorophia Microsauria Nectridea Early_amniotes Albanerpetontidae Urodela Triadobatrachidae Anura Caecilia 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=118;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 'Total skull length (cm)' /  greater_than_10 between_2_and_10 less_than_2, 2 'Ratio of skull to presacral column length (%)' /  between_45_and_60 greater_than_60 between_35_and_45 between_20_and_35 less_than_20, 3 Skull_length_expressed_in_no._of_anterior_trunk_vertebrae /  14?16 13 9?10 7?8 4?6, 4 'Ratio of skull height to skull width (%)' /  less_than_25 25?45 45?60 _greater_than_60, 5 'Ratio of orbit (or orbitotemporal opening) length to skull length (%)' /  less_than_20 20?25 _25?_40 _greater_than_40, 6 Position_of_jaw_articulation /  behind_the_occiput at_the_level_of_the_occiput _anterior_to_the_occiput, 7 Relationship_of_skull_table_to_cheek /  continuous_arc sharp_change_of_orientation_and_possible_mobility does_not_apply, 8 'Bones surrounding nostril (not including pm and m)' /  ' l, at' 'l, n' prf 'l, prf' 'l, n, prf' 'n, l + prf' n, 9 Bones_surrounding_orbit /  ' prf, pf, po, j' 'l, prf, pf, po, j' ' l, prf, f, pf, po, j, m' 'l, prf, pf, po,j, m' 'l, prf, pf, j' ' l, prf, p, integrated sq+t+m' 'l,prf,f,pf,po,j' 'm,fusedl+prf, median f, p, sq, j' 'l, prf, f, p, m' 'prf or n, fused f + p, m' ' m, prf, pf, j', 10 Orbit_shape /  rounded square expanded_anteriorly expanded_posteriorly, 11 Orbit_position /  intersecting_midline_of_skull anterior_to_midline_of_skull, 12 Pineal_opening /  present absent, 13 Posterior_embayment_of_squamosal /  'incised^ndorsally for spiracle' without_embayment large_embayment_supporting_a_tympanum, 14 Squamosal /  firmly_integrated_into_cheek_throughout_development 'has mobile articu- lation dorsally with otic capsule and/or adjacent^ndermal bones of skull table', 15 Anterior_zygomatic_process_on_the_squamosal /  lacking present, 16 'Relationship between maxilla and jaw suspen-^nsion in larvae and/or adults' /  ventral_margin_of_cheek_continuous_between_maxilla_and_jaw_suspension gap_between_maxilla_and_jaw_suspension, 17 Temporal_or_orbitotemporal_opening /  no_temporal_opening temporal_opening orbitotemporal_opening, 18 Sensory_canals /  ' present, but largely open as lines of pores' largely_or_entirely_open_as_grooves 'no lateral-line canals incised in bone', 19 Bones_of_the_skull_roof /  'all bones present (a condition not represented in the matrix)' _it_absent mr_absent 'mr, preo absent' 'mr, preo, it absent' 'mr, preo, it, st absent' 'mr, preo, it absent, fusion of st, sq, t' 'mr, preo, it, j, pf, po, st absent' 'mr, preo, it, st, pp, t, qj absent, l + prf fused, median f' 'mr, preo, it, st, t, pp, pf, po, j absent' 'mr, preo, it, st, t, pp, l, ±prf, j, pf, po absent, f + p fused' 'mr, preo, it, st, po', 20 Relationship_between_parietal_and_tabular /  parietal_separated_from_tabular_by_supratemporal 'parietal in contact with tabular; (2) not applicable (e.g. tabular absent)', 21 Interpterygoid_vacuity /  absent ' a conspic- uous oval opening that extends anteriorly to the vomers', 22 Ectopterygoid /  present lost, 23 'Parasphenoid extends beneath the level of bs and^nbo' /  no yes, 24 Marginal_dentition /  'nearly uniform, moder-^nate-sized teeth in pm and m' huge_fangs_on_pm distinct_canine_teeth_in_m a_small_number_of_bulbous_teeth, 25 Palatal_dentition /  ' fang and associated replacement pit on v, pal, and ect' 'fang and associated replacement pits present on v and pal, but missing on ect' 'palatal fangs on pal and ect, but missing on v' ' large palatal teeth on v, pal and ect, but without associated replacement pits' progressive_reduction_of_fang_and_pit_pairs_to_patches_of_denticles 'continuous rows of small teeth on v and pal and/or ect' 'rows of teeth on v, but no other palatal bones' row_of_teeth_on_pal patches_of_denticles_on_v 'cov- ering of small denticles, but neither enlarged teeth nor rows of small teeth on v, pal, or ect' 'no enlarged teeth on v, pal, or ect, but rows of large denticles radiating across pterygoid', 26 Tooth_structure /  crown_and_base_of_teeth_continuous_in_adults 'teeth pedicellate (crown and base separated by fibrous tissue)', 27 Relationship_between_the_ventral_margin_of_the_preart_and_the_infradentary_bones /  elongate_gap_where_the_meckelian_bone_was_unossified sutural_contact, 28 Parasymphysial_plate /  present absent, 29 Number_of_coronoids /  3 2 1 0, 30 Other_jaw_bones_distinct_in_adults /  'd, 2spl, a,^nsa, preart, art' ' d, 1 spl, a, sa, preart, art' ' d, preart, a + art' 'd, a, preart, art, co' 'd, ar, ansp' 'pa, pd', 31 Mentomeckelian_bone /  not_present_in_adults present_in_adults, 32 Dentition /  as_in_upper_jaws loss_of_dentary_dentition, 33 Supraoccipital /  not_expressed_as_a_separate_element occupies_position_between_pp_and_otic_capsule, 34 'Post-temporal fossa' /  opens_onto_occipital_surface not_apparent, 35 Relationship_between_bo_and_eo /  partially_or_completely_fused clearly_distinct, 36 Relationship_between_otic_capsule_and_t /  bony_contact _cartilaginous_contact no_contact_does_not_apply, 37 Relationship_between_eo_and_pp /  eo_not_reaching_pp eo_does_reach_pp pp_lost eo_indistinguishably_fused, 38 Otic_capsules /  _fused_posteriorly_at_midline_without_suture meet_at_midline_suture, 39 Articulation_between_occiput_and_vertebral_column /  notochord_extends_anteriorly_between_thin_husk_of_eo_and_bo_with_little_if_any_bony_articulation_with_atlas_centrum 'loosely articulated, block-like bo, which did not form a finished occipital condyle' 'closely integrated surfaces of eo and bo forming a shallow, more or less circular recess for articulation with atlas centrum' 'articular surfaces of eo lateral to bo, forming a double occipital condyle;' fused_bo_and_eo_form_a_circular_recess_for_the_notochord_?_bony_contact_with_the_atlas_only_on_the_periphery_of_this_structure bo_but_not_eo_in_contact_with_atlas_centrum broad_recess_formed_by_bo_and_eo 'hemispherical occipital condyle that forms a ball- and-socket joint with the multipartite atlas', 40 Relationship_between_bo_and_eo /  'no clear suture between bo and eo, complex separated from the otic capsule dorsally by lateral otic fissure' ' clear sutural attachment between bo and eo, lateral otic fissure not evident;' ' sec- ondary incorporation between bo, eo, and otic capsule into a consolidated otic?occipital unit', 41 Sphenethmoid_region /  continuity_dorsally_and_laterally_between_otic?occipital_and_sphenethmoid_region wide_separation_between_otic?_occipital_and_sphenethmoid_elements area_of_pleurosphenoid_extends_from_exit_of_trigeminal_nerve_to_sphenethmoid, 42 Distal_end_of_stapes /  'with large, spatulate portion in contact with the quadrate ramus of pt' with_long_slender_stem_directed_towards_an_area_assumed_or_known_to_have_been_occupied_by_a_tympanic_membrane with_short_stem_directed_towards_quadrate_bone 'fenestra ovalis opens ventrally, and stapes may have no stem at all' with_short_stem_directed_towards_squamosal, 43 Stapes_with_stapedial_foramen /  yes no, 44 Operculum /  stapes_the_only_ear_ossicle stapes_accompanied_by_operculum accompanied_by_accessory_ossicle_above_stem_of_stapes, 45 Bony_elements_of_hyoid_appartus /  ' bb, hh, ch' _little_if_any_ossification ?_ch hb_and_cb 'bb, two hh, ch, two hb, four cb' 'plate-like cb' 'ch, hb, cb' 'h, ch, four hb, four cb' '? + cb, eb' _cb 'bb, hinged ch, fused hb blade, four cb' 'bb, ch, four cb', 46 Pharyngeal_denticles /  attached_to_thin_bony_plates_associated_with_cb four_rows_not_attached_to_plates six_rows_interdigitated_with_one_another, 47 Function_of_hyoid_apparatus /  no_evidence_of_use_for_tongue_protrusion_in_terrestrial_adults 'tongue protrusion involving the basibranchial bone, first hypobranchial bone and ceratohyal bones' hyoid_plate_with_parathyoid_and_posteromedial_processes_serves_for_support_of_protrudable_tongue, 48 Number_of_trunk_vertebrae /  21?30 31?40 41?50 51?70 71_and_greater 11?_20 1?10, 49 Neural_arch_fusion /  neural_arches_weakly_attached_medially_in_trunk_region 'no medial fusion between neural arches;' medial_fusion_of_all_postaxial_neural_arches deep_division_between_paired_neural_spines_of_trunk, 50 Neural_arch_articulation /  neural_arches_loosely_articulated_with_intercentra neural_arches_articulated_with_pleurocentra neural_arches_articulated_with_both_intercentra_and_pleurocentra neural_arches_fused_to_pleurocentra_in_adults, 51 Supraneural_canals /  present_ absent, 52 Ossification_of_pleurocentra /  not_ossified_in_the_first_seven_presacral_vertebrae_or_the_posterior_portion_of_the_tail ' ossified throughout^ntrunk' no_pleurocentrum_ossified, 53 Pleurocentra_shape /  paired 'fused ventro- medially into a crescent or horseshoe shape' cylindrical, 54 Intercentra /  'paired throughout trunk ex^ncept for atlas and sacral vertebrae, where they are fused medially' fused_ventromedially_throughout_trunk cylindrical lost, 55 Atlas?axis_complex /  paired_proatlas_oberved_or_assumed_on_the_basis_of_paired_prezygopophyses_on_atlas fused_medially lost, 56 Atlas_arches /  paired _fused_medially, 57 Axis_arches /  paired fused_medially, 58 Articulation_between_atlas_and_axis_centrum /  not_specialized_relative_to_those_of_more_posterior_vertebrae 'posterior surface of atlas centrum is subhemispherical in outline and deeply con- cave to fit over the specialized axis centrum', 59 Number_of_sacral_vertebrae /  one two none, 60 Number_of_caudal_vertebrae /  31?40 41?_50 51?60 21?30 11?20 0?10 area_of_caudal_vertebrae_forms_urostyle, 61 Anocleithrum /  present absent, 62 Cleithrum /  fused_to_scapula_with_postbranchial_lamina a_separate_ossification_with_postbranchial_lamina a_separate_ossification_without_postbranchial_lamina bony_element_forming_the_leading_edge_of_the_suprascapula_without_postbranchial_lamina lost, 63 Clavicle /  present absent, 64 Interclavicle /  present absent, 65 Scapula_and_coracoid_ossification /  scapulocoracoid_ossified_as_a_single_unit 'not co-ossified^nin adult' neither_ossified, 66 Scapula_and_coracoid_openings /  'numerous openings in variable positions, not readily homologized with those of later tetrapods' 'two openings, the supraglenoid foramen and supracoracoid foramen' supraglenoid_foramen_and_two_coracoid_foramina 'two coracoid foramina, but no supraglenoid foramen' suprascapular_foramen_only supraglenoid_foramen_elongated_to_form_scapular_cleft a_single_coracoid_foramen_only 'does not apply (scapulocoracoid bone not ossified)', 67 Glenoid_articulation /  'strap-shaped, slightly helical (screw-shaped)' subcircular_and_evenly_concave_to_articulate_with_hemispherical_humeral_head 'does not apply (glenoid not ossified)', 68 Medioventral_endochondral_elements_of_the_shoulder_girdle /  none 'a single median element that articulates with base of scapulo- coracoid' 'a series of ventromedial elements (omosternum, epicoracoid and sternum) that serve to resist the force of striking the ground', 69 Shaft /  'humerus flattened, L-shaped bone with no evidence of shaft' proximal_and_distal_areas_of_expansion_separated_by_a_marked_constriction_presaging_a_distinct_shaft substantial_shaft 'does not apply (no humerus)', 70 Articulating_surface_for_articulation_with_scapulocoracoid /  'surface covering the entire proximal end of bone; where well ossified, it has a spiral pattern' surface_in_the_form_of_a_hemispherical_condyle does_not_apply, 71 Articulation_surfaces_for_radius_and_ulna /  separated_and_directed_ventrolaterally adjacent_and_facing_ventrally hemispherical_radial_condyle does_not_apply, 72 Torsion_angle_between_the_planes_of_the_proximal_and_distal_areas_of_expansion /  roughly_30_degrees 40_to_50_degrees approximately_90_degrees does_not_apply, 73 Foramina /  'entepicondylar and ectepicondylar canals, and two other foramina designated as C and D' only_entepicondylar_foramen entepicondylar_foramen_and_foramen_C 'loss^nof all foramina' does_not_apply, 74 Ectepicondylar_ridge /  present_dorsally lost does_not_apply, 75 Entepicondylar_process /  'extensive, posteriorly directed' _lost does_not_apply, 76 Supinator_process /  not_clearly_distinguished_from_deltoid_chest distinct absent does_not_apply, 77 Latissimus_dorsi_process /  present absent does_not_apply, 78 Ulna_size /  shorter_than_radius equal_in_length_to_or_longer_than_radius does_not_apply, 79 Olecranon_on_ulna /  lacking present does_not_apply, 80 Flange_along_shaft /  extensive absent does_not_apply, 81 Ulna_and_radius_fused /  no yes does_not_apply, 82 Ventral_radial_crest /  present absent does_not_apply, 83 Ossified_carpal_bones /  intermedium_only 'three ossified carpals, including first and second distal' 'radiale, intermedium, ulnare, three or four centralia, four distals' 'two proximals, three distals' 'three proximals, one centrale, four or five distals' 'pisiform, intermedium, radilae, ulnare, two or three cen- tralia, five distals' 'three proximals, three centralia, five distals' 'three proximals, three centralia, three distals (first and second fused into basale commune)' 'tridiate, interme- dium, ulnares, four centralia, four distals, one prepollex' does_not_apply, 84 Ossification_of_the_intermedium_surface /  perichondrally only_endochondrally does_not_apply, 85 Number_of_metacarpals_and_digits /  eight five four does_not_apply, 86 Manus_phalangeal_formula /  '3,3,3,4,4,4,4,3' '2,3,4,5,3?4' '1,2,2,3,2' '2,2,3,3' '2,3,3,3' '3,?3,3,2' '2,3,4,3,2' '2,3,3,2' does_not_apply, 87 Sutures /  'co-ossified ilium, ischium and pubis, showing little if any trace of sutures' 'distinct sutural contacts between ilium, ischium, and pubis (if present)' does_not_apply, 88 Time_of_ossification_of_pubis /  at_the_same_time_as_the_ilium_and_ischium slow_to_ossify_or_lost_altogether does_not_apply, 89 Ilium_shape /  clearly_bifurcate_dorsal_and_posterior_processes 'only a single process, dorsally or posteriorly angled' angled_anterodorsally does_not_apply, 90 Position_of_acetabulum_relative_to_base_of_iliac_blades /  anterior posterior does_not_apply, 91 Unfinished_surface_of_acetabulum /  extends_anteriorly_across_much_of_pubis does_not_extend_anteriorly does_not_apply, 92 Puboischiadic_plate /  extends_the_length_of_several_centra greatly_shortened does_not_apply, 93 Obturator_canals_on_puboischiadic_plate /  more_than_one only_a_single_foramen no_foramen does_not_apply, 94 Articulation_with_the_acetabulum /  broadly_curving_surface_extending_over_the_entire_proximal_end_of_the_bone concentrated_on_hemispherical_condyle does_not_apply, 95 Plane_of_proximal_articulating_surface_to_the_plane_of_the_surface_for_articulation_with_the_tibia_and_fibula /  at_60_to_90_degrees in_the_same_plane proximal_surface_not_planar does_not_apply, 96 Intertrochanteric_fossa /  large_and_facing_anteriorly faces_primarily_ventrally lost does_not_apply, 97 Ventral_ridge_system /  'proximally located internal trochanter, elongated fourth trochanter along the adductor blade [as in Coates (1996)] occupying  approx. 50 precent of the length of the femur, succeeded by the adductor crest, extending to nearly the end of the shaft' 'as in (0), but adductor blade and crest much reduced' 'as in (0), but adductor blade much shortened, and adductor crest extended for much of the distal half of the shaft' 'as in (0), but adductor blade extends to no more than half the length of the shaft' 'ven- tral ridge system very poorly ossified' 'diago- nal ridge running the length of the shaft;' 'loss of adductor ridge system;' 'as in (0), but with internal trochanter merged with short adductor crest;' 'as in (3), but distinction between blade and crest lost' 'as in (3), but with loss of fourth trochanter' does_not_apply, 98 Size /  tibia_longer_than_fibula fibula_as_long_or_longer_than_tibia does_not_apply, 99 Lateral_margin_of_tibia /  straight_and_overlapped_by_fibula sharply_concave gently_concave does_not_apply, 100 Tibia_shaft /  ' tibia nearly flat, with little or no shaft between widened proximal and distal extremities' clearly_apparent_shaft does_not_apply, 101 _Torsion_between_extremities /  no yes does_not_apply, 102 Cnemial_crest_along_anterodorsal_surface /  present absent does_not_apply, 103 Tibia_and_fibula /  ossified_separately fused does_not_apply, 104 Shape /  slight_concavity_of_medial_edge_of_fibula_and_little_or_no_concavity_of_lateral_edge_between_expanded_proximal_and_distal_articulating_surfaces _narrow_shaft_between_articulating_surfaces very_elongate_shaft_with_little_expansion_of_articulating_surfaces does_not_apply, 105 Axial_torsion_of_fibula /  approx._25_degrees approx._0_degrees approx._45_degrees 70?90_degrees does_not_apply, 106 Proximal_row_of_tarsals_includes /  'short, rectangular or rounded fibulare, intermedium, and tibiale' tibiale_and_fibulare_elongate 'fibulare (calcaneum) plus fused tibiale, intermedium and proximal centrale forming astragalus;' does_not_apply, 107 Number_of_centralia /  _none_recognized four three _two_independent one_large_centrale does_not_apply, 108 Distal_tarsals /  five fusion_of_distal_tarsals_1_and_2_to_form_basale_commune three_distal_tarsals_and_support_for_prehallux does_not_apply, 109 Number_of_metatarsals_and_digits /  eight_ five three does_not_apply, 110 Phalangeal_formula /  '1,2,3,3,3,3,3,2' '2,3,4,4, greater than 2' '2,3,4,5,5' '2,2,3,4,?' '2,2,3,4,3' '2,3,3,3,2' '2,3,4,5,3' '2,3,4,4,2' does_not_apply, 111 Larval_stages /  'lacking distinguishable larvae as identified by the presence of external gills and/ or a period of metamorphosis between juveniles and adults' 'distinct larval stage recognized by external gills and/or morphological changes leading from aquatic juvenile to terrestrial adult, such as loss of caudal fins' knowledge_of_juveniles_lacking_external_gills_or_metamorphic_changes lack_of_evidence_for_any_aquatic_stage, 112 Larval_feeding /  'probable use of tooth plate attached to ceratobranchials to strain, crush, and hold prey in oropharyngeal cavity' ' gap- and-suck feeding involving use of interdigitating gill rakers, not attached to bony plates, to block intake of water through gill openings' suspension_feeding_on_particulate_matter_and_finely_comminutated_plants does_not_apply, 113 Larval_pumping_system /  'intermittent posteroventral movement of hyoid apparatus to expand oropharyngeal opening, as judged by configuration of hyoid elements' continuing_dorsoventral_pumping_of_ceratohyals does_not_apply, 114 Larval_locomotion /  'fish-like undulation of trunk and tail' 'whip-like action of tail that lacks bony support' _does_not_apply, 115 Pattern_of_skull_ossification /  'essentially simultaneous ossification of dermal bones of skull roof, palate, and lower jaw as seen in tiny juveniles' 'sequential ossification ? tooth- bearing elements of the palate, upper and lower jaws, and sq?f, p, eo; circumorbital bones' 'sequential ossification ? frontoparietal, eo, ps? pm, m, n?v, pt, sq' 'sequential ossification ? m, f, pal, ps?l, v, eo?ps', 116 Ossification_of_vertebrae /  arches_before_centra centra_before_or_simultaneous_with_centra, 117 'Ossification of distal limb elements and autopo- dium' /  from_anterior_to_posterior from_posterior_to_anterior, 118 Adult_lifestyle /  facultatively_terrestrial aquatic ; 
+	MATRIX
+	Acanthostega         000000000000000000100000100000000001000000000?0000000000000000000000000000000000000000000000000000000000000000??0????0
+	Whatcheeridae        000210111100000000200010001000000011001?????1?0000010120100?110001?000001000011100????0001000011001000011???11???????0
+	Crassigyrinus        00030011111000000130001000000000???0??11????1?0010?2?100000?120027?00000000000110?????1101?0?011112100012????????????1
+	Anthracosauroidea    020310111000000001310010201100000110002100001?0121011100100102000200001110000111011?110001100011211010010010121???00?0
+	Baphetidae           101?200?12000000013000100010000000100020?0?02?0?20???100?00?11000??000001000011100????100100?????12000011???13?????0?0
+	Caerorhachis         1002100??000?0000230001000100000??????????????0121011101100?1?00???0??????????110?????000100?0113?210101?0101????????0
+	Colosteidae          0311000210001000013000110010000000110121100030022101010010001100030000002000011100??12100110101131211001301013?0?????0
+	Basal_temnospondyls  102?20011000200002301010001100000010122111004000?0?1110010001200010010111002111101212310111010113111??01201014100000?0
+	Branchiosauridae     222121012000210102401010411100000?101?211100420000?001???0001200??0020113?12111101??231111?0?0114021??010??01411001001
+	Amphibamidae         12212021?00020000240101041110000001012311100110520?111??10041200020020223112111101212311111010115021?10121?01410?000?0
+	Rhynchonkos          24310201101010000251001050111000111212312202??0123112121101?1401???02012311211110?3124101110?0116121110120201????????0
+	Acherontiscus        243?0103?01?100001????13?0?????0????????????5?01?2?122???026140027203233422322222292382232223233{0 1}2323223435338???????1
+	Aïstopoda            143?110?30101000124000107011210000000240?3101?04231123111026120027203233422322222292382232223233{0 1}23232234353382??201?1
+	Adelospondyli        1??1010?40100000026200109011?0000013??51????6?04220123201026120027203233422322222292382232223233{0 1}23232234353382??201?1
+	Lysorophia           243332245311100122710110601131001010126112107?0331112320000412000??020?03112101101??25111????000712111???0?0152??201?1
+	Microsauria          233?21011000100002510010301100001011123122028?002311212110011200020010?2111211110141241001101011311000013020162??200?0
+	Nectridea            134?210410001000024100105011210000101231????1?0523112321100212000??000?01?0011110141161011102011211000012??0172??201?0
+	Early_amniotes       132221016000100002410012{0 1}01111001012027112009?00231121101012120002002022100111110151110011101011812110012230163322?110
+	Albanerpetontidae    22322225730110002282??10?011320001032032????1?0023112321110314111??0202231121111016127101110?011?121??01201011???????0
+	Urodela              2341222183011101229211108111231001132131141142152311232110041411040121223112111101712711111020119121100120211411001001
+	Triadobatrachidae    134?312?9300200022{0 1}2111????1???101?3223?111???2523112?2110051201051021223112111101?1??11211021226021?10121????2?1????0
+	Anura                113?32269301201022{0 1}2111081113411011322311111{0 1}?262311232110051301151221223112111111812311211121226131011231421412112010
+	Caecilia             24410106{0 1}011110102{1 2}1001051113500010331322201{1 2}?022311212110141411060020213002111101???????????1016121?10120??2?1?003??0
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  118;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  118;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1343227669094;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 709697096833757992;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4713002198200376122;
+			mqVersion 275;
+			checksumv 0 3 1491384010 null  getNumChars 118 numChars 118 getNumTaxa 23 numTaxa 23   short true   bits 2305843009213694975   states 1023   sumSquaresStatesOnly 3581594.0 sumSquares -5.534023222112518E19 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 114;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1272 677;
+			setLocation 8 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4713002198200376122 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1158 610;
+					setLocation 8 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 168;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1158 610;
+						setLocation 8 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

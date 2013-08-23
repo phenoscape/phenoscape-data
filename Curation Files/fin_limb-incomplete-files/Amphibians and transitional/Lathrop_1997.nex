@@ -1,0 +1,243 @@
+#NEXUS
+[written Wed Jun 27 11:10:07 CDT 2012 by Mesquite  version 2.75 (build 566) at NI5231.local/172.20.96.101]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=17;
+	TAXLABELS
+		Leiopelma Discoglossus_pictus Leptobrachium Megophrys_aceras M._montana Pelobates_cultripes P._syriacus P._varaldii P._fuscus Spea_bomifrons S._hammondii S._intermontana S._multiplicata Scaphiopus_couchii S._holbrookii S._hurterii Pelodaytes_punctatus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=40;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 'Presence orabsence of the adductor longus muscle.(ADDLONG)' /  absent present, 2 'Presence or absence of alary process of hyoid (ALHYOID1)' /  absent present, 3 'Fusion of alary process to hyale (ALHYOID3)' /  not_fused fused, 4 'Presence or absence of cloacal glands (ANALGLND)' /  absent present, 5 'Condition of the columella (COLUMEL) ?' /  absent present, 6 'Condition of cricoid ring (CRICOID)' /  ring_entire ring_divided_dorsally, 7 'Condition of the depressor mandibulae muscle (DEPRMAN2)' /  Depressor_mandibulae_origin_in_part_from_fascia_or_bone_of_otic_region Depressor_mandibulae_origin_only_from_fascia_over_suprascapula, 8 'Presence or absence of epipubic cartilage (EPIPUBIS)' /  Epip~bic_cartilage_present_as_a_large_plate Epipubic_cartilage_present_as_a_narrow_strip Epipubic_cartilage_absent, 9 'Exostosis of the dermal roofing bones (EXOSTOS)' /  Exostosis_absent Exostosis_present, 10 'Exposure of the frontoparietal fontanelle (FPFONT)' /  Frontoparietal_fontanelle_exposed Frontoparietal_fontanelle_concealed_by_frontoparietal_bones, 11 'Fusion of the frontoparietals (FPFUSION)' /  Frontoparietals_paired Frontoparietals_fused, 12 'Presence or absence of free ribs (FREERIBS)' /  Free_ribs_present_in_larvae_and_adults '.Free ribs present in larvae, but not adults' Free_ribs_never_present_in_larvae_or_adults, 13 'Cutaneous origin of gracilis minor (GRACMIN3)' /  Cutaneous_origin_of_gracilis_minor_weakly_developed Cutaneous_origin_of_gracilis_minor_well_developed, 14 '"Accessory head" of gracilis minor (GRACMIN4)' /  Accessory_head_of_gracilis_minor_absent Accessory_head_of_gracilis_minor_present, 15 'Head of humerus (HUMHEAD)' /  'Epiphysis of head of humerus cartilaginous, not calcified' Epiphysis_of_head_of_humerus_calcified, 16 'Disjunction of hyalia (HYALE)' /  'Hyale continuous, unbroken' 'Hyale divided; otic portion present' 'Hyale divided; otic portion absent', 17 'Presence or absence of hyoglossal sinus (HYOGLSN2)' /  'Hyoglossal sinus not bounded; hyalia lacking expanded laminae' Hyoglossal_sinus_partially_bounded_by_expanded_laminae_of_hyalia, 18 'Presence or absence of the ischiocutaneous muscle (ISCHCUTA)' /  Ischiocutaneous_muscle_absent Ischiocutaneous_muscle_present, 19 'Length of the scapula (LENSCAP)' /  Scapula_very_short_and_stocky Scapula_relatively_long, 20 'Shape of nasal bones (NASAL2)' /  'Nasals sickle-shapedi with concave area embracing nostrils' Nasals_relatively_straight_and_lacking_concave_anterior_margins, 21 'Presence or absence of parahyoid bone (PARAHYD1)' /  present absent, 22 'Presence or absence of pectoral glands (PECTGLND)' /  absent present, 23 'Condition of the piriformis muscle (PIRIFORM)' /  Piriformis_present Piriformis_reduced_in_thickness Piriformis_absent, 24 'Orientation of preacetabular zone (PREACET)' /  Preacetabular_zone_transversely_oriented, 25 'Presence or absence of prezonal element (PREZON2) ?' /  absent Pre_zonal_element_present_as_a_cartilaginous_plate Pre_zonal_element_present_as_a_bony_style, 26 'Presence or absence of flange on quadratojugal (QUADRAT1) ?' /  Flange_of_quadratojugal_absent Flange_of_quadratojugal_present, 27 'Degree of exposure of sartorius and its tendon (SARTSEM3)' /  Sartorius_muscle_superficia Sartorius_muscle_and_its_tendon_partially_concealed_by_gracilis_major, 28 'Condition of septum nasi (SEPNAS)' /  Septum_nasi_cartilaginous 'Septum nasi bony posteriorly, extending about one-half the length of the nasals' Septum_nasi_bony_along_most_of_the_length_of_the_nasals, 29 'Shape of inner metatarsal tubercle (SPADTUB1)' /  Inner_metatarsal_tubercle_not_modified_into_a_spade Inner_metatare~_tubercle_modified_into_a_spade, 30 ' Shape of inner metatarsal tubercle (SPADTUB2)' /  'Inner metatarsal tubercle not scaphate~ or scaphate and^n211 elongate' Inner_metatarsal_tubercle_cuneiform, 31 'Ossification of the sternum (STERNOSS)' /  Sternum_cartilaginous Sternum_a_bony_style, 32 'Presence or absence of supraorbital flange of frontoparietal (SUPFLFP)' /  absent present, 33 'Torsion of the first finger (TORSION)' /  absent present, 34 'Orientation of transverse processes of posterior vertebrae (TPRODIRP)' /  Transverse_processes_of_posterior_vertebrae_oriented_laterally Transverse_processes_of_posterior_vertebrae_oriented_anteriorly, 35 'Presence or absence of Type 4 tadpole (TYPE4TAD)' /  Larva_of_Type_3 'Larva of Type 4 (or Type 1; see TYPE1TAD above)', 36 'Articulation of sacrum and coccyx (UROSACRM)' /  'Sacrum and urostyle separate; joint synchondrotic' 'Sacrum and urostyle separate; joint synovial and monocondylar' 'Sacrum and urostyle separate; joint synovial and bicondylar' Sacrum_and_urostyle_fused, 37 'Presence or absence of vocal sacs in adult males (VOCSAC)' /  Vocal_sacs_absent Vocal_sacs_present, 38 'Presence or absence of postchoanal ramus of vomer (VOMER3)' /  Postchoanal_ramus_of_vorne.r_absent Postchoanal_ramus_of_vomer_present, 39 'Condition of postcnoanal ramus of vomer (VOMER4)' /  Postchoanal_ramus_of_vomer_not_elongate Postchoanal_ramus_of_vomer_elongate, 40 'Zygomatic process of the squamosal (ZYPROSQ3)' /  Zygomatic_process_not_a~ticulating_with_the_anterior_ramus_of_the_pterygoid 'Zygomatic process very long, articulating with the anterior ramt:r.£ of the pterygoid' ; 
+	MATRIX
+	Leiopelma             01111111111110001???01??????????????????
+	Discoglossus_pictus   01000111111111111???????????????????????
+	Leptobrachium         00???111111111111???????????????????????
+	Megophrys_aceras      00000000011110000???????????????????????
+	M._montana            01111?31311111111???????????????????????
+	Pelobates_cultripes   00011000100000000???????????????????????
+	P._syriacus           00000111111111111???????????????????????
+	P._varaldii           01222222222222222???????????????????????
+	P._fuscus             00000111100001110???????????????????????
+	Spea_bomifrons        00111111100001110???????????????????????
+	S._hammondii          00000111100000000???????????????????????
+	S._intermontana       00222222222222222???????????????????????
+	S._multiplicata       00000111111111111???????????????????????
+	Scaphiopus_couchii    00111111111111111???????????????????????
+	S._holbrookii         00111000000000000???????????????????????
+	S._hurterii           00222111111111111???????????????????????
+	Pelodaytes_punctatus  00110111111111111???????????????????????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  40;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  40;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1340813408049;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3859724351482086411;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1852072129034911572;
+			mqVersion 275;
+			checksumv 0 3 1268345171 null  getNumChars 40 numChars 40 getNumTaxa 17 numTaxa 17   short true   bits 15   states 15   sumSquaresStatesOnly 1355.0 sumSquares 1355.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1263 706;
+			setLocation 177 212;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #3859724351482086411 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #3859724351482086411;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultTaxaOrder.DefaultTaxaOrder;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1163 639;
+					setLocation 177 212;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1852072129034911572 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 109;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1163 639;
+					setLocation 177 212;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 321;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1163 639;
+						setLocation 177 212;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
