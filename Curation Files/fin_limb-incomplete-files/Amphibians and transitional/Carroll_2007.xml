@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
@@ -429,7 +429,7 @@
         <state id="state348" label="no" symbol="1"/>
       </states>
       <states id="states349">
-        <state id="state351" label="stapes the only ear ossicle" symbol="0"/>
+        <state id="state351" label="stapes the only ear ossicle" symbol="0" about="#state351"></state>
         <state id="state352" label="stapes accompanied by operculum" symbol="1"/>
         <state id="state353" label="accompanied by accessory ossicle above stem of stapes" symbol="2"/>
       </states>
@@ -1259,7 +1259,7 @@
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7d4af819-bbf0-4ab5-b24f-29b4008c1e49">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0011110"/>
                       </phen:holds_in_relation_to>
@@ -1282,7 +1282,7 @@
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7d4af819-bbf0-4ab5-b24f-29b4008c1e49">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0011110"/>
                       </phen:holds_in_relation_to>
@@ -1296,9 +1296,9 @@
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7d4af819-bbf0-4ab5-b24f-29b4008c1e49">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0011111"/>
+                        <phen:typeref about="UBERON:0011110"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -1316,7 +1316,7 @@
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7d4af819-bbf0-4ab5-b24f-29b4008c1e49">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0011110"/>
                       </phen:holds_in_relation_to>
@@ -1339,7 +1339,7 @@
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7d4af819-bbf0-4ab5-b24f-29b4008c1e49">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0011110"/>
                       </phen:holds_in_relation_to>
@@ -1353,9 +1353,9 @@
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7d4af819-bbf0-4ab5-b24f-29b4008c1e49">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0011111"/>
+                        <phen:typeref about="UBERON:0011110"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -3584,7 +3584,7 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0001195"/>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:4200004"/>
+                    <phen:typeref about="UBERON:0006767"/>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3603,6 +3603,22 @@
                       </phen:qualifier>
                     </phen:typeref>
                   </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200028"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200029"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3626,7 +3642,7 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0001195"/>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:4200004"/>
+                    <phen:typeref about="UBERON:0006767"/>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3635,13 +3651,78 @@
                   <phen:typeref about="UBERON:4200029"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000587"/>
+                  <phen:typeref about="PATO:0000574"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200028"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state662" label="as in (0), but adductor blade much shortened, and adductor crest extended for much of the distal half of the shaft" symbol="2"/>
+        <state id="state662" label="as in (0), but adductor blade much shortened, and adductor crest extended for much of the distal half of the shaft" symbol="2" about="#state662">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008787"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001154"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200028"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200029"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200029"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2f8d73ae-584a-4739-b348-3ae5119df877"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000078">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0006862"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200036"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001195"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0006767"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state663" label="as in (0), but adductor blade extends to no more than half the length of the shaft" symbol="3" about="#state663">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
@@ -3649,28 +3730,64 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:0008787"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001154"/>
+                </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0008787"/>
+                  <phen:typeref about="UBERON:4200036"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001195"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0006767"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0008787"/>
+                  <phen:typeref about="UBERON:4200028"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:4200029"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
         <state id="state664" label="ventral ridge system very poorly ossified" symbol="4"/>
         <state id="state665" label="diagonal ridge running the length of the shaft;" symbol="5"/>
-        <state id="state666" label="loss of adductor ridge system;" symbol="6"/>
+        <state id="state666" label="loss of adductor ridge system;" symbol="6" about="#state666">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200028"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200029"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state667" label="as in (0), but with internal trochanter merged with short adductor crest;" symbol="7"/>
         <state id="state668" label="as in (3), but distinction between blade and crest lost" symbol="8"/>
         <state id="state669" label="as in (3), but with loss of fourth trochanter" symbol="9"/>
@@ -4521,9 +4638,10 @@
         <state id="state787" label="from posterior to anterior" symbol="1"/>
       </states>
       <states id="states788">
-        <state id="state790" label="facultatively terrestrial" symbol="0" about="#state790"></state>
+        <state id="state790" label="facultatively terrestrial" symbol="0" about="#state790"/>
         <state id="state791" label="aquatic" symbol="1"/>
       </states>
+      <states id="sf0e7b73e-39f5-4292-b327-b9d6bcd7829d"/>
       <char about="#char105" id="char105" label="Total skull length (cm)" states="states104">
         <meta content="false" datatype="xsd:boolean" id="meta842" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
@@ -4888,6 +5006,7 @@
       <char about="#char789" id="char789" label="Adult lifestyle" states="states788">
         <meta content="false" datatype="xsd:boolean" id="meta959" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
+      <char id="c72769f41-ecab-45f6-a93c-f63e29033ace" label="" states="sf0e7b73e-39f5-4292-b327-b9d6bcd7829d"/>
     </format>
     <matrix>
       <row id="row792" otu="otu3">
