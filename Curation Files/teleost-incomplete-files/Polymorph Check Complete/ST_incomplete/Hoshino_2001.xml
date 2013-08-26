@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Sandrine Tercerie</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000100</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">doi:10.1007/s10228-001-8163-0
@@ -2580,14 +2580,6 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
                   <phen:typeref about="UBERON:2000230"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000230"/>
-                </phen:bearer>
-                <phen:quality>
                   <phen:typeref about="PATO:0000141"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001713"/>
@@ -2611,14 +2603,6 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
         <state id="ba6d1c99-f791-4b36-a02b-3b12f2f35a6e" label="with one tendon inserted onto uppermost “principal ray”" symbol="1" about="#ba6d1c99-f791-4b36-a02b-3b12f2f35a6e">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000230"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
-              </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000230"/>
@@ -2655,12 +2639,12 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000528">
-                    <phen:qualifier relation="OBO_REL:connected_to">
+                    <phen:qualifier relation="RO:0002220">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001585"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
-                    <phen:qualifier relation="OBO_REL:connected_to">
+                    <phen:qualifier relation="RO:0002220">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001584"/>
                       </phen:holds_in_relation_to>
@@ -2680,12 +2664,12 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000528">
-                    <phen:qualifier relation="OBO_REL:connected_to">
+                    <phen:qualifier relation="RO:0002220">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001585"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
-                    <phen:qualifier relation="OBO_REL:connected_to">
+                    <phen:qualifier relation="RO:0002220">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001584"/>
                       </phen:holds_in_relation_to>
@@ -2701,7 +2685,11 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
         </state>
       </states>
       <states id="e79e2184-fc1b-4745-81be-7f61fe5bb67e">
-        <state id="a77afbd3-ebae-498b-9aa9-90962b249600" label="pseudointerradialis generally absent" symbol="0" about="#a77afbd3-ebae-498b-9aa9-90962b249600"/>
+        <state id="a77afbd3-ebae-498b-9aa9-90962b249600" label="pseudointerradialis generally absent" symbol="0" about="#a77afbd3-ebae-498b-9aa9-90962b249600">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="d147ebbc-b9ce-4618-80c9-cda60a947cdf" label="present" symbol="1"/>
       </states>
       <states id="361fecfb-22b5-44f5-8927-096e72c4cb54">
@@ -2712,7 +2700,7 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001426">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2002256"/>
                       </phen:holds_in_relation_to>
@@ -2733,7 +2721,7 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001426">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2002256"/>
                       </phen:holds_in_relation_to>
@@ -2787,7 +2775,6 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Character 21 of Chapleau 1993. This character is ordered (Chapleau, 1993)</meta>
       </char>
       <char id="3ead16ab-a002-4534-99e9-af27ccdd3858" label="Teeth on epibranchial 3" about="#3ead16ab-a002-4534-99e9-af27ccdd3858" states="8164bfd3-4795-4e74-9d31-87954a710478">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">New term "epibranchial 3 teeth" needed? Character 22 of Chapleau 1993 (conversely coded in Chapleau, 1993).</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Fig. 3A</meta>
       </char>
       <char id="61f7baf8-fca8-4bb1-a0de-d5c60b5b4420" label="Shape of anteriormost anal proximal radial" about="#61f7baf8-fca8-4bb1-a0de-d5c60b5b4420" states="da800791-bd6e-46d6-b6c3-16bb03199fac">
@@ -2890,15 +2877,9 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
       <char id="db2e4eae-2348-42f9-808d-279de2a42307" label="Stay of dorsal and anal pterygiophores" about="#db2e4eae-2348-42f9-808d-279de2a42307" states="7665c9b6-3223-4195-86fb-c4b16b0ba10d">
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Fig. 5F</meta>
       </char>
-      <char id="d5ad923e-6525-466d-94c8-dd0e51c88fe0" label="Hypochordal longitudinalis" about="#d5ad923e-6525-466d-94c8-dd0e51c88fe0" states="15ac44cb-ab8e-4e5e-acab-ff6ff2d38744">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Add as a synonym of "longitudinal hypochordal"?</meta>
-      </char>
-      <char id="65dd637a-fccc-4614-a744-7986c878d000" label="Interradialis between “principal ray” and “procurrent ray”" about="#65dd637a-fccc-4614-a744-7986c878d000" states="0acc7f2a-bcf2-4e63-995e-7da4d08be38b">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Interradialis connected_to or adjacent_to bones?</meta>
-      </char>
-      <char id="29b78200-8315-40fb-ab28-56916d01bceb" label="Pseudo-interradialis" about="#29b78200-8315-40fb-ab28-56916d01bceb" states="e79e2184-fc1b-4745-81be-7f61fe5bb67e">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">new term</meta>
-      </char>
+      <char id="d5ad923e-6525-466d-94c8-dd0e51c88fe0" label="Hypochordal longitudinalis" about="#d5ad923e-6525-466d-94c8-dd0e51c88fe0" states="15ac44cb-ab8e-4e5e-acab-ff6ff2d38744"></char>
+      <char id="65dd637a-fccc-4614-a744-7986c878d000" label="Interradialis between “principal ray” and “procurrent ray”" about="#65dd637a-fccc-4614-a744-7986c878d000" states="0acc7f2a-bcf2-4e63-995e-7da4d08be38b"></char>
+      <char id="29b78200-8315-40fb-ab28-56916d01bceb" label="Pseudo-interradialis" about="#29b78200-8315-40fb-ab28-56916d01bceb" states="e79e2184-fc1b-4745-81be-7f61fe5bb67e"></char>
       <char id="b10bf1d8-2dfc-4562-9b03-a603ea45b8e5" label="Blind side posterior nostril" about="#b10bf1d8-2dfc-4562-9b03-a603ea45b8e5" states="361fecfb-22b5-44f5-8927-096e72c4cb54">
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Fig. 6</meta>
       </char>
