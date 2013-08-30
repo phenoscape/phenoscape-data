@@ -2706,17 +2706,22 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
+                  <phen:typeref about="UBERON:0006597"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
                   <phen:typeref about="UBERON:0004529">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0006597"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -2727,17 +2732,17 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>1</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0009979">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0006597"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -2748,17 +2753,17 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0009979">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0006597"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -2773,7 +2778,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000679">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0006597"/>
                       </phen:holds_in_relation_to>
@@ -2799,7 +2804,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000679">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0006597"/>
                       </phen:holds_in_relation_to>
@@ -2820,13 +2825,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0009979">
-                    <phen:qualifier relation="BSPO:0000122">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0006597"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:0006597"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0002278"/>
@@ -2843,13 +2842,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0009979">
-                    <phen:qualifier relation="BSPO:0000122">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0006597"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:0006597"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0002278"/>
@@ -2863,7 +2856,23 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         </state>
       </states>
       <states id="aebd6b32-ab94-493f-af83-8dff751cc5d2">
-        <state id="5f8a1c98-4dca-423b-8d9d-6b7312990d79" label="Metapterygoid overlies quadrate" symbol="0"/>
+        <state id="5f8a1c98-4dca-423b-8d9d-6b7312990d79" label="Metapterygoid overlies quadrate" symbol="0" about="#5f8a1c98-4dca-423b-8d9d-6b7312990d79">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000240"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001590"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0006597"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="8d542184-b747-4abc-a830-9356a55952df" label="Metapterygoid extends anteriorly over posterior portion of ectopterygoid" symbol="1" about="#8d542184-b747-4abc-a830-9356a55952df">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
@@ -2871,6 +2880,12 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000240"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001590"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0011634"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -2932,10 +2947,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="UBERON:0011606"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000614"/>
-                  <phen:related_entity>
-                    <phen:typeref about="PATO:0001854"/>
-                  </phen:related_entity>
+                  <phen:typeref about="PATO:0001854"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2968,10 +2980,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="UBERON:0011606"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000614"/>
-                  <phen:related_entity>
-                    <phen:typeref about="PATO:0001855"/>
-                  </phen:related_entity>
+                  <phen:typeref about="PATO:0001855"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2979,9 +2988,72 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         </state>
       </states>
       <states id="521f3c39-e74b-4acc-b4fc-2722dc9e4bfa">
-        <state id="6c828f2d-7da3-4ab1-a113-fdc659d340d9" label="Palatine prong and maxillary saddle absent" symbol="0" about="#6c828f2d-7da3-4ab1-a113-fdc659d340d9"/>
-        <state id="cfc57fd9-f9c2-45c5-a408-801ea0d70d92" label="Palatine prong absent, maxillary saddle present" symbol="1" about="#cfc57fd9-f9c2-45c5-a408-801ea0d70d92"/>
-        <state id="c6caa6ee-f489-4a8f-ab86-f337214895e3" label="Palatine prong and maxillary saddle present" symbol="2"/>
+        <state id="6c828f2d-7da3-4ab1-a113-fdc659d340d9" label="Palatine prong and maxillary saddle absent" symbol="0" about="#6c828f2d-7da3-4ab1-a113-fdc659d340d9">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000652"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300002"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="cfc57fd9-f9c2-45c5-a408-801ea0d70d92" label="Palatine prong absent, maxillary saddle present" symbol="1" about="#cfc57fd9-f9c2-45c5-a408-801ea0d70d92">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300002"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000652"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="c6caa6ee-f489-4a8f-ab86-f337214895e3" label="Palatine prong and maxillary saddle present" symbol="2" about="#c6caa6ee-f489-4a8f-ab86-f337214895e3">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000652"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300002"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="cf537f93-d155-4160-911c-f21ceac0a5aa">
         <state id="b4aa66e4-53cc-4e3e-80b0-dab88cb26b90" label="Premaxilla without dorso-medially directed process on medial edge" symbol="0" about="#b4aa66e4-53cc-4e3e-80b0-dab88cb26b90">
@@ -2990,10 +3062,10 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004529">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="BSPO:0000683">
-                          <phen:qualifier relation="OBO_REL:part_of">
+                          <phen:qualifier relation="BFO:0000050">
                             <phen:holds_in_relation_to>
                               <phen:typeref about="UBERON:0002244"/>
                             </phen:holds_in_relation_to>
@@ -3016,10 +3088,10 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004529">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="BSPO:0000683">
-                          <phen:qualifier relation="OBO_REL:part_of">
+                          <phen:qualifier relation="BFO:0000050">
                             <phen:holds_in_relation_to>
                               <phen:typeref about="UBERON:0002244"/>
                             </phen:holds_in_relation_to>
@@ -3042,11 +3114,11 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>6</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000376"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="6">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3057,11 +3129,11 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>7</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000376"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="7">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3072,11 +3144,11 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>8</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000376"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="8">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3087,11 +3159,11 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>5</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000376"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="5">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3102,11 +3174,11 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>3</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000376"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="3">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3168,7 +3240,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0005744">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0002244"/>
                       </phen:holds_in_relation_to>
@@ -3188,7 +3260,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0005744">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0002244"/>
                       </phen:holds_in_relation_to>
@@ -3209,20 +3281,6 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0009979">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0001682"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
                   <phen:typeref about="UBERON:0001682"/>
                 </phen:bearer>
                 <phen:quality>
@@ -3238,20 +3296,6 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         <state id="26f017a7-1feb-4d90-b865-9f3985a11c84" label="Palatine with long process for articulation with premaxilla" symbol="1" about="#26f017a7-1feb-4d90-b865-9f3985a11c84">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0009979">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0001682"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
-              </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0001682"/>
@@ -3276,10 +3320,10 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="UBERON:2000223"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0002107"/>
+                  <phen:typeref about="PATO:0002259"/>
                   <phen:related_entity>
                     <phen:typeref about="BSPO:0000671">
-                      <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:qualifier relation="BFO:0000050">
                         <phen:holds_in_relation_to>
                           <phen:typeref about="UBERON:2001967"/>
                         </phen:holds_in_relation_to>
@@ -3310,10 +3354,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="UBERON:2000223"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000614"/>
-                  <phen:related_entity>
-                    <phen:typeref about="PATO:0001855"/>
-                  </phen:related_entity>
+                  <phen:typeref about="PATO:0001855"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3564,11 +3605,6 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000350"/>
-                </phen:bearer>
-              </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
@@ -3643,13 +3679,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000078">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2000350"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:2000350"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000052">
@@ -3669,13 +3699,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000078">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2000350"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:2000350"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0001784"/>
@@ -3724,7 +3748,18 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:0001075"/>
+                    <phen:typeref about="UBERON:2001983"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000350"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001984"/>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3758,13 +3793,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="UBERON:2000350"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001435">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0001667"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="PATO:0001505"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0002090"/>
                   </phen:related_entity>
@@ -3793,8 +3822,34 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         </state>
       </states>
       <states id="8d93d913-cc91-4216-9e33-e9586805c15a">
-        <state id="4ebb16dc-8512-4aec-90e7-f99239b13ab2" label="Long series of epipleurals" symbol="0" about="#4ebb16dc-8512-4aec-90e7-f99239b13ab2"/>
-        <state id="138f8eba-23b1-47aa-baee-a8d4d3097387" label="Epipleural series not extending posteriorly beyond V5" symbol="1"/>
+        <state id="4ebb16dc-8512-4aec-90e7-f99239b13ab2" label="Long series of epipleurals" symbol="0" about="#4ebb16dc-8512-4aec-90e7-f99239b13ab2">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000350"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="138f8eba-23b1-47aa-baee-a8d4d3097387" label="Epipleural series not extending posteriorly beyond V5" symbol="1" about="#138f8eba-23b1-47aa-baee-a8d4d3097387">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000350"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="455c324e-55cd-42d2-b2b0-c2a33f58037f">
         <state id="69add57b-9aa7-4892-9314-e04c2dc79536" label="All epineurals originate on neural arch" symbol="0" about="#69add57b-9aa7-4892-9314-e04c2dc79536">
@@ -3804,12 +3859,61 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000350"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003861"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="259f0697-d98b-4819-be52-b6ec772d98ad" label="Some epineurals originate on the centrum or parapophysis; these flanked anteriorly and posteriorly by epineurals originating on the neural arch" symbol="1"/>
-        <state id="99848198-a6dd-4a80-8844-99781931e5be" label="Most or all epineurals originate on centrum; epineurals not reascending to neural arch posteriorly" symbol="2"/>
+        <state id="259f0697-d98b-4819-be52-b6ec772d98ad" label="Some epineurals originate on the centrum or parapophysis; these flanked anteriorly and posteriorly by epineurals originating on the neural arch" symbol="1" about="#259f0697-d98b-4819-be52-b6ec772d98ad">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000350"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003109"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000350"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0001075"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="99848198-a6dd-4a80-8844-99781931e5be" label="Most or all epineurals originate on centrum; epineurals not reascending to neural arch posteriorly" symbol="2" about="#99848198-a6dd-4a80-8844-99781931e5be">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000350"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0001075"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="23bce8f3-aacf-4793-8a6c-fbe34f821253">
         <state id="738a782b-787c-463a-8508-b1381a882fd5" label="Distal end of epineurals not displaced ventrally" symbol="0" about="#738a782b-787c-463a-8508-b1381a882fd5">
@@ -3916,8 +4020,50 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             </phen:phenotype>
           </meta>
         </state>
-        <state id="844385e6-be77-4fb4-8f65-d8d3a320dc95" label="Epineurals (and epipleurals) from about V12-V15 to near end of series forked proximally" symbol="1"/>
-        <state id="3b134d2b-7411-439b-8ac8-f3ede74d8b92" label="Epineurals (and epipleurals) on about VI-V5 forked proximally" symbol="2"/>
+        <state id="844385e6-be77-4fb4-8f65-d8d3a320dc95" label="Epineurals (and epipleurals) from about V12-V15 to near end of series forked proximally" symbol="1" about="#844385e6-be77-4fb4-8f65-d8d3a320dc95">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000507"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001784"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000350"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001784"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="3b134d2b-7411-439b-8ac8-f3ede74d8b92" label="Epineurals (and epipleurals) on about VI-V5 forked proximally" symbol="2" about="#3b134d2b-7411-439b-8ac8-f3ede74d8b92">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000507"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001784"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000350"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001784"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="d3630620-aed1-48b6-945d-b8d56fc8107e" label="&quot;Gigantura&quot; pattern of branching" symbol="3" about="#d3630620-aed1-48b6-945d-b8d56fc8107e">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
@@ -3981,7 +4127,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002263"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -3992,7 +4138,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002264"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -4003,7 +4149,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002265"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -4014,7 +4160,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002266"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -4025,7 +4171,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002267"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -4042,7 +4188,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002263"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -4053,7 +4199,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002264"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -4064,7 +4210,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002265"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -4075,7 +4221,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002266"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -4086,7 +4232,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002267"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -4097,10 +4243,13 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
+                  <phen:typeref about="UBERON:2002268"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003861"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -4109,30 +4258,9 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000642"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000642"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000507"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003861"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4467,7 +4595,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>&lt;25%</phen:description>
+                <phen:description>&lt;25% total vertebrae</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0001095"/>
                 </phen:bearer>
@@ -4482,7 +4610,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>40-60%</phen:description>
+                <phen:description>40-60% total vertebrae</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0001095"/>
                 </phen:bearer>
@@ -4497,7 +4625,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>>60%</phen:description>
+                <phen:description>>60% total vertebrae</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0001095"/>
                 </phen:bearer>
@@ -4546,7 +4674,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004529">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001877"/>
                       </phen:holds_in_relation_to>
@@ -4566,7 +4694,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004529">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001877"/>
                       </phen:holds_in_relation_to>
@@ -4626,12 +4754,105 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         </state>
       </states>
       <states id="c2b13fb3-aeec-42ac-a150-e9644fc3b232">
-        <state id="2d930549-a181-4af6-9e04-6f38808e03d3" label="First rib originates on V3" symbol="0" about="#2d930549-a181-4af6-9e04-6f38808e03d3"/>
-        <state id="25a0d6fc-4288-4f6a-be5c-1ff0390d5c7e" label="First rib originates on V4" symbol="1"/>
-        <state id="483bdc45-c951-4956-a480-8e3a5551d322" label="First rib originates on V5" symbol="2"/>
-        <state id="e0862242-2cbb-47e1-b903-b1891fb212b2" label="First rib originates on V2" symbol="3"/>
-        <state id="b015f839-1abd-4425-8874-9632ec7dac22" label="First rib originates on V1" symbol="4"/>
-        <state id="cd207ba4-aa76-4e5e-b858-4b18afcf12c0" label="Ribs absent" symbol="5"/>
+        <state id="2d930549-a181-4af6-9e04-6f38808e03d3" label="First rib originates on V3" symbol="0" about="#2d930549-a181-4af6-9e04-6f38808e03d3">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004601"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004612"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="25a0d6fc-4288-4f6a-be5c-1ff0390d5c7e" label="First rib originates on V4" symbol="1" about="#25a0d6fc-4288-4f6a-be5c-1ff0390d5c7e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004601"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004613"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="483bdc45-c951-4956-a480-8e3a5551d322" label="First rib originates on V5" symbol="2" about="#483bdc45-c951-4956-a480-8e3a5551d322">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004601"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004614"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="e0862242-2cbb-47e1-b903-b1891fb212b2" label="First rib originates on V2" symbol="3" about="#e0862242-2cbb-47e1-b903-b1891fb212b2">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004601"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0001093"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="b015f839-1abd-4425-8874-9632ec7dac22" label="First rib originates on V1" symbol="4" about="#b015f839-1abd-4425-8874-9632ec7dac22">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004601"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0001092"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="cd207ba4-aa76-4e5e-b858-4b18afcf12c0" label="Ribs absent" symbol="5" about="#cd207ba4-aa76-4e5e-b858-4b18afcf12c0">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002228"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="4511692e-80ee-466f-a527-08bd3691320d">
         <state id="24cdf32f-98f1-4fdc-91b6-6239473082f4" label="All ribs ossify in cartilage" symbol="0" about="#24cdf32f-98f1-4fdc-91b6-6239473082f4"/>
@@ -4675,7 +4896,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="UBERON:2001683"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0001667"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0001092"/>
                   </phen:related_entity>
@@ -4692,7 +4913,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="UBERON:2001683"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0001667"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0001130"/>
                   </phen:related_entity>
@@ -4709,7 +4930,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="UBERON:2001683"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0001667"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0001092"/>
                   </phen:related_entity>
@@ -4720,7 +4941,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="UBERON:2001683"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0001667"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0010323"/>
                   </phen:related_entity>
@@ -4789,7 +5010,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000077">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001585"/>
                       </phen:holds_in_relation_to>
@@ -4809,7 +5030,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000077">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001585"/>
                       </phen:holds_in_relation_to>
@@ -4825,20 +5046,65 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         </state>
       </states>
       <states id="b8c7ed37-6ddf-4600-9f43-2ab87e44fa70">
-        <state id="9e99512b-a2ab-4349-9ff0-ae729cc2a888" label="Segmentation begins on proximal half of each caudal ray" symbol="0"/>
-        <state id="ae6d077e-a060-4a1f-be04-b5eb3918b8a6" label="Segmentation begins on distal half of each caudal ray" symbol="1"/>
-        <state id="582cf3ca-bd8a-4102-913c-075ee82883ee" label="Caudal rays not segmented" symbol="2"/>
+        <state id="9e99512b-a2ab-4349-9ff0-ae729cc2a888" label="Segmentation begins on proximal half of each caudal ray" symbol="0" about="#9e99512b-a2ab-4349-9ff0-ae729cc2a888">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000174"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="ae6d077e-a060-4a1f-be04-b5eb3918b8a6" label="Segmentation begins on distal half of each caudal ray" symbol="1" about="#ae6d077e-a060-4a1f-be04-b5eb3918b8a6">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000174"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="582cf3ca-bd8a-4102-913c-075ee82883ee" label="Caudal rays not segmented" symbol="2" about="#582cf3ca-bd8a-4102-913c-075ee82883ee">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000174"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002312"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="6c3df6ea-2178-497f-a318-de89fe9ed075">
         <state id="99afc972-3d63-431a-bdf9-ff09508b8abb" label="Two CMCs, about equal in size" symbol="0" about="#99afc972-3d63-431a-bdf9-ff09508b8abb">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2002091"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -4864,11 +5130,11 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2002091"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -4890,11 +5156,11 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>1</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2002091"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -6818,12 +7084,12 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="1712def9-40bd-4206-9d77-8bbe6f4044ae" label="Fourth Pharyngobranchial Toothplate" states="e33f71aa-c4ad-41bb-8529-c21befd0f0dd"/>
       <char id="0c558b61-19ce-49ec-9b50-906fa2cb9f3f" label="Articulation of First Pharyngobranchial" states="8798b7d1-7d1b-497e-ae10-fe1b5282e439"/>
       <char id="3dbc600e-7887-42b1-87fe-f73ae92e106d" label="Gill Rakers or Toothplates" states="4959ae76-08ee-428d-959d-693be3f76220" about="#3dbc600e-7887-42b1-87fe-f73ae92e106d"/>
-      <char id="d8356a88-eb84-448b-9446-df8d18bfa006" label="Second Pharyngobranchial with Extra Uncinate Process" states="16978484-7383-4302-8eb5-8ee70a06cf50" about="#d8356a88-eb84-448b-9446-df8d18bfa006"></char>
-      <char id="c2671572-8ff1-412f-baae-47d53d30cf09" label="Second Pharyngobranchial Toothplate" about="#c2671572-8ff1-412f-baae-47d53d30cf09" states="473324b3-57c3-4c6f-9414-5c7b5178a12e"></char>
+      <char id="d8356a88-eb84-448b-9446-df8d18bfa006" label="Second Pharyngobranchial with Extra Uncinate Process" states="16978484-7383-4302-8eb5-8ee70a06cf50" about="#d8356a88-eb84-448b-9446-df8d18bfa006"/>
+      <char id="c2671572-8ff1-412f-baae-47d53d30cf09" label="Second Pharyngobranchial Toothplate" about="#c2671572-8ff1-412f-baae-47d53d30cf09" states="473324b3-57c3-4c6f-9414-5c7b5178a12e"/>
       <char id="0d2fcfaf-14d3-4603-b0ae-0626f95958c8" label="Second Pharyngobranchial Uncinate Process" states="09a6fbae-6cff-4c2c-b232-f1416c4e4b6f"/>
-      <char id="4e8c376e-19cc-4a93-8b4a-5b591647c967" label="Uncinate Process of Second Epibranchial Adjacent to Second Epibranchial" states="19fa77f4-d621-466b-9b5c-8f744bd77690" about="#4e8c376e-19cc-4a93-8b4a-5b591647c967"></char>
+      <char id="4e8c376e-19cc-4a93-8b4a-5b591647c967" label="Uncinate Process of Second Epibranchial Adjacent to Second Epibranchial" states="19fa77f4-d621-466b-9b5c-8f744bd77690" about="#4e8c376e-19cc-4a93-8b4a-5b591647c967"/>
       <char id="73bb6681-00f3-4927-b987-a6f923579a46" label="Third Pharyngobranchial Produced" states="e51219f5-e8c9-4ea3-90ca-dda2f0c01621" about="#73bb6681-00f3-4927-b987-a6f923579a46"/>
-      <char id="c8f5b15a-f169-420d-b355-d3ee81e51045" label="Distribution of PB3 Teeth" states="68b7f50b-2a74-4d10-841b-573f2b02b7c5" about="#c8f5b15a-f169-420d-b355-d3ee81e51045"></char>
+      <char id="c8f5b15a-f169-420d-b355-d3ee81e51045" label="Distribution of PB3 Teeth" states="68b7f50b-2a74-4d10-841b-573f2b02b7c5" about="#c8f5b15a-f169-420d-b355-d3ee81e51045"/>
       <char id="6ef19710-26fc-4cd0-9216-11fe9428eb30" label="Size of PB3 Teeth" states="c7750444-75e0-4f1e-9ca1-e1977fdc7379"/>
       <char id="92fa5582-a276-4626-a5b9-4928c7e04dc7" label="First Pharyngobranchial" states="d4ee6dbd-58cf-4ca5-8961-91d56f6e9b05"/>
       <char id="a96cf959-d175-456e-92c7-2da573c3b9f2" label="Fifth Epibranchial " states="af401b98-fa50-415c-a6f0-44c1850a110f"/>
@@ -6836,8 +7102,8 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="6f4b3a6e-4b86-4c2e-9033-227a7a9470f0" label="Fourth Basibranchial Ossified" states="8f8bb334-5b34-4231-a7c6-7e468dd2addc"/>
       <char id="a522234d-2f8a-4771-9480-d47b59ed8394" label="Elongate First Basibranchial" states="98f48dd5-1424-4239-bf81-34f242fee02f"/>
       <char id="460c1039-e565-4a40-989f-31757c06c2b0" label="Elongate Second Basibranchial" states="7ef8914d-5a7b-4523-a209-f28b9342fadf"/>
-      <char id="3bfa9eb3-7d75-4189-aaa5-c69bc399fc74" label="Gillrakers or Toothplates on Third Hypobranchials" about="#3bfa9eb3-7d75-4189-aaa5-c69bc399fc74" states="c9bfc58c-c1c1-46f6-a603-3826091326af"></char>
-      <char id="35b24172-13ee-485c-b341-d189091e1727" label="Gillrakers or Toothplates on Basibranchial(s)" states="84520cf9-52b7-4905-8294-928d84b9639f" about="#35b24172-13ee-485c-b341-d189091e1727"></char>
+      <char id="3bfa9eb3-7d75-4189-aaa5-c69bc399fc74" label="Gillrakers or Toothplates on Third Hypobranchials" about="#3bfa9eb3-7d75-4189-aaa5-c69bc399fc74" states="c9bfc58c-c1c1-46f6-a603-3826091326af"/>
+      <char id="35b24172-13ee-485c-b341-d189091e1727" label="Gillrakers or Toothplates on Basibranchial(s)" states="84520cf9-52b7-4905-8294-928d84b9639f" about="#35b24172-13ee-485c-b341-d189091e1727"/>
       <char id="c2518fe4-b5b9-4f9c-82d7-b1b086075b9c" label="Ligament between First Hypobranchial and Ventral Hypohyal" states="f886f411-5f50-4ad1-96ea-e8b2bff0526b" about="#c2518fe4-b5b9-4f9c-82d7-b1b086075b9c"/>
       <char id="43d4d79d-7d5b-4387-a195-edbabea3272b" label="First Hypobranchial with Ventrally Directed Process" states="42add2c9-3969-49e6-b912-2ca475b6e23c"/>
       <char id="afd20c03-e32f-42c8-a21f-4cdded88aff4" label="Second Hypobranchial with Ventrally Directed Process" states="b5c33168-82ff-495a-84ed-27df9311eb8d"/>
@@ -6846,10 +7112,8 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="fc49615d-3f42-4314-832b-55b79b504384" label="Number of Branchiostegals on the Posterior Ceratohyal" states="b80252ed-e85b-4dfb-ad39-f7913a88c617"/>
       <char id="f198bbe3-9a5c-48ea-a290-fa12d5800eed" label=" Number of Branchiostegals on the Anterior Ceratohyal" states="57198ca0-1427-4910-84c5-827726664c8d"/>
       <char id="4982542d-47d1-4417-9810-24c50ad5c1ff" label="Proximity of Posteriormost Two Branchiostegals" states="8fde3541-f7c9-4176-9172-9a1b316bd2e6" about="#4982542d-47d1-4417-9810-24c50ad5c1ff"/>
-      <char id="edc0b238-412b-4195-b047-8f392324cd72" label="3 + 1 Arrangement of Branchiostegals on the Anterior Ceratohyal" states="aec8466b-00c2-4b83-b148-ebbd428d94dc" about="#edc0b238-412b-4195-b047-8f392324cd72">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">WD start here</meta>
-      </char>
-      <char id="c4cda950-c7cf-41d2-9759-66b81364f917" label="Hypohyal Branchiostegals" states="7acb4821-acc1-4322-ad5b-c5690b03d60b" about="#c4cda950-c7cf-41d2-9759-66b81364f917"></char>
+      <char id="edc0b238-412b-4195-b047-8f392324cd72" label="3 + 1 Arrangement of Branchiostegals on the Anterior Ceratohyal" states="aec8466b-00c2-4b83-b148-ebbd428d94dc" about="#edc0b238-412b-4195-b047-8f392324cd72"></char>
+      <char id="c4cda950-c7cf-41d2-9759-66b81364f917" label="Hypohyal Branchiostegals" states="7acb4821-acc1-4322-ad5b-c5690b03d60b" about="#c4cda950-c7cf-41d2-9759-66b81364f917"/>
       <char id="234ac3b8-829b-4abe-86ed-8b86114875a3" label="Basihyal Morphology" states="627da9a2-f41f-47b1-890b-abce374087ef"/>
       <char id="93531047-c908-4dca-ab0a-53181749dc95" label="Basihyal Teeth" states="8da56c2d-553b-48b4-9183-42a700d5cdc1"/>
       <char id="9bafa996-615a-4a81-afef-85d9af0c50b4" label="Dominant Tooth-bearing Bone" states="b57231d2-9717-482e-a362-5542ff2b71dc"/>
@@ -6868,24 +7132,16 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="411c0b89-7e6b-4876-9d0e-eac1b87932fc" label="Palatine Articulates with Premaxilla" states="7efca73f-a0cd-4a81-8d40-8ae1b4a0f1a5"/>
       <char id="baa4fe84-e16a-4cc7-90fd-effefccf98e2" label="Lacrimal Oriented Horizontally on Snout" states="d0f0ed12-287a-4449-9d41-f5db10139f98"/>
       <char id="68320e8c-b67b-4624-b67e-dd57d2d1cd3d" label="Maxilla Reduced" states="fa99a747-227f-4cad-a576-c12cc7f08786" about="#68320e8c-b67b-4624-b67e-dd57d2d1cd3d"/>
-      <char id="9cbd3092-6961-4acf-b713-f73f73f200d7" label="Frontal Expanded Laterally over Orbit" states="86364ba5-3efa-4aeb-9538-cbde217b3e95" about="#9cbd3092-6961-4acf-b713-f73f73f200d7">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">laterally expanded?</meta>
-      </char>
+      <char id="9cbd3092-6961-4acf-b713-f73f73f200d7" label="Frontal Expanded Laterally over Orbit" states="86364ba5-3efa-4aeb-9538-cbde217b3e95" about="#9cbd3092-6961-4acf-b713-f73f73f200d7"></char>
       <char id="5f642be9-b004-4cc1-9766-41064de03a53" label="Sphenotic process" states="e9c0f6df-cfa4-4645-8262-dbab84f0fbad"/>
       <char id="b7cf9140-8657-4e93-9e1a-23036594079f" label="Epipleurals Extend Anteriorly to First or Second Vertebra" states="0c1f91c8-19b8-4677-afc3-15cfb482fa13"/>
       <char id="37326c99-fa73-4f38-b8d6-8122bc221576" label="One or More Epipleurals Displaced Dorsally Into Horizontal Septum" states="9e88b55f-7dc8-4237-91aa-f68fd3f2bf38"/>
       <char id="ac4f428d-d1c4-4bda-b1fa-c92560213d04" label="Abrupt Transition of Epipleurals in and beneath the Horizontal Septum" states="6b2edbdf-39ad-4b80-b940-50ac59403e2b"/>
       <char id="8b580642-808b-435e-bdda-acbf8378a2ad" label="One or More Epipleurals Forked Distally" states="5071cfa6-9929-4da1-861a-a53c9f9254c8"/>
       <char id="e02e1be5-3506-430b-baa6-625350bf83c9" label="Epipleural on First and Second Vertebrae Fused to Centrum" states="56a88e0f-21c8-43cd-9284-c7c0961b363a"/>
-      <char id="e2fb9006-21c9-443e-8562-e789e9a605b2" label="Epipleurals Not Attached to Axial Skeleton" states="c1b50d28-2655-427f-a1b1-818753c4e491" about="#e2fb9006-21c9-443e-8562-e789e9a605b2">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">ask Dave/Carole</meta>
-      </char>
-      <char id="fc64bc0a-b94b-4e5f-ae7e-3743233c9182" label="Reduced Number of Epipleurals" states="8d93d913-cc91-4216-9e33-e9586805c15a" about="#fc64bc0a-b94b-4e5f-ae7e-3743233c9182">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-</meta>
-      </char>
-      <char id="21d23ce3-b13b-451d-9358-df8bc96dc6b8" label="Origin of Epineurals" states="455c324e-55cd-42d2-b2b0-c2a33f58037f" about="#21d23ce3-b13b-451d-9358-df8bc96dc6b8">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-</meta>
-      </char>
+      <char id="e2fb9006-21c9-443e-8562-e789e9a605b2" label="Epipleurals Not Attached to Axial Skeleton" states="c1b50d28-2655-427f-a1b1-818753c4e491" about="#e2fb9006-21c9-443e-8562-e789e9a605b2"></char>
+      <char id="fc64bc0a-b94b-4e5f-ae7e-3743233c9182" label="Reduced Number of Epipleurals" states="8d93d913-cc91-4216-9e33-e9586805c15a" about="#fc64bc0a-b94b-4e5f-ae7e-3743233c9182"></char>
+      <char id="21d23ce3-b13b-451d-9358-df8bc96dc6b8" label="Origin of Epineurals" states="455c324e-55cd-42d2-b2b0-c2a33f58037f" about="#21d23ce3-b13b-451d-9358-df8bc96dc6b8"></char>
       <char id="9069c986-19dc-4f55-97ba-80253f9e5e98" label="First One to Three Epineurals with Distal End Displaced Ventrally" states="23bce8f3-aacf-4793-8a6c-fbe34f821253"/>
       <char id="ebf76fcf-8268-4e8d-b907-85050a260937" label="Some Epineurals and Epipleurals Forked Proximally" states="7715304c-ea99-4e6d-ac3f-b4ee7c1124c9"/>
       <char id="293872d5-0b34-4b82-b889-4f82fcbed802" label="Epineurals Fused to Neural Arch" states="6629e61d-f5d4-4761-905b-b015df395e52"/>
@@ -6897,15 +7153,11 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="ade8c60c-ed01-4a4c-acab-3f6b993bcf07" label="Accessory Neural Arch" states="8f681e42-b702-490f-bed1-95ffe9ca8757"/>
       <char id="7e20638f-f20b-41d2-9fa0-81aad795f0d0" label="First Neural Arch with Brush-like Growth" states="2433e26a-76f1-459e-a9d0-2e4b85ca995f" about="#7e20638f-f20b-41d2-9fa0-81aad795f0d0"/>
       <char id="67b5d4e0-86a3-464a-a9a2-751e53cef17d" label="Number of Open Neural Arches" states="0227d777-eba4-4dea-910c-4555697bc8f9"/>
-      <char id="e9a08c2a-2ffa-4964-9e53-50fc8f7fc8a4" label="Origin of First Rib" states="c2b13fb3-aeec-42ac-a150-e9644fc3b232" about="#e9a08c2a-2ffa-4964-9e53-50fc8f7fc8a4">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-</meta>
-      </char>
+      <char id="e9a08c2a-2ffa-4964-9e53-50fc8f7fc8a4" label="Origin of First Rib" states="c2b13fb3-aeec-42ac-a150-e9644fc3b232" about="#e9a08c2a-2ffa-4964-9e53-50fc8f7fc8a4"></char>
       <char id="94f4e15e-8377-4f8f-8e10-d663c5243daa" label="Ossification of Ribs" states="4511692e-80ee-466f-a527-08bd3691320d" about="#94f4e15e-8377-4f8f-8e10-d663c5243daa">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-</meta>
       </char>
-      <char id="6ea6fc18-6af8-4574-9647-1b2919bf24fc" label="Origin of Baudelot's Ligament" states="4acd6410-4f0a-4d78-8ac2-83f535dfb7c1" about="#6ea6fc18-6af8-4574-9647-1b2919bf24fc">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-</meta>
-      </char>
+      <char id="6ea6fc18-6af8-4574-9647-1b2919bf24fc" label="Origin of Baudelot's Ligament" states="4acd6410-4f0a-4d78-8ac2-83f535dfb7c1" about="#6ea6fc18-6af8-4574-9647-1b2919bf24fc"></char>
       <char id="3c35e7f5-4c4e-44ba-b521-e711dbd1900a" label="Ossification of Baudelot's Ligament" states="ce1f7537-a599-4e00-8ee9-45af9fa0caa5"/>
       <char id="f72686b8-b31f-40f2-b184-96dd69c8ec67" label="Modified Proximal Segmentation of Caudal-fin Rays" states="0e98761e-4f4b-40ad-9d79-4b6954baff81" about="#f72686b8-b31f-40f2-b184-96dd69c8ec67"/>
       <char id="7959d3ab-1545-4c9a-a0e6-761ff8d2586b" label="Segmentation Begins on Distal Half of Each Caudal Ray" states="b8c7ed37-6ddf-4600-9f43-2ab87e44fa70"/>
@@ -6939,7 +7191,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="dd9d2254-6b79-4a92-a6cf-feb65a09f175" label="Ventral Limb of Posttemporal Not Ossified" states="d1539885-d897-4fc8-8262-eaf385ef86e5" about="#dd9d2254-6b79-4a92-a6cf-feb65a09f175"/>
       <char id="403d9952-f0fc-4444-8e95-2d69ce5b1c46" label="Margin of Anal Fin Indented" states="944df90a-cd7a-4e7e-944b-95e690af5222"/>
       <char id="0847e2a9-f1e2-4a5e-81ea-e79fa3cd7423" label="Scales" states="1ed2841a-eeca-40f0-a074-b9c17d006953"/>
-      <char id="f8e539ab-7cf2-4ba1-9117-d3b4f8f307b2" label="Fleshy Mid-lateral Keel" states="f9f5681f-e995-472e-8920-335c043417d5" about="#f8e539ab-7cf2-4ba1-9117-d3b4f8f307b2"></char>
+      <char id="f8e539ab-7cf2-4ba1-9117-d3b4f8f307b2" label="Fleshy Mid-lateral Keel" states="f9f5681f-e995-472e-8920-335c043417d5" about="#f8e539ab-7cf2-4ba1-9117-d3b4f8f307b2"/>
       <char id="df568a16-1550-497d-94af-45a2c12afc3b" label="Body Transparent, Glassy in Life" states="7f81ce45-8d21-4329-b378-854465f5d64d"/>
       <char id="428214d7-57dd-4aa6-a013-f47264fcf8a2" label="Scale Pockets in Continuous Flap of Skin" states="aa479f05-fb7e-4504-aad4-4c8c76386ccf" about="#428214d7-57dd-4aa6-a013-f47264fcf8a2"/>
       <char id="2c473a4d-189f-434a-93c0-5ca07b613677" label="Elliptical or Keyhole Aphakic Space" states="c1ed8020-bc94-4de3-a7e2-b3a33c582a6f" about="#2c473a4d-189f-434a-93c0-5ca07b613677"/>
