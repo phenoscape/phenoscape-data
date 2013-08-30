@@ -1648,21 +1648,13 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0000464">
-                    <phen:qualifier relation="OBO_REL:adjacent_to">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2001239"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                    <phen:qualifier relation="adjacent_to">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2001865"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:2001903"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001865"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1673,27 +1665,35 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0000464">
-                    <phen:qualifier relation="OBO_REL:adjacent_to">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2001239"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                    <phen:qualifier relation="adjacent_to">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2001865"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:2001903"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001865"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="1961f66a-8230-4483-94ef-7339eef4e802" label="CB5s separated from main body of BB4 by tail or small nubbins of cartilage extending posteriorly from BB4" symbol="2"/>
+        <state id="1961f66a-8230-4483-94ef-7339eef4e802" label="CB5s separated from main body of BB4 by tail or small nubbins of cartilage extending posteriorly from BB4" symbol="2" about="#1961f66a-8230-4483-94ef-7339eef4e802">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001903"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001865"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="72e9b3df-aa82-45a6-bd94-0a9b50a1dcb1">
         <state id="b939e30d-5bea-4727-b8fd-b953820bb125" label="BB3 terminates beneath the anterior end of BB4 cartilage" symbol="0" about="#b939e30d-5bea-4727-b8fd-b953820bb125">
@@ -5217,9 +5217,72 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         </polymorphic_state_set>
       </states>
       <states id="72fd3779-b62f-4178-8c25-46f310048873">
-        <state id="6d1d5a10-bb91-4b23-b08f-aacd6e9d32c5" label="Posterior neural and haemal spine not expanded" symbol="0" about="#6d1d5a10-bb91-4b23-b08f-aacd6e9d32c5"/>
-        <state id="87ae1893-3de1-4cf7-a86d-da2088609c64" label="Neural and haemal spines of PU2 expanded" symbol="1"/>
-        <state id="60611aee-3e55-4439-968d-49d4d60693d3" label="Neural and haemal spines of PU2 and PU3 (to PU6 in some) expanded" symbol="2"/>
+        <state id="6d1d5a10-bb91-4b23-b08f-aacd6e9d32c5" label="Posterior neural and haemal spine not expanded" symbol="0" about="#6d1d5a10-bb91-4b23-b08f-aacd6e9d32c5">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001076"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001364"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="87ae1893-3de1-4cf7-a86d-da2088609c64" label="Neural and haemal spines of PU2 expanded" symbol="1" about="#87ae1893-3de1-4cf7-a86d-da2088609c64">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001076"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001364"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="60611aee-3e55-4439-968d-49d4d60693d3" label="Neural and haemal spines of PU2 and PU3 (to PU6 in some) expanded" symbol="2" about="#60611aee-3e55-4439-968d-49d4d60693d3">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001076"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001364"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="15fafc11-db4c-422a-8fb7-85d5b1e116ce">
         <state id="18c2807d-0a6a-4576-9c35-752c767bc44a" label="Six hypurals" symbol="0" about="#18c2807d-0a6a-4576-9c35-752c767bc44a">
@@ -5261,7 +5324,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001560"/>
                 </phen:bearer>
-                <phen:quality count="5">
+                <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001561"/>
@@ -5272,7 +5335,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000364"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="5">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -5289,14 +5352,6 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                 </phen:bearer>
                 <phen:quality count="4">
                   <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2002056"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -5340,7 +5395,13 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:description>2-3</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000660"/>
+                  <phen:typeref about="UBERON:2000660">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0007023"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070"/>
@@ -5355,7 +5416,13 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:description/>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000660"/>
+                  <phen:typeref about="UBERON:2000660">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0007023"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality count="2">
                   <phen:typeref about="PATO:0000070"/>
@@ -5370,7 +5437,13 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:description/>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000660"/>
+                  <phen:typeref about="UBERON:2000660">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0007023"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
@@ -5416,10 +5489,10 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001420">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="BSPO:0000072">
-                          <phen:qualifier relation="OBO_REL:part_of">
+                          <phen:qualifier relation="BFO:0000050">
                             <phen:holds_in_relation_to>
                               <phen:typeref about="UBERON:4000163"/>
                             </phen:holds_in_relation_to>
@@ -5433,10 +5506,10 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                   <phen:typeref about="PATO:0000642"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001420">
-                      <phen:qualifier relation="OBO_REL:part_of">
+                      <phen:qualifier relation="BFO:0000050">
                         <phen:holds_in_relation_to>
                           <phen:typeref about="BSPO:0000072">
-                            <phen:qualifier relation="OBO_REL:part_of">
+                            <phen:qualifier relation="BFO:0000050">
                               <phen:holds_in_relation_to>
                                 <phen:typeref about="UBERON:4000163"/>
                               </phen:holds_in_relation_to>
@@ -5480,7 +5553,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000077">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001419"/>
                       </phen:holds_in_relation_to>
@@ -5506,7 +5579,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000077">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001419"/>
                       </phen:holds_in_relation_to>
@@ -5528,7 +5601,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000077">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001420"/>
                       </phen:holds_in_relation_to>
@@ -5554,7 +5627,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000077">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001420">
                           <phen:qualifier relation="BSPO:0000123">
@@ -5580,7 +5653,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="BSPO:0000077">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001420">
                           <phen:qualifier relation="BSPO:0000122">
@@ -5607,13 +5680,83 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0004529"/>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000083">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0007832"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004529">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="BSPO:0000083">
+                            <phen:qualifier relation="BFO:0000050">
+                              <phen:holds_in_relation_to>
+                                <phen:typeref about="UBERON:0007832"/>
+                              </phen:holds_in_relation_to>
+                            </phen:qualifier>
+                          </phen:typeref>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="0d147826-34a8-41a0-8f66-38f20363594c" label="Medial processes joined medially by cartilage" symbol="1"/>
+        <state id="0d147826-34a8-41a0-8f66-38f20363594c" label="Medial processes joined medially by cartilage" symbol="1" about="#0d147826-34a8-41a0-8f66-38f20363594c">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000083">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0007832"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001961"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004529">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="BSPO:0000083">
+                            <phen:qualifier relation="BFO:0000050">
+                              <phen:holds_in_relation_to>
+                                <phen:typeref about="UBERON:0007832"/>
+                              </phen:holds_in_relation_to>
+                            </phen:qualifier>
+                          </phen:typeref>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="f11e4e82-e043-49fd-8552-3a2e7936fab7">
         <state id="93c45ef1-9dcf-4bff-8c3f-32b63caffb7d" label="Posterior pelvic processes small (or absent)" symbol="0" about="#93c45ef1-9dcf-4bff-8c3f-32b63caffb7d">
@@ -5797,8 +5940,46 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         </state>
       </states>
       <states id="09e9da40-821a-4872-91be-8d1b894a3e33">
-        <state id="70b6d657-7f9b-4094-aa97-3d68a0ddfcd8" label="Cartilage between medial processes, if present, not terminating in ventrally directed process" symbol="0"/>
-        <state id="40f2e23f-e539-404a-aed2-6b5ec9ec8e30" label="Cartilage between medial processes terminating in ventrally directed process" symbol="1"/>
+        <state id="70b6d657-7f9b-4094-aa97-3d68a0ddfcd8" label="Cartilage between medial processes, if present, not terminating in ventrally directed process" symbol="0" about="#70b6d657-7f9b-4094-aa97-3d68a0ddfcd8">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0007844">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000152"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="40f2e23f-e539-404a-aed2-6b5ec9ec8e30" label="Cartilage between medial processes terminating in ventrally directed process" symbol="1" about="#40f2e23f-e539-404a-aed2-6b5ec9ec8e30">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0007844">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000152"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="e8557592-0680-423e-8436-228108196521">
         <state id="e7192a6b-9713-49dc-a99f-b0c3d84b31e1" label="Cartilage extending posteriorly from between medial processes, if present, not elongate" symbol="0" about="#e7192a6b-9713-49dc-a99f-b0c3d84b31e1">
@@ -5807,7 +5988,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0002418">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="RO:0002220">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001734"/>
                       </phen:holds_in_relation_to>
@@ -5827,7 +6008,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0002418">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="RO:0002220">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001734"/>
                       </phen:holds_in_relation_to>
@@ -6037,8 +6218,8 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000058">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                  <phen:typeref about="BSPO:0000074">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0000151"/>
                       </phen:holds_in_relation_to>
@@ -6057,8 +6238,8 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000058">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                  <phen:typeref about="BSPO:0000074">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0000151"/>
                       </phen:holds_in_relation_to>
@@ -6077,8 +6258,8 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000058">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                  <phen:typeref about="BSPO:0000074">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0000151"/>
                       </phen:holds_in_relation_to>
@@ -6158,7 +6339,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004529">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2000549"/>
                       </phen:holds_in_relation_to>
@@ -6192,10 +6373,10 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004529">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="BSPO:0000084">
-                          <phen:qualifier relation="OBO_REL:part_of">
+                          <phen:qualifier relation="BFO:0000050">
                             <phen:holds_in_relation_to>
                               <phen:typeref about="UBERON:2000549"/>
                             </phen:holds_in_relation_to>
@@ -6205,6 +6386,9 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002314"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -7002,7 +7186,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0002397">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0002548"/>
                       </phen:holds_in_relation_to>
@@ -7028,7 +7212,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0002397">
-                    <phen:qualifier relation="OBO_REL:part_of">
+                    <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0002548"/>
                       </phen:holds_in_relation_to>
@@ -7095,9 +7279,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="a96cf959-d175-456e-92c7-2da573c3b9f2" label="Fifth Epibranchial " states="af401b98-fa50-415c-a6f0-44c1850a110f"/>
       <char id="730f3ed1-f8a1-4312-91e7-899629b7b464" label="Dentition of Fifth Ceratobranchial" states="ba6ce2ba-6b5b-4a23-a951-be5be83b0b0e" about="#730f3ed1-f8a1-4312-91e7-899629b7b464"/>
       <char id="4ec65db6-72d3-45e4-9c47-a17fe6da0ccb" label="Shape of Fifth Ceratobranchial" about="#4ec65db6-72d3-45e4-9c47-a17fe6da0ccb" states="661c237d-80d1-4a13-ad2a-b40f8de4b2e8"/>
-      <char id="def115ae-193a-4e33-869a-599dd11847d7" label="Gap Between the Fourth Basibranchial Cartilage and Fifth Ceratobranchials" states="1ca0b3e0-96fa-4919-b0cc-68bc2abc9162" about="#def115ae-193a-4e33-869a-599dd11847d7">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">check Fielitz paper</meta>
-      </char>
+      <char id="def115ae-193a-4e33-869a-599dd11847d7" label="Gap Between the Fourth Basibranchial Cartilage and Fifth Ceratobranchials" states="1ca0b3e0-96fa-4919-b0cc-68bc2abc9162" about="#def115ae-193a-4e33-869a-599dd11847d7"></char>
       <char id="d4b07448-94df-4c30-9c23-c08554825831" label="Third Basibranchial Extends beyond Fourth Basibranchial Cartilage" states="72e9b3df-aa82-45a6-bd94-0a9b50a1dcb1" about="#d4b07448-94df-4c30-9c23-c08554825831"/>
       <char id="6f4b3a6e-4b86-4c2e-9033-227a7a9470f0" label="Fourth Basibranchial Ossified" states="8f8bb334-5b34-4231-a7c6-7e468dd2addc"/>
       <char id="a522234d-2f8a-4771-9480-d47b59ed8394" label="Elongate First Basibranchial" states="98f48dd5-1424-4239-bf81-34f242fee02f"/>
@@ -7112,7 +7294,7 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="fc49615d-3f42-4314-832b-55b79b504384" label="Number of Branchiostegals on the Posterior Ceratohyal" states="b80252ed-e85b-4dfb-ad39-f7913a88c617"/>
       <char id="f198bbe3-9a5c-48ea-a290-fa12d5800eed" label=" Number of Branchiostegals on the Anterior Ceratohyal" states="57198ca0-1427-4910-84c5-827726664c8d"/>
       <char id="4982542d-47d1-4417-9810-24c50ad5c1ff" label="Proximity of Posteriormost Two Branchiostegals" states="8fde3541-f7c9-4176-9172-9a1b316bd2e6" about="#4982542d-47d1-4417-9810-24c50ad5c1ff"/>
-      <char id="edc0b238-412b-4195-b047-8f392324cd72" label="3 + 1 Arrangement of Branchiostegals on the Anterior Ceratohyal" states="aec8466b-00c2-4b83-b148-ebbd428d94dc" about="#edc0b238-412b-4195-b047-8f392324cd72"></char>
+      <char id="edc0b238-412b-4195-b047-8f392324cd72" label="3 + 1 Arrangement of Branchiostegals on the Anterior Ceratohyal" states="aec8466b-00c2-4b83-b148-ebbd428d94dc" about="#edc0b238-412b-4195-b047-8f392324cd72"/>
       <char id="c4cda950-c7cf-41d2-9759-66b81364f917" label="Hypohyal Branchiostegals" states="7acb4821-acc1-4322-ad5b-c5690b03d60b" about="#c4cda950-c7cf-41d2-9759-66b81364f917"/>
       <char id="234ac3b8-829b-4abe-86ed-8b86114875a3" label="Basihyal Morphology" states="627da9a2-f41f-47b1-890b-abce374087ef"/>
       <char id="93531047-c908-4dca-ab0a-53181749dc95" label="Basihyal Teeth" states="8da56c2d-553b-48b4-9183-42a700d5cdc1"/>
@@ -7132,16 +7314,16 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="411c0b89-7e6b-4876-9d0e-eac1b87932fc" label="Palatine Articulates with Premaxilla" states="7efca73f-a0cd-4a81-8d40-8ae1b4a0f1a5"/>
       <char id="baa4fe84-e16a-4cc7-90fd-effefccf98e2" label="Lacrimal Oriented Horizontally on Snout" states="d0f0ed12-287a-4449-9d41-f5db10139f98"/>
       <char id="68320e8c-b67b-4624-b67e-dd57d2d1cd3d" label="Maxilla Reduced" states="fa99a747-227f-4cad-a576-c12cc7f08786" about="#68320e8c-b67b-4624-b67e-dd57d2d1cd3d"/>
-      <char id="9cbd3092-6961-4acf-b713-f73f73f200d7" label="Frontal Expanded Laterally over Orbit" states="86364ba5-3efa-4aeb-9538-cbde217b3e95" about="#9cbd3092-6961-4acf-b713-f73f73f200d7"></char>
+      <char id="9cbd3092-6961-4acf-b713-f73f73f200d7" label="Frontal Expanded Laterally over Orbit" states="86364ba5-3efa-4aeb-9538-cbde217b3e95" about="#9cbd3092-6961-4acf-b713-f73f73f200d7"/>
       <char id="5f642be9-b004-4cc1-9766-41064de03a53" label="Sphenotic process" states="e9c0f6df-cfa4-4645-8262-dbab84f0fbad"/>
       <char id="b7cf9140-8657-4e93-9e1a-23036594079f" label="Epipleurals Extend Anteriorly to First or Second Vertebra" states="0c1f91c8-19b8-4677-afc3-15cfb482fa13"/>
       <char id="37326c99-fa73-4f38-b8d6-8122bc221576" label="One or More Epipleurals Displaced Dorsally Into Horizontal Septum" states="9e88b55f-7dc8-4237-91aa-f68fd3f2bf38"/>
       <char id="ac4f428d-d1c4-4bda-b1fa-c92560213d04" label="Abrupt Transition of Epipleurals in and beneath the Horizontal Septum" states="6b2edbdf-39ad-4b80-b940-50ac59403e2b"/>
       <char id="8b580642-808b-435e-bdda-acbf8378a2ad" label="One or More Epipleurals Forked Distally" states="5071cfa6-9929-4da1-861a-a53c9f9254c8"/>
       <char id="e02e1be5-3506-430b-baa6-625350bf83c9" label="Epipleural on First and Second Vertebrae Fused to Centrum" states="56a88e0f-21c8-43cd-9284-c7c0961b363a"/>
-      <char id="e2fb9006-21c9-443e-8562-e789e9a605b2" label="Epipleurals Not Attached to Axial Skeleton" states="c1b50d28-2655-427f-a1b1-818753c4e491" about="#e2fb9006-21c9-443e-8562-e789e9a605b2"></char>
-      <char id="fc64bc0a-b94b-4e5f-ae7e-3743233c9182" label="Reduced Number of Epipleurals" states="8d93d913-cc91-4216-9e33-e9586805c15a" about="#fc64bc0a-b94b-4e5f-ae7e-3743233c9182"></char>
-      <char id="21d23ce3-b13b-451d-9358-df8bc96dc6b8" label="Origin of Epineurals" states="455c324e-55cd-42d2-b2b0-c2a33f58037f" about="#21d23ce3-b13b-451d-9358-df8bc96dc6b8"></char>
+      <char id="e2fb9006-21c9-443e-8562-e789e9a605b2" label="Epipleurals Not Attached to Axial Skeleton" states="c1b50d28-2655-427f-a1b1-818753c4e491" about="#e2fb9006-21c9-443e-8562-e789e9a605b2"/>
+      <char id="fc64bc0a-b94b-4e5f-ae7e-3743233c9182" label="Reduced Number of Epipleurals" states="8d93d913-cc91-4216-9e33-e9586805c15a" about="#fc64bc0a-b94b-4e5f-ae7e-3743233c9182"/>
+      <char id="21d23ce3-b13b-451d-9358-df8bc96dc6b8" label="Origin of Epineurals" states="455c324e-55cd-42d2-b2b0-c2a33f58037f" about="#21d23ce3-b13b-451d-9358-df8bc96dc6b8"/>
       <char id="9069c986-19dc-4f55-97ba-80253f9e5e98" label="First One to Three Epineurals with Distal End Displaced Ventrally" states="23bce8f3-aacf-4793-8a6c-fbe34f821253"/>
       <char id="ebf76fcf-8268-4e8d-b907-85050a260937" label="Some Epineurals and Epipleurals Forked Proximally" states="7715304c-ea99-4e6d-ac3f-b4ee7c1124c9"/>
       <char id="293872d5-0b34-4b82-b889-4f82fcbed802" label="Epineurals Fused to Neural Arch" states="6629e61d-f5d4-4761-905b-b015df395e52"/>
@@ -7153,34 +7335,28 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       <char id="ade8c60c-ed01-4a4c-acab-3f6b993bcf07" label="Accessory Neural Arch" states="8f681e42-b702-490f-bed1-95ffe9ca8757"/>
       <char id="7e20638f-f20b-41d2-9fa0-81aad795f0d0" label="First Neural Arch with Brush-like Growth" states="2433e26a-76f1-459e-a9d0-2e4b85ca995f" about="#7e20638f-f20b-41d2-9fa0-81aad795f0d0"/>
       <char id="67b5d4e0-86a3-464a-a9a2-751e53cef17d" label="Number of Open Neural Arches" states="0227d777-eba4-4dea-910c-4555697bc8f9"/>
-      <char id="e9a08c2a-2ffa-4964-9e53-50fc8f7fc8a4" label="Origin of First Rib" states="c2b13fb3-aeec-42ac-a150-e9644fc3b232" about="#e9a08c2a-2ffa-4964-9e53-50fc8f7fc8a4"></char>
+      <char id="e9a08c2a-2ffa-4964-9e53-50fc8f7fc8a4" label="Origin of First Rib" states="c2b13fb3-aeec-42ac-a150-e9644fc3b232" about="#e9a08c2a-2ffa-4964-9e53-50fc8f7fc8a4"/>
       <char id="94f4e15e-8377-4f8f-8e10-d663c5243daa" label="Ossification of Ribs" states="4511692e-80ee-466f-a527-08bd3691320d" about="#94f4e15e-8377-4f8f-8e10-d663c5243daa">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-</meta>
       </char>
-      <char id="6ea6fc18-6af8-4574-9647-1b2919bf24fc" label="Origin of Baudelot's Ligament" states="4acd6410-4f0a-4d78-8ac2-83f535dfb7c1" about="#6ea6fc18-6af8-4574-9647-1b2919bf24fc"></char>
+      <char id="6ea6fc18-6af8-4574-9647-1b2919bf24fc" label="Origin of Baudelot's Ligament" states="4acd6410-4f0a-4d78-8ac2-83f535dfb7c1" about="#6ea6fc18-6af8-4574-9647-1b2919bf24fc"/>
       <char id="3c35e7f5-4c4e-44ba-b521-e711dbd1900a" label="Ossification of Baudelot's Ligament" states="ce1f7537-a599-4e00-8ee9-45af9fa0caa5"/>
       <char id="f72686b8-b31f-40f2-b184-96dd69c8ec67" label="Modified Proximal Segmentation of Caudal-fin Rays" states="0e98761e-4f4b-40ad-9d79-4b6954baff81" about="#f72686b8-b31f-40f2-b184-96dd69c8ec67"/>
       <char id="7959d3ab-1545-4c9a-a0e6-761ff8d2586b" label="Segmentation Begins on Distal Half of Each Caudal Ray" states="b8c7ed37-6ddf-4600-9f43-2ab87e44fa70"/>
       <char id="fbe46026-d8a0-47a2-9973-d43415d583e2" label="Median Caudal Cartilages" states="6c3df6ea-2178-497f-a318-de89fe9ed075"/>
       <char id="e213843f-3ce6-4219-b309-514713a1e70a" label="Urodermal" states="e7e909d8-9b9d-4be4-bc8b-995cb92883ec" about="#e213843f-3ce6-4219-b309-514713a1e70a"/>
-      <char id="1ba00a18-d753-4ace-b4f3-515a8e0b9957" label="Expanded Neural and Haemal Spines on Posterior Vertebrae" states="72fd3779-b62f-4178-8c25-46f310048873" about="#1ba00a18-d753-4ace-b4f3-515a8e0b9957">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">-</meta>
-      </char>
+      <char id="1ba00a18-d753-4ace-b4f3-515a8e0b9957" label="Expanded Neural and Haemal Spines on Posterior Vertebrae" states="72fd3779-b62f-4178-8c25-46f310048873" about="#1ba00a18-d753-4ace-b4f3-515a8e0b9957"/>
       <char id="96037e7f-f590-47ef-8e08-8594ccf55203" label="Number of Hypurals" states="15fafc11-db4c-422a-8fb7-85d5b1e116ce"/>
       <char id="50212ecd-2e4b-4ea6-8b00-20c02b6881c4" label="Number of Epurals" states="dc15a442-1c3c-48f7-92a4-2de07f493c1d"/>
       <char id="ab321a3e-4906-4b9f-9ca3-284d744418da" label="Fusion of Adjacent Pterygiophores " states="c05fb57c-9b43-46e4-9c05-6226089c0a9b"/>
       <char id="8bb738b5-499d-436b-920f-6978898c1d02" label="Pterygiophores of Dorsal Fin Triangular Proximally" states="ec423a4d-9bfa-4143-8189-b6fe6c6c8979"/>
       <char id="74553124-6c5e-42ea-9d83-ce9352b0d6d1" label="Pterygiophores of Anal Fin Triangular Proximally" states="f2c2706e-4323-4bb3-b940-9dcd65375d2d"/>
-      <char id="b12e1a15-d305-4d76-8633-1777f4b7257c" label="Medial Processes of Pelvic Girdle Joined Medially by Cartilage" states="6dca77a2-f21c-4b95-bb68-e9eb47657c1d" about="#b12e1a15-d305-4d76-8633-1777f4b7257c">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">add Medial process</meta>
-      </char>
+      <char id="b12e1a15-d305-4d76-8633-1777f4b7257c" label="Medial Processes of Pelvic Girdle Joined Medially by Cartilage" states="6dca77a2-f21c-4b95-bb68-e9eb47657c1d" about="#b12e1a15-d305-4d76-8633-1777f4b7257c"/>
       <char id="63f3aedd-f555-445b-ae83-7e6f8ff25554" label="Posterior Processes of Pelvic Girdle Elongate and Widely Separated" states="f11e4e82-e043-49fd-8552-3a2e7936fab7" about="#63f3aedd-f555-445b-ae83-7e6f8ff25554"/>
       <char id="8c695525-bcc9-4e83-a374-2abbfdc54298" label="Posterior Processes of Pelvic Girdle Absent" states="cddaf6e1-61a3-4f73-a472-370eebfe9ec7"/>
       <char id="2347d2c5-2397-4380-8e84-b1ac28b7a7a3" label="Lateral Pelvic Processes" states="28d946ad-90c8-40f1-ab9e-be7c1479fd86" about="#2347d2c5-2397-4380-8e84-b1ac28b7a7a3"/>
       <char id="ff8a18a2-ebe5-49d7-a61f-15d12af6fea2" label="Autogenous Pelvic Cartilages" states="208b4b64-c1c2-4053-a8df-49a92e1511d1" about="#ff8a18a2-ebe5-49d7-a61f-15d12af6fea2"/>
-      <char id="cd24ca2f-3eaf-44e3-b6a6-986235c8e0f4" label="Ventrally Directed Posterior Cartilage of the Pelvic Fin" states="09e9da40-821a-4872-91be-8d1b894a3e33" about="#cd24ca2f-3eaf-44e3-b6a6-986235c8e0f4">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">need MPP</meta>
-      </char>
+      <char id="cd24ca2f-3eaf-44e3-b6a6-986235c8e0f4" label="Ventrally Directed Posterior Cartilage of the Pelvic Fin" states="09e9da40-821a-4872-91be-8d1b894a3e33" about="#cd24ca2f-3eaf-44e3-b6a6-986235c8e0f4"/>
       <char id="787c3a02-c2fc-4253-9049-a2e38f416cee" label="Posterior Pelvic Cartilage Elongate" states="e8557592-0680-423e-8436-228108196521"/>
       <char id="83deac40-793d-45ba-b405-945d056ff915" label="Position of Pectoral and Pelvic Fins" states="c5cbe729-bbc3-479d-beff-005430a5a448" about="#83deac40-793d-45ba-b405-945d056ff915"/>
       <char id="0044bb31-dead-4864-bdff-61b55537f2c9" label="Relative Position of Abdominal Pelvic Fins" states="505088d4-fadf-406b-a610-7dc1e1b07b5b"/>
