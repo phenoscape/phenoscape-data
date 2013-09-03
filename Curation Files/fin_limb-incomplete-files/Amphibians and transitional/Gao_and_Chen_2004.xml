@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
@@ -624,6 +624,14 @@
                   </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004741"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
@@ -636,6 +644,14 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0001784"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004741"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -725,16 +741,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0009988"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000025">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                  <phen:typeref about="UBERON:0009988">
+                    <phen:qualifier relation="BFO:0000053">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="PATO:0001448"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -745,10 +761,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0009988"/>
+                  <phen:typeref about="UBERON:0009988">
+                    <phen:qualifier relation="BFO:0000053">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001448"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001448"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1025,7 +1047,15 @@
                   <phen:typeref about="UBERON:0002103"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117"/>
+                  <phen:typeref about="PATO:0000574"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011679"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1039,7 +1069,7 @@
                   <phen:typeref about="UBERON:0002103"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001154"/>
+                  <phen:typeref about="PATO:0000573"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>

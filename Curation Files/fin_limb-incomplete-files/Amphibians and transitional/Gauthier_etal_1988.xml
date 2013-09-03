@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.10" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Matrix:
 Taxon:
@@ -1805,10 +1805,16 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0000975"/>
+                  <phen:typeref about="UBERON:0000975">
+                    <phen:qualifier relation="BFO:0000053">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001448"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001449"/>
+                  <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1819,10 +1825,16 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0000975"/>
+                  <phen:typeref about="UBERON:0000975">
+                    <phen:qualifier relation="BFO:0000053">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001448"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0002126"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2467,7 +2479,7 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/690e0503-448a-4005-902a-6ebb1d001631"/>
+                  <phen:typeref about="UBERON:4100016"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000574"/>
@@ -2481,7 +2493,7 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/690e0503-448a-4005-902a-6ebb1d001631"/>
+                  <phen:typeref about="UBERON:4100016"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000573"/>
@@ -3442,22 +3454,10 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="PATO:0002358">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="BSPO:0000068">
-                          <phen:qualifier relation="OBO_REL:part_of">
-                            <phen:holds_in_relation_to>
-                              <phen:typeref about="UBERON:0000981"/>
-                            </phen:holds_in_relation_to>
-                          </phen:qualifier>
-                        </phen:typeref>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9a17853b-dbd4-4e43-9ea9-03af53750fb0"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001482"/>
+                  <phen:typeref about="PATO:0000586"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3468,28 +3468,10 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="PATO:0002358">
-                    <phen:qualifier relation="OBO_REL:part_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="BSPO:0000068">
-                          <phen:qualifier relation="OBO_REL:part_of">
-                            <phen:holds_in_relation_to>
-                              <phen:typeref about="UBERON:0000981"/>
-                            </phen:holds_in_relation_to>
-                          </phen:qualifier>
-                        </phen:typeref>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/9a17853b-dbd4-4e43-9ea9-03af53750fb0"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0001482"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="PATO:0000587"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3502,16 +3484,16 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0006862"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000052">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                  <phen:typeref about="UBERON:0006862">
+                    <phen:qualifier relation="BFO:0000053">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="PATO:0001878"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002328"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3522,10 +3504,16 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0006862"/>
+                  <phen:typeref about="UBERON:0006862">
+                    <phen:qualifier relation="BFO:0000053">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001878"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001878"/>
+                  <phen:typeref about="PATO:0002327"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3578,16 +3566,16 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0008787"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000052">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                  <phen:typeref about="UBERON:0008787">
+                    <phen:qualifier relation="BFO:0000053">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="PATO:0001369"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3598,10 +3586,16 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0008787"/>
+                  <phen:typeref about="UBERON:0008787">
+                    <phen:qualifier relation="BFO:0000053">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001369"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001369"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3801,7 +3795,7 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
                   <phen:typeref about="UBERON:0000093">
                     <phen:qualifier relation="OBO_REL:part_of">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0001450"/>
+                        <phen:typeref about="UBERON:0002395"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -3909,7 +3903,7 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
                 <phen:quality>
                   <phen:typeref about="PATO:0001505"/>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:0001450"/>
+                    <phen:typeref about="UBERON:0002395"/>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3926,7 +3920,7 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:0001450"/>
+                    <phen:typeref about="UBERON:0002395"/>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -4239,11 +4233,72 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2-3-4-5-4</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0010696"/>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003631"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003632"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003633"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="4">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003634"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="5">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003635"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="4">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -4254,11 +4309,72 @@ Fin/limb characters in googledoc, many needed from VAO/AmAO (12/8/11)</meta>
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2-3-4-(4 or 3)-3</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0010696"/>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003631"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003632"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003633"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="4">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003635"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003221">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003634"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="4">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
