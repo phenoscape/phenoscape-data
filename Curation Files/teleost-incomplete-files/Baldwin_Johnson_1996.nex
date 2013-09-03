@@ -1,0 +1,269 @@
+#NEXUS
+[written Wed Sep 14 11:05:34 EDT 2011 by Mesquite  version 2.74 (build 550) at Ben-Frables-MacBook-Pro.local/10.0.1.8]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=77;
+	TAXLABELS
+		Diplophos_taenia Lampanyctus_cuprarius Myctophum_obtusirostre Notoscopelus_resplendens Neoscopelus_macrolepidotus Neoscopelus_sp. Metavelifer Polymixia_lowei Aulopus_sp. Aulopus_filamentosus_ Aulopus_japonicus Pseudotrichonotus_altivelis Synodus_jenkensi Synodus_synodus Synodus_variegatus Trachinocephalus_myops Harpadon_nehereus Harpadon_squamosus Saurida_brasiliensis Saurida_gracilis Saurida_normani Saurida_parri_ Saurida_undosquamous Bathyterois_longipes Bathyterois_pectinatus Bathyterois_sp. Bathyterois_viridensis Bathymicrops_regis Bathytyphlops_marionae Ipnops_agassizi Ipnops_murrayi Ipnops_meadi Scopelosaurus_argenteus Scopelosaurus_fedorovi Scopelosaurus_hoedti Ahliesaurus_berryi Clorophthalmus_agassizi Clorophthalmus_atlanticus Parasudis_trunculentus Bathysauropsis_gracilis Bathysauropsis_malayanus_ Omosudis_lowei Alepisaurus_brevirostrus Alepisaurus_sp. Coccorella_atlantica Odontostomops_normalops Evermarmella_balbo Evermarmella_indica Scopelarchus_analis Scopelarchoides_nicholsi Scopelarchoides_signifer Benthalbella_dentata Benthalbella_elongata Benthalbella_macropinna Rosenblattichthys_hubsi Paralepis_brevirostris Paralepis_coregonoides Arctozenus_rissoi Lestrolepis_intermedia Lestrolepis_sp. Lestidium_atlanticum Lestidium_sp. Stemonosudis_rothschildi Stemonosudis_sp. Uncisudis_advena Macroparalepis_affine Macroparalepis_sp. Lestidiops_affinis Lestidiops_sp. Sudis_atrox Sudis_hyalina Anotopterus_pharao Bathysauroides_gigas Bathysaurus_ferox Bathysaurus_mollis Gigantura_chuni Gigantura_indica 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=118;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+	CHARSTATELABELS 
+		1 Second_Epibranchial_Uncinate_Process /  EB2_uncinate_process_absent 'EB2 uncinate process present and enlarged; PB2 displaced posterolaterally (except in some paralepidids)' 'EB2 uncinate process present, but not enlarged; PB2 displaced posterolaterally', 2 Cartilaginous_Condyle_on_Dorsal_Surface_of_Third_Pharyngobranchial /  PB3_with_cartilaginous_condyle_articulating_with_EB2 PB3_without_cartilaginous_condyle_articulating_with_EB2, 3 Fourth_Pharyngobranchial_Toothplate /  UP4_present UP4_absent, 4 Articulation_of_First_Pharyngobranchial /  PB1_articulates_at_distal_tip_of_EB1 PB1_articulates_at_proximal_base_of_cartilaginous_tip_of_EB1, 5 Gill_Rakers_or_Toothplates /  'Gill rakers long, lathlike' Gill_rakers_present_as_toothplates Single_elongate_gill_raker_on_EB1, 6 Second_Pharyngobranchial_with_Extra_Uncinate_Process /  PB2_without_extra_uncinate_process PB2_without_extra_uncinate_process_but_with_an_expanded_proximal_base PB2_with_extra_uncinate_process, 7 Second_Pharyngobranchial_Toothplate /  UP2_present UP2_absent, 8 Second_Pharyngobranchial_Uncinate_Process /  PB2_with_short_uncinate_process PB2_with_long_uncinate_process, 9 Uncinate_Process_of_Second_Epibranchial_Adjacent_to_Second_Epibranchial /  'EB2 uncinate process diverges from EB2 as it approaches PB3; PB2 oriented anteromedial to posterolateral' 'EB2 uncinate process adjacent to EB2 as both approach PB3; PB2 oriented anterior to posterior', 10 Third_Pharyngobranchial_Produced /  PB3_not_extending_anteriorly_beyond_the_tips_of_EB1_and_PB2 PB3_extending_anteriorly_beyond_the_tips_of_EB1_and_PB2, 11 Distribution_of_PB3_Teeth /  UP3_covering_large_area_of_ventral_surface_of_PB3 UP3_restricted_to_lateral_edge_of_ventral_surface_of_PB3 UP3_absent, 12 Size_of_PB3_Teeth /  PB3_teeth_small PB3_teeth_large, 13 First_Pharyngobranchial /  'PB1 normal, reduced, or absent' PB1_very_long, 14 Fifth_Epibranchial_ /  EB5_absent EB5_present_as_a_small_cartilage EB5_present_as_a_large_catilage, 15 Dentition_of_Fifth_Ceratobranchial /  CBS_with_teeth_scattered_all_over_anterodorsal_surface CB5_with_most_teeth_restricted_to_medial_edge_of_anterodorsal_surface CB5_with_all_teeth_restricted_to_medial_edge_of_anterodorsal_surface CB5_without_teeth, 16 Shape_of_Fifth_Ceratobranchial /  'CBS not V-shaped' 'CBS V-shaped, the medial limb slender' 'CBS V-shaped, the medial limb robust', 17 Gap_Between_the_Fourth_Basibranchial_Cartilage_and_Fifth_Ceratobranchials /  No_gap_between_CB5s_and_BB4_cartilage 'Gap between CB5s and BB4 cartilage, CB5s not articulating with reduced BB4' 'CB5s separated from main body of BB4 by tail or small nubbins of cartilage extending poste- riorly from BB4.', 18 Third_Basibranchial_Extends_beyond_Fourth_Basibranchial_Cartilage /  BB3_terminates_beneath_the_anterior_end_of_BB4_cartilage BB3_terminates_beyond_the_posterior_end_of_BB4_cartilage, 19 Fourth_Basibranchial_Ossified /  BB4_cartilaginous BB4_ossified, 20 Elongate_First_Basibranchial /  BB1_not_elongate 'BB1 elongate, ossified' 'BB1 usually elongate, comprising a short ossified anterior segment followed by a long posterior cartilage', 21 Elongate_Second_Basibranchial /  BB2_not_elongate BB2_elongate, 22 Gillrakers_or_Toothplates_on_Third_Hypobranchials /  Gillrakers_or_toothplates_present_on_HB3 Gillrakers_or_toothplates_lacking_on_HB3, 23 'Gillrakers or Toothplates on Basibranchial(s)' /  Gillrakers_or_toothplates_lacking_on_basibranchials 'Gillrakers or toothplates on BB2, sometimes BB1 and BB3', 24 Ligament_between_First_Hypobranchial_and_Ventral_Hypohyal /  Ligament_from_HB1_to_ventral_hypohyal_not_ossified Ligament_from_HB1_to_ventral_hypohyal_ossified, 25 First_Hypobranchial_with_Ventrally_Directed_Process /  HB1_without_ventrally_directed_processes HB1_with_a_ventrally_directed_process, 26 Second_Hypobranchial_with_Ventrally_Directed_Process /  HB2_without_ventrally_directed_process HB2_with_ventrally_directed_process, 27 Third_Hypobranchials_Fused_Ventrally /  Third_hypobranchials_not_fused_ventrally Third_hypobranchials_fused_ventrally, 28 Ventral_Ceratohyal_Cartilage /  Anterior_ceratohyal_without_autogenous_ventral_cartilage Anterior_ceratohyal_with_autogenous_cartilage_along_ventral_margin, 29 Number_of_Branchiostegals_on_the_Posterior_Ceratohyal /  Four_or_fewer_branchiostegals_on_posterior_ceratohyal Five_branchiostegals_on_posterior_ceratohyal Six_or_more_branchiostegals_on_posterior_ceratohyal, 30 _Number_of_Branchiostegals_on_the_Anterior_Ceratohyal /  Five_or_more_branchiostegals_on_anterior_ceratohyal Four_or_fewer_branchiostegals_on_anterior_ceratohyal, 31 Proximity_of_Posteriormost_Two_Branchiostegals /  All_branchiostegals_on_posterior_ceratohyal_evenly_spaced 'Two posteriormost branchiostegals close, inserting on ventral margin of posterior ceratohyal' 'Two posteriormost branchiostegals close, inserting on posteroventral corner of posterior ceratohyal', 32 '3 + 1 Arrangement of Branchiostegals on the Anterior Ceratohyal' /  Branchiostegals_on_anterior_ceratohyal_roughly_evenly_spaced 'Branchiostegals on anterior ceratohyal arranged in "3+1" pattern', 33 Hypohyal_Branchiostegals /  No_branchiostegals_on_ventral_hypohyal Anteriormost_branchiostegal_on_ventral_hypohyal Anteriormost_three_branchiostegals_on_ventral_hypohyal, 34 Basihyal_Morphology /  Basihyal_oriented_horizontally Basihyal_oriented_obliquely Basihyal_oriented_at_90°_angle_to_BB1, 35 Basihyal_Teeth /  Basihyal_teeth_absent_or_unmodified_if_present 'Basihyal teeth present as large, posteriorly curved structures', 36 'Dominant Tooth-bearing Bone' /  'Premaxilla (or premaxilla and maxilla) is the dominant tooth-bearing bone of upper jaw' 'Premaxilla and palatine are the dominant tooth-bearing bones of upper jaw' 'Palatine is the dominant tooth-bearing bone of "upper jaw"', 37 Quadrate_with_Produced_Anterior_Limb /  'Quadrate fan-shaped' Quadrate_with_produced_anterior_limb, 38 Quadrate_with_Two_Distinct_Cartilaginous_Heads /  Quadrate_with_single_large_cartilage_on_dorsal_border Quadrate_cartilage_separated_into_two_condyles, 39 Large_Concavity_in_Dorsal_Margin_of_Quadrate_ /  'No concavity in quadrate (excluding symplectic incisure)' Concavity_between_anterior_and_posterior_cartilaginous_condyles, 40 Posterior_Cartilaginous_Condyle_of_Quadrate_Articulates_with_Hyomandibular /  Posterior_portion_of_quadrate_articulates_dorsally_with_metapterygoid Posterior_cartilaginous_condyle_of_quadrate_articulates_dorsally_with_hyomandibular, 41 Metapterygoid_Produced_Anteriorly /  Metapterygoid_overlies_quadrate Metapterygoid_extends_anteriorly_over_posterior_portion_of_ectopterygoid, 42 Metapteryoid_Free_of_Hyomandibular /  Metapterygoid_bound_to_hyomandibular Metapterygoid_free_from_hyomandibular, 43 Hyomandibular_and_Opercle_Oriented_Horizontally /  'Hyomandibular oriented vertically or sub-vertically, opercle posterior to suspensorium' 'Hyomandibular oriented ca. horizontally, opercle rotated dorsally to lie above hyomandibular', 44 Maxillary_Saddle /  Palatine_prong_and_maxillary_saddle_absent 'Palatine prong absent, maxillary saddle present' Palatine_prong_and_maxillary_saddle_present, 45 Dorsomedially_Directed_Premaxillary_Process /  'Premaxilla without dorso-medially directed process on medial edge' 'Premaxilla with dorso-medially directed process on medial edge', 46 Number_of_Infraorbitals /  six seven eight five three no_infraorbitals, 47 Long_Snout /  'Snout length much < 50% head length' 'Snout length > 50% head length', 48 Premaxillary_Fenestra /  No_premaxillary_fenestra Anterior_premaxilla_with_fenestra, 49 Palatine_Articulates_with_Premaxilla /  Palatine_without_process_for_articulation_with_premaxilla Palatine_with_long_process_for_articulation_with_premaxilla, 50 Lacrimal_Oriented_Horizontally_on_Snout /  Lacrimal_bordering_orbit_anteriorly 'Lacrimal anterior to orbit, oriented horizontally.', 51 Maxilla_Reduced /  Maxilla_well_developed_with_posterior_end_expanded 'Maxilla intact but slender, posterior end not expanded' Maxilla_present_as_posterior_remnant Maxilla_present_as_anterior_remnant, 52 Frontal_Expanded_Laterally_over_Orbit /  Frontal_not_expanded_laterally Frontal_expanded_laterally, 53 Sphenotic_process /  Sphenotic_without_anterior_process Sphenotic_with_anterior_process, 54 Epipleurals_Extend_Anteriorly_to_First_or_Second_Vertebra /  Epipleurals_originate_on_V3 Epipleurals_originate_on_V2 Epipleurals_originate_on_V1 Epipleurals_absent, 55 One_or_More_Epipleurals_Displaced_Dorsally_Into_Horizontal_Septum /  All_epipleurals_beneath_the_horizontal_septum One_or_more_epipleurals_displaced_dorsally_into_horizontal_septum, 56 Abrupt_Transition_of_Epipleurals_in_and_beneath_the_Horizontal_Septum /  No_epipleurals_displaced_dorsally_into_the_horizontal_septum_or_the_transition_between_epipleurals_in_and_beneath_the_horizontal_septum_is_gradual. Abrupt_transition_between_epipleurals_in_and_beneath_the_horizontal_septum, 57 One_or_More_Epipleurals_Forked_Distally /  Epipleurals_not_forked_distally Epipleurals_forked_distally_at_transition_of_epipleurals_in_and_beneath_the_horizontal_septum, 58 Epipleural_on_First_and_Second_Vertebrae_Fused_to_Centrum /  Epipleurals_on_VI_and_V2_autogenous Epipleurals_on_VI_and_V2_fused_to_centrum, 59 Epipleurals_Not_Attached_to_Axial_Skeleton /  Most_or_all_epipleurals_attached_to_axial_skeleton Most_epipleurals_not_attached_to_axial_skeleton Most_epipleurals_are_free_dorsal_branches, 60 Reduced_Number_of_Epipleurals /  Long_series_of_epipleurals Epipleural_series_not_extending_posteriorly_beyond_V5, 61 Origin_of_Epineurals /  All_epineurals_originate_on_neural_arch 'Some epineurals originate on the centrum or parapophysis; these flanked anteriorly and posteriorly by epineurals originating on the neural arch' 'Most or all epineurals originate on centrum; epineurals not reascending to neural arch posteriorly', 62 First_One_to_Three_Epineurals_with_Distal_End_Displaced_Ventrally /  Distal_end_of_epineurals_not_displaced_ventrally Distal_end_of_first_one_to_three_epineurals_displaced_ventrally, 63 Some_Epineurals_and_Epipleurals_Forked_Proximally /  'No epineurals (or epipleurals) forked proximally' 'Epineurals (and epipleurals) from about V12-V15 to near end of series forked proximally' 'Epineurals (and epipleurals) on about VI-V5 forked proximally' '"Gigantura" pattern of branching', 64 Epineurals_Fused_to_Neural_Arch /  Epineurals_not_fused_to_axial_skeleton Epineural_fused_to_neural_arch_on_VI 'Epineurals fused to neural arch on V1-V5' 'Epineurals fused to neural arch on V1-V10' Most_epineurals_fused_to_centrum, 65 Epineurals_Attached_to_Axial_Skeleton /  Most_or_all_epineurals_attached_to_axial_skeleton Most_epineurals_unattached All_epineurals_unattached Unattached_epineurals_represent_only_free_ventral_branches_of_forked_epineurals, 66 Epicentrals /  Epicentrals_ligamentous Epicentrals_ossified Epicentrals_absent 'Epicentrals cartilaginous anteriorly, ligamentous posteriorly', 67 Anterior_Epicentrals_Closely_Applied_to_Distal_End_of_Epipleurals /  All_epicentrals_attached_to_centrum_or_parapophyses Anterior_epicentrals_attached_to_distal_end_of_epipleurals, 68 Number_of_Supraneurals /  Three Two One No_supraneurals, 69 Number_of_Caudal_Vertebrae /  '< 25% caudal vertebrae' '40-60% caudal vertebrae' '> 60% caudal vertebrae', 70 Accessory_Neural_Arch /  Accessory_neural_arch_absent Accessory_neural_arch_present, 71 'First Neural Arch with Brush-like Growth' /  'No brush-like growth on first neural arch' ' brush-like growth on first neural arch', 72 Number_of_Open_Neural_Arches /  Many_neural_arches_open_dorsally 'Neural arches open on VI and sometimes V2-V4' All_neural_arches_closed_dorsally, 73 Origin_of_First_Rib /  First_rib_originates_on_V3 First_rib_originates_on_V4 First_rib_originates_on_V5 First_rib_originates_on_V2 First_rib_originates_on_V1 Ribs_absent, 74 Ossification_of_Ribs /  All_ribs_ossify_in_cartilage Some_ribs_ossify_in_membrane_bone All_ribs_ossify_in_membrane_bone Ribs_absent Some_or_all_ribs_ligamentous, 75 'Origin of Baudelot''s Ligament' /  'Baudelot''s ligament originates on VI' 'Baudelot''s ligament originates on more than one vertebra' 'Baudelot''s ligament originates on VI and the occiput', 76 'Ossification of Baudelot''s Ligament' /  'Baudelot''s ligament is ligamentous' 'Baudelot''s ligament is ossified' 'Baudelot''s ligament is absent', 77 'Modified Proximal Segmentation of Caudal-fin Rays' /  'Proximal portion of principal caudal-fin rays not modified' Proximal_portion_of_most_principal_caudal_rays_with_modified_segment, 78 Segmentation_Begins_on_Distal_Half_of_Each_Caudal_Ray /  Segmentation_begins_on_proximal_half_of_each_caudal_ray Segmentation_begins_on_distal_half_of_each_caudal_ray Caudal_rays_not_segmented, 79 Median_Caudal_Cartilages /  'Two CMCs, about equal in size' 'Two CMCs, the dorsal one minute' One_CMC No_CMCs, 80 Urodermal /  No_urodermal Small_urodermal_in_upper_caudal_lobe, 81 Expanded_Neural_and_Haemal_Spines_on_Posterior_Vertebrae /  Posterior_neural_and_haemal_spine_not_expanded Neural_and_haemal_spines_of_PU2_expanded 'Neural and haemal spines of PU2 and PU3 (to PU6 in some) expanded', 82 Number_of_Hypurals /  Six_hypurals 'Five hypurals; the sixth lost or fused' 'Five hypurals; the first and second not differentiated' 'Four hypurals; the first and second not differentiated, the sixth lost or fused' Two_hypurals, 83 Number_of_Epurals /  'Adults with two or three epurals; if two, one split' 'Adults with two epurals, neither split' Adults_with_one_epural, 84 Fusion_of_Adjacent_Pterygiophores_ /  No_fusion_of_pterygiophores_of_dorsal_or_anal_fin 'Adjacent posterior anal-fin pterygiophores fused' 'Adjacent dorsal-fin pterygiophores fused', 85 Pterygiophores_of_Dorsal_Fin_Triangular_Proximally /  Pterygiophores_of_dorsal_fin_not_triangular_proximally Pterygiophores_of_dorsal_fin_triangular_proximally, 86 Pterygiophores_of_Anal_Fin_Triangular_Proximally /  Pterygiophores_of_anal_fin_not_triangular_proximally Anterior_pterygiophores_of_anal_fin_triangular_proximally Posterior_pterygiophores_of_anal_fin_triangular_proximally, 87 Medial_Processes_of_Pelvic_Girdle_Joined_Medially_by_Cartilage /  Medial_processes_not_joined_medially Medial_processes_joined_medially_by_cartilage, 88 Posterior_Processes_of_Pelvic_Girdle_Elongate_and_Widely_Separated /  'Posterior pelvic processes small (or absent)' 'Posterior pelvic processes elongate, widely separated', 89 Posterior_Processes_of_Pelvic_Girdle_Absent /  Ossified_posterior_processes_of_pelvic_girdle_present Posterior_processes_are_cartilaginous Posterior_processes_of_pelvic_girdle_absent, 90 Lateral_Pelvic_Processes /  Lateral_pelvic_processes_small 'Lateral pelvic processes large, sometimes ossifying in adults', 91 Autogenous_Pelvic_Cartilages /  Autogenous_pelvic_cartilages_absent Autogenous_pelvic_cartilages_present, 92 Ventrally_Directed_Posterior_Cartilage_of_the_Pelvic_Fin /  'Cartilage between medial processes, if present, not terminating in ventrally directed process' Cartilage_between_medial_processes_terminating_in_ventrally_directed_process, 93 Posterior_Pelvic_Cartilage_Elongate /  'Cartilage extending posteriorly from between medial processes, if present, not elongate' Cartilage_extending_posteriorly_from_between_medial_processes_elongate, 94 Position_of_Pectoral_and_Pelvic_Fins /  'Pectoral fins set high on body, pelvics sub-thoracic' 'Pectoral fins set low on body, pelvics abdominal', 95 Relative_Position_of_Abdominal_Pelvic_Fins /  'Pelvic fins subthoracic or, if abdominal, inserting beneath or behind a vertical through the origin of the dorsal fin' 'Pelvic fins abdominal, inserting anterior to vertical through dorsal fin', 96 Number_of_Postcleithra /  Two One Absent Three, 97 Cleithrum_with_Strut_Extending_to_Dorsal_Postcleithrum /  Cleithrum_with_small_rounded_posterior_projection_or_projection_absent Cleithrum_with_strut_extending_posteriorly_to_postcleithrum, 98 'Orientation of Pectoral-Fin Base' /  'Pectoral-fin base more vertical than horizontal' 'Pectoral-fin base more horizontal than vertical, inserted on the ventrolateral surface of the body' 'Pectoral-fin base horizontal, inserted on dor- solateral surface of body', 99 Greatly_Elongated_Supracleithrum /  Supracleithrum_shorter_than_cleithrum Supracleithrum_equal_to_or_longer_than_cleithrum, 100 Ventral_Limb_of_Posttemporal_Not_Ossified /  'Posttemporal forked, both branches ossified' 'Posttemporal unforked, the ventral branch ligamentous', 101 Margin_of_Anal_Fin_Indented /  Margin_of_anal_fin_not_indented Margin_of_anal_fin_indented, 102 Scales /  'Body and lateral-line scales present and ossified' 'Body scales absent, lateral-line scales or structures at least partially ossified' 'Body and lateral-line scales or structures absent', 103 'Fleshy Mid-lateral Keel' /  'Fleshy mid-lateral keel absent' 'Single fleshy mid-lateral keel on posterior portion of body' 'Pair of fleshy mid-lateral keels on caudal peduncle', 104 'Body Transparent, Glassy in Life' /  Appearance_in_life_not_transparent_or_glassy 'Appearance in life transparent, glassy', 105 Scale_Pockets_in_Continuous_Flap_of_Skin /  Scale_pockets_not_in_continuous_flap_of_skin Scale_pockets_in_a_continuous_flap_of_marginally_pigmented_skin, 106 Elliptical_or_Keyhole_Aphakic_Space /  No_aphakic_space Elliptical_or_keyhole_shaped_aphakic_space, 107 Eye_Morphology /  'Eyes laterally directed, round' Eyes_slightly_flattened_to_elliptical Eyes_minute_or_absent 'Eyes dorsally directed, semitubular or tubular' 'Eyes anteriorly directed, telescopic' 'Eyes are broad, lensless plates on dorsal surface of head', 108 Gular_Fold /  'Gular fold tent-shaped' 'Gular fold crescent-shaped', 109 Adipose_Fin /  Present Absent, 110 Mode_of_Reproduction /  Separate_sexes Synchronous_hermaphrodites, 111 'Thin-Walled, Heavily Pigmented Stomach' /  'Stomach not highly distensible, with thick unpigmented walls' 'Stomach highly distensible, with thin heavily pigmented walls', 112 Swimbladder /  Present Absent, 113 Enlarged_Pectoral_Fins_ /  Pectoral_fins_not_enlarged_in_larvae Pectoral_fins_enlarged_in_larvae, 114 Elongate_Eyes /  Eyes_in_larvae_round 'Eyes in larvae elongate; the horizontal axis longer than the vertical' 'Eyes in larvae elongate; the vertical axis longer than the horizontal', 115 Head_Spination /  Head_spines_lacking_in_larvae Head_spines_present_in_larvae, 116 Peritoneal_Pigment /  Peritoneal_pigment_absent_in_larvae Single_or_multiple_unpaired_peritoneal_pigment_sections_in_larvae Multiple_paired_peritoneal_pigment_sections_in_larvae, 117 Ontogenetic_Reduction_of_Large_Maxilla /  'Maxilla not enlarged in larva, not greatly reduced ontogenetically' 'Maxilla enlarged in larva, greatly reduced ontogenetically', 118 Ontogenetic_Fusion_of_Epurals /  No_ontogenetic_fusion_of_epurals Partial_ontogenetic_fusion_of_two_epurals ; 
+	MATRIX
+	Diplophos_taenia             0010001000000100000000000000000011000000000000000000000000000002000011001000000000000000000001120100000000001?00000000
+	Lampanyctus_cuprarius        00000000000000001000(0 1)1100000000020000000000200000000000000000010000010020000000(0 1)0000000000100000000000000000000(0 1)0(0 2)0000
+	Myctophum_obtusirostre       00000000000000001000(0 1)1100000000020000000000200000000000000000010000010020000000(0 1)0000000000100000000000000000000(0 1)0(0 2)0000
+	Notoscopelus_resplendens     00000000000000001000(0 1)1100000000020000000000200000000000000000010000010020000000(0 1)0000000000100000000000000000000(0 1)0(0 2)0000
+	Neoscopelus_macrolepidotus   000000000000000010000100000000000000000000020000000000000000001000001002000000210000000000000000000000000000000(0 1)000000
+	Neoscopelus_sp.              000000000000000010000100000000000000000000020000000000000000001000001002000000210000000000000000000000000000000(0 1)000000
+	Metavelifer                  0000(0 1)0000000000000000100010001000000000000010500000003??????00000002100201200030?00(1 2)00000000000101000000000?1?00000000
+	Polymixia_lowei              0000000000000000100001000000010000000001000200000000000000001000000010020000003000000000000000000000000000011000001000
+	Aulopus_sp.                  1100000000000200200001000001200000000000000200000000011000000100000011000200103(0 1)20000011000000030000000000000001000100
+	Aulopus_filamentosus_        1100000000000200200001000001200000000000000200000000011000000100000011000200103(0 1)20000011000000030000000000000001000100
+	Aulopus_japonicus            1100000000000200200001000001200000000000000200000000011000000100000011000200103(0 1)20000011000000030000000000000001000100
+	Pseudotrichonotus_altivelis  1110001000000200000000000001000000000000000100000000011100000100000110001200103021200011000000000000000000001001000200
+	Synodus_jenkensi             1111100000000002200000001101200000001111100000000010011100000100000001102200103021200011000000000000000000000001000200
+	Synodus_synodus              1111100000000002200000001101200000001111100000000010011100000100000001102200103021200011000000000000000000000001000200
+	Synodus_variegatus           1111100000000002200000001101200000001111100000000010011100000100000001102200103021200011000000000000000000000001000200
+	Trachinocephalus_myops       1111100000000102200000001101200000001111100000000010011100000100000001102200103021200011000000000000000000000001000200
+	Harpadon_nehereus            1110100001110102210000001101200000001100100000000020011000000003000001003201103001100011000000020000000000000001000200
+	Harpadon_squamosus           1110100001110102210000001101200000001100100000000020011000000003000001003201103001100011000000020000000000000001000200
+	Saurida_brasiliensis         1110100000110102210000001101200000001100100000000010011000000003000001001201103020100011000000000000000000000001000200
+	Saurida_gracilis             1110100000110102210000001101200000001100100000000010011000000003000001001201103020100011000000000000000000000001000200
+	Saurida_normani              1110100000110102210000001101200000001100100000000010011000000003000001001201103020100011000000000000000000000001000200
+	Saurida_parri_               1110100000110102210000001101200000001100100000000010011000000003000001001201103020100011000000000000000000000001000200
+	Saurida_undosquamous         1110100000110102210000001101200000001100100000000010011000000003000001001201103020100011000000000000000000000001000200
+	Bathyterois_longipes         210002100000020000000110000010000100000001001000000111000000000000021001310000200000001011000001000000000?210101100(0 1)0?
+	Bathyterois_pectinatus       210002100000020000000110000010000100000001001000000111000000000000021001310000200000001011000001000000000?210101100(0 1)0?
+	Bathyterois_sp.              210002100000020000000110000010000100000001001000000111000000000000021001310000200000001011000001000000000?210101100(0 1)0?
+	Bathyterois_viridensis       210002100000020000000110000010000100000001001000000111000000000000021001310000200000001011000001000000000?210101100(0 1)0?
+	Bathymicrops_regis           1110020000000200001011110000000001000000011015000001110000000000000220015301013004200010?1000002001000000?2?1101100000
+	Bathytyphlops_marionae       1100221000000200000011110000000001000000011013000001111000000000000120013100003000100?1011000000001000000?211101100100
+	Ipnops_agassizi              11000210000002000010011000000000010000000100130000011???0000010000022002310001300210001011000002000000000?511101100000
+	Ipnops_murrayi               11000210000002000010011000000000010000000100130000011???0000010000022002310001300210001011000002000000000?511101100000
+	Ipnops_meadi                 11000210000002000010011000000000010000000100130000011???0000010000022002310001300210001011000002000000000?511101100000
+	Scopelosaurus_argenteus      110002000000010000011110000000001000010000001100000001101000100000021001010?002000000010210000000000000001110101010000
+	Scopelosaurus_fedorovi       110002000000010000011110000000001000010000001100000001101000100000021001010?002000000010210000000000000001110101010000
+	Scopelosaurus_hoedti         110002000000010000011110000000001000010000001100000001101000100000021001010?002000000010210000000000000001110101010000
+	Ahliesaurus_berryi           1100020000000100000111100000000010000100000011000000011010001000000210010100002000000010210000000000000001100101010000
+	Clorophthalmus_agassizi      1100010000000200000000001000010000000000000210000000011000000110000120010100000(0 1)0000001021000003000000001100010100010?
+	Clorophthalmus_atlanticus    1100010000000200000000001000010000000000000210000000011000000110000120010100000(0 1)0000001021000003000000001100010100010?
+	Parasudis_trunculentus       1100010000000200000001000000010000000000000210000000010000000010010210010100000000000010210000000000000011000101000101
+	Bathysauropsis_gracilis      11000100000002000000011000000000010000000000100000000110000000000000100101000000000000102?0000030000000001100101?????0
+	Bathysauropsis_malayanus_    11000100000002000000011000000000010000000000100000000110000000000000100101000000000000102?0000030000000001100101?????0
+	Omosudis_lowei               11001011011100200100000000000??00002000000000200000002100110000?11021001421000?001010010201001000100121000000111001101
+	Alepisaurus_brevirostrus     11001010011100200100000000000100000200000000020000000210010000021103100142100000010100102010010?0100121000000111001101
+	Alepisaurus_sp.              11001010011100200100000000000100000200000000020000000210010000021103100142100000010100102010010?0100121000000111001101
+	Coccorella_atlantica         1100101101110031000010000000010002020000000002000000021000001000031120010100000000201010201011030101110000300101020100
+	Odontostomops_normalops      110010110011002100001000001001100202000000000200000002100?00??0??31120010100000000201110201011030101110000000101020100
+	Evermarmella_balbo           1100101100110021000010000010011002020000000002000000021000001000031120010100000000201110201011030101110000300101020100
+	Evermarmella_indica          1100101100110021000010000010011002020000000002000000021000001000031120010100000000201110201011030101110000300101020100
+	Scopelarchus_analis          1100101000110020000000000000010000120000000000000000021000001000001020013400000000000010210101000101100000300101020100
+	Scopelarchoides_nicholsi     1100101000110010000000000000010000120000000000000000021000001000001020010400000000000210200101000101100000300101020100
+	Scopelarchoides_signifer     1100101000110010000000000000010000120000000000000000021000001000001020010400000000000210200101000101100000300101020100
+	Benthalbella_dentata         110010000011001000000000000001000012000000000000000002100000100000102001040000?000000010200101000101100000300101020000
+	Benthalbella_elongata        110010000011001000000000000001000012000000000000000002100000100000102001040000?000000010200101000101100000300101020000
+	Benthalbella_macropinna      110010000011001000000000000001000012000000000000000002100000100000102001040000?000000010200101000101100000300101020000
+	Rosenblattichthys_hubsi      110010100011001000000000000001000012000000000000000002?000?0100400?020010400000000000010200101000101100000300101020100
+	Paralepis_brevirostris       110010100011002000020100000001210002000000000211110002100120002132011001421000?000000010201001030100100000000101000100
+	Paralepis_coregonoides       110010100011002000020100000001210002000000000211110002100120002132011001421000?000000010201001030100100000000101000100
+	Arctozenus_rissoi            1100101000110020000201000010012100020000000002111100021000200020320110010210000002000010201001000100100000000101000100
+	Lestrolepis_intermedia       11001010102?0020000200000000012100020000000002111100021000010000020120011210002000?00010201001101100110100000101000101
+	Lestrolepis_sp.              11001010102?0020000200000000012100020000000002111100021000010000020120011210002000?00010201001101100110100000101000101
+	Lestidium_atlanticum         11001010102?0020000200000000012100020000000002111100021000010000020110010210001000000010201001101100110100000101000100
+	Lestidium_sp.                11001010102?0020000200000000012100020000000002111100021000010000020110010210001000000010201001101100110100000101000100
+	Stemonosudis_rothschildi     11001010102?0020000200000000012100020000000002111100021000010000020110011210002000000010211001101100110100000101000101
+	Stemonosudis_sp.             11001010102?0020000200000000012100020000000002111100021000010000020110011210002000000010211001101100110100000101000101
+	Uncisudis_advena             11001010102?002000020000000001210002000000000211110002??0??????????110?1?2??001000020010201001101100110100000101000100
+	Macroparalepis_affine        11001010102?0020000200000000012100020000000002111100021000010001020110012210000000000010201001101100110100000101000100
+	Macroparalepis_sp.           11001010102?0020000200000000012100020000000002111100021000010001020110012210000000000010201001101100110100000101000100
+	Lestidiops_affinis           11001010102?00200002000000000121000200000000021111000???00??00?00??110011200001000?00010201001100100110100000101000101
+	Lestidiops_sp.               11001010102?00200002000000000121000200000000021111000???00??00?00??110011200001000?00010201001100100110100000101000101
+	Sudis_atrox                  11001010002?002000020000000001200002000000000?111?0002100001??000201100112??0000000000102010011?0100110100000101101100
+	Sudis_hyalina                11001010002?002000020000000001200002000000000?111?0002100001??000201100112??0000000000102010011?0100110100000101101100
+	Anotopterus_pharao           11101010012?0020000200000000010000020000000000111110021000000000220?10013?10000?0(1 3)20?01020000??11100012000000101000100
+	Bathysauroides_gigas         1100100000011100000001000000010000020000000000000000021000001100000000010100000120000010200000030000000001100101????00
+	Bathysaurus_ferox            110010000001110000000110100001000001000000000000003002100000200402000000310000010000001020000003000000000010(0 1)101100110
+	Bathysaurus_mollis           110010000001110000000110100001000001000000000000003002100000200402000000310000010000001020000003000000000010(0 1)101100110
+	Gigantura_chuni              1100?0?00001????00??????0??00?0?000?0000000006000?20021000002030020?000053?20220102000?0200001020200020000400101000110
+	Gigantura_indica             1100?0?00001????00??????0??00?0?000?0000000006000?20021000002030020?000053?20220102000?0200001020200020000400101000110
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  118;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  118;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1316012734888;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1304855033994083014;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 3863817084221813164;
+			mqVersion 274;
+			checksumv 0 2 1011848170 null  getNumChars 118 numChars 118 getNumTaxa 77 numTaxa 77   short true   bits 127   states 127   sumSquaresStatesOnly 48961.0 sumSquares 48961.0   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1920 1060;
+			setLocation 0 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #3863817084221813164 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 110;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1820 993;
+					setLocation 0 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames off;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 361;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1820 993;
+						setLocation 0 22;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

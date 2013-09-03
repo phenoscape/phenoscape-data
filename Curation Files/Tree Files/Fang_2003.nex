@@ -1,0 +1,304 @@
+#NEXUS
+[written Thu Feb 19 12:23:52 EST 2009 by Mesquite  version 2.6 (build 486) at macmini3.nescent.org/152.3.58.212]
+
+BEGIN TAXA;
+	TITLE Untitled_Block_of_Taxa;
+	DIMENSIONS NTAX=20;
+	TAXLABELS
+		Chela_sp. Danio_aff._dangila Danio_albolineatus Danio_dangila Danio_erythromicron Danionella_translucida Danio_nigrofasciatus Danio_rerio Devario_apogon Devario_chrysotaeniatus Devario_devario Devario_interruptus Devario_kakhienensis Devario_maetaengensis Devario_malabaricus Esomus_sp. Inlecypris_auropurpureus Microrasbora_rubescens Rasbora_rasbora Sundadanio_axelrodi 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "Fang_2001_PM.nex"';
+	DIMENSIONS  NCHAR=38;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	CHARSTATELABELS 
+		1 rostral_barbels /  absent 'shorter than 1/2 orbit diameter' longer_than_orbit_diameter, 2 maxillary_barbels /  absent_ shorter_than_orbit_diameter much_longer_than_orbit_diameter, 3 'branched dorsal-fin rays' /  '6-7' '8-10, 12 or more in D devario', 4 'branched anal-fin rays' /  5 '9-14' 16_or_more, 5 relative_position_between_dorsal_and_anal__fin_insertions /  dorsal_fin_insertion_far_more__anterior_to_the_origin_of_anal_fin_ dorsal_fin_insertion_about_opposite_to_the_anal_fin_origin dorsal_fin_insertion_posterior_to_the_anal_fin_origin, 6 abdominal_vertebrate_count /  '15-18' less_than_15, 7 caudal_vertebrate_count /  '14-15' '17-21', 8 predosal_vertebrate /  10 '13-15' '16-18', 9 danionin_notch /  absent_ present, 10 fleshy_flaps_on_the_lower_jaw /  absent_ present_, 11 skin_groove_on_supraorbital_shelf /  absent_ present_, 12 cleithral_spot /  absent_ present_, 13 vertical_bars_anteriorly_on_the_body /  absent_ present_, 14 P_stripe /  absent_ 'extending to the caudal-fin base' 'extending to the median caudal-fin rays ', 15 stripes_on_the_caudal_fin /  'no stripe, or only one stripe on the caudal fin rays' 2_or_more_stripes_ending_at_the_end_of_caudal_fin_rays, 16 A_stripe /  absent_ present_, 17 infraorbital_2 /  not_reduced_or_only_slightly_reduced greatly_reduced, 18 infraorbital_5 /  greatly_reduced not_reduced_or_only_slightly_reduced, 19 premaxilla_ascending_process /  short_and_wide long_and_narrow, 20 Premaxillar_ascending_process /  without_kinethmoid_apophysis with_kinethmoid_apophysis, 21 palatine_process_on_maxilla /  'as a blunt, dorsal extention' 'as a sharp, forwarded projection', 22 posterior_part_of_maxilla /  do_not_or_slightly_expand 'enlarged to a fan-shaped extention', 23 ventrally_on_dentary /  without_anterior_lateral_extention_ with_anterior_lateral_extention_or_sharp_spine, 24 palatine /  'anteriorly a bottle-neck reduction' 'does not reduce, or slightly expended', 25 metapterygoid /  straight_or_almost_straight with_a_great_dorsal_indentation, 26 ectopterygoid /  deeper_or_thicker narrow_and_slender, 27 between_quadrate_and_metapterygoid /  separated_by_cartilagous_element_ contact_with_each_other_closely_, 28 kinethmoid_shape /  'about pentagon-shaped, with the posterior end slightly or not divided; also narrow' 'U-shaped, with two arms far separated' 'U-shaped, with shallow indentation', 29 anterior_tip_of_the_kinethmoid /  lying_under_the_premaxilla_symphysis not_lying_under_the_premaxilla_symphysis, 30 lateral_ethmoid /  'dorso-anteriorly without  projection' 'dorso-anteriorly with a sharp spine or blunt projection', 31 nasal /  narrow_tube_or_plate wider_plate_, 32 supraneurals /  'laminated, deminuted or absent' enlarged_to_plate_shape_, 33 pleural_rib_of_the_4th_vertebra /  median_or_long very_short, 34 median_projection_on_the_pleural_rib_of_the_4th_vertebra /  absent present, 35 hypural_6 /  present absent_or_fused_together_with_hypural_5, 36 uroneural /  present absent, 37 Infraorbital_process /  absent present, 38 Ventral_keel /  Absent Present ; 
+	MATRIX
+	Chela_sp.                 00122112001100000001000100010101100001
+	Danio_aff._dangila        22110011110002111010111011100010010000
+	Danio_albolineatus        22011011110001011010111011100010011000
+	Danio_dangila             22110011110002111010111011100010010000
+	Danio_erythromicron       00010110010010000110000010000000011100
+	Danionella_translucida    0001211210000000--00000-------10--1100
+	Danio_nigrofasciatus      12011111110002111010111011100010011000
+	Danio_rerio               22011011110002111010111011100011011000
+	Devario_apogon            00011011101111000101100111121000000000
+	Devario_chrysotaeniatus   11111011101102000101100110111000000000
+	Devario_devario           01120010001102000101100100010100000000
+	Devario_interruptus       00011011101111000101100111121000000000
+	Devario_kakhienensis      11111011101102000101100100111100000010
+	Devario_maetaengensis     11011011101111000101100110121000000000
+	Devario_malabaricus       11111011101102000101100100111100000010
+	Esomus_sp.                22000001100002001010010110000001000000
+	Inlecypris_auropurpureus  00022012001110000001100111111001100001
+	Microrasbora_rubescens    00011111000000000110000010000001001100
+	Rasbora_rasbora           00000000000000000000000000000000000000
+	Sundadanio_axelrodi       00000110010000000-001011110010-1000100
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  38;
+
+END;
+
+BEGIN CODONS;
+	CODESET * UNTITLED   =  universal:  1 -  38;
+
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  38;
+END;
+
+BEGIN TREES;
+	Title Trees;
+	LINK Taxa = Untitled_Block_of_Taxa;
+	TRANSLATE
+		1 Chela_sp.,
+		2 Danio_aff._dangila,
+		3 Danio_albolineatus,
+		4 Danio_dangila,
+		5 Danio_erythromicron,
+		6 Danionella_translucida,
+		7 Danio_nigrofasciatus,
+		8 Danio_rerio,
+		9 Devario_apogon,
+		10 Devario_chrysotaeniatus,
+		11 Devario_devario,
+		12 Devario_interruptus,
+		13 Devario_kakhienensis,
+		14 Devario_maetaengensis,
+		15 Devario_malabaricus,
+		16 Esomus_sp.,
+		17 Inlecypris_auropurpureus,
+		18 Microrasbora_rubescens,
+		19 Rasbora_rasbora,
+		20 Sundadanio_axelrodi;
+	TREE Figure_1 = (19,((1,17),(11,((13,15),(10,(14,(12,9)))))),(20,((6,(18,5)),(16,((4,2),(3,8,7))))));
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5041575571810631638;
+			tell It;
+				setDefaultOrder  13 4 1 5 17 15 3 2 11 8 12 10 6 9 7 19 14 16 0 18;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5492182589823796193;
+			checksumv 0 2 240377812 null;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1137 683;
+			setLocation 8 55;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #5041575571810631638  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1150.1235059554421.7980558400951624805;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1037 616;
+					setLocation 8 55;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.interchange;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareTree.SquareTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+						endTell;
+						setEdgeWidth 6;
+						orientRight;
+						toggleCorners off;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						toggleColorPartition on;
+						toggleShadePartition off;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					setDigits 4;
+					writeAsPercentage off;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5492182589823796193 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 168;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1037 616;
+					setLocation 8 55;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.SortTaxa.SortTaxa.taxaSort;
+					endTell;
+					setTool mesquite.charMatrices.SortTaxa.SortTaxa.taxaSort;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames off;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					setColumnWidth 16;
+					toggleBirdsEye off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

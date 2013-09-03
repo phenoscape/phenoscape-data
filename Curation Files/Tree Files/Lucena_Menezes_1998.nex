@@ -1,0 +1,304 @@
+#NEXUS
+[written Mon Mar 16 14:40:11 EDT 2009 by Mesquite  version 2.6 (build 486) at macmini2.nescent.org/152.3.58.201]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=24;
+	TAXLABELS
+		Acanthorcharax Agoniates Astyanax Brycon Bryconamericus Chalceus Charax Cynopotamus Gnathocharax Heterocharax Hoplocharax Lonchoenys Lignobrycon Roeboides_A Roeboides_B Triportheus Acestrorhynchus Cynodon_gibbus Rhaphiodon_vulpinus Gilbertolus_artatoensis Gilbertolus_maracaiboensis Roestes_molossus Roestes_ogilviei Roestes_sp 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=48;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2";
+	MATRIX
+	Acanthorcharax              0000000000?0000000000000000000000000?00000????00
+	Agoniates                   000000000000000000001000001000000001010000?0???0
+	Astyanax                    000000000000000000000000000000000000000000?0???0
+	Brycon                      000000000010000000000000001000000000000000000000
+	Bryconamericus              000000000000000000000000000000000000000000?0???0
+	Chalceus                    000000000000000000000000000000000000010000000000
+	Charax                      0000000000?0000000000000000000000000000000000000
+	Cynopotamus                 000000000000000000000000010000000000000000000000
+	Gnathocharax                000000000000000020000000000001100000000000000000
+	Heterocharax                000001200000000020000000001000000000000000000000
+	Hoplocharax                 000000000000000020000000000000000000000000000000
+	Lonchoenys                  000000000001000020000000001000000000000000000000
+	Lignobrycon                 000001100000??0000000000000001100000010000?????0
+	Roeboides_A                 0000000000?0000000000000000000000000000000?0??00
+	Roeboides_B                 000000000010000000000000000000010000000000?0??00
+	Triportheus                 100001100000010000000000000000110000010000000000
+	Acestrorhynchus             010110000000120000000001001000000111110010000000
+	Cynodon_gibbus              000000000000121000010011112011101110011011111100
+	Rhaphiodon_vulpinus         0000000000001210000100?1112011101110011010111100
+	Gilbertolus_artatoensis     000001201001111110010110002100110000011112110111
+	Gilbertolus_maracaiboensis  0000012010011110101101100021001000000111121???11
+	Roestes_molossus            101001210111121011001000001100110000000110010110
+	Roestes_ogilviei            101001210111121001001000001100110000000110010110
+	Roestes_sp                  101001210111121001001000001100110000000110010110
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  48;
+
+END;
+
+BEGIN CODONS;
+	CODESET * UNTITLED   =  universal:  1 -  48;
+
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  48;
+END;
+
+BEGIN TREES;
+	Title Trees;
+	LINK Taxa = Taxa;
+	TRANSLATE
+		1 Acanthorcharax,
+		2 Agoniates,
+		3 Astyanax,
+		4 Brycon,
+		5 Bryconamericus,
+		6 Chalceus,
+		7 Charax,
+		8 Cynopotamus,
+		9 Gnathocharax,
+		10 Heterocharax,
+		11 Hoplocharax,
+		12 Lonchoenys,
+		13 Lignobrycon,
+		14 Roeboides_A,
+		15 Roeboides_B,
+		16 Triportheus,
+		17 Acestrorhynchus,
+		18 Cynodon_gibbus,
+		19 Rhaphiodon_vulpinus,
+		20 Gilbertolus_artatoensis,
+		21 Gilbertolus_maracaiboensis,
+		22 Roestes_molossus,
+		23 Roestes_ogilviei,
+		24 Roestes_sp;
+	TREE Figure_1 = (17,((18,19),((20,21),(22,23,24))));
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5476203758840554925;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2296852091074903810;
+			checksumv 0 2 3204744204 null;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 604 834;
+			setLocation 8 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #5476203758840554925  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1261.1237228631681.2781803636759510357;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 504 767;
+					setLocation 8 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.arrow;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareTree.SquareTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+						endTell;
+						setEdgeWidth 6;
+						orientRight;
+						toggleCorners off;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						toggleColorPartition on;
+						toggleShadePartition off;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					setDigits 4;
+					writeAsPercentage off;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2296852091074903810 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 504 767;
+					setLocation 8 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

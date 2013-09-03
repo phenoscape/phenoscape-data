@@ -1,0 +1,245 @@
+#NEXUS
+[written Thu Feb 12 13:01:35 EST 2009 by Mesquite  version 2.6 (build 486) at macmini3.nescent.org/152.3.58.212]
+
+BEGIN TAXA;
+	TITLE Untitled_Taxa_Block;
+	DIMENSIONS NTAX=17;
+	TAXLABELS
+		Grupo_externo Pseudopimelodus_zungaro_mangurus Pseudopimelodus_zungaro_do_rio_Magdalena Pseudopimelodus_zungaro_zungaro_do_Alto_Parana Pseudopimelodus_zungaro_zungaro_de_Beni Pseudopimelodus_raninus_raninus Pseudopimelodus_raninus_villosus Microglanis_parahybae Microglanis_poecilus Microglanis_parahybae_de_Bahia Microglanis_aff._iheringi Microglanis_eurystoma Microglanis_cibelae Pseudopimelodus_fowleri Pseudopimelodus_albomarginatus Pseudopimelodus_apurensis Lophiosilurus_alexandri 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Untitled_Character_Matrix;
+	DIMENSIONS  NCHAR=55;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	MATRIX
+	Grupo_externo                                   0000000000000000000000000000000000000000000000000000000
+	Pseudopimelodus_zungaro_mangurus                1101001010100011011110101001011001100100001000000100100
+	Pseudopimelodus_zungaro_do_rio_Magdalena        1101011010100011011110101001011001100100001000000100100
+	Pseudopimelodus_zungaro_zungaro_do_Alto_Parana  0001103101100011111110101001012102100000001000000101101
+	Pseudopimelodus_zungaro_zungaro_de_Beni         0001103101100011111111101001012101100000001000001101101
+	Pseudopimelodus_raninus_raninus                 1212102111010000011110101001012101111010110011100100110
+	Pseudopimelodus_raninus_villosus                1112102111010000011110101001012101111010110011101000110
+	Microglanis_parahybae                           0111103221110000111110000001012101101010000011200110110
+	Microglanis_poecilus                            0110103221110000111110000001012101101010010011200110110
+	Microglanis_parahybae_de_Bahia                  0110103221110000111110000001012101101010000011200110110
+	Microglanis_aff._iheringi                       1110103221110000111110000001012101101010000011200110110
+	Microglanis_eurystoma                           1110103221110000111110000001012101101010010011200110110
+	Microglanis_cibelae                             0110103221110000111110000001012101101010000011200110110
+	Pseudopimelodus_fowleri                         1202200110110000010010111100013101111201110020011000000
+	Pseudopimelodus_albomarginatus                  1102200220110000110010011111013102111001110020200100100
+	Pseudopimelodus_apurensis                       120220002011000001001011110011310111120111002000?000000
+	Lophiosilurus_alexandri                         1202200010111100011010111100113011211302010120001000000
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  55;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  55;
+END;
+
+BEGIN TREES;
+	Title Trees;
+	LINK Taxa = Untitled_Taxa_Block;
+	TRANSLATE
+		1 Grupo_externo,
+		2 Pseudopimelodus_zungaro_mangurus,
+		3 Pseudopimelodus_zungaro_do_rio_Magdalena,
+		4 Pseudopimelodus_zungaro_zungaro_do_Alto_Parana,
+		5 Pseudopimelodus_zungaro_zungaro_de_Beni,
+		6 Pseudopimelodus_raninus_raninus,
+		7 Pseudopimelodus_raninus_villosus,
+		8 Microglanis_parahybae,
+		9 Microglanis_poecilus,
+		10 Microglanis_parahybae_de_Bahia,
+		11 Microglanis_aff._iheringi,
+		12 Microglanis_eurystoma,
+		13 Microglanis_cibelae,
+		14 Pseudopimelodus_fowleri,
+		15 Pseudopimelodus_albomarginatus,
+		16 Pseudopimelodus_apurensis,
+		17 Lophiosilurus_alexandri;
+	TREE Figure_17 = (1,(2,3),((4,5),((7,6),(8,9,10,11,12,13),(15,(14,(16,17))))));
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6958512815625058726;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 616143881785003713;
+			checksumv 0 2 3427118042 null;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 335;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1174 851;
+			setLocation 60 22;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #6958512815625058726 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #6958512815625058726;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultTaxaOrder.DefaultTaxaOrder;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 839 784;
+					setLocation 60 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #6958512815625058726  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 948.1234461551205.1982592729842215081;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 839 784;
+					setLocation 60 22;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.arrow;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareTree.SquareTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+						endTell;
+						setEdgeWidth 6;
+						orientRight;
+						toggleCorners off;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						toggleColorPartition on;
+						toggleShadePartition off;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					setDigits 4;
+					writeAsPercentage off;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
