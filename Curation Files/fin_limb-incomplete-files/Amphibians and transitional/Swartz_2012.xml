@@ -149,6 +149,7 @@
       <meta content="Greererepton" datatype="xsd:string" id="meta94" property="bean:Name" xsi:type="nex:LiteralMeta"/>
       <meta content="22" datatype="xsd:integer" id="meta93" property="bean:Index" xsi:type="nex:LiteralMeta"/>
       <meta content="22" datatype="xsd:integer" id="meta92" property="msq:taxonUID" xsi:type="nex:LiteralMeta"/>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="nex:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9001326"/>
     </otu>
     <otu about="#otu95" id="otu95" label="Gyroptychius">
       <meta content="Gyroptychius" datatype="xsd:string" id="meta98" property="bean:Name" xsi:type="nex:LiteralMeta"/>
@@ -2520,13 +2521,19 @@
                   <phen:typeref about="UBERON:2000271">
                     <phen:qualifier relation="BSPO:0000097">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0002445"/>
+                        <phen:typeref about="UBERON:0002445">
+                          <phen:qualifier relation="BFO:0000053">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="PATO:0000402"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000414"/>
+                  <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2540,13 +2547,19 @@
                   <phen:typeref about="UBERON:2000271">
                     <phen:qualifier relation="BSPO:0000097">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0002445"/>
+                        <phen:typeref about="UBERON:0002445">
+                          <phen:qualifier relation="BFO:0000053">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="PATO:0000402"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000402"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2589,7 +2602,15 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002544"/>
+                  <phen:typeref about="UBERON:0002389"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001466"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462"/>
@@ -2603,7 +2624,15 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002544"/>
+                  <phen:typeref about="UBERON:0002389"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001466"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467"/>
