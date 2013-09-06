@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.9" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable, Johnny Kim</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Matrix: Johnny Kim, Ben Frable
 Taxon:
@@ -545,12 +545,80 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
         </state>
       </states>
       <states id="1bf34195-8e34-4751-8add-ab9cc23ac0f2">
-        <state id="4ca122e5-a6ab-44b3-b543-307bb70ed633" label="present" symbol="0"/>
-        <state id="08d5a526-c2da-4982-be3b-552daf82ec11" label="absent" symbol="1"/>
+        <state id="4ca122e5-a6ab-44b3-b543-307bb70ed633" label="present" symbol="0" about="#4ca122e5-a6ab-44b3-b543-307bb70ed633">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="08d5a526-c2da-4982-be3b-552daf82ec11" label="absent" symbol="1" about="#08d5a526-c2da-4982-be3b-552daf82ec11">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="d6e73fc7-497f-44b4-b253-04fb60a0963f">
-        <state id="e96e891c-c161-4eb4-a4ab-24e39f481658" label="heterocercal" symbol="0"/>
-        <state id="0b216094-3d15-4da3-b23b-783258303698" label="diphycercal " symbol="1"/>
+        <state id="e96e891c-c161-4eb4-a4ab-24e39f481658" label="heterocercal" symbol="0" about="#e96e891c-c161-4eb4-a4ab-24e39f481658">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200054"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="0b216094-3d15-4da3-b23b-783258303698" label="diphycercal " symbol="1" about="#0b216094-3d15-4da3-b23b-783258303698">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200053"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="7ef09125-6926-4ffc-8f22-c1b43e6dd3f2">
         <state id="15691a6b-a560-438f-b365-261562dc0d5e" label="absent" symbol="0"/>
