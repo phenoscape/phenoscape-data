@@ -508,10 +508,16 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000271"/>
+                  <phen:typeref about="UBERON:2000271">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000982"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/06bad35f-7f2b-4d2e-a57c-122665631087"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -522,10 +528,16 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000271"/>
+                  <phen:typeref about="UBERON:2000271">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000982"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a67a517b-adb3-4ea1-8f83-0085318a977d"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -609,8 +621,34 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
         </state>
       </states>
       <states id="7ef09125-6926-4ffc-8f22-c1b43e6dd3f2">
-        <state id="15691a6b-a560-438f-b365-261562dc0d5e" label="absent" symbol="0"/>
-        <state id="07403fee-4831-469a-a6a4-cab6ee32153a" label="present" symbol="1"/>
+        <state id="15691a6b-a560-438f-b365-261562dc0d5e" label="absent" symbol="0" about="#15691a6b-a560-438f-b365-261562dc0d5e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200165"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="07403fee-4831-469a-a6a4-cab6ee32153a" label="present" symbol="1" about="#07403fee-4831-469a-a6a4-cab6ee32153a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200165"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="92904c37-55ab-464a-b991-6b2871f7c623">
         <state id="2cb88d19-9746-4edd-b9d5-07f399b0556c" label="rhomboid with internal ridge" symbol="0"/>
@@ -806,16 +844,10 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0011655">
-                    <phen:qualifier relation="BFO:0000053">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0002440"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:0011655"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
+                  <phen:typeref about="PATO:0002442"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -834,16 +866,10 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0011655">
-                    <phen:qualifier relation="BFO:0000053">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0002440"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:0011655"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
+                  <phen:typeref about="PATO:0002441"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1019,7 +1045,21 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
                   <phen:typeref about="UBERON:4000172"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0002312"/>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000172">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000982"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1030,10 +1070,24 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
+                  <phen:typeref about="UBERON:4000172">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000982"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
                   <phen:typeref about="UBERON:4000172"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0002034"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1620,16 +1674,10 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0004741">
-                    <phen:qualifier relation="BFO:0000053">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0002440"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:0004741"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
+                  <phen:typeref about="PATO:0002441"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1640,16 +1688,10 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0004741">
-                    <phen:qualifier relation="BFO:0000053">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0002440"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:0004741"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
+                  <phen:typeref about="PATO:0002442"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1667,11 +1709,6 @@ New VAO/PATO terms have not been evaluated from this paper (12/01/11)</meta>
                 <phen:quality>
                   <phen:typeref about="PATO:0002441"/>
                 </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:4000160"/>
-                </phen:bearer>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
