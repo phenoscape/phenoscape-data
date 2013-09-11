@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="7495bdbc-f30c-4272-9334-b748f0b0a870">
     <otu id="b2e95209-9703-4749-a9a9-45a35f612bb9" label="Amphioxus" about="#b2e95209-9703-4749-a9a9-45a35f612bb9">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0058748"/>
@@ -16,7 +16,9 @@
     <otu id="125a3897-fa22-4822-a930-b0d5d8657892" label="Lamprey" about="#125a3897-fa22-4822-a930-b0d5d8657892">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0058646"/>
     </otu>
-    <otu id="b5a0cdbf-99f6-4d32-9cb5-7cfd3110ded4" label="Dogfish"/>
+    <otu id="b5a0cdbf-99f6-4d32-9cb5-7cfd3110ded4" label="Dogfish" about="#b5a0cdbf-99f6-4d32-9cb5-7cfd3110ded4">
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0000563"/>
+    </otu>
     <otu id="e060a9fc-305e-491f-8bf5-7fc1e0291fd7" label="Bichir" about="#e060a9fc-305e-491f-8bf5-7fc1e0291fd7">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0033623"/>
     </otu>
@@ -828,11 +830,12 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
+                <phen:description>>1</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002534"/>
+                  <phen:typeref about="UBERON:2001587"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -843,10 +846,10 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002534"/>
+                  <phen:typeref about="UBERON:4400000"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
