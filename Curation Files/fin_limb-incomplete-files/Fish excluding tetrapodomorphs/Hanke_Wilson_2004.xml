@@ -82,9 +82,9 @@
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">D. ellsi</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9026251"/>
     </otu>
-    <otu id="f9ec39c5-21a6-4bd2-8390-3a9e7e9fb594" label="Phlyctaeniida" about="#f9ec39c5-21a6-4bd2-8390-3a9e7e9fb594">
-      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request from PBDB</meta>
+    <otu id="f9ec39c5-21a6-4bd2-8390-3a9e7e9fb594" label="Diplacanthus horridus" about="#f9ec39c5-21a6-4bd2-8390-3a9e7e9fb594">
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">D. horridus</meta>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9026255"/>
     </otu>
     <otu id="b443bc21-0ff4-4270-affe-c1fdfbd5443f" label="Euthacanthus macnicolli" about="#b443bc21-0ff4-4270-affe-c1fdfbd5443f">
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">E. macnicolli</meta>
@@ -131,17 +131,7 @@
   <characters xmlns:ns="http://www.nexml.org/2009" id="31353b49-0c50-4386-af15-248268bcb8a3" xsi:type="ns:StandardCells" otus="6eb8aab3-66cf-4e90-baac-322f705ccc6f">
     <format>
       <states id="a508b58f-28a1-423d-b75f-34541a828481">
-        <state id="75963ca2-daf8-42ae-be55-50bf123e67e8" label="small, undifferentiated from head scales" symbol="0" about="#75963ca2-daf8-42ae-be55-50bf123e67e8">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0007380"/>
-                </phen:bearer>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="75963ca2-daf8-42ae-be55-50bf123e67e8" label="small, undifferentiated from head scales" symbol="0" about="#75963ca2-daf8-42ae-be55-50bf123e67e8"></state>
         <state id="7ca79653-70e5-452a-aead-d261120b1b1f" label="different from head scales, circumorbitals approximately the same size" symbol="1"/>
         <state id="7b7509d7-9337-4098-b528-b724a077b1fa" label="different from head scales, anterior and posterior circumorbitals enlarged" symbol="2"/>
       </states>
@@ -259,8 +249,40 @@
         <state id="495170fc-6259-40fe-b5a5-56cafd74d239" label="enlarged, irregularly shaped" symbol="1"/>
       </states>
       <states id="0a383658-2fad-4849-bcce-7a19c60f428b">
-        <state id="1505744d-140a-4495-8a4b-305f8486d2f5" label="gradual, the proximal margin of the fin web is difficult to identify" symbol="0"/>
-        <state id="f020cf8c-5ece-4a4a-94c6-8b01a526be81" label="abrupt, the proximal margin of the fin web is obvious" symbol="1"/>
+        <state id="1505744d-140a-4495-8a4b-305f8486d2f5" label="gradual, the proximal margin of the fin web is difficult to identify" symbol="0" about="#1505744d-140a-4495-8a4b-305f8486d2f5">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0008897"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="f020cf8c-5ece-4a4a-94c6-8b01a526be81" label="abrupt, the proximal margin of the fin web is obvious" symbol="1" about="#f020cf8c-5ece-4a4a-94c6-8b01a526be81">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0008897"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="702ec47b-d48a-4050-87f7-88aa410254f9">
         <state id="e6b14282-21cb-423f-8619-f2cfdaf7d7c2" label="unaligned" symbol="0" about="#e6b14282-21cb-423f-8619-f2cfdaf7d7c2">
@@ -277,7 +299,16 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0001654"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0007380">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0008897"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -297,7 +328,16 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0001653"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0007380">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0008897"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -433,15 +473,7 @@
                   <phen:typeref about="UBERON:4200075"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000411"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:4200075"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0001688"/>
+                  <phen:typeref about="PATO:0002441"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -455,7 +487,7 @@
                   <phen:typeref about="UBERON:4200075"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000407"/>
+                  <phen:typeref about="PATO:0002441"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
