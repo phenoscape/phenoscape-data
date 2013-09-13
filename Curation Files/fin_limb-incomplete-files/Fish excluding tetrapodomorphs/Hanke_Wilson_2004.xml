@@ -659,11 +659,11 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0003097"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -674,11 +674,11 @@
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>1</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0003097"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -802,6 +802,9 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0002199"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -816,6 +819,9 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0002199"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1030,7 +1036,7 @@
                   <phen:typeref about="UBERON:0004753"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001449"/>
+                  <phen:typeref about="PATO:0001448"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1120,7 +1126,7 @@
                   <phen:typeref about="UBERON:2001787"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001668"/>
+                  <phen:typeref about="PATO:0002278"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0004753"/>
                   </phen:related_entity>
@@ -1137,7 +1143,7 @@
                   <phen:typeref about="UBERON:2001787"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="PATO:0002279"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0004753"/>
                   </phen:related_entity>
@@ -1185,6 +1191,9 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:4200111"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -1318,6 +1327,9 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0002199"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1359,20 +1371,6 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000122"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="BSPO:0000074">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:4000163"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
                   <phen:typeref about="PATO:0000574"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -1393,21 +1391,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000122"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="BSPO:0000074">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:4000163"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0001154"/>
+                  <phen:typeref about="PATO:0000573"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1453,7 +1437,9 @@
       <char id="5f7b5378-7637-4c2c-bac9-c6046daf1611" label="Fin spine reinforcement" states="a0c6e067-91e4-4d4a-a73b-0f5e2c237c14"/>
       <char id="abc4f184-9a46-4dfa-b7d5-954ba42e1997" label="Number of dorsal fins" states="e8e36ff8-815b-4aa0-80cd-b505150911ec"/>
       <char id="02beea63-3a40-49ab-9db2-bbec355c20aa" label="Anterior dorsal spine length" states="5717677c-6f22-4539-86c1-4660bed73c1b"/>
-      <char id="93d594d1-fc76-450b-b0c7-303873533464" label="Ossified dorsal spine basals" states="02f31df9-7a66-469d-aed8-31043972f4a6"/>
+      <char id="93d594d1-fc76-450b-b0c7-303873533464" label="Ossified dorsal spine basals" states="02f31df9-7a66-469d-aed8-31043972f4a6" about="#93d594d1-fc76-450b-b0c7-303873533464">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">"??</meta>
+      </char>
       <char id="0a4ece92-24fd-4ca9-9534-0195dac72993" label="Dorsal fin spine denticles" states="d392db60-9b7f-4b2f-86b5-cca44da61adb"/>
       <char id="d76b66ee-0d94-43d9-aa39-4be8760ca72d" label="Anterior dorsal fin spine curvature" states="50e97711-58a2-4f13-89cb-fca2d00b4711"/>
       <char id="21185175-7d08-4a20-afd5-6d1bf7a12301" label="Dorsal fin spine insertion" states="4e7537a1-65d6-44b7-a8dd-08761ffa359f"/>
