@@ -69,8 +69,8 @@
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9026303"/>
     </otu>
     <otu id="09ceccf0-9bfa-444d-92f1-ca60347463af" label="Sphenonectris turnerae" about="#09ceccf0-9bfa-444d-92f1-ca60347463af">
-      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request from PBDB</meta>
-      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9026297"/>
+      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request from PBDB; Sphenonectris tumeme in PaleoDB is spelled incorrectly!</meta>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9012118"/>
     </otu>
     <otu id="da037a3d-5543-4e31-9bc4-724e50fd15b4" label="Drepanolepis maerssae" about="#da037a3d-5543-4e31-9bc4-724e50fd15b4">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9026296"/>
@@ -385,9 +385,9 @@
         </state>
       </states>
       <states id="5d4342f1-db68-462a-93ab-d3b6264b84fa">
-        <state id="6329da13-4ec8-40e9-ba22-2e65efeb7682" label="short" symbol="0" about="#6329da13-4ec8-40e9-ba22-2e65efeb7682"></state>
-        <state id="86768019-288e-4e1a-9fa6-c1d32df898be" label="moderate" symbol="1" about="#86768019-288e-4e1a-9fa6-c1d32df898be"></state>
-        <state id="b4ce391b-1947-4221-8cf9-4d09b83b4897" label="long" symbol="2" about="#b4ce391b-1947-4221-8cf9-4d09b83b4897"></state>
+        <state id="6329da13-4ec8-40e9-ba22-2e65efeb7682" label="short" symbol="0" about="#6329da13-4ec8-40e9-ba22-2e65efeb7682"/>
+        <state id="86768019-288e-4e1a-9fa6-c1d32df898be" label="moderate" symbol="1" about="#86768019-288e-4e1a-9fa6-c1d32df898be"/>
+        <state id="b4ce391b-1947-4221-8cf9-4d09b83b4897" label="long" symbol="2" about="#b4ce391b-1947-4221-8cf9-4d09b83b4897"/>
       </states>
       <states id="2d661f60-4355-4eaf-8709-534f952db65e">
         <state id="f459ed0e-2e74-4a4e-acab-c80ac292ea17" label="absent" symbol="0" about="#f459ed0e-2e74-4a4e-acab-c80ac292ea17">
@@ -678,9 +678,14 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000052"/>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:2001594"/>
-                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001594"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
