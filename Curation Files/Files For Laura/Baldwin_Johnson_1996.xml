@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11.1" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Ben Frable</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Matrix: Ben Frable
 Taxa:
@@ -1101,9 +1101,64 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         <state id="29c2f5a4-d0c3-4083-862b-92aed902a4b4" label="Cleithrum with strut extending posteriorly to postcleithrum" symbol="1" about="#29c2f5a4-d0c3-4083-862b-92aed902a4b4"/>
       </states>
       <states id="4fbcc329-54b6-418b-8208-6d222220bbd5">
-        <state id="6fc579f6-56af-486c-b55a-72cb3f49b57d" label="Pectoral-fin base more vertical than horizontal" symbol="0" about="#6fc579f6-56af-486c-b55a-72cb3f49b57d"/>
-        <state id="bf9caa0b-685b-434a-a66e-2c6ff1cef99f" label="Pectoral-fin base more horizontal than vertical, inserted on the ventrolateral surface of the body" symbol="1" about="#bf9caa0b-685b-434a-a66e-2c6ff1cef99f"/>
-        <state id="a29120a6-ff7a-4fdf-b735-f0656badbd26" label="Pectoral-fin base horizontal, inserted on dorsolateral surface of body" symbol="2" about="#a29120a6-ff7a-4fdf-b735-f0656badbd26"/>
+        <state id="6fc579f6-56af-486c-b55a-72cb3f49b57d" label="Pectoral-fin base more vertical than horizontal" symbol="0" about="#6fc579f6-56af-486c-b55a-72cb3f49b57d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/072c8ba1-15e4-49ee-b5d2-3a0216182523"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001854"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="bf9caa0b-685b-434a-a66e-2c6ff1cef99f" label="Pectoral-fin base more horizontal than vertical, inserted on the ventrolateral surface of the body" symbol="1" about="#bf9caa0b-685b-434a-a66e-2c6ff1cef99f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/072c8ba1-15e4-49ee-b5d2-3a0216182523"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001855"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/072c8ba1-15e4-49ee-b5d2-3a0216182523"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6b598ed8-73d8-4a18-a836-91d320885637"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="a29120a6-ff7a-4fdf-b735-f0656badbd26" label="Pectoral-fin base horizontal, inserted on dorsolateral surface of body" symbol="2" about="#a29120a6-ff7a-4fdf-b735-f0656badbd26">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/072c8ba1-15e4-49ee-b5d2-3a0216182523"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001855"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/072c8ba1-15e4-49ee-b5d2-3a0216182523"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/04fced82-cfca-45d6-9036-ab206f76f584"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="b741f52a-1226-4890-9a81-21e701b4a2f3">
         <state id="17ac31f3-0134-4422-bd45-ad9a18a1779c" label="Supracleithrum shorter than cleithrum" symbol="0" about="#17ac31f3-0134-4422-bd45-ad9a18a1779c">
@@ -3454,4 +3509,5 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
       </row>
     </matrix>
   </characters>
+  <trees id="t18f7d607-200e-4563-8a2d-745abddf4a10" otus="c9bcc4a6-1498-427d-8e85-0f0da380ac45"/>
 </nexml>
