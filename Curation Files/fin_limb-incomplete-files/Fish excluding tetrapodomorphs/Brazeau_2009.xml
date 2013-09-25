@@ -359,7 +359,7 @@
                   <phen:typeref about="UBERON:4000172">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/f89fd85c-dc73-4312-89c7-cc1740cb2d1b"/>
+                        <phen:typeref about="UBERON:4300031"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -379,7 +379,7 @@
                   <phen:typeref about="UBERON:4000172">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="http://purl.bioontology.org/ontology/provisional/f89fd85c-dc73-4312-89c7-cc1740cb2d1b"/>
+                        <phen:typeref about="UBERON:4300031"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -1960,8 +1960,34 @@
         </state>
       </states>
       <states id="states729">
-        <state id="state731" label="absent" symbol="0"/>
-        <state id="state732" label="present" symbol="1"/>
+        <state id="state731" label="absent" symbol="0" about="#state731">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200128"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001449"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state732" label="present" symbol="1" about="#state732">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200128"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001448"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states733">
         <state id="state735" label="one" symbol="0" about="#state735">
