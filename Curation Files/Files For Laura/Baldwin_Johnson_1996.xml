@@ -829,6 +829,9 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">215407</meta>
       </meta>
     </otu>
+    <otu id="edf00272-174d-4c65-8bf9-02940aff47ac" label="" about="#edf00272-174d-4c65-8bf9-02940aff47ac">
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0033864"/>
+    </otu>
   </otus>
   <characters xmlns:ns="http://www.nexml.org/2009" id="23a724b2-d6b2-4bca-b20c-b8df2434513b" xsi:type="ns:StandardCells" otus="c9bcc4a6-1498-427d-8e85-0f0da380ac45">
     <format>
@@ -875,12 +878,61 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         </state>
       </states>
       <states id="b8c7ed37-6ddf-4600-9f43-2ab87e44fa70">
-        <state id="9e99512b-a2ab-4349-9ff0-ae729cc2a888" label="Segmentation begins on proximal half of each caudal ray" symbol="0" about="#9e99512b-a2ab-4349-9ff0-ae729cc2a888"/>
-        <state id="ae6d077e-a060-4a1f-be04-b5eb3918b8a6" label="Segmentation begins on distal half of each caudal ray" symbol="1" about="#ae6d077e-a060-4a1f-be04-b5eb3918b8a6"/>
-        <state id="582cf3ca-bd8a-4102-913c-075ee82883ee" label="Caudal rays not segmented" symbol="2" about="#582cf3ca-bd8a-4102-913c-075ee82883ee"/>
+        <state id="9e99512b-a2ab-4349-9ff0-ae729cc2a888" label="Segmentation begins on proximal half of each caudal ray" symbol="0" about="#9e99512b-a2ab-4349-9ff0-ae729cc2a888">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a52cd62f-27f4-41bb-ab47-8c00bb789c3e"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002312"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="ae6d077e-a060-4a1f-be04-b5eb3918b8a6" label="Segmentation begins on distal half of each caudal ray" symbol="1" about="#ae6d077e-a060-4a1f-be04-b5eb3918b8a6">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/85cb07fe-4a3c-41cc-aa79-b79c1f3f0efe"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002312"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="582cf3ca-bd8a-4102-913c-075ee82883ee" label="Caudal rays not segmented" symbol="2" about="#582cf3ca-bd8a-4102-913c-075ee82883ee">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000174"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002312"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="6c3df6ea-2178-497f-a318-de89fe9ed075">
-        <state id="99afc972-3d63-431a-bdf9-ff09508b8abb" label="Two CMCs, about equal in size" symbol="0" about="#99afc972-3d63-431a-bdf9-ff09508b8abb"/>
+        <state id="99afc972-3d63-431a-bdf9-ff09508b8abb" label="Two CMCs, about equal in size" symbol="0" about="#99afc972-3d63-431a-bdf9-ff09508b8abb">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="60795719-2433-40f1-a2dd-62eded0a0100" label="Two CMCs, the dorsal one minute" symbol="1" about="#60795719-2433-40f1-a2dd-62eded0a0100">
           <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">--</meta>
         </state>
@@ -1091,10 +1143,62 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         <state id="0f0f89fc-4c6d-4788-8c12-c76a387dd020" label="Pelvic fins abdominal, inserting anterior to vertical through dorsal fin" symbol="1" about="#0f0f89fc-4c6d-4788-8c12-c76a387dd020"/>
       </states>
       <states id="d82c9601-1bb1-4c4d-827b-7ab3a62b1ca8">
-        <state id="7dba3e66-4a42-422d-a089-2120bd6e5680" label="Two postcleithra" symbol="0" about="#7dba3e66-4a42-422d-a089-2120bd6e5680"/>
-        <state id="2de14377-04e4-4f1a-8d23-8e81b95d8b1f" label="One postcleithrum" symbol="1" about="#2de14377-04e4-4f1a-8d23-8e81b95d8b1f"/>
-        <state id="90a0d4d9-9f95-421d-9e9a-cc53948c2f7e" label="Postcleithra absent" symbol="2" about="#90a0d4d9-9f95-421d-9e9a-cc53948c2f7e"/>
-        <state id="0e69a9d3-4dd3-48ef-8768-930a724ad7fe" label="Three postcleithra" symbol="3" about="#0e69a9d3-4dd3-48ef-8768-930a724ad7fe"/>
+        <state id="7dba3e66-4a42-422d-a089-2120bd6e5680" label="Two postcleithra" symbol="0" about="#7dba3e66-4a42-422d-a089-2120bd6e5680">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000410"/>
+                </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="2de14377-04e4-4f1a-8d23-8e81b95d8b1f" label="One postcleithrum" symbol="1" about="#2de14377-04e4-4f1a-8d23-8e81b95d8b1f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000410"/>
+                </phen:bearer>
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="90a0d4d9-9f95-421d-9e9a-cc53948c2f7e" label="Postcleithra absent" symbol="2" about="#90a0d4d9-9f95-421d-9e9a-cc53948c2f7e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000410"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="0e69a9d3-4dd3-48ef-8768-930a724ad7fe" label="Three postcleithra" symbol="3" about="#0e69a9d3-4dd3-48ef-8768-930a724ad7fe">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000410"/>
+                </phen:bearer>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="aac2c84d-9f63-463b-9f02-e2922cc87e33">
         <state id="4bfbc581-70bd-4533-bd19-11d097061bd7" label="Cleithrum with small rounded posterior projection or projection absent" symbol="0" about="#4bfbc581-70bd-4533-bd19-11d097061bd7"/>
@@ -3507,7 +3611,9 @@ Ben Frable to check terms and coding and term definitions with Dave Johnson 12/2
         <cell char="403d9952-f0fc-4444-8e95-2d69ce5b1c46" state="126a87f2-ee7d-4278-982e-c4a4dd01ba37"/>
         <cell char="b1425f4b-f6cc-4ae9-83a8-7688aba4462a" state="0c9f4524-bed8-4e4e-8449-8b656522eef5"/>
       </row>
+      <row id="4b3a991e-b26a-49e3-9bf1-83b36bb53142" otu="edf00272-174d-4c65-8bf9-02940aff47ac"/>
     </matrix>
   </characters>
+  <trees id="t962fb467-b181-4ddf-b678-c36a9610b389" otus="c9bcc4a6-1498-427d-8e85-0f0da380ac45"/>
   <trees id="t18f7d607-200e-4563-8a2d-745abddf4a10" otus="c9bcc4a6-1498-427d-8e85-0f0da380ac45"/>
 </nexml>
