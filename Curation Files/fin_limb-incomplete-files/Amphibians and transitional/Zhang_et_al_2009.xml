@@ -675,11 +675,33 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:0011914"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:4200122"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state331" label="fused " symbol="1"/>
+        <state id="state331" label="fused " symbol="1" about="#state331">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011914"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:4200122"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states332">
         <state id="state334" label="more than three pairs" symbol="0"/>
@@ -735,7 +757,6 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state412" symbol="2" label=""/>
       </states>
       <states id="states349">
         <state id="state351" label="present" symbol="0"/>
@@ -1068,7 +1089,6 @@
         <cell char="char333" state="state336"/>
         <cell char="char338" state="state410"/>
         <cell char="char342" state="state411"/>
-        <cell char="char346" state="state412"/>
         <cell char="char350" state="state351"/>
         <cell char="char354" state="state355"/>
         <cell char="char359" state="state360"/>
