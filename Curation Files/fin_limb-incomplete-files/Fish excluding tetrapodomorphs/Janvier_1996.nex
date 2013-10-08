@@ -1,0 +1,241 @@
+#NEXUS
+[written Tue Oct 08 13:21:00 EDT 2013 by Mesquite  version 2.75 (build 566) at NI7549.local/10.0.1.151]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=23;
+	TAXLABELS
+		Tunicata Cephalochordata Hyperotreti Myxinikela Gilpichthys Hyperoartia Mayomyzon Hardistiella Pipiscius Jamoytius Euphanerops Anaspida Astraspida Eriptychius Arandaspida Heterostraci Phlebolepis Loganellia Galeaspida Pituriaspida Osteostraci Gnathostomata Conodonta 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=89;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2";
+	CHARSTATELABELS 
+		1 Eye_lens /  absent present, 2 'Ribbon-shaped synaptic organelles in retina' /  absent present, 3 'Tubular muscle in ''tongue'' musculature' /  absent present, 4 'Lateral-line neuromasts (Some fossils are assumed here to have possessed^nneuromasts when they possess sensory-line canals, since no extant vertebrate is known to have canals but no neuromast.' /  absent present, 5 Nervous_control_of_heart /  absent present, 6 Heart_response_to_catecholamine /  absent present, 7 Blood_system /  open closed, 8 Spleen /  absent present, 9 Concentrated_exocrine_pancreas /  absent present, 10 Typhlosole_in_intestine /  absent present, 11 Larval_stage_ /  absent present, 12 Compartmentalized_adenohypophysis /  absent present, 13 'Pituitary control of melanophores (This character may be correlated with the^npresence/absence of a pineal foramen in fossils. Absence of a pineal foramen and thus of a^nphotosensory pineal organ would preclude pituitary control of melanophores.)' /  absent present, 14 Kidney_tubules_with_glomerulae /  absent present, 15 Osmoregulation /  absent present, 16 Granulocytes_and_neutrophils /  absent present, 17 Two_types_of_giant_Mauthner_cells_in_the_central_nervous_system /  absent present, 18 Electroreceptive_cells /  absent present, 19 Sperm /  not_shed_through_coelomic_cavity shed_through_coelomic_cavity, 20 'Skull (This refers to any cranial component, i.e. splanchno- or neurocrania!.)' /  absent present, 21 'Cartilaginous or calcified braincase (neurocranium) ' /  absent present, 22 'Dorsally closed cartilaginous or calcified braincase (neurocranium)' /  absent present, 23 Olfactory_organ /  absent present, 24 'Terminal nasohypophysial opening (inhalent or not)' /  absent present, 25 'Dorsal nasohypophysial opening (inhalent or not) ' /  absent present, 26 'Optic capsules (exclusive of the lens) ' /  absent present, 27 'Transversely biting teeth (This generally refers to horny teeth of lampreys and^nhagfishes, but can potentially be extended to the mineralized teeth of conodonts.)' /  absent present, 28 Heart /  absent present, 29 Closed_pericardium /  absent present, 30 'Trunk and tail musculature with chevron-shaped muscle blocks (In^nmineralized fossils, the arrangement of the musculature may be inferred from that of the scales, as^nin anaspids, arandaspids, etc.)' /  absent present, 31 'Radials in fins absent (In many mineralized fossils, the presence of radials is inferred^nfrom the alignment of the overlying scales or fin rays.)' /  absent present, 32 'Numerous and closely set radials in unpaired fins (In many fossils, this^ncharacter is inferred from the arrangement of the scale rows corresponding to the position of the underlying radials.)' /  absent present, 33 Radial_muscles_in_fins /  absent present, 34 'Separate dorsal fin (This refers to a separate fin anterior to epichordal lobe in the case of forms having a hypocercal tail.)' /  absent present, 35 Anal_fin /  isocercal hypocercal epicercal, 36 'Tail (Although apparently pad-shaped, isocercal or^ndiphycercal, the tail of heterostracans is coded here as hypocercal, because it is assumed to be derived from the hypocercal tail of generalized thelodont type by enlargement of the epichordal radials, as suggested by the ''fork-tailed'' thelodonts which display the same tail morphology as heterostracans. The actual path of the notochord has, however, never been observed in heterostracans.)' /  absent present, 37 'Paired fin folds or fins (This refers to any lateral skin fold, be it with radials and radial musculature or not. The small lateral skin fold of the extant hagfish Neomyxine is not considered here as a fin fold.)' /  absent present, 38 Paired_fin_folds_or_fins_concentrated_in_the_pectoral_or_epibranchial_regions /  absent present, 39 Muscles_in_paired_fins /  absent present, 40 Arcualia /  absent present, 41 Gill_openings_arranged_in_a_posteriorly_slanting_line_ /  absent present, 42 Number_of_gill_units /  More_than_ten_gill_units less_than_ten, 43 Olfactory_tract /  absent present, 44 Olfactory_organ_unpaired_or_with_closely_set_and_confluent_nasal_sacs /  absent present, 45 Olfactory_organ_paired_with_entirely_separated_nasal_sacs /  absent present, 46 Nasohypophysial_duct_serving_branchial_respiration /  absent present, 47 'Nasohypophysial duct posteriorly closed and serving only as a common ''nostril''' /  absent present, 48 Extrinsic_eye_muscles /  absent present, 49 'Photosensory pineal organ (or pineal foramen)' /  absent present, 50 Semicircular_canals /  absent present, 51 Single_semicircular_canal /  absent present, 52 Two_vertical_semicircular_canals_ /  absent present, 53 'Two vertical semicircular canals forming distinct loops (This refers to the^ndistinct canals of e.g. osteostracans, galeaspids or gnathostomes, in contrast to those of lampreys,^nwhich lie against the vestibular division of the labyrinth.)' /  absent present, 54 Lateral_lines_enclosed_in_canals /  absent present, 55 'Lateral-line grooves or canals' /  absent present, 56 Cerebellum /  absent present, 57 Large_and_paired_cerebellum /  absent present, 58 Vagus_and_glossopharyngeus_nerves_included_in_occipital_region /  absent present, 59 Closely_set_atrium_and_ventricle /  absent present, 60 Large_dorsal_jugular_vein /  absent present, 61 Subaponeurotic_vascular_system /  absent present, 62 Calcified_cartilage /  absent present, 63 Perichondral_bone /  absent present, 64 'Head endoskeleton expanded into a massive shield covering the gills,' /  absent present, 65 Endoskeletal_scleral_ossification_or_calcification /  absent present, 66 Orthodentine_or_metadentine_ /  absent present, 67 Mesodentine /  absent present, 68 'Enameloid or enamel (hypermineralized superficial layer)' /  absent present, 69 Acellular_dermal_bone /  absent present, 70 Cellular_dermal_bone /  absent present, 71 'Honeycomb-like middle layer of exoskeleton ' /  absent present, 72 'Oakleaf-shaped tubercles or odontodes in ornamentation' /  absent present, 73 Large_median_dorsal_and_ventral_dermal_shields_in_head /  absent present, 74 External_opening_of_endolymphatic_duct /  absent present, 75 Opercular_flaps_on_external_branchial_openings /  absent present, 76 Preanal_skin_fold_or_scale_ridge /  absent present, 77 Sclerotic_ring_ /  absent present, 78 'Scales made up by a single odontode (microsquamose)' /  absent present, 79 'Scales made up by several odontodes (macrosquamose) and diamond-shaped' /  absent present, 80 'Scales made up by several odontodes (macrosquamose) and rod-shaped' /  absent present, 81 Pharyngeal_dermal_denticles /  absent present, 82 'Scale-covered zones on tail' /  absent present, 83 Horny_teeth_ /  absent present, 84 Piston_cartilage /  absent present, 85 Dentigerous_cartilage /  absent present, 86 Tentacles_strengthened_by_cartilage /  absent present, 87 'Sucking disc with an annular cartilage around mouth,' /  absent present, 88 'Pouch-shaped gills' /  absent present, 89 Trematic_rings /  absent present ; 
+	MATRIX
+	Tunicata         00000000010000000000000000000000000000000000000000000000000000000000000000000000000000000
+	Cephalochordata  00000000000000000000000000000100000000000000000000000000000000000000000000000000000000000
+	Hyperotreti      00100000001000000011001101110110000000000001010001100010000000000000000000000000001011011
+	Myxinikela       ???????????????????1??11011??1???0000?0????1010??????????????000000000000???00000010110??
+	Gilpichthys      ???????????????????1?????11??1???0000?0001???????????????????000000000000???00000010?00??
+	Hyperoartia      11111111111111111111101011111111110100011101001111010001001111000000000000010000001110111
+	Mayomyzon        ???????????????????11?1011111111?00?0?0??1?1001??????????????000000000000???000000?11011?
+	Hardistiella     ???????????????????11?1??1????11?111??0??????????????????????000000000000???000000???01??
+	Pipiscius        ???????????????????1?????1???111??0??????1???????????????????000000000000???0000001??01??
+	Jamoytius        ???????????????????1?????1???111??111?0??0???????????????????000000000000???0000000??0??1
+	Euphanerops      ???????????????????1?????1?1?110?011??0?10???????????????????000000000000???0000000??0??1
+	Anaspida         ???????????????????1??1011???110?0111?0?10??????1????02???????00000010000?01000101???00??
+	Astraspida       ???????????????????1????01???????00?000?01??????0????0???????????00110001000?010?????????
+	Eriptychius      ???????????????????1?????????????????????????????????0??????11???0101001?????010?????????
+	Arandaspida      ???????????????????1??1?01???1???00?000?10??????1????02?????????10001011100010010????00??
+	Heterostraci     ???1???????????????1??1?01???110?001000101101??0110111211???100?010010111000001001???00??
+	Phlebolepis      ???1???????????????1????01????10?11111??01???????????12??????000001010000???0100?1???0???
+	Loganellia       ???1???????????????1??1101????10?11111??01?0110??????12??????000010010000?1?010011???0???
+	Galeaspida       ???1???????????????1111011???11000??000?011011011101112111?11?110001100001010100?1???00??
+	Pituriaspida     ???????????????????1111??1??????1???111?0??????????????11?????11???????00??1?????????00??
+	Osteostraci      ???1???????????????1111011?111111102111101?100111101112111111111101101000111101000???00??
+	Gnathostomata    11011111110111111101111001011111111211110110101111011121111111101111010001111110100000000
+	Conodonta        ?????????????????????????11??111?001000????????1??????????????00000100000???0000100??00??
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  89;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  89;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1381252860082;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5075986356947712237;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4615150756027243982;
+			mqVersion 275;
+			checksumv 0 3 3191925256 null  getNumChars 89 numChars 89 getNumTaxa 23 numTaxa 23   short true   bits 7   states 7   sumSquaresStatesOnly 2491.0 sumSquares 2491.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 727 1081;
+			setLocation 938 26;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4615150756027243982 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 627 1014;
+					setLocation 938 26;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 351;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 627 1014;
+						setLocation 938 26;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #4615150756027243982 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.stochchar.CharListProbModels.CharListProbModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 627 1014;
+					setLocation 938 26;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

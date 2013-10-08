@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.10" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Paula Mabee</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000059</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -7964,7 +7964,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4000163"/>
+                  <phen:typeref about="UBERON:4000163">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003101"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000140"/>
@@ -7981,7 +7987,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4000163"/>
+                  <phen:typeref about="UBERON:4000163">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003101"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000140"/>

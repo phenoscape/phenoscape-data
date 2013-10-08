@@ -1,0 +1,20 @@
+This is a Python tool to create cvs formatted matrices from PDFs
+
+From: Lauren Conroy <lauren.l.conroy@gmail.com>
+Date: Tuesday, July 16, 2013 4:24 PM
+To: Paula Mabee <Paula.Mabee@usd.edu>
+Subject: Re: Janvier 1996
+
+How I did it for future reference (on a mac) in case you want to pass this on to future students.
+
+Copy matrix out of PDF into word document. Make any necessary edits (fixing things that copied wrong ie Os and Is as explained below. I had to paste in the character states, and then add the names individually to their lines afterwards because it wouldn't copy out properly.
+
+Save stripMatrix.py into home directory
+Open terminal
+type "python2.6 stripMatrix.py" (without the quotes)
+copy and past the matrix
+hit CTRL-D
+
+a .csv file will be saved to the home directory which can then be imported into excel. From excel it can be imported into mesquite or whatever else you are using. 
+
+It is sort of frustrating copying out of a PDF. A lot of the 0s were read as Os and 1s were read as Is so I had to manually change them. Every time the code hits a letter it starts a new line in the spreadsheet (because it is looking for letters for the names). Of course, this is unfortunate because it opens up the possibility for human error.
