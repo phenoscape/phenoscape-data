@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex 1.11" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
@@ -286,8 +286,34 @@
         <state id="state223" label="present" symbol="1"/>
       </states>
       <states id="states224">
-        <state id="state226" label="absent" symbol="0"/>
-        <state id="state227" label="present" symbol="1"/>
+        <state id="state226" label="absent" symbol="0" about="#state226">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000271"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state227" label="present" symbol="1" about="#state227">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000271"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states228">
         <state id="state230" label="absent" symbol="0"/>
@@ -302,9 +328,30 @@
         <state id="state239" label="present" symbol="1"/>
       </states>
       <states id="states240">
-        <state id="state242" label="isocercal" symbol="0"/>
-        <state id="state243" label="hypocercal" symbol="1"/>
-        <state id="state244" label="epicercal" symbol="2"/>
+        <state id="state242" label="isocercal" symbol="0" about="#state242">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
+        <state id="state243" label="hypocercal" symbol="1" about="#state243">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
+        <state id="state244" label="epicercal" symbol="2" about="#state244">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200061"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states245">
         <state id="state247" label="absent" symbol="0"/>
@@ -320,8 +367,46 @@
         <state id="state256" label="present" symbol="1"/>
       </states>
       <states id="states257">
-        <state id="state259" label="absent" symbol="0"/>
-        <state id="state260" label="present" symbol="1"/>
+        <state id="state259" label="absent" symbol="0" about="#state259">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001630">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002534"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state260" label="present" symbol="1" about="#state260">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001630">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002534"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states261">
         <state id="state263" label="absent" symbol="0"/>
@@ -533,8 +618,7 @@
       <char about="#char113" id="char113" label="Tubular muscle in 'tongue' musculature" states="states112">
         <meta content="false" datatype="xsd:boolean" id="meta504" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char117" id="char117" label="Lateral-line neuromasts (Some fossils are assumed here to have possessed
-neuromasts when they possess sensory-line canals, since no extant vertebrate is known to have canals but no neuromast." states="states116">
+      <char about="#char117" id="char117" label="Lateral-line neuromasts (Some fossils are assumed here to have possessed neuromasts when they possess sensory-line canals, since no extant vertebrate is known to have canals but no neuromast." states="states116">
         <meta content="false" datatype="xsd:boolean" id="meta505" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char121" id="char121" label="Nervous control of heart" states="states120">
@@ -561,9 +645,7 @@ neuromasts when they possess sensory-line canals, since no extant vertebrate is 
       <char about="#char149" id="char149" label="Compartmentalized adenohypophysis" states="states148">
         <meta content="false" datatype="xsd:boolean" id="meta513" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char153" id="char153" label="Pituitary control of melanophores (This character may be correlated with the
-presence/absence of a pineal foramen in fossils. Absence of a pineal foramen and thus of a
-photosensory pineal organ would preclude pituitary control of melanophores.)" states="states152">
+      <char about="#char153" id="char153" label="Pituitary control of melanophores (This character may be correlated with the presence/absence of a pineal foramen in fossils. Absence of a pineal foramen and thus of a photosensory pineal organ would preclude pituitary control of melanophores.)" states="states152">
         <meta content="false" datatype="xsd:boolean" id="meta514" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char157" id="char157" label="Kidney tubules with glomerulae" states="states156">
@@ -605,8 +687,7 @@ photosensory pineal organ would preclude pituitary control of melanophores.)" st
       <char about="#char205" id="char205" label="Optic capsules (exclusive of the lens) " states="states204">
         <meta content="false" datatype="xsd:boolean" id="meta527" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char209" id="char209" label="Transversely biting teeth (This generally refers to horny teeth of lampreys and
-hagfishes, but can potentially be extended to the mineralized teeth of conodonts.)" states="states208">
+      <char about="#char209" id="char209" label="Transversely biting teeth (This generally refers to horny teeth of lampreys and hagfishes, but can potentially be extended to the mineralized teeth of conodonts.)" states="states208">
         <meta content="false" datatype="xsd:boolean" id="meta528" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char213" id="char213" label="Heart" states="states212">
@@ -615,17 +696,13 @@ hagfishes, but can potentially be extended to the mineralized teeth of conodonts
       <char about="#char217" id="char217" label="Closed pericardium" states="states216">
         <meta content="false" datatype="xsd:boolean" id="meta530" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char221" id="char221" label="Trunk and tail musculature with chevron-shaped muscle blocks (In
-mineralized fossils, the arrangement of the musculature may be inferred from that of the scales, as
-in anaspids, arandaspids, etc.)" states="states220">
+      <char about="#char221" id="char221" label="Trunk and tail musculature with chevron-shaped muscle blocks (In mineralized fossils, the arrangement of the musculature may be inferred from that of the scales, as in anaspids, arandaspids, etc.)" states="states220">
         <meta content="false" datatype="xsd:boolean" id="meta531" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char225" id="char225" label="Radials in fins absent (In many mineralized fossils, the presence of radials is inferred
-from the alignment of the overlying scales or fin rays.)" states="states224">
+      <char about="#char225" id="char225" label="Radials in fins absent (In many mineralized fossils, the presence of radials is inferred from the alignment of the overlying scales or fin rays.)" states="states224">
         <meta content="false" datatype="xsd:boolean" id="meta532" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char229" id="char229" label="Numerous and closely set radials in unpaired fins (In many fossils, this
-character is inferred from the arrangement of the scale rows corresponding to the position of the underlying radials.)" states="states228">
+      <char about="#char229" id="char229" label="Numerous and closely set radials in unpaired fins (In many fossils, this character is inferred from the arrangement of the scale rows corresponding to the position of the underlying radials.)" states="states228">
         <meta content="false" datatype="xsd:boolean" id="meta533" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char233" id="char233" label="Radial muscles in fins" states="states232">
@@ -637,8 +714,7 @@ character is inferred from the arrangement of the scale rows corresponding to th
       <char about="#char241" id="char241" label="Anal fin" states="states240">
         <meta content="false" datatype="xsd:boolean" id="meta536" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char246" id="char246" label="Tail (Although apparently pad-shaped, isocercal or
-diphycercal, the tail of heterostracans is coded here as hypocercal, because it is assumed to be derived from the hypocercal tail of generalized thelodont type by enlargement of the epichordal radials, as suggested by the 'fork-tailed' thelodonts which display the same tail morphology as heterostracans. The actual path of the notochord has, however, never been observed in heterostracans.)" states="states245">
+      <char about="#char246" id="char246" label="Tail (Although apparently pad-shaped, isocercal or diphycercal, the tail of heterostracans is coded here as hypocercal, because it is assumed to be derived from the hypocercal tail of generalized thelodont type by enlargement of the epichordal radials, as suggested by the 'fork-tailed' thelodonts which display the same tail morphology as heterostracans. The actual path of the notochord has, however, never been observed in heterostracans.)" states="states245">
         <meta content="false" datatype="xsd:boolean" id="meta537" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char250" id="char250" label="Paired fin folds or fins (This refers to any lateral skin fold, be it with radials and radial musculature or not. The small lateral skin fold of the extant hagfish Neomyxine is not considered here as a fin fold.)" states="states249">
@@ -689,9 +765,7 @@ diphycercal, the tail of heterostracans is coded here as hypocercal, because it 
       <char about="#char310" id="char310" label="Two vertical semicircular canals " states="states309">
         <meta content="false" datatype="xsd:boolean" id="meta553" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char314" id="char314" label="Two vertical semicircular canals forming distinct loops (This refers to the
-distinct canals of e.g. osteostracans, galeaspids or gnathostomes, in contrast to those of lampreys,
-which lie against the vestibular division of the labyrinth.)" states="states313">
+      <char about="#char314" id="char314" label="Two vertical semicircular canals forming distinct loops (This refers to the distinct canals of e.g. osteostracans, galeaspids or gnathostomes, in contrast to those of lampreys, which lie against the vestibular division of the labyrinth.)" states="states313">
         <meta content="false" datatype="xsd:boolean" id="meta554" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char318" id="char318" label="Lateral lines enclosed in canals" states="states317">
