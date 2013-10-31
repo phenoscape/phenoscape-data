@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Sandrine Tercerie</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000085</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">doi:10.1016/j.ympev.2007.04.005
@@ -1328,9 +1328,48 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </polymorphic_state_set>
       </states>
       <states id="e25e7719-1c44-40ee-8174-6cf4e6d1e9b6">
-        <state id="13ca09e1-4d50-4f88-b52c-29c173bb38f0" label=">65%SL " symbol="0" about="#13ca09e1-4d50-4f88-b52c-29c173bb38f0"/>
-        <state id="6a448c7c-04ae-420c-8778-827f83a3ce7b" label="&lt;65%SL->45%SL" symbol="1"/>
-        <state id="31c958c2-5ec5-4aa6-bc81-44915dd17c6b" label="&lt;45%SL" symbol="2"/>
+        <state id="13ca09e1-4d50-4f88-b52c-29c173bb38f0" label=">65%SL " symbol="0" about="#13ca09e1-4d50-4f88-b52c-29c173bb38f0">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="6a448c7c-04ae-420c-8778-827f83a3ce7b" label="&lt;65%SL->45%SL" symbol="1" about="#6a448c7c-04ae-420c-8778-827f83a3ce7b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="31c958c2-5ec5-4aa6-bc81-44915dd17c6b" label="&lt;45%SL" symbol="2" about="#31c958c2-5ec5-4aa6-bc81-44915dd17c6b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="18b1ec59-82b0-46e1-84f7-af47de34c675">
           <member state="31c958c2-5ec5-4aa6-bc81-44915dd17c6b"/>
           <member state="6a448c7c-04ae-420c-8778-827f83a3ce7b"/>
@@ -1341,8 +1380,34 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </polymorphic_state_set>
       </states>
       <states id="703b2def-e591-483e-919a-76139e4d018f">
-        <state id="0eedb78f-9112-44a4-b83c-a4d648d9dc0d" label=">33%SL " symbol="0" about="#0eedb78f-9112-44a4-b83c-a4d648d9dc0d"/>
-        <state id="60315c51-dce7-4cc8-99d6-0e32073d0ff9" label="&lt;33%SL " symbol="1" about="#60315c51-dce7-4cc8-99d6-0e32073d0ff9"/>
+        <state id="0eedb78f-9112-44a4-b83c-a4d648d9dc0d" label=">33%SL " symbol="0" about="#0eedb78f-9112-44a4-b83c-a4d648d9dc0d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="60315c51-dce7-4cc8-99d6-0e32073d0ff9" label="&lt;33%SL " symbol="1" about="#60315c51-dce7-4cc8-99d6-0e32073d0ff9">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="db8adce0-d4a3-4a28-b1c4-ef7db207ce79">
           <member state="0eedb78f-9112-44a4-b83c-a4d648d9dc0d"/>
           <member state="60315c51-dce7-4cc8-99d6-0e32073d0ff9"/>
@@ -1353,8 +1418,11 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000122"/>
+                  <phen:typeref about="PATO:0000119"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1364,8 +1432,11 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003097"/>
+                </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000122"/>
+                  <phen:typeref about="PATO:0000119"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1377,39 +1448,9 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </polymorphic_state_set>
       </states>
       <states id="160368bc-bb48-489f-b7f8-365b28c9949c">
-        <state id="3aba4233-19d8-487c-b1b6-d09ec5fe7c6c" label=">55%SL " symbol="0" about="#3aba4233-19d8-487c-b1b6-d09ec5fe7c6c">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000122"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="e4770c46-bd9f-4e06-854a-f8d65a7724f4" label="&lt;55%SL->25%SL " symbol="1" about="#e4770c46-bd9f-4e06-854a-f8d65a7724f4">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000122"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="dfbcfdbe-e7ce-4581-bdc7-02318ea64f70" label="&lt;25%SL " symbol="2" about="#dfbcfdbe-e7ce-4581-bdc7-02318ea64f70">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000122"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="3aba4233-19d8-487c-b1b6-d09ec5fe7c6c" label=">55%SL " symbol="0" about="#3aba4233-19d8-487c-b1b6-d09ec5fe7c6c"></state>
+        <state id="e4770c46-bd9f-4e06-854a-f8d65a7724f4" label="&lt;55%SL->25%SL " symbol="1" about="#e4770c46-bd9f-4e06-854a-f8d65a7724f4"></state>
+        <state id="dfbcfdbe-e7ce-4581-bdc7-02318ea64f70" label="&lt;25%SL " symbol="2" about="#dfbcfdbe-e7ce-4581-bdc7-02318ea64f70"></state>
         <polymorphic_state_set id="71b755ff-faa4-4b0d-b393-34323cfca665">
           <member state="dfbcfdbe-e7ce-4581-bdc7-02318ea64f70"/>
           <member state="e4770c46-bd9f-4e06-854a-f8d65a7724f4"/>
@@ -1499,7 +1540,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000119"/>
+                  <phen:typeref about="PATO:0000117"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1519,7 +1560,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000119"/>
+                  <phen:typeref about="PATO:0000117"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1539,7 +1580,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000119"/>
+                  <phen:typeref about="PATO:0000117"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1559,7 +1600,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000119"/>
+                  <phen:typeref about="PATO:0000117"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1579,7 +1620,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000119"/>
+                  <phen:typeref about="PATO:0000117"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1599,41 +1640,109 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </polymorphic_state_set>
       </states>
       <states id="d7d10c0f-6cfe-47a7-996c-55e062c7f2f3">
-        <state id="d17402c6-155d-4de3-a68e-d73c79cc88c2" label=">12%SL " symbol="0"/>
-        <state id="59f318e4-13c0-4490-8c67-4127eb6cca5b" label="&lt;12%SL " symbol="1"/>
+        <state id="d17402c6-155d-4de3-a68e-d73c79cc88c2" label=">12%SL " symbol="0" about="#d17402c6-155d-4de3-a68e-d73c79cc88c2">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000175"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="59f318e4-13c0-4490-8c67-4127eb6cca5b" label="&lt;12%SL " symbol="1" about="#59f318e4-13c0-4490-8c67-4127eb6cca5b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000175"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="0a3cdc6d-e447-4b7d-bd0e-2cbef2b8bd06">
           <member state="59f318e4-13c0-4490-8c67-4127eb6cca5b"/>
           <member state="d17402c6-155d-4de3-a68e-d73c79cc88c2"/>
         </polymorphic_state_set>
       </states>
       <states id="071a6c93-5787-4cbb-9110-f9471f8cce66">
-        <state id="04c07be8-8748-4b93-9c52-1b085706fbfb" label=">5.5%SL " symbol="0"/>
-        <state id="f36d36e5-d9eb-4c69-807d-79b2558607b9" label="&lt;5.5%SL " symbol="1"/>
+        <state id="04c07be8-8748-4b93-9c52-1b085706fbfb" label=">5.5%SL " symbol="0" about="#04c07be8-8748-4b93-9c52-1b085706fbfb">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000175"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="f36d36e5-d9eb-4c69-807d-79b2558607b9" label="&lt;5.5%SL " symbol="1" about="#f36d36e5-d9eb-4c69-807d-79b2558607b9">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000175"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="c9cfea0c-adf0-4b3e-a335-449b1e484676">
           <member state="f36d36e5-d9eb-4c69-807d-79b2558607b9"/>
           <member state="04c07be8-8748-4b93-9c52-1b085706fbfb"/>
         </polymorphic_state_set>
       </states>
       <states id="45690216-6859-4370-bd9e-570cfac2feb8">
-        <state id="295d1b47-4a3d-4c9c-b711-d0b8f2851a9a" label=">11.3%SL " symbol="0"/>
-        <state id="d95c32ac-d12c-4368-85f4-badce51a33e3" label="&lt;11.3%SL " symbol="1"/>
+        <state id="295d1b47-4a3d-4c9c-b711-d0b8f2851a9a" label=">11.3%SL " symbol="0" about="#295d1b47-4a3d-4c9c-b711-d0b8f2851a9a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="d95c32ac-d12c-4368-85f4-badce51a33e3" label="&lt;11.3%SL " symbol="1" about="#d95c32ac-d12c-4368-85f4-badce51a33e3">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="abd1048b-634f-48a0-9d87-9dd1b896dcdc">
           <member state="d95c32ac-d12c-4368-85f4-badce51a33e3"/>
           <member state="295d1b47-4a3d-4c9c-b711-d0b8f2851a9a"/>
         </polymorphic_state_set>
       </states>
       <states id="949aedbb-6647-492f-bcac-eb77aa50a79b">
-        <state id="9de9ca41-3f5f-413d-af7c-b5517c287448" label=">13.2%SL " symbol="0" about="#9de9ca41-3f5f-413d-af7c-b5517c287448">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2002057"/>
-                </phen:bearer>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="9de9ca41-3f5f-413d-af7c-b5517c287448" label=">13.2%SL " symbol="0" about="#9de9ca41-3f5f-413d-af7c-b5517c287448"></state>
         <state id="6abdb10f-a132-404b-87bb-45d6f23402bc" label="&lt;13.2%SL->6.8%SL " symbol="1"/>
         <state id="49462649-4623-4be4-a4fc-2c8126dbc86c" label="&lt;6.8%SL " symbol="2"/>
         <polymorphic_state_set id="e4040e0b-30a8-49fb-8101-6627ffc3d579">
@@ -1692,11 +1801,76 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </polymorphic_state_set>
       </states>
       <states id="aebc52f9-81db-440a-ae5f-8aac853ffadf">
-        <state id="bc02b97f-e492-4cac-84ef-3e3d8caada41" label=">15.4%SL " symbol="0" about="#bc02b97f-e492-4cac-84ef-3e3d8caada41"/>
-        <state id="3acad324-0914-4060-99f6-af77ba1fbb8c" label="&lt;15.4%SL->6.9%SL " symbol="1"/>
-        <state id="b9c89c7e-2388-4025-9094-7b8de93e8968" label="&lt;6.9%SL->1.9%SL " symbol="2"/>
-        <state id="f1c12716-78cb-4f30-b8b8-039a0d2f0fd8" label="&lt;1.9%SL " symbol="3"/>
-        <state id="9322f449-76d2-4598-bf36-f98a4d2ce575" label="no disc" symbol="4"/>
+        <state id="bc02b97f-e492-4cac-84ef-3e3d8caada41" label=">15.4%SL " symbol="0" about="#bc02b97f-e492-4cac-84ef-3e3d8caada41">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2e417364-292b-4b37-9992-25095805ad74"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001334"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="3acad324-0914-4060-99f6-af77ba1fbb8c" label="&lt;15.4%SL->6.9%SL " symbol="1" about="#3acad324-0914-4060-99f6-af77ba1fbb8c">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2e417364-292b-4b37-9992-25095805ad74"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001334"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="b9c89c7e-2388-4025-9094-7b8de93e8968" label="&lt;6.9%SL->1.9%SL " symbol="2" about="#b9c89c7e-2388-4025-9094-7b8de93e8968">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2e417364-292b-4b37-9992-25095805ad74"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001334"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="f1c12716-78cb-4f30-b8b8-039a0d2f0fd8" label="&lt;1.9%SL " symbol="3" about="#f1c12716-78cb-4f30-b8b8-039a0d2f0fd8">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2e417364-292b-4b37-9992-25095805ad74"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001334"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="9322f449-76d2-4598-bf36-f98a4d2ce575" label="no disc" symbol="4" about="#9322f449-76d2-4598-bf36-f98a4d2ce575">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2e417364-292b-4b37-9992-25095805ad74"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="fa5e4d29-ee89-440d-96cc-1b195c129edb">
           <member state="b9c89c7e-2388-4025-9094-7b8de93e8968"/>
           <member state="3acad324-0914-4060-99f6-af77ba1fbb8c"/>
@@ -1797,7 +1971,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:4000164"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001505"/>
+                  <phen:typeref about="PATO:0000140"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0003097"/>
                   </phen:related_entity>
@@ -1855,7 +2029,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:4000164"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001505"/>
+                  <phen:typeref about="PATO:0000140"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:4000163"/>
                   </phen:related_entity>
@@ -1904,35 +2078,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </polymorphic_state_set>
       </states>
       <states id="035b0508-d2ce-4a99-a466-bcdda540f164">
-        <state id="32071300-5d91-4b32-bb6e-18c766b6f2e4" label=">6.6%SL " symbol="0" about="#32071300-5d91-4b32-bb6e-18c766b6f2e4">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="BSPO:0000002">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0000151"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
-                  <phen:related_entity>
-                    <phen:typeref about="BSPO:0000684">
-                      <phen:qualifier relation="BFO:0000050">
-                        <phen:holds_in_relation_to>
-                          <phen:typeref about="UBERON:2002057"/>
-                        </phen:holds_in_relation_to>
-                      </phen:qualifier>
-                    </phen:typeref>
-                  </phen:related_entity>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="32071300-5d91-4b32-bb6e-18c766b6f2e4" label=">6.6%SL " symbol="0" about="#32071300-5d91-4b32-bb6e-18c766b6f2e4"></state>
         <state id="789fe2de-da30-48ac-9333-9e453fe338a9" label="&lt;6.6%SL " symbol="1"/>
         <polymorphic_state_set id="409a90d9-fb19-4161-bf20-b6dcdf57deb6">
           <member state="789fe2de-da30-48ac-9333-9e453fe338a9"/>
@@ -1981,7 +2127,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:4000164"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000122"/>
+                  <phen:typeref about="PATO:0000573"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1995,7 +2141,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:4000164"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000122"/>
+                  <phen:typeref about="PATO:0000574"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2025,9 +2171,48 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </polymorphic_state_set>
       </states>
       <states id="92b99c5f-c920-4e52-9402-65233b153d8b">
-        <state id="26790f82-bef9-4036-a070-ba9501483228" label=">1.27 " symbol="0"/>
-        <state id="c7f812a5-03ef-4c80-be31-c62f96141789" label="&lt;1.27 ->0.5 " symbol="1"/>
-        <state id="4d4017be-5751-4ac6-80c0-7145c3daa185" label="&lt;0.5 " symbol="2"/>
+        <state id="26790f82-bef9-4036-a070-ba9501483228" label=">1.27 " symbol="0" about="#26790f82-bef9-4036-a070-ba9501483228">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="c7f812a5-03ef-4c80-be31-c62f96141789" label="&lt;1.27 ->0.5 " symbol="1" about="#c7f812a5-03ef-4c80-be31-c62f96141789">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="4d4017be-5751-4ac6-80c0-7145c3daa185" label="&lt;0.5 " symbol="2" about="#4d4017be-5751-4ac6-80c0-7145c3daa185">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="8a24cf37-2e5d-4487-a7e8-8d9de3673c02">
           <member state="c7f812a5-03ef-4c80-be31-c62f96141789"/>
           <member state="4d4017be-5751-4ac6-80c0-7145c3daa185"/>
@@ -2427,15 +2612,54 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </polymorphic_state_set>
       </states>
       <states id="46ab3ad8-93b7-4f02-a806-415f03a45e31">
-        <state id="e416c317-3100-4022-a61b-25fc64ccf464" label="≥9 " symbol="0"/>
-        <state id="2793271b-2dd8-4924-b096-62b3c7045780" label="≤8 " symbol="1"/>
+        <state id="e416c317-3100-4022-a61b-25fc64ccf464" label="≥9 " symbol="0" about="#e416c317-3100-4022-a61b-25fc64ccf464">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="2793271b-2dd8-4924-b096-62b3c7045780" label="≤8 " symbol="1" about="#2793271b-2dd8-4924-b096-62b3c7045780">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="a96f7dc8-0ad6-4f52-a2f2-5556c98a19f8">
           <member state="e416c317-3100-4022-a61b-25fc64ccf464"/>
           <member state="2793271b-2dd8-4924-b096-62b3c7045780"/>
         </polymorphic_state_set>
       </states>
       <states id="36f36bf9-563a-4c4a-a779-17c3cb6ee386">
-        <state id="6e521cb5-4256-484a-a9d0-f230161d9b3b" label="≥17 " symbol="0"/>
+        <state id="6e521cb5-4256-484a-a9d0-f230161d9b3b" label="≥17 " symbol="0" about="#6e521cb5-4256-484a-a9d0-f230161d9b3b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="772ee963-0ff3-4281-a6ba-fec6594e9892" label="≤16 " symbol="1"/>
         <polymorphic_state_set id="b29683a5-c0da-4549-ae02-6614aac3e636">
           <member state="6e521cb5-4256-484a-a9d0-f230161d9b3b"/>
@@ -3510,104 +3734,59 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
       <char id="76138ae9-7857-4e1d-81f3-6d4a89fa8025" label="Depth at anal fin origin " about="#76138ae9-7857-4e1d-81f3-6d4a89fa8025" states="721a8a7a-c9fe-434b-8e64-3b7a32d7f258"/>
       <char id="feaca619-ff1c-4ea8-acda-734942d58cb3" label="Width at anal fin origin " about="#feaca619-ff1c-4ea8-acda-734942d58cb3" states="c3be58b2-e2e4-4126-afcf-227994a8541f"/>
       <char id="250d56b2-42b8-463a-8ca6-e13b78a7249f" label="Pectoral fin length" states="eec518b4-b7e6-45aa-afb0-6271c9eef2d9"/>
-      <char id="9c1781ef-9ddd-4571-8d2d-877ea7009ffa" label="Pectoral fin base height" about="#9c1781ef-9ddd-4571-8d2d-877ea7009ffa" states="b168e498-fb40-460c-95f1-95bfc8d1c090">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">height = width?</meta>
-      </char>
-      <char id="fd8ceafb-2142-4e85-b053-3329c3b00e94" label="Upper pectoral fin ray length " about="#fd8ceafb-2142-4e85-b053-3329c3b00e94" states="d7d10c0f-6cfe-47a7-996c-55e062c7f2f3">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
-      </char>
-      <char id="b8f7cbf7-a368-48bf-a82e-847c3b40c684" label="Lower pectoral fin ray length " about="#b8f7cbf7-a368-48bf-a82e-847c3b40c684" states="071a6c93-5787-4cbb-9110-f9471f8cce66">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
-      </char>
-      <char id="9e0ab344-c160-41f2-8bfb-b8417f3a6162" label="Greatest length of lower lobe of pectoral fin " about="#9e0ab344-c160-41f2-8bfb-b8417f3a6162" states="45690216-6859-4370-bd9e-570cfac2feb8">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">How to annotate?</meta>
-      </char>
-      <char id="8b5b1706-46cb-4459-babb-abb9e1ca99f3" label="Gill slit vertical" about="#8b5b1706-46cb-4459-babb-abb9e1ca99f3" states="949aedbb-6647-492f-bcac-eb77aa50a79b">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? New term required</meta>
-      </char>
+      <char id="9c1781ef-9ddd-4571-8d2d-877ea7009ffa" label="Pectoral fin base height" about="#9c1781ef-9ddd-4571-8d2d-877ea7009ffa" states="b168e498-fb40-460c-95f1-95bfc8d1c090"></char>
+      <char id="fd8ceafb-2142-4e85-b053-3329c3b00e94" label="Upper pectoral fin ray length " about="#fd8ceafb-2142-4e85-b053-3329c3b00e94" states="d7d10c0f-6cfe-47a7-996c-55e062c7f2f3"></char>
+      <char id="b8f7cbf7-a368-48bf-a82e-847c3b40c684" label="Lower pectoral fin ray length " about="#b8f7cbf7-a368-48bf-a82e-847c3b40c684" states="071a6c93-5787-4cbb-9110-f9471f8cce66"></char>
+      <char id="9e0ab344-c160-41f2-8bfb-b8417f3a6162" label="Greatest length of lower lobe of pectoral fin " about="#9e0ab344-c160-41f2-8bfb-b8417f3a6162" states="45690216-6859-4370-bd9e-570cfac2feb8"></char>
+      <char id="8b5b1706-46cb-4459-babb-abb9e1ca99f3" label="Gill slit vertical" about="#8b5b1706-46cb-4459-babb-abb9e1ca99f3" states="949aedbb-6647-492f-bcac-eb77aa50a79b"></char>
       <char id="e5192542-8bbe-49ac-b747-7347104667bf" label="Gill filaments on first gill arch" states="0c527d80-d837-4b40-81ca-22f9201d456f"/>
-      <char id="62b3e371-800a-4b70-a78b-b7333cfb62ab" label="Longitudinal diameter of sucking disc" about="#62b3e371-800a-4b70-a78b-b7333cfb62ab" states="aebc52f9-81db-440a-ae5f-8aac853ffadf">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? New term "pelvic sucking disc" required or use "pelvic fin"? (see p.650)</meta>
-      </char>
-      <char id="9b051e56-a22b-410b-b82f-ce6395ecf576" label="Distance from posterior edge of disc to center of anus" about="#9b051e56-a22b-410b-b82f-ce6395ecf576" states="4e378d49-5604-401c-9348-72593e6def37">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? New term "pelvic sucking disc" required or use "pelvic fin"? (see p.650)</meta>
-      </char>
-      <char id="df16eb1c-1635-412f-84a1-87fcb228aa31" label="Length from mandibular symphysis to center of anus" about="#df16eb1c-1635-412f-84a1-87fcb228aa31" states="d2f0c4f6-6071-4d95-b15c-f45000e306e2">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to mention a length between 2 entities</meta>
-      </char>
-      <char id="7426f86d-41d9-483d-bce1-a74b7b189c43" label="Postocular length" about="#7426f86d-41d9-483d-bce1-a74b7b189c43" states="9ecb4643-41a2-492d-a50f-34e73ecb970a">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
-      </char>
-      <char id="e8b2563d-734e-466b-8655-666335cdd1e1" label="Max. heigth" about="#e8b2563d-734e-466b-8655-666335cdd1e1" states="4c9938da-6bd9-41a5-8bcf-7f32ca67786a">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">how to mention MAXIMAL heigth?</meta>
-      </char>
-      <char id="cb09f482-8be0-4f3e-a8aa-cbb5e9c257c4" label="Suborbital distance" about="#cb09f482-8be0-4f3e-a8aa-cbb5e9c257c4" states="14a43ee0-75e0-431f-b837-5d0d504a8039">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">?</meta>
-      </char>
+      <char id="62b3e371-800a-4b70-a78b-b7333cfb62ab" label="Longitudinal diameter of sucking disc" about="#62b3e371-800a-4b70-a78b-b7333cfb62ab" states="aebc52f9-81db-440a-ae5f-8aac853ffadf"></char>
+      <char id="9b051e56-a22b-410b-b82f-ce6395ecf576" label="Distance from posterior edge of disc to center of anus" about="#9b051e56-a22b-410b-b82f-ce6395ecf576" states="4e378d49-5604-401c-9348-72593e6def37"></char>
+      <char id="df16eb1c-1635-412f-84a1-87fcb228aa31" label="Length from mandibular symphysis to center of anus" about="#df16eb1c-1635-412f-84a1-87fcb228aa31" states="d2f0c4f6-6071-4d95-b15c-f45000e306e2"></char>
+      <char id="7426f86d-41d9-483d-bce1-a74b7b189c43" label="Postocular length" about="#7426f86d-41d9-483d-bce1-a74b7b189c43" states="9ecb4643-41a2-492d-a50f-34e73ecb970a"></char>
+      <char id="e8b2563d-734e-466b-8655-666335cdd1e1" label="Max. heigth" about="#e8b2563d-734e-466b-8655-666335cdd1e1" states="4c9938da-6bd9-41a5-8bcf-7f32ca67786a"></char>
+      <char id="cb09f482-8be0-4f3e-a8aa-cbb5e9c257c4" label="Suborbital distance" about="#cb09f482-8be0-4f3e-a8aa-cbb5e9c257c4" states="14a43ee0-75e0-431f-b837-5d0d504a8039"></char>
       <char id="637bc3a9-9e1f-4823-88b7-e954cf10d6eb" label="Dorsal fin overlap on caudal fin " states="a2d39d45-7249-449e-ae04-2072ebb3764a"/>
       <char id="ae49b6af-b2ed-439c-a1b4-5278d63cceba" label="Anal fin overlap on caudal fin " states="e3678921-1330-4cf6-9a51-0c965f7a43ae"/>
-      <char id="10af38d7-7df6-4204-bff8-fd53c17bc580" label="From lower edge of pectoral fin to ventral end of gill slit" about="#10af38d7-7df6-4204-bff8-fd53c17bc580" states="035b0508-d2ce-4a99-a466-bcdda540f164">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to mention a length between 2 entities</meta>
-      </char>
-      <char id="85854294-fe78-4ae0-9181-ce1d5be76df3" label="From upper edge of pectoral fin to dorsal end of gill slit" about="#85854294-fe78-4ae0-9181-ce1d5be76df3" states="995c0792-19e4-4aaf-97b6-ad32936e90e5">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to mention a length between 2 entities</meta>
-      </char>
-      <char id="fb763913-2597-4464-ba4f-95c71d53e6f3" label="Distance between lower margin of eye and upper edge of pectoral fin" about="#fb763913-2597-4464-ba4f-95c71d53e6f3" states="81c86a84-6791-4580-8983-585accc0e27b">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to mention a length between 2 entities</meta>
-      </char>
-      <char id="107f5656-f828-49d1-ab47-28469bd24930" label="Length from mandibular symphysis to anterior edge of disc" about="#107f5656-f828-49d1-ab47-28469bd24930" states="9ef93bbe-e173-4d2b-ad2d-18952c7fc040">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to mention a length between 2 entities. Coding problem in the matrix: state 2 dosn't exist. Ask author.</meta>
-      </char>
-      <char id="64d94e7a-2d43-4356-821c-71c0011a79dd" label="Caudal fin length" about="#64d94e7a-2d43-4356-821c-71c0011a79dd" states="857fa61a-f157-424d-a56a-ee203e7e10ed">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Coding problem in the matrix: state 2 dosn't exist. Ask author.</meta>
-      </char>
-      <char id="aa9d1002-87f2-4cb6-be29-494f06623723" label="Distance from center of anus to anal fin origin" about="#aa9d1002-87f2-4cb6-be29-494f06623723" states="eafdf8f2-65a2-462d-b9ff-f2ae8e2437db">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to mention a length between 2 entities</meta>
-      </char>
-      <char id="1aea9099-a80c-4406-8c80-645f43529271" label="Pectoral fin base/length ratio" about="#1aea9099-a80c-4406-8c80-645f43529271" states="92b99c5f-c920-4e52-9402-65233b153d8b">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to mention a ratio</meta>
-      </char>
-      <char id="45e6deb2-ccfc-4f51-8740-1eea77c1ddd5" label="Ratio between length of otolith/length of open part of sulcus" about="#45e6deb2-ccfc-4f51-8740-1eea77c1ddd5" states="6a265a4b-fb84-482d-ac3d-01689d0f1d3b">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to mention a ratio. Coding problem in the matrix: state 2 dosn't exist. Ask author.</meta>
-      </char>
+      <char id="10af38d7-7df6-4204-bff8-fd53c17bc580" label="From lower edge of pectoral fin to ventral end of gill slit" about="#10af38d7-7df6-4204-bff8-fd53c17bc580" states="035b0508-d2ce-4a99-a466-bcdda540f164"></char>
+      <char id="85854294-fe78-4ae0-9181-ce1d5be76df3" label="From upper edge of pectoral fin to dorsal end of gill slit" about="#85854294-fe78-4ae0-9181-ce1d5be76df3" states="995c0792-19e4-4aaf-97b6-ad32936e90e5"></char>
+      <char id="fb763913-2597-4464-ba4f-95c71d53e6f3" label="Distance between lower margin of eye and upper edge of pectoral fin" about="#fb763913-2597-4464-ba4f-95c71d53e6f3" states="81c86a84-6791-4580-8983-585accc0e27b"></char>
+      <char id="107f5656-f828-49d1-ab47-28469bd24930" label="Length from mandibular symphysis to anterior edge of disc" about="#107f5656-f828-49d1-ab47-28469bd24930" states="9ef93bbe-e173-4d2b-ad2d-18952c7fc040"></char>
+      <char id="64d94e7a-2d43-4356-821c-71c0011a79dd" label="Caudal fin length" about="#64d94e7a-2d43-4356-821c-71c0011a79dd" states="857fa61a-f157-424d-a56a-ee203e7e10ed"></char>
+      <char id="aa9d1002-87f2-4cb6-be29-494f06623723" label="Distance from center of anus to anal fin origin" about="#aa9d1002-87f2-4cb6-be29-494f06623723" states="eafdf8f2-65a2-462d-b9ff-f2ae8e2437db"></char>
+      <char id="1aea9099-a80c-4406-8c80-645f43529271" label="Pectoral fin base/length ratio" about="#1aea9099-a80c-4406-8c80-645f43529271" states="92b99c5f-c920-4e52-9402-65233b153d8b"></char>
+      <char id="45e6deb2-ccfc-4f51-8740-1eea77c1ddd5" label="Ratio between length of otolith/length of open part of sulcus" about="#45e6deb2-ccfc-4f51-8740-1eea77c1ddd5" states="6a265a4b-fb84-482d-ac3d-01689d0f1d3b"></char>
       <char id="680a7b95-687b-43ee-b265-2269d85aebe4" label="Dorsal fin rays" states="f581b35f-b240-4dda-9bba-3206b90fb502"/>
       <char id="6e27c9ce-9790-448f-8337-789afc40ae65" label="Anal fin rays" states="ad750de3-2aa5-4d18-93f3-d8e9d8dc3d9b"/>
       <char id="dcf557eb-2579-456f-94ba-cc1ab5d4c4f2" label="Pectoral fin rays" states="4b970a60-ee91-438b-92bb-86c2e7a17f43"/>
       <char id="aee71c56-94e1-4886-8473-562fe0b5023a" label="Precaudal vertebrae" states="53ab5472-b6fb-46e8-b543-d28979601369"/>
       <char id="aed0bcc3-58d0-4c30-8524-67f3acd3c15a" label="Caudal vertebrae (including ural)" states="f0daf345-7887-4911-935f-556f93bf62df"/>
       <char id="1f8cf9b6-0bda-4af9-b99a-11983ecaad97" label="Total vertebrae (including ural)" states="9c85509b-7c8f-4aa2-b45f-fe65d1748914"/>
-      <char id="1bb36538-14b1-4cb5-847a-f637950afac8" label="Anal fin origin below dorsal fin ray no. " about="#1bb36538-14b1-4cb5-847a-f637950afac8" states="46ab3ad8-93b7-4f02-a806-415f03a45e31">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to annotate it</meta>
-      </char>
-      <char id="00add9f1-e38d-478a-8f0a-28f10c0a193d" label="Anal fin origin below vertebrae no." about="#00add9f1-e38d-478a-8f0a-28f10c0a193d" states="36f36bf9-563a-4c4a-a779-17c3cb6ee386">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? how to annotate it</meta>
-      </char>
+      <char id="1bb36538-14b1-4cb5-847a-f637950afac8" label="Anal fin origin below dorsal fin ray no. " about="#1bb36538-14b1-4cb5-847a-f637950afac8" states="46ab3ad8-93b7-4f02-a806-415f03a45e31"></char>
+      <char id="00add9f1-e38d-478a-8f0a-28f10c0a193d" label="Anal fin origin below vertebrae no." about="#00add9f1-e38d-478a-8f0a-28f10c0a193d" states="36f36bf9-563a-4c4a-a779-17c3cb6ee386"></char>
       <char id="040bbf41-7e2a-4718-8938-a66fd48f2ecf" label="Gill rakers" states="d80d273e-89d9-40f2-879c-899e07fe5045"/>
-      <char id="7f487f29-59b9-48ab-b4f9-fbafc77cf475" label="Pseudobranchial filaments" about="#7f487f29-59b9-48ab-b4f9-fbafc77cf475" states="26dbbfdd-401f-4d8b-8c7e-69e7ba0a4811">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? New term required</meta>
-      </char>
+      <char id="7f487f29-59b9-48ab-b4f9-fbafc77cf475" label="Pseudobranchial filaments" about="#7f487f29-59b9-48ab-b4f9-fbafc77cf475" states="26dbbfdd-401f-4d8b-8c7e-69e7ba0a4811"></char>
       <char id="878f7fb6-11fa-467b-b2b5-19851d861514" label="Premaxillary teeth rows" states="3ee9aeb6-fdd1-46dc-b36c-974da47ce996"/>
       <char id="f4e2e43c-c520-4f12-b859-c1922b6e4cc3" label="Nasal head pores" about="#f4e2e43c-c520-4f12-b859-c1922b6e4cc3" states="cb81b532-80b3-4f79-8b62-37dbc4a0a5c8">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Pore terminology follows: Stein and Andriashev (1990). ? New term required</meta>
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Pore terminology follows: Stein and Andriashev (1990).</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Figure 5.</meta>
       </char>
       <char id="21ce8bdd-9fe4-4bd7-a85d-f7cae8f56c45" label="Suborbital head pores" about="#21ce8bdd-9fe4-4bd7-a85d-f7cae8f56c45" states="dbef5ae2-da5e-4ab6-a91c-1d4c23f00444">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Pore terminology follows: Stein and Andriashev (1990). ? New term required</meta>
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Pore terminology follows: Stein and Andriashev (1990).</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Figure 5.</meta>
       </char>
       <char id="7dd7f21d-5368-43e6-8b00-532c8ae6f8cd" label="Interorbital head pores" about="#7dd7f21d-5368-43e6-8b00-532c8ae6f8cd" states="dc6132f4-2669-449f-955c-a115c6f829bc">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Pore terminology follows: Stein and Andriashev (1990). ? New term required</meta>
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Pore terminology follows: Stein and Andriashev (1990).</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Figure 5.</meta>
       </char>
       <char id="f9bacc8b-ae5b-4d5b-b838-07b46f92a3f5" label="Occipital head pores" about="#f9bacc8b-ae5b-4d5b-b838-07b46f92a3f5" states="301098ab-5ed2-40b4-97c9-9b3867b3b017">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Pore terminology follows: Stein and Andriashev (1990). ? New term required</meta>
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Pore terminology follows: Stein and Andriashev (1990).</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Figure 5.</meta>
       </char>
       <char id="4486a6c2-5cb9-46a8-9310-8fe326636ec3" label="Nostrils" about="#4486a6c2-5cb9-46a8-9310-8fe326636ec3" states="2282282e-30e8-44d6-bf6d-017728386a0e">
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Figure 5.</meta>
       </char>
       <char id="83f59f91-1b95-42b8-86d0-5534ed6d6578" label="Poretubes (opening of infraorbital head pores is extending into a small tube)" about="#83f59f91-1b95-42b8-86d0-5534ed6d6578" states="ef52454d-a2a8-47a3-a290-7925916440e6">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? New term required</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Figure 5.</meta>
       </char>
       <char id="6ab0678f-2c3c-4aef-a3e2-32a3d1f7504c" label="Dorsal fins" states="360f6abe-bd99-4f60-ab81-018e1c54967b"/>
@@ -6005,4 +6184,5 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
       </row>
     </matrix>
   </characters>
+  <trees id="t6185822a-1909-4e4f-9775-922efd88ca6a" otus="687b5cff-fe89-4027-bc02-c216fa223ad3"/>
 </nexml>
