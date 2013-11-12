@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Paula Mabee</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000010</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -585,13 +585,7 @@
                   <phen:typeref about="BSPO:0000071">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="BSPO:0000079">
-                          <phen:qualifier relation="BFO:0000050">
-                            <phen:holds_in_relation_to>
-                              <phen:typeref about="UBERON:0011238"/>
-                            </phen:holds_in_relation_to>
-                          </phen:qualifier>
-                        </phen:typeref>
+                        <phen:typeref about="UBERON:0011238"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -1013,8 +1007,8 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000587"/>
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000117"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1039,7 +1033,7 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000117"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -1065,8 +1059,8 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000586"/>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000117"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3435,4 +3429,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t536f0915-8c96-4d2a-aaa1-ac2aa6383332" otus="ad415cce-883b-4c42-89d2-dd4d31824695"/>
 </nexml>
