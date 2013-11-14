@@ -285,13 +285,79 @@
   <characters xmlns:ns="http://www.nexml.org/2009" id="f80f5bd3-0b90-4bf7-a723-d18242275950" xsi:type="ns:StandardCells" otus="a987aba6-8eb7-4f3b-aeef-030ad3ab0e43">
     <format>
       <states id="4c11aa03-6a24-4757-b6d2-9c487917beb4">
-        <state id="87e6fa56-3b3c-48f2-99cf-51f9c7efca10" label="two extrascapulars" symbol="0"/>
-        <state id="5b4168c1-ca27-41ff-b784-32819b44b5de" label="three or more extrascapulars" symbol="1"/>
-        <state id="81bcec79-7e49-4ea5-b61e-1da24cbd989a" label="one extrascapular" symbol="2"/>
+        <state id="87e6fa56-3b3c-48f2-99cf-51f9c7efca10" label="two extrascapulars" symbol="0" about="#87e6fa56-3b3c-48f2-99cf-51f9c7efca10">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663"/>
+                </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="5b4168c1-ca27-41ff-b784-32819b44b5de" label="three or more extrascapulars" symbol="1" about="#5b4168c1-ca27-41ff-b784-32819b44b5de">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>≥3</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="81bcec79-7e49-4ea5-b61e-1da24cbd989a" label="one extrascapular" symbol="2" about="#81bcec79-7e49-4ea5-b61e-1da24cbd989a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663"/>
+                </phen:bearer>
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="4e73dde3-b8da-4f31-9957-050774773a38">
-        <state id="60710b8f-27f2-48c9-b394-f1630193b425" label="present" symbol="0"/>
-        <state id="3cfa35e3-7981-4908-bb02-48ff7c54387a" label="absent" symbol="1"/>
+        <state id="60710b8f-27f2-48c9-b394-f1630193b425" label="present" symbol="0" about="#60710b8f-27f2-48c9-b394-f1630193b425">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001783"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="3cfa35e3-7981-4908-bb02-48ff7c54387a" label="absent" symbol="1" about="#3cfa35e3-7981-4908-bb02-48ff7c54387a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001783"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="00ff7d3d-db2f-47bb-b8df-d73a4e81a348">
         <state id="ffbac86d-f36e-482c-b35b-c44011d294cd" label="long, from the level of the midorbit extending past the epioccipitals" symbol="0"/>
@@ -755,25 +821,59 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2001586"/>
+                  <phen:typeref about="UBERON:2102026"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0006849"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="9e7ce1d6-11e9-4a37-8369-946415c47631" label="in close contact, radial lying in a notch in the scapula" symbol="1"/>
-        <state id="b0e0f3f4-fa1b-485a-8048-cae5fba02123" label="fused to the scapula" symbol="2"/>
+        <state id="9e7ce1d6-11e9-4a37-8369-946415c47631" label="in close contact, radial lying in a notch in the scapula" symbol="1" about="#9e7ce1d6-11e9-4a37-8369-946415c47631">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2102026"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001961"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0006849"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="b0e0f3f4-fa1b-485a-8048-cae5fba02123" label="fused to the scapula" symbol="2" about="#b0e0f3f4-fa1b-485a-8048-cae5fba02123">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2102026"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0006849"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="f0e75b56-8193-4bed-88c4-d8ca8559a91b">
         <state id="39f57ff4-00d8-4dd8-8ba5-aa20bef4c93a" label="slightly produced in the dorsal portion" symbol="0"/>
         <state id="ab431004-d58b-4c26-843c-11bb0b665ac6" label="well developed and in contact with the coracoid throughout its full length" symbol="1"/>
       </states>
       <states id="40ae3ad9-02a9-435a-bb81-aff02bbbf225">
-        <state id="b5f75a4e-7535-4f4f-884b-b2955824061b" label="extending dorsally beyond the scapula" symbol="0" about="#b5f75a4e-7535-4f4f-884b-b2955824061b">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="b5f75a4e-7535-4f4f-884b-b2955824061b" label="extending dorsally beyond the scapula" symbol="0" about="#b5f75a4e-7535-4f4f-884b-b2955824061b"></state>
         <state id="a06ac146-714c-48f1-86a6-20f354f63f26" label="short, not extending beyond the scapula" symbol="1"/>
       </states>
       <states id="b90ab595-a911-4977-b071-1846a12b2cb8">
@@ -1631,14 +1731,12 @@
       </char>
       <char id="85198792-0dd2-42c4-bc53-42dd53025503" label="Angle of articulation of the posttemporal and supracleithrum with the cleithrum" about="#85198792-0dd2-42c4-bc53-42dd53025503" states="197ecf3c-f4ef-4543-b4df-f948ce648189">
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Fig. 7</meta>
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">??</meta>
       </char>
       <char id="33af1fd7-107b-4a5f-a92e-2438ee4fb0ea" label="Shape of the posttemporal" about="#33af1fd7-107b-4a5f-a92e-2438ee4fb0ea" states="b4074b90-975b-462c-9372-4f1c4ee59ad5">
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Fig. 7</meta>
       </char>
       <char id="15179c39-21ff-47e2-b206-21a5cd7f055a" label="Articulation of the first radial with the scapula" about="#15179c39-21ff-47e2-b206-21a5cd7f055a" states="0f6ea799-3e22-4b8c-ba8a-d5d771635967">
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Fig. 7</meta>
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">pectoral fin radial 1?</meta>
       </char>
       <char id="1d657699-9bc9-47fd-9d46-7ad1d11a39a8" label="Extension of the posterior laminar bone of the cleithrum" about="#1d657699-9bc9-47fd-9d46-7ad1d11a39a8" states="f0e75b56-8193-4bed-88c4-d8ca8559a91b">
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Fig. 7</meta>
@@ -3546,5 +3644,6 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t55fa9868-1fd9-4827-ab7c-9fe4dd15f325" otus="a987aba6-8eb7-4f3b-aeef-030ad3ab0e43"/>
   <trees id="t2b666a1b-5a00-4bcd-a031-f45205bee005" otus="a987aba6-8eb7-4f3b-aeef-030ad3ab0e43"/>
 </nexml>
