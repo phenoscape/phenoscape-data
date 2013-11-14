@@ -2035,7 +2035,13 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:4000164"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001590"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:4000163"/>
                   </phen:related_entity>
@@ -2162,8 +2168,34 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </polymorphic_state_set>
       </states>
       <states id="eafdf8f2-65a2-462d-b9ff-f2ae8e2437db">
-        <state id="916309b3-2969-47a0-8607-df68289b0a03" label=">15%SL " symbol="0"/>
-        <state id="2b8bfd0e-4c79-4744-b8a5-228318592843" label="&lt;15%SL " symbol="1"/>
+        <state id="916309b3-2969-47a0-8607-df68289b0a03" label=">15%SL " symbol="0" about="#916309b3-2969-47a0-8607-df68289b0a03">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="2b8bfd0e-4c79-4744-b8a5-228318592843" label="&lt;15%SL " symbol="1" about="#2b8bfd0e-4c79-4744-b8a5-228318592843">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="2e88512c-a3e6-45ee-b362-e5d75a0c706f" label="" about="#2e88512c-a3e6-45ee-b362-e5d75a0c706f" symbol="2">
           <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">in publication matrix, but not in publication character/state list</meta>
         </state>
@@ -2666,7 +2698,20 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
             </phen:phenotype>
           </meta>
         </state>
-        <state id="772ee963-0ff3-4281-a6ba-fec6594e9892" label="≤16 " symbol="1"/>
+        <state id="772ee963-0ff3-4281-a6ba-fec6594e9892" label="≤16 " symbol="1" about="#772ee963-0ff3-4281-a6ba-fec6594e9892">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="b29683a5-c0da-4549-ae02-6614aac3e636">
           <member state="6e521cb5-4256-484a-a9d0-f230161d9b3b"/>
           <member state="772ee963-0ff3-4281-a6ba-fec6594e9892"/>
@@ -2737,11 +2782,11 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>1</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001833"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -2788,11 +2833,11 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0005928"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -2803,11 +2848,11 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>1</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0005928"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -2850,11 +2895,11 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0003097"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -2865,11 +2910,11 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>1</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0003097"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -2883,7 +2928,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4000175"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/56041e49-5ce7-47ea-85e7-8be9b478b873"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462"/>
@@ -2897,7 +2942,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4000175"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/56041e49-5ce7-47ea-85e7-8be9b478b873"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467"/>
@@ -2942,20 +2987,12 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000660"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000660"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2965,20 +3002,12 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>1</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000660"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000660"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3053,7 +3082,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:0001091"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052"/>
+                  <phen:typeref about="PATO:0001979"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3067,7 +3096,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:0001091"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052"/>
+                  <phen:typeref about="PATO:0002241"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3149,7 +3178,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:2001364"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001505"/>
+                  <phen:typeref about="PATO:0000651"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2000586"/>
                   </phen:related_entity>
@@ -3202,7 +3231,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:2000557"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001505"/>
+                  <phen:typeref about="PATO:0000651"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2002067"/>
                   </phen:related_entity>
@@ -3221,11 +3250,11 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>2</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2002078"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3236,11 +3265,11 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>1</phen:description>
+                <phen:description/>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2002078"/>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
                   <phen:typeref about="PATO:0000070"/>
                 </phen:quality>
               </phen:phenotype_character>
@@ -3398,7 +3427,15 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:0002358"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000014"/>
+                  <phen:typeref about="PATO:0000328"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002358"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000964"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3412,7 +3449,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
                   <phen:typeref about="UBERON:0002358"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000014"/>
+                  <phen:typeref about="PATO:0000317"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3720,8 +3757,48 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         </state>
       </states>
       <states id="793daad5-7cc5-4b78-ad15-85f54c3748e2">
-        <state id="2084f5d7-c789-4585-ae2c-40992957a58e" label="autogenous" symbol="0"/>
-        <state id="41b48cc4-a5b4-4279-8a8b-004b26b9c391" label="fused" symbol="1"/>
+        <state id="2084f5d7-c789-4585-ae2c-40992957a58e" label="autogenous" symbol="0" about="#2084f5d7-c789-4585-ae2c-40992957a58e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000557"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002316"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000557"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2002078"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="41b48cc4-a5b4-4279-8a8b-004b26b9c391" label="fused" symbol="1" about="#41b48cc4-a5b4-4279-8a8b-004b26b9c391">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000557"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2002078"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <char id="43ee9dae-07b6-4e74-98ff-faa64814b356" label="Head length" states="b7452d7c-74c7-4f36-9c01-b04f7b0aeb71"/>
       <char id="2fc56486-07df-45cd-af3e-81219f577197" label="Head width " states="6331a90c-9675-4cd3-9e92-60feb7fced95"/>
@@ -3814,30 +3891,23 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Kido (1988), fig. 17, pp. 154-157.</meta>
       </char>
       <char id="181ba390-19a8-4f89-904a-1a79317c5174" label="Preural centrum 1: Fused/not fused to upper hypural plate" about="#181ba390-19a8-4f89-904a-1a79317c5174" states="a800d3fd-661f-41e6-bf64-c94078bc66d6">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? Add upper hypural plate as a synonym of upper hypural set.</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Kido (1988), fig. 17, pp. 154-157.</meta>
       </char>
       <char id="9c716ec0-e9ba-4505-af5a-d4030c03896e" label="1 or 2 hypural plates" about="#9c716ec0-e9ba-4505-af5a-d4030c03896e" states="0854bf85-8e66-4c94-a737-2beaa878830a">
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Kido (1988), fig. 17, pp. 154-157.</meta>
       </char>
-      <char id="95e1d7a9-2d5b-48c5-a917-160f8a5950e5" label="Naked/prickles/spines/tubercles" about="#95e1d7a9-2d5b-48c5-a917-160f8a5950e5" states="25071fcd-0086-49e1-b2fd-46c0786cfc26">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Ask author.</meta>
-      </char>
+      <char id="95e1d7a9-2d5b-48c5-a917-160f8a5950e5" label="Naked/prickles/spines/tubercles" about="#95e1d7a9-2d5b-48c5-a917-160f8a5950e5" states="25071fcd-0086-49e1-b2fd-46c0786cfc26"></char>
       <char id="879ee363-3bbe-47bc-8351-4a0ac0cbabb5" label="Half silvery eye" states="2691d5a7-1d7e-4b40-9cf8-14b0dc42ca13"/>
       <char id="935c0b8a-9d44-4655-b3eb-d53810158e07" label="Otolith sulcus" about="#935c0b8a-9d44-4655-b3eb-d53810158e07" states="82473536-1b26-42bb-ba7e-436b7f7c7e5c">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? New term required</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Stein and Fitch (1984), fig. 2, pp. 80-82.</meta>
       </char>
       <char id="40b4ee66-9bc6-416c-b5e5-b52bcaa8ea57" label="Ostial part of sulcus " about="#40b4ee66-9bc6-416c-b5e5-b52bcaa8ea57" states="83ed331d-dfae-4ca2-8177-5b21f86117cc">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? New term required</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Härkönen (1986), pp. 16-18, pp. 158-159, pl. 53; Morrow (1979), p. 2, pl. I, pl. IX-X; Stein and Fitch (1984), fig. 2, pp. 80-82.</meta>
       </char>
       <char id="1047eb4c-bb35-42b1-8f12-c63b0eb4f7f8" label="Otolith sulcus with superior cristae" about="#1047eb4c-bb35-42b1-8f12-c63b0eb4f7f8" states="b6951156-46be-47c9-9238-ec7adc50e683">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? New term required</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Härkönen (1986), pp. 16-18, pp. 158-159, pl. 53; Morrow (1979), p. 2, pl. I, pl. IX-X; Stein and Fitch (1984), fig. 2, pp. 80-82.</meta>
       </char>
       <char id="50794c13-3bc8-4963-acfe-7866fb2d62e0" label="Otolith sulcus with inferior cristae" about="#50794c13-3bc8-4963-acfe-7866fb2d62e0" states="ec2113ff-f008-48bb-a74d-c24258cd543b">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">? New term required</meta>
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Härkönen (1986), pp. 16-18, pp. 158-159, pl. 53; Morrow (1979), p. 2, pl. I, pl. IX-X; Stein and Fitch (1984), fig. 2, pp. 80-82.</meta>
       </char>
       <char id="0980f271-9a81-4874-a420-b6cf1041f99f" label="Color, stomach" about="#0980f271-9a81-4874-a420-b6cf1041f99f" states="c68e6545-fc51-42bc-a13d-316570ff16c1"/>
@@ -6190,7 +6260,7 @@ Added polymorphs. A state '2' exists for characters 35, 36, 37, and 39 in the pu
       </row>
     </matrix>
   </characters>
-  <trees id="t53d2079d-9b0b-41bd-9e67-a18a4b1500cb" otus="687b5cff-fe89-4027-bc02-c216fa223ad3"/>
+  <trees id="t768cdace-a503-4f36-ac21-9775d039a61e" otus="687b5cff-fe89-4027-bc02-c216fa223ad3"/>
   <trees id="t1880a688-20a5-4e21-b2fe-bcdcf3ef2e60" otus="687b5cff-fe89-4027-bc02-c216fa223ad3"/>
   <trees id="t6185822a-1909-4e4f-9775-922efd88ca6a" otus="687b5cff-fe89-4027-bc02-c216fa223ad3"/>
 </nexml>

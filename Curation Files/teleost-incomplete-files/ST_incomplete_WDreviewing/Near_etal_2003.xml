@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Sandrine Tercerie</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000087</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">doi:10.1016/S1055-7903(03)00029-0.
@@ -225,36 +225,8 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
         </state>
       </states>
       <states id="013b2416-e14b-43b8-b8da-b9cdc7f27913">
-        <state id="00db97ad-ff27-48ca-b0b6-b4d2a8202cee" label="well-developed, no. of scales more than 20" symbol="0" about="#00db97ad-ff27-48ca-b0b6-b4d2a8202cee">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:description>> 20</phen:description>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001824"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="7785f5e5-d486-46be-a083-3968cc626b13" label="reduced, no. of scales no more than 20" symbol="1" about="#7785f5e5-d486-46be-a083-3968cc626b13">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:description>≤ 20</phen:description>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001824"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="00db97ad-ff27-48ca-b0b6-b4d2a8202cee" label="well-developed, no. of scales more than 20" symbol="0" about="#00db97ad-ff27-48ca-b0b6-b4d2a8202cee"></state>
+        <state id="7785f5e5-d486-46be-a083-3968cc626b13" label="reduced, no. of scales no more than 20" symbol="1" about="#7785f5e5-d486-46be-a083-3968cc626b13"></state>
       </states>
       <states id="f7a0e34e-a46f-4726-95a8-87e8e010b89c">
         <state id="1841c27e-2980-4fc1-bfe4-2e04f533ea3c" label="bordered, or overlapping" symbol="0" about="#1841c27e-2980-4fc1-bfe4-2e04f533ea3c">
@@ -312,10 +284,7 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
                   <phen:typeref about="UBERON:2001778"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117"/>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:2001777"/>
-                  </phen:related_entity>
+                  <phen:typeref about="PATO:0000573"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -329,10 +298,7 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
                   <phen:typeref about="UBERON:2001777"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117"/>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:2001778"/>
-                  </phen:related_entity>
+                  <phen:typeref about="PATO:0000573"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -572,7 +538,7 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
+                  <phen:typeref about="PATO:0000117"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -583,24 +549,10 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="GO:0016020">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0000152"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
                   <phen:typeref about="UBERON:0000152"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052"/>
+                  <phen:typeref about="PATO:0002219"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -893,7 +845,7 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0003097"/>
+                  <phen:typeref about="UBERON:4100014"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000140"/>
@@ -1040,8 +992,48 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
         </state>
       </states>
       <states id="016bf686-3b45-4368-a5f0-8f76eccdcd60">
-        <state id="1dfa15d4-26c7-4544-9a6d-5ee7f3ea1b6d" label="not enlarged" symbol="0"/>
-        <state id="3a65524b-1d55-4983-ba92-ffe61d850efe" label="enlarged, sail-like shape" symbol="1"/>
+        <state id="1dfa15d4-26c7-4544-9a6d-5ee7f3ea1b6d" label="not enlarged" symbol="0" about="#1dfa15d4-26c7-4544-9a6d-5ee7f3ea1b6d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200023"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000586"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="3a65524b-1d55-4983-ba92-ffe61d850efe" label="enlarged, sail-like shape" symbol="1" about="#3a65524b-1d55-4983-ba92-ffe61d850efe">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200023"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200023"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001875"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="e8344247-87bc-471f-b807-d32188785ed8">
         <state id="0b24de23-b418-41e1-8c81-b65f33267415" label="crenulated" symbol="0" about="#0b24de23-b418-41e1-8c81-b65f33267415">
@@ -2172,13 +2164,9 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
       <char id="91d9134e-a886-48e7-9c21-e0f30358fee2" label="Tubular lateral line scales" states="1a1f8707-cb82-448b-aef7-436679f2ff11"/>
       <char id="3f388916-f555-4350-88b9-80ecb9393ef5" label="Pelvic fin" states="9808a68f-45e5-498d-9182-75b60146a784"/>
       <char id="c6c8f725-3ca5-4d71-8c1e-e052a3a8b622" label="Pterosphenoid" states="c14a8bbc-6a0d-43bf-a365-c9c65fcbc1f0"/>
-      <char id="bcb0bdd3-6e7c-4617-a833-8ab224af17a7" label="Anterior branch of median lateral line" about="#bcb0bdd3-6e7c-4617-a833-8ab224af17a7" states="013b2416-e14b-43b8-b8da-b9cdc7f27913">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">How to annotate it? Need new term?</meta>
-      </char>
+      <char id="bcb0bdd3-6e7c-4617-a833-8ab224af17a7" label="Anterior branch of median lateral line" about="#bcb0bdd3-6e7c-4617-a833-8ab224af17a7" states="013b2416-e14b-43b8-b8da-b9cdc7f27913"></char>
       <char id="f8d73db8-136e-4097-8a20-92379c6579a6" label="Ectopterygoid-quadrate" states="f7a0e34e-a46f-4726-95a8-87e8e010b89c"/>
-      <char id="415c1947-3be9-4ba3-8a5e-2070103784e7" label="Pelvic fin" about="#415c1947-3be9-4ba3-8a5e-2070103784e7" states="fec61050-2548-4b3b-b7fe-45d8468d8f4d">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">ok?</meta>
-      </char>
+      <char id="415c1947-3be9-4ba3-8a5e-2070103784e7" label="Pelvic fin" about="#415c1947-3be9-4ba3-8a5e-2070103784e7" states="fec61050-2548-4b3b-b7fe-45d8468d8f4d"></char>
       <char id="20991dac-e8bc-460d-9582-e2d40d33d286" label="Number of caudal vertebrae" states="1a1d031c-8768-4163-b48f-3b40b54bfdc1"/>
       <char id="6b791027-9435-45f9-b4d3-18b3ddb3b2e9" label="Third hypobranchial" states="aafa4a6b-b141-4ddc-83af-b4ec1d2da0bd"/>
       <char id="8af9042e-bab1-4389-a735-7108f116aec4" label="Posterior subopercle" states="c99d99b7-fb9b-4fd8-9719-70476713f403"/>
@@ -2201,9 +2189,7 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
       </char>
       <char id="2cc2ae9a-0e56-4115-b63b-8eec8cbec413" label="Pelvic fin rays" states="36a5bcea-17f7-47ee-8036-3267b7ba9f9f"/>
       <char id="317d3247-c276-47da-a154-ad658f9ab915" label="Tubular scales in dorsal lateral line" states="677f450a-b800-4351-9f65-1fa69655616e"/>
-      <char id="23e56ea8-ba47-446f-b174-0751bab661cf" label="First dorsal fin" about="#23e56ea8-ba47-446f-b174-0751bab661cf" states="016bf686-3b45-4368-a5f0-8f76eccdcd60">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">New term "dorsal fin 1" needed?</meta>
-      </char>
+      <char id="23e56ea8-ba47-446f-b174-0751bab661cf" label="First dorsal fin" about="#23e56ea8-ba47-446f-b174-0751bab661cf" states="016bf686-3b45-4368-a5f0-8f76eccdcd60"></char>
       <char id="302fbc14-f171-438d-81db-087c562a1687" label="Posterior margin of orbit" states="e8344247-87bc-471f-b807-d32188785ed8"/>
       <char id="49591243-f66b-4d86-857d-590970499638" label="Spines on sub- and interopercle" about="#49591243-f66b-4d86-857d-590970499638" states="767272f7-4322-48fb-84f9-929061e30432">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">new term "spine" needed?</meta>
@@ -3275,4 +3261,5 @@ Checked for polymorphs. There were none. AB 10/18/12</meta>
       </row>
     </matrix>
   </characters>
+  <trees id="t43b394ca-29dd-44bc-99b2-76644eb922dd" otus="fa1566fb-cca7-4f18-8173-2c315ff3966e"/>
 </nexml>
