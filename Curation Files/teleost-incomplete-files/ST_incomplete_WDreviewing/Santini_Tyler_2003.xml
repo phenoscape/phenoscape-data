@@ -10911,6 +10911,14 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
+                  <phen:typeref about="UBERON:4300012"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
                   <phen:typeref about="UBERON:4000164"/>
                 </phen:bearer>
                 <phen:quality>
@@ -10927,16 +10935,10 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000074">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2000178"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:2000178"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001925"/>
+                  <phen:typeref about="PATO:0000052"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -10947,16 +10949,10 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000074">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2000178"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:2000178"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001925"/>
+                  <phen:typeref about="PATO:0000052"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -11542,7 +11538,7 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
                   <phen:typeref about="UBERON:2001560"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="PATO:0000642"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001561"/>
                   </phen:related_entity>
@@ -11551,41 +11547,6 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001562"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:2001563"/>
-                  </phen:related_entity>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001560"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001561"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001562"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001563"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467"/>
@@ -12846,8 +12807,46 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
         <state id="196eb7da-7c0b-4472-a67e-7fdefd5db568" label="not applicable" symbol="–"/>
       </states>
       <states id="fc968862-fa6a-4938-83cd-b035a350d8be">
-        <state id="221e3c4b-effb-4048-98c2-3d97d49dfae2" label="present" symbol="0"/>
-        <state id="1f2e749a-1440-4600-b2ea-17a06ff88098" label="absent" symbol="1"/>
+        <state id="221e3c4b-effb-4048-98c2-3d97d49dfae2" label="present" symbol="0" about="#221e3c4b-effb-4048-98c2-3d97d49dfae2">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002053">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000178"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="1f2e749a-1440-4600-b2ea-17a06ff88098" label="absent" symbol="1" about="#1f2e749a-1440-4600-b2ea-17a06ff88098">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002053">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000178"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="6e4f691a-4a3a-4032-b6fc-46207d80c2b6" label="not applicable" symbol="–"/>
       </states>
       <states id="040a93c7-a991-4b06-86a0-4f67d8334320">
@@ -13028,20 +13027,12 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>3≤</phen:description>
+                <phen:description>≥3</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:4000173"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:4000173"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -13057,14 +13048,6 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:4000173"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -14733,9 +14716,7 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
       <char id="717feef0-e13c-4b1a-ab25-05ef834b4fa8" label="Caudal fin" about="#717feef0-e13c-4b1a-ab25-05ef834b4fa8" states="855e5bcc-209a-49dd-8be6-c7430a0705f0">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">term "pseudocaudal fin" needed</meta>
       </char>
-      <char id="f2db7808-17f0-4b83-afeb-c2dc7bb2ffc6" label="Caudal peduncle indentation" about="#f2db7808-17f0-4b83-afeb-c2dc7bb2ffc6" states="8d284fd2-e746-4f39-af19-908b7449551d">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">fix</meta>
-      </char>
+      <char id="f2db7808-17f0-4b83-afeb-c2dc7bb2ffc6" label="Caudal peduncle indentation" about="#f2db7808-17f0-4b83-afeb-c2dc7bb2ffc6" states="8d284fd2-e746-4f39-af19-908b7449551d"></char>
       <char id="eda3ddab-aad5-4cc6-b30b-15090d8e60bf" label="Number of caudal peduncle vertebrae (those behind the last vertebra whose haemal spine supports an anal-fin pterygiophore)" states="c13afc68-c7d9-424e-b0c5-3a3970cbf783"/>
       <char id="b36803d3-b63a-4667-8035-8fb11786a1c5" label="Caudal-fin shape" states="74a26f1e-69ff-49bb-9bf5-a9e95f2e2d1a"/>
       <char id="b1e979df-9ab1-4700-b52e-e38d93d79ec3" label="Caudal fin, procurrent rays" states="29d8fd15-fbbf-4516-bb3a-8018105200ed"/>
@@ -14772,18 +14753,14 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
       <char id="da586a67-1049-4faa-94e5-a049b73be134" label="Carapace" about="#da586a67-1049-4faa-94e5-a049b73be134" states="2b6b3444-8f66-43b4-9299-8bcbbf02369f">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">E: new term "carapace"? ask author.</meta>
       </char>
-      <char id="68ddd9aa-688a-456b-b51d-69f5393ef63f" label="Isolated plates on caudal peduncle behind carapace" about="#68ddd9aa-688a-456b-b51d-69f5393ef63f" states="fc968862-fa6a-4938-83cd-b035a350d8be">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">don't know how to annotate</meta>
-      </char>
+      <char id="68ddd9aa-688a-456b-b51d-69f5393ef63f" label="Isolated plates on caudal peduncle behind carapace" about="#68ddd9aa-688a-456b-b51d-69f5393ef63f" states="fc968862-fa6a-4938-83cd-b035a350d8be"></char>
       <char id="4e97d3ab-7103-42bf-b155-7d224c629536" label="Sheath of scaly skin along soft dorsal fin" about="#4e97d3ab-7103-42bf-b155-7d224c629536" states="040a93c7-a991-4b06-86a0-4f67d8334320"/>
       <char id="004f7aaa-6e71-4f6f-99c9-ebbba811c1f9" label="Sheath of scaly skin along anal fin" about="#004f7aaa-6e71-4f6f-99c9-ebbba811c1f9" states="30c0e724-10bf-4779-9b9c-ac1a9aa84c66"/>
       <char id="78d2a26a-9d4e-400f-b0e1-35482ffcf334" label="Inflatable diverticulum of gut" about="#78d2a26a-9d4e-400f-b0e1-35482ffcf334" states="366904cd-ab9a-42ca-b925-74be11cdeac9"></char>
       <char id="72455d92-e91f-460b-861e-de2894e95f42" label="Peritoneum" states="6c2a7e3a-8c98-40f2-9da7-f6b704302dd1"/>
       <char id="0c9f36d4-74ed-4a58-bd87-600a259d9b65" label="Air bladder" about="#0c9f36d4-74ed-4a58-bd87-600a259d9b65" states="7de60f5d-20ad-4e98-aa90-7dc79a691b99"/>
       <char id="21ac79d7-8cdd-4e15-a413-60daa4aec771" label="Branchiostegal rays" states="d2d1dee2-db88-4736-b126-1f92120cf16c"/>
-      <char id="77ad18a6-8604-446d-8e4c-57fec4b47575" label="Pelvic-fin rays, when present as free elements, and not as specialized flexible elements surrounded by modified encasing scales" about="#77ad18a6-8604-446d-8e4c-57fec4b47575" states="cef2edfd-88c3-4c33-ae5a-a7ad49261a52">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">??</meta>
-      </char>
+      <char id="77ad18a6-8604-446d-8e4c-57fec4b47575" label="Pelvic-fin rays, when present as free elements, and not as specialized flexible elements surrounded by modified encasing scales" about="#77ad18a6-8604-446d-8e4c-57fec4b47575" states="cef2edfd-88c3-4c33-ae5a-a7ad49261a52"></char>
       <char id="ce807fa0-2ff7-43df-b464-3a72462311e8" label="Actinosts, number" about="#ce807fa0-2ff7-43df-b464-3a72462311e8" states="b6299adf-b3ce-4141-86dc-f1d1038ca317"/>
       <char id="1c574588-8471-45a3-bc25-9a2a2aa79b18" label="Pectoral-fin rays" states="27363976-224f-48c6-baa1-5d07692b2bea"/>
       <char id="81552c60-afc1-41e3-afe5-e1cc1e0c6173" label="Abdominal vertebrae" states="663bb957-2728-4222-addb-711a3eaf7e92"/>
@@ -21688,7 +21665,7 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
       </row>
     </matrix>
   </characters>
-  <trees id="t2c369187-aa1c-4fdc-9cce-1466062d1594" otus="59e35b29-d574-4014-a90b-3d697820db0f"/>
+  <trees id="t93084946-1e28-4484-8783-534278d1b1a9" otus="59e35b29-d574-4014-a90b-3d697820db0f"/>
   <trees id="te3a5d421-3f32-45f2-9577-fda986e9c455" otus="59e35b29-d574-4014-a90b-3d697820db0f"/>
   <trees id="t14a3add3-c8fa-47f4-a59d-2641982b9c54" otus="59e35b29-d574-4014-a90b-3d697820db0f"/>
 </nexml>
