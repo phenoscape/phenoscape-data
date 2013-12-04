@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Richard L. Mayden</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000060</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Sanger, T. J., &amp; McCune, A. R. (2002). Comparative osteology of the Danio (Cyprinidae: Ostariophysi) axial skeleton with comments on Danio relationships based on molecules and morphology. Zoological Journal of the Linnean Society, 135(4), 529–546.</meta>
+    <meta xsi:type="LiteralMeta" property="ter:identifier">10.1046/j.1096-3642.2002.00014.x</meta>
+  </meta>
   <otus id="6d057b5b-d00f-48fb-9e06-7233f7c26d16">
     <otu id="58858a81-0383-4377-92ed-096d36da1466" label="Danio aequipinnatus" about="#58858a81-0383-4377-92ed-096d36da1466">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0039451"/>
@@ -1113,4 +1117,5 @@
       <row id="ed18c501-8e88-4629-8e14-17d103822645" otu="6ad8d2f8-3d39-4719-b463-94130cf332fe"/>
     </matrix>
   </characters>
+  <trees id="td7ba951b-9373-47a0-8eae-34596d7bca76" otus="6d057b5b-d00f-48fb-9e06-7233f7c26d16"/>
 </nexml>

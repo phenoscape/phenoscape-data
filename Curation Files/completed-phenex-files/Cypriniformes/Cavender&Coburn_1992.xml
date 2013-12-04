@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Richard L. Mayden; Jeffrey Engeman</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000015</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Taxon list: Miles Coburn
@@ -7,6 +7,9 @@
 Curation notes:
 yes, completed 7/23/08 CRM - 2 matrices - present in pub - replied 7/08/08 - electronic matrix not available.  email request sent 7/8/08 - Both matrices are completed.  The matrix on page 303 was renumbered (character 7 renumbered as 6, character 13 renumbered as 10, character 24A as 21, character 34A as 28, etc...).     From Coburn: "Sorry for the confusion on Table 4. Here's the explanation. Table 1 and the appendix are Cavender and Coburn's data set. We drew heavily on 25 of Chen et al.'s (1984) characters (re-interpreting three and reversing their polarity). We thought it was important to show their data since the paper was in Chinese and not widely available. So, Table 4 is the data set of Chen et al. with a couple of modifcations. We added characters 1-4 from Siebert (1987) to define cyprinids relative to the outgroup (you'll notice that each cyprinid ingroup taxon is coded 1 for characters 1 through 4, while the outgroup is 0). Characters 24A and 34A are autapomorphies (and therefore not informative in the PAUP analysis and not included in the appendix)--the table legend contains an explanation. The odd numbering pattern of the characters reflects their occurence in the Cavender and Coburn matrix (Table 1), which in turn is ordered by body region, resulting in numbering gaps in Table 4 where our characters occur in Table 1 (for example, character 6). Chen et al.'s characters are designated in the appendix by a "+" in front of the character number, and those numbers should match the character numbers in Table 4 (I noticed that character 9 in the appendix should have a + but doesn't; I think everything else matches). Similarly, Figure 9 is the strict consensus tree resulting from the PAUP analysis of Chen et al.'s dataset."
 Miles Coburn</meta>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Cavender, T., &amp; Coburn, M. (1992). Phylogenetic Relationships of North American Cyprinidae. In R. Mayden (Ed.), Systematics, Historical Ecology, and North American Freshwater Fishes (pp. 293–327).</meta>
+  </meta>
   <otus id="393ac25a-a90e-43d5-9b58-eb87fcca0e93">
     <otu id="a832e2dd-a427-496c-a6c0-e12481f30c21" label="Acrocheilus alutaceus" about="#a832e2dd-a427-496c-a6c0-e12481f30c21">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0040484"/>
@@ -16228,4 +16231,5 @@ Miles Coburn</meta>
       </row>
     </matrix>
   </characters>
+  <trees id="t10f09dfc-07dd-441a-aa2c-562ff8250abd" otus="393ac25a-a90e-43d5-9b58-eb87fcca0e93"/>
 </nexml>
