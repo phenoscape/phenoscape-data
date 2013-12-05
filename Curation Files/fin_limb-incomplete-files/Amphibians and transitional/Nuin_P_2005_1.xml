@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -584,9 +584,48 @@
         </state>
       </states>
       <states id="533d5283-48bb-4d8f-b623-4cc833cc3a84">
-        <state id="8b9201df-2816-42cd-bdc8-2032c53e0af3" label="membrane present" symbol="0"/>
-        <state id="c99867b4-db0b-4bfa-89bf-59bfcf0421b3" label="membrane not present" symbol="1"/>
-        <state id="f5b689ed-f36f-4e08-89a7-2aa0135be3e9" label="lateral fringe present" symbol="2"/>
+        <state id="8b9201df-2816-42cd-bdc8-2032c53e0af3" label="membrane present" symbol="0" about="#8b9201df-2816-42cd-bdc8-2032c53e0af3">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006015"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="c99867b4-db0b-4bfa-89bf-59bfcf0421b3" label="membrane not present" symbol="1" about="#c99867b4-db0b-4bfa-89bf-59bfcf0421b3">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006015"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="f5b689ed-f36f-4e08-89a7-2aa0135be3e9" label="lateral fringe present" symbol="2" about="#f5b689ed-f36f-4e08-89a7-2aa0135be3e9">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006015"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="c4e1880f-7566-4067-9a14-9e91bc0e0caa">
         <state id="a483b04a-ee11-4531-811c-7ed5fcdc905f" label="posterior subexternal^nadductor mandibular and superficial external adductor^nmandibular muscles present [?s + e? (Starret, 1968)]" symbol="0"/>
@@ -761,7 +800,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/00de8892-a538-450f-bb2c-131a0eb235be"/>
+                  <phen:typeref about="PATO:0002485"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -2437,4 +2476,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t65243935-d5d0-4b05-9fe1-0dfd82267161" otus="5f9909d7-34bf-4cc1-8701-e5ccf619638c"/>
 </nexml>
