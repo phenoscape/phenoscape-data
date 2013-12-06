@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -304,6 +304,10 @@
         <state id="2465b296-08d3-4938-9e55-b78431bd1077" label="absent" symbol="0"/>
         <state id="3c4bb15d-5368-463b-b21b-e44151ce2fc0" label="present" symbol="1"/>
         <state id="6435a7b5-3d0f-4ded-ba46-c45198c2af88" label="" symbol="a"/>
+        <uncertain_state_set id="04450cf2-0e44-4a2c-8b00-22f30bf204ed">
+          <member state="3c4bb15d-5368-463b-b21b-e44151ce2fc0"/>
+          <member state="2465b296-08d3-4938-9e55-b78431bd1077"/>
+        </uncertain_state_set>
       </states>
       <states id="68bfb481-b04c-4215-89ad-fd7fc9b39da8">
         <state id="d8aa9611-1bdd-40a3-85c0-9156a3c0b206" label="clearly paired" symbol="0"/>
@@ -332,18 +336,30 @@
         <state id="0d61bdf2-78ce-4e07-9669-23a72fae7d2e" label="no contact between the nasal and frontoparietal" symbol="0"/>
         <state id="61178fd8-54e4-4bd3-aaa0-3de4916752c0" label="contacts the anterior edge of the frontoparietal" symbol="1"/>
         <state id="1f047ae1-360f-40a7-b444-faf2f9bb8d36" label="" symbol="a"/>
+        <uncertain_state_set id="f948b952-5342-420b-b583-0a2906a2d3d7">
+          <member state="0d61bdf2-78ce-4e07-9669-23a72fae7d2e"/>
+          <member state="61178fd8-54e4-4bd3-aaa0-3de4916752c0"/>
+        </uncertain_state_set>
       </states>
       <states id="d0bb87dc-8891-4861-b1a7-fe0e0eff58f7">
         <state id="cb9119f8-96cc-4b78-91f0-19ff176d5f17" label="contact between the paired nasal bones" symbol="0"/>
         <state id="bb8af1db-11dc-4aa6-8e6c-dc6c1ccd70bf" label="do not contact one another medially" symbol="1"/>
         <state id="ee4a19ad-d206-43e7-bc36-80762b62fc0c" label="fused" symbol="2"/>
         <state id="72f605ae-aec2-49cc-a332-0c015e231e3e" label="" symbol="a"/>
+        <uncertain_state_set id="855df56c-1a5c-4604-9a93-d4480b67977d">
+          <member state="cb9119f8-96cc-4b78-91f0-19ff176d5f17"/>
+          <member state="bb8af1db-11dc-4aa6-8e6c-dc6c1ccd70bf"/>
+        </uncertain_state_set>
       </states>
       <states id="b3e956d4-879c-4e24-882c-f23cef5f954b">
         <state id="ce027fad-0b20-4b34-b368-99737991177a" label="generally are sickle-shaped, with a concave anterolateral margin that encloses the medial and posterior margins of the external choana" symbol="0"/>
         <state id="674e8da5-a9f4-4cb5-af40-b6c2918bad70" label="obtuse triangle in which the relatively straight anterolateral margin does not enclose the medial and posterior margins of the external choana" symbol="1"/>
         <state id="e6d06cab-ca22-4a89-bdd7-5bc007118d55" label="anteromedially-posterolaterally oriented rod-like structure" symbol="2"/>
         <state id="0be4bf96-dc84-4e17-9420-9109120e64c4" label="" symbol="a"/>
+        <uncertain_state_set id="f82dc796-13fd-4dea-8c7e-65deb83aba65">
+          <member state="674e8da5-a9f4-4cb5-af40-b6c2918bad70"/>
+          <member state="ce027fad-0b20-4b34-b368-99737991177a"/>
+        </uncertain_state_set>
       </states>
       <states id="a37427e8-b048-4697-8e55-4d670986ed0d">
         <state id="5dfc690c-7721-4652-8658-79b555265ff3" label="process is absent" symbol="0"/>
@@ -357,6 +373,10 @@
         <state id="bf80c093-a20c-4a13-81c6-6338a533a1f2" label="vomer does not contact the maxilla" symbol="0"/>
         <state id="053456c4-68c0-4dd9-a312-0da12927c520" label="vomer contacts the inner surface of the pars facialis of the maxilla" symbol="1"/>
         <state id="21abe903-513d-46fd-b38d-35dde93c5f76" label="" symbol="a"/>
+        <uncertain_state_set id="ccfea238-02f0-43c3-957f-90263f34f132">
+          <member state="053456c4-68c0-4dd9-a312-0da12927c520"/>
+          <member state="bf80c093-a20c-4a13-81c6-6338a533a1f2"/>
+        </uncertain_state_set>
       </states>
       <states id="82aedda9-6cc9-48e8-b0d0-8d0d544e270b">
         <state id="adbec53d-8b54-41fd-a5cd-921392e8afbb" label="present" symbol="0"/>
@@ -379,6 +399,10 @@
         <state id="5680e735-1a8b-444d-acb0-dcc4bebc5d38" label="concave posterior margin" symbol="3"/>
         <state id="afa4b29a-2874-444c-8ce0-573b5ec7ad35" label="lacks a posteromedial process" symbol="4"/>
         <state id="908fc965-96a6-4094-bc33-c374ff043301" label="" symbol="c"/>
+        <uncertain_state_set id="57a08ee5-2beb-4d2c-81ea-56a4680b5f94">
+          <member state="6197aec7-7a3a-48d1-aa77-bf453707e283"/>
+          <member state="5680e735-1a8b-444d-acb0-dcc4bebc5d38"/>
+        </uncertain_state_set>
       </states>
       <states id="79ae3c1c-b2da-477e-85d0-b181e2b47dca">
         <state id="d57f8ea0-d7b9-4ff4-bd1f-3a9aa4a3dcf0" label="imbricate" symbol="0"/>
@@ -403,11 +427,19 @@
         <state id="864d7785-180d-40e9-819f-1fea00883c5f" label="fused" symbol="1"/>
         <state id="80ecc59c-3a46-4210-a314-67789b4f0da6" label="monocondylar joint" symbol="2"/>
         <state id="d5be950b-075e-4549-8242-767d174fe3c7" label="" symbol="b"/>
+        <uncertain_state_set id="dd33ba15-edc4-4c0f-80ba-e1fdd8689eec">
+          <member state="80ecc59c-3a46-4210-a314-67789b4f0da6"/>
+          <member state="864d7785-180d-40e9-819f-1fea00883c5f"/>
+        </uncertain_state_set>
       </states>
       <states id="21766dcf-d1bc-42e6-b32e-d8d497d21782">
         <state id="74257d17-0e7c-4328-9517-ed853ffb6d73" label="lack" symbol="0"/>
         <state id="0d80cb17-fb45-482e-95b2-f1d80b3846e9" label="present" symbol="1"/>
         <state id="14c11132-f8d1-4be1-bca9-3af9f59a08d2" label="" symbol="a"/>
+        <uncertain_state_set id="326d4596-43cf-4f11-b3b3-64e86d205270">
+          <member state="0d80cb17-fb45-482e-95b2-f1d80b3846e9"/>
+          <member state="74257d17-0e7c-4328-9517-ed853ffb6d73"/>
+        </uncertain_state_set>
       </states>
       <states id="a342d1a2-2d8a-43ef-b67a-f0e24f860f62">
         <state id="8572ecbb-ee30-4177-a1f8-822c1c409190" label="scapula bears an anterior lamina" symbol="0" about="#8572ecbb-ee30-4177-a1f8-822c1c409190">
@@ -463,6 +495,10 @@
           </meta>
         </state>
         <state id="181341e9-f08a-4001-b538-88b28bf4a266" label="" symbol="a"/>
+        <uncertain_state_set id="734e9437-9ed4-43ad-a113-52629b252be8">
+          <member state="e0e84eba-a0f8-4ec8-9b86-900421872d11"/>
+          <member state="8572ecbb-ee30-4177-a1f8-822c1c409190"/>
+        </uncertain_state_set>
       </states>
       <states id="6f9fa66d-56f9-49e9-bb39-324841bf0c15">
         <state id="ea6532ff-1435-4ea8-9f6f-642277413db1" label="clavicle articulates with the anterior edge of the scapula" symbol="0" about="#ea6532ff-1435-4ea8-9f6f-642277413db1">
@@ -952,7 +988,7 @@
         <cell char="050b3dee-3415-4ed1-9c2d-6f3557113901" state="344fde44-4e99-41ef-a8c5-b6b3f6cfe5ef"/>
         <cell char="d7e00c20-2717-4d11-92cb-e59d63f2819a" state="44d1a8cc-c5c1-4d3b-a8f0-be0fcb93a175"/>
         <cell char="04cb5564-cb30-4ae4-8b0b-8999fb7ab53a" state="b765feca-2d9e-41a2-b4dd-308333d284cc"/>
-        <cell char="a578409e-355a-4922-b6de-36dc8abf1d13" state="1f047ae1-360f-40a7-b444-faf2f9bb8d36"/>
+        <cell char="a578409e-355a-4922-b6de-36dc8abf1d13" state="f948b952-5342-420b-b583-0a2906a2d3d7"/>
         <cell char="3f7496f9-db5f-4f3c-a434-07c5ffe20485" state="cb9119f8-96cc-4b78-91f0-19ff176d5f17"/>
         <cell char="4bf69402-464e-4aa8-ac20-89a441308b5e" state="ce027fad-0b20-4b34-b368-99737991177a"/>
         <cell char="23d8355e-c5df-4f75-943a-f4c169632ddd" state="5dfc690c-7721-4652-8658-79b555265ff3"/>
@@ -978,7 +1014,7 @@
         <cell char="01a770ca-e4dc-4f88-a376-5ee8820c8f83" state="bc55f67e-aff3-4213-8fea-c513a2840d65"/>
       </row>
       <row id="22213505-9e06-4357-9154-fdbb30a41c82" otu="5b582da5-3816-495f-9e5c-e07605c61fc0">
-        <cell char="541f7b0e-ba0f-47c1-aa9a-0f8195a9fe6b" state="6435a7b5-3d0f-4ded-ba46-c45198c2af88"/>
+        <cell char="541f7b0e-ba0f-47c1-aa9a-0f8195a9fe6b" state="04450cf2-0e44-4a2c-8b00-22f30bf204ed"/>
         <cell char="ed4de423-cd6a-4411-9550-2137f195a375" state="d8aa9611-1bdd-40a3-85c0-9156a3c0b206"/>
         <cell char="8acf6725-3ae9-48ea-bfb6-f98c3b7ad0a0" state="7103cbfd-7826-470d-8b13-61af4ad264e9"/>
         <cell char="050b3dee-3415-4ed1-9c2d-6f3557113901" state="344fde44-4e99-41ef-a8c5-b6b3f6cfe5ef"/>
@@ -1082,19 +1118,19 @@
         <cell char="050b3dee-3415-4ed1-9c2d-6f3557113901" state="444710b7-f061-4a57-9915-34dfc3aec92b"/>
         <cell char="d7e00c20-2717-4d11-92cb-e59d63f2819a" state="0d999ef0-53e0-41c9-b19f-bdc5eb43d786"/>
         <cell char="a578409e-355a-4922-b6de-36dc8abf1d13" state="61178fd8-54e4-4bd3-aaa0-3de4916752c0"/>
-        <cell char="3f7496f9-db5f-4f3c-a434-07c5ffe20485" state="72f605ae-aec2-49cc-a332-0c015e231e3e"/>
+        <cell char="3f7496f9-db5f-4f3c-a434-07c5ffe20485" state="855df56c-1a5c-4604-9a93-d4480b67977d"/>
         <cell char="4bf69402-464e-4aa8-ac20-89a441308b5e" state="674e8da5-a9f4-4cb5-af40-b6c2918bad70"/>
         <cell char="23d8355e-c5df-4f75-943a-f4c169632ddd" state="fefb0cc2-2738-449f-a035-f233e52d97f9"/>
         <cell char="48c9c6d5-0da6-40fd-bc9d-cb140cf4378d" state="08fc3268-178a-4a6b-902d-b6a84a4b41a9"/>
         <cell char="d8093af3-d3bf-4af9-93f9-59e1076a08a5" state="adbec53d-8b54-41fd-a5cd-921392e8afbb"/>
         <cell char="6e1de637-99d7-4731-a8ee-5a8fecef20b2" state="5269fbcd-5b9e-4ab7-8234-df2c26d1baf5"/>
         <cell char="2b797b89-7600-4772-9cc8-26fea99d9ddb" state="f8a4d1a4-03a8-46af-9f4b-4c1283a616fc"/>
-        <cell char="a18ee474-9fae-4fdc-8935-82a14f16e0c5" state="908fc965-96a6-4094-bc33-c374ff043301"/>
+        <cell char="a18ee474-9fae-4fdc-8935-82a14f16e0c5" state="57a08ee5-2beb-4d2c-81ea-56a4680b5f94"/>
         <cell char="a0746d0c-9f4c-4288-8af7-0faf91b5a6df" state="d57f8ea0-d7b9-4ff4-bd1f-3a9aa4a3dcf0"/>
         <cell char="a5f2eb4d-1008-4cae-9170-b9989cebb6e3" state="191e19e4-4a7a-4610-b2d7-ce1e4b67f733"/>
         <cell char="ef29a713-1565-47de-a63f-fb2db2c467aa" state="b1541340-2cac-4713-9733-2852a972cbc8"/>
         <cell char="dfe7ba77-58d3-44d8-a5bc-dd8aa95641f6" state="9ffe4395-5bc2-4ab3-ae51-4c473cc8577e"/>
-        <cell char="b75bd06d-dba2-48bf-9a80-22098f9230c5" state="14c11132-f8d1-4be1-bca9-3af9f59a08d2"/>
+        <cell char="b75bd06d-dba2-48bf-9a80-22098f9230c5" state="326d4596-43cf-4f11-b3b3-64e86d205270"/>
         <cell char="2aa72c42-bf5b-4c0c-90b7-f36c0fc01d1a" state="8572ecbb-ee30-4177-a1f8-822c1c409190"/>
         <cell char="c58add23-5087-4712-8cf0-c5efb039966e" state="eeb62969-ef95-458e-833e-15b8730f0540"/>
         <cell char="3a1128ca-e71d-429b-83a6-ee6f01508982" state="e5d9326e-b909-4c4f-a2ae-8ece73731b64"/>
@@ -1139,7 +1175,7 @@
         <cell char="4bf69402-464e-4aa8-ac20-89a441308b5e" state="ce027fad-0b20-4b34-b368-99737991177a"/>
         <cell char="23d8355e-c5df-4f75-943a-f4c169632ddd" state="fefb0cc2-2738-449f-a035-f233e52d97f9"/>
         <cell char="48c9c6d5-0da6-40fd-bc9d-cb140cf4378d" state="08fc3268-178a-4a6b-902d-b6a84a4b41a9"/>
-        <cell char="4ddb80c6-368b-491b-a4a1-e8db0205c372" state="21abe903-513d-46fd-b38d-35dde93c5f76"/>
+        <cell char="4ddb80c6-368b-491b-a4a1-e8db0205c372" state="ccfea238-02f0-43c3-957f-90263f34f132"/>
         <cell char="d8093af3-d3bf-4af9-93f9-59e1076a08a5" state="adbec53d-8b54-41fd-a5cd-921392e8afbb"/>
         <cell char="6e1de637-99d7-4731-a8ee-5a8fecef20b2" state="5269fbcd-5b9e-4ab7-8234-df2c26d1baf5"/>
         <cell char="2b797b89-7600-4772-9cc8-26fea99d9ddb" state="f8a4d1a4-03a8-46af-9f4b-4c1283a616fc"/>
@@ -1148,7 +1184,7 @@
         <cell char="a5f2eb4d-1008-4cae-9170-b9989cebb6e3" state="191e19e4-4a7a-4610-b2d7-ce1e4b67f733"/>
         <cell char="ef29a713-1565-47de-a63f-fb2db2c467aa" state="b1541340-2cac-4713-9733-2852a972cbc8"/>
         <cell char="dfe7ba77-58d3-44d8-a5bc-dd8aa95641f6" state="9ffe4395-5bc2-4ab3-ae51-4c473cc8577e"/>
-        <cell char="b18b9477-5af0-4cef-9ffc-2ffe0e29026a" state="d5be950b-075e-4549-8242-767d174fe3c7"/>
+        <cell char="b18b9477-5af0-4cef-9ffc-2ffe0e29026a" state="dd33ba15-edc4-4c0f-80ba-e1fdd8689eec"/>
         <cell char="b75bd06d-dba2-48bf-9a80-22098f9230c5" state="0d80cb17-fb45-482e-95b2-f1d80b3846e9"/>
         <cell char="2aa72c42-bf5b-4c0c-90b7-f36c0fc01d1a" state="8572ecbb-ee30-4177-a1f8-822c1c409190"/>
         <cell char="c58add23-5087-4712-8cf0-c5efb039966e" state="eeb62969-ef95-458e-833e-15b8730f0540"/>
@@ -1259,7 +1295,7 @@
         <cell char="04cb5564-cb30-4ae4-8b0b-8999fb7ab53a" state="b765feca-2d9e-41a2-b4dd-308333d284cc"/>
         <cell char="a578409e-355a-4922-b6de-36dc8abf1d13" state="0d61bdf2-78ce-4e07-9669-23a72fae7d2e"/>
         <cell char="3f7496f9-db5f-4f3c-a434-07c5ffe20485" state="bb8af1db-11dc-4aa6-8e6c-dc6c1ccd70bf"/>
-        <cell char="4bf69402-464e-4aa8-ac20-89a441308b5e" state="0be4bf96-dc84-4e17-9420-9109120e64c4"/>
+        <cell char="4bf69402-464e-4aa8-ac20-89a441308b5e" state="f82dc796-13fd-4dea-8c7e-65deb83aba65"/>
         <cell char="23d8355e-c5df-4f75-943a-f4c169632ddd" state="fefb0cc2-2738-449f-a035-f233e52d97f9"/>
         <cell char="48c9c6d5-0da6-40fd-bc9d-cb140cf4378d" state="5b580852-3161-462e-872f-58bc85de08cc"/>
         <cell char="4ddb80c6-368b-491b-a4a1-e8db0205c372" state="bf80c093-a20c-4a13-81c6-6338a533a1f2"/>
@@ -1272,8 +1308,8 @@
         <cell char="ef29a713-1565-47de-a63f-fb2db2c467aa" state="b1541340-2cac-4713-9733-2852a972cbc8"/>
         <cell char="dfe7ba77-58d3-44d8-a5bc-dd8aa95641f6" state="9ffe4395-5bc2-4ab3-ae51-4c473cc8577e"/>
         <cell char="b18b9477-5af0-4cef-9ffc-2ffe0e29026a" state="80ecc59c-3a46-4210-a314-67789b4f0da6"/>
-        <cell char="b75bd06d-dba2-48bf-9a80-22098f9230c5" state="14c11132-f8d1-4be1-bca9-3af9f59a08d2"/>
-        <cell char="2aa72c42-bf5b-4c0c-90b7-f36c0fc01d1a" state="181341e9-f08a-4001-b538-88b28bf4a266"/>
+        <cell char="b75bd06d-dba2-48bf-9a80-22098f9230c5" state="326d4596-43cf-4f11-b3b3-64e86d205270"/>
+        <cell char="2aa72c42-bf5b-4c0c-90b7-f36c0fc01d1a" state="734e9437-9ed4-43ad-a113-52629b252be8"/>
         <cell char="c58add23-5087-4712-8cf0-c5efb039966e" state="ea6532ff-1435-4ea8-9f6f-642277413db1"/>
         <cell char="3a1128ca-e71d-429b-83a6-ee6f01508982" state="e5d9326e-b909-4c4f-a2ae-8ece73731b64"/>
         <cell char="55b3c8fe-920f-4202-b743-5fdf99eb8914" state="3a95371c-5e85-48c5-94df-22b6ecd30da0"/>
@@ -1351,4 +1387,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t56de5982-48c9-47ce-a7bc-75cdebb73aad" otus="73c8ea38-d681-42d5-892a-61d1734e8ab1"/>
 </nexml>
