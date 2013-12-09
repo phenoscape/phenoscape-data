@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Sandrine Tercerie</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000096</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Both tables 3 and 5 (containing both matrices present in this paper) have been merged in one file, as table 5 shows phylogenetic characters for the five notothenioid families and table 3 shows characters for one of these families, the Channichthyidae family.  
@@ -7,6 +7,10 @@ The 26 first characters concerns notothenioid families and the following 17 char
 => 43 characters in all.
 
 Added polymorphs. AB 10/18/12</meta>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Iwami, T. (1985). Osteology and relationships of the family Channichthyidae. Memoirs of the National Institute of Polar Research, 36, 1–69.</meta>
+    <meta xsi:type="LiteralMeta" property="ter:title">Iwami, T. (1985)</meta>
+  </meta>
   <otus id="cfff3f5a-7b19-46de-aebc-e4f991b6f2cf">
     <otu id="a3bfc095-56f2-4ea6-a836-d3deb73d175b" label="Bovichthys variegatus" about="#a3bfc095-56f2-4ea6-a836-d3deb73d175b">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0043730"/>
@@ -767,8 +771,8 @@ Added polymorphs. AB 10/18/12</meta>
         </state>
       </states>
       <states id="367def34-f973-43c8-b489-332c517671df">
-        <state id="1b480f8f-cdf1-402f-81ae-94bc9fda40b1" label="ossified" symbol="0" about="#1b480f8f-cdf1-402f-81ae-94bc9fda40b1"></state>
-        <state id="bd2ef7e5-5c4e-4da1-a602-de013861c933" label="cartilaginous" symbol="1" about="#bd2ef7e5-5c4e-4da1-a602-de013861c933"></state>
+        <state id="1b480f8f-cdf1-402f-81ae-94bc9fda40b1" label="ossified" symbol="0" about="#1b480f8f-cdf1-402f-81ae-94bc9fda40b1"/>
+        <state id="bd2ef7e5-5c4e-4da1-a602-de013861c933" label="cartilaginous" symbol="1" about="#bd2ef7e5-5c4e-4da1-a602-de013861c933"/>
         <polymorphic_state_set id="cc13dd86-fbe1-4feb-8752-1d2353d55a19">
           <member state="1b480f8f-cdf1-402f-81ae-94bc9fda40b1"/>
           <member state="bd2ef7e5-5c4e-4da1-a602-de013861c933"/>
@@ -1383,11 +1387,11 @@ Added polymorphs. AB 10/18/12</meta>
       <char id="47540ab4-1569-41db-b5df-5df6af806b1c" label="Coracoid-uppermost radial" about="#47540ab4-1569-41db-b5df-5df6af806b1c" states="fb2a2abc-72c2-4248-b685-063c0294c0e4">
         <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:inFigure">Figs. 165-172</meta>
       </char>
-      <char id="b58f2736-c366-490c-ad2c-f5edb17ba1d2" label="First dorsal fin" about="#b58f2736-c366-490c-ad2c-f5edb17ba1d2" states="b9cd125b-f2a5-476a-a769-ca4e111f4b79"></char>
-      <char id="f3721b4e-9495-427a-a983-65ab45d5b3f3" label="Nostril" about="#f3721b4e-9495-427a-a983-65ab45d5b3f3" states="8d8d01ef-58b0-4ee9-8150-e8afcfc5ebe2"></char>
+      <char id="b58f2736-c366-490c-ad2c-f5edb17ba1d2" label="First dorsal fin" about="#b58f2736-c366-490c-ad2c-f5edb17ba1d2" states="b9cd125b-f2a5-476a-a769-ca4e111f4b79"/>
+      <char id="f3721b4e-9495-427a-a983-65ab45d5b3f3" label="Nostril" about="#f3721b4e-9495-427a-a983-65ab45d5b3f3" states="8d8d01ef-58b0-4ee9-8150-e8afcfc5ebe2"/>
       <char id="f1fff51e-cd88-4714-ad3d-bec6eb99d28c" label="Mental barbel" states="bdff22f8-e42a-4b6a-bad9-7fd1c5d18a55"/>
       <char id="516f8db0-5917-4821-beb8-7896cadbf8b1" label="Swim bladder" states="66150859-13d8-4223-ab8f-e260589bb298"/>
-      <char id="20116a47-0f5f-4783-b4ea-ba5893f08eae" label="Haemoglobin" about="#20116a47-0f5f-4783-b4ea-ba5893f08eae" states="bab0db59-c54c-4505-aa4e-d647e6cb047c"></char>
+      <char id="20116a47-0f5f-4783-b4ea-ba5893f08eae" label="Haemoglobin" about="#20116a47-0f5f-4783-b4ea-ba5893f08eae" states="bab0db59-c54c-4505-aa4e-d647e6cb047c"/>
     </format>
     <matrix>
       <row id="a0cd5cf2-7d17-4aa8-a652-e2c8ab078384" otu="a3bfc095-56f2-4ea6-a836-d3deb73d175b">
@@ -2512,5 +2516,6 @@ Added polymorphs. AB 10/18/12</meta>
       </row>
     </matrix>
   </characters>
+  <trees id="te08607e1-98d8-48dc-95f6-9781ddbb1907" otus="cfff3f5a-7b19-46de-aebc-e4f991b6f2cf"/>
   <trees id="t20c9c844-248d-4df0-bb96-5f63560db77d" otus="cfff3f5a-7b19-46de-aebc-e4f991b6f2cf"/>
 </nexml>

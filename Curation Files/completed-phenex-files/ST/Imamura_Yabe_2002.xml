@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Sandrine Tercerie</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000092</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">This publication re-examined 162 "scorpaeniforms" listed in Yabe (1985) and Imamura (1996). Additional specimens, including larvae, are listed in this publication. Normanichthyid specimens examined are listed in Yabe and Uyeno (1996).
@@ -7,6 +7,10 @@
 Both tables 1 and 2 have been merged in one file, as both matrices compare the same characters for two taxonomic groups (Cottoid lineage in Table 1 and Zoarcoidei suborder in Table 2).
 
 Added polymorphs. AB 10/18/12</meta>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Imamura, H., &amp; Yabe, M. (2002). Demise of the Scorpaeniformes (Actinopterygii: Percomorpha): An Alternative Phylogenetic Hypothesis. Bull. Fish. Sci. Hokkaido Univ., 53(3), 107–128.</meta>
+    <meta xsi:type="LiteralMeta" property="ter:title">Imamura, H., &amp; Yabe, M. (2002)</meta>
+  </meta>
   <otus id="bbe90531-3ef5-4272-b6c0-f9c0083d078d">
     <otu id="ff97d671-ad80-4f58-b6dc-2befd8f103e0" label="" about="#ff97d671-ad80-4f58-b6dc-2befd8f103e0">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Table 1. Ancestor of Cottoid lineage.</meta>
@@ -711,7 +715,7 @@ Added polymorphs. AB 10/18/12</meta>
         <state id="ea58146a-5c4d-4ec7-ae70-0f41beaed22b" label="absence of A3" symbol="0" about="#ea58146a-5c4d-4ec7-ae70-0f41beaed22b">
           <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">State added per Table 1 caption</meta>
         </state>
-        <state id="c073df59-c3fa-4a9e-b10a-6909ad68e591" label="absent" symbol="1" about="#c073df59-c3fa-4a9e-b10a-6909ad68e591"></state>
+        <state id="c073df59-c3fa-4a9e-b10a-6909ad68e591" label="absent" symbol="1" about="#c073df59-c3fa-4a9e-b10a-6909ad68e591"/>
         <state id="c6bce84d-7373-4944-b04d-f5708d395271" label="present" symbol="2"/>
         <uncertain_state_set id="6deb7a39-46f8-4914-833d-940d3b67fe26">
           <member state="c073df59-c3fa-4a9e-b10a-6909ad68e591"/>
@@ -719,24 +723,24 @@ Added polymorphs. AB 10/18/12</meta>
         </uncertain_state_set>
       </states>
       <states id="e67c9401-c421-44dd-866a-28099401e556">
-        <state id="b392395b-6c3e-44b8-980a-380978cf49c1" label="1" symbol="0" about="#b392395b-6c3e-44b8-980a-380978cf49c1"></state>
-        <state id="c2570675-481b-4622-b052-8a3322a5a5c9" label="2" symbol="1" about="#c2570675-481b-4622-b052-8a3322a5a5c9"></state>
+        <state id="b392395b-6c3e-44b8-980a-380978cf49c1" label="1" symbol="0" about="#b392395b-6c3e-44b8-980a-380978cf49c1"/>
+        <state id="c2570675-481b-4622-b052-8a3322a5a5c9" label="2" symbol="1" about="#c2570675-481b-4622-b052-8a3322a5a5c9"/>
         <uncertain_state_set id="edb92203-79d3-4e7f-91de-fdcdd2395f9a">
           <member state="c2570675-481b-4622-b052-8a3322a5a5c9"/>
           <member state="b392395b-6c3e-44b8-980a-380978cf49c1"/>
         </uncertain_state_set>
       </states>
       <states id="8ab8463c-429d-4a41-9e49-32440d57775a">
-        <state id="fc9ca309-815f-4f61-a920-7b86680d7e9a" label="absent" symbol="0" about="#fc9ca309-815f-4f61-a920-7b86680d7e9a"></state>
-        <state id="d1da5ac8-7245-4c8c-9394-9c1a16ce7078" label="present" symbol="1" about="#d1da5ac8-7245-4c8c-9394-9c1a16ce7078"></state>
+        <state id="fc9ca309-815f-4f61-a920-7b86680d7e9a" label="absent" symbol="0" about="#fc9ca309-815f-4f61-a920-7b86680d7e9a"/>
+        <state id="d1da5ac8-7245-4c8c-9394-9c1a16ce7078" label="present" symbol="1" about="#d1da5ac8-7245-4c8c-9394-9c1a16ce7078"/>
         <uncertain_state_set id="1904cddb-afc5-4622-87ac-856523b7f2f5">
           <member state="d1da5ac8-7245-4c8c-9394-9c1a16ce7078"/>
           <member state="fc9ca309-815f-4f61-a920-7b86680d7e9a"/>
         </uncertain_state_set>
       </states>
       <states id="3e964286-072f-4e1e-9a58-bb3bd7ef8cb6">
-        <state id="6283fba5-f4f1-4ab5-a8db-a11cb6aab8b3" label="absent" symbol="0" about="#6283fba5-f4f1-4ab5-a8db-a11cb6aab8b3"></state>
-        <state id="19b09335-5a7b-4c0d-b7d9-51ce0755f7c2" label="present" symbol="1" about="#19b09335-5a7b-4c0d-b7d9-51ce0755f7c2"></state>
+        <state id="6283fba5-f4f1-4ab5-a8db-a11cb6aab8b3" label="absent" symbol="0" about="#6283fba5-f4f1-4ab5-a8db-a11cb6aab8b3"/>
+        <state id="19b09335-5a7b-4c0d-b7d9-51ce0755f7c2" label="present" symbol="1" about="#19b09335-5a7b-4c0d-b7d9-51ce0755f7c2"/>
         <uncertain_state_set id="140a6515-2f4a-4ead-b38f-f2c01ded5351">
           <member state="19b09335-5a7b-4c0d-b7d9-51ce0755f7c2"/>
           <member state="6283fba5-f4f1-4ab5-a8db-a11cb6aab8b3"/>
@@ -773,8 +777,8 @@ Added polymorphs. AB 10/18/12</meta>
         </state>
       </states>
       <states id="4c73041a-9e00-48bf-b73c-690350fb8971">
-        <state id="21fdd0fe-d2b5-4e79-8ec2-8411a3ae95e3" label="absent" symbol="0" about="#21fdd0fe-d2b5-4e79-8ec2-8411a3ae95e3"></state>
-        <state id="e55e50da-a924-4401-8220-c85fd105f03e" label="present" symbol="1" about="#e55e50da-a924-4401-8220-c85fd105f03e"></state>
+        <state id="21fdd0fe-d2b5-4e79-8ec2-8411a3ae95e3" label="absent" symbol="0" about="#21fdd0fe-d2b5-4e79-8ec2-8411a3ae95e3"/>
+        <state id="e55e50da-a924-4401-8220-c85fd105f03e" label="present" symbol="1" about="#e55e50da-a924-4401-8220-c85fd105f03e"/>
       </states>
       <char id="810dab68-6319-4f8e-a05f-a434a51ecd16" label="Parasphenoid and pterosphenoid connection" about="#810dab68-6319-4f8e-a05f-a434a51ecd16" states="82f0e196-d4a0-4575-8469-a118a4c662c2"/>
       <char id="07bf2a84-81f7-401a-932b-34cd8c700eda" label="Number of branchiostegal rays" states="5b85daaa-aabb-42c3-a5fc-6c311a8bdb79"/>
@@ -1144,6 +1148,7 @@ Added polymorphs. AB 10/18/12</meta>
       </row>
     </matrix>
   </characters>
+  <trees id="t355c835c-315e-4b41-aff6-ee737357b3db" otus="bbe90531-3ef5-4272-b6c0-f9c0083d078d"/>
   <trees id="tf01acdef-c1e0-40e3-ad9c-f18d1c4163eb" otus="bbe90531-3ef5-4272-b6c0-f9c0083d078d"/>
   <trees id="t2f57d583-3e49-4f12-a550-aa1c82936eeb" otus="bbe90531-3ef5-4272-b6c0-f9c0083d078d"/>
 </nexml>
