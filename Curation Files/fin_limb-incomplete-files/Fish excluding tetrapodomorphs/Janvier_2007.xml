@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">Matrix reconstructed from Figure 2.3.</meta>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <otus id="45600a33-e9cc-489e-b235-c68b79256406">
     <otu id="3e341c5e-c223-4ba1-b441-f0b16ef256d6" label="Cephalochordates" about="#3e341c5e-c223-4ba1-b441-f0b16ef256d6">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0058739"/>
@@ -395,8 +395,34 @@
         <state id="83ea2861-c536-49c2-930c-d8944e3ad9e0" label="present" symbol="1"/>
       </states>
       <states id="5954b7c9-da39-421e-873c-280ffe2c1090">
-        <state id="860bdf18-0140-4cfc-8021-ba356f9ac7a4" label="absent" symbol="0" about="#860bdf18-0140-4cfc-8021-ba356f9ac7a4"/>
-        <state id="58f8862c-d9aa-457a-9389-8c06915ce832" label="present" symbol="1" about="#58f8862c-d9aa-457a-9389-8c06915ce832"/>
+        <state id="860bdf18-0140-4cfc-8021-ba356f9ac7a4" label="absent" symbol="0" about="#860bdf18-0140-4cfc-8021-ba356f9ac7a4">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010297"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="58f8862c-d9aa-457a-9389-8c06915ce832" label="present" symbol="1" about="#58f8862c-d9aa-457a-9389-8c06915ce832">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010297"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="31c3c236-20fb-4691-aae0-52c156f277cc">
         <state id="61fbcbb9-a132-4cba-9a84-f8c4923cc162" label="absent" symbol="0" about="#61fbcbb9-a132-4cba-9a84-f8c4923cc162">
@@ -1105,4 +1131,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t845115e6-4d1c-4616-a79f-2763118673bf" otus="45600a33-e9cc-489e-b235-c68b79256406"/>
 </nexml>
