@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="4624a558-8742-4495-923c-0052efeaf57b">
     <otu id="188f6858-ddb9-4b61-a6df-53144cccf16a" label="Acanthostega" about="#188f6858-ddb9-4b61-a6df-53144cccf16a">
@@ -2993,16 +2993,10 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0011655">
-                    <phen:qualifier relation="BFO:0000053">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0002433"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:0011655"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
+                  <phen:typeref about="PATO:0002433"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3013,16 +3007,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0011655">
-                    <phen:qualifier relation="BFO:0000053">
+                  <phen:typeref about="UBERON:0011655"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001925">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="PATO:0002433"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -11278,6 +11272,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tcb0b8434-eb3e-4c09-95c0-da2e58a04686" otus="4624a558-8742-4495-923c-0052efeaf57b"/>
   <trees id="tac880a5c-9fb5-4c77-8618-cea216e26ba0" otus="4624a558-8742-4495-923c-0052efeaf57b"/>
   <trees id="t4ade46ed-96bb-4e4c-968d-32e73c08b8c7" otus="4624a558-8742-4495-923c-0052efeaf57b"/>
   <trees id="te4660802-a159-47a9-b8a3-3d13ebf208ca" otus="4624a558-8742-4495-923c-0052efeaf57b"/>
