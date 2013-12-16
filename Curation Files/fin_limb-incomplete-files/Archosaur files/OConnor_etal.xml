@@ -6680,21 +6680,30 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0004328">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0001602"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
+                  <phen:typeref about="UBERON:0004328"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052">
                     <phen:qualifier relation="PHENOSCAPE:complement_of">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="PATO:0000407"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004328"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001602"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -19512,5 +19521,6 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t73a4ac2a-13dc-48fe-a179-41e1aa999aa7" otus="otus4318"/>
   <trees id="t0efc3d58-16e1-4c80-871d-7565cc8050a9" otus="otus4318"/>
 </nex:nexml>
