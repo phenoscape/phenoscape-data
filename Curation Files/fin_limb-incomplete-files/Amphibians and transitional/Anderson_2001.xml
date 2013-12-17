@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="4624a558-8742-4495-923c-0052efeaf57b">
     <otu id="188f6858-ddb9-4b61-a6df-53144cccf16a" label="Acanthostega" about="#188f6858-ddb9-4b61-a6df-53144cccf16a">
@@ -4118,7 +4118,7 @@
                   <phen:typeref about="UBERON:0001447"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000467"/>
+                  <phen:typeref about="PATO:0001448"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4132,7 +4132,13 @@
                   <phen:typeref about="UBERON:0001447"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
+                  <phen:typeref about="PATO:0000025">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001448"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -6656,7 +6662,7 @@
         <cell char="fcb8304f-f2a7-429f-a75f-abb1834325c7" state="cd31f090-cb65-4a29-a31e-d0d31ede4e27"/>
         <cell char="98807195-66ea-43a3-b229-135e07274f16" state="68c2f59f-dfbe-47c2-ab55-86af29b60bbc"/>
         <cell char="b0309d11-b65b-433f-9abd-f9ef267969be" state="4479902b-024d-49f8-9db6-f5420ba53e5f"/>
-        <cell char="cac8fd46-dc38-4b8e-9386-490c5421944d" state="4bd2f8a6-e6f3-49b1-97bf-fc62208c59ca"/>
+        <cell char="cac8fd46-dc38-4b8e-9386-490c5421944d" state="692f76f4-773b-44a8-9cb7-e82f8c49b00f"/>
         <cell char="a00a7f4f-2b9a-4fcc-aa19-3be0107c6628" state="daf2ecb0-df94-4cb5-84ea-268eef077c24"/>
         <cell char="49ce7225-d288-4377-b00a-3a785f072ea9" state="14db9196-36be-40ef-accc-a283787359ca"/>
         <cell char="44ad8785-f6d9-474a-95b2-bb92745c876a" state="e9fde48b-3c5e-4623-9505-d6af4f135bc8"/>
@@ -8096,7 +8102,6 @@
         <cell char="ae17b9d5-8043-4060-8039-166e00cdc2c1" state="e467cd71-334b-4125-bf5c-0075e770351c"/>
         <cell char="9e2fcd1b-6800-4c98-8628-5a240bb50d22" state="bcb2eb3e-9251-43a8-8313-9a72fd87d189"/>
         <cell char="f552b85a-c03a-4ca9-a557-0463c35bb804" state="d3fd11e6-47fb-4577-813a-89196294a527"/>
-        <cell char="d50e8319-850b-4717-8c89-8635ba118e4b" state="1b4f34fc-1644-48f1-a0b5-a3ea484a6927"/>
         <cell char="35a3a19d-91cc-4a1c-b7e1-143afe9060e6" state="a1a5f55a-580f-43d0-9638-d4257c225cf7"/>
         <cell char="9f637505-6f8b-497f-a737-c90da7b71655" state="d42844c3-bf12-4b35-9013-7014e7a4a61e"/>
         <cell char="50deabeb-bdd1-4b4c-83f9-791a5492094e" state="54f22f69-317e-4524-aa36-526a322d919b"/>
@@ -9734,8 +9739,6 @@
         <cell char="a0947fcc-a71b-4418-9a1f-d68225436c5c" state="a2298d98-de2e-4c70-988a-4cf4bc8981ec"/>
         <cell char="2071fa80-8e8c-4f43-98de-3bc33feb8b35" state="ea12c103-fc08-4dca-8502-6a51c2bc0895"/>
         <cell char="f552b85a-c03a-4ca9-a557-0463c35bb804" state="d3fd11e6-47fb-4577-813a-89196294a527"/>
-        <cell char="d50e8319-850b-4717-8c89-8635ba118e4b" state="1b4f34fc-1644-48f1-a0b5-a3ea484a6927"/>
-        <cell char="35a3a19d-91cc-4a1c-b7e1-143afe9060e6" state="0ce09021-dd54-4970-94fc-57c6a8d3a90e"/>
         <cell char="50deabeb-bdd1-4b4c-83f9-791a5492094e" state="54f22f69-317e-4524-aa36-526a322d919b"/>
         <cell char="9fc243eb-1ea8-41d7-b315-e54cc97df6c6" state="39e57c70-8025-405e-87b0-36b26791531b"/>
         <cell char="9d27bf9e-d64f-4cc5-8b03-3d2e8501373b" state="72693338-bcd7-461c-8f8e-0b40d8cac2c2"/>
@@ -11088,7 +11091,7 @@
         <cell char="ae17b9d5-8043-4060-8039-166e00cdc2c1" state="22ffd081-cdd4-4cb9-852b-a252bf6381e4"/>
         <cell char="9e2fcd1b-6800-4c98-8628-5a240bb50d22" state="bcb2eb3e-9251-43a8-8313-9a72fd87d189"/>
         <cell char="2071fa80-8e8c-4f43-98de-3bc33feb8b35" state="ea12c103-fc08-4dca-8502-6a51c2bc0895"/>
-        <cell char="f552b85a-c03a-4ca9-a557-0463c35bb804" state="d3fd11e6-47fb-4577-813a-89196294a527"/>
+        <cell char="f552b85a-c03a-4ca9-a557-0463c35bb804" state="f16a1c03-63ab-4e95-b02d-c946647b6045"/>
         <cell char="d50e8319-850b-4717-8c89-8635ba118e4b" state="1b4f34fc-1644-48f1-a0b5-a3ea484a6927"/>
         <cell char="35a3a19d-91cc-4a1c-b7e1-143afe9060e6" state="a1a5f55a-580f-43d0-9638-d4257c225cf7"/>
         <cell char="50deabeb-bdd1-4b4c-83f9-791a5492094e" state="03e65352-47a7-4f86-9e8a-1923d67ccc44"/>
@@ -11272,6 +11275,8 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tb405dbbf-9e4e-49c0-bd22-987fdb953a6b" otus="4624a558-8742-4495-923c-0052efeaf57b"/>
+  <trees id="t291d1ff2-7115-458a-bf11-5a63dfa1cf7e" otus="4624a558-8742-4495-923c-0052efeaf57b"/>
   <trees id="tcb0b8434-eb3e-4c09-95c0-da2e58a04686" otus="4624a558-8742-4495-923c-0052efeaf57b"/>
   <trees id="tac880a5c-9fb5-4c77-8618-cea216e26ba0" otus="4624a558-8742-4495-923c-0052efeaf57b"/>
   <trees id="t4ade46ed-96bb-4e4c-968d-32e73c08b8c7" otus="4624a558-8742-4495-923c-0052efeaf57b"/>
