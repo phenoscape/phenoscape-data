@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Jordan K. Catlett &amp; Char L. Green entered free text and matrix data on 6/11/12.</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Jordan K. Catlett; Char L. Green</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Coates, M. I., &amp; Sequeira, E. K. (2001). A new stethacanthid chondrichthyan from the lower Carboniferous of Bearsden, Scotland. Journal of Vertebrate Paleontology, 21(3), 438–459.</meta>
+    <meta xsi:type="LiteralMeta" property="ter:identifier">10.1671/0272-4634(2001)021[0438:ANSCFT]2.0.CO;2</meta>
+    <meta xsi:type="LiteralMeta" property="ter:title">Coates, M. I., &amp; Sequeira, E. K. (2001)</meta>
+  </meta>
   <otus id="8e43640c-a00e-4251-b7bb-83d685cc058a">
     <otu id="05bb7d3e-c5ea-4d80-9462-8aa8b4467434" label="Norselaspis"/>
     <otu id="284b6011-bdd3-41da-89dd-7cb9de1a9480" label="Kujdanowiaspis" about="#284b6011-bdd3-41da-89dd-7cb9de1a9480">
@@ -732,7 +737,7 @@
                   <phen:typeref about="UBERON:0011247"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7cf838eb-38a9-4169-99e2-da07d1e3a2fe"/>
+                  <phen:typeref about="PATO:0002499"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3026,4 +3031,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t59f5cd62-b98f-4a53-9f41-4f26ee444302" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
 </nexml>
