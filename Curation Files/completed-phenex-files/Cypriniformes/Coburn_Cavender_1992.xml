@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Richard L. Mayden; Jeffrey Engeman</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:references">PSPUB:0000020</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Cavender &amp; Coburn 1992 taxon list used to build Coburn &amp; Cavender 1992 (as per Coburn &amp; Cavender 1992 publication materials and methods).  &lt;i>Notropis&lt;/i> (s.l) taxa in original matrix are changed to reflect the genera specified on page 333 of pub. There are four taxa that are abbreviated in the matrix that are not explained in the pub. Taxa in matrix not found in the materials and methods added by Ericka Grey. Matrix entered in by hand by Carin Rambow (summer 2008).  
 
 There are genera listed in matrix but not in materials and methods (e.g., Dionda, Eremichthys, etc.). For these, I assigned the genus to Valid Taxon, and evidence code should be NAS (nontraceable author statement). (WD, 9/30/09)</meta>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Coburn, M. M., &amp; Cavender, T. M. (1992). Interrelationships of North American Cyprinid Fishes (pp. 328–373).</meta>
+    <meta xsi:type="LiteralMeta" property="ter:title">Coburn, M. M., &amp; Cavender, T. M. (1992)</meta>
+  </meta>
   <otus id="e18b0250-a04b-4a0c-9dc2-bed088b0ec28">
     <otu id="a832e2dd-a427-496c-a6c0-e12481f30c21" label="Acrocheilus alutaceus" about="#a832e2dd-a427-496c-a6c0-e12481f30c21">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0040484"/>
@@ -30982,4 +30986,5 @@ There are genera listed in matrix but not in materials and methods (e.g., Dionda
       </row>
     </matrix>
   </characters>
+  <trees id="tba3bb733-5c3c-46cb-8862-858df6c81954" otus="e18b0250-a04b-4a0c-9dc2-bed088b0ec28"/>
 </nexml>
