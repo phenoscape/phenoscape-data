@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Shirai, S. (1996). Phylogenetic interrelationships of neoselachians (Chondrichthyes: Euselachii). In M. L. J. Stiassny, L. R. Parenti, &amp; G. D. Johnson (Eds.), Interrelationships of Fishes (pp. 9–34).</meta>
+    <meta xsi:type="LiteralMeta" property="ter:title">Shirai, S. (1996)</meta>
+  </meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="9b6b9e56-8b88-4303-a05f-27dd4c80242f">
     <otu id="3dfa8cf2-e775-48b0-b107-4660c385e41e" label="OUTGROUP"/>
@@ -974,7 +978,7 @@
                   <phen:typeref about="UBERON:2001589"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/f37a35a1-4a4a-4b36-9ebf-b1719b0827d7"/>
+                  <phen:typeref about="PATO:0002503"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -7380,4 +7384,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t7a8d7ae7-1825-473c-8412-e6b8e13373c2" otus="9b6b9e56-8b88-4303-a05f-27dd4c80242f"/>
 </nexml>

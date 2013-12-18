@@ -837,7 +837,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:1500006"/>
+                  <phen:typeref about="UBERON:1700006"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000140"/>
@@ -854,7 +854,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:1500006"/>
+                  <phen:typeref about="UBERON:1700006"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000140"/>
@@ -862,11 +862,6 @@
                     <phen:typeref about="UBERON:0000309"/>
                   </phen:related_entity>
                 </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000089"/>
-                </phen:bearer>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -944,7 +939,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2001589"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7d7a6776-1b72-433f-b480-f95d6893b259"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000599"/>
@@ -958,7 +953,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2001589"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7d7a6776-1b72-433f-b480-f95d6893b259"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000600"/>
@@ -1103,11 +1098,47 @@
         <state id="8d0aad00-ea4c-44e8-b214-385f1af628cf" label="present" symbol="1"/>
       </states>
       <states id="d553196c-1f41-49df-84c1-40cc3a8994c7">
-        <state id="330b1943-53ff-4dd8-b24e-17e0d4196350" label="absent" symbol="0"/>
-        <state id="5f689b04-3ce7-49aa-b9a0-cb856c2c00de" label="present" symbol="1"/>
+        <state id="330b1943-53ff-4dd8-b24e-17e0d4196350" label="absent" symbol="0" about="#330b1943-53ff-4dd8-b24e-17e0d4196350">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a2fb7017-4b10-4c41-b762-27bcef73f11c"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002278"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2201588"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="5f689b04-3ce7-49aa-b9a0-cb856c2c00de" label="present" symbol="1" about="#5f689b04-3ce7-49aa-b9a0-cb856c2c00de">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a2fb7017-4b10-4c41-b762-27bcef73f11c"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002278"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2201588"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="029460fd-3687-4c2f-ae0d-52f3294069aa">
-        <state id="db7ddd9e-2455-432f-b07e-b5ded87a2604" label="absent" symbol="0"/>
+        <state id="db7ddd9e-2455-432f-b07e-b5ded87a2604" label="absent" symbol="0" about="#db7ddd9e-2455-432f-b07e-b5ded87a2604">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="edcaa2a8-14ca-4967-adad-30519758594c" label="present" symbol="1"/>
       </states>
       <states id="a8f09079-d6a6-48b6-bcfe-eadb073881e1">
@@ -1461,7 +1492,9 @@
       <char id="e611cb58-4b65-4f37-9555-a660efe3e56f" label="Posteriormost radial (metapterygium) broad and articulates directly with 5+ distal radials" states="76afce44-fe8d-4c1e-a387-33953bd20960"/>
       <char id="bf206ccd-d36e-4cb3-913d-a3430b48183d" label="Proximal, articular facet of metapterygium directed anteriorly" states="c3511f4c-5e89-449b-bd7f-1327224506f7"/>
       <char id="75f27754-d98b-4924-92a5-1edc269948b6" label="Metapterygium connects with distinct series of distal radials articulating proximodistally to form a short or long axis" states="d553196c-1f41-49df-84c1-40cc3a8994c7"/>
-      <char id="53ca4353-8db0-44e0-a1aa-2f73cbb28b4e" label="Axial radials articulate with pre-and post-axial radials" states="029460fd-3687-4c2f-ae0d-52f3294069aa"/>
+      <char id="53ca4353-8db0-44e0-a1aa-2f73cbb28b4e" label="Axial radials articulate with pre-and post-axial radials" states="029460fd-3687-4c2f-ae0d-52f3294069aa" about="#53ca4353-8db0-44e0-a1aa-2f73cbb28b4e">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">axial radial?</meta>
+      </char>
       <char id="26527e1a-5d00-4cea-af03-e32aa95915c9" label="Pelvic plate semicircular with anterolateral concavity" states="a8f09079-d6a6-48b6-bcfe-eadb073881e1" about="#26527e1a-5d00-4cea-af03-e32aa95915c9">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Pelvic plate?</meta>
       </char>
@@ -3155,6 +3188,6 @@
       </row>
     </matrix>
   </characters>
-  <trees id="tc0af65b8-819a-4235-87de-f0347b576e8b" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
+  <trees id="t09b25892-ed7e-4c3d-86b6-5ce5c18d886f" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
   <trees id="t59f5cd62-b98f-4a53-9f41-4f26ee444302" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
 </nexml>

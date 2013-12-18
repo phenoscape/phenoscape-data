@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Hanke, G. F., &amp; Wilson, M. V. H. (2004). New teleostome fishes and acanthodian systematics. In G. Arratia, M. Wilson, &amp; R. Cloutier (Eds.), Recent Advances in the Origin and Early Radiation of the Vertebrates (pp. 189–216).</meta>
+    <meta xsi:type="LiteralMeta" property="ter:title">Hanke, G. F., &amp; Wilson, M. V. H. (2004)</meta>
+  </meta>
   <otus id="6eb8aab3-66cf-4e90-baac-322f705ccc6f">
     <otu id="ec28ea65-6acd-4be6-a69a-3662dfe036b7" label="Lupopsyroides macracanthus " about="#ec28ea65-6acd-4be6-a69a-3662dfe036b7">
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">L. macracanthus</meta>
@@ -131,7 +135,7 @@
   <characters xmlns:ns="http://www.nexml.org/2009" id="31353b49-0c50-4386-af15-248268bcb8a3" xsi:type="ns:StandardCells" otus="6eb8aab3-66cf-4e90-baac-322f705ccc6f">
     <format>
       <states id="a508b58f-28a1-423d-b75f-34541a828481">
-        <state id="75963ca2-daf8-42ae-be55-50bf123e67e8" label="small, undifferentiated from head scales" symbol="0" about="#75963ca2-daf8-42ae-be55-50bf123e67e8"></state>
+        <state id="75963ca2-daf8-42ae-be55-50bf123e67e8" label="small, undifferentiated from head scales" symbol="0" about="#75963ca2-daf8-42ae-be55-50bf123e67e8"/>
         <state id="7ca79653-70e5-452a-aead-d261120b1b1f" label="different from head scales, circumorbitals approximately the same size" symbol="1"/>
         <state id="7b7509d7-9337-4098-b528-b724a077b1fa" label="different from head scales, anterior and posterior circumorbitals enlarged" symbol="2"/>
       </states>
@@ -2640,4 +2644,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t15038082-d140-4e79-8427-8cd7dc215390" otus="6eb8aab3-66cf-4e90-baac-322f705ccc6f"/>
 </nexml>
