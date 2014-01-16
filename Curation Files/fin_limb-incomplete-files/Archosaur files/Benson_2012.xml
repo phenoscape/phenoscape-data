@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:ResourceMeta" rel="ter:source">
     <meta xsi:type="nex:LiteralMeta" property="ter:bibliographicCitation">Benson, R. B. J. (2012). Interrelationships of basal synapsids: cranial and postcranial morphological partitions suggest different topologies. Journal of Systematic Palaeontology, 10(4), 601–624.</meta>
     <meta xsi:type="nex:LiteralMeta" property="ter:identifier">10.1080/14772019.2011.631042</meta>
     <meta xsi:type="nex:LiteralMeta" property="ter:title">Benson, R. B. J. (2012)</meta>
   </meta>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
   <otus about="#otus2741" id="otus2741" label="Taxa">
     <meta content="8111584245825562287" datatype="xsd:long" id="meta2962" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
@@ -1548,7 +1548,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001495"/>
+                  <phen:typeref about="PATO:0002180"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1568,7 +1568,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0002180"/>
+                  <phen:typeref about="PATO:0001495"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1965,6 +1965,9 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0002328"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0011655"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2616,7 +2619,28 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state3828" label="supinator process very low or absent" symbol="3"/>
+        <state id="state3828" label="supinator process very low or absent" symbol="3" about="#state3828">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200037"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001689"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200037"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states3829">
         <state id="state3831" label="moderate makes up just less than half of transverse width of distal expansion" symbol="0" about="#state3831">
@@ -5793,12 +5817,14 @@
       </char>
       <char about="#char3773" id="char3773" label="Coracoid (posterior coracoid), triceps process" states="states3772">
         <meta content="false" datatype="xsd:boolean" id="meta4263" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">This is probably OK</meta>
       </char>
       <char about="#char3777" id="char3777" label="Clavicle, shape of ventromedial plate" states="states3776">
         <meta content="false" datatype="xsd:boolean" id="meta4264" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char3783" id="char3783" label="Clavicle, orientation of long axis of ventromedial plate relative to shaft" states="states3782">
         <meta content="false" datatype="xsd:boolean" id="meta4265" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">remove orientation?</meta>
       </char>
       <char about="#char3787" id="char3787" label="Interclavicle, angle of head" states="states3786">
         <meta content="false" datatype="xsd:boolean" id="meta4266" property="nr:selected" xsi:type="nex:LiteralMeta"/>
