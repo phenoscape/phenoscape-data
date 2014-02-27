@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.12" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="5f9909d7-34bf-4cc1-8701-e5ccf619638c">
     <otu id="5d276735-2b67-4bcd-830e-2ccdfa18d5e1" label="Hylodes asper" about="#5d276735-2b67-4bcd-830e-2ccdfa18d5e1">
@@ -562,7 +562,15 @@
                   <phen:typeref about="UBERON:3010184"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000389"/>
+                  <phen:typeref about="PATO:0002258"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010184"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -576,7 +584,7 @@
                   <phen:typeref about="UBERON:3010184"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001937"/>
+                  <phen:typeref about="PATO:0002432"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1022,7 +1030,13 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0001590"/>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:0003690"/>
+                    <phen:typeref about="UBERON:0011653">
+                      <phen:qualifier relation="UBERON:attaches_to">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0003690"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -1034,19 +1048,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0001273"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000140">
-                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                  <phen:typeref about="UBERON:0011653">
+                    <phen:qualifier relation="UBERON:attaches_to">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0001590"/>
+                        <phen:typeref about="UBERON:0003690"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:0003690"/>
-                  </phen:related_entity>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002425"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2476,5 +2487,6 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t62350a00-50df-4aeb-b92c-fb9e469d36e5" otus="5f9909d7-34bf-4cc1-8701-e5ccf619638c"/>
   <trees id="t65243935-d5d0-4b05-9fe1-0dfd82267161" otus="5f9909d7-34bf-4cc1-8701-e5ccf619638c"/>
 </nexml>

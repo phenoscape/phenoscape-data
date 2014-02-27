@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
     <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Johanson, Z. (2004). Late Devonian sarcopterygian fishes from eastern Gondwana (Australia and Antarctica) and their importance in phylogeny and biogeography. In G. Arratia, M. Wilson, &amp; R. Cloutier (Eds.), Recent Advances in the Origin and Early Radiation of Vertebrates (pp. 287–308).</meta>
     <meta xsi:type="LiteralMeta" property="ter:title">Johanson, Z. (2004)</meta>
   </meta>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="4293842c-bb1d-4459-826b-a1779ab30e82">
     <otu id="61ee2864-7379-40fc-91d7-a8a51b4d1d8a" label="Gooloogongia" about="#61ee2864-7379-40fc-91d7-a8a51b4d1d8a">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9022994"/>
@@ -355,7 +355,7 @@
                   <phen:typeref about="UBERON:4000160"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141">
+                  <phen:typeref about="PATO:0000140">
                     <phen:qualifier relation="PHENOSCAPE:complement_of">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="PATO:0002425"/>
@@ -800,7 +800,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001505"/>
+                  <phen:typeref about="PATO:0000133"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:3000784"/>
                   </phen:related_entity>
@@ -881,12 +881,18 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:3000784"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2423f93d-e225-48cb-838d-ee016b99632b"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001505"/>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001505"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:0012129"/>
+                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/618d8ba1-af39-424e-87f7-aa55d52b3fd9"/>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -900,18 +906,18 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0001273"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
                   <phen:typeref about="UBERON:0007832"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0001154"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001275"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -934,6 +940,14 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0001875"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001275"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1258,6 +1272,10 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t7b9040a2-fdd8-4579-b0e3-e61e5c622101" otus="4293842c-bb1d-4459-826b-a1779ab30e82"/>
+  <trees id="t78cfb298-15a9-4fba-8530-d664d90e75e9" otus="4293842c-bb1d-4459-826b-a1779ab30e82"/>
+  <trees id="t46e5bcd4-abe3-4da6-9875-642d9f4b10cc" otus="4293842c-bb1d-4459-826b-a1779ab30e82"/>
+  <trees id="ta98824df-c8b4-4437-89a4-1935c59b845b" otus="4293842c-bb1d-4459-826b-a1779ab30e82"/>
   <trees id="taf6ac1ad-bcad-4ac7-9ce3-8785c4584d71" otus="4293842c-bb1d-4459-826b-a1779ab30e82"/>
   <trees id="t625188e1-10b8-4942-a3a3-9653b5a34286" otus="4293842c-bb1d-4459-826b-a1779ab30e82"/>
 </nexml>

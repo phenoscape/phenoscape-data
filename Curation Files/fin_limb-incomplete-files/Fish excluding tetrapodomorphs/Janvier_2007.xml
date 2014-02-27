@@ -71,7 +71,20 @@
         <state id="f81304e5-bd24-467a-8455-5fa5b49a3f18" label="present" symbol="1" about="#f81304e5-bd24-467a-8455-5fa5b49a3f18"/>
       </states>
       <states id="75081076-2ab5-4f82-af61-d17a8325fb4b">
-        <state id="d60e43ea-eb9d-4dcf-b4f5-cf8f75b32a88" label="absent" symbol="0" about="#d60e43ea-eb9d-4dcf-b4f5-cf8f75b32a88"/>
+        <state id="d60e43ea-eb9d-4dcf-b4f5-cf8f75b32a88" label="absent" symbol="0" about="#d60e43ea-eb9d-4dcf-b4f5-cf8f75b32a88">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006870"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="ec34dbf7-c47d-4697-99ed-4625f4051496" label="present" symbol="1" about="#ec34dbf7-c47d-4697-99ed-4625f4051496">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
             <phen:phenotype>
@@ -79,6 +92,9 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:0006870"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -270,6 +286,9 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:0002037"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -626,9 +645,7 @@
       <char id="4b892826-d627-4046-ab9e-0230e3b9a02b" label="nonsegmental gonads" states="c1226c9e-620d-4167-8879-16175aba9857"/>
       <char id="c2873f2d-9266-4e30-a9f3-fb8bd78d51eb" label="extensive dermal skeleton on head and body" states="79e64e64-f352-408c-b4d9-9fc29d5b9fc9" about="#c2873f2d-9266-4e30-a9f3-fb8bd78d51eb"/>
       <char id="14728ec4-300b-441e-9391-b7a6a79f3547" label="well-developed cerebellum" states="b0a39e71-eb87-481f-836b-7677b571d948"/>
-      <char id="7e9c8b19-a527-4fbc-a5b6-4821da4278dc" label="well-developed vertical semicircular canals forming distinct loops" states="140f84e0-d443-42cf-8cd7-8bf3d38f5a01" about="#7e9c8b19-a527-4fbc-a5b6-4821da4278dc">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">well-developed</meta>
-      </char>
+      <char id="7e9c8b19-a527-4fbc-a5b6-4821da4278dc" label="well-developed vertical semicircular canals forming distinct loops" states="140f84e0-d443-42cf-8cd7-8bf3d38f5a01" about="#7e9c8b19-a527-4fbc-a5b6-4821da4278dc"></char>
       <char id="4caf3704-584b-474f-ba21-4f7de3e5abb4" label="perichondrally calcified endoskeleton" states="3604ff04-f498-4ae1-a37c-2aa9ca22b03d" about="#4caf3704-584b-474f-ba21-4f7de3e5abb4"/>
       <char id="43551712-730b-4f8e-b16f-5404aad3572c" label="externally open endolymphatic ducts" states="ff4897a9-4f6c-4819-99a3-c43eaa910301"/>
       <char id="e416efbe-5166-435f-ad1a-d2b3fb8ef32e" label="distinct pectoral fins and endoskeletal shoulder girdle" states="04094361-74db-4abe-9d27-2490e555ab74"/>
@@ -1135,6 +1152,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t9b9a0f48-8356-402a-bffd-df9ed7085c4b" otus="45600a33-e9cc-489e-b235-c68b79256406"/>
   <trees id="t235b5c4f-d4d4-4cb0-813d-4a8c82b9d15b" otus="45600a33-e9cc-489e-b235-c68b79256406"/>
   <trees id="t845115e6-4d1c-4616-a79f-2763118673bf" otus="45600a33-e9cc-489e-b235-c68b79256406"/>
 </nexml>

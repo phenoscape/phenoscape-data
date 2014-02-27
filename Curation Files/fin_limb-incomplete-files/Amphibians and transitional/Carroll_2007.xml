@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
   <otus about="#otus1" id="otus1" label="Taxa">
     <meta content="709697096833757992" datatype="xsd:long" id="meta102" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
@@ -228,10 +228,6 @@
         <state id="state164" label="l, prf, f, p, m" symbol="8"/>
         <state id="state165" label="prf or n, fused f + p, m" symbol="9"/>
         <state id="state166" label=" m, prf, pf, j" symbol="A"/>
-        <uncertain_state_set id="uncertain_state_set823" symbol="60">
-          <member state="state157"/>
-          <member state="state156"/>
-        </uncertain_state_set>
       </states>
       <states id="states167">
         <state id="state169" label="rounded" symbol="0"/>
@@ -287,14 +283,6 @@
         <state id="state219" label="mr, preo, it, st, t, pp, pf, po, j absent" symbol="9"/>
         <state id="state220" label="mr, preo, it, st, t, pp, l, ?prf, j, pf, po absent, f + p fused" symbol="A"/>
         <state id="state221" label="mr, preo, it, st, po" symbol="B"/>
-        <uncertain_state_set id="uncertain_state_set819" symbol="58">
-          <member state="state211"/>
-          <member state="state210"/>
-        </uncertain_state_set>
-        <uncertain_state_set id="uncertain_state_set824" symbol="61">
-          <member state="state211"/>
-          <member state="state212"/>
-        </uncertain_state_set>
       </states>
       <states id="states222">
         <state id="state224" label="parietal separated from tabular by supratemporal" symbol="0"/>
@@ -331,10 +319,6 @@
         <state id="state254" label="patches of denticles on v" symbol="8"/>
         <state id="state255" label="cov- ering of small denticles, but neither enlarged teeth nor rows of small teeth on v, pal, or ect" symbol="9"/>
         <state id="state256" label="no enlarged teeth on v, pal, or ect, but rows of large denticles radiating across pterygoid" symbol="A"/>
-        <uncertain_state_set id="uncertain_state_set815" symbol="57">
-          <member state="state246"/>
-          <member state="state247"/>
-        </uncertain_state_set>
       </states>
       <states id="states257">
         <state id="state259" label="crown and base of teeth continuous in adults" symbol="0"/>
@@ -448,14 +432,6 @@
         <state id="state365" label=" cb" symbol="9"/>
         <state id="state366" label="bb, hinged ch, fused hb blade, four cb" symbol="A"/>
         <state id="state367" label="bb, ch, four cb" symbol="B"/>
-        <uncertain_state_set id="uncertain_state_set821" symbol="59">
-          <member state="state356"/>
-          <member state="state357"/>
-        </uncertain_state_set>
-        <uncertain_state_set id="uncertain_state_set825" symbol="62">
-          <member state="state357"/>
-          <member state="state358"/>
-        </uncertain_state_set>
       </states>
       <states id="states368">
         <state id="state370" label="attached to thin bony plates associated with cb" symbol="0"/>
@@ -956,7 +932,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state483" label="does not apply (scapulocoracoid bone not ossified)" symbol="-" about="#state483"/>
+        <state id="state483" label="does not apply (scapulocoracoid bone not ossified)" symbol="-" about="#state483">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004753"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states484">
         <state id="state486" label="strap-shaped, slightly helical (screw-shaped)" symbol="0" about="#state486">
@@ -1003,7 +992,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state488" label="does not apply (glenoid not ossified)" symbol="-"/>
+        <state id="state488" label="does not apply (glenoid not ossified)" symbol="-" about="#state488">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006657"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states489">
         <state id="state491" label="none" symbol="0" about="#state491">
@@ -1265,7 +1267,32 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state504" label="does not apply" symbol="-"/>
+        <state id="state504" label="does not apply" symbol="-" about="#state504">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4100003">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001470">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0000976"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states505">
         <state id="state507" label="separated and directed ventrolaterally" symbol="0" about="#state507">
@@ -1305,7 +1332,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/5919698d-2247-4d02-b0de-5b9c33cfbfff"/>
+                  <phen:typeref about="PATO:0002500"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1319,7 +1346,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/5919698d-2247-4d02-b0de-5b9c33cfbfff"/>
+                  <phen:typeref about="PATO:0002500"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1362,7 +1389,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/0316c9a9-f5d1-49f1-831c-9d0e8d2faa88"/>
+                  <phen:typeref about="PATO:0002501"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1376,7 +1403,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/0316c9a9-f5d1-49f1-831c-9d0e8d2faa88"/>
+                  <phen:typeref about="PATO:0002501"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1396,7 +1423,26 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state510" label="does not apply" symbol="-"/>
+        <state id="state510" label="does not apply" symbol="-" about="#state510">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4100003">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0011110"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states511">
         <state id="state513" label="roughly 30 degrees" symbol="0" about="#state513">
@@ -1450,7 +1496,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state516" label="does not apply" symbol="-"/>
+        <state id="state516" label="does not apply" symbol="-" about="#state516">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004411"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states517">
         <state id="state519" label="entepicondylar and ectepicondylar canals, and two other foramina designated as C and D" symbol="0" about="#state519">
@@ -1597,7 +1656,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state523" label="does not apply" symbol="-"/>
+        <state id="state523" label="does not apply" symbol="-" about="#state523">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000976"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states524">
         <state id="state526" label="present dorsally" symbol="0" about="#state526">
@@ -1640,7 +1712,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state528" label="does not apply" symbol="-"/>
+        <state id="state528" label="does not apply" symbol="-" about="#state528">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000976"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states529">
         <state id="state531" label="extensive, posteriorly directed" symbol="0" about="#state531">
@@ -1671,7 +1756,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7cf838eb-38a9-4169-99e2-da07d1e3a2fe"/>
+                  <phen:typeref about="PATO:0002499"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1697,7 +1782,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state533" label="does not apply" symbol="-"/>
+        <state id="state533" label="does not apply" symbol="-" about="#state533">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000976"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states534">
         <state id="state536" label="not clearly distinguished from deltoid crest" symbol="0" about="#state536">
@@ -1745,7 +1843,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state539" label="does not apply" symbol="-"/>
+        <state id="state539" label="does not apply" symbol="-" about="#state539">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000976"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states540">
         <state id="state542" label="present" symbol="0" about="#state542">
@@ -1776,7 +1887,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state544" label="does not apply" symbol="-"/>
+        <state id="state544" label="does not apply" symbol="-" about="#state544">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000976"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states545">
         <state id="state547" label="shorter than radius" symbol="0" about="#state547">
@@ -1824,7 +1948,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state549" label="does not apply" symbol="-"/>
+        <state id="state549" label="does not apply" symbol="-" about="#state549">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001424"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states550">
         <state id="state552" label="lacking" symbol="0" about="#state552">
@@ -1855,7 +1992,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state554" label="does not apply" symbol="-"/>
+        <state id="state554" label="does not apply" symbol="-" about="#state554">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001424"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states555">
         <state id="state557" label="extensive" symbol="0" about="#state557">
@@ -1910,7 +2060,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state559" label="does not apply" symbol="-"/>
+        <state id="state559" label="does not apply" symbol="-" about="#state559">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001424"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states560">
         <state id="state562" label="no" symbol="0" about="#state562">
@@ -1947,7 +2110,28 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state564" label="does not apply" symbol="-"/>
+        <state id="state564" label="does not apply" symbol="-" about="#state564">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001424"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001423"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states565">
         <state id="state567" label="present" symbol="0" about="#state567">
@@ -2382,7 +2566,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state581" label="does not apply" symbol="-"/>
+        <state id="state581" label="does not apply" symbol="-" about="#state581">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001435"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states582">
         <state id="state584" label="perichondrally" symbol="0" about="#state584">
@@ -2425,7 +2622,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state586" label="does not apply" symbol="-"/>
+        <state id="state586" label="does not apply" symbol="-" about="#state586">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001428"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states587">
         <state id="state589" label="eight" symbol="0" about="#state589">
@@ -3410,7 +3620,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state608" label="does not apply" symbol="-"/>
+        <state id="state608" label="does not apply" symbol="-" about="#state608">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0007832"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states609">
         <state id="state611" label="at the same time as the ilium and ischium" symbol="0"/>
@@ -3530,7 +3753,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/614f0541-7e6e-4a5f-bb1a-49775703deb4"/>
+                  <phen:typeref about="PATO:0002491"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -3556,7 +3779,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state619" label="does not apply" symbol="-"/>
+        <state id="state619" label="does not apply" symbol="-" about="#state619">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001273"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states620">
         <state id="state622" label="anterior" symbol="0" about="#state622">
@@ -3605,7 +3841,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state624" label="does not apply" symbol="-"/>
+        <state id="state624" label="does not apply" symbol="-" about="#state624">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001269"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states625">
         <state id="state627" label="extends anteriorly across much of pubis" symbol="0" about="#state627">
@@ -3648,7 +3897,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state629" label="does not apply" symbol="-"/>
+        <state id="state629" label="does not apply" symbol="-" about="#state629">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001269"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states630">
         <state id="state632" label="extends the length of several centra" symbol="0" about="#state632">
@@ -3679,7 +3941,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state634" label="does not apply" symbol="-"/>
+        <state id="state634" label="does not apply" symbol="-" about="#state634">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200120"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states635">
         <state id="state637" label="more than one" symbol="0" about="#state637">
@@ -3743,7 +4018,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state640" label="does not apply" symbol="-"/>
+        <state id="state640" label="does not apply" symbol="-" about="#state640">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200120"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states641">
         <state id="state643" label="broadly curving surface extending over the entire proximal end of the bone" symbol="0" about="#state643">
@@ -3830,7 +4118,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state645" label="does not apply" symbol="-"/>
+        <state id="state645" label="does not apply" symbol="-" about="#state645">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000981"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states646">
         <state id="state648" label="at 60 to 90 degrees" symbol="0" about="#state648">
@@ -3947,7 +4248,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state651" label="does not apply" symbol="-"/>
+        <state id="state651" label="does not apply" symbol="-" about="#state651">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000981"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states652">
         <state id="state654" label="large and facing anteriorly" symbol="0" about="#state654">
@@ -3966,7 +4280,7 @@
                   <phen:typeref about="UBERON:4200004"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/b2753742-9020-4e6e-8b96-ccce5f669080"/>
+                  <phen:typeref about="PATO:0002490"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3980,7 +4294,7 @@
                   <phen:typeref about="UBERON:4200004"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/0316c9a9-f5d1-49f1-831c-9d0e8d2faa88"/>
+                  <phen:typeref about="PATO:0002501"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4000,7 +4314,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state657" label="does not apply" symbol="-"/>
+        <state id="state657" label="does not apply" symbol="-" about="#state657">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000981"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states658">
         <state id="state660" label="proximally located internal trochanter, elongated fourth trochanter along the adductor blade [as in Coates (1996)] occupying  approx. 50 precent of the length of the femur, succeeded by the adductor crest, extending to nearly the end of the shaft" symbol="0" about="#state660">
@@ -4396,11 +4723,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state670" label="does not apply" symbol="-"/>
-        <uncertain_state_set id="uncertain_state_set805" symbol="56">
-          <member state="state661"/>
-          <member state="state660"/>
-        </uncertain_state_set>
+        <state id="state670" label="does not apply" symbol="-" about="#state670">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000981"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states671">
         <state id="state673" label="tibia longer than fibula" symbol="0" about="#state673">
@@ -4448,7 +4784,28 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state675" label="does not apply" symbol="-"/>
+        <state id="state675" label="does not apply" symbol="-" about="#state675">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000979"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001446"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states676">
         <state id="state678" label="straight and overlapped by fibula" symbol="0" about="#state678">
@@ -4479,7 +4836,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/c26ab59e-0ee6-4f36-81c2-c25747e9bbd9"/>
+                  <phen:typeref about="PATO:0002489"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0001446"/>
                   </phen:related_entity>
@@ -4530,7 +4887,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state681" label="does not apply" symbol="-"/>
+        <state id="state681" label="does not apply" symbol="-" about="#state681">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000979"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states682">
         <state id="state684" label="tibia nearly flat, with little or no shaft between widened proximal and distal extremities" symbol="0" about="#state684">
@@ -4587,7 +4957,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state686" label="does not apply" symbol="-"/>
+        <state id="state686" label="does not apply" symbol="-" about="#state686">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000979"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states687">
         <state id="state689" label="no" symbol="0" about="#state689">
@@ -4630,7 +5013,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state691" label="does not apply" symbol="-"/>
+        <state id="state691" label="does not apply" symbol="-" about="#state691">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000979"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state806" symbol="3" label=""/>
       </states>
       <states id="states692">
@@ -4662,7 +5058,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state696" label="does not apply" symbol="-"/>
+        <state id="state696" label="does not apply" symbol="-" about="#state696">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000979"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states697">
         <state id="state699" label="ossified separately" symbol="0" about="#state699">
@@ -4699,7 +5108,28 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state701" label="does not apply" symbol="-"/>
+        <state id="state701" label="does not apply" symbol="-" about="#state701">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000979"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001446"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states702">
         <state id="state704" label="slight concavity of medial edge of fibula and little or no concavity of lateral edge between expanded proximal and distal articulating surfaces" symbol="0" about="#state704">
@@ -4810,7 +5240,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state707" label="does not apply" symbol="-"/>
+        <state id="state707" label="does not apply" symbol="-" about="#state707">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001446"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states708">
         <state id="state710" label="approx. 25 degrees" symbol="0" about="#state710">
@@ -4896,7 +5339,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state714" label="does not apply" symbol="-"/>
+        <state id="state714" label="does not apply" symbol="-" about="#state714">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001446"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states715">
         <state id="state717" label="short, rectangular or rounded fibulare, intermedium, and tibiale" symbol="0" about="#state717">
@@ -4997,7 +5453,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state720" label="does not apply" symbol="-"/>
+        <state id="state720" label="does not apply" symbol="-" about="#state720">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011679"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states721">
         <state id="state723" label="none recognized" symbol="0" about="#state723">
@@ -5070,7 +5539,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state728" label="does not apply" symbol="-"/>
+        <state id="state728" label="does not apply" symbol="-" about="#state728">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001447"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states729">
         <state id="state731" label="five" symbol="0" about="#state731">
@@ -5131,7 +5613,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state734" label="does not apply" symbol="-"/>
+        <state id="state734" label="does not apply" symbol="-" about="#state734">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010721"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states735">
         <state id="state737" label="eight " symbol="0" about="#state737">
@@ -6048,7 +6543,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state751" label="does not apply" symbol="-"/>
+        <state id="state751" label="does not apply" symbol="-" about="#state751">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010696"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states752">
         <state id="state754" label="lacking distinguishable larvae as identified by the presence of external gills and/ or a period of metamorphosis between juveniles and adults" symbol="0"/>
@@ -6401,7 +6909,7 @@
       </char>
       <char about="#char688" id="char688" label="Torsion between extremities" states="states687">
         <meta content="false" datatype="xsd:boolean" id="meta942" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">Entity post-composition should use bearer_of relation because 'torsion' is a quality term.</meta>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">Entity post-composition should use bearer_of relation because 'torsion' is a quality term. state 3 is supposed to be not applicable, since the only 3 taxa annotated with this have no limbs. This is error in original matrix</meta>
       </char>
       <char about="#char693" id="char693" label="Cnemial crest along anterodorsal surface" states="states692">
         <meta content="false" datatype="xsd:boolean" id="meta943" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -7647,7 +8155,7 @@
         <cell char="char672" state="state675"/>
         <cell char="char677" state="state681"/>
         <cell char="char683" state="state686"/>
-        <cell char="char688" state="state806"/>
+        <cell char="char688" state="state691"/>
         <cell char="char693" state="state696"/>
         <cell char="char698" state="state701"/>
         <cell char="char703" state="state707"/>
@@ -7755,7 +8263,7 @@
         <cell char="char672" state="state675"/>
         <cell char="char677" state="state681"/>
         <cell char="char683" state="state686"/>
-        <cell char="char688" state="state806"/>
+        <cell char="char688" state="state691"/>
         <cell char="char693" state="state696"/>
         <cell char="char698" state="state701"/>
         <cell char="char703" state="state707"/>
@@ -7860,7 +8368,7 @@
         <cell char="char672" state="state675"/>
         <cell char="char677" state="state681"/>
         <cell char="char683" state="state686"/>
-        <cell char="char688" state="state806"/>
+        <cell char="char688" state="state691"/>
         <cell char="char693" state="state696"/>
         <cell char="char698" state="state701"/>
         <cell char="char703" state="state707"/>
@@ -8743,4 +9251,6 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t5cbdd33c-51ae-4862-800e-b7569bd0c935" otus="otus1"/>
+  <trees id="t3cbdad05-cb2d-4651-b6bf-fd3d3549c090" otus="otus1"/>
 </nex:nexml>

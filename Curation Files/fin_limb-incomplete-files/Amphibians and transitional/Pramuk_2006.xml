@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
   <otus about="#otus6079" id="otus6079" label="Taxa">
     <meta content="6626916345483507279" datatype="xsd:long" id="meta6344" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
@@ -766,7 +766,7 @@
                   <phen:typeref about="UBERON:3000869"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/6a7dc908-15a0-489a-b007-bc9e7a5b6c80"/>
+                  <phen:typeref about="PATO:0002497"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -787,12 +787,62 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001051"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000774"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state6592" label="perpendicular to the plane of the ilia, forming a 90? angle" symbol="1"/>
-        <state id="state6593" label="or forms an obtuse angle" symbol="2"/>
+        <state id="state6592" label="perpendicular to the plane of the ilia, forming a 90? angle" symbol="1" about="#state6592">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002216">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001273"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002434"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000774"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state6593" label="or forms an obtuse angle" symbol="2" about="#state6593">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002216">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001273"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001052"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:3000774"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states6594">
         <state id="state6596" label="In medial view, a dorsal crest on the ilial shaft can be absent" symbol="0" about="#state6596">
@@ -1220,9 +1270,104 @@
         <state id="state6671" label="present, round" symbol="3"/>
       </states>
       <states id="states6672">
-        <state id="state6674" label="Linear ridge or ?spade? present on skin overlying astragulus absent" symbol="0"/>
-        <state id="state6675" label="present" symbol="1"/>
-        <state id="state6676" label="present, with thick keratinous edge" symbol="2"/>
+        <state id="state6674" label="Linear ridge or ?spade? present on skin overlying astragulus absent" symbol="0" about="#state6674">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001003">
+                    <phen:qualifier relation="RO:0002220">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002395"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002358"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001003">
+                    <phen:qualifier relation="RO:0002220">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002395"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002432"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010685"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002432"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state6675" label="present" symbol="1" about="#state6675">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010685"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002432"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state6676" label="present, with thick keratinous edge" symbol="2" about="#state6676">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010685"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002432"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001003">
+                    <phen:qualifier relation="RO:0002220">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:3010685"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000591"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010685"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/7670b5ec-3d88-42cb-bfb9-308c10ed3036"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states6677">
         <state id="state6679" label="Vocal slits present, bilateral" symbol="0"/>
@@ -1542,6 +1687,7 @@
       </char>
       <char about="#char6673" id="char6673" label="Spade present on tarsus. Many species of Bufo bear a small spade-like structure on the skin overlying the astragulus of the hind limb; this spade presumably aids in digging." states="states6672">
         <meta content="false" datatype="xsd:boolean" id="meta6874" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">according to Banbury and Magila the spade is on the prehullux of spadefoots</meta>
       </char>
       <char about="#char6678" id="char6678" label="Vocal slits." states="states6677">
         <meta content="false" datatype="xsd:boolean" id="meta6875" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -6780,4 +6926,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t04bb2db8-efb1-495b-8c5b-2e8925901686" otus="otus6079"/>
 </nex:nexml>

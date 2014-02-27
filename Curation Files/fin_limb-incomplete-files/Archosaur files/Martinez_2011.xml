@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
     <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Martinez, R. N., Sereno, P. C., Alcober, O. a, Colombi, C. E., Renne, P. R., Montañez, I. P., &amp; Currie, B. S. (2011). A basal dinosaur from the dawn of the dinosaur era in southwestern Pangaea. Science, 331(6014), 206–10.</meta>
     <meta xsi:type="LiteralMeta" property="ter:identifier">10.1126/science.1198467</meta>
     <meta xsi:type="LiteralMeta" property="ter:title">Martinez, R. N., Sereno, P. C., Alcober, O. a, Colombi, C. E., Renne, P. R., Montañez, I. P., &amp; Currie, B. S. (2011)</meta>
   </meta>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="438528f4-bd70-4a6a-aff5-bfc5dc7a5d55">
-    <otu id="612327ba-44d8-4f52-a717-ef3fd15150b7" label="DINOSAUROMORPH_ANC   "/>
+    <otu id="612327ba-44d8-4f52-a717-ef3fd15150b7" label="DINOSAUROMORPH_ANC   " about="#612327ba-44d8-4f52-a717-ef3fd15150b7">
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9021571"/>
+    </otu>
     <otu id="b81834a3-47ed-461e-810b-d9cbfd16a0d8" label="LAGERPETIDAE " about="#b81834a3-47ed-461e-810b-d9cbfd16a0d8">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9001676"/>
     </otu>
@@ -55,9 +57,12 @@
     <otu id="2e414d6a-1a98-4407-b94a-7fe31a153eaf" label="Coelophysis" about="#2e414d6a-1a98-4407-b94a-7fe31a153eaf">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9022478"/>
     </otu>
-    <otu id="53b621a4-e93c-4388-8d08-ba3c55c357cd" label="Syntarsus_r.         "/>
+    <otu id="53b621a4-e93c-4388-8d08-ba3c55c357cd" label="Syntarsus_r.         " about="#53b621a4-e93c-4388-8d08-ba3c55c357cd">
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9026647"/>
+    </otu>
     <otu id="55546aae-43a6-4348-812c-1b49cd9effd5" label="'&quot;Syntarsus&quot; k.'     " about="#55546aae-43a6-4348-812c-1b49cd9effd5">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Need to request for VTO ("Syntarsus" k., Martinez et al. 2011)</meta>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9029828"/>
     </otu>
     <otu id="4badb103-6dbf-4cab-914c-9ff851e1329f" label="Dilophosaurus      " about="#4badb103-6dbf-4cab-914c-9ff851e1329f">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9009115"/>
@@ -7311,6 +7316,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t43025848-b0c7-4515-8915-4aa7f284f186" otus="438528f4-bd70-4a6a-aff5-bfc5dc7a5d55"/>
   <trees id="t4a1ffcd9-0c1e-4267-acd0-e0660ad87975" otus="438528f4-bd70-4a6a-aff5-bfc5dc7a5d55"/>
   <trees id="ta290d4b6-8ecf-44d6-8fbd-2ad9df315aaa" otus="438528f4-bd70-4a6a-aff5-bfc5dc7a5d55"/>
 </nexml>
