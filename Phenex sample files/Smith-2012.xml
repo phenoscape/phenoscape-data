@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="org.nexml.model.impl.DocumentImpl" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
   <otus about="#otus1397" id="otus1397" label="Taxa">
     <meta content="1810254407404329290" datatype="xsd:long" id="meta1434" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
     <meta content="Default Bush (id 22, version 32)" datatype="xsd:anySimpleType" id="meta1433" property="bean:DefaultTree" xsi:type="nex:LiteralMeta"/>
@@ -66,132 +68,21 @@
     <format>
       <states id="states1436">
         <state id="state1438" label="laterally compressed" symbol="0"/>
-        <state id="state1439" label="cylindrical" symbol="1"/>
-      </states>
-      <states id="states1440">
-        <state id="state1442" label="BD more than 11%TL" symbol="0"/>
-        <state id="state1443" label="BD less than 11%TL" symbol="1"/>
-      </states>
-      <states id="states1444">
-        <state id="state1446" label="evenly pigmented" symbol="0"/>
-        <state id="state1447" label="with pale posteror patch" symbol="1"/>
-      </states>
-      <states id="states1448">
-        <state id="state1450" label="absent" symbol="0"/>
-        <state id="state1451" label="present" symbol="1"/>
-      </states>
-      <states id="states1452">
-        <state id="state1454" label="absent" symbol="0"/>
-        <state id="state1455" label="present" symbol="1"/>
-      </states>
-      <states id="states1456">
-        <state id="state1458" label="absent" symbol="0"/>
-        <state id="state1459" label="present" symbol="1"/>
-      </states>
-      <states id="states1460">
-        <state id="state1462" label="absent" symbol="0"/>
-        <state id="state1463" label="present" symbol="1"/>
-      </states>
-      <states id="states1464">
-        <state id="state1466" label="absent" symbol="0"/>
-        <state id="state1467" label="2-3_thin_dark_lines" symbol="1"/>
-        <state id="state1468" label="white line" symbol="2"/>
-      </states>
-      <states id="states1469">
-        <state id="state1471" label="low contrast" symbol="0"/>
-        <state id="state1472" label="high contrast" symbol="1"/>
-      </states>
-      <states id="states1473">
-        <state id="state1475" label="absent" symbol="0"/>
-        <state id="state1476" label="present" symbol="1"/>
-      </states>
-      <states id="states1477">
-        <state id="state1479" label="even" symbol="0"/>
-        <state id="state1480" label="blotchy,_marbled" symbol="1"/>
-      </states>
-      <states id="states1481">
-        <state id="state1483" label="absent" symbol="0"/>
-        <state id="state1484" label="present" symbol="1"/>
-      </states>
-      <states id="states1485">
-        <state id="state1487" label="large" symbol="0"/>
-        <state id="state1488" label="small" symbol="1"/>
-      </states>
-      <states id="states1489">
-        <state id="state1491" label="absent" symbol="0"/>
-        <state id="state1492" label="present" symbol="1"/>
-      </states>
-      <states id="states1493">
-        <state id="state1495" label="present" symbol="0"/>
-        <state id="state1496" label="absent on anterior dorsum" symbol="1"/>
-        <state id="state1497" label="absent along entire dorum" symbol="2"/>
-      </states>
-      <states id="states1498">
-        <state id="state1500" label="present" symbol="0"/>
-        <state id="state1501" label="absent" symbol="1"/>
-      </states>
-      <states id="states1502">
-        <state id="state1504" label="small,_9-11_above_LL" symbol="0"/>
-        <state id="state1505" label="medium,_5-8_above_LL" symbol="1"/>
-        <state id="state1506" label="large,_3-4_above_LL" symbol="2"/>
-        <state id="state1507" label="very_small,_more_than_11" symbol="3"/>
-      </states>
-      <states id="states1508">
-        <state id="state1510" label="ovoid" symbol="0"/>
-        <state id="state1511" label="rhomboid" symbol="1"/>
-      </states>
-      <states id="states1512">
-        <state id="state1514" label="less than one third HL" symbol="0"/>
-        <state id="state1515" label="more than one third HL" symbol="1"/>
-      </states>
-      <states id="states1516">
-        <state id="state1518" label="absent" symbol="0"/>
-        <state id="state1519" label="present" symbol="1"/>
-      </states>
-      <states id="states1520">
-        <state id="state1522" label="terminal" symbol="0"/>
-        <state id="state1523" label="superior" symbol="1"/>
-        <state id="state1524" label="inferior" symbol="2"/>
-      </states>
-      <states id="states1525">
-        <state id="state1527" label="present" symbol="0"/>
-        <state id="state1528" label="absent" symbol="1"/>
-      </states>
-      <states id="states1529">
-        <state id="state1531" label="present" symbol="0"/>
-        <state id="state1532" label="absent" symbol="1"/>
-      </states>
-      <states id="states1533">
-        <state id="state1535" label="conical" symbol="0"/>
-        <state id="state1536" label="villiform" symbol="1"/>
+        <state id="state1439" label="cylindrical" symbol="1" about="#state1439">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000468"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states1537">
-        <state id="state1539" label="small" symbol="0"/>
-        <state id="state1540" label="large" symbol="1"/>
-      </states>
-      <states id="states1541">
-        <state id="state1543" label="triangular" symbol="0"/>
-        <state id="state1544" label="elongate" symbol="1"/>
-      </states>
-      <states id="states1545">
-        <state id="state1547" label="absent" symbol="0"/>
-        <state id="state1548" label="present" symbol="1"/>
-      </states>
-      <states id="states1549">
-        <state id="state1551" label="retained to adult" symbol="0"/>
-        <state id="state1552" label="reduced or lost" symbol="1"/>
-      </states>
-      <states id="states1553">
-        <state id="state1555" label="6-10" symbol="0"/>
-        <state id="state1556" label="none" symbol="1"/>
-      </states>
-      <states id="states1557">
-        <state id="state1559" label="robust,_wide_as_deep" symbol="0"/>
-        <state id="state1560" label="thin,_&gt;_twice_deep_as_wide" symbol="1"/>
-      </states>
-      <states id="states1561">
-        <state id="state1563" label="sessile" symbol="0"/>
-        <state id="state1564" label="on stalk" symbol="1"/>
+        <state id="state1539" label="smaller than dentary" symbol="0"/>
+        <state id="state1540" label="larger than dentary" symbol="1"/>
       </states>
       <states id="states1565">
         <state id="state1567" label="absent" symbol="0"/>
@@ -357,7 +248,7 @@
       <states id="states1726">
         <state id="state1728" label="short" symbol="0"/>
         <state id="state1729" label="elongate" symbol="1"/>
-        <state id="state2460" symbol="2"/>
+        <state id="state2460" symbol="2" label=""/>
       </states>
       <states id="states1730">
         <state id="state1732" label="broad" symbol="0"/>
@@ -490,7 +381,7 @@
       </states>
       <states id="states1859">
         <state id="state1861" label="large,_2_diameters_in_PO" symbol="0"/>
-        <state id="state1862" label="small,_&gt;_5_diameters_in_PO" symbol="1"/>
+        <state id="state1862" label="small,_>_5_diameters_in_PO" symbol="1"/>
       </states>
       <states id="states1863">
         <state id="state1865" label="robust" symbol="0"/>
@@ -922,7 +813,7 @@
       </states>
       <states id="states2291">
         <state id="state2293" label="short,_&lt;_0.80_body_depth" symbol="0"/>
-        <state id="state2294" label="long,_&gt;_0.80_body_depth" symbol="1"/>
+        <state id="state2294" label="long,_>_0.80_body_depth" symbol="1"/>
       </states>
       <states id="states2295">
         <state id="state2297" label="narrow" symbol="0"/>
@@ -960,7 +851,7 @@
       <states id="states2328">
         <state id="state2330" label="post_anal-fin_17-45%_TL" symbol="0"/>
         <state id="state2331" label="short,_0-16%_TL" symbol="1"/>
-        <state id="state2332" label="long,_&gt;_45%_TL" symbol="2"/>
+        <state id="state2332" label="long,_>_45%_TL" symbol="2"/>
       </states>
       <states id="states2333">
         <state id="state2335" label="7-15" symbol="0"/>
@@ -1087,95 +978,8 @@
       <char about="#char1437" id="char1437" label="Body shape" states="states1436">
         <meta content="false" datatype="xsd:boolean" id="meta2479" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char1441" id="char1441" label="Body elongate" states="states1440">
-        <meta content="false" datatype="xsd:boolean" id="meta2480" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1445" id="char1445" label="Anal fin membrane" states="states1444">
-        <meta content="false" datatype="xsd:boolean" id="meta2481" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1449" id="char1449" label="Oblique stripes" states="states1448">
-        <meta content="false" datatype="xsd:boolean" id="meta2482" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1453" id="char1453" label="Saddle-shaped bars" states="states1452">
-        <meta content="false" datatype="xsd:boolean" id="meta2483" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1457" id="char1457" label="Irregular blotches" states="states1456">
-        <meta content="false" datatype="xsd:boolean" id="meta2484" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1461" id="char1461" label="Clear area at base AF" states="states1460">
-        <meta content="false" datatype="xsd:boolean" id="meta2485" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1465" id="char1465" label="Longitudinal lines" states="states1464">
-        <meta content="false" datatype="xsd:boolean" id="meta2486" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1470" id="char1470" label="Pigments" states="states1469">
-        <meta content="false" datatype="xsd:boolean" id="meta2487" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1474" id="char1474" label="Antoribital stripe" states="states1473">
-        <meta content="false" datatype="xsd:boolean" id="meta2488" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1478" id="char1478" label="Pigment distribution" states="states1477">
-        <meta content="false" datatype="xsd:boolean" id="meta2489" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1482" id="char1482" label="Body translucence" states="states1481">
-        <meta content="false" datatype="xsd:boolean" id="meta2490" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1486" id="char1486" label="Branchial opening" states="states1485">
-        <meta content="false" datatype="xsd:boolean" id="meta2491" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1490" id="char1490" label="Body squamation" states="states1489">
-        <meta content="false" datatype="xsd:boolean" id="meta2492" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1494" id="char1494" label="Scales on middorsum" states="states1493">
-        <meta content="false" datatype="xsd:boolean" id="meta2493" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1499" id="char1499" label="Scales posterolateral body" states="states1498">
-        <meta content="false" datatype="xsd:boolean" id="meta2494" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1503" id="char1503" label="Scale size" states="states1502">
-        <meta content="false" datatype="xsd:boolean" id="meta2495" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1509" id="char1509" label="Scale shape" states="states1508">
-        <meta content="false" datatype="xsd:boolean" id="meta2496" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1513" id="char1513" label="Gape large" states="states1512">
-        <meta content="false" datatype="xsd:boolean" id="meta2497" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1517" id="char1517" label="Gape short" states="states1516">
-        <meta content="false" datatype="xsd:boolean" id="meta2498" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1521" id="char1521" label="Oral opening in adults" states="states1520">
-        <meta content="false" datatype="xsd:boolean" id="meta2499" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1526" id="char1526" label="Oral dentition" states="states1525">
-        <meta content="false" datatype="xsd:boolean" id="meta2500" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1530" id="char1530" label="Adult dentition" states="states1529">
-        <meta content="false" datatype="xsd:boolean" id="meta2501" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1534" id="char1534" label="Shape of teeth" states="states1533">
-        <meta content="false" datatype="xsd:boolean" id="meta2502" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
       <char about="#char1538" id="char1538" label="Premaxilla size" states="states1537">
         <meta content="false" datatype="xsd:boolean" id="meta2503" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1542" id="char1542" label="Premaxilla shape" states="states1541">
-        <meta content="false" datatype="xsd:boolean" id="meta2504" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1546" id="char1546" label="Premaxilla gracile" states="states1545">
-        <meta content="false" datatype="xsd:boolean" id="meta2505" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1550" id="char1550" label="Premaxillary teeth" states="states1549">
-        <meta content="false" datatype="xsd:boolean" id="meta2506" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1554" id="char1554" label="Maxillary dentition" states="states1553">
-        <meta content="false" datatype="xsd:boolean" id="meta2507" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1558" id="char1558" label="Maxillary shape" states="states1557">
-        <meta content="false" datatype="xsd:boolean" id="meta2508" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-      </char>
-      <char about="#char1562" id="char1562" label="Maxillary head" states="states1561">
-        <meta content="false" datatype="xsd:boolean" id="meta2509" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char1566" id="char1566" label="Anterior process of maxilla" states="states1565">
         <meta content="false" datatype="xsd:boolean" id="meta2510" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -1834,37 +1638,7 @@
     </format>
     <matrix>
       <row id="row2455" otu="otu1399">
-        <cell char="char1437" state="state1438"/>
-        <cell char="char1441" state="state1442"/>
-        <cell char="char1445" state="state1446"/>
-        <cell char="char1449" state="state1450"/>
-        <cell char="char1453" state="state1454"/>
-        <cell char="char1457" state="state1458"/>
-        <cell char="char1461" state="state1462"/>
-        <cell char="char1465" state="state1466"/>
-        <cell char="char1470" state="state1472"/>
-        <cell char="char1474" state="state1475"/>
-        <cell char="char1478" state="state1479"/>
-        <cell char="char1482" state="state1483"/>
-        <cell char="char1486" state="state1488"/>
-        <cell char="char1490" state="state1491"/>
-        <cell char="char1494" state="state1495"/>
-        <cell char="char1499" state="state1500"/>
-        <cell char="char1503" state="state1504"/>
-        <cell char="char1509" state="state1510"/>
-        <cell char="char1513" state="state1515"/>
-        <cell char="char1517" state="state1518"/>
-        <cell char="char1521" state="state1524"/>
-        <cell char="char1526" state="state1527"/>
-        <cell char="char1530" state="state1531"/>
-        <cell char="char1534" state="state1535"/>
         <cell char="char1538" state="state1539"/>
-        <cell char="char1542" state="state1543"/>
-        <cell char="char1546" state="state1547"/>
-        <cell char="char1550" state="state1552"/>
-        <cell char="char1554" state="state1556"/>
-        <cell char="char1558" state="state1560"/>
-        <cell char="char1562" state="state1564"/>
         <cell char="char1566" state="state1567"/>
         <cell char="char1570" state="state1572"/>
         <cell char="char1574" state="state1575"/>
@@ -2045,37 +1819,7 @@
         <cell char="char2448" state="state2449"/>
       </row>
       <row id="row2456" otu="otu1403">
-        <cell char="char1437" state="state1438"/>
-        <cell char="char1441" state="state1442"/>
-        <cell char="char1445" state="state1446"/>
-        <cell char="char1449" state="state1450"/>
-        <cell char="char1453" state="state1454"/>
-        <cell char="char1457" state="state1458"/>
-        <cell char="char1461" state="state1463"/>
-        <cell char="char1465" state="state1466"/>
-        <cell char="char1470" state="state1472"/>
-        <cell char="char1474" state="state1475"/>
-        <cell char="char1478" state="state1479"/>
-        <cell char="char1482" state="state1483"/>
-        <cell char="char1486" state="state1488"/>
-        <cell char="char1490" state="state1491"/>
-        <cell char="char1494" state="state1495"/>
-        <cell char="char1499" state="state1500"/>
-        <cell char="char1503" state="state1504"/>
-        <cell char="char1509" state="state1510"/>
-        <cell char="char1513" state="state1515"/>
-        <cell char="char1517" state="state1518"/>
-        <cell char="char1521" state="state1524"/>
-        <cell char="char1526" state="state1527"/>
-        <cell char="char1530" state="state1531"/>
-        <cell char="char1534" state="state1535"/>
         <cell char="char1538" state="state1539"/>
-        <cell char="char1542" state="state1543"/>
-        <cell char="char1546" state="state1548"/>
-        <cell char="char1550" state="state1552"/>
-        <cell char="char1554" state="state1556"/>
-        <cell char="char1558" state="state1560"/>
-        <cell char="char1562" state="state1564"/>
         <cell char="char1566" state="state1567"/>
         <cell char="char1570" state="state1572"/>
         <cell char="char1574" state="state1575"/>
@@ -2295,37 +2039,7 @@
         <cell char="char2452" state="state2454"/>
       </row>
       <row id="row2457" otu="otu1407">
-        <cell char="char1437" state="state1438"/>
-        <cell char="char1441" state="state1442"/>
-        <cell char="char1445" state="state1446"/>
-        <cell char="char1449" state="state1450"/>
-        <cell char="char1453" state="state1454"/>
-        <cell char="char1457" state="state1458"/>
-        <cell char="char1461" state="state1463"/>
-        <cell char="char1465" state="state1466"/>
-        <cell char="char1470" state="state1472"/>
-        <cell char="char1474" state="state1475"/>
-        <cell char="char1478" state="state1479"/>
-        <cell char="char1482" state="state1483"/>
-        <cell char="char1486" state="state1488"/>
-        <cell char="char1490" state="state1491"/>
-        <cell char="char1494" state="state1497"/>
-        <cell char="char1499" state="state1500"/>
-        <cell char="char1503" state="state1504"/>
-        <cell char="char1509" state="state1510"/>
-        <cell char="char1513" state="state1514"/>
-        <cell char="char1517" state="state1518"/>
-        <cell char="char1521" state="state1524"/>
-        <cell char="char1526" state="state1527"/>
-        <cell char="char1530" state="state1531"/>
-        <cell char="char1534" state="state1535"/>
         <cell char="char1538" state="state1539"/>
-        <cell char="char1542" state="state1543"/>
-        <cell char="char1546" state="state1548"/>
-        <cell char="char1550" state="state1552"/>
-        <cell char="char1554" state="state1556"/>
-        <cell char="char1558" state="state1560"/>
-        <cell char="char1562" state="state1564"/>
         <cell char="char1566" state="state1567"/>
         <cell char="char1570" state="state1572"/>
         <cell char="char1574" state="state1575"/>
@@ -2526,37 +2240,7 @@
         <cell char="char2448" state="state2449"/>
       </row>
       <row id="row2458" otu="otu1411">
-        <cell char="char1437" state="state1438"/>
-        <cell char="char1441" state="state1442"/>
-        <cell char="char1445" state="state1446"/>
-        <cell char="char1449" state="state1450"/>
-        <cell char="char1453" state="state1454"/>
-        <cell char="char1457" state="state1458"/>
-        <cell char="char1461" state="state1463"/>
-        <cell char="char1465" state="state1466"/>
-        <cell char="char1470" state="state1472"/>
-        <cell char="char1474" state="state1475"/>
-        <cell char="char1478" state="state1479"/>
-        <cell char="char1482" state="state1483"/>
-        <cell char="char1486" state="state1488"/>
-        <cell char="char1490" state="state1491"/>
-        <cell char="char1494" state="state1495"/>
-        <cell char="char1499" state="state1500"/>
-        <cell char="char1503" state="state1504"/>
-        <cell char="char1509" state="state1510"/>
-        <cell char="char1513" state="state1515"/>
-        <cell char="char1517" state="state1518"/>
-        <cell char="char1521" state="state1524"/>
-        <cell char="char1526" state="state1527"/>
-        <cell char="char1530" state="state1531"/>
-        <cell char="char1534" state="state1535"/>
         <cell char="char1538" state="state1539"/>
-        <cell char="char1542" state="state1543"/>
-        <cell char="char1546" state="state1547"/>
-        <cell char="char1550" state="state1551"/>
-        <cell char="char1554" state="state1556"/>
-        <cell char="char1558" state="state1560"/>
-        <cell char="char1562" state="state1564"/>
         <cell char="char1566" state="state1567"/>
         <cell char="char1570" state="state1572"/>
         <cell char="char1574" state="state1575"/>
@@ -2776,35 +2460,7 @@
         <cell char="char2452" state="state2454"/>
       </row>
       <row id="row2459" otu="otu1415">
-        <cell char="char1437" state="state1438"/>
-        <cell char="char1441" state="state1442"/>
-        <cell char="char1445" state="state1446"/>
-        <cell char="char1449" state="state1450"/>
-        <cell char="char1453" state="state1454"/>
-        <cell char="char1457" state="state1458"/>
-        <cell char="char1461" state="state1463"/>
-        <cell char="char1465" state="state1466"/>
-        <cell char="char1470" state="state1472"/>
-        <cell char="char1474" state="state1475"/>
-        <cell char="char1478" state="state1480"/>
-        <cell char="char1482" state="state1483"/>
-        <cell char="char1486" state="state1488"/>
-        <cell char="char1490" state="state1491"/>
-        <cell char="char1494" state="state1495"/>
-        <cell char="char1499" state="state1500"/>
-        <cell char="char1513" state="state1514"/>
-        <cell char="char1517" state="state1518"/>
-        <cell char="char1521" state="state1524"/>
-        <cell char="char1526" state="state1527"/>
-        <cell char="char1530" state="state1531"/>
-        <cell char="char1534" state="state1535"/>
         <cell char="char1538" state="state1539"/>
-        <cell char="char1542" state="state1543"/>
-        <cell char="char1546" state="state1547"/>
-        <cell char="char1550" state="state1551"/>
-        <cell char="char1554" state="state1556"/>
-        <cell char="char1558" state="state1560"/>
-        <cell char="char1562" state="state1564"/>
         <cell char="char1566" state="state1567"/>
         <cell char="char1570" state="state1572"/>
         <cell char="char1574" state="state1575"/>
@@ -2953,37 +2609,7 @@
         <cell char="char2448" state="state2449"/>
       </row>
       <row id="row2461" otu="otu1419">
-        <cell char="char1437" state="state1438"/>
-        <cell char="char1441" state="state1442"/>
-        <cell char="char1445" state="state1446"/>
-        <cell char="char1449" state="state1450"/>
-        <cell char="char1453" state="state1454"/>
-        <cell char="char1457" state="state1458"/>
-        <cell char="char1461" state="state1463"/>
-        <cell char="char1465" state="state1466"/>
-        <cell char="char1470" state="state1472"/>
-        <cell char="char1474" state="state1475"/>
-        <cell char="char1478" state="state1480"/>
-        <cell char="char1482" state="state1483"/>
-        <cell char="char1486" state="state1488"/>
-        <cell char="char1490" state="state1491"/>
-        <cell char="char1494" state="state1495"/>
-        <cell char="char1499" state="state1500"/>
-        <cell char="char1503" state="state1504"/>
-        <cell char="char1509" state="state1510"/>
-        <cell char="char1513" state="state1514"/>
-        <cell char="char1517" state="state1518"/>
-        <cell char="char1521" state="state1524"/>
-        <cell char="char1526" state="state1527"/>
-        <cell char="char1530" state="state1531"/>
-        <cell char="char1534" state="state1535"/>
         <cell char="char1538" state="state1539"/>
-        <cell char="char1542" state="state1543"/>
-        <cell char="char1546" state="state1547"/>
-        <cell char="char1550" state="state1551"/>
-        <cell char="char1554" state="state1556"/>
-        <cell char="char1558" state="state1560"/>
-        <cell char="char1562" state="state1564"/>
         <cell char="char1566" state="state1567"/>
         <cell char="char1570" state="state1572"/>
         <cell char="char1574" state="state1575"/>
@@ -3144,37 +2770,7 @@
         <cell char="char2448" state="state2449"/>
       </row>
       <row id="row2462" otu="otu1423">
-        <cell char="char1437" state="state1438"/>
-        <cell char="char1441" state="state1442"/>
-        <cell char="char1445" state="state1446"/>
-        <cell char="char1449" state="state1450"/>
-        <cell char="char1453" state="state1454"/>
-        <cell char="char1457" state="state1458"/>
-        <cell char="char1461" state="state1462"/>
-        <cell char="char1465" state="state1466"/>
-        <cell char="char1470" state="state1471"/>
-        <cell char="char1474" state="state1476"/>
-        <cell char="char1478" state="state1479"/>
-        <cell char="char1482" state="state1484"/>
-        <cell char="char1486" state="state1488"/>
-        <cell char="char1490" state="state1491"/>
-        <cell char="char1494" state="state1497"/>
-        <cell char="char1499" state="state1500"/>
-        <cell char="char1503" state="state1505"/>
-        <cell char="char1509" state="state1511"/>
-        <cell char="char1513" state="state1515"/>
-        <cell char="char1517" state="state1518"/>
-        <cell char="char1521" state="state1524"/>
-        <cell char="char1526" state="state1527"/>
-        <cell char="char1530" state="state1531"/>
-        <cell char="char1534" state="state1535"/>
         <cell char="char1538" state="state1539"/>
-        <cell char="char1542" state="state1543"/>
-        <cell char="char1546" state="state1547"/>
-        <cell char="char1550" state="state1551"/>
-        <cell char="char1554" state="state1556"/>
-        <cell char="char1558" state="state1560"/>
-        <cell char="char1562" state="state1564"/>
         <cell char="char1566" state="state1567"/>
         <cell char="char1570" state="state1572"/>
         <cell char="char1574" state="state1575"/>
@@ -3375,6 +2971,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tf4ddbd8d-0db3-469c-9185-ff8035fa8351" otus="otus1397"/>
   <trees about="#trees2728" id="trees2728" label="Trees from &quot;Albert-2001.nex&quot;" otus="otus1397">
     <meta content="7980318019939220663" datatype="xsd:long" id="meta2784" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
     <meta content="false" datatype="xsd:boolean" id="meta2783" property="bean:WriteWeights" xsi:type="nex:LiteralMeta"/>
@@ -3383,7 +2980,13 @@
     <meta content="2" datatype="xsd:integer" id="meta2780" property="bean:NumberOfParts" xsi:type="nex:LiteralMeta"/>
     <meta content="true" datatype="xsd:boolean" id="meta2779" property="bean:Writable" xsi:type="nex:LiteralMeta"/>
     <meta content="mesquite.lib.MesquiteProject@1c6bff9" datatype="xsd:anySimpleType" id="meta2778" property="bean:Project" xsi:type="nex:LiteralMeta"/>
-    <meta content="&#9;&#9;1 Apteronotus_cuyuniense,&#10;&#9;&#9;2 Apteronotus_albifrons,&#10;&#9;&#9;3 Apteronotus_cuchillejo,&#10;&#9;&#9;4 Apteronotus_leptorhynchus,&#10;&#9;&#9;5 Apteronotus_magdalenensis,&#10;&#9;&#9;6 Apteronotus_cuchillo,&#10;&#9;&#9;7 Compsaraia_sp._A" datatype="xsd:string" id="meta2777" property="bean:TranslationTable" xsi:type="nex:LiteralMeta"/>
+    <meta content="		1 Apteronotus_cuyuniense,
+		2 Apteronotus_albifrons,
+		3 Apteronotus_cuchillejo,
+		4 Apteronotus_leptorhynchus,
+		5 Apteronotus_magdalenensis,
+		6 Apteronotus_cuchillo,
+		7 Compsaraia_sp._A" datatype="xsd:string" id="meta2777" property="bean:TranslationTable" xsi:type="nex:LiteralMeta"/>
     <meta content="Manage TREES blocks (id# 1136)" datatype="xsd:anySimpleType" id="meta2776" property="bean:Manager" xsi:type="nex:LiteralMeta"/>
     <meta content="false" datatype="xsd:boolean" id="meta2775" property="bean:Dirty" xsi:type="nex:LiteralMeta"/>
     <meta content="false" datatype="xsd:boolean" id="meta2774" property="bean:ResourcePanelIsOpen" xsi:type="nex:LiteralMeta"/>

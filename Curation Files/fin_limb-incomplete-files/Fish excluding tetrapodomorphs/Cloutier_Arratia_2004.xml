@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
@@ -56,6 +56,7 @@
       </meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000450"/>
+        <meta xsi:type="LiteralMeta" property="ter:catalogNumber">uncatalogued</meta>
       </meta>
     </otu>
     <otu id="38a3bf7e-17b8-4ae1-8716-38473ea7ed9b" label="Amblypterus latus " about="#38a3bf7e-17b8-4ae1-8716-38473ea7ed9b">
@@ -88,7 +89,7 @@
     </otu>
     <otu id="3077a85f-4193-430a-a44e-96380c258e79" label="Cheirolepis n. sp. (Arratia and Cloutier 2004)" about="#3077a85f-4193-430a-a44e-96380c258e79">
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">Cheirolepis n. sp.</meta>
-      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Requested from VTO (9.5/2013): "Cheirolepis n. sp. (Arratia and Cloutier 2004)"</meta>
+      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Need UCMP coll code; Requested from VTO (9.5/2013): "Cheirolepis n. sp. (Arratia and Cloutier 2004)"</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9006477"/>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000498"/>
@@ -156,11 +157,12 @@
         <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000169"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">Uncataogued</meta>
       </meta>
+      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Need code UQAR, Universite du Quebec a Rimouski, Rimouski, Quebec, Canada;</meta>
     </otu>
     <otu id="84c9dc48-dfdc-486a-b33b-e2e0dfbd7a4a" label="Leptolepis coryphaenoides" about="#84c9dc48-dfdc-486a-b33b-e2e0dfbd7a4a">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0066739"/>
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="LiteralMeta" property="voc:hasMatrixName">Leptolepis coryphaenoides</meta>
-      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Need info for BGHan</meta>
+      <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Need info for BGHan personal collector?</meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">1956-8</meta>
       </meta>
@@ -4858,7 +4860,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2caef70e-57ae-4048-849b-1a36622bb55a"/>
+                  <phen:typeref about="UBERON:4300102"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462"/>
@@ -4872,7 +4874,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/2caef70e-57ae-4048-849b-1a36622bb55a"/>
+                  <phen:typeref about="UBERON:4300102"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467"/>
@@ -5201,7 +5203,7 @@
       <char id="1b254495-ec8d-4169-bd37-74ec3a7baaa3" label="Ganoine (SCHULTZE 1977; PATTERSON 1982, char. 3; GARDINER &amp; SCHAEFFER 1989, char. A3; SCHULTZE 1992; DIETZE 2000, char. 50; MAISEY 1986, char. N5; JANVIER 1996; TAVERNE 1997, char. 5; SCHULTZE &amp; CUMBAA 2001, char. 4; CLOUTIER &amp; AHLBERG 1996, char. 6; COATES 1998, char. A3; ZHU &amp; SCHULTZE 2001, char. 211)" states="ffd91e1a-c205-4f64-9607-d3acae5ece5d" about="#1b254495-ec8d-4169-bd37-74ec3a7baaa3"/>
       <char id="155b1df8-66ee-4a4e-aede-e281a816749a" label="Occipital scale row (LUND et al. 1995, char. 28)" states="e47ecb13-5702-4d2c-8f51-5b826945160e" about="#155b1df8-66ee-4a4e-aede-e281a816749a"/>
       <char id="7400a1b4-cc0a-46c9-9136-bb047ba70c7c" label="Enlarged postcleithral scales (DIETZE 2000, char. 44; POPLIN &amp; LUND 2000, char. 29)" states="0e9cc0d5-6326-4d3f-a132-58770d55b42e"/>
-      <char id="56f3f43e-170d-41e1-bcab-4af1f9b4898e" label="Flank scales (LUND 2000, char. 70; POPLIN &amp; LUND 2000, char. 31)" states="ab1c28e5-6f89-4371-adb9-e8066af56d68" about="#56f3f43e-170d-41e1-bcab-4af1f9b4898e"></char>
+      <char id="56f3f43e-170d-41e1-bcab-4af1f9b4898e" label="Flank scales (LUND 2000, char. 70; POPLIN &amp; LUND 2000, char. 31)" states="ab1c28e5-6f89-4371-adb9-e8066af56d68" about="#56f3f43e-170d-41e1-bcab-4af1f9b4898e"/>
       <char id="be676ff4-7cb3-4848-a62e-c39b90aa8b4e" label="Ventrolateral flank scales (LUND 2000, char. 71; POPLIN &amp; LUND 2000, char. 32)" states="d474d394-94bc-47f1-87fc-f07ba8e81894" about="#be676ff4-7cb3-4848-a62e-c39b90aa8b4e"/>
     </format>
     <matrix>
@@ -10792,6 +10794,8 @@
       <row id="91adafd5-e66f-498a-b8bb-f6648400d2a9" otu="8dccbd61-13c3-4f8b-8203-fb78c7ed2143"/>
     </matrix>
   </characters>
+  <trees id="tc178a96d-a3f3-45cd-80f3-3b825d799095" otus="c7b9a68f-698c-42ef-b58f-a3820366d216"/>
+  <trees id="t06337886-8c34-45e6-b3dc-864c3bbec6e8" otus="c7b9a68f-698c-42ef-b58f-a3820366d216"/>
   <trees id="t14b165f8-782e-44ac-b1b1-d4aa8eba1f6f" otus="c7b9a68f-698c-42ef-b58f-a3820366d216"/>
   <trees id="t748d186b-ed16-40a8-a8dc-4b5f25f986c9" otus="c7b9a68f-698c-42ef-b58f-a3820366d216"/>
   <trees id="t0c10a6a2-eec7-443b-a54f-0422b1c184ec" otus="c7b9a68f-698c-42ef-b58f-a3820366d216"/>

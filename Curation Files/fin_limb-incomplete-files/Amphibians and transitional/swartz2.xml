@@ -295,6 +295,9 @@
       <meta content="46" datatype="xsd:integer" id="meta188" property="msq:taxonUID" xsi:type="nex:LiteralMeta"/>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="nex:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_9008383"/>
     </otu>
+    <otu id="62803308-40cc-475f-960f-0463b84e08bc" label="Naja naja" about="#62803308-40cc-475f-960f-0463b84e08bc">
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0019179"/>
+    </otu>
   </otus>
   <characters about="#characters199" id="characters199" otus="otus1" xsi:type="nex:StandardCells">
     <meta content="208460856122390710" datatype="xsd:long" id="meta1127" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
@@ -2987,10 +2990,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:1500006"/>
+                  <phen:typeref about="UBERON:2000271">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000982"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/06bad35f-7f2b-4d2e-a57c-122665631087"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3001,10 +3010,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:1500006"/>
+                  <phen:typeref about="UBERON:2000271">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000982"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a67a517b-adb3-4ea1-8f83-0085318a977d"/>
+                  <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3096,7 +3111,7 @@
                   <phen:typeref about="BSPO:0000074">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:4440011"/>
+                        <phen:typeref about="UBERON:4000172"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -3122,7 +3137,7 @@
                   <phen:typeref about="BSPO:0000074">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:4440011"/>
+                        <phen:typeref about="UBERON:4000172"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -3787,6 +3802,25 @@
         <state id="state1059" label="almost horizontal orientation opercular process high up dorsally" symbol="1"/>
         <state id="state1060" label="very short laterally directed" symbol="2"/>
       </states>
+      <states id="sf7f347ce-2da6-4857-b5f6-c2402c4dbf47">
+        <state id="s2ccd25a4-e3f2-449f-8e7f-c3959f35a288" label="both present" symbol="0"/>
+        <state id="sa0ed53f3-64e6-4212-9845-273fee4f9f22" label="hindlimb absent" symbol="1"/>
+        <state id="s1a5593ea-947c-4fde-bdd8-5f225e201b64" label="forelimb absent" symbol="2"/>
+        <state id="sfd2e800a-2031-4fd7-9ef9-fecbe94289ef" label="both absent" symbol="3" about="#sfd2e800a-2031-4fd7-9ef9-fecbe94289ef">
+          <meta xmlns:ns="http://www.nexml.org/2009" xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002428"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <char about="#char201" id="char201" label="Ethmoid region" states="states200">
         <meta content="false" datatype="xsd:boolean" id="meta1128" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
@@ -4400,6 +4434,7 @@
       <char about="#char1057" id="char1057" label="Hyomandibula orientation" states="states1056">
         <meta content="false" datatype="xsd:boolean" id="meta1331" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
+      <char id="c08da34df-188a-480f-81ca-b2a483ffb1de" label="limb bones absent" states="sf7f347ce-2da6-4857-b5f6-c2402c4dbf47"/>
     </format>
     <matrix>
       <row id="row1061" otu="otu3">
@@ -10303,10 +10338,10 @@
         <cell char="char1049" state="state1050"/>
         <cell char="char1053" state="state1054"/>
       </row>
+      <row id="2661395c-b209-4b5f-8080-fc06f03f45d9" otu="62803308-40cc-475f-960f-0463b84e08bc"/>
     </matrix>
   </characters>
-  <trees id="tc72ea156-bb7a-4e2d-b5b3-53b1e3fd7f09" otus="otus1"/>
-  <trees id="te462f117-e9f0-409c-b0f3-dd4cfe9f4c4b" otus="otus1"/>
+  <trees id="tbcf6e2fb-e68b-453b-9944-7bdfe6ecde2b" otus="otus1"/>
   <trees id="t635b51fb-efb3-4c6f-8a80-3b08b099aa03" otus="otus1"/>
   <trees id="te71a27f0-69e7-42e2-8e97-6feee7420951" otus="otus1"/>
 </nex:nexml>
