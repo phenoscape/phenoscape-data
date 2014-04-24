@@ -3299,6 +3299,9 @@ Added polymorphs. AB 10/18/12</meta>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001420"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -3307,8 +3310,31 @@ Added polymorphs. AB 10/18/12</meta>
         <state id="6907aff0-35e6-4e6f-a90e-41c1dde971d2" label="absent (unordered)" symbol="2"/>
       </states>
       <states id="01945456-0711-4cb1-a817-c37e5ef25b22">
-        <state id="4f62038f-2b22-408c-9d02-033e2723aa7e" label="spine" symbol="0"/>
-        <state id="ed0550e3-bae8-44e4-ab6a-4e9361e4fe5b" label="soft ray" symbol="1"/>
+        <state id="4f62038f-2b22-408c-9d02-033e2723aa7e" label="spine" symbol="0" about="#4f62038f-2b22-408c-9d02-033e2723aa7e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="ed0550e3-bae8-44e4-ab6a-4e9361e4fe5b" label="soft ray" symbol="1" about="#ed0550e3-bae8-44e4-ab6a-4e9361e4fe5b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000163"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="d60c9787-2981-4c27-b7d2-571820c721de">
         <state id="cb3318f2-5e5c-41f6-ac2e-8ce2a8e50157" label="present" symbol="0" about="#cb3318f2-5e5c-41f6-ac2e-8ce2a8e50157">
@@ -3357,7 +3383,11 @@ Added polymorphs. AB 10/18/12</meta>
         </state>
       </states>
       <states id="ef126d00-d13a-44f4-b7cb-904da33b3418">
-        <state id="226c3660-7b92-4403-8f27-d10f28baa275" label="two" symbol="0" about="#226c3660-7b92-4403-8f27-d10f28baa275"/>
+        <state id="226c3660-7b92-4403-8f27-d10f28baa275" label="two" symbol="0" about="#226c3660-7b92-4403-8f27-d10f28baa275">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="c2e49876-2816-43f7-8687-2cd9a1421861" label="one" symbol="1"/>
       </states>
       <states id="d913291b-bb81-4ead-a8f6-6b48f676c01b">
@@ -10955,6 +10985,7 @@ Added polymorphs. AB 10/18/12</meta>
       </row>
     </matrix>
   </characters>
+  <trees id="t335d06b8-3561-4e5a-8215-65e29b4b1b5c" otus="cb7bcfcf-236f-42d1-9905-47951bf563ea"/>
   <trees id="t76ccaa5e-fe2e-4533-9020-21c653a19b7a" otus="cb7bcfcf-236f-42d1-9905-47951bf563ea"/>
   <trees id="t45ec0172-ae65-4a2c-85c6-6cf19f5fba97" otus="cb7bcfcf-236f-42d1-9905-47951bf563ea"/>
   <trees id="td67527f0-c86c-4e22-8694-9f5a564d2435" otus="cb7bcfcf-236f-42d1-9905-47951bf563ea"/>
