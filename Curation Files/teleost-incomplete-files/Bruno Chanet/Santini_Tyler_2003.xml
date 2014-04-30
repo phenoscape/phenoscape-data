@@ -1430,7 +1430,13 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052"/>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001495"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -12236,7 +12242,7 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
       <states id="74052399-7dd2-4ec2-bee9-1d50389d2740">
         <state id="6b8fb949-e916-4a27-83a9-e376e44f189d" label="absent" symbol="0" about="#6b8fb949-e916-4a27-83a9-e376e44f189d"/>
         <state id="b9f77f14-c5c0-4464-891a-bbd1006b46db" label="present" symbol="1" about="#b9f77f14-c5c0-4464-891a-bbd1006b46db"/>
-        <state id="9b372ecb-8e8c-42c4-9bdf-c852d8c9f726" label="not applicable" symbol="–" about="#9b372ecb-8e8c-42c4-9bdf-c852d8c9f726"></state>
+        <state id="9b372ecb-8e8c-42c4-9bdf-c852d8c9f726" label="not applicable" symbol="–" about="#9b372ecb-8e8c-42c4-9bdf-c852d8c9f726"/>
       </states>
       <states id="e70d1cb2-f3c4-462b-84a1-1ab3c5fc83d8">
         <state id="c26dd8e4-a059-4929-839c-34c7a86fb803" label="two or more, free" symbol="0" about="#c26dd8e4-a059-4929-839c-34c7a86fb803">
@@ -14165,10 +14171,18 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
         <state id="s4bac29ca-43e2-4a51-90e6-f71c99c675ed" label="" symbol="0"/>
       </states>
       <states id="s4b0784db-c2ab-4225-b28b-704a52d60088"/>
-      <char id="35b8940b-4621-4ab8-a436-620360af72b2" label="Parasphenoid" states="b76e4d7e-bacb-48a8-98c4-0564c6885d0b"/>
-      <char id="e1092e18-3ba7-4a26-88d2-56329dd7614b" label="Parasphenoid" about="#e1092e18-3ba7-4a26-88d2-56329dd7614b" states="2c9a7dab-4fee-4e9c-a4bf-4ff9831f1fbe"/>
-      <char id="1a909ade-4b7f-49c8-8674-fa746ce01aa3" label="Parasphenoid, ventral edge of" states="b7eb0742-125b-4783-b13f-f6b465053640"/>
-      <char id="c0ba51ef-d15e-43f0-abd3-7c0ff3948629" label="Parasphenoid, ventral flange of, if present" states="5ba013d9-269a-47a9-a0e1-18d44a7749a2"/>
+      <char id="35b8940b-4621-4ab8-a436-620360af72b2" label="Parasphenoid" states="b76e4d7e-bacb-48a8-98c4-0564c6885d0b" about="#35b8940b-4621-4ab8-a436-620360af72b2">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Need to annotate state 0, 2, and 3 (quality = "shaft-like"); state 2 annotate to Q="platelike"</meta>
+      </char>
+      <char id="e1092e18-3ba7-4a26-88d2-56329dd7614b" label="Parasphenoid" about="#e1092e18-3ba7-4a26-88d2-56329dd7614b" states="2c9a7dab-4fee-4e9c-a4bf-4ff9831f1fbe">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Need to add annotation to state 0: parasphenoid flange, absent</meta>
+      </char>
+      <char id="1a909ade-4b7f-49c8-8674-fa746ce01aa3" label="Parasphenoid, ventral edge of" states="b7eb0742-125b-4783-b13f-f6b465053640" about="#1a909ade-4b7f-49c8-8674-fa746ce01aa3">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Rather than using 'size', you can use 'laterally expanded' can be used for states 0 and 1</meta>
+      </char>
+      <char id="c0ba51ef-d15e-43f0-abd3-7c0ff3948629" label="Parasphenoid, ventral flange of, if present" states="5ba013d9-269a-47a9-a0e1-18d44a7749a2" about="#c0ba51ef-d15e-43f0-abd3-7c0ff3948629">
+        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">For state 0, I changed the quality from "shape" to "shape not notched". This is more specific than simply using "shape"</meta>
+      </char>
       <char id="74fade13-c938-4f71-a2d1-e43fa897009f" label="Parasphenoid, anterior end of" states="8b909d08-8aef-4017-af6f-671da0841c2e"/>
       <char id="170d6422-dbc3-4719-b79d-1fdab85baed6" label="Pterosphenoids, medial edges of" about="#170d6422-dbc3-4719-b79d-1fdab85baed6" states="35b07881-8265-4ee2-97e7-44d5aafef0c7"/>
       <char id="28c9706e-55b1-492e-8462-2ce63a4757ca" label="Lateral ethmoid, size" states="139107f3-af46-40b1-a211-2f15abcc2858"/>
@@ -21311,6 +21325,7 @@ JC added polymorphs. Another version of this file (Santini_Tyler_2003-character 
       </row>
     </matrix>
   </characters>
+  <trees id="t2e394e24-6e34-4ac4-b270-ec43296add76" otus="59e35b29-d574-4014-a90b-3d697820db0f"/>
   <trees id="t29a91226-d582-4f65-9c4c-f0a968960ec5" otus="59e35b29-d574-4014-a90b-3d697820db0f"/>
   <trees id="t0368d64a-8db2-48d9-ad6a-fbd07dd5808a" otus="59e35b29-d574-4014-a90b-3d697820db0f"/>
   <trees id="td0dbde6d-2349-44b2-bf3a-6723682c6721" otus="59e35b29-d574-4014-a90b-3d697820db0f"/>
