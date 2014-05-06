@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
@@ -466,10 +466,80 @@
         <state id="d71307d1-7b6b-4862-beeb-dc939a084785" label="dorsolateral glands present and well defined" symbol="3"/>
       </states>
       <states id="99f61805-4c5d-4eb5-a801-4246dda5bccd">
-        <state id="bb00265f-63d7-45ee-82a0-7ebbb9d283b0" label="disks not defined" symbol="0"/>
-        <state id="7e367010-73cf-4197-8936-2892f67c80d5" label="disks present" symbol="1"/>
-        <state id="826e96cd-ca0c-49f6-b88d-498d0d32c430" label="disks present with a circular ridge" symbol="2"/>
-        <state id="9ebaf74a-1b8c-430f-8fca-c31bb3c5a38f" label="disks present with a dorsal scute" symbol="3"/>
+        <state id="bb00265f-63d7-45ee-82a0-7ebbb9d283b0" label="disks not defined" symbol="0" about="#bb00265f-63d7-45ee-82a0-7ebbb9d283b0">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200151"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="7e367010-73cf-4197-8936-2892f67c80d5" label="disks present" symbol="1" about="#7e367010-73cf-4197-8936-2892f67c80d5">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200151"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="826e96cd-ca0c-49f6-b88d-498d0d32c430" label="disks present with a circular ridge" symbol="2" about="#826e96cd-ca0c-49f6-b88d-498d0d32c430">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4200151"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000411"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="9ebaf74a-1b8c-430f-8fca-c31bb3c5a38f" label="disks present with a dorsal scute" symbol="3" about="#9ebaf74a-1b8c-430f-8fca-c31bb3c5a38f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008201">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:4200151"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="d6c66297-b06a-46ef-891a-f02ea6183515">
         <state id="39d47e47-c6fc-4812-bc20-bebb01d17767" label="tarsum with fold or not modified" symbol="0" about="#39d47e47-c6fc-4812-bc20-bebb01d17767">
@@ -2487,6 +2557,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tba4804c3-c382-414b-a392-a21198cfa9c2" otus="5f9909d7-34bf-4cc1-8701-e5ccf619638c"/>
   <trees id="t62350a00-50df-4aeb-b92c-fb9e469d36e5" otus="5f9909d7-34bf-4cc1-8701-e5ccf619638c"/>
   <trees id="t65243935-d5d0-4b05-9fe1-0dfd82267161" otus="5f9909d7-34bf-4cc1-8701-e5ccf619638c"/>
 </nexml>
