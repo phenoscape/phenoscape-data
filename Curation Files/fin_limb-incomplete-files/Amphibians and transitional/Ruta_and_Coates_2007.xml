@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
@@ -4780,7 +4780,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002544"/>
+                  <phen:typeref about="UBERON:5102544"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462"/>
@@ -4794,7 +4794,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002544"/>
+                  <phen:typeref about="UBERON:5102544"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467"/>
@@ -4810,7 +4810,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002389"/>
+                  <phen:typeref about="UBERON:5102389"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070"/>
@@ -4824,7 +4824,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002389"/>
+                  <phen:typeref about="UBERON:5102389"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070"/>
@@ -4840,7 +4840,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002389"/>
+                  <phen:typeref about="UBERON:5102389"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070"/>
@@ -4854,7 +4854,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002389"/>
+                  <phen:typeref about="UBERON:5102389"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070"/>
@@ -4870,7 +4870,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002389"/>
+                  <phen:typeref about="UBERON:5102389"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070"/>
@@ -4879,7 +4879,20 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state1789" label="present" symbol="1"/>
+        <state id="state1789" label="present" symbol="1" about="#state1789">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:5102389"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states1790">
         <state id="state1792" label="present" symbol="0"/>
@@ -30419,6 +30432,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t1dd7078d-a705-4f99-8b4a-24a9c379a115" otus="otus1"/>
   <trees id="t52c1c403-7b94-498a-ac3d-b06908ae1d1d" otus="otus1"/>
   <trees id="t8f896377-5efa-409c-bf27-c773a38d5ad5" otus="otus1"/>
 </nex:nexml>
