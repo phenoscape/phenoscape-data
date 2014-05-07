@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
     <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Maisey, J. G. (1981). Heads and Tails: A Chordate Phylogeny. Cladistics, 2(3), 201–256.</meta>
     <meta xsi:type="LiteralMeta" property="ter:identifier">10.1111/j.1096-0031.1986.tb00462.x</meta>
     <meta xsi:type="LiteralMeta" property="ter:title">Maisey, J. G. (1981)</meta>
   </meta>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
   <otus id="bbbc5d77-1619-42cc-b36f-2b855abce336">
     <otu id="bbb14449-ee58-4916-a8d4-6cc0d639dffa" label="Enteropneusta" about="#bbb14449-ee58-4916-a8d4-6cc0d639dffa">
       <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="LiteralMeta" property="rdf:comment">Request to add to VTO</meta>
@@ -1288,7 +1288,7 @@
                   <phen:typeref about="UBERON:2001586"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a67a517b-adb3-4ea1-8f83-0085318a977d"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1302,7 +1302,7 @@
                   <phen:typeref about="UBERON:2001586"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/06bad35f-7f2b-4d2e-a57c-122665631087"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -22466,6 +22466,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tf9be4329-5287-403d-bea2-ad810cdc980c" otus="bbbc5d77-1619-42cc-b36f-2b855abce336"/>
   <trees id="t3ec0edaa-964e-4563-b3be-7b3d950c49b0" otus="bbbc5d77-1619-42cc-b36f-2b855abce336"/>
   <trees id="t9b606483-c88f-4e22-a45d-a60020b5c020" otus="bbbc5d77-1619-42cc-b36f-2b855abce336"/>
 </nexml>
