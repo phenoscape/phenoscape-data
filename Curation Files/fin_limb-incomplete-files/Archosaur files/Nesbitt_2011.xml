@@ -3070,7 +3070,7 @@
               <phen:phenotype_character>
                 <phen:description/>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/ff06ad9c-ece3-4044-869b-217b20728cf6">
+                  <phen:typeref about="UBERON:0004769">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0003645"/>
@@ -3079,10 +3079,19 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000921"/>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:0003645"/>
-                  </phen:related_entity>
+                  <phen:typeref about="PATO:0000921">
+                    <phen:qualifier relation="PATO:decreased_in_magnitude_relative_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000122">
+                          <phen:qualifier relation="BFO:0000052">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0003645"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -7429,7 +7438,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0007029">
+                  <phen:typeref about="UBERON:0002416">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0009985"/>
@@ -7454,7 +7463,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0007029">
+                  <phen:typeref about="UBERON:0002416">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:0009985"/>
@@ -33918,6 +33927,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="te6ec8cbd-0ae3-4687-97a5-0032f2efd8e0" otus="622c03ab-5f4b-4dc8-b64c-64294eb6cb0f"/>
   <trees id="t5c0d0428-be14-4b02-a869-e72b237aa44b" otus="622c03ab-5f4b-4dc8-b64c-64294eb6cb0f"/>
   <trees id="t3427cc14-722c-48b7-a519-bfc43d017d58" otus="622c03ab-5f4b-4dc8-b64c-64294eb6cb0f"/>
   <trees id="t1787ebe1-b1b1-47fc-bd8c-6f886eb74265" otus="622c03ab-5f4b-4dc8-b64c-64294eb6cb0f"/>
