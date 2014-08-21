@@ -6121,8 +6121,40 @@
         </state>
       </states>
       <states id="states635">
-        <state id="state637" label="unfinished" symbol="0"/>
-        <state id="state638" label="or finished anteriorly" symbol="1"/>
+        <state id="state637" label="unfinished" symbol="0" about="#state637">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001269"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001359"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state638" label="or finished anteriorly" symbol="1" about="#state638">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000071">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001269"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000701"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states639">
         <state id="state641" label="absent" symbol="0" about="#state641">
@@ -6447,7 +6479,23 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state667" label="same length as presacrals" symbol="1"/>
+        <state id="state667" label="same length as presacrals" symbol="1" about="#state667">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300128"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/6b5fdae0-e9c8-0131-44fd-005056010074"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:4100118"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states668">
         <state id="state670" label="broader than immediate presacrals but not broader than mid-trunk proximal shafts" symbol="0" about="#state670">
@@ -13882,6 +13930,8 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t1bbade64-4a50-4c6f-8812-43744395d15d" otus="otus1"/>
+  <trees id="tfdc70a84-9bf5-45cb-9001-4c0423e8fbb6" otus="otus1"/>
   <trees id="tf4585c84-f6ac-4d94-93fd-4e995f72cd6f" otus="otus1"/>
   <trees id="t2b90bfee-8dfb-4e0d-9464-d5d7536aea32" otus="otus1"/>
   <trees id="t01800d09-7972-42c6-b913-ed5937f66481" otus="otus1"/>
