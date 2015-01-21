@@ -1,0 +1,278 @@
+#NEXUS
+[written Fri Jan 16 10:38:30 PST 2015 by Mesquite  version 2.75 (build 566) at NI7549.local/10.201.208.43]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=22;
+	TAXLABELS
+		Paedocypris_sp. Danionella_mirifica Danionella_translucida Sundadanio_axelrodi Boraras_brigittae Boraras_maculatus Boraras_merah Boraras_micros Boraras_urophthalmoides Horadandia_atukorali Microrasbora_rubescens Microrasbora_kubotai Microrasbora_nana Sawbwa_resplendens Danio_erythromicron Danio_margaritatus Tanichthys_micagemmae Rasbora_kalbarensis Rasbora_spilocerca Rasboroides_vaterifloris Trigonostigma_hengeli Danio_rerio 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=20;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5";
+	CHARSTATELABELS 
+		1 Nasal /  absent present, 2 Vomer /  absent present, 3 Preethmoid /  absent present present_tiny, 4 Parietal /  absent present, 5 'Number of infraorbital bones posterior to lachrymal (IO1)' /  absent one_or_two two three three_or_four four, 6 Ectopterygoid /  absent present, 7 Interhyal /  absent present, 8 Hypobranchial_1 /  absent present, 9 Hypobranchial_2 /  absent present, 10 Hypobranchial_3 /  absent present, 11 Posttemporal /  absent present, 12 Postcleithrum /  absent present, 13 Mesocoracoid /  absent present, 14 Number_of_pectoral_radials /  two three three_or_four four, 15 Supraneurals_posterior_to_supraneural_3 /  absent present, 16 Uroneural_2 /  absent_ present, 17 Hypural_6 /  absent present 'absent/present', 18 Epural /  absent present 'absent/present', 19 Intermusculars /  absent present, 20 Scales /  absent_ present ; 
+	MATRIX
+	Paedocypris_sp.           00000000000001000200
+	Danionella_mirifica       00000000000000000100
+	Danionella_translucida    00000000000000000100
+	Sundadanio_axelrodi       00213010110001102111
+	Boraras_brigittae         01113110111113100111
+	Boraras_maculatus         01113111111113100111
+	Boraras_merah             01112111111113100111
+	Boraras_micros            01011110011103100111
+	Boraras_urophthalmoides   01112110011113100111
+	Horadandia_atukorali      01012111111113100111
+	Microrasbora_rubescens    11115101111113100111
+	Microrasbora_kubotai      11113100011112100111
+	Microrasbora_nana         11012100111111100111
+	Sawbwa_resplendens        11110111111102100110
+	Danio_erythromicron       11115100111113100111
+	Danio_margaritatus        01113100111113100111
+	Tanichthys_micagemmae     01112110011113100111
+	Rasbora_kalbarensis       11113111111113110111
+	Rasbora_spilocerca        11113111111113101111
+	Rasboroides_vaterifloris  11113111111113101111
+	Trigonostigma_hengeli     11115111111113110111
+	Danio_rerio               11114101111113110111
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  20;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  20;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1421433510973;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7670119134764223929;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4687173363764367265;
+			tell It;
+				setDefaultOrder  0 1 2 3 4 5 6 18 19 7 8 9 10 11 12 13 14 15 16 17;
+				attachments ;
+			endTell;
+			mqVersion 275;
+			checksumv 0 3 3776539584 null  getNumChars 20 numChars 20 getNumTaxa 22 numTaxa 22   short true   bits 63   states 63   sumSquaresStatesOnly 6188.0 sumSquares 6188.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1060 695;
+			setLocation -13 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #7670119134764223929 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #7670119134764223929;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultTaxaOrder.DefaultTaxaOrder;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 960 628;
+					setLocation -13 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4687173363764367265 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 960 628;
+					setLocation -13 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames off;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel on;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 960 628;
+						setLocation -13 23;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #4687173363764367265 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.stochchar.CharListProbModels.CharListProbModels;
+					getTable;
+					tell It;
+						rowNamesWidth 293;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 960 628;
+					setLocation -13 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
