@@ -336,19 +336,69 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:0001107"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state187" label="originating aponeurotically from hypaxial musculature" symbol="1"/>
+        <state id="state187" label="originating aponeurotically from hypaxial musculature" symbol="1" about="#state187">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001107"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states188">
         <state id="state190" label="absent" symbol="0" about="#state190">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0012267">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000151"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
-        <state id="state191" label="present" symbol="1"/>
+        <state id="state191" label="present" symbol="1" about="#state191">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0012267">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000151"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states192">
         <state id="state194" label="absent" symbol="0" about="#state194">
@@ -403,13 +453,47 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0006015"/>
+                  <phen:typeref about="UBERON:0006015">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000152"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0009571"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state199" label="joined in midline" symbol="1"/>
+        <state id="state199" label="joined in midline" symbol="1" about="#state199">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006015">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000152"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0009571"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state292" symbol="N" label=""/>
       </states>
       <states id="states200">
@@ -608,7 +692,7 @@
       <char about="#char189" id="char189" label="Pectoral splint" states="states188">
         <meta content="false" datatype="xsd:boolean" id="meta346" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char193" id="char193" label="Pelvic girldle and fin" states="states192">
+      <char about="#char193" id="char193" label="Pelvic girdle and fin" states="states192">
         <meta content="false" datatype="xsd:boolean" id="meta347" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char197" id="char197" label="Pelvic fin webs" states="states196">
@@ -1281,7 +1365,7 @@
         <cell char="char270" state="state272"/>
         <cell char="char274" state="state276"/>
       </row>
-      <row id="fc131386-6341-4eb0-8118-f31a9fc34c25" otu="cf16bd39-55f9-49cd-aeef-77511929065a">
+      <row id="b373dd0a-92ea-41d1-aca1-972400134455" otu="cf16bd39-55f9-49cd-aeef-77511929065a">
         <cell char="char57" state="state58"/>
         <cell char="char61" state="state63"/>
         <cell char="char65" state="state66"/>
@@ -1337,7 +1421,7 @@
         <cell char="char270" state="state272"/>
         <cell char="char274" state="state276"/>
       </row>
-      <row id="23d72b49-abf4-4662-a940-d0b6a98e164d" otu="1a5bdab7-f606-40eb-b8f1-18efe455cf02">
+      <row id="bebc0f3b-50a5-4f7e-a1d5-807ac36ba2af" otu="1a5bdab7-f606-40eb-b8f1-18efe455cf02">
         <cell char="char57" state="state58"/>
         <cell char="char61" state="state62"/>
         <cell char="char65" state="state66"/>
@@ -1380,7 +1464,7 @@
         <cell char="char266" state="state295"/>
         <cell char="char270" state="state272"/>
       </row>
-      <row id="c5df966e-4bef-4bb0-b5c9-46e1430a1fc1" otu="5dd120ee-0902-4d6e-b1cd-d229e7b4cf0b">
+      <row id="b526308a-e8bc-4820-88a3-ec48921b6cdf" otu="5dd120ee-0902-4d6e-b1cd-d229e7b4cf0b">
         <cell char="char57" state="state58"/>
         <cell char="char61" state="state62"/>
         <cell char="char65" state="state67"/>
@@ -1437,7 +1521,7 @@
         <cell char="char274" state="state275"/>
         <cell char="char278" state="state279"/>
       </row>
-      <row id="3171d394-6f64-411a-b65d-7987d3b2007a" otu="e8ca3e48-4582-4da8-9e58-8063a89b5e70">
+      <row id="73f8fdfe-9704-4b16-9ff1-dd3e975e007a" otu="e8ca3e48-4582-4da8-9e58-8063a89b5e70">
         <cell char="char57" state="state58"/>
         <cell char="char61" state="state62"/>
         <cell char="char65" state="state67"/>
@@ -1494,7 +1578,7 @@
         <cell char="char274" state="state275"/>
         <cell char="char278" state="state279"/>
       </row>
-      <row id="dea13577-118e-40cd-a821-228a8d2edf44" otu="ca0c0046-fb90-4005-ad86-3cdcecc1084b">
+      <row id="39e8213a-e5cb-4dda-89c8-6ac92d6679db" otu="ca0c0046-fb90-4005-ad86-3cdcecc1084b">
         <cell char="char57" state="state58"/>
         <cell char="char61" state="state62"/>
         <cell char="char65" state="state67"/>
@@ -1553,5 +1637,5 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t2c302e17-1805-416a-982b-d1678fd7afbc" otus="otus1"/>
+  <trees id="tcecb4565-48c7-475a-b089-b56f19220c05" otus="otus1"/>
 </nex:nexml>
