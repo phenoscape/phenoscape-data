@@ -1017,16 +1017,22 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="BSPO:0000682">
+                  <phen:typeref about="UBERON:0018307">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0001105"/>
+                        <phen:typeref about="BSPO:0000682">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001105"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="UBERON:4200069"/>
+                  <phen:typeref about="PATO:0000467"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1134,14 +1140,6 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000570"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0006807"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="UBERON:4200133"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -5667,6 +5665,8 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t9d7365e6-8bda-4a7d-87ba-9ea4e7a18797" otus="otus4312"/>
+  <trees id="t942b00d9-b6c0-46fb-bdab-9d2612237b53" otus="otus4312"/>
   <trees id="t4b6fd5d6-4236-4862-b3e2-ad01ce7a19b4" otus="otus4312"/>
   <trees id="t3abf929f-9699-41e0-a7ac-a37f1c9cdac3" otus="otus4312"/>
 </nex:nexml>
