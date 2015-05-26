@@ -727,7 +727,17 @@
       <states id="1fdf855a-1e83-4dd5-b566-3430bdb9bc8c">
         <state id="0758c846-f13d-4817-bf0b-cd19bf88f899" label="bony canal" symbol="0"/>
         <state id="b1f8957b-477d-494e-bf96-726b69d9165a" label="medially opening pore" symbol="1"/>
-        <state id="782fd010-d9dc-42bc-82cd-6352fced0187" label="not apparent" symbol="2"/>
+        <state id="782fd010-d9dc-42bc-82cd-6352fced0187" label="not apparent" symbol="2" about="#782fd010-d9dc-42bc-82cd-6352fced0187">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/3a694e40-e12b-0132-ac85-005056010074"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="4e657e0f-4aa0-4781-a922-b76d7f1fcd6b">
         <state id="2d36fccf-452d-41b5-8ffe-2bc2aa800765" label="elongated" symbol="0" about="#2d36fccf-452d-41b5-8ffe-2bc2aa800765">
@@ -1313,9 +1323,57 @@
       <states id="4d08fe71-e8bb-4a04-8f8b-599b03e16a35">
         <state id="54917e60-017a-43a7-99d2-b75319f07872" label="united" about="#54917e60-017a-43a7-99d2-b75319f07872" symbol="0">
           <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Nelson 1971</meta>
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000094">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002535"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0000094">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0002535"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
         </state>
         <state id="18a4d3c7-0606-4257-99fb-939280f2f016" label="joined to isthmus" about="#18a4d3c7-0606-4257-99fb-939280f2f016" symbol="1">
           <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">Nelson 1971</meta>
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000094">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002535"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642"/>
+                  <phen:related_entity>
+                    <phen:typeref about="http://data.bioontology.org/provisional_classes/78a929b0-e619-0132-ac85-005056010074"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
         </state>
       </states>
       <states id="8edb3b70-d5db-4554-978a-3787e3a70f8f">
@@ -3774,6 +3832,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="te9d9233c-94cb-4c56-98c6-c4c5a8203767" otus="ad415cce-883b-4c42-89d2-dd4d31824695"/>
   <trees id="ta5444d93-4a08-4c24-92c3-0879f7127bc4" otus="ad415cce-883b-4c42-89d2-dd4d31824695"/>
   <trees id="tb9ffc3ca-78eb-46dc-967b-b53fa3c95b85" otus="ad415cce-883b-4c42-89d2-dd4d31824695"/>
   <trees id="tca84c1dd-9b05-42af-9f9d-a72c47be0e83" otus="ad415cce-883b-4c42-89d2-dd4d31824695"/>
