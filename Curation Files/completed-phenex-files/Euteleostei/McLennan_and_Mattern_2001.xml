@@ -1115,7 +1115,29 @@
         </state>
       </states>
       <states id="states144">
-        <state id="state146" label="absent" symbol="0" about="#state146"></state>
+        <state id="state146" label="absent" symbol="0" about="#state146">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0005744">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000084">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001693"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state147" label="present" symbol="1"/>
       </states>
       <states id="states148">
@@ -1411,19 +1433,18 @@
                   <phen:typeref about="http://data.bioontology.org/provisional_classes/8ef82500-e161-0132-29b2-005056010073"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117">
-                    <phen:qualifier relation="PATO:decreased_in_magnitude_relative_to">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0000122">
-                          <phen:qualifier relation="BFO:0000052">
-                            <phen:holds_in_relation_to>
-                              <phen:typeref about="UBERON:0006597"/>
-                            </phen:holds_in_relation_to>
-                          </phen:qualifier>
-                        </phen:typeref>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="PATO:0000587"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/8ef82500-e161-0132-29b2-005056010073"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0006597"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1437,19 +1458,18 @@
                   <phen:typeref about="http://data.bioontology.org/provisional_classes/8ef82500-e161-0132-29b2-005056010073"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117">
-                    <phen:qualifier relation="PATO:increased_in_magnitude_relative_to">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0000122">
-                          <phen:qualifier relation="BFO:0000052">
-                            <phen:holds_in_relation_to>
-                              <phen:typeref about="UBERON:0006597"/>
-                            </phen:holds_in_relation_to>
-                          </phen:qualifier>
-                        </phen:typeref>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="PATO:0000586"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/8ef82500-e161-0132-29b2-005056010073"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0006597"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3105,7 +3125,7 @@
         </state>
       </states>
       <states id="states315">
-        <state id="state317" label="entire" symbol="0" about="#state317"></state>
+        <state id="state317" label="entire" symbol="0" about="#state317"/>
         <state id="state318" label="incised" symbol="1"/>
       </states>
       <states id="states319">
@@ -3432,13 +3452,53 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0004529"/>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000082">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2000623"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002495"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state347" label="posterior" symbol="1"/>
+        <state id="state347" label="posterior" symbol="1" about="#state347">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000082">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2000623"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002499"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states348">
         <state id="state350" label="short" symbol="0" about="#state350">
@@ -3811,6 +3871,11 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/bb4ba1b0-e2e1-0132-ac85-005056010074"/>
+                </phen:bearer>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -4585,6 +4650,7 @@
       </char>
       <char about="#char345" id="char345" label="Pelvic ascending branch direction" states="states344">
         <meta content="false" datatype="xsd:boolean" id="meta538" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">1b. Position</meta>
       </char>
       <char about="#char349" id="char349" label="Pelvic ascending branch size" states="states348">
         <meta content="false" datatype="xsd:boolean" id="meta539" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -5608,6 +5674,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t69815202-690e-45c5-8600-c96e2c7e9816" otus="otus1"/>
   <trees id="t07f7b92e-7ea7-470f-b80c-32b45e41e6df" otus="otus1"/>
   <trees id="t39d3ffca-0445-4bc3-a0a8-8c6187b3dc1a" otus="otus1"/>
   <trees id="t6c5bbe97-563d-4fea-af17-19df3e75d859" otus="otus1"/>
