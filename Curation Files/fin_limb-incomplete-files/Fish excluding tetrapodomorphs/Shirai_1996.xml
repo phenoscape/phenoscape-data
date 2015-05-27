@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
@@ -232,8 +232,34 @@
         <state id="76ef4de2-8790-4d11-a1ee-559faaa35557" label="present with a prominent lateral wing behind orbital notches" symbol="2"/>
       </states>
       <states id="33c68fc2-a602-4a82-be09-fec06feade9a">
-        <state id="572b976a-ac4f-4cfa-8fb0-27fa0a7dae29" label="absent" symbol="0"/>
-        <state id="ffe05508-a938-4738-a9cf-4773114be568" label="present" symbol="1"/>
+        <state id="572b976a-ac4f-4cfa-8fb0-27fa0a7dae29" label="absent" symbol="0" about="#572b976a-ac4f-4cfa-8fb0-27fa0a7dae29">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010092"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="ffe05508-a938-4738-a9cf-4773114be568" label="present" symbol="1" about="#ffe05508-a938-4738-a9cf-4773114be568">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3010092"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="ea50ae62-0dd4-4ea1-9d55-074ab8c2c204">
         <state id="b43d4245-701f-4320-ae16-d34a948b731a" label="absent" symbol="0"/>
@@ -305,8 +331,52 @@
         <state id="5a1e74bd-181d-439a-844c-ee0e33205f92" label="both dorsal and ventral elements present" symbol="2"/>
       </states>
       <states id="5570dc4c-dd2b-4c7b-9bb5-7b5618e08d72">
-        <state id="45555fdc-db71-4861-b60d-9b5c9b7cc97f" label="free from the shoulder girdle " symbol="0"/>
-        <state id="f06e3dd4-204d-4d52-9c62-00436789696e" label="firmly attached to the anterior margin of the coracoid" symbol="1"/>
+        <state id="45555fdc-db71-4861-b60d-9b5c9b7cc97f" label="free from the shoulder girdle " symbol="0" about="#45555fdc-db71-4861-b60d-9b5c9b7cc97f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001903"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000671">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0004743"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="f06e3dd4-204d-4d52-9c62-00436789696e" label="firmly attached to the anterior margin of the coracoid" symbol="1" about="#f06e3dd4-204d-4d52-9c62-00436789696e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001903"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000671">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0004743"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="6cc1fd11-76d3-4fbc-8d53-1527f1fc61a7">
         <state id="29e169d4-39a0-4bc9-b2ab-508b7f0be77a" label="absent" symbol="0"/>
@@ -1267,8 +1337,8 @@
         <state id="26b0ec50-a25e-4cc7-b3a3-7283cca5d343" label="almost complete in the entire region of the precaudal tail" symbol="1"/>
       </states>
       <states id="af25efb6-36ec-47d5-b35f-3059d3d5d29e">
-        <state id="71205b07-daa9-4ef6-af17-432f074fa46b" label="shorter than that of the lower lobe of the caudal fin" symbol="0" about="#71205b07-daa9-4ef6-af17-432f074fa46b"></state>
-        <state id="0e18c4de-7192-41d2-b749-0ebff4aec4ac" label="elongate and equal to those of the caudal fin" symbol="1" about="#0e18c4de-7192-41d2-b749-0ebff4aec4ac"></state>
+        <state id="71205b07-daa9-4ef6-af17-432f074fa46b" label="shorter than that of the lower lobe of the caudal fin" symbol="0" about="#71205b07-daa9-4ef6-af17-432f074fa46b"/>
+        <state id="0e18c4de-7192-41d2-b749-0ebff4aec4ac" label="elongate and equal to those of the caudal fin" symbol="1" about="#0e18c4de-7192-41d2-b749-0ebff4aec4ac"/>
       </states>
       <states id="471d195f-34da-4949-8a80-4d1f282ce56f">
         <state id="0b5b7a54-aefe-4970-a9c5-25dbe9ff915b" label="dual, developed" symbol="0" about="#0b5b7a54-aefe-4970-a9c5-25dbe9ff915b">
@@ -1767,12 +1837,12 @@
       <char id="3d7c55ab-725a-473b-b91c-16e494af3ebf" label="Coracobranchialis 1 arising from" states="107070b0-c65b-40b4-ae85-b5b140328bfc"/>
       <char id="38beb49c-4584-4046-950e-3132b4683230" label="Coracobranchialis 1 inserted on" states="ee84088e-cf98-4162-a9fb-aa2b57fa963d"/>
       <char id="1ab56648-228e-45f2-aa6f-fb72b245c09d" label="Symphysial fusion of right and left halves of coracoid cartilages" states="f889cdf3-8338-4044-a43e-679dbc4c1c24" about="#1ab56648-228e-45f2-aa6f-fb72b245c09d"/>
-      <char id="f47cbaef-8026-4ec3-b5a6-65f49c4e91b2" label="Scapular process" states="079ac770-da10-453c-a531-7bb91e23d64b" about="#f47cbaef-8026-4ec3-b5a6-65f49c4e91b2"></char>
+      <char id="f47cbaef-8026-4ec3-b5a6-65f49c4e91b2" label="Scapular process" states="079ac770-da10-453c-a531-7bb91e23d64b" about="#f47cbaef-8026-4ec3-b5a6-65f49c4e91b2"/>
       <char id="4a8bf7c3-c0c1-4084-a696-975c95fadd86" label="Articular process of the coracoid for the pectoral basals" states="8d895ac8-ba6d-4d0b-b563-ea1c9e30a9cc" about="#4a8bf7c3-c0c1-4084-a696-975c95fadd86"/>
       <char id="db483740-e3b0-487d-a0f8-300ec81911fc" label="Pectoral propterygium and mesopterygium" states="2ec6d3d8-6da7-4939-bf84-a986faf116d1" about="#db483740-e3b0-487d-a0f8-300ec81911fc"/>
       <char id="453b25ca-99b5-43a2-80e5-7f8acd4ef4c8" label="Pectoral mesopterygium and metapterygium" states="19fc5707-a3c5-421d-9518-7029a8e313e4" about="#453b25ca-99b5-43a2-80e5-7f8acd4ef4c8"/>
       <char id="bb02e098-1d05-4507-8772-8ed00c769bb2" label="Pectoral mesopterygium and metapterygium" states="75aefa6a-82ae-46b5-9df3-09b58340e5f1" about="#bb02e098-1d05-4507-8772-8ed00c769bb2"/>
-      <char id="da2a99ba-207f-4c6b-9eb1-981040720cc1" label="Pectoral propterygium" states="5f4807e3-cd4d-4bb2-8768-0c058384a324" about="#da2a99ba-207f-4c6b-9eb1-981040720cc1"></char>
+      <char id="da2a99ba-207f-4c6b-9eb1-981040720cc1" label="Pectoral propterygium" states="5f4807e3-cd4d-4bb2-8768-0c058384a324" about="#da2a99ba-207f-4c6b-9eb1-981040720cc1"/>
       <char id="70b2dbc1-2a62-4b29-bb50-e17e94ce4888" label="Pectoral propterygium" states="5feec5e1-d826-48dd-97c6-640864aad676"/>
       <char id="1f44549c-2f95-4b69-a6d6-ee17c5cfe8eb" label="Pectoral metapterygium" states="4464d43e-c277-4a0e-8553-ab3f4ec0db23" about="#1f44549c-2f95-4b69-a6d6-ee17c5cfe8eb"/>
       <char id="de3428e5-1127-42ba-bfb7-4ccefe8738ab" label="Pectoral fin radials" states="958ef37d-cc69-48cf-babe-84a6fe9d4504" about="#de3428e5-1127-42ba-bfb7-4ccefe8738ab"/>
@@ -1788,7 +1858,7 @@
       <char id="4e031421-e19a-4877-bdae-9b80f9fe1592" label="Secondary calcification of vertebrae" states="6989fa4d-884a-4591-b5d1-22f24d2fd7b1"/>
       <char id="7360f7f4-797d-44b8-b9ad-a9f95dd26f4f" label="Supraneurals" states="dbc584fa-eadf-40c7-a0be-cf1d2b7a1cb4"/>
       <char id="4c1a0619-94dc-4c3a-946d-f58a006a2703" label="Hemal arch" states="fef319d4-8574-4a48-a199-55e8fee521bb"/>
-      <char id="b3261fbd-3561-4858-89f6-7eb88119ec4e" label="Hemal processes at the precaudal tail" states="af25efb6-36ec-47d5-b35f-3059d3d5d29e" about="#b3261fbd-3561-4858-89f6-7eb88119ec4e"></char>
+      <char id="b3261fbd-3561-4858-89f6-7eb88119ec4e" label="Hemal processes at the precaudal tail" states="af25efb6-36ec-47d5-b35f-3059d3d5d29e" about="#b3261fbd-3561-4858-89f6-7eb88119ec4e"/>
       <char id="d87df681-3d8b-4909-a00e-eacbe4a11e04" label="Dorsal fin" states="471d195f-34da-4949-8a80-4d1f282ce56f"/>
       <char id="35395d46-5e76-4b54-905b-849d962445fb" label="Dorsal fin skeleton composed of" states="672b5b3c-a131-4027-ad79-4c0cc1c3a030" about="#35395d46-5e76-4b54-905b-849d962445fb"/>
       <char id="919f25ed-e2fc-4bb0-bd9b-9ae3212e7a79" label="Dorsal radials" states="9ee45c61-6f4a-4319-b69f-a859f2af119c" about="#919f25ed-e2fc-4bb0-bd9b-9ae3212e7a79"/>
@@ -7328,6 +7398,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t13d56c0e-86db-43dd-a946-65abe7b7c6dd" otus="9b6b9e56-8b88-4303-a05f-27dd4c80242f"/>
   <trees id="t655d78b0-1067-4ac2-8b16-f1baae5c8017" otus="9b6b9e56-8b88-4303-a05f-27dd4c80242f"/>
   <trees id="t9fd11625-5aee-4500-b1bf-2ec55d5c4396" otus="9b6b9e56-8b88-4303-a05f-27dd4c80242f"/>
   <trees id="t7a8d7ae7-1825-473c-8412-e6b8e13373c2" otus="9b6b9e56-8b88-4303-a05f-27dd4c80242f"/>
