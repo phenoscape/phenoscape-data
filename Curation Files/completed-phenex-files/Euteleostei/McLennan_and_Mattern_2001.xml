@@ -1134,11 +1134,39 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state147" label="present" symbol="1"/>
+        <state id="state147" label="present" symbol="1" about="#state147">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0005744">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000084">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001693"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states148">
         <state id="state150" label="absent" symbol="0" about="#state150">
@@ -3057,11 +3085,6 @@
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:4300104"/>
-                </phen:bearer>
-              </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
@@ -3075,7 +3098,7 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0001961"/>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:0004769">
+                    <phen:typeref about="http://data.bioontology.org/provisional_classes/7f177460-e6c1-0132-ac85-005056010074">
                       <phen:qualifier relation="BFO:0000050">
                         <phen:holds_in_relation_to>
                           <phen:typeref about="UBERON:0004741"/>
@@ -3084,11 +3107,6 @@
                     </phen:typeref>
                   </phen:related_entity>
                 </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:4300104"/>
-                </phen:bearer>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -3988,19 +4006,18 @@
                   <phen:typeref about="UBERON:0003861"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117">
-                    <phen:qualifier relation="PATO:decreased_in_magnitude_relative_to">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0000122">
-                          <phen:qualifier relation="BFO:0000052">
-                            <phen:holds_in_relation_to>
-                              <phen:typeref about="UBERON:0011677"/>
-                            </phen:holds_in_relation_to>
-                          </phen:qualifier>
-                        </phen:typeref>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="PATO:0000117"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0011677"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003861"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4014,19 +4031,18 @@
                   <phen:typeref about="UBERON:0003861"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117">
-                    <phen:qualifier relation="PATO:increased_in_magnitude_relative_to">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="PATO:0000122">
-                          <phen:qualifier relation="BFO:0000052">
-                            <phen:holds_in_relation_to>
-                              <phen:typeref about="UBERON:0011677"/>
-                            </phen:holds_in_relation_to>
-                          </phen:qualifier>
-                        </phen:typeref>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="PATO:0000117"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0011677"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003861"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4462,6 +4478,7 @@
       </char>
       <char about="#char145" id="char145" label="Second ventral foramen in exoccipital" states="states144">
         <meta content="false" datatype="xsd:boolean" id="meta490" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">1c. Count</meta>
       </char>
       <char about="#char149" id="char149" label="Exoccipital condyles" states="states148">
         <meta content="false" datatype="xsd:boolean" id="meta491" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -4493,6 +4510,7 @@
       </char>
       <char about="#char178" id="char178" label="Quadrate shaft comprises" states="states177">
         <meta content="false" datatype="xsd:boolean" id="meta498" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">3c. Multiple dimensions of size</meta>
       </char>
       <char about="#char182" id="char182" label="Quadrate shaft is" states="states181">
         <meta content="false" datatype="xsd:boolean" id="meta499" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -4616,6 +4634,7 @@
       </char>
       <char about="#char307" id="char307" label="Ectocoracoids" states="states306">
         <meta content="false" datatype="xsd:boolean" id="meta529" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">2b. Structural qualities between two entities</meta>
       </char>
       <char about="#char312" id="char312" label="Coracoid foramen" states="states311">
         <meta content="false" datatype="xsd:boolean" id="meta530" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -4694,6 +4713,7 @@
       </char>
       <char about="#char392" id="char392" label="Extent of neural arch development along precaudal vertebra" states="states391">
         <meta content="false" datatype="xsd:boolean" id="meta549" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">3c. Multiple dimensions of size</meta>
       </char>
       <char about="#char396" id="char396" label="Postneurapophysis" states="states395">
         <meta content="false" datatype="xsd:boolean" id="meta550" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -5674,7 +5694,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t69815202-690e-45c5-8600-c96e2c7e9816" otus="otus1"/>
+  <trees id="t6415e068-bdc1-42ba-b6b2-6e390a264fa8" otus="otus1"/>
   <trees id="t07f7b92e-7ea7-470f-b80c-32b45e41e6df" otus="otus1"/>
   <trees id="t39d3ffca-0445-4bc3-a0a8-8c6187b3dc1a" otus="otus1"/>
   <trees id="t6c5bbe97-563d-4fea-af17-19df3e75d859" otus="otus1"/>
