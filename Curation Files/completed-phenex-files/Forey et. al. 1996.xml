@@ -144,8 +144,58 @@
         </state>
       </states>
       <states id="states60">
-        <state id="state62" label="without high dorsal process meeting pterosphenoid" symbol="0"/>
-        <state id="state63" label="with dorsal process" symbol="1"/>
+        <state id="state62" label="without high dorsal process meeting pterosphenoid" symbol="0" about="#state62">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0004745"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state63" label="with dorsal process" symbol="1" about="#state63">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000079">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0004745"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states64">
         <state id="state66" label="absent" symbol="0" about="#state66">
@@ -1005,11 +1055,7 @@
         </state>
       </states>
       <states id="states188">
-        <state id="state190" label="absent" symbol="0" about="#state190">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="state190" label="absent" symbol="0" about="#state190"></state>
         <state id="state191" label="present" symbol="1" about="#state191"/>
       </states>
       <states id="states192">
@@ -2933,6 +2979,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t7b8a9ed0-13e2-40b4-8102-2223b913430a" otus="otus1"/>
   <trees id="t215e9182-29cf-4a0f-974a-66aaedc08c68" otus="otus1"/>
   <trees id="tdf25d507-d134-4f91-896d-377efae49aef" otus="otus1"/>
   <trees id="tcecb4565-48c7-475a-b089-b56f19220c05" otus="otus1"/>
