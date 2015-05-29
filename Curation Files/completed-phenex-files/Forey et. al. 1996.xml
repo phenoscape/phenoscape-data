@@ -774,6 +774,12 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:0011606"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0006597"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -835,7 +841,7 @@
                   <phen:typeref about="UBERON:0002244"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001906"/>
+                  <phen:typeref about="PATO:0000299"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0001679"/>
                   </phen:related_entity>
@@ -2051,13 +2057,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000526">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2000350"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:2000350"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462"/>
@@ -2071,13 +2071,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2000526">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2000350"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:2000350"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467"/>
@@ -2247,10 +2241,32 @@
       <states id="states273">
         <state id="state275" label="flagellum contains two central and nine peripheral axonemes" symbol="0" about="#state275">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/af46d7c0-e872-0132-29b2-005056010073"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
-        <state id="state276" label="flagellum wih 9 + 0 axoneme arrangement and the proximal centriole divided into two elongate bundles of four and five triplets structure" symbol="1"/>
+        <state id="state276" label="flagellum wih 9 + 0 axoneme arrangement and the proximal centriole divided into two elongate bundles of four and five triplets structure" symbol="1" about="#state276">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/af46d7c0-e872-0132-29b2-005056010073"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states277">
         <state id="state279" label="right of stomach" symbol="0" about="#state279">
@@ -2311,7 +2327,7 @@
       </char>
       <char about="#char85" id="char85" label="Infraorbital branch of buccal VII" states="states84">
         <meta content="false" datatype="xsd:boolean" id="meta320" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">pierces through?</meta>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">pierces through.check with Laura</meta>
       </char>
       <char about="#char89" id="char89" label="Intercalar" states="states88">
         <meta content="false" datatype="xsd:boolean" id="meta321" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -3336,7 +3352,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t398bd7ec-9a84-4403-bdd8-d69f0e77518c" otus="otus1"/>
+  <trees id="t2b7f94ab-8f87-49fc-b42b-7ca788778545" otus="otus1"/>
   <trees id="t215e9182-29cf-4a0f-974a-66aaedc08c68" otus="otus1"/>
   <trees id="tdf25d507-d134-4f91-896d-377efae49aef" otus="otus1"/>
   <trees id="tcecb4565-48c7-475a-b089-b56f19220c05" otus="otus1"/>
