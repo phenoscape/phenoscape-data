@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description">2004. Five new euchondrocephalan Chondrichthyes from the Bear Gulch Limestone (Serpukhovian, Namurian E2b) of Montana, USA. Recent Advances in the Origin and Early Radiation of Vertebrates. Verlag Dr. Friedrich Pfeil, Munich, Germany. pages 505-531.</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
@@ -173,12 +173,20 @@
         <state id="48765393-b2e9-4e0e-87d2-9112e5511438" label="trabecular" symbol="3"/>
       </states>
       <states id="9335fecb-271e-4db3-9eb0-09d74f5a059d">
-        <state id="a1ab9c09-2903-41fd-ab5e-45d944265ff3" label="not present" symbol="0"/>
+        <state id="a1ab9c09-2903-41fd-ab5e-45d944265ff3" label="not present" symbol="0" about="#a1ab9c09-2903-41fd-ab5e-45d944265ff3">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="5f3bca05-280d-4943-a144-0f39d1e7b1cb" label="skin tight / thin if present" symbol="1"/>
         <state id="04e45b20-94a4-473d-8bb5-4c859a834476" label="rostral ampullary dome" symbol="2"/>
       </states>
       <states id="399c6e82-7fae-466f-bc3a-6099ce67a80d">
-        <state id="d823c230-8512-4118-803b-9c5ea543c007" label="present" symbol="0"/>
+        <state id="d823c230-8512-4118-803b-9c5ea543c007" label="present" symbol="0" about="#d823c230-8512-4118-803b-9c5ea543c007">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="9a4a0aba-3102-4740-8bb9-e1a756c5506d" label="absent" symbol="1"/>
       </states>
       <states id="93283678-0438-4816-8016-729dbd637f57">
@@ -193,7 +201,11 @@
         <state id="61b8ebef-9e8e-44f1-aa3b-b381b9dcab3e" label="large / precerebral fontanelle" symbol="1"/>
       </states>
       <states id="0d8f50bd-8c32-4127-82cb-bb45f20a4d01">
-        <state id="dba3c417-80ee-4f09-962b-da71a509183a" label="180 degrees" symbol="0"/>
+        <state id="dba3c417-80ee-4f09-962b-da71a509183a" label="180 degrees" symbol="0" about="#dba3c417-80ee-4f09-962b-da71a509183a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype/>
+          </meta>
+        </state>
         <state id="572701c6-b2cd-47ba-a934-4ac5bbc2a72a" label="greater than 180 degrees" symbol="1"/>
       </states>
       <states id="5b0d0b13-5442-4cd6-ae15-775d0d49fec6">
@@ -1447,7 +1459,7 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="5b2bfb9d-ffd6-4f8a-9079-0edded26cba6" label="absent" symbol="4" about="#5b2bfb9d-ffd6-4f8a-9079-0edded26cba6"></state>
+        <state id="5b2bfb9d-ffd6-4f8a-9079-0edded26cba6" label="absent" symbol="4" about="#5b2bfb9d-ffd6-4f8a-9079-0edded26cba6"/>
       </states>
       <states id="5a3abe52-4688-43d3-89eb-0b1d1879eff7">
         <state id="fd2cf62a-8d38-492f-ab61-b10f0cf0b087" label="deeply fixed" symbol="0" about="#fd2cf62a-8d38-492f-ab61-b10f0cf0b087">
@@ -1630,7 +1642,7 @@
         </state>
       </states>
       <states id="fa8ec945-4c01-4c78-946e-482aa4fcc0fc">
-        <state id="920ae2e8-b359-49e1-95c2-d685b7529d22" label="at birth" symbol="0" about="#920ae2e8-b359-49e1-95c2-d685b7529d22"></state>
+        <state id="920ae2e8-b359-49e1-95c2-d685b7529d22" label="at birth" symbol="0" about="#920ae2e8-b359-49e1-95c2-d685b7529d22"/>
         <state id="29e33c25-35fd-4c13-bd1c-42387f372cfb" label="at puberty" symbol="1"/>
       </states>
       <states id="39c82d7a-cef5-4257-afb1-abd4643f895a">
@@ -2292,25 +2304,25 @@
       <char id="6e6635e3-b56e-48fc-b4fc-7bf9bc2f5efe" label="coracoid length" states="e0f2db73-7954-4370-91b5-c0ba95956027"/>
       <char id="9ddb560a-d385-49f8-bec2-294725227279" label="pectoral fin radial support" states="40b4f6ef-2373-498f-87f8-368df2ee944f"/>
       <char id="4780a082-8177-42fa-ab12-c84440c3c1d4" label="pectoral fin" states="f9e3d4c3-4bcd-457f-9a1d-1abf73a33231" about="#4780a082-8177-42fa-ab12-c84440c3c1d4"/>
-      <char id="0344dfcb-4f06-4d20-a2d2-a73c584722d1" label="pectoral fin base" states="9323ceec-c288-4158-93f1-234bb0c180b6" about="#0344dfcb-4f06-4d20-a2d2-a73c584722d1"></char>
+      <char id="0344dfcb-4f06-4d20-a2d2-a73c584722d1" label="pectoral fin base" states="9323ceec-c288-4158-93f1-234bb0c180b6" about="#0344dfcb-4f06-4d20-a2d2-a73c584722d1"/>
       <char id="960304bd-00fe-4469-aaed-caf519087999" label="pectoral post-metapterygial axis" states="dd4552aa-6c46-48d5-a2ce-a2bb1ebecfaf"/>
       <char id="101f47e5-a8df-46a9-a756-d04f1b930bcf" label="pelvic girdle mineralization" states="d7d65947-5779-449e-b617-fe3b400a4aa7"/>
       <char id="f7ea444a-e501-4504-8400-874ca723bd20" label="pelvic dorsal process" states="fe83f565-994d-441a-921f-98c367a29f02"/>
-      <char id="e1a4f14c-6226-4f2d-8366-848d47ea5bea" label="pelvic basipterygium" states="5f3f20ec-0133-45ec-90ff-9ce2a738e5fe" about="#e1a4f14c-6226-4f2d-8366-848d47ea5bea"></char>
-      <char id="a49def29-0148-4bef-b88b-a3dea75b2e26" label="pelvic radials" states="fa0aa599-9cfc-479e-8251-1639a285f401" about="#a49def29-0148-4bef-b88b-a3dea75b2e26"></char>
+      <char id="e1a4f14c-6226-4f2d-8366-848d47ea5bea" label="pelvic basipterygium" states="5f3f20ec-0133-45ec-90ff-9ce2a738e5fe" about="#e1a4f14c-6226-4f2d-8366-848d47ea5bea"/>
+      <char id="a49def29-0148-4bef-b88b-a3dea75b2e26" label="pelvic radials" states="fa0aa599-9cfc-479e-8251-1639a285f401" about="#a49def29-0148-4bef-b88b-a3dea75b2e26"/>
       <char id="69f1459a-4240-4e2f-831b-8d23e6670548" label="prepelvic tenaculum" states="b3de4b10-246c-41a1-85d7-f8c36a121c85"/>
       <char id="83340dab-63f5-4989-aeed-37228d6fc996" label="anal fin and / or anal plate" states="078a9ae2-7531-41f8-b66d-377fe0d00ae1"/>
       <char id="83610488-c6b7-4902-a251-fe9162f90246" label="dorsal fin numbers" states="7e0edfd6-32b9-4863-b322-5b7d9593530d"/>
       <char id="e4d9a023-e3a6-4305-b211-36b28e394ad9" label="dorsal spines" states="72a16202-22c7-416d-84c3-8e66681aa3f5"/>
       <char id="588330db-832f-492c-bc6e-e2046d95d6ae" label="anterior dorsal fin" states="d8a72153-43c6-4bc0-8c20-64526a548856"/>
-      <char id="6b8e427f-eb04-4cd5-b471-57c852862d68" label="anterior dorsal fin / spine support" states="fa7b4b8b-6f52-4c3e-91da-3f899e55b8e5" about="#6b8e427f-eb04-4cd5-b471-57c852862d68"></char>
+      <char id="6b8e427f-eb04-4cd5-b471-57c852862d68" label="anterior dorsal fin / spine support" states="fa7b4b8b-6f52-4c3e-91da-3f899e55b8e5" about="#6b8e427f-eb04-4cd5-b471-57c852862d68"/>
       <char id="8cee934d-e575-42b1-af30-c0578794985f" label="anterior dorsal spine" states="5a3abe52-4688-43d3-89eb-0b1d1879eff7"/>
       <char id="d88064fc-68c4-46a3-b664-afa780d77f8a" label="anterior dorsal presence" states="8cc89a26-c302-49a7-a209-03b97cd46ffb" about="#d88064fc-68c4-46a3-b664-afa780d77f8a"/>
-      <char id="5ab444fc-10bb-4b34-83ed-bdf5b15b672c" label="anterior dorsal fin / spine development" states="fa8ec945-4c01-4c78-946e-482aa4fcc0fc" about="#5ab444fc-10bb-4b34-83ed-bdf5b15b672c"></char>
+      <char id="5ab444fc-10bb-4b34-83ed-bdf5b15b672c" label="anterior dorsal fin / spine development" states="fa8ec945-4c01-4c78-946e-482aa4fcc0fc" about="#5ab444fc-10bb-4b34-83ed-bdf5b15b672c"/>
       <char id="8866b8e8-360e-4083-84ea-caeac06c5ebc" label="anterior dorsal spine shape" states="39c82d7a-cef5-4257-afb1-abd4643f895a"/>
       <char id="8fa5fa6c-3b34-43b2-9822-13333da88257" label="anterior dorsal spine enameloid" states="06aee19c-7b92-4e28-b669-976a8322b1ed"/>
       <char id="38f166f0-0866-4985-b8b2-a62328fa0096" label="posterior dorsal fin" states="a165374c-ab94-49df-9405-0f3741921bbd"/>
-      <char id="f724c876-11c3-4af5-8052-3629e706a16f" label="posterior dorsal fin base" states="47f8de3e-4d68-48b8-b31f-aad2ccf0dd29" about="#f724c876-11c3-4af5-8052-3629e706a16f"></char>
+      <char id="f724c876-11c3-4af5-8052-3629e706a16f" label="posterior dorsal fin base" states="47f8de3e-4d68-48b8-b31f-aad2ccf0dd29" about="#f724c876-11c3-4af5-8052-3629e706a16f"/>
       <char id="733365ae-94cf-4902-a3b9-bc2363da9b6c" label="posterior dorsal spine" states="3e8ef67a-569a-4ece-b696-3a0931eaeea8"/>
       <char id="7f83b196-67d8-40a8-beeb-d85f58d33a8a" label="caudal fin" states="4ee1280f-38e3-4bcf-843b-50e2253f1e12"/>
       <char id="46e3c117-58cb-48cc-ba48-023cd44ee52d" label="caudal endoskeleton" states="03043c06-28c1-4cbd-80fd-32463359d709"/>
@@ -5915,6 +5927,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t290e9840-af0c-422c-8992-27be55a7d8df" otus="f1fa9154-5494-484e-8ca4-dea28751fa35"/>
   <trees id="tb7d76fd7-7cec-42ee-bfa9-048d3054a11a" otus="f1fa9154-5494-484e-8ca4-dea28751fa35"/>
   <trees id="te6f1930a-88cf-46b1-99a5-5171ab3fa42e" otus="f1fa9154-5494-484e-8ca4-dea28751fa35"/>
   <trees id="tca5e634b-0920-4132-8573-3e0d4a718aa6" otus="f1fa9154-5494-484e-8ca4-dea28751fa35"/>
