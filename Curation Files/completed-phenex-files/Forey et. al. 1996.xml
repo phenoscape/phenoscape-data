@@ -323,8 +323,17 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0008778"/>
+                  <phen:typeref about="UBERON:0008778">
+                    <phen:qualifier relation="UBERON:has_muscle_insertion">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001842"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -403,10 +412,26 @@
       <states id="states84">
         <state id="state86" label="not piercing the premaxilla" symbol="0" about="#state86">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001647"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
-        <state id="state87" label="piercing the premaxilla" symbol="1"/>
+        <state id="state87" label="piercing the premaxilla" symbol="1" about="#state87">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001647"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state294" symbol="N" label=""/>
       </states>
       <states id="states88">
@@ -652,8 +677,56 @@
         <state id="s95e9f7e9-e69e-4d9a-a7b2-d24b562d4a44" label="" symbol="N"/>
       </states>
       <states id="states112">
-        <state id="state114" label="absent" symbol="0"/>
-        <state id="state115" label="present" symbol="1"/>
+        <state id="state114" label="absent" symbol="0" about="#state114">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002384">
+                    <phen:qualifier relation="RO:0002220">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002397"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="RO:0002220">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0011085"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state115" label="present" symbol="1" about="#state115">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002384">
+                    <phen:qualifier relation="RO:0002220">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002397"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="RO:0002220">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0011085"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states116">
         <state id="state118" label="absent" symbol="0"/>
@@ -2221,7 +2294,7 @@
       <char about="#char61" id="char61" label="Parasphenoid" states="states60">
         <meta content="false" datatype="xsd:boolean" id="meta314" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char65" id="char65" label="Orbitophenoid" states="states64">
+      <char about="#char65" id="char65" label="Orbitosphenoid" states="states64">
         <meta content="false" datatype="xsd:boolean" id="meta315" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char69" id="char69" label="Basisphenoid" states="states68">
@@ -2232,13 +2305,13 @@
       </char>
       <char about="#char77" id="char77" label="Epaxial musculature" states="states76">
         <meta content="false" datatype="xsd:boolean" id="meta318" property="nr:selected" xsi:type="nex:LiteralMeta"/>
-        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">-</meta>
       </char>
       <char about="#char81" id="char81" label="Supraoccipital" states="states80">
         <meta content="false" datatype="xsd:boolean" id="meta319" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char85" id="char85" label="Infraorbital branch of buccal VII" states="states84">
         <meta content="false" datatype="xsd:boolean" id="meta320" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">pierces through?</meta>
       </char>
       <char about="#char89" id="char89" label="Intercalar" states="states88">
         <meta content="false" datatype="xsd:boolean" id="meta321" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -2255,7 +2328,7 @@
       <char about="#char105" id="char105" label="Canal-bearing extrascapulars" states="states104">
         <meta content="false" datatype="xsd:boolean" id="meta325" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char109" id="char109" label="Ectopterygloid" states="states108">
+      <char about="#char109" id="char109" label="Ectopterygoid" states="states108">
         <meta content="false" datatype="xsd:boolean" id="meta326" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char113" id="char113" label="Large connective tissue nodule intercalated between pterygloid arch and maxilla" states="states112">
@@ -3263,7 +3336,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="te7649303-0680-4377-8c82-70fb39b3e62b" otus="otus1"/>
+  <trees id="t398bd7ec-9a84-4403-bdd8-d69f0e77518c" otus="otus1"/>
   <trees id="t215e9182-29cf-4a0f-974a-66aaedc08c68" otus="otus1"/>
   <trees id="tdf25d507-d134-4f91-896d-377efae49aef" otus="otus1"/>
   <trees id="tcecb4565-48c7-475a-b089-b56f19220c05" otus="otus1"/>
