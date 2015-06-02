@@ -287,7 +287,13 @@
                   <phen:typeref about="UBERON:0004529">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2002257"/>
+                        <phen:typeref about="UBERON:4300133">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2002257"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -307,7 +313,13 @@
                   <phen:typeref about="UBERON:0004529">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2002257"/>
+                        <phen:typeref about="UBERON:4300133">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2002257"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
@@ -330,7 +342,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0005744">
+                  <phen:typeref about="UBERON:0004111">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001577"/>
@@ -350,7 +362,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0005744">
+                  <phen:typeref about="UBERON:0004111">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="UBERON:2001577"/>
@@ -494,13 +506,145 @@
         <state id="state585" symbol="2" label="spatulate teeth present"/>
       </states>
       <states id="states198">
-        <state id="state366" symbol="0" label="same size as other teeth, or slight gradient of size with shortest teeth found more posteriorly"/>
-        <state id="state533" symbol="2" label="symphysial teeth prolonged relative to all other teeth"/>
-        <state id="state536" symbol="1" label="upper jaw outer row symphysial pair of teeth prolonged; symphysial outer row lower jaw lower teeth very short, next 1 – 2 teeth much longer"/>
+        <state id="state366" symbol="0" label="same size as other teeth, or slight gradient of size with shortest teeth found more posteriorly" about="#state366">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018299"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117">
+                    <phen:qualifier relation="PATO:similar_in_magnitude_relative_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0011594"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300135"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117">
+                    <phen:qualifier relation="PATO:similar_in_magnitude_relative_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001626"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001952"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005015"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001833"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005015"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state533" symbol="2" label="symphysial teeth prolonged relative to all other teeth" about="#state533">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018299"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0011594"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300135"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001626"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state536" symbol="1" label="upper jaw outer row symphysial pair of teeth prolonged; symphysial outer row lower jaw lower teeth very short, next 1 – 2 teeth much longer" about="#state536">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018299"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0011594">
+                      <phen:qualifier relation="RO:0002220">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0018299"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300135"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states200">
-        <state id="state367" symbol="0" label="absent"/>
-        <state id="state555" symbol="1" label="present"/>
+        <state id="state367" symbol="0" label="absent" about="#state367">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0016929"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state555" symbol="1" label="present" about="#state555">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0016929"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states202">
         <state id="state368" symbol="0" label="just covering tips of teeth"/>
@@ -527,8 +671,46 @@
         <state id="state520" symbol="1" label="well developed"/>
       </states>
       <states id="states214">
-        <state id="state374" symbol="0" label="forked anteriorly"/>
-        <state id="state485" symbol="1" label="rounded"/>
+        <state id="state374" symbol="0" label="forked anteriorly" about="#state374">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000071">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0018349"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001784"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state485" symbol="1" label="rounded" about="#state485">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000071">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0018349"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000411"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states216">
         <state id="state375" symbol="0" label="absent"/>
@@ -580,8 +762,60 @@
         <state id="state489" symbol="1" label="deep i.e., not as deep vertically as wide horizontally at midpoint"/>
       </states>
       <states id="states238">
-        <state id="state386" symbol="0" label="unicuspid (simple teeth)"/>
-        <state id="state490" symbol="1" label="bicuspid or molariform"/>
+        <state id="state386" symbol="0" label="unicuspid (simple teeth)" about="#state386">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001091">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0018283"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005021"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state490" symbol="1" label="bicuspid or molariform" about="#state490">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001091">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0018283"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002281"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001091">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0018283"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005009"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states240">
         <state id="state387" symbol="0" label="narrow, bicuspid or cone shaped"/>
@@ -608,16 +842,180 @@
         </polymorphic_state_set>
       </states>
       <states id="states246">
-        <state id="state390" symbol="0" label="few &lt; 5"/>
-        <state id="state510" symbol="1" label="many, 5 +"/>
+        <state id="state390" symbol="0" label="few &lt; 5" about="#state390">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>&lt;5</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200215">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000084">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0018283"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state510" symbol="1" label="many, 5 +" about="#state510">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>≥5</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4200215">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000084">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0018283"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states248">
-        <state id="state391" symbol="0" label="longer than wide"/>
-        <state id="state452" symbol="1" label="wider than long"/>
+        <state id="state391" symbol="0" label="longer than wide" about="#state391">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122">
+                    <phen:qualifier relation="PATO:increased_in_magnitude_relative_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000921">
+                          <phen:qualifier relation="BFO:0000052">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2000356"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state452" symbol="1" label="wider than long" about="#state452">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000921">
+                    <phen:qualifier relation="PATO:increased_in_magnitude_relative_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000122">
+                          <phen:qualifier relation="BFO:0000052">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2000356"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states250">
-        <state id="state392" symbol="0" label="absent"/>
-        <state id="state493" symbol="1" label="present"/>
+        <state id="state392" symbol="0" label="absent" about="#state392">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001899"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001598"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000083">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0003114"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state493" symbol="1" label="present" about="#state493">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001899"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001598"/>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000083">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0003114"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states252">
         <state id="state393" symbol="0" label="filaments longer than gill arch is wide at all points"/>
@@ -645,8 +1043,47 @@
         <state id="state456" symbol="1" label="weak, rudimentary"/>
       </states>
       <states id="states264">
-        <state id="state399" symbol="0" label="bearing a single procurrent caudal fin ray each (2 total)"/>
-        <state id="state457" symbol="1" label="bearing several procurrent caudal fin rays (3 or more total)"/>
+        <state id="state399" symbol="0" label="bearing a single procurrent caudal fin ray each (2 total)" about="#state399">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001584">
+                    <phen:qualifier relation="RO:0002150">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000660"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state457" symbol="1" label="bearing several procurrent caudal fin rays (3 or more total)" about="#state457">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>≥3</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001584">
+                    <phen:qualifier relation="RO:0002150">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000660"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states266">
         <state id="state400" symbol="0" label="first predorsal weakly pointed rostrally"/>
@@ -687,46 +1124,385 @@
         <state id="state534" symbol="1" label="present"/>
       </states>
       <states id="states278">
-        <state id="state406" symbol="0" label="present below upper lateral line"/>
-        <state id="state460" symbol="2" label="absent"/>
-        <state id="state538" symbol="1" label="present above or straddling lateral line"/>
+        <state id="state406" symbol="0" label="present below upper lateral line" about="#state406">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018340"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001196"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0018369"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state460" symbol="2" label="absent" about="#state460">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018340"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state538" symbol="1" label="present above or straddling lateral line" about="#state538">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018340"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001233"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0018369"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018340"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002488"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0018369"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states280">
         <state id="state407" symbol="0" label="absent, or incomplete"/>
         <state id="state496" symbol="1" label="present, stripe across almost full depth of body"/>
       </states>
       <states id="states282">
-        <state id="state408" symbol="0" label="dorsal to lateral line"/>
-        <state id="state523" symbol="2" label="vertical stripe across tail"/>
-        <state id="state539" symbol="1" label="straddling lateral line"/>
+        <state id="state408" symbol="0" label="dorsal to lateral line" about="#state408">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018308"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001233"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0010202"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state523" symbol="2" label="vertical stripe across tail" about="#state523">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018308"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001854"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018308"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001946"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state539" symbol="1" label="straddling lateral line" about="#state539">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018308"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002488"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0010202"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <polymorphic_state_set id="polymorphic_state_set574" symbol="63">
           <member state="state539"/>
           <member state="state408"/>
         </polymorphic_state_set>
       </states>
       <states id="states284">
-        <state id="state409" symbol="0" label="caudal spot restricted to caudal fin"/>
-        <state id="state593" symbol="1" label="caudal spot continues across caudal peduncle as part of a horizontal band"/>
+        <state id="state409" symbol="0" label="caudal spot restricted to caudal fin" about="#state409">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018308"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002463"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:4000164"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state593" symbol="1" label="caudal spot continues across caudal peduncle as part of a horizontal band" about="#state593">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018308"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002463"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2000178"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states286">
         <state id="state410" symbol="0" label="6 or more"/>
         <state id="state461" symbol="1" label="less than 6"/>
       </states>
       <states id="states288">
-        <state id="state411" symbol="0" label="absent"/>
-        <state id="state529" symbol="1" label="present"/>
+        <state id="state411" symbol="0" label="absent" about="#state411">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000014">
+                    <phen:qualifier relation="RO:0002220">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0018312"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000915">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000591"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state529" symbol="1" label="present" about="#state529">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000014">
+                    <phen:qualifier relation="RO:0002220">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0018312"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000591"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states290">
-        <state id="state412" symbol="0" label="scales of similar size, symmetrical rows"/>
-        <state id="state497" symbol="1" label="scales vary in size, uneven rows"/>
+        <state id="state412" symbol="0" label="scales of similar size, symmetrical rows" about="#state412">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018313"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000632"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018312"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117">
+                    <phen:qualifier relation="PATO:similar_in_magnitude_relative_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0018312"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state497" symbol="1" label="scales vary in size, uneven rows" about="#state497">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018313"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000616"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018312"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001956"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states292">
-        <state id="state413" symbol="0" label="asquamate in part of region between eye and origin of mouth"/>
-        <state id="state498" symbol="1" label="scales present throughout region between eye and origin of mouth"/>
+        <state id="state413" symbol="0" label="asquamate in part of region between eye and origin of mouth" about="#state413">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018312"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state498" symbol="1" label="scales present throughout region between eye and origin of mouth" about="#state498">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018312"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states294">
-        <state id="state414" symbol="0" label="covered in thick layer of skin"/>
-        <state id="state462" symbol="1" label="without thick skin"/>
+        <state id="state414" symbol="0" label="covered in thick layer of skin" about="#state414">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000027">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0000468"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002489"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0000014">
+                      <phen:qualifier relation="BFO:0000053">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="PATO:0000591"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state462" symbol="1" label="without thick skin" about="#state462">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000027">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0000468"/>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002489"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0000014">
+                      <phen:qualifier relation="BFO:0000053">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="PATO:0000591"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states296">
         <state id="state415" symbol="0" label="scales gradually, sequentially smaller in size from midbody to chest"/>
@@ -4850,7 +5626,8 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t6f356a3f-0570-48c5-9267-64b95ff4a446" otus="otus1"/>
+  <trees id="t7e96365c-897d-4957-922d-299939a62276" otus="otus1"/>
+  <trees id="t09c24bed-536e-49ad-8143-2f4714480ab1" otus="otus1"/>
   <trees about="#trees702" id="trees702" label="Trees from &quot;morphfinal.nex&quot;" otus="otus1">
     <meta content="7174354570160063646" datatype="xsd:long" id="meta879" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
     <meta content="false" datatype="xsd:boolean" id="meta878" property="bean:WriteWeights" xsi:type="nex:LiteralMeta"/>
