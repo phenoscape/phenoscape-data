@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Jordan K. Catlett &amp; Char L. Green entered free text and matrix data on 6/11/12.</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Jordan K. Catlett; Char L. Green</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
@@ -72,16 +72,106 @@
   <characters xmlns:ns="http://www.nexml.org/2009" id="3af7ef57-241f-4130-b665-6c942193e381" xsi:type="ns:StandardCells" otus="8e43640c-a00e-4251-b7bb-83d685cc058a">
     <format>
       <states id="10dddd06-fc45-4030-b10a-ff289b1baa30">
-        <state id="e595af34-ee71-4558-a018-446449d77d71" label="absent" symbol="0"/>
-        <state id="6ee10457-b744-4426-b288-474ae8d288c7" label="present" symbol="1"/>
+        <state id="e595af34-ee71-4558-a018-446449d77d71" label="absent" symbol="0" about="#e595af34-ee71-4558-a018-446449d77d71">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018352"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="6ee10457-b744-4426-b288-474ae8d288c7" label="present" symbol="1" about="#6ee10457-b744-4426-b288-474ae8d288c7">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018352"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="3f2c424c-5723-47ed-a0ea-4d3cef35a147">
-        <state id="ca397d67-a31f-437d-b9b9-a7e38468c3cb" label="absent" symbol="0"/>
-        <state id="85ed0684-2786-4f41-ace7-1c059423836a" label="present" symbol="1"/>
+        <state id="ca397d67-a31f-437d-b9b9-a7e38468c3cb" label="absent" symbol="0" about="#ca397d67-a31f-437d-b9b9-a7e38468c3cb">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="85ed0684-2786-4f41-ace7-1c059423836a" label="present" symbol="1" about="#85ed0684-2786-4f41-ace7-1c059423836a">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="da8c11bc-8802-4d5d-8247-6ab19255fe6b">
-        <state id="6ad8fb63-d0d9-489c-b007-e8017b9e8c3f" label="absent" symbol="0"/>
-        <state id="ff1487f0-151b-4bb0-ab34-f0cc0b88992d" label="present" symbol="1"/>
+        <state id="6ad8fb63-d0d9-489c-b007-e8017b9e8c3f" label="absent" symbol="0" about="#6ad8fb63-d0d9-489c-b007-e8017b9e8c3f">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0005016"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0002542"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="ff1487f0-151b-4bb0-ab34-f0cc0b88992d" label="present" symbol="1" about="#ff1487f0-151b-4bb0-ab34-f0cc0b88992d">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005016"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0002542"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="49b59afa-011c-40be-a56a-ba79da798207">
         <state id="da7658c9-dab2-491e-afed-8a2cc0b5ea60" label="absent" symbol="0"/>
@@ -330,9 +420,15 @@
                   <phen:typeref about="UBERON:0003097"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001933"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                   <phen:related_entity>
-                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/ae2886a8-85ac-42f9-9df1-e7fc0311ca47"/>
+                    <phen:typeref about="UBERON:0002355"/>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -347,9 +443,9 @@
                   <phen:typeref about="UBERON:0003097"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0001933"/>
                   <phen:related_entity>
-                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/ae2886a8-85ac-42f9-9df1-e7fc0311ca47"/>
+                    <phen:typeref about="UBERON:0002355"/>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -531,10 +627,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2201671"/>
+                  <phen:typeref about="UBERON:4300143"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0002261"/>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002483"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0000309"/>
                   </phen:related_entity>
@@ -548,7 +650,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2201671"/>
+                  <phen:typeref about="UBERON:4300143"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0002483"/>
@@ -570,7 +672,13 @@
                   <phen:typeref about="UBERON:4300020"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002533"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -584,7 +692,7 @@
                   <phen:typeref about="UBERON:4300020"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141"/>
+                  <phen:typeref about="PATO:0002533"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -632,13 +740,41 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2201671"/>
+                  <phen:typeref about="UBERON:0018324"/>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002464"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0000309"/>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="73bd2ee2-b744-42af-b84c-475d8437fb3b" label="present" symbol="1"/>
+        <state id="73bd2ee2-b744-42af-b84c-475d8437fb3b" label="present" symbol="1" about="#73bd2ee2-b744-42af-b84c-475d8437fb3b">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018324"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002464"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0000309"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="45f697ee-3e81-4c5a-9780-8457483baf4a">
         <state id="d75b62a4-a44a-4042-ab18-be6384ad5923" label="absent" symbol="0" about="#d75b62a4-a44a-4042-ab18-be6384ad5923">
@@ -866,7 +1002,13 @@
                   <phen:typeref about="UBERON:1700006"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002464"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0000309"/>
                   </phen:related_entity>
@@ -880,10 +1022,10 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:1700006"/>
+                  <phen:typeref about="UBERON:1600006"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0002464"/>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0000309"/>
                   </phen:related_entity>
@@ -894,8 +1036,42 @@
         </state>
       </states>
       <states id="963cdc3d-644d-406c-ba19-1ce92966353b">
-        <state id="dac4c54d-97b6-4d23-9187-7cde718e83ab" label="absent" symbol="0"/>
-        <state id="f4e8550d-70fa-4818-a155-ec3a5462999e" label="present" symbol="1"/>
+        <state id="dac4c54d-97b6-4d23-9187-7cde718e83ab" label="absent" symbol="0" about="#dac4c54d-97b6-4d23-9187-7cde718e83ab">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010710"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="f4e8550d-70fa-4818-a155-ec3a5462999e" label="present" symbol="1" about="#f4e8550d-70fa-4818-a155-ec3a5462999e">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="ns:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001589"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4400000"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="61ec2da2-f743-4691-abd9-b03e76e06504">
         <state id="9b5e2109-7ecc-461a-89be-27218abc7541" label="absent" symbol="0" about="#9b5e2109-7ecc-461a-89be-27218abc7541">
@@ -1129,13 +1305,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a2fb7017-4b10-4c41-b762-27bcef73f11c"/>
+                  <phen:typeref about="UBERON:4400000">
+                    <phen:qualifier relation="RO:0002150">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001588"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0002278"/>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:2201588"/>
-                  </phen:related_entity>
+                  <phen:typeref about="PATO:0000140"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1146,13 +1325,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a2fb7017-4b10-4c41-b762-27bcef73f11c"/>
+                  <phen:typeref about="UBERON:4400000">
+                    <phen:qualifier relation="RO:0002150">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001588"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0002278"/>
-                  <phen:related_entity>
-                    <phen:typeref about="UBERON:2201588"/>
-                  </phen:related_entity>
+                  <phen:typeref about="PATO:0000140"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1160,7 +1342,7 @@
         </state>
       </states>
       <states id="029460fd-3687-4c2f-ae0d-52f3294069aa">
-        <state id="db7ddd9e-2455-432f-b07e-b5ded87a2604" label="absent" symbol="0" about="#db7ddd9e-2455-432f-b07e-b5ded87a2604"></state>
+        <state id="db7ddd9e-2455-432f-b07e-b5ded87a2604" label="absent" symbol="0" about="#db7ddd9e-2455-432f-b07e-b5ded87a2604"/>
         <state id="edcaa2a8-14ca-4967-adad-30519758594c" label="present" symbol="1"/>
       </states>
       <states id="a8f09079-d6a6-48b6-bcfe-eadb073881e1">
@@ -1484,9 +1666,7 @@
       <char id="8cef6dfd-bb45-4302-b2d4-c70f329aa0a1" label="Caudal axis upturned steeply, supporting high aspect ratio (lunate) heterocercal tail; elongate hypochordal radials unsegmented or segmented only proximally" states="d296b14f-db85-44ef-bea0-a50f231a129c"/>
       <char id="778574ee-f210-4821-9dcd-cf91654be393" label="Horizontal or near-horizontal notochordal caudal extremity" states="f1ec1ee2-66fe-4a16-914a-b9db6b0666e8" about="#778574ee-f210-4821-9dcd-cf91654be393"/>
       <char id="2fde2edd-8afa-4d0e-bb3f-1ca743676171" label="Caudal neural and/or supraneural spines extended" states="97707427-7245-4cfc-9ed5-020396ff1a2f" about="#2fde2edd-8afa-4d0e-bb3f-1ca743676171"/>
-      <char id="b5b3080b-3e0d-4027-ab76-1eea73a1f6da" label="Ventral lobe of tail supported by hypochordal radials extending beyond level of body wall" states="b90dc233-022f-468b-992c-f2726d286aae" about="#b5b3080b-3e0d-4027-ab76-1eea73a1f6da">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">??</meta>
-      </char>
+      <char id="b5b3080b-3e0d-4027-ab76-1eea73a1f6da" label="Ventral lobe of tail supported by hypochordal radials extending beyond level of body wall" states="b90dc233-022f-468b-992c-f2726d286aae" about="#b5b3080b-3e0d-4027-ab76-1eea73a1f6da"></char>
       <char id="c8bb1619-4dd4-4057-8e2f-ded9ba8b2ba1" label="Scapular blade" states="45f697ee-3e81-4c5a-9780-8457483baf4a" about="#c8bb1619-4dd4-4057-8e2f-ded9ba8b2ba1">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">scapular blade is-a endochondral bone (part of scapula)</meta>
       </char>
@@ -1497,12 +1677,8 @@
       <char id="6932106c-848a-4a00-a6ab-066153596cea" label="Supra-articular pectoral foramina" states="80682eec-7e52-42cb-aaa2-15a5e5521268"/>
       <char id="f4e91c75-1543-42f8-853e-fcbef09d5616" label="Pectoral articular surface" states="273ea34a-47c6-413d-a8cf-d3947fc2d9c0"/>
       <char id="885600a7-718b-41ec-b506-fe4b47e3681f" label="Pectoral articular surface (and fin) elevated" states="93257278-6fe9-4415-9df9-5a528668016f"/>
-      <char id="fb723b16-dc0a-47c7-9a80-ba79cb5a7aa9" label="Paired fin radials barely extend beyond level of body wall" states="0c55f5d6-1f52-44ab-bf60-c677a54e4c0e" about="#fb723b16-dc0a-47c7-9a80-ba79cb5a7aa9">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">check use of paired fin radial (is-a bone)</meta>
-      </char>
-      <char id="48485a09-de0d-4274-b67d-8a85d3f63f99" label="Dibasal pectoral fin endoskeleton" states="963cdc3d-644d-406c-ba19-1ce92966353b" about="#48485a09-de0d-4274-b67d-8a85d3f63f99">
-        <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">TODO</meta>
-      </char>
+      <char id="fb723b16-dc0a-47c7-9a80-ba79cb5a7aa9" label="Paired fin radials barely extend beyond level of body wall" states="0c55f5d6-1f52-44ab-bf60-c677a54e4c0e" about="#fb723b16-dc0a-47c7-9a80-ba79cb5a7aa9"></char>
+      <char id="48485a09-de0d-4274-b67d-8a85d3f63f99" label="Dibasal pectoral fin endoskeleton" states="963cdc3d-644d-406c-ba19-1ce92966353b" about="#48485a09-de0d-4274-b67d-8a85d3f63f99"></char>
       <char id="4136513d-ab7d-49fb-a5fd-6bcc84e203a3" label="Tribasal pectoral fin endoskeleton" states="61ec2da2-f743-4691-abd9-b03e76e06504" about="#4136513d-ab7d-49fb-a5fd-6bcc84e203a3">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">TODO. Need cartilaginous basal classes</meta>
       </char>
@@ -3210,6 +3386,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t93f828c2-89d0-4957-ac59-35e24aea5248" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
   <trees id="t725c4f80-9070-4f90-98d8-3eb68b72caca" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
   <trees id="t09b25892-ed7e-4c3d-86b6-5ce5c18d886f" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
   <trees id="t59f5cd62-b98f-4a53-9f41-4f26ee444302" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
