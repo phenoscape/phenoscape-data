@@ -268,19 +268,41 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0001437">
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/d8bb1280-ed08-0132-e1e0-005056010073">
                     <phen:qualifier relation="BFO:0000050">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2000488"/>
+                        <phen:typeref about="UBERON:2001516"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001503"/>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state147" label="complex cartilaginous connection" symbol="1"/>
+        <state id="state147" label="complex cartilaginous connection" symbol="1" about="#state147">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/d8bb1280-ed08-0132-e1e0-005056010073">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001516"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001504"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states148">
         <state id="state150" label="present" symbol="0" about="#state150">
@@ -1367,30 +1389,30 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0003101">
-                    <phen:qualifier relation="BFO:0000053">
+                  <phen:typeref about="UBERON:0003101"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000014">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="PATO:0000952"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0003101">
-                    <phen:qualifier relation="BFO:0000053">
+                  <phen:typeref about="UBERON:0003101"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000014">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
                       <phen:holds_in_relation_to>
                         <phen:typeref about="PATO:0000317"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462"/>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1451,7 +1473,17 @@
         <state id="state530" symbol="2" label="present as a series of regular midlateral brown blotches and irregular dark brown blotches on entire lateral surface of body"/>
       </states>
       <states id="states252">
-        <state id="state254" label="absent" symbol="0"/>
+        <state id="state254" label="absent" symbol="0" about="#state254">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001463"/>
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state255" label="present" symbol="1"/>
       </states>
       <states id="states256">
@@ -3370,6 +3402,7 @@
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
+                <phen:description>≤5</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0000152"/>
                 </phen:bearer>
@@ -3429,6 +3462,7 @@
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
+                <phen:description>≥8</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0000152"/>
                 </phen:bearer>
@@ -4055,11 +4089,108 @@
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:description>≥5</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001585">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001593"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:description>≥6</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001585">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001594"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state452" label="i,4/5,i" symbol="2"/>
-        <state id="state453" label="i,3/4,i" symbol="3"/>
+        <state id="state452" label="i,4/5,i" symbol="2" about="#state452">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description/>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001585">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001593"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="4">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001585">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001594"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="5">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state453" label="i,3/4,i" symbol="3" about="#state453">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001585">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001593"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001585">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001594"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="4">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states454">
         <state id="state456" label="High, four or  more dorsal and five or more ventral rays" symbol="0" about="#state456">
@@ -4419,6 +4550,7 @@
       </char>
       <char about="#char145" id="char145" label="Ceratobranchial epiphysis" states="states144">
         <meta content="false" datatype="xsd:boolean" id="meta577" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">1f. Composition</meta>
       </char>
       <char about="#char149" id="char149" label="Toothplate on the fourth ceratobranchial bone" states="states148">
         <meta content="false" datatype="xsd:boolean" id="meta578" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -4551,6 +4683,7 @@
       </char>
       <char about="#char297" id="char297" label="Orbits" states="states296">
         <meta content="false" datatype="xsd:boolean" id="meta612" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">2a. Positional qualities between two entities</meta>
       </char>
       <char about="#char302" id="char302" label="Lacrimal sensory canals" states="states301">
         <meta content="false" datatype="xsd:boolean" id="meta613" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -4654,6 +4787,7 @@
       </char>
       <char about="#char408" id="char408" label="Pelvic-fin position" states="states407">
         <meta content="false" datatype="xsd:boolean" id="meta638" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">1b. Position</meta>
       </char>
       <char about="#char413" id="char413" label="Pelvic-fin ray number" states="states412">
         <meta content="false" datatype="xsd:boolean" id="meta639" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -4689,6 +4823,7 @@
       </char>
       <char about="#char449" id="char449" label="Principal caudal-fin rays" states="states448">
         <meta content="false" datatype="xsd:boolean" id="meta647" property="nr:selected" xsi:type="nex:LiteralMeta"/>
+        <meta xmlns:rdf1="http://www.w3.org/2000/01/rdf-schema#" xsi:type="nex:LiteralMeta" property="rdf1:comment">1c. Count</meta>
       </char>
       <char about="#char455" id="char455" label="Procurrent caudal-fin ray number" states="states454">
         <meta content="false" datatype="xsd:boolean" id="meta648" property="nr:selected" xsi:type="nex:LiteralMeta"/>
@@ -7283,7 +7418,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="td6e84e2d-d893-41d4-b959-687cd48292b2" otus="otus1"/>
+  <trees id="t9c8b0075-ab79-43ae-adc0-e4066230a16e" otus="otus1"/>
   <trees id="t4820668b-9c5c-4d5c-9b05-bc14af9687ab" otus="otus1"/>
   <trees id="t7e7d4e82-271f-434f-913c-e4e327f5368d" otus="otus1"/>
   <trees id="t9ff2d4ff-94ce-4c05-8f9f-e80b935e438e" otus="otus1"/>
