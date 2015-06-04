@@ -1,0 +1,228 @@
+#NEXUS
+[written Fri May 29 13:42:35 CDT 2015 by Mesquite  version 3.03 (build 702) at sc2-184.sc.usd.edu/206.176.6.184]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=31;
+	TAXLABELS
+		Melanotaenia_splendida Rivulus_breviceps Zenarchopteridae Adrianichthys_kruyti Adrianichthys_roseni Adrianichthys_poptae Adrianichthys_oophorus Oryzias_sarasinorum Oryzias_bonneorum Oryzias_orthognathus Oryzias_nigrimas Oryzias_nebulosus Oryzias_profundicola Oryzias_matanensis Oryzias_marmoratus Oryzias_celebensis Oryzias_timorensis Oryzias_luzonensis Oryzias_latipes Oryzias_curvinotus Oryzias_mekongensis Oryzias_javanicus Oryzias_carnaticus Oryzias_dancena Oryzias_hubbsi Oryzias_haugiangensis Oryzias_pectoralis Oryzias_minutillus Oryzias_sinensis Oryzias_uwai Oryzias_setnai 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=85;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 Vomer /  Present absent, 2 Articular_surface_of_fourth_epibranchial_bone /  slightly_expanded greatly_expanded, 3 Ceratobranchial_epiphysis /  'simple cartilaginous^nconnection' complex_cartilaginous_connection, 4 Toothplate_on_the_fourth_ceratobranchial_bone /  present absent, 5 Palatine_shape_and_articulation_with_upper_jaw /  'palatine head relatively narrow and without strong^nconnection to maxilla' 'palatine head expanded and articulating with the maxilla (or premaxilla) via a dense ligament', 6 Rostral_cartilage /  present absent, 7 Meckel?s_cartilage_and_articular_bone /  Meckel?s_cartilage_runs_the_length_of_the_dentary_and_the_articular_bone_is_orientated_anteriorly_relative_to_the_body_axis 'Meckel?s cartilage about one-half length of the dentary and articular bone is orientated dorsally relative to the body axis', 8 Symphysis_between_left_and_right_dentary /  ligamentous cartilaginous, 9 Metapterygoid /  present absent, 10 Pterygoquadrate_cartilage /  'confluent with dorsal^nmargin of palatine and quadrate' enlarged_dorsally, 11 'Mandibulo-lacrimal ligament' /  present absent, 12 Dermosphenotic_position_relative_to_sphenotic /  anterior lateral_or_posterior, 13 Supracleithrum /  present absent, 14 Posttemporal_bone /  forked simple, 15 Anterior_ramus_of_coracoid /  'narrow, with cartilaginous ^ntip' 'broad, particularly at point of articulation ^nwith the cleithrum, without cartilage', 16 Ventral_accessory_bone_in_caudal_skeleton /  absent present, 17 'Position of the lateral branch of the posterior^nlateral line nerve in adults and type of scales' /  'Midlateral,^nwith few or only weakly developed pored^nlateral line scales' 'ventral, with pored lateral line^nscales' 'ventral, without pored lateral line scales', 18 Size_at_hatching /  'large, greater than 4.5 mm' 'small, 4.5 mm or less', 19 Maximum_adult_body_size /  60_mm_SL_or_larger greater_than_50_mm_SL_and_less_than_60_mm_SL greater_than_40_mm_SL_and_less_than_50_mm_SL 'greater than 26 mm SL and less than 40 mm^nSL' 26_mm_SL_or_less, 20 Body_depth /  'Slender bodied, reaching no more^nthan 26% SL in adults' 'somewhat deep bodied, reaching more than 26% and less than 33% SL' 'extremely deep bodied, reaching more than 33% SL in^nadults', 21 Scales_in_a_lateral_series /  Fewer_than_40 40?57 58?65 70_or_more, 22 Head_length /  'Small to moderate, less than 30%^nSL' 'large, 31% or more SL', 23 Snout_length /  Less_than_12%_SL '12% SL or^ngreater', 24 Eye_size /  'small to moderate diameter, reaching no greater than 9% SL' 'large diameter, ^nreaching 10% or more of SL', 25 Urogenital_papillae_of_female /  single_lobed bilobed bilobed_and_greatly_enlarged, 26 Dark_brown_to_black_nuptial_coloration_of_males /  absent present, 27 Dark_brown_blotches_on_body_of_males /  absent present_at_midbody 'present as a series of regular^nmidlateral brown blotches and irregular dark brown^nblotches on entire lateral surface of body', 28 'Interrupted, horizontal dark brown bar from the^neye to the lower jaw' /  absent present, 29 Brown_to_black_spot_at_base_of_pectoral_fin /  absent present, 30 Pigmented_anal_or_urogenital_region /  absent present, 31 Colour_on_caudal_fin_in_life /  hyaline_to_dusky 'yellow to orange dorsal and ventral caudal-fin^nmargins', 32 'Pigmentation pattern on caudal-fin rays in ^nalcohol-preserved material' /  hyaline_to_dusky 'distinct^n dark brown to black lines on middle rays', 33 'Preethmoid cartilage(s)' /  absent paired_cartilages 'single, median cartilage', 34 Ethmoid_cartilage_anterior_margin /  'Straight^n and entire' irregular_and_indented_anteromedially distinct_anteromedial_projection, 35 Ethmoid_cartilage_lateral_margin /  Entire distinct_notch_bordered_posteriorly_by_anterior_margin_of_lateral_ethmoid, 36 Ethmoid_region_of_skull_in_lateral_and_dorsal__view /  convex_and_narrow flat_and_broad, 37 Mesethmoid_ossification /  round_or_oval 'sub-rectangular' 'semicircle anteriorly with subrectangle^n posteriorly' indented_anteriorly, 38 Orbits /  confluent_with_dorsal_surface_of_head project_somewhat_beyond_dorsal_profile_of_head project_markedly_beyond_dorsal_profile_of_head, 39 Lacrimal_sensory_canals /  open closed, 40 'Preopercular sensory canal and dermosphenotic^n(posterior infraorbital) canal' /  separate continuous, 41 Upper_and_lower_jaw_length /  subequal 'upper^njaw extends beyond lower jaw', 42 Premaxilla /  Distinct_articular_and_ascending_processes 'flat and broad without distinct articular ^nand ascending processes', 43 Maxilla /  'with small to broad dorsal process^nthat overlaps the premaxilla' 'relatively straight ^nand without dorsal process', 44 Oral_jaw_teeth_size_and_arrangement /  'One to ^nthree irregular rows of conical teeth on the premaxilla ^nand dentary' 'up to five irregular rows of small,^n villiform teeth that form a pavement dentition and no ^nlarge teeth posteriorly', 45 Enlarged_teeth_posteriorly_on_premaxilla /  absent_in_both_males_and_females present_in_males_only present_in_males_and_females, 46 Enlarged_teeth_posteriorly_on_dentary /  absent_in_both_males_and_females 'present in males, rarely^nin females', 47 'Hyomandibula articulation with otic region of ^nskull' /  bifid_head single_head, 48 Articulation_of_palatine_and_quadrate_bones /  Palatine_and_quadrate_articulate_via_elongate_flanges_that_overlap_anteriorly 'no flanges on the ventral^nsurface of the palatine and the quadrate', 49 Ventral_hypohyal /  broad_posterior_ramus 'elongate blade-like ramus along the ventral face of the anterior ceratohyal' blunt_posterior_ramus, 50 Epibranchial_one /  ossified cartilaginous, 51 Epibranchial_two /  'fully ossified, with a broad point of articulation with the ceratobranchial cartilage' 'notably smaller than the other epibranchial ^nbones and without a broad point of articulation with^nthe ceratobranchial cartilage, may be cartilaginous or ^nabsent in some specimens', 52 Ceratobranchial_bone_five_toothplate /  triangular rectangular_or_suboval, 53 Fifth_ceratobranchial_tooth_arrangement /  'Diagonal ^nrows' horizontal_rows, 54 'Branchiostegal-ray number' /  six_or_more five four, 55 Branchiostegal_ray_arrangement /  'Posterior branchiostegal ^nrays articulate with a relatively large posterior ^nceratohyal' 'posterior most branchiostegal ray ^narticulates with a truncated posterior ceratohyal', 56 Total_number_of_vertebrae /  36_or_more '34 or^nfewer', 57 Number_of_precaudal_vertebrae /  14_or_more '12^nor 13' 11_or_fewer, 58 First_pleural_rib /  Attaches_to_third_vertebra attaches_to_second_vertebra, 59 Transverse_processes_of_first_vertebra /  elongate short_or_absent, 60 'Pectoral-fin ray number' /  13_or_more 9?12 eight_or_fewer, 61 'Pectoral-fin ray bony processes' /  absent present, 62 Pelvic_bone /  no_lateral_strut_or_process 'lateral^n strut expanded dorsally, with or without flared, winglike ^nprocesses' 'lateral strut needle-like and elongate', 63 'Pelvic-fin rays' /  end_anterior_to_anal_fin 'extend posterior to anal-fin origin in males', 64 'Pelvic-fin position' /  'Pelvic fins anterior, in line^n with pleural rib of vertebra five or less' 'pelvic fins^nin line with pleural rib of vertebra six or seven' 'pelvic fins posterior, in line with pleural rib of vertebra ^neight or higher', 65 'Pelvic-fin ray number' /  Six_or_seven five, 66 'Pelvic-fin connection to body' /  'Medialmost pelvicfin^nray separate from body' 'medialmost pelvic-fin^nray connected along one-half its length to body via a ^nmembrane', 67 'Dorsal-fin ray number' /  14_or_more 11?13 8?10 never_more_than_eight, 68 'Dorsal-fin position' /  'Posterior, origin at or posterior ^nto vertebra 22' 'anterior, origin anterior to ^nvertebra 22', 69 'Anal-fin ray number' /  23_or_fewer 24_or_more, 70 'Anal-fin ray bony processes' /  absent present, 71 'Anal-fin shape and relative length of fin rays' /  'Anteriormost fin ray short followed by elongate ^nrays with rays decreasing in length posteriorly' 'anal-fin rays approximately the same length' 'anterior portion of fin with elongate rays set off ^nfrom rest of fin', 72 'Caudal-fin shape' /  Lunate_or_emarginate truncate 'rounded and with somewhat elongate^n middle rays', 73 'Principal caudal-fin rays' /  More_principal_rays_in__dorsal_lobe_or_a_number_equal_to_that_in_the_ventral_lobe 'more principal rays in the ventral than in the^ndorsal lobe, numbering i,5/6,i or greater' 'i,4/5,i' 'i,3/4,i', 74 'Procurrent caudal-fin ray number' /  'High, four or^n more dorsal and five or more ventral rays' 'low,^nthree or fewer dorsal and four or fewer ventral rays', 75 'Procurrent caudal-fin ray shape' /  simple hooked, 76 Epural_number /  one_ossified_epural 'two or^nthree ossified epurals' 'two epurals, one ossified, ^none cartilaginous', 77 Reproductive_mode /  'oviparous, external fertilization,^n embryos develop outside of female' 'oviparous, ^nexternal or facultatively internal fertilization ,^nembryos develop for at least some time while attache d^nto female' 'ovoviviparous or viviparous, internal ^nfertilization', 78 Abdominal_concavity /  absent present, 79 Testis_morphology /  'paired, symmetric' single_lobed 'paired, bilaterally asymmetric', 80 Egg_size /  'small, less than 1.5 mm in diameter' 'large, 1.5 mm in diameter or greater', 81 Genome_size /  1.9_pg_per_nucleus_or_greater less_than_1.9_pg_per_nucleus, 82 Diploid_chromosome_number /  '46?48 diploid chromosomes^n' 44_or_fewer_diploid_chromosomes, 83 Chromosome_arm_number /  48_or_fewer '58 or^nmore', 84 Chromosome_constitution /  'Acrocentric chromosomes^n(monoarmed)' 'metacentric chromosomes ^n(biarmed or fused)', 85 Extremely_large_metacentric_chromosomes /  absent present ; 
+	MATRIX
+	Melanotaenia_splendida  00000000000000000001000(0 1)000000000000000000001000000000000000000000??(0 1)0000000000000?00
+	Rivulus_breviceps       00000000000000000000(0 1)00(0 1)000000000001000000000000000000000000000200000002000000010(0 1)???
+	Zenarchopteridae        00000000000000001000(0 1)01(0 1)0(0 1)00000000000000000010000000?00000000102000000001001200110?00
+	Adrianichthys_kruyti    11111111111111112?003111000000?01001020011110000100001000000010200001000100110???????
+	Adrianichthys_roseni    11111111111111112?002110000000?01001020011110000100001000000010100(0 1)01000100111???????
+	Adrianichthys_poptae    11111111111111112?00311000000000200121000111000010000(0 1)0000000102001010001011110??????
+	Adrianichthys_oophorus  11111111111111112000200000000000200121000111000010000(0 1)10000101020020000010111101?????
+	Oryzias_sarasinorum     11111111111111112?10300000000001010000000000101020111(0 1)11000101010011000010111??0???11
+	Oryzias_bonneorum       11111111111111112?10010(0 1)00100000010000000000111120111(0 1)111001010100110000101110???????
+	Oryzias_orthognathus    11111111111111112?101000100000000100000100000011201111111011010101(1 2)0(0 1)000201110???????
+	Oryzias_nigrimas        11111111111111112?10000111000000010000010000111120111111(0 1)011010101(1 2)0(0 1)000201110??11011
+	Oryzias_nebulosus       11111111111111112?300000110000?0010000010000111120111111(1 2)(0 1)11010(0 1)01210000201110???????
+	Oryzias_profundicola    11111111111111112?220001102000110110000100001111201111112011010001(0 1 2)11001201110???????
+	Oryzias_matanensis      11111111111111112?2110011020000001100001000011112011111110110100012(0 1)(0 1)001201110???1?11
+	Oryzias_marmoratus      11111111111111112?210001102000110110000100001111201111111011010001(1 2)1(0 1)0012011101??1?11
+	Oryzias_celebensis      11111111111111112?30000010100011011000010000111120111(0 1)11(1 2)(0 1)11010(0 1)012000012001101011011
+	Oryzias_timorensis      11111111111111112?300000101000?00110000100001111201111111(0 1)11010001210001201110???????
+	Oryzias_luzonensis      11111111111111112?30000010000011011030010000111120111(0 1)11(1 2)0111100013101112001102000110
+	Oryzias_latipes         11111111111111112130000010000011001030010000(1 2)11120111(0 1)11(1 2)(0 1)111100(0 1)13001112001102000110
+	Oryzias_curvinotus      11111111111111112?30000010000011001000010000111120111(1 2)11(1 2)0110100013001112001102?10110
+	Oryzias_mekongensis     11111111111111112?40000010001011021000010000111120111(1 2)1121121100(0 1)13101122(0 1)02101010110
+	Oryzias_javanicus       11111111111111112?31000020000011001000110000211120111111(1 2)01(0 1)0200(0 1)130(0 1)1012001101010000
+	Oryzias_carnaticus      11111111111111112131000020000001011000110000211120111111201(0 1)02000130(0 1)10120011010?????
+	Oryzias_dancena         11111111111111112132000010000001011000110000111120111(1 2)11201102000130(0 1)1012001101010000
+	Oryzias_hubbsi          11111111111111112?40010120000001001000110000111120111(1 2)11201(1 2)010001310102200110??10000
+	Oryzias_haugiangensis   11111111111111112?410101200000?1001000110000111120111(0 1)112011020001310101200110???????
+	Oryzias_pectoralis      11111111111111112?400001100011?10010000100001011201111112011010001300102210110???????
+	Oryzias_minutillus      11111111111111112?40000010000100021000010000001120111(1 2)11211201001131002230011010110(0 1)1
+	Oryzias_sinensis        11111111111111112?40000010000011001000010000111120111111211(1 2)1110013(0 1)0111200110??10110
+	Oryzias_uwai            11111111111111112?400001100101?10210100100000011211112112112010001310022300110???????
+	Oryzias_setnai          111111111111111121400000100111010210100100?02011211012112111011011301022310220?0?????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  85;
+
+	EXSET * UNTITLED  = ;
+
+	WTSET * UNTITLED  =  1: 1 -  85 ;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  85;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1432924955770;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2870533923922666602;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4611791453265949684;
+			mqVersion 303;
+			checksumv 0 3 3505701840 null  getNumChars 85 numChars 85 getNumTaxa 31 numTaxa 31   short true   bits 31   states 31   sumSquaresStatesOnly 13017.0 sumSquares 13017.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 6;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1920 1053;
+			setLocation 0 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4611791453265949684 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 165;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1914 981;
+					setLocation 0 23;
+					setFont SanSerif;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames off;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 495;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1914 981;
+						setLocation 0 23;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
