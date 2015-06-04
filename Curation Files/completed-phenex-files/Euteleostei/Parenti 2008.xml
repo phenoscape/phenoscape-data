@@ -191,8 +191,34 @@
     <meta content="Character Matrix" datatype="xsd:string" id="meta558" property="bean:Name" xsi:type="nex:LiteralMeta"/>
     <format>
       <states id="states136">
-        <state id="state138" label="Present" symbol="0"/>
-        <state id="state139" label="absent" symbol="1"/>
+        <state id="state138" label="Present" symbol="0" about="#state138">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002396"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state139" label="absent" symbol="1" about="#state139">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002396"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states140">
         <state id="state142" label="slightly expanded" symbol="0" about="#state142">
@@ -4204,11 +4230,7 @@
         </state>
       </states>
       <states id="states467">
-        <state id="state469" label="oviparous, external fertilization,  embryos develop outside of female" symbol="0" about="#state469">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="state469" label="oviparous, external fertilization,  embryos develop outside of female" symbol="0" about="#state469"></state>
         <state id="state470" label="oviparous,  external or facultatively internal fertilization , embryos develop for at least some time while attache d to female" symbol="1"/>
         <state id="state471" label="ovoviviparous or viviparous, internal  fertilization" symbol="2"/>
       </states>
@@ -4334,11 +4356,7 @@
         </state>
       </states>
       <states id="states485">
-        <state id="state487" label="1.9 pg per nucleus or greater" symbol="0" about="#state487">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="state487" label="1.9 pg per nucleus or greater" symbol="0" about="#state487"></state>
         <state id="state488" label="less than 1.9 pg per nucleus" symbol="1"/>
       </states>
       <states id="states489">
@@ -4350,11 +4368,7 @@
         </polymorphic_state_set>
       </states>
       <states id="states493">
-        <state id="state495" label="48 or fewer" symbol="0" about="#state495">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="state495" label="48 or fewer" symbol="0" about="#state495"></state>
         <state id="state496" label="58 or more" symbol="1"/>
       </states>
       <states id="states497">
@@ -7269,6 +7283,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="td6e84e2d-d893-41d4-b959-687cd48292b2" otus="otus1"/>
   <trees id="t4820668b-9c5c-4d5c-9b05-bc14af9687ab" otus="otus1"/>
   <trees id="t7e7d4e82-271f-434f-913c-e4e327f5368d" otus="otus1"/>
   <trees id="t9ff2d4ff-94ce-4c05-8f9f-e80b935e438e" otus="otus1"/>
