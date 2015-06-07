@@ -173,7 +173,31 @@
         </uncertain_state_set>
       </states>
       <states id="states104">
-        <state id="state106" label="absent or poorly defined with only partial contact with nasal bone" symbol="0"/>
+        <state id="state106" label="absent or poorly defined with only partial contact with nasal bone" symbol="0" about="#state106">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000003"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:3000003"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001961"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0001681"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state107" label="short but well-defined, separating the tips of the nasals or overlapp" symbol="1"/>
         <state id="state108" label="strong posterior extension separating nasals and contacting frontal" symbol="2"/>
         <state id="state109" label="extension of dorsa" symbol="3"/>
@@ -3382,7 +3406,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="tb127ce4e-8f7a-4fdc-bad7-d7314c0ece98" otus="otus1"/>
+  <trees id="tc2170fcf-d8f6-4bae-81ae-c3676296e0cb" otus="otus1"/>
   <trees id="t6c1ffbd9-a077-4a35-91d6-320244916e66" otus="otus1"/>
   <trees id="t60f59e59-e11c-4230-91f6-af4a09dfd12e" otus="otus1"/>
   <trees id="t27bf748e-2bb5-444c-b067-ef5a9cd3d241" otus="otus1"/>
