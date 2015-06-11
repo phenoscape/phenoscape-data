@@ -4,8 +4,8 @@
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator">Jordan K. Catlett; Char L. Green</meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
-    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Coates, M. I., &amp; Sequeira, E. K. (2001). A new stethacanthid chondrichthyan from the lower Carboniferous of Bearsden, Scotland. Journal of Vertebrate Paleontology, 21(3), 438–459.</meta>
     <meta xsi:type="LiteralMeta" property="ter:identifier">10.1671/0272-4634(2001)021[0438:ANSCFT]2.0.CO;2</meta>
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Coates, M. I., &amp; Sequeira, E. K. (2001). A new stethacanthid chondrichthyan from the lower Carboniferous of Bearsden, Scotland. Journal of Vertebrate Paleontology, 21(3), 438–459.</meta>
     <meta xsi:type="LiteralMeta" property="ter:title">Coates, M. I., &amp; Sequeira, E. K. (2001)</meta>
   </meta>
   <otus id="8e43640c-a00e-4251-b7bb-83d685cc058a">
@@ -1379,16 +1379,19 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4400000">
-                    <phen:qualifier relation="RO:0002150">
+                  <phen:typeref about="UBERON:4400000"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
                       <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2001588"/>
+                        <phen:typeref about="PATO:0002278"/>
                       </phen:holds_in_relation_to>
                     </phen:qualifier>
                   </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001588"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1399,16 +1402,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4400000">
-                    <phen:qualifier relation="RO:0002150">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2001588"/>
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
+                  <phen:typeref about="UBERON:4400000"/>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140"/>
+                  <phen:typeref about="PATO:0002278"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001588"/>
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2600,7 +2600,7 @@
       <char id="1fe77ad6-ae39-45b4-839f-17fd3c5a0445" label="Middle of three proximal radials (mesopterygium) articulates with 3+ distal radials" states="89473966-54e2-4255-a3e4-dc3d88eb9962"/>
       <char id="e611cb58-4b65-4f37-9555-a660efe3e56f" label="Posteriormost radial (metapterygium) broad and articulates directly with 5+ distal radials" states="76afce44-fe8d-4c1e-a387-33953bd20960"/>
       <char id="bf206ccd-d36e-4cb3-913d-a3430b48183d" label="Proximal, articular facet of metapterygium directed anteriorly" states="c3511f4c-5e89-449b-bd7f-1327224506f7"/>
-      <char id="75f27754-d98b-4924-92a5-1edc269948b6" label="Metapterygium connects with distinct series of distal radials articulating proximodistally to form a short or long axis" states="d553196c-1f41-49df-84c1-40cc3a8994c7" about="#75f27754-d98b-4924-92a5-1edc269948b6">
+      <char id="75f27754-d98b-4924-92a5-1edc269948b6" label="Metapterygium connects with distinct series of  distal radials articulating proximodistally to form a short or long axis" states="d553196c-1f41-49df-84c1-40cc3a8994c7" about="#75f27754-d98b-4924-92a5-1edc269948b6">
         <meta xmlns:rdf="http://www.w3.org/2000/01/rdf-schema#" xsi:type="ns:LiteralMeta" property="rdf:comment">GS</meta>
       </char>
       <char id="53ca4353-8db0-44e0-a1aa-2f73cbb28b4e" label="Axial radials articulate with pre-and post-axial radials" states="029460fd-3687-4c2f-ae0d-52f3294069aa" about="#53ca4353-8db0-44e0-a1aa-2f73cbb28b4e">
@@ -4299,6 +4299,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tb3cf9aa5-dc2f-40e2-b7a1-4057c35fc57c" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
   <trees id="t9ea1663b-96ed-4c45-bdfe-750cae764e41" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
   <trees id="tb4572c69-d127-4ba9-b4a7-a4d1bab386b4" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
   <trees id="t725c4f80-9070-4f90-98d8-3eb68b72caca" otus="8e43640c-a00e-4251-b7bb-83d685cc058a"/>
