@@ -1351,7 +1351,19 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0002463"/>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:2000178"/>
+                    <phen:typeref about="UBERON:2001463">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:2000178">
+                            <phen:qualifier relation="BFO:0000053">
+                              <phen:holds_in_relation_to>
+                                <phen:typeref about="PATO:0001855"/>
+                              </phen:holds_in_relation_to>
+                            </phen:qualifier>
+                          </phen:typeref>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -1650,10 +1662,40 @@
       <states id="states308">
         <state id="state421" symbol="0" label="present in all or some individuals" about="#state421">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018342"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018342"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
-        <state id="state466" symbol="1" label="absent"/>
+        <state id="state466" symbol="1" label="absent" about="#state466">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018342"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states310">
         <state id="state422" symbol="0" label="interorbital concavity absent or weak"/>
@@ -1682,13 +1724,7 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0002463"/>
                   <phen:related_entity>
-                    <phen:typeref about="BSPO:0000671">
-                      <phen:qualifier relation="BFO:0000050">
-                        <phen:holds_in_relation_to>
-                          <phen:typeref about="UBERON:0001697"/>
-                        </phen:holds_in_relation_to>
-                      </phen:qualifier>
-                    </phen:typeref>
+                    <phen:typeref about="UBERON:0016942"/>
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -6239,6 +6275,8 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t33be2163-d94f-4ded-8087-5e2ce3d53fb1" otus="otus1"/>
+  <trees id="t4fe23a3b-9e56-4b7b-af73-3f875e1ebe32" otus="otus1"/>
   <trees id="t1b13f040-87ea-4765-bbe7-983612bf2502" otus="otus1"/>
   <trees id="t7e96365c-897d-4957-922d-299939a62276" otus="otus1"/>
   <trees id="t09c24bed-536e-49ad-8143-2f4714480ab1" otus="otus1"/>
