@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:ResourceMeta" rel="ter:source">
+    <meta xsi:type="nex:LiteralMeta" property="ter:identifier">http://www.sciencedirect.com/science/article/pii/S0195667108001407</meta>
+    <meta xsi:type="nex:LiteralMeta" property="ter:bibliographicCitation">Zhang, G., Wang, Y., Jones, M. E. H., &amp; Evans, S. E. (2009). A new Early Cretaceous salamander (Regalerpeton weichangensis gen. et sp. nov.) from the Huajiying Formation of northeastern China. Cretaceous Research, 330, 551–558.</meta>
+    <meta xsi:type="nex:LiteralMeta" property="ter:title">Zhang, G., Wang, Y., Jones, M. E. H., &amp; Evans, S. E. (2009)</meta>
+  </meta>
   <otus about="#otus1" id="otus1" label="Taxa">
     <meta content="3141408704801006337" datatype="xsd:long" id="meta86" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
     <meta content="Default Bush (id 1, version 80)" datatype="xsd:anySimpleType" id="meta85" property="bean:DefaultTree" xsi:type="nex:LiteralMeta"/>
@@ -673,7 +678,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0011914"/>
+                  <phen:typeref about="UBERON:4200121"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0001505"/>
@@ -690,7 +695,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0011914"/>
+                  <phen:typeref about="UBERON:4200121"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000642"/>
@@ -1999,4 +2004,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t50855d40-bf3c-4d78-bd95-345043290837" otus="otus1"/>
 </nex:nexml>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:ResourceMeta" rel="ter:source">
+    <meta xsi:type="nex:LiteralMeta" property="ter:identifier">http://dx.doi.org/10.1111/j.1096-3642.2005.00181.x</meta>
     <meta xsi:type="nex:LiteralMeta" property="ter:bibliographicCitation">Gardiner, B. G., Schaeffer, B., &amp; Masserie, J. A. (2005). A review of the lower actinopterygian phylogeny. Zoological Journal of the Linnean Society, 144(4), 511–525.</meta>
-    <meta xsi:type="nex:LiteralMeta" property="ter:identifier">10.1111/j.1096-3642.2005.00181.x</meta>
     <meta xsi:type="nex:LiteralMeta" property="ter:title">Gardiner, B. G., Schaeffer, B., &amp; Masserie, J. A. (2005)</meta>
   </meta>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
   <otus about="#otus1" id="otus1" label="Taxa">
     <meta content="6665050247202857510" datatype="xsd:long" id="meta70" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
     <meta content="Default Bush (id 1, version 64)" datatype="xsd:anySimpleType" id="meta69" property="bean:DefaultTree" xsi:type="nex:LiteralMeta"/>
@@ -394,11 +394,7 @@
         <state id="state218" label="present" symbol="1"/>
       </states>
       <states id="states219">
-        <state id="state221" label=" absent" symbol="0" about="#state221">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
-          </meta>
-        </state>
+        <state id="state221" label=" absent" symbol="0" about="#state221"></state>
         <state id="state222" label="from supra-angular and dentary" symbol="1"/>
         <state id="state223" label=" from prearticular" symbol="2"/>
       </states>
@@ -1371,6 +1367,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t39747cc2-4e0c-4c66-b924-4aa7ebbbce08" otus="otus1"/>
   <trees id="t1e146d61-4975-4765-960f-5a1a886fea2d" otus="otus1"/>
   <trees id="t40657fee-3b14-470d-afe8-817c5b053a36" otus="otus1"/>
   <trees id="t944b0214-97a9-4133-9bf5-35e310f209f6" otus="otus1"/>

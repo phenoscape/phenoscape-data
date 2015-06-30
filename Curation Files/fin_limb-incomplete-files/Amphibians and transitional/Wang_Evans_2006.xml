@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:ResourceMeta" rel="ter:source">
+    <meta xsi:type="nex:LiteralMeta" property="ter:identifier">http://www.researchgate.net/profile/Susan_Evans4/publication/228117707_A_new_short-bodied_salamander_from_the_Early_Cretaceous_of_Liaoning_China/links/00463521dd46383475000000.pdf</meta>
+    <meta xsi:type="nex:LiteralMeta" property="ter:bibliographicCitation">Wang, Y., &amp; Evans, S. E. (2006). A new short-bodied salamander from the Upper Jurassic/Lower Cretaceous of China. Acta Palaeontologica Polonica, 51, 127–130.</meta>
+    <meta xsi:type="nex:LiteralMeta" property="ter:title">Wang, Y., &amp; Evans, S. E. (2006)</meta>
+  </meta>
   <otus about="#otus1" id="otus1" label="Taxa">
     <meta content="3067102020182162700" datatype="xsd:long" id="meta82" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
     <meta content="Default Bush (id 1, version 76)" datatype="xsd:anySimpleType" id="meta81" property="bean:DefaultTree" xsi:type="nex:LiteralMeta"/>
@@ -748,7 +753,6 @@
         <state id="state416" label="present" symbol="1"/>
       </states>
       <states id="states417">
-        <state id="state419" label="absent" symbol="0"/>
         <state id="state420" label="present" symbol="1"/>
       </states>
       <char about="#char103" id="char103" label="Premaxillae" states="states102">
@@ -1227,7 +1231,6 @@
         <cell char="char406" state="state407"/>
         <cell char="char410" state="state411"/>
         <cell char="char414" state="state415"/>
-        <cell char="char418" state="state419"/>
       </row>
       <row id="row434" otu="otu31">
         <cell char="char103" state="state104"/>
@@ -1290,7 +1293,6 @@
         <cell char="char406" state="state407"/>
         <cell char="char410" state="state411"/>
         <cell char="char414" state="state415"/>
-        <cell char="char418" state="state419"/>
       </row>
       <row id="row440" otu="otu35">
         <cell char="char103" state="state104"/>
@@ -1356,7 +1358,6 @@
         <cell char="char406" state="state407"/>
         <cell char="char410" state="state411"/>
         <cell char="char414" state="state415"/>
-        <cell char="char418" state="state419"/>
       </row>
       <row id="row442" otu="otu39">
         <cell char="char103" state="state104"/>
@@ -1878,4 +1879,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tf6af7b82-e40d-4efe-b80d-a1a901e04c0f" otus="otus1"/>
 </nex:nexml>

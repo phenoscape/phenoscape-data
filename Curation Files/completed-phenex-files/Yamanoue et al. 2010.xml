@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator"/>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:identifier">http://dx.doi.org/10.1111/j.1095-8649.2010.02674.x</meta>
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Yamanoue, Y., Setiamarga, D. H. E., &amp; Matsuura, K. (2010). Pelvic fins in teleosts: structure, function and evolution. Journal of Fish Biology, 77(6), 1173–1208.</meta>
+    <meta xsi:type="LiteralMeta" property="ter:title">Yamanoue, Y., Setiamarga, D. H. E., &amp; Matsuura, K. (2010)</meta>
+  </meta>
   <otus id="t3248eb73-e5c4-46fc-9d3c-dcc6d18b2a83">
     <otu id="7d48f2a7-ec57-4e65-9053-2cd2e76ed6b7" label="" about="#7d48f2a7-ec57-4e65-9053-2cd2e76ed6b7">
       <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0033902"/>
@@ -609,5 +614,6 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tdce66ec8-ad5f-4df4-afa8-339236f10a8f" otus="t3248eb73-e5c4-46fc-9d3c-dcc6d18b2a83"/>
   <trees id="t5961e2f1-fdd0-403f-98d0-1815edb53587" otus="t3248eb73-e5c4-46fc-9d3c-dcc6d18b2a83"/>
 </nexml>

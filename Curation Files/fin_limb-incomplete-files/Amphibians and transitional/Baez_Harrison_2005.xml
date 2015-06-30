@@ -2,6 +2,11 @@
 <nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:ResourceMeta" rel="ter:source">
+    <meta xsi:type="nex:LiteralMeta" property="ter:identifier">http://dx.doi.org/10.1111/j.1475-4983.2005.00477.x</meta>
+    <meta xsi:type="nex:LiteralMeta" property="ter:bibliographicCitation">Báez, A. M., &amp; HARRISON, T. (2005). A New Pipine Frog From An Eocene Crater Lake In North-Central Tanzania. Palaeontology, 48(4), 723–737. doi:10.1111/j.1475-4983.2005.00477.x</meta>
+    <meta xsi:type="nex:LiteralMeta" property="ter:title">Báez, A. M., &amp; HARRISON, T. (2005)</meta>
+  </meta>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
   <otus about="#otus2187" id="otus2187" label="Taxa">
     <meta content="26406373022940126" datatype="xsd:long" id="meta2272" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
@@ -90,11 +95,11 @@
       <meta content="10" datatype="xsd:integer" id="meta2231" property="bean:Index" xsi:type="nex:LiteralMeta"/>
       <meta content="10" datatype="xsd:integer" id="meta2230" property="msq:taxonUID" xsi:type="nex:LiteralMeta"/>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="nex:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0002497"/>
-      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="nex:ResourceMeta" rel="ter:individualID">
-        <meta xsi:type="nex:ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000169"/>
-        <meta xsi:type="nex:LiteralMeta" property="ter:catalogNumber">206875</meta>
-      </meta>
       <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:hasMatrixName">Pseudhymenochirus</meta>
+      <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="nex:ResourceMeta" rel="ter:individualID">
+        <meta xsi:type="nex:LiteralMeta" property="ter:catalogNumber">206875</meta>
+        <meta xsi:type="nex:ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000169"/>
+      </meta>
     </otu>
     <otu about="#otu2233" id="otu2233" label="Rhinophrynus ">
       <meta content="Rhinophrynus " datatype="xsd:string" id="meta2236" property="bean:Name" xsi:type="nex:LiteralMeta"/>
@@ -1897,5 +1902,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t3cf89366-0ff4-47e3-b2d7-1e5f18053e44" otus="otus2187"/>
+  <trees id="t9d0d04eb-a54b-4369-a541-36d675a70e4a" otus="otus2187"/>
   <trees id="t8ac3094f-f53a-4809-adbf-3211bcdf4136" otus="otus2187"/>
 </nex:nexml>

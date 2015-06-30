@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex 1.11" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:description"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="ResourceMeta" rel="ter:source">
+    <meta xsi:type="LiteralMeta" property="ter:identifier">http://www.tandfonline.com/doi/abs/10.1080/02724634.1998.10011060</meta>
+    <meta xsi:type="LiteralMeta" property="ter:bibliographicCitation">Henrici, A. C. (1998). A new pipoid anuran from the Late Jurassic Morrison Formation at Dinosaur National Monument, Utah. Journal of Vertebrate Paleontology, 18, 321–332.</meta>
+    <meta xsi:type="LiteralMeta" property="ter:title">Henrici, A. C. (1998)</meta>
+  </meta>
   <otus id="ac327fc4-624f-4b74-9126-3ad8087d5e0e">
     <otu id="20fe6fd7-ca1f-4a61-a7c7-e73e8956f927" label="Hyla" about="#20fe6fd7-ca1f-4a61-a7c7-e73e8956f927">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0006916"/>
@@ -51,8 +56,8 @@
     <otu id="6d9647ba-26fe-478c-a3a6-a82c319bc85e" label="Pliobatrachus" about="#6d9647ba-26fe-478c-a3a6-a82c319bc85e">
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0081693"/>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
-        <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000182"/>
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">14693</meta>
+        <meta xsi:type="ResourceMeta" rel="ter:collectionID" href="http://purl.obolibrary.org/obo/COLLECTION_0000182"/>
       </meta>
       <meta xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ResourceMeta" rel="ter:individualID">
         <meta xsi:type="LiteralMeta" property="ter:catalogNumber">14695</meta>
@@ -840,4 +845,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tbcdf5c7c-f825-4630-aaf8-9eea8fbe4166" otus="ac327fc4-624f-4b74-9126-3ad8087d5e0e"/>
 </nexml>

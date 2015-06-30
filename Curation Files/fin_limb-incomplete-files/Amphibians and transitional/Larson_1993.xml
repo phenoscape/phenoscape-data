@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="class org.nescent.informatics.script.UpdateVTOReferencesInNeXML$" version="0.9">
-  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+<nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:references"/>
   <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:description"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:LiteralMeta" property="ter:creator"/>
+  <meta xmlns:ter="http://purl.org/dc/terms/" xsi:type="nex:ResourceMeta" rel="ter:source">
+    <meta xsi:type="nex:LiteralMeta" property="ter:identifier">http://www.jstor.org/stable/1466953?seq=1#page_scan_tab_contents</meta>
+    <meta xsi:type="nex:LiteralMeta" property="ter:bibliographicCitation">Larson, A., &amp; Dimmick, W. W. (1993). Phylogenetic relationships of the salamander families: an analysis of congruence among morphological and molecular characters. Herpetological Monographs, 7, 77–93.</meta>
+    <meta xsi:type="nex:LiteralMeta" property="ter:title">Larson, A., &amp; Dimmick, W. W. (1993)</meta>
+  </meta>
   <otus about="#otus1" id="otus1" label="Taxa">
     <meta content="8663490226625243278" datatype="xsd:long" id="meta98" property="bean:AssignedIDNumber" xsi:type="nex:LiteralMeta"/>
     <meta content="Default Bush (id 1, version 92)" datatype="xsd:anySimpleType" id="meta97" property="bean:DefaultTree" xsi:type="nex:LiteralMeta"/>
@@ -1141,4 +1146,5 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t4ef279ab-db37-42ff-8052-89a99231fa7e" otus="otus1"/>
 </nex:nexml>
