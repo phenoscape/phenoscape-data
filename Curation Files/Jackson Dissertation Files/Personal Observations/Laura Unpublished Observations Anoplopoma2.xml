@@ -2,7 +2,11 @@
 <nexml xmlns="http://www.nexml.org/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:creator">Laura Jackson</meta>
   <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://purl.org/dc/terms/" xsi:type="ns:LiteralMeta" property="ter:description">Unpublished Observations of Anoplopoma fimbria UW014709 - SL 88.73mm</meta>
-  <otus id="t7803c9b3-ac91-4c18-99ba-799c3eebe4ea"/>
+  <otus id="t7803c9b3-ac91-4c18-99ba-799c3eebe4ea">
+    <otu id="9fa55a4d-066d-4182-81f2-78377c8dd6b7" label="Anoplopoma fimbria" about="#9fa55a4d-066d-4182-81f2-78377c8dd6b7">
+      <meta xmlns:ns="http://www.nexml.org/2009" xmlns:ter="http://rs.tdwg.org/dwc/terms/" xsi:type="ns:ResourceMeta" rel="ter:taxonID" href="http://purl.obolibrary.org/obo/VTO_0052950"/>
+    </otu>
+  </otus>
   <characters xmlns:ns="http://www.nexml.org/2009" id="cb6a43ba-8cf5-42ff-8679-99c413186451" xsi:type="ns:StandardCells" otus="t7803c9b3-ac91-4c18-99ba-799c3eebe4ea">
     <format>
       <states id="s41981c41-e661-4631-89b5-139836c8262d">
@@ -451,8 +455,33 @@
       <char id="c9ba2f42f-1a61-440f-8526-bc02ce9c7a50" label="Premaxillary tooth" states="sdfbc9729-c8cd-495d-ab2a-7f5a6a4b82ab"/>
       <char id="c61aecca0-113a-4c8c-90ce-1d6091d148c4" label="Dentary tooth" states="s2914686f-13fa-40eb-97d9-2d8c00bc89b0"/>
     </format>
-    <matrix/>
+    <matrix>
+      <row id="80d9a99a-79cb-4526-8270-ec4be820ddab" otu="9fa55a4d-066d-4182-81f2-78377c8dd6b7">
+        <cell char="c78169e90-4e3a-4f84-9893-6e61e86abcc2" state="sa7743c69-a746-4d07-8e73-14a76f0a46e2"/>
+        <cell char="cbb104f39-4971-4d4e-a4ca-a0204a0e40c4" state="s7582e97e-b8c2-4d4b-9c85-f338093cd419"/>
+        <cell char="c3cfd20f4-1714-440b-87c4-50932d44d6a6" state="sdf0d51f0-cae7-4b4e-bd44-2793d080fc32"/>
+        <cell char="c29c41aa5-7c83-46b6-a2f8-18097a519927" state="s59c75234-ec28-481c-b796-7d6758a1b015"/>
+        <cell char="cef00dd19-7011-45b8-a408-80a13026d71a" state="sb51ac727-8924-4451-85dc-79abcc1c60fe"/>
+        <cell char="c971826e4-a162-4c7c-958b-ba4ce1ca2d0e" state="s99812ff5-d08b-4407-8dcc-d4994330e745"/>
+        <cell char="c345316a7-6b0b-4ec8-b9cd-4c65343ccc87" state="sf11f8b90-717e-4cc1-8cfd-2aa5b845a043"/>
+        <cell char="cb91f18ec-7027-4ea1-a83a-0da6632e3482" state="sc18790bd-4815-46d5-b420-bb819ccc2c09"/>
+        <cell char="cb096baff-47d8-4b0e-bdbf-2d4bf517de3d" state="s82827b84-2d0a-4397-844b-4da042d522ec"/>
+        <cell char="ca585b562-2936-405c-b68c-de6a1129bf6e" state="sc9b71d18-06ea-41bb-a59d-fcfc625000b7"/>
+        <cell char="c31d4ff4d-8e7c-498b-b1a7-b344d6bd3da5" state="safeba7b6-76a6-4f6b-9338-ab58c2a10b14"/>
+        <cell char="c3a385d6a-be20-4800-8076-478d9016cba1" state="s775c5c0e-f365-4ac2-9ca3-357ad011630e"/>
+        <cell char="cbefd2539-80bd-47af-bf94-b5541a1f0e84" state="s82296a9e-11db-44da-9848-85d5872c9130"/>
+        <cell char="c1172007d-f8df-4641-981b-5518567b15ab" state="s00987b78-b91e-434b-bcdf-63c92452a517"/>
+        <cell char="c0f5b7be9-0e0b-4bdb-b2d1-967dcfc70d6c" state="sde7feecc-5dd6-4678-8e2e-3299ffc122f4"/>
+        <cell char="cd15a9691-fdd9-44ab-878b-ffd8d99c860f" state="sbea2f887-3e43-47ad-be3d-1becc46fceb9"/>
+        <cell char="c61c3cbeb-a06b-46e5-b06b-f58de6a61fed" state="s764dd6b3-0c58-4abd-8b1b-bd2fd378eb66"/>
+        <cell char="cb7c7b54b-d6d4-42ec-9149-b58150a02caa" state="s63e002d4-fb11-4d90-95ca-55bb6727e3ea"/>
+        <cell char="c97734296-1ff9-4996-99f4-2e18eb9cbf8a" state="scdf53f11-ddf6-43f7-874c-ae70bf5e3810"/>
+        <cell char="c9ba2f42f-1a61-440f-8526-bc02ce9c7a50" state="s4d218af6-d3d6-4462-8b83-d90a4bd7363d"/>
+        <cell char="c61aecca0-113a-4c8c-90ce-1d6091d148c4" state="se58b1288-61a0-4ec1-9e0d-53aa1f723089"/>
+      </row>
+    </matrix>
   </characters>
+  <trees id="t8aa298ab-dd12-4bb3-9823-dabd764b5b0f" otus="t7803c9b3-ac91-4c18-99ba-799c3eebe4ea"/>
   <trees id="t281d7aea-b441-4d2c-a9bc-b3c39973b5ff" otus="t7803c9b3-ac91-4c18-99ba-799c3eebe4ea"/>
   <trees id="t641ea1bd-44b6-4b53-99aa-9f695626aa2b" otus="t7803c9b3-ac91-4c18-99ba-799c3eebe4ea"/>
   <trees id="t6746ecdf-cc26-4ecf-bce8-6f7d89f96b6d" otus="t7803c9b3-ac91-4c18-99ba-799c3eebe4ea"/>
