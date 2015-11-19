@@ -489,10 +489,32 @@
         </state>
       </states>
       <states id="states96">
-        <state id="state302" symbol="1" label="Two segments (=&quot;senses&quot;) in postcoronal region of CSO" about="#state302"></state>
+        <state id="state302" symbol="1" label="Two segments (=&quot;senses&quot;) in postcoronal region of CSO" about="#state302">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001810"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state444" symbol="0" label="One segment in postcoronal region of CSO" about="#state444">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001810"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
       </states>
@@ -520,7 +542,40 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state445" symbol="0" label="Three postlacrimalia and three pores in CST" about="#state445"></state>
+        <state id="state445" symbol="0" label="Three postlacrimalia and three pores in CST" about="#state445">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000376">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2002248"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0008915">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2002248"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states100">
         <state id="state304" symbol="1" label="Interorbital space narrow, frontalia with edges in the region of the orbit" about="#state304">
@@ -655,8 +710,70 @@
         </state>
       </states>
       <states id="states106">
-        <state id="state307" symbol="1" label="Median margins of frontalia do not converge anteriorly, leaving the cartilaginous region behind the mesethmoid" about="#state307"></state>
-        <state id="state482" symbol="0" label="no such cartilaginous region" about="#state482"></state>
+        <state id="state307" symbol="1" label="Median margins of frontalia do not converge anteriorly, leaving the cartilaginous region behind the mesethmoid" about="#state307">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004866">
+                    <phen:qualifier relation="BSPO:0000120">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000468"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001505"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004866">
+                      <phen:qualifier relation="BSPO:0000121">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0000468"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state482" symbol="0" label="no such cartilaginous region" about="#state482">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004866">
+                    <phen:qualifier relation="BSPO:0000120">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000468"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004866">
+                      <phen:qualifier relation="BSPO:0000121">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0000468"/>
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states108">
         <state id="state308" symbol="1" label="Parasphenoideum wide (less than 12 times in the length of a neurocranium)" about="#state308">
@@ -887,8 +1004,34 @@
         </state>
       </states>
       <states id="states120">
-        <state id="state314" symbol="1" label="Depth of brain portion of skull equal or less than depth of an orbital part of skull"/>
-        <state id="state469" symbol="0" label="Brain portion of skull exceeds in depth orbital part"/>
+        <state id="state314" symbol="1" label="Depth of brain portion of skull equal or less than depth of an orbital part of skull" about="#state314">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003129"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state469" symbol="0" label="Brain portion of skull exceeds in depth orbital part" about="#state469">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003129"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states122">
         <state id="state315" symbol="0" label="No scales on lacrimale" about="#state315">
@@ -933,8 +1076,34 @@
         </state>
       </states>
       <states id="states124">
-        <state id="state316" symbol="0" label="Postlacrimalia flattened"/>
-        <state id="state455" symbol="1" label="Postlacrimalia tubula"/>
+        <state id="state316" symbol="0" label="Postlacrimalia flattened" about="#state316">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000376"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002254"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state455" symbol="1" label="Postlacrimalia tubular" about="#state455">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000376"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002299"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states126">
         <state id="state317" symbol="0" label="Margins more raised" about="#state317">
@@ -979,8 +1148,40 @@
         </state>
       </states>
       <states id="states128">
-        <state id="state318" symbol="0" label="m. trapezium attached no further than crests on parietale or posterior ends of frontalia"/>
-        <state id="state457" symbol="1" label="Body muscles reaches far ahead overlapping frontalia (up to the level of pct1)"/>
+        <state id="state318" symbol="0" label="m. trapezium attached no further than crests on parietale or posterior ends of frontalia" about="#state318">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001630"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004866"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state457" symbol="1" label="Body muscles reaches far ahead overlapping frontalia (up to the level of pct1)" about="#state457">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001630"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004866"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states130">
         <state id="state319" symbol="0" label="Hyomandibulare without curved process" about="#state319">
@@ -1081,8 +1282,62 @@
         </state>
       </states>
       <states id="states134">
-        <state id="state321" symbol="0" label="no such thickening of postlacrimalia"/>
-        <state id="state493" symbol="1" label="First two postlacrimalia thickened, forming subocular shelf"/>
+        <state id="state321" symbol="0" label="no such thickening of postlacrimalia" about="#state321">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001407"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000591"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001408"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000591"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state493" symbol="1" label="First two postlacrimalia thickened, forming subocular shelf" about="#state493">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001407"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000591"/>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001408"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000591"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states136">
         <state id="state322" symbol="0" label="no such changes"/>
@@ -1278,17 +1533,9 @@
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:4000174"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000402"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
                 <phen:description>12-14 branched</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4000174"/>
+                  <phen:typeref about="UBERON:2002062"/>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070"/>
@@ -1332,14 +1579,80 @@
       <states id="states148">
         <state id="state328" symbol="0" label="Two &quot;neck&quot; vertebra" about="#state328">
           <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype/>
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002413"/>
+                </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
-        <state id="state471" symbol="1" label="Three vertebra in front of the first support of ID"/>
+        <state id="state471" symbol="1" label="Three vertebra in front of the first support of ID" about="#state471">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002413"/>
+                </phen:bearer>
+                <phen:quality count="3">
+                  <phen:typeref about="PATO:0000070"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states150">
-        <state id="state329" symbol="0" label="no such curvature in neurocranium"/>
-        <state id="state472" symbol="1" label="Interorbital bridge of the skull curved upwards"/>
+        <state id="state329" symbol="0" label="no such curvature in neurocranium" about="#state329">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003129"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000406"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state472" symbol="1" label="Interorbital bridge of the skull curved upwards" about="#state472">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003129"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000406"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states152">
         <state id="state330" symbol="0" label="Beginning of A behind the beginning of IID"/>
@@ -1610,8 +1923,34 @@
         <state id="state491" symbol="1" label="Three or two interradial foramens"/>
       </states>
       <states id="states166">
-        <state id="state337" symbol="0" label="Capsules flattened"/>
-        <state id="state446" symbol="1" label="Acoustical capsules of the skull laterally"/>
+        <state id="state337" symbol="0" label="Capsules flattened" about="#state337">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004637"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002254"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state446" symbol="1" label="Acoustical capsules of the skull laterally" about="#state446">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004637"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002497"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states168">
         <state id="state338" symbol="0" label="Skull bones sculptured" about="#state338">
@@ -1692,63 +2031,44 @@
         </state>
       </states>
       <states id="states172">
-        <state id="state340" symbol="0" label="Canals connected to each other"/>
-        <state id="state448" symbol="1" label="Interruption of canals of CPM and temporal present"/>
+        <state id="state340" symbol="0" label="Canals connected to each other" about="#state340">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001812"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002512"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001630"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state448" symbol="1" label="Interruption of canals of CPM and temporal present" about="#state448">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001812"/>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505"/>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001630"/>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states174">
-        <state id="state341" symbol="0" label="12 - 14 branched rays in C" about="#state341">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2002062"/>
-                </phen:bearer>
-                <phen:quality count="12">
-                  <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2002062"/>
-                </phen:bearer>
-                <phen:quality count="13">
-                  <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2002062"/>
-                </phen:bearer>
-                <phen:quality count="14">
-                  <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="state459" symbol="1" label="Increase in the number of branched rays of C up to 15-17" about="#state459">
-          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2002062"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000470"/>
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:description>15-17</phen:description>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2002062"/>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000070"/>
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="state341" symbol="0" label="12 - 14 branched rays in C"/>
+        <state id="state459" symbol="1" label="Increase in the number of branched rays of C up to 15-17"/>
       </states>
       <states id="states176">
         <state id="state342" symbol="0" label="Process well developed" about="#state342">
@@ -1781,8 +2101,52 @@
         </state>
       </states>
       <states id="states178">
-        <state id="state343" symbol="0" label="Tubular scales present in MLL"/>
-        <state id="state465" symbol="1" label="No tubular scales in MLL"/>
+        <state id="state343" symbol="0" label="Tubular scales present in MLL" about="#state343">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0010202"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002299"/>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state465" symbol="1" label="No tubular scales in MLL" about="#state465">
+          <meta xmlns:voc="http://vocab.phenoscape.org/" xsi:type="nex:LiteralMeta" property="voc:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0010202"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002299"/>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states180">
         <state id="state344" symbol="0" label="Width of skull more than 1/2 of its length" about="#state344">
@@ -2208,7 +2572,7 @@
       <char about="#char173" id="char173" label="Canals of CPM (preopercular-mandibular canal) and CT (Temporal)" states="states172">
         <meta content="false" datatype="xsd:boolean" id="meta585" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
-      <char about="#char175" id="char175" label="Branched rays in C (caudal fin)" states="states174">
+      <char about="#char175" id="char175" label="Branched rays in C" states="states174">
         <meta content="false" datatype="xsd:boolean" id="meta586" property="nr:selected" xsi:type="nex:LiteralMeta"/>
       </char>
       <char about="#char177" id="char177" label="Post-maxillary process" states="states176">
@@ -4219,7 +4583,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="tc1d42a93-4ab5-4452-8d65-13fb3bf819a3" otus="otus1"/>
+  <trees id="t87c62c3d-8ca6-40d9-9f64-8599b7c17f37" otus="otus1"/>
   <trees id="tca266bea-d4fc-46bb-9ee8-2e3bbe4bc375" otus="otus1"/>
   <trees id="t0ab58ffe-b35e-415c-89d8-39df8c316621" otus="otus1"/>
 </nex:nexml>
