@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+  <meta xsi:type="LiteralMeta" property="dc:creator">Laura Jackson</meta>
+  <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:title">Evseenko, 2000</meta>
+  </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description">Evseenko, S. A. 2000. Family Achiropsettidae and Its Position in the Taxonomic and Ecological Classifications of Pleuronectiformes. Journal of Ichthyology. 40(1), pp. S110–S138.</meta>
+  <otus id="t93bde4b9-9a1f-4a43-8870-5b8060c13280">
+    <otu id="tf98e7eb1-0e9c-4cc2-9028-00bc9cb90101" label="Achiropsettidae" about="#tf98e7eb1-0e9c-4cc2-9028-00bc9cb90101">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0055726" />
+    </otu>
+  </otus>
+  <characters id="c84c2c87-3cf3-4db4-bc91-75d9449d8d86" xsi:type="StandardCells" otus="t93bde4b9-9a1f-4a43-8870-5b8060c13280">
+    <format>
+      <states id="s97469448-d617-49ff-b857-3ee624e1c384">
+        <state id="se887b66b-f7fd-4eec-8c6a-f1aff84c8682" label="absent" symbol="0" about="#se887b66b-f7fd-4eec-8c6a-f1aff84c8682">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sae17f266-4036-4e25-8990-155d2eb46072" label="present" symbol="1" about="#sae17f266-4036-4e25-8990-155d2eb46072">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s358d7ff2-2b28-408d-81d2-44b5659d7935">
+        <state id="s632a2575-a076-4d08-8b2d-65d820a54eb8" label="present" symbol="1" about="#s632a2575-a076-4d08-8b2d-65d820a54eb8">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300160" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char id="ca253d797-93c9-4d8a-a103-806bd2ebbcc0" label="pectoral fin" states="s97469448-d617-49ff-b857-3ee624e1c384" />
+      <char id="ca62b20b3-9cd7-48b5-859e-72bc3fba63fb" label="larval pectoral fin" states="s358d7ff2-2b28-408d-81d2-44b5659d7935" />
+    </format>
+    <matrix>
+      <row id="r57ff646d-af81-48f9-b10b-aead05143110" otu="tf98e7eb1-0e9c-4cc2-9028-00bc9cb90101">
+        <cell char="ca253d797-93c9-4d8a-a103-806bd2ebbcc0" state="se887b66b-f7fd-4eec-8c6a-f1aff84c8682" />
+        <cell char="ca62b20b3-9cd7-48b5-859e-72bc3fba63fb" state="s632a2575-a076-4d08-8b2d-65d820a54eb8" />
+      </row>
+    </matrix>
+  </characters>
+  <trees id="t8922d821-a59c-4207-8509-defd3cfa9bd2" otus="t93bde4b9-9a1f-4a43-8870-5b8060c13280" />
+</nexml>
