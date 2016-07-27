@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+  <meta xsi:type="LiteralMeta" property="dc:creator">Laura Jackson</meta>
+  <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:title">Hibino and Kimura, 2015.</meta>
+  </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description">Hibino and Kimura. 2015. A new species of Muraenichthys (Anguilliformes: Opichthidae) from the Indo-Pacific, with revised generaic diagnosis. Zootaxa, 4040(1); pp. 62-70</meta>
+  <otus id="tb390d430-ab50-44e5-b9c7-5ca104aeb22d">
+    <otu id="tf4024f81-de80-4638-95a6-31c9ce3f18b7" label="Muraenichthys" about="#tf4024f81-de80-4638-95a6-31c9ce3f18b7">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0034252" />
+    </otu>
+  </otus>
+  <characters id="9ac7bb61-d73f-4368-8752-c492f30c747f" xsi:type="StandardCells" otus="tb390d430-ab50-44e5-b9c7-5ca104aeb22d">
+    <format>
+      <states id="s6e8a65ca-49e6-4883-975a-294ef1950743">
+        <state id="s00e315f4-cb07-443e-bcd6-5bd0c27290d4" label="present" symbol="1" about="#s00e315f4-cb07-443e-bcd6-5bd0c27290d4">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s4f314350-834d-4685-bbbc-fa9a5571c55a" label="absent" symbol="0" about="#s4f314350-834d-4685-bbbc-fa9a5571c55a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char id="ca1d3c964-4571-4811-bce0-26cf5dedafdf" label="pectoral fin" states="s6e8a65ca-49e6-4883-975a-294ef1950743" />
+    </format>
+    <matrix>
+      <row id="r6a7b3811-59df-43a3-9a79-e52f32109ee4" otu="tf4024f81-de80-4638-95a6-31c9ce3f18b7">
+        <cell char="ca1d3c964-4571-4811-bce0-26cf5dedafdf" state="s4f314350-834d-4685-bbbc-fa9a5571c55a" />
+      </row>
+    </matrix>
+  </characters>
+  <trees id="t41845027-d93b-447a-9ac2-17627ff55056" otus="tb390d430-ab50-44e5-b9c7-5ca104aeb22d" />
+</nexml>
