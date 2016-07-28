@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+  <meta xsi:type="LiteralMeta" property="dc:creator">Laura Jackson</meta>
+  <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:title">Randall, 2002</meta>
+  </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description">Randall, J.E. Aseraggodes holcomi, a New Sole (Pleuronectiformes: Soleidae) from the Hawaiian Islands. Pacific Science (2002), 56(3):247-253.</meta>
+  <otus id="t8a12cb71-36d9-4d9d-8c9d-a5194b56ef6e">
+    <otu id="t3ecafe1e-096c-4896-b055-ce32f76fa33b" label="Aseraggodes holcomi" about="#t3ecafe1e-096c-4896-b055-ce32f76fa33b">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0069573" />
+    </otu>
+  </otus>
+  <characters id="03bedcdc-dc29-47d1-b156-10f7d7b22df1" xsi:type="StandardCells" otus="t8a12cb71-36d9-4d9d-8c9d-a5194b56ef6e">
+    <format>
+      <states id="s1805cca4-ab04-4b9f-bcb9-f0c0d552c918">
+        <state id="sa79ccc3d-812f-48b7-a624-b144652419cb" label="absent" symbol="0" about="#sa79ccc3d-812f-48b7-a624-b144652419cb">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sd5e9c130-2a4b-4f82-ac24-31a62d28199b" label="present" symbol="1" about="#sd5e9c130-2a4b-4f82-ac24-31a62d28199b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="sfbf160bb-8ba3-48df-998b-e370805637bf">
+        <state id="sdde88490-9d6f-4da1-ae2a-716125ad18b3" label="absent" symbol="0" about="#sdde88490-9d6f-4da1-ae2a-716125ad18b3">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000152" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sd6be801d-ddd9-4377-90f2-1ff4ea896a0e" label="present" symbol="1" about="#sd6be801d-ddd9-4377-90f2-1ff4ea896a0e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000152" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char id="c312fd3f8-e84b-44e8-ba43-d576e5d6d053" label="pectoral fin" states="s1805cca4-ab04-4b9f-bcb9-f0c0d552c918" />
+      <char id="cc5776c05-81fb-4d9c-a149-ff28d2135dec" label="pelvic fin" states="sfbf160bb-8ba3-48df-998b-e370805637bf" />
+    </format>
+    <matrix>
+      <row id="rd35c7b1a-46e6-433a-8bad-e01c247a53d9" otu="t3ecafe1e-096c-4896-b055-ce32f76fa33b">
+        <cell char="c312fd3f8-e84b-44e8-ba43-d576e5d6d053" state="sa79ccc3d-812f-48b7-a624-b144652419cb" />
+        <cell char="cc5776c05-81fb-4d9c-a149-ff28d2135dec" state="sd6be801d-ddd9-4377-90f2-1ff4ea896a0e" />
+      </row>
+    </matrix>
+  </characters>
+  <trees id="t1b5b62df-4d0c-48c9-9207-7dc2317313b1" otus="t8a12cb71-36d9-4d9d-8c9d-a5194b56ef6e" />
+</nexml>
