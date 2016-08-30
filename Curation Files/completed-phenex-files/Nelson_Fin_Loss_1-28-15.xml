@@ -202,8 +202,8 @@
     <otu id="ace6d163-28e7-4a68-89f1-d7a0fb44043d" label="Radiicephalus elongatus" about="#ace6d163-28e7-4a68-89f1-d7a0fb44043d">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0068490" />
     </otu>
-    <otu id="415be764-2b04-40ef-9d33-4709697be2fe" label="Caulophrynidae" about="#415be764-2b04-40ef-9d33-4709697be2fe">
-      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0056415" />
+    <otu id="415be764-2b04-40ef-9d33-4709697be2fe" label="Caulophryne" about="#415be764-2b04-40ef-9d33-4709697be2fe">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0056416" />
     </otu>
     <otu id="44aa129f-cfb5-4bb6-a157-41436f02b942" label="Ceratiidae" about="#44aa129f-cfb5-4bb6-a157-41436f02b942">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0056405" />
@@ -922,6 +922,12 @@
     <otu id="t758cfc0b-0519-4e68-833a-c7a68fd6824a" label="Symphurus williamsi" about="#t758cfc0b-0519-4e68-833a-c7a68fd6824a">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0069445" />
     </otu>
+    <otu id="tbb646571-72c9-41fb-988d-641db3067219" label="Schuettea" about="#tbb646571-72c9-41fb-988d-641db3067219">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0046298" />
+    </otu>
+    <otu id="t725f5d2f-27ce-4f20-a5ee-8cace4772697" label="Robia legula" about="#t725f5d2f-27ce-4f20-a5ee-8cace4772697">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0079470" />
+    </otu>
   </otus>
   <characters id="a8bed14c1-1323-482e-b524-c2cb0525484c" xsi:type="StandardCells" otus="10c1f0c9-1c14-47c7-9152-2cf36f6cf331">
     <format>
@@ -1116,7 +1122,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4300159" />
+                  <phen:typeref about="UBERON:0000152">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000069" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -1132,7 +1144,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4300160" />
+                  <phen:typeref about="UBERON:0000151">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000069" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -1857,7 +1875,6 @@
       <row id="e4276dca-21ce-46e6-a991-92cda2ddbd0a" otu="c9a1893f-3103-4a44-a7e7-ff68b20041bc">
         <cell char="45999aa4-d022-4366-835e-cc3f64bbf441" state="da33c105-4473-4345-81da-cb4ff1147c3d" />
         <cell char="b3cc012c-5028-44df-b328-19f3fea9b5ea" state="e56103f6-5c55-4c00-b6b4-6e2d99935d9f" />
-        <cell char="3c40b3ec-5d45-4bfe-b9ed-c3ab23750cd9" state="84b2d832-076d-4206-bba8-7b94797721a2" />
       </row>
       <row id="4fb81c29-6b44-4fd4-8735-a0dfbce9d438" otu="9e69c005-3aa0-449e-8a50-34a6e2da083b">
         <cell char="45999aa4-d022-4366-835e-cc3f64bbf441" state="4c6ec1e6-4168-4692-be4f-5a57d8797551" />
@@ -2136,12 +2153,7 @@
       <row id="9e9df312-e979-45a6-ac9d-09371a5b555f" otu="d3ba5430-5ccf-40fa-8d50-5ff467f5810f">
         <cell char="45999aa4-d022-4366-835e-cc3f64bbf441" state="5538efb7-7ed6-483f-837a-f92e03c58182" />
       </row>
-      <row id="70ae6d36-8e54-463f-ae7f-e76d848b8e23" otu="ae5cc2da-0164-4938-adf9-32f829ea6474">
-        <cell char="45999aa4-d022-4366-835e-cc3f64bbf441" state="da33c105-4473-4345-81da-cb4ff1147c3d" />
-        <cell char="b3cc012c-5028-44df-b328-19f3fea9b5ea" state="e56103f6-5c55-4c00-b6b4-6e2d99935d9f" />
-        <cell char="3c40b3ec-5d45-4bfe-b9ed-c3ab23750cd9" state="84b2d832-076d-4206-bba8-7b94797721a2" />
-        <cell char="c7a689003-2071-4ef7-a737-297cf48c698e" state="sff45facb-9007-4926-9f75-17cbe2bceefc" />
-      </row>
+      <row id="70ae6d36-8e54-463f-ae7f-e76d848b8e23" otu="ae5cc2da-0164-4938-adf9-32f829ea6474" />
       <row id="b17bd92a-372e-485b-a063-7d0a05a4f6ef" otu="e36016b0-7ca6-42fd-ad39-5585f262ac01">
         <cell char="45999aa4-d022-4366-835e-cc3f64bbf441" state="da33c105-4473-4345-81da-cb4ff1147c3d" />
         <cell char="b3cc012c-5028-44df-b328-19f3fea9b5ea" state="e56103f6-5c55-4c00-b6b4-6e2d99935d9f" />
@@ -2696,8 +2708,21 @@
         <cell char="45999aa4-d022-4366-835e-cc3f64bbf441" state="4c6ec1e6-4168-4692-be4f-5a57d8797551" />
         <cell char="c7d60394e-49fd-4244-8368-0578438ec05b" state="s46ea25b1-c296-45ea-b6df-9779d1a357ba" />
       </row>
+      <row id="rd62fe453-7dc2-4e48-9433-41cd794d687d" otu="tbb646571-72c9-41fb-988d-641db3067219">
+        <cell char="45999aa4-d022-4366-835e-cc3f64bbf441" state="da33c105-4473-4345-81da-cb4ff1147c3d" />
+        <cell char="b3cc012c-5028-44df-b328-19f3fea9b5ea" state="e56103f6-5c55-4c00-b6b4-6e2d99935d9f" />
+        <cell char="3c40b3ec-5d45-4bfe-b9ed-c3ab23750cd9" state="a9a6d93b-bcb8-458d-ac8c-d7fc8b1385bd" />
+        <cell char="6f9cf427-416a-4778-a475-a67d51d66fa0" state="7161d4b5-02c8-4458-a017-7c77ded5d6ca" />
+      </row>
+      <row id="r0f74f4c2-d9c9-419f-ad9d-3fcfe5acc2aa" otu="t725f5d2f-27ce-4f20-a5ee-8cace4772697">
+        <cell char="45999aa4-d022-4366-835e-cc3f64bbf441" state="da33c105-4473-4345-81da-cb4ff1147c3d" />
+        <cell char="b3cc012c-5028-44df-b328-19f3fea9b5ea" state="e56103f6-5c55-4c00-b6b4-6e2d99935d9f" />
+        <cell char="3c40b3ec-5d45-4bfe-b9ed-c3ab23750cd9" state="84b2d832-076d-4206-bba8-7b94797721a2" />
+        <cell char="c7a689003-2071-4ef7-a737-297cf48c698e" state="sff45facb-9007-4926-9f75-17cbe2bceefc" />
+      </row>
     </matrix>
   </characters>
+  <trees id="t6f25b96b-2e9a-4d5d-adb5-3683446ee8d6" otus="10c1f0c9-1c14-47c7-9152-2cf36f6cf331" />
   <trees id="tcff9306f-3fe2-4e4c-851d-f2898d9bd8ec" otus="10c1f0c9-1c14-47c7-9152-2cf36f6cf331" />
   <trees id="tee630c7b-0d1c-4cd4-8685-6999f4afe4ed" otus="10c1f0c9-1c14-47c7-9152-2cf36f6cf331" />
   <trees id="t3ccd359e-fb53-43e4-a6db-b8edd09349e8" otus="10c1f0c9-1c14-47c7-9152-2cf36f6cf331" />
