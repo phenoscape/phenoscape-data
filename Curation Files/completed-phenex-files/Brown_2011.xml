@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+  <meta xsi:type="LiteralMeta" property="dc:creator" />
+  <meta xsi:type="LiteralMeta" property="dc:description" />
+  <otus id="t61b55496-9c56-4252-b87b-fa1ccab44377">
+    <otu id="tb853d3ce-ef55-40f2-a623-3f626fdb8f1f" label="" about="#tb853d3ce-ef55-40f2-a623-3f626fdb8f1f">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0053628" />
+    </otu>
+    <otu id="t0c16ef02-c771-49b1-8cef-018d71e6022b" label="" about="#t0c16ef02-c771-49b1-8cef-018d71e6022b">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0053627" />
+    </otu>
+    <otu id="t8bf72c67-303d-4d67-933d-83a0e3ba1bd3" label="" about="#t8bf72c67-303d-4d67-933d-83a0e3ba1bd3">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0070261" />
+    </otu>
+  </otus>
+  <characters id="106008d0-4a5d-450b-9209-0fd7875d7c23" xsi:type="StandardCells" otus="t61b55496-9c56-4252-b87b-fa1ccab44377">
+    <format>
+      <states id="sceedd202-671b-4524-a9d1-881f15430d31">
+        <state id="s4f6a9717-1283-483d-b3f8-e2eb6009a8e6" label="absent" symbol="0" about="#s4f6a9717-1283-483d-b3f8-e2eb6009a8e6">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="scadb1603-fec7-45c0-ad04-ed325713f8f9" label="present" symbol="1" about="#scadb1603-fec7-45c0-ad04-ed325713f8f9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000151" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="saab75e90-97b2-457e-bc9a-93d495f80e42">
+        <state id="s94123b93-4ff2-4275-bb34-e2757355d884" label="absent" symbol="0" about="#s94123b93-4ff2-4275-bb34-e2757355d884">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0007831" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sbbaed077-90d0-415a-9ac0-2cd639580595" label="present" symbol="1" about="#sbbaed077-90d0-415a-9ac0-2cd639580595">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0007831" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char id="cd4819706-a369-47c3-872d-3e7c5e1372ed" label="pectoral fin" states="sceedd202-671b-4524-a9d1-881f15430d31" />
+      <char id="c1f726574-4751-4c20-a9e5-8f4b84db053e" label="pectoral girdle" states="saab75e90-97b2-457e-bc9a-93d495f80e42" />
+    </format>
+    <matrix>
+      <row id="r071ab0c6-a741-43ca-968f-5da3aabd4f90" otu="tb853d3ce-ef55-40f2-a623-3f626fdb8f1f">
+        <cell char="cd4819706-a369-47c3-872d-3e7c5e1372ed" state="scadb1603-fec7-45c0-ad04-ed325713f8f9" />
+        <cell char="c1f726574-4751-4c20-a9e5-8f4b84db053e" state="sbbaed077-90d0-415a-9ac0-2cd639580595" />
+      </row>
+      <row id="r494b90c0-445b-4417-b19f-b7ec5a7ef442" otu="t0c16ef02-c771-49b1-8cef-018d71e6022b">
+        <cell char="cd4819706-a369-47c3-872d-3e7c5e1372ed" state="scadb1603-fec7-45c0-ad04-ed325713f8f9" />
+        <cell char="c1f726574-4751-4c20-a9e5-8f4b84db053e" state="sbbaed077-90d0-415a-9ac0-2cd639580595" />
+      </row>
+      <row id="r225882ed-c39b-4e35-aae8-70b77ce23d01" otu="t8bf72c67-303d-4d67-933d-83a0e3ba1bd3">
+        <cell char="cd4819706-a369-47c3-872d-3e7c5e1372ed" state="s4f6a9717-1283-483d-b3f8-e2eb6009a8e6" />
+      </row>
+    </matrix>
+  </characters>
+  <trees id="t1988d600-375d-43e1-bb11-84f31e6bf199" otus="t61b55496-9c56-4252-b87b-fa1ccab44377" />
+</nexml>
