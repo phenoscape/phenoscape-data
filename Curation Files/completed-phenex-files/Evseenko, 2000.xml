@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator">Laura Jackson</meta>
+  <meta xsi:type="LiteralMeta" property="dc:description">Evseenko, S. A. 2000. Family Achiropsettidae and Its Position in the Taxonomic and Ecological Classifications of Pleuronectiformes. Journal of Ichthyology. 40(1), pp. S110–S138.</meta>
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:title">Evseenko, 2000</meta>
   </meta>
-  <meta xsi:type="LiteralMeta" property="dc:description">Evseenko, S. A. 2000. Family Achiropsettidae and Its Position in the Taxonomic and Ecological Classifications of Pleuronectiformes. Journal of Ichthyology. 40(1), pp. S110–S138.</meta>
   <otus id="t93bde4b9-9a1f-4a43-8870-5b8060c13280">
     <otu id="tf98e7eb1-0e9c-4cc2-9028-00bc9cb90101" label="Achiropsettidae" about="#tf98e7eb1-0e9c-4cc2-9028-00bc9cb90101">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0055726" />
@@ -48,7 +48,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4300160" />
+                  <phen:typeref about="UBERON:0000151">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000069" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -68,5 +74,6 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t0cd03c4e-6068-46fa-9074-1f66de900f61" otus="t93bde4b9-9a1f-4a43-8870-5b8060c13280" />
   <trees id="t8922d821-a59c-4207-8509-defd3cfa9bd2" otus="t93bde4b9-9a1f-4a43-8870-5b8060c13280" />
 </nexml>
