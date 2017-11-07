@@ -471,6 +471,9 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001449" />
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -549,7 +552,18 @@
                   <phen:typeref about="UBERON:2001635" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000586" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001635" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001961" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001906" />
+                  </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -563,7 +577,15 @@
                   <phen:typeref about="UBERON:2001635" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0002180" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001635" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001875" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2019,7 +2041,7 @@
                   <phen:typeref about="UBERON:2001603" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0002180" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2033,7 +2055,7 @@
                   <phen:typeref about="UBERON:2001603" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000617" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3396,12 +3418,76 @@
         </state>
       </states>
       <states id="dfa3fc2a-2530-4717-b7bf-066867ca84a2">
-        <state id="c55d461e-503f-4aae-ad01-f2ccb2dfd520" label="absent" symbol="0" />
-        <state id="19cec5da-d22f-4f05-b6fa-8dd82fa7505e" label="present" symbol="1" />
+        <state id="c55d461e-503f-4aae-ad01-f2ccb2dfd520" label="absent" symbol="0" about="#c55d461e-503f-4aae-ad01-f2ccb2dfd520">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/1536c3c0-a641-0135-af06-005056010074" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="19cec5da-d22f-4f05-b6fa-8dd82fa7505e" label="present" symbol="1" about="#19cec5da-d22f-4f05-b6fa-8dd82fa7505e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/1536c3c0-a641-0135-af06-005056010074" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="74f0bb62-a874-4401-904e-c24da9ff3afe">
-        <state id="2db4bb57-4bd7-42f6-aa0f-b20e4ae946d8" label="anteriorly undivided" symbol="1" />
-        <state id="25b6daa6-bbab-4afa-a084-77458953dfab" label="anteriorly divided" symbol="2" />
+        <state id="2db4bb57-4bd7-42f6-aa0f-b20e4ae946d8" label="anteriorly undivided" symbol="1" about="#2db4bb57-4bd7-42f6-aa0f-b20e4ae946d8">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000071">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://data.bioontology.org/provisional_classes/1536c3c0-a641-0135-af06-005056010074" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002034" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="25b6daa6-bbab-4afa-a084-77458953dfab" label="anteriorly divided" symbol="2" about="#25b6daa6-bbab-4afa-a084-77458953dfab">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000071">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://data.bioontology.org/provisional_classes/1536c3c0-a641-0135-af06-005056010074" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001786" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="7e9038b6-e818-44db-85f7-193f4c48b934" label="?" symbol="0" />
       </states>
       <states id="ed00b7aa-ba9a-471b-b683-e39c7e7c1c56">
@@ -6363,6 +6449,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="te715dcfc-d5a0-461c-943b-f88d961b90c4" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="te843c7a7-5681-4766-9ca0-23f48db3e9c2" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="tafa44da7-5d5f-4dfc-a5d9-6fec50ad1b46" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
 </nexml>
