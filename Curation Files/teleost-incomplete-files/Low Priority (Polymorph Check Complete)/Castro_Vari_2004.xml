@@ -863,10 +863,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2001796" />
+                  <phen:typeref about="UBERON:4100003">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001796" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000586" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -877,10 +883,22 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2001796" />
+                  <phen:typeref about="UBERON:4100003">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001796" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000117">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000586" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2272,8 +2290,34 @@
         </state>
       </states>
       <states id="430d8c49-375e-4e4a-ab4a-341d9d50baff">
-        <state id="229f22a6-5b38-4d1d-bd20-1ef81c3940cc" label="not smoothly continuous, but with distinct intervening ridge along medial margin of aperture" symbol="1" />
-        <state id="f804558c-7ac1-43b2-9526-eb6035139384" label="smoothly continuous" symbol="0" />
+        <state id="229f22a6-5b38-4d1d-bd20-1ef81c3940cc" label="not smoothly continuous, but with distinct intervening ridge along medial margin of aperture" symbol="1" about="#229f22a6-5b38-4d1d-bd20-1ef81c3940cc">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001744" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005013" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="f804558c-7ac1-43b2-9526-eb6035139384" label="smoothly continuous" symbol="0" about="#f804558c-7ac1-43b2-9526-eb6035139384">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001744" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005012" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="b9017ab7-c8e3-4000-a88f-1b9457a06bae">
         <state id="06fc2184-899d-4373-9213-15c06dd1226a" label="with large, horizontally elongate or round opening" symbol="1" about="#06fc2184-899d-4373-9213-15c06dd1226a">
@@ -4309,8 +4353,46 @@
         <state id="3b1d776c-add8-4aed-b7dc-53cf0cf9bfa4" label="present" symbol="1" />
       </states>
       <states id="b7e77b91-83ba-4dec-b7ee-e1b5df4bb558">
-        <state id="0539d2ae-d19b-4c74-b34f-46b07c587bce" label="absent" symbol="0" />
-        <state id="56960ffa-0eb8-4e4b-91c9-3dbd70961e5f" label="present" symbol="1" />
+        <state id="0539d2ae-d19b-4c74-b34f-46b07c587bce" label="absent" symbol="0" about="#0539d2ae-d19b-4c74-b34f-46b07c587bce">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001463">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000468" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="56960ffa-0eb8-4e4b-91c9-3dbd70961e5f" label="present" symbol="1" about="#56960ffa-0eb8-4e4b-91c9-3dbd70961e5f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001463">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000468" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="c9d0112a-8279-4837-b716-3002e1db9e24">
         <state id="52dab03f-caa0-486b-a878-ad28c73c9585" label="present" symbol="1" about="#52dab03f-caa0-486b-a878-ad28c73c9585">
@@ -4476,8 +4558,66 @@
         <state id="7e9038b6-e818-44db-85f7-193f4c48b934" label="?" symbol="0" />
       </states>
       <states id="ed00b7aa-ba9a-471b-b683-e39c7e7c1c56">
-        <state id="cd6e1c8e-7c3b-41f5-a41f-d183787e692c" label="present" symbol="1" />
-        <state id="dade5147-50bf-40da-a878-02fc4c344a84" label="absent" symbol="0" />
+        <state id="cd6e1c8e-7c3b-41f5-a41f-d183787e692c" label="present" symbol="1" about="#cd6e1c8e-7c3b-41f5-a41f-d183787e692c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001951">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002542" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002259" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0003097" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001951">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002542" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002259" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2000251" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="dade5147-50bf-40da-a878-02fc4c344a84" label="absent" symbol="0" about="#dade5147-50bf-40da-a878-02fc4c344a84">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001951">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002542" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="8c1eb465-e953-4224-8457-319162886fc9">
         <state id="efa6bcd4-99a7-47e6-92f0-b30575e5c160" label="not as in State 1" symbol="0" about="#efa6bcd4-99a7-47e6-92f0-b30575e5c160">
@@ -4640,11 +4780,19 @@
       <char id="33a72f26-eb58-4b11-908e-e5f3a3032dc5" label="Degree of development of A1 portion of adductor mandibulae muscle" states="508e5928-73c4-4715-a373-a5825269c07d" />
       <char id="b02348f2-ce9e-4db9-aaf4-5e336de6beb8" label="Area of origin of A2 portion of the adductor mandibulae" states="f4e6ccc3-3447-4d2d-9d8c-349260a72072" />
       <char id="15baf1f5-8dbd-4d2e-9c28-a2371d97105d" label="Patch of dark pigmentation on upper half of opercle" states="60d5e9d0-9534-4369-98a9-88b42c3170b3" />
-      <char id="73f24410-0b12-40c9-b25d-08a6533c96ab" label="Dark pigmentation on membranous border of opercle and lateral exposed portion of pectoral girdle" states="a2c06332-f216-42d0-9522-6f96e9091887" />
-      <char id="f5cf4ca5-213c-49f9-9e44-49ca980bff19" label="Dark pigmentation on fourth through seventh scales of lateral line and third and fourth scales of scale row just ventral of lateral line" states="d7349d8f-18bb-4ca3-83a2-29b1bdec9db9" />
+      <char id="73f24410-0b12-40c9-b25d-08a6533c96ab" label="Dark pigmentation on membranous border of opercle and lateral exposed portion of pectoral girdle" states="a2c06332-f216-42d0-9522-6f96e9091887" about="#73f24410-0b12-40c9-b25d-08a6533c96ab">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
+      <char id="f5cf4ca5-213c-49f9-9e44-49ca980bff19" label="Dark pigmentation on fourth through seventh scales of lateral line and third and fourth scales of scale row just ventral of lateral line" states="d7349d8f-18bb-4ca3-83a2-29b1bdec9db9" about="#f5cf4ca5-213c-49f9-9e44-49ca980bff19">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="1ecd812f-9e82-47e1-a2d6-9490f0719bb3" label="Dark, wavy, horizontal striping on body formed by concentrations of dark chromatophores along dorsal and ventral margins of scales" states="b7e77b91-83ba-4dec-b7ee-e1b5df4bb558" />
-      <char id="5b8f5e23-a9c4-420c-a697-1abb0a3a0939" label="Dark stripes that extend across anal fin at some point in ontogeny" states="c9d0112a-8279-4837-b716-3002e1db9e24" />
-      <char id="2ee2a215-3c0b-4d6c-89f2-90ec4f5c795e" label="Dark stripes that extend across caudal fins at some point in ontogeny" states="8419ed07-5769-4641-871f-f2d8789d1010" />
+      <char id="5b8f5e23-a9c4-420c-a697-1abb0a3a0939" label="Dark stripes that extend across anal fin at some point in ontogeny" states="c9d0112a-8279-4837-b716-3002e1db9e24" about="#5b8f5e23-a9c4-420c-a697-1abb0a3a0939">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
+      <char id="2ee2a215-3c0b-4d6c-89f2-90ec4f5c795e" label="Dark stripes that extend across caudal fins at some point in ontogeny" states="8419ed07-5769-4641-871f-f2d8789d1010" about="#2ee2a215-3c0b-4d6c-89f2-90ec4f5c795e">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="e63cdb43-2ed7-4c22-9dea-2282ca841ca7" label="Irregular, vertical, somewhat chevron shaped bars formed of small black marks on caudal fin" states="948b5ce6-94ca-43b3-84db-5046a5e60517" />
       <char id="30e1bce1-8a6a-48bd-bbac-d17671809daa" label="Well-developed, procumbent, dorsal-fin spine" states="dfa3fc2a-2530-4717-b7bf-066867ca84a2" />
       <char id="cc5b515e-3ac4-4af4-8c61-976313a16611" label="Form of procumbent dorsal-fin spine" states="74f0bb62-a874-4401-904e-c24da9ff3afe" />
@@ -7438,7 +7586,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="tc1a5683d-b4cf-4250-a882-860b54c68de8" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
+  <trees id="t32da7a5b-fa87-46d6-b437-38661bef9437" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="ta8b5b84a-f977-4c4b-8aa5-9e51c10d6bca" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="te843c7a7-5681-4766-9ca0-23f48db3e9c2" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="tafa44da7-5d5f-4dfc-a5d9-6fec50ad1b46" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
