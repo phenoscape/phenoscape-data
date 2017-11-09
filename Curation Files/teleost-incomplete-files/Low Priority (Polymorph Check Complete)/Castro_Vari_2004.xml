@@ -3,6 +3,11 @@
   <meta xsi:type="LiteralMeta" property="dc:references">PSPUB:0000014</meta>
   <meta xsi:type="LiteralMeta" property="dc:description">Checked for polymorphs. There were none. AB 10/17/12</meta>
   <meta xsi:type="LiteralMeta" property="dc:creator" />
+  <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.5479/si.00810282.622</meta>
+    <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Castro, R. M. C., and R. P. Vari. 2004. Detritivores of the South American fish family Prochilodontidae (Ostariophysi: Characiformes): a phylogenetic and revisionary study. Smithsonian Contributions to Zoology 622:1-190</meta>
+    <meta xsi:type="LiteralMeta" property="dc:title">Castro and Vari (2004)</meta>
+  </meta>
   <otus id="157aa27d-722a-45a9-addf-c9664f79d715">
     <otu id="fd99a22f-18d7-4118-9204-f2060b07f407" label="Prochilodus argenteus" about="#fd99a22f-18d7-4118-9204-f2060b07f407">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0038480" />
@@ -2197,7 +2202,11 @@
         <state id="a71d4fa8-cd0c-4261-b7b5-de3f2d178f8e" label="unperforated or with small perforations" symbol="0" />
       </states>
       <states id="418c2c64-10a3-41c6-85e7-5d18daead39b">
-        <state id="fee1b99d-6b12-4797-b2f9-ca83de4d5f88" label="limited to posterior one-half of dentary" symbol="1" />
+        <state id="fee1b99d-6b12-4797-b2f9-ca83de4d5f88" label="limited to posterior one-half of dentary" symbol="1" about="#fee1b99d-6b12-4797-b2f9-ca83de4d5f88">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype />
+          </meta>
+        </state>
         <state id="60757638-a9b9-4dd4-8616-eeb51e9a048e" label="extends from posterior portion of dentary into anterior one-half of that ossification" symbol="0" />
       </states>
       <states id="8eac8224-72ac-4463-89e3-902d3b035576">
@@ -2245,7 +2254,7 @@
                   <phen:typeref about="UBERON:2001274" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0001857" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2367,7 +2376,7 @@
                   <phen:typeref about="UBERON:2000422" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000587" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2381,7 +2390,13 @@
                   <phen:typeref about="UBERON:2000422" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000117">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000587" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -6537,6 +6552,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t827c714a-40aa-488e-bc84-4d55e81ff2fb" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="ta8b5b84a-f977-4c4b-8aa5-9e51c10d6bca" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="te843c7a7-5681-4766-9ca0-23f48db3e9c2" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="tafa44da7-5d5f-4dfc-a5d9-6fec50ad1b46" otus="157aa27d-722a-45a9-addf-c9664f79d715" />
