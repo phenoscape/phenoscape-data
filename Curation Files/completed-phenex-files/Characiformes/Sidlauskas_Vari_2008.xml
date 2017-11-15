@@ -9641,10 +9641,16 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2001908" />
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001908" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002495" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -9664,10 +9670,24 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002488" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001913" />
                   </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001908" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002490" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -9695,7 +9715,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000592" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -9721,7 +9741,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000591" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -9737,7 +9757,7 @@
                   <phen:typeref about="UBERON:2001244" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000587" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -9745,7 +9765,7 @@
                   <phen:typeref about="UBERON:2001244" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141" />
+                  <phen:typeref about="PATO:0001505" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001908" />
                   </phen:related_entity>
@@ -9762,7 +9782,7 @@
                   <phen:typeref about="UBERON:2001244" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0001154" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -9770,7 +9790,7 @@
                   <phen:typeref about="UBERON:2001244" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141" />
+                  <phen:typeref about="PATO:0001667" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001908" />
                   </phen:related_entity>
@@ -10552,11 +10572,15 @@
       <char id="89962d1b-282c-41fc-a0cb-f7a806ea6fab" label="Form of posterior region of third infrapharyngobranchial" states="7e281596-85f3-4e64-9ee0-428924f34c29" />
       <char id="522d863d-692e-4187-9029-f065660b9f70" label="Form of uncinate process of third epibranchial" states="45096652-8e67-405b-b6b1-e5bde9c17d3e" />
       <char id="f2b648cf-c73e-4561-957d-9217c00e913f" label="Subdivision of anterior articular surface of the third epibranchial" states="464d3a1e-031d-4555-9b43-b94cc842f24a" />
-      <char id="e0ae9d72-1524-480f-a52a-ac51a6785e54" label="Form of anterior process of fourth epibranchial" states="21a28f1f-ab41-4b30-8ab0-2a93ee619228" />
+      <char id="e0ae9d72-1524-480f-a52a-ac51a6785e54" label="Form of anterior process of fourth epibranchial" states="21a28f1f-ab41-4b30-8ab0-2a93ee619228" about="#e0ae9d72-1524-480f-a52a-ac51a6785e54">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">start here, going up, to review</meta>
+      </char>
       <char id="149364b0-ae27-48a7-b4b8-570d979d0031" label="Alignment of dorsal process of fourth epibranchial" states="db80e182-6bbd-4d3c-8277-3f913199047b" />
       <char id="92e118d3-b8c5-4d9d-b2ac-86aafff02a99" label="Form of dorsal process of fourth epibranchial" states="8de9b5e6-f3b3-4b7d-8035-aa7a1b8ee47b" />
       <char id="39e11d7d-9c84-4b45-9a01-b9a139e8f927" label="Form of cartilaginous fifth epibranchial" states="daf748c2-5353-4e02-841f-b47e70fa59a6" />
-      <char id="7a2a6c2a-6f6d-4df6-9cb9-9c123ce25e59" label="Form of complex formed by fourth infrapharyngobranchial and fourth upper pharyngeal tooth-plate" states="de7fb882-0509-41a8-a64b-cccdacc2b7de" />
+      <char id="7a2a6c2a-6f6d-4df6-9cb9-9c123ce25e59" label="Form of complex formed by fourth infrapharyngobranchial and fourth upper pharyngeal tooth-plate" states="de7fb882-0509-41a8-a64b-cccdacc2b7de" about="#7a2a6c2a-6f6d-4df6-9cb9-9c123ce25e59">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="79cacc88-1680-41c5-a9b3-f92e7a88bcd6" label="Form of fourth upper pharyngeal tooth-plate" states="a27c6ba6-2ec8-4e9b-80cf-a0b1271e3f2e" />
       <char id="a9d4c906-6d96-4a68-b4c7-6df160909668" label="Alignment and contact of fourth and fifth upper pharyngeal tooth-plates" states="c95b480b-5549-4fc3-910e-51692706e577" about="#a9d4c906-6d96-4a68-b4c7-6df160909668">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
@@ -19887,7 +19911,7 @@
       <row id="8f2b8e9b-c541-4d21-849f-8c44bf4abdba" otu="ef832bde-0a4e-4d42-9f0a-837c3808b157" />
     </matrix>
   </characters>
-  <trees id="t81e0bff1-046f-4b32-962e-726a5e9e3428" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
+  <trees id="t37a39ece-0289-415f-bdb4-a13629d64fe4" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t4d104334-b7b0-450a-aae2-3cbe413be0e4" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t6b308f66-66fc-45fe-b4f9-8a4d24fd2d77" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t9c185721-01cc-4701-b483-4582b20c6992" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
