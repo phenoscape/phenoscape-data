@@ -2,12 +2,12 @@
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator">Wasila Dahdul</meta>
   <meta xsi:type="LiteralMeta" property="dc:references">PSPUB:0000067</meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://dx.doi.org/10.1111/j.1096-3642.2008.00407.x</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Sidlauskas, B. L., and Vari, R. P. (2008). Phylogenetic relationships within the South American fish family Anostomidae (Teleostei, Ostariophysi, Characiformes). Zoological Journal of the Linnean Society, 154(1), 70–210.</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Sidlauskas and Vari (2008)</meta>
   </meta>
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus id="ad1942be-910b-4c4a-8769-ba3e70f190a6">
     <otu id="678a703b-f21d-4fbe-9d3a-8db6cb68502f" label="Abramites hypselonotus" about="#678a703b-f21d-4fbe-9d3a-8db6cb68502f">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0064719" />
@@ -4282,7 +4282,31 @@
                   <phen:typeref about="UBERON:0002244" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0001854" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002244" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002491" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002501" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/baccf5f0-fb0f-0131-411f-005056010073" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4297,7 +4321,15 @@
                   <phen:typeref about="UBERON:0002244" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002504" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002493" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4312,7 +4344,15 @@
                   <phen:typeref about="UBERON:0002244" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0001855" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002490" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4559,7 +4599,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000599" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4580,7 +4620,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000600" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -10397,7 +10437,9 @@
       </char>
       <char id="7b098bd3-bceb-4a21-a6ba-211bd984d523" label="Presence or absence of cusps on posterior lobes of dentary teeth" states="593ea831-f7d6-4398-92e2-e17d3b6485ca" />
       <char id="870aac71-bc81-4a79-afb8-4d5206db7349" label="Form of ascending process of premaxilla" states="0dc8880b-6d98-460b-bc06-5958a616c615" />
-      <char id="278a9926-644a-4d83-b90b-660c51d01afb" label="Orientation of premaxilla" states="43c7069c-c7fe-47ba-868a-fe0495d12f45" />
+      <char id="278a9926-644a-4d83-b90b-660c51d01afb" label="Orientation of premaxilla" states="43c7069c-c7fe-47ba-868a-fe0495d12f45" about="#278a9926-644a-4d83-b90b-660c51d01afb">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">NTR</meta>
+      </char>
       <char id="6bfb6a67-760d-4df8-abaf-8666ff54757c" label="Presence or absence of block-like anterodorsal process of premaxilla" states="e3df6ced-585e-4871-ae28-2cdb35168862" />
       <char id="bca5a94c-7494-47ea-98c0-2b9641b72ce8" label="Orientation of maxilla" states="2265d930-5fd7-4d79-a465-80fcabe1a97a" />
       <char id="27d7e614-0c55-4756-9f46-3e25b4c61d00" label="Insertion of primordial ligament on medial surface of maxilla" states="be36e3aa-cfb5-40fc-976c-b729f3def3c9" />
@@ -19850,6 +19892,7 @@
       <row id="8f2b8e9b-c541-4d21-849f-8c44bf4abdba" otu="ef832bde-0a4e-4d42-9f0a-837c3808b157" />
     </matrix>
   </characters>
+  <trees id="t422ad384-e6d5-4cfe-b768-8f13d7096115" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t895dba60-9d44-4fb9-a559-4795b1db2231" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t37a39ece-0289-415f-bdb4-a13629d64fe4" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t4d104334-b7b0-450a-aae2-3cbe413be0e4" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
