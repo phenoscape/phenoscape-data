@@ -2,12 +2,12 @@
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator">Wasila Dahdul</meta>
   <meta xsi:type="LiteralMeta" property="dc:references">PSPUB:0000067</meta>
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://dx.doi.org/10.1111/j.1096-3642.2008.00407.x</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Sidlauskas, B. L., and Vari, R. P. (2008). Phylogenetic relationships within the South American fish family Anostomidae (Teleostei, Ostariophysi, Characiformes). Zoological Journal of the Linnean Society, 154(1), 70–210.</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Sidlauskas and Vari (2008)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus id="ad1942be-910b-4c4a-8769-ba3e70f190a6">
     <otu id="678a703b-f21d-4fbe-9d3a-8db6cb68502f" label="Abramites hypselonotus" about="#678a703b-f21d-4fbe-9d3a-8db6cb68502f">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0064719" />
@@ -3229,7 +3229,7 @@
                   <phen:typeref about="UBERON:2001626" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002180" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3244,7 +3244,7 @@
                   <phen:typeref about="UBERON:2001626" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0001468" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3259,7 +3259,7 @@
                   <phen:typeref about="UBERON:2001626" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0001469" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3945,6 +3945,9 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -3960,6 +3963,11 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0000052" />
                 </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018299" />
+                </phen:bearer>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -4382,7 +4390,13 @@
                   <phen:typeref about="UBERON:2001577" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000117">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0000586" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -4390,7 +4404,13 @@
                   <phen:typeref about="UBERON:2001577" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001872" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -8803,7 +8823,13 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001890" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -10366,7 +10392,7 @@
                   <phen:typeref about="UBERON:2001560" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0001505" />
+                  <phen:typeref about="PATO:0000651" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001561" />
                   </phen:related_entity>
@@ -19932,6 +19958,7 @@
       <row id="8f2b8e9b-c541-4d21-849f-8c44bf4abdba" otu="ef832bde-0a4e-4d42-9f0a-837c3808b157" />
     </matrix>
   </characters>
+  <trees id="tc4834dcc-101d-4997-9142-a312a34b1c4b" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t2d178689-e889-43b5-815d-fc0e043a879f" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t895dba60-9d44-4fb9-a559-4795b1db2231" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t37a39ece-0289-415f-bdb4-a13629d64fe4" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
