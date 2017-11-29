@@ -1872,12 +1872,24 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0001681" />
+                  <phen:typeref about="BSPO:0000671">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001681" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002488" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:0011238" />
+                    <phen:typeref about="UBERON:2001747" />
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -1889,12 +1901,18 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0001681" />
+                  <phen:typeref about="BSPO:0000671">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001681" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002488" />
                   <phen:related_entity>
-                    <phen:typeref about="UBERON:0011238" />
+                    <phen:typeref about="UBERON:2001747" />
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -2126,7 +2144,7 @@
                   <phen:typeref about="UBERON:2001733" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000587" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -2148,7 +2166,7 @@
                   <phen:typeref about="UBERON:2001733" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000586" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2164,7 +2182,7 @@
                   <phen:typeref about="UBERON:2001747" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000587" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2179,7 +2197,7 @@
                   <phen:typeref about="UBERON:2001747" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000586" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2300,7 +2318,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002514" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2320,7 +2338,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002490" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2345,7 +2363,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002464" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0002396" />
                   </phen:related_entity>
@@ -2362,7 +2380,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000586" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2399,7 +2417,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000117" />
+                  <phen:typeref about="PATO:0000587" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -10242,7 +10260,9 @@
       <char id="71a3dea8-41a9-471f-b46e-5b3c189e34e3" label="Presence or absence of supraorbital bone" states="f48780ec-2e74-444d-b9f7-60bdc0ca4b66" />
       <char id="0c5c02ce-ac7a-4427-a25d-ff4782a4d49c" label="Form of ventral surface of supraorbital" states="b1a582f3-0aae-4bc0-bb1e-f5059529543b" />
       <char id="3a1f8d70-6580-4668-a168-fa14da850550" label="Form of supraorbital" states="e31b1798-b17b-4b86-bef3-859b0fdd02aa" />
-      <char id="6ca068c6-445b-41df-9093-cf4eb1c91883" label="Continuity of orbital ring" states="5e53a37a-6529-4311-bf61-86ac1a733517" />
+      <char id="6ca068c6-445b-41df-9093-cf4eb1c91883" label="Continuity of orbital ring" states="5e53a37a-6529-4311-bf61-86ac1a733517" about="#6ca068c6-445b-41df-9093-cf4eb1c91883">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="1a8f1f8e-3df2-4d3a-af23-9c184365e260" label="Relative position of anterior portion of first infraorbital and antorbital" states="11b9a53e-2a9b-42ab-8fdf-795421f9068e" />
       <char id="50816985-b60c-44de-9683-1dee95b83536" label="Degree of development of first infraorbital" states="bf7a35fb-d2ab-465c-872f-c87bdbc7ff75" />
       <char id="849a1f06-4078-4aba-80f4-bfab533d2551" label="Degree of anterior extension of first and second infraorbitals" states="d7144e34-004e-4069-9f59-83d3a37729da" />
@@ -25714,6 +25734,7 @@
       <row id="c444ebbc-977c-4e7d-b813-09d84c4fbacb" otu="853b4133-115a-4da5-bbff-2625155826d1" />
     </matrix>
   </characters>
+  <trees id="t19f8886c-707a-486c-ac0f-1ea971166c2c" otus="31220ce7-ea87-414f-b100-044e4f806440" />
   <trees id="t892abeec-2815-49f6-ba99-b85cfb9d5036" otus="31220ce7-ea87-414f-b100-044e4f806440" />
   <trees id="t664d67c2-30aa-41f8-a834-c490421b0a21" otus="31220ce7-ea87-414f-b100-044e4f806440" />
   <trees id="t4b8452f3-ceed-481c-baa7-7480e2619353" otus="31220ce7-ea87-414f-b100-044e4f806440" />
