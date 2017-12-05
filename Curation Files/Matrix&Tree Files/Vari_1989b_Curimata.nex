@@ -1,24 +1,63 @@
 #NEXUS
-[written Mon Dec 04 16:26:37 PST 2017 by Mesquite  version 3.04+ (build 743) at itsadmins-MacBook-Pro.local/10.201.210.179]
+[written Mon Dec 04 16:42:12 PST 2017 by Mesquite  version 3.04+ (build 743) at itsadmins-MacBook-Pro.local/10.201.210.179]
 
 BEGIN TAXA;
 	TITLE Taxa;
-	DIMENSIONS NTAX=10;
+	DIMENSIONS NTAX=12;
 	TAXLABELS
-		Curimata_ocellata Curimata_vittata Curimata_macrops Curimata_incompta Curimata_knerii Curimata_cyprinoides Curimata_mivartii Curimata_aspera Curimata_cerasina Curimata_cisandina 
+		Curimata_ocellata Curimata_vittata Curimata_macrops Curimata_incompta Curimata_knerii Curimata_cyprinoides Curimata_mivartii Curimata_aspera Curimata_cerasina Curimata_cisandina Curimata_roseni Curimata_inornata 
 	;
 
 END;
 
 
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=25;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1";
+	CHARSTATELABELS 
+		1 'The ontogenetic reconfiguration of the medial spur on the fourth epibranchial ( E  into a ventrally expanded, fenestrated process contacting the fifth upper pharyngeal tooth plate (UP5)' /  'The ontogenetic reconfiguration of the medial spur on the fourth epibranchial ( E  into a ventrally expanded, fenestrated process contacting the fifth upper pharyngeal tooth plate (UP5)', 2 'The development of a median shelf on the dorsal margin of the medial spur on the fourth epibranchial (E4), and the associated pronounced fenestration of that spur.' /  'The development of a median shelf on the dorsal margin of the medial spur on the fourth epibranchial (E4), and the associated pronounced fenestration of that spur.', 3 'The medial shift of the medial spur and ventral articular process of the fourth epibranchial ( E  , and of the associated fifth upper pharyngeal tooth plate (UP5).' /  'The medial shift of the medial spur and ventral articular process of the fourth epibranchial ( E  , and of the associated fifth upper pharyngeal tooth plate (UP5).', 4 'The reduction to some degree to complete loss of the first infrapharygobranchial (PBj).^n' /  'The reduction to some degree to complete loss of the first infrapharygobranchial (PBj).^n', 5 'The elaboration of the three primary folds of the buccopharyngeal complex into large vertical flaps, and the development of numerous parallel secondary folds on the roof of the buccal cavity.' /  'The elaboration of the three primary folds of the buccopharyngeal complex into large vertical flaps, and the development of numerous parallel secondary folds on the roof of the buccal cavity.', 6 'The thickened anteromedial portion of the metapterygoid.^n' /  'The thickened anteromedial portion of the metapterygoid.^n', 7 'The posteriorly directed elongate spine on the ventral surface of the anterodorsal corner of the second hypobran- chial (Hj).' /  'The posteriorly directed elongate spine on the ventral surface of the anterodorsal corner of the second hypobran- chial (Hj).', 8 'The expansion of the ectopterygoid into a large overall triangular element, with a posterodorsally expanded process fitting into a corresponding notch on the anterior margin of the mesopterygoid.' /  'The expansion of the ectopterygoid into a large overall triangular element, with a posterodorsally expanded process fitting into a corresponding notch on the anterior margin of the mesopterygoid.', 9 'The posterior shift of the region of interdigitation of the^nfirst proximal pterygiophore of the dorsal fin relative to^nthe neural spines of the anterior vertebrae.' /  'The posterior shift of the region of interdigitation of the^nfirst proximal pterygiophore of the dorsal fin relative to^nthe neural spines of the anterior vertebrae.', 10 'The distinctive pigmentation pattern of a midlateral stripe^non the posterior portion of the body, with a dark midlateral^nbody spot present in adults.' /  'The distinctive pigmentation pattern of a midlateral stripe^non the posterior portion of the body, with a dark midlateral^nbody spot present in adults.', 11 The_elongate_fusiform_shape_of_the_body /  The_elongate_fusiform_shape_of_the_body, 12 'The pronounced reduction or total loss of the first infrapharyngobranchial (PB,).' /  'The pronounced reduction or total loss of the first infrapharyngobranchial (PB,).', 13 'A slightly developed to pronounced longitudinal ridge on the dorsal surface of the second ceratobranchial (C2).' /  'A slightly developed to pronounced longitudinal ridge on the dorsal surface of the second ceratobranchial (C2).', 14 'The distinct flattened prepelvic region of the body with^ndiscrete, nearly right, lateral angles in the body wall^n(secondarily absent in C. mivartii).' /  'The distinct flattened prepelvic region of the body with^ndiscrete, nearly right, lateral angles in the body wall^n(secondarily absent in C. mivartii).', 15 'The enlarged series of midventral scales in the prepelvic^nregion and the flanking series of enlarged scales that have a discrete angle correponding to the angle in the underlying body wall (secondarily absent in C. mivartii).' /  'The enlarged series of midventral scales in the prepelvic^nregion and the flanking series of enlarged scales that have a discrete angle correponding to the angle in the underlying body wall (secondarily absent in C. mivartii).', 16 'The flattened, elongate triangular process on the dorsal surface of the anterior margin of the first epibranchial (Et).' /  'The flattened, elongate triangular process on the dorsal surface of the anterior margin of the first epibranchial (Et).', 17 'The reduction to four supraneurals from the five in other^nCurimata species.' /  'The reduction to four supraneurals from the five in other^nCurimata species.', 18 '^nThe anterior shift of the point of interdigitation of the first^nproximal pterygiophore of the dorsal fin to between the fourth and fifth neural spines, and the reduction to four supraneurals' /  'The anterior shift of the point of interdigitation of the first^nproximal pterygiophore of the dorsal fin to between the fourth and fifth neural spines, and the reduction to four supraneurals', 19 The_distinctive_pigmentation_pattern_in_the_adults_of_a_series_of_vertical_bars_on_the_dorsal_portion_of_the_body._ /  'The distinctive pigmentation pattern in the adults of a series of vertical bars on the dorsal portion of the body.^n', 20 'The subdivision of the cartilage cap on the uncinate process of the first epibranchial (Ej) into two smaller cartilages' /  'The subdivision of the cartilage cap on the uncinate process of the first epibranchial (Ej) into two smaller cartilages', 21 'The possession of a basihyal tooth-plate.' /  'The possession of a basihyal tooth-plate.', 22 The_filamentous_anterior_rays_of_the_dorsal_fin. /  The_filamentous_anterior_rays_of_the_dorsal_fin., 23 The_elongate_dorsal_and_ventral_rays_of_the_caudal_fin /  The_elongate_dorsal_and_ventral_rays_of_the_caudal_fin, 24 An_increase_to_33_or_34_vertebrae. /  An_increase_to_33_or_34_vertebrae., 25 'The longitudinal ridge on the ventral surface of the second epibranchial (E).' /  'The longitudinal ridge on the ventral surface of the second epibranchial (E).' ; 
+	MATRIX
+	Curimata_ocellata     ?????????????????????????
+	Curimata_vittata      ?????????????????????????
+	Curimata_macrops      ?????????????????????????
+	Curimata_incompta     ?????????????????????????
+	Curimata_knerii       ?????????????????????????
+	Curimata_cyprinoides  ?????????????????????????
+	Curimata_mivartii     ?????????????????????????
+	Curimata_aspera       ?????????????????????????
+	Curimata_cerasina     ?????????????????????????
+	Curimata_cisandina    ?????????????????????????
+	Curimata_roseni       ?????????????????????????
+	Curimata_inornata     ?????????????????????????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  25;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  25;
+END;
+
 Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1512433602987;
+		timeSaved 1512434537294;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 4287436136033334990;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7632563610016341602;
+			mqVersion 304;
+			checksumv 0 3 2427069870 null  getNumChars 25 numChars 25 getNumTaxa 12 numTaxa 12   short true   bits 0   states 0   sumSquaresStatesOnly 0.0 sumSquares 0.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
 		endTell;
 		getWindow;
 		tell It;
@@ -29,8 +68,8 @@ Begin MESQUITE;
 			setAnnotationSize 0;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
-			setSize 700 500;
-			setLocation 326 326;
+			setSize 983 510;
+			setLocation 412 157;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -46,19 +85,22 @@ Begin MESQUITE;
 				getWindow;
 				tell It;
 					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					getTable;
+					tell It;
+						rowNamesWidth 129;
+					endTell;
 					setExplanationSize 30;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 600 428;
-					setLocation 326 326;
+					setSize 883 438;
+					setLocation 412 157;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
-						setTool mesquite.lists.TaxonList.TaxonListWindow.ibeam;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.arrow;
 					endTell;
-					setActive;
 				endTell;
 				showWindow;
 				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
@@ -67,6 +109,158 @@ Begin MESQUITE;
 					removeColor off;
 				endTell;
 				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7632563610016341602 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 883 438;
+					setLocation 412 157;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 248;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 883 438;
+						setLocation 412 157;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						setActive;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip on;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #7632563610016341602 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 883 438;
+					setLocation 412 157;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
 				tell It;
 					togglePanel off;
 				endTell;
