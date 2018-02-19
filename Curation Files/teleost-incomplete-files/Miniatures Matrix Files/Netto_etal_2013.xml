@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://dx.doi.org/10.11646/zootaxa.3664.3.6</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Netto-Ferreira, A. L., Birindelli, J. L. O., &amp; Buckup, P. A. (2013) A new miniature species of Characidium Reinhardt (Ostariophysi: Characiformes: Crenuchidae) from the headwaters of the rio Araguaia, Brazil. Zootaxa, 3664(3),361-368</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Netto-Ferreira et al. (2013)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus id="t18e27a03-8fae-44a8-a910-fc52a5c65385">
     <otu id="t2c91dbba-82d4-40c1-bee0-fd406af8b1e5" label="Characidium fasciatum" about="#t2c91dbba-82d4-40c1-bee0-fd406af8b1e5">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0037745" />
@@ -59,7 +59,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://data.bioontology.org/provisional_classes/9bf587a0-a712-0135-854f-005056010088" />
+                  <phen:typeref about="UBERON:4300176" />
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -73,7 +73,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://data.bioontology.org/provisional_classes/9bf587a0-a712-0135-854f-005056010088" />
+                  <phen:typeref about="UBERON:4300176" />
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462" />
@@ -151,13 +151,117 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2001463" />
+                  <phen:typeref about="UBERON:2001463">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000678">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:4000163">
+                                <phen:qualifier relation="BFO:0000050">
+                                  <phen:holds_in_relation_to>
+                                    <phen:typeref about="UBERON:0003101" />
+                                  </phen:holds_in_relation_to>
+                                </phen:qualifier>
+                              </phen:typeref>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001463">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000678">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0000152">
+                                <phen:qualifier relation="BFO:0000050">
+                                  <phen:holds_in_relation_to>
+                                    <phen:typeref about="UBERON:0003101" />
+                                  </phen:holds_in_relation_to>
+                                </phen:qualifier>
+                              </phen:typeref>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="s2f9b7988-72d5-4b49-9979-3f3d66151ef4" label="present" symbol="1" />
+        <state id="s2f9b7988-72d5-4b49-9979-3f3d66151ef4" label="present" symbol="1" about="#s2f9b7988-72d5-4b49-9979-3f3d66151ef4">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001463">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000678">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:4000163">
+                                <phen:qualifier relation="BFO:0000050">
+                                  <phen:holds_in_relation_to>
+                                    <phen:typeref about="UBERON:0003101" />
+                                  </phen:holds_in_relation_to>
+                                </phen:qualifier>
+                              </phen:typeref>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001463">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000678">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0000152">
+                                <phen:qualifier relation="BFO:0000050">
+                                  <phen:holds_in_relation_to>
+                                    <phen:typeref about="UBERON:0003101" />
+                                  </phen:holds_in_relation_to>
+                                </phen:qualifier>
+                              </phen:typeref>
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s2ec93408-354e-4af5-9abc-658f417b256e">
         <state id="s08609064-9fe2-4813-bf42-711ed87a58ec" label="absent" symbol="0" about="#s08609064-9fe2-4813-bf42-711ed87a58ec">
@@ -513,9 +617,7 @@
           <member state="sec7cab27-08e8-4755-a28b-e3059a55ad6d" />
         </polymorphic_state_set>
       </states>
-      <char id="cc3ee0afe-032a-494d-a7ba-8156382e8454" label="Parietal branch of the supraorbital canal" about="#cc3ee0afe-032a-494d-a7ba-8156382e8454" states="s8fbe03e7-96a7-465f-9cbb-dbe3c0d4bc47">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">NTR</meta>
-      </char>
+      <char id="cc3ee0afe-032a-494d-a7ba-8156382e8454" label="Parietal branch of the supraorbital canal" about="#cc3ee0afe-032a-494d-a7ba-8156382e8454" states="s8fbe03e7-96a7-465f-9cbb-dbe3c0d4bc47" />
       <char id="cc37ed148-2d67-479a-be0b-b3305026f0b7" label="Number of dark bars on the sides of the body" states="s1914e9c5-8727-40cd-a5f3-9b63e89ff0cc" />
       <char id="c226181ac-b2a3-404a-a81d-33995bb5029c" label="Inner row of teeth on dentary" states="s3e75d018-0f98-48f8-9d1c-6c69ae781f55" />
       <char id="c5c0f424e-a357-489b-88c6-6d371461f59a" label="Dark band along distal margin of anal and pelvic fins in adult males" states="s8b887d53-1b0b-42e3-b900-bfebeded68a1" />
@@ -669,6 +771,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t9acad2bd-630e-4be3-9dcc-1d3b8d536844" otus="t18e27a03-8fae-44a8-a910-fc52a5c65385" />
   <trees id="tc933cfd4-0601-4f18-b4b8-72980a9faf79" otus="t18e27a03-8fae-44a8-a910-fc52a5c65385" />
   <trees id="ta0569a8b-216b-499d-ac23-f4b731103bae" otus="t18e27a03-8fae-44a8-a910-fc52a5c65385" />
   <trees id="t3c1e7a12-3031-4d74-9a7f-d6a8f0bdeda9" otus="t18e27a03-8fae-44a8-a910-fc52a5c65385" />
