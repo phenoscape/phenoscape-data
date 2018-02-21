@@ -618,7 +618,26 @@
         </state>
       </states>
       <states id="sbe07dd71-f79b-4203-9a10-2970a4d743b5">
-        <state id="s708b00a5-7569-4935-85fc-7ac9e08fc9e0" label="The posterior development of the lateral margin of the exoccipital lateral to the foramen magnum, thereby forming a common aperture for the foramen magnum, cavum sinus imparis, and paired fossae for the scaphium and a cover laterally for the anterolateral surface of the scaphium" symbol="0" />
+        <state id="s708b00a5-7569-4935-85fc-7ac9e08fc9e0" label="The posterior development of the lateral margin of the exoccipital lateral to the foramen magnum, thereby forming a common aperture for the foramen magnum, cavum sinus imparis, and paired fossae for the scaphium and a cover laterally for the anterolateral surface of the scaphium" symbol="0" about="#s708b00a5-7569-4935-85fc-7ac9e08fc9e0">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000682">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001693" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s10c25d07-9a37-4572-9b7c-e5346eafe83c">
         <state id="sbbea46d7-6e8c-4abc-9649-1accd21ab263" label="The lack of dentary and premaxillary dentition" symbol="0" about="#sbbea46d7-6e8c-4abc-9649-1accd21ab263">
@@ -735,7 +754,32 @@
         </state>
       </states>
       <states id="sf28a7116-f08f-4ded-bb5b-6dbe784c6f9e">
-        <state id="s86dc5a51-5065-48c5-b522-e0bba66e566a" label="The secondary posterodorsal, cartilage-capped process on the palatine" symbol="0" about="#s86dc5a51-5065-48c5-b522-e0bba66e566a" />
+        <state id="s86dc5a51-5065-48c5-b522-e0bba66e566a" label="The secondary posterodorsal, cartilage-capped process on the palatine" symbol="0" about="#s86dc5a51-5065-48c5-b522-e0bba66e566a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000030">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2000620" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s3080b0ff-615b-40d3-be0b-555043fd6123">
         <state id="sa49d7f91-5641-492a-a0e1-c44d0397d5b8" label="The cartilage-capped articular process along the ventral edge of the lateral ethmoid's ventral wing" symbol="0" about="#sa49d7f91-5641-492a-a0e1-c44d0397d5b8">
@@ -1624,8 +1668,11 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0011611" />
+                  <phen:typeref about="UBERON:2001842" />
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002481" />
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -2837,20 +2884,14 @@
       <char id="c03b3aaa8-0abb-455a-bc87-e4ddda710c90" label="The absence of dentition on the fifth ceratobranchial" states="sd2f21b75-5a0a-40ee-989b-1f66c87426e9" />
       <char id="cfa37263f-0102-4866-920a-67fad43d25c5" label="The anteromedially directed process on the fourth ceratobranchial's ventral surface" states="s6ccc65b6-624a-4225-b70b-6bd3bbabcbaf" />
       <char id="cd8b99671-0dd7-4aa7-b951-3bb144b51e97" label="The distinct, posteroventrally aligned flange on the lateral surface of the opercle or a further derived condition of that process" states="saffd2815-06ee-40c6-ac5b-165c3779d27d" />
-      <char id="c9ef0e4ef-2c39-4da3-944b-a23d15dca586" label="The increase in the depth and width of the fossa for the scaphium that results in interconnections of the fossa with the lateral occipital foramen laterally and the interior of the cranium anteriorly" states="s8abb7a97-fc7f-4d25-833a-3e9ac2220eee" about="#c9ef0e4ef-2c39-4da3-944b-a23d15dca586">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
-      </char>
-      <char id="c4ca1ae45-e0f6-46f5-886c-3be5a570c1c6" label="The posterior development of the lateral margin of the exoccipital lateral to the foramen magnum, thereby forming a common aperture for the foramen magnum, cavum sinus imparis, and paired fossae for the scaphium and a cover laterally for the anterolateral surface of the scaphium" states="sbe07dd71-f79b-4203-9a10-2970a4d743b5" about="#c4ca1ae45-e0f6-46f5-886c-3be5a570c1c6">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
-      </char>
+      <char id="c9ef0e4ef-2c39-4da3-944b-a23d15dca586" label="The increase in the depth and width of the fossa for the scaphium that results in interconnections of the fossa with the lateral occipital foramen laterally and the interior of the cranium anteriorly" states="s8abb7a97-fc7f-4d25-833a-3e9ac2220eee" about="#c9ef0e4ef-2c39-4da3-944b-a23d15dca586" />
+      <char id="c4ca1ae45-e0f6-46f5-886c-3be5a570c1c6" label="The posterior development of the lateral margin of the exoccipital lateral to the foramen magnum, thereby forming a common aperture for the foramen magnum, cavum sinus imparis, and paired fossae for the scaphium and a cover laterally for the anterolateral surface of the scaphium" states="sbe07dd71-f79b-4203-9a10-2970a4d743b5" about="#c4ca1ae45-e0f6-46f5-886c-3be5a570c1c6" />
       <char id="ca33922b6-ad2b-45e7-a0a9-c59f63fad25d" label="The lack of dentary and premaxillary dentition" states="s10c25d07-9a37-4572-9b7c-e5346eafe83c" />
       <char id="ca40d332e-eb45-4ce2-b9a3-34d720f46a5a" label="The third posttemporal fossa bordered solely by the epioccipital" states="s5f18c91f-1fab-4528-a464-ce3834da5893" />
       <char id="c5dfa4f8e-bc81-4c9b-b71a-abde204d0434" label="The anteroventral process on the third hypobranchial that extends parallel to the ventral aorta" states="s7f85fb6b-faad-4335-a862-4c8661534bc9" />
       <char id="c9dc4bf53-5678-4e8e-9055-1ad2e9dfd0e0" label="The absence of an ossified first basibranchial" states="sbf1914b8-7f34-4031-b3fc-f31f5111ae65" />
       <char id="c16cf6bc0-8b3b-45a8-87ef-18ab42fafbc4" label="The posteroventral expansion of the fifth upper pharyngeal tooth plate into a curved, convoluted process" states="sa2407398-5c4d-443a-908d-c02b89bd4926" />
-      <char id="c4afbaff8-188a-463d-ac4b-836ee31a5260" label="The secondary posterodorsal, cartilage-capped process on the palatine" states="sf28a7116-f08f-4ded-bb5b-6dbe784c6f9e" about="#c4afbaff8-188a-463d-ac4b-836ee31a5260">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
-      </char>
+      <char id="c4afbaff8-188a-463d-ac4b-836ee31a5260" label="The secondary posterodorsal, cartilage-capped process on the palatine" states="sf28a7116-f08f-4ded-bb5b-6dbe784c6f9e" about="#c4afbaff8-188a-463d-ac4b-836ee31a5260" />
       <char id="c87e8be2c-7cc4-408a-941c-7fccfd1838a7" label="The cartilage-capped articular process along the ventral edge of the lateral ethmoid's ventral wing" states="s3080b0ff-615b-40d3-be0b-555043fd6123" />
       <char id="cc924dc62-4d4e-4f2c-ae6a-260940085bc5" label="The horizontal shelf on medial surface of the metapterygoid" states="sd15ba306-2a92-402a-a739-705e7f72a440" />
       <char id="c38518098-eec9-4fa2-9664-62a8623f59fa" label="The large cartilagenous ethmoid block and widened mesethmoid" states="sfffb3a9d-e35d-41ef-8a1d-db1d9cae4233" about="#c38518098-eec9-4fa2-9664-62a8623f59fa" />
@@ -3860,7 +3901,7 @@
       <row id="rdb515aed-70a0-49d3-b29e-9188430aada8" otu="t5bcd511c-53f4-4509-ac06-dcc4ca0650b3" />
     </matrix>
   </characters>
-  <trees id="t9c7075af-d1e4-48ef-bced-67d9244d3ab2" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
+  <trees id="teffdb9cf-edbe-4208-b1ec-d984ab2a894a" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
   <trees id="t957cb094-c178-4965-91bc-089791d516ed" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
   <trees id="tfc88832b-d850-4402-81c4-ec55293fd8ab" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
   <trees id="t0dee01f1-76c1-491f-aac3-5efec4560988" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
