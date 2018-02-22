@@ -1,11 +1,11 @@
 #NEXUS
-[written Thu Feb 22 13:59:23 PST 2018 by Mesquite  version 3.04+ (build 743) at itsadmins-MacBook-Pro.local/10.0.1.2]
+[written Thu Feb 22 14:01:58 PST 2018 by Mesquite  version 3.04+ (build 743) at itsadmins-MacBook-Pro.local/10.0.1.2]
 
 BEGIN TAXA;
 	TITLE Taxa;
 	DIMENSIONS NTAX=4;
 	TAXLABELS
-		taxon_1 taxon_2 taxon_3 taxon_4 
+		Curimatopsis_macrolepis Curimatopsis_microlepis Curimatopsis_crypticus Curimatopsis_evelynae 
 	;
 
 END;
@@ -16,10 +16,10 @@ BEGIN CHARACTERS;
 	DIMENSIONS  NCHAR=13;
 	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1";
 	MATRIX
-	taxon_1  ?????????????
-	taxon_2  ?????????????
-	taxon_3  ?????????????
-	taxon_4  ?????????????
+	Curimatopsis_macrolepis  00000000???00
+	Curimatopsis_microlepis  00000000???00
+	Curimatopsis_crypticus   00000000000??
+	Curimatopsis_evelynae    00000000000??
 
 ;
 
@@ -37,7 +37,7 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1519336763923;
+		timeSaved 1519336918096;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 6564058093350503978;
@@ -46,7 +46,7 @@ Begin MESQUITE;
 		tell It;
 			setID 0 8080758126975047606;
 			mqVersion 304;
-			checksumv 0 3 3274347072 null  getNumChars 13 numChars 13 getNumTaxa 4 numTaxa 4   short true   bits 0   states 0   sumSquaresStatesOnly 0.0 sumSquares 0.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			checksumv 0 3 1777959562 null  getNumChars 13 numChars 13 getNumTaxa 4 numTaxa 4   short true   bits 1   states 1   sumSquaresStatesOnly 42.0 sumSquares 42.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -59,7 +59,7 @@ Begin MESQUITE;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
 			setSize 700 500;
-			setLocation 8 23;
+			setLocation 583 23;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -78,14 +78,15 @@ Begin MESQUITE;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
 					setSize 600 428;
-					setLocation 8 23;
+					setLocation 583 23;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
 					setActive;
-					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
 					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
