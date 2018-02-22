@@ -1740,7 +1740,35 @@
         </state>
       </states>
       <states id="s2854b1f6-7cd4-4dd9-8d6f-eab6fd1d673a">
-        <state id="s8b9283c3-3591-413b-a106-44bfdaf6f1a9" label="The hyomandibular process that extends over the metapterygoid's posterodorsal region" symbol="0" about="#s8b9283c3-3591-413b-a106-44bfdaf6f1a9" />
+        <state id="s8b9283c3-3591-413b-a106-44bfdaf6f1a9" label="The hyomandibular process that extends over the metapterygoid's posterodorsal region" symbol="0" about="#s8b9283c3-3591-413b-a106-44bfdaf6f1a9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0011606" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002488" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000030">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:2000240" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s7d1e89b8-a206-425b-8db2-224fe46f5c71">
         <state id="sa5c58911-09e9-4fa9-b847-5aedaccf2076" label="The presence of two or more intercostal ligaments that join the three or more of the anteriormost full pleural ribs" symbol="0" />
@@ -2926,14 +2954,10 @@
       <char id="c91436b59-b150-4c40-83c0-a87aa15107d4" label="The vertical expansion of the anterior process of the fourth epibranchial" states="s31ed2a01-6ef0-4747-8f8b-e7a75f426fb2" />
       <char id="cf37e6a8c-2b34-4bb9-9278-466b35b62822" label="The highly developed obliquues dorsalis associated with the fourth infrapharyngobranchial" states="see96e6a7-63c8-4fc0-bdc2-10ae6487e0fb" />
       <char id="ca5ced338-6eaf-4efc-82a0-dd90f8d74591" label="The longitudinal foreshortening of the hyoid arch" states="s60d3a8fa-7cc6-4d25-a36f-0104fc4af8aa" />
-      <char id="c86eb3a82-b7bf-4ad9-bdc9-47c856e5bfb5" label="The oblique angle of the articulation between the anterior and posterior ceratohyals" states="sf081313f-684b-4b22-a2a1-24502efeb2cc" about="#c86eb3a82-b7bf-4ad9-bdc9-47c856e5bfb5">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
-      </char>
+      <char id="c86eb3a82-b7bf-4ad9-bdc9-47c856e5bfb5" label="The oblique angle of the articulation between the anterior and posterior ceratohyals" states="sf081313f-684b-4b22-a2a1-24502efeb2cc" about="#c86eb3a82-b7bf-4ad9-bdc9-47c856e5bfb5" />
       <char id="ca53b9412-694b-4608-b987-ff73ee13f804" label="The distinct cord-like ligament that joins the lateral surface of the ectopterygoid and ventral wing of the lateral ethmoid" states="s3b0e1c58-0319-4fea-b4b4-cd23a295ffbc" />
       <char id="cfe512d4f-05d8-468e-b59d-d4e19ad64108" label="The prominent lateral shelf on the quadrate" states="s10a4e114-cf8c-4f72-8432-e6d66efebb3a" />
-      <char id="c8fd40162-3084-4bb4-b9e6-4f17ebcec6fc" label="The hyomandibular process that extends over the metapterygoid's posterodorsal region" states="s2854b1f6-7cd4-4dd9-8d6f-eab6fd1d673a" about="#c8fd40162-3084-4bb4-b9e6-4f17ebcec6fc">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
-      </char>
+      <char id="c8fd40162-3084-4bb4-b9e6-4f17ebcec6fc" label="The hyomandibular process that extends over the metapterygoid's posterodorsal region" states="s2854b1f6-7cd4-4dd9-8d6f-eab6fd1d673a" about="#c8fd40162-3084-4bb4-b9e6-4f17ebcec6fc" />
       <char id="cc39eb68b-9444-448e-a334-abd65f4183a7" label="The presence of two or more intercostal ligaments that join the three or more of the anteriormost full pleural ribs" states="s7d1e89b8-a206-425b-8db2-224fe46f5c71" about="#cc39eb68b-9444-448e-a334-abd65f4183a7">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
@@ -3901,7 +3925,7 @@
       <row id="rdb515aed-70a0-49d3-b29e-9188430aada8" otu="t5bcd511c-53f4-4509-ac06-dcc4ca0650b3" />
     </matrix>
   </characters>
-  <trees id="teffdb9cf-edbe-4208-b1ec-d984ab2a894a" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
+  <trees id="t09e6e8af-abca-4c27-ae6b-9b717c93ed22" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
   <trees id="t957cb094-c178-4965-91bc-089791d516ed" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
   <trees id="tfc88832b-d850-4402-81c4-ec55293fd8ab" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
   <trees id="t0dee01f1-76c1-491f-aac3-5efec4560988" otus="t7b83ba5a-0b53-484e-9706-dead72f2df6c" />
