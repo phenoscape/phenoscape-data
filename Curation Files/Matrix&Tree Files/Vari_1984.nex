@@ -1,11 +1,11 @@
 #NEXUS
-[written Thu Feb 22 10:51:31 PST 2018 by Mesquite  version 3.04+ (build 743) at itsadmins-MacBook-Pro.local/10.0.1.2]
+[written Thu Feb 22 11:11:39 PST 2018 by Mesquite  version 3.04+ (build 743) at itsadmins-MacBook-Pro.local/10.0.1.2]
 
 BEGIN TAXA;
 	TITLE Taxa;
-	DIMENSIONS NTAX=8;
+	DIMENSIONS NTAX=5;
 	TAXLABELS
-		taxon_1 taxon_2 taxon_3 taxon_4 taxon_5 taxon_6 taxon_7 taxon_8 
+		Potamorhina_laticeps Potamorhina_pristigaster Potamorhina_squamoralevis Potamorhina_altamazonica Potamorhina_latior 
 	;
 
 END;
@@ -16,14 +16,11 @@ BEGIN CHARACTERS;
 	DIMENSIONS  NCHAR=16;
 	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1";
 	MATRIX
-	taxon_1  ????????????????
-	taxon_2  ????????????????
-	taxon_3  ????????????????
-	taxon_4  ????????????????
-	taxon_5  ????????????????
-	taxon_6  ????????????????
-	taxon_7  ????????????????
-	taxon_8  ????????????????
+	Potamorhina_laticeps       000000??????????
+	Potamorhina_pristigaster   0000000???00????
+	Potamorhina_squamoralevis  0000000000??????
+	Potamorhina_altamazonica   0000000000??000?
+	Potamorhina_latior         0000000000??0000
 
 ;
 
@@ -41,7 +38,7 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1519325492112;
+		timeSaved 1519326699927;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 650775789572804749;
@@ -50,7 +47,7 @@ Begin MESQUITE;
 		tell It;
 			setID 0 5001955555862998354;
 			mqVersion 304;
-			checksumv 0 3 4287838522 null  getNumChars 16 numChars 16 getNumTaxa 8 numTaxa 8   short true   bits 0   states 0   sumSquaresStatesOnly 0.0 sumSquares 0.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			checksumv 0 3 3585993058 null  getNumChars 16 numChars 16 getNumTaxa 5 numTaxa 5   short true   bits 1   states 1   sumSquaresStatesOnly 52.0 sumSquares 52.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -62,8 +59,8 @@ Begin MESQUITE;
 			setAnnotationSize 0;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
-			setSize 700 500;
-			setLocation 8 23;
+			setSize 1141 554;
+			setLocation 429 23;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -81,15 +78,16 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 600 428;
-					setLocation 8 23;
+					setSize 1041 482;
+					setLocation 429 23;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
 					setActive;
-					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
 					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
