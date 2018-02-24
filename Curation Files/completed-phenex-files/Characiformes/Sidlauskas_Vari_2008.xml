@@ -7521,7 +7521,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002326" />
                   <phen:related_entity>
                     <phen:typeref about="BSPO:0000684">
                       <phen:qualifier relation="BFO:0000050">
@@ -7558,7 +7558,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0002326" />
                   <phen:related_entity>
                     <phen:typeref about="BSPO:0000684">
                       <phen:qualifier relation="BFO:0000050">
@@ -7579,11 +7579,11 @@
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>3</phen:description>
+                <phen:description />
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000476" />
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="3">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -7594,11 +7594,11 @@
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>4</phen:description>
+                <phen:description />
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000476" />
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="4">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -7743,7 +7743,13 @@
                   <phen:typeref about="UBERON:2001171" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000140" />
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001772" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0006860" />
                   </phen:related_entity>
@@ -8250,7 +8256,7 @@
               <phen:phenotype_character>
                 <phen:description>≤8 (mode)</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4000173" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/a500fab0-fb25-0135-fca6-005056010088" />
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070" />
@@ -8265,7 +8271,7 @@
               <phen:phenotype_character>
                 <phen:description>9 (mode)</phen:description>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:4000173" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/a500fab0-fb25-0135-fca6-005056010088" />
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000070" />
@@ -10735,7 +10741,9 @@
       </char>
       <char id="u1ab3fb90-fcc4-4719-85ad-715f60e4fb08" label="Presence or absence of dorsal process of third vertebra overlapping neural complex laterally" states="u5918af91-4bf9-4eca-a2cb-1414edb5f6f5" />
       <char id="u1255633d-2a0e-4914-b254-dcd7bab3bd6c" label="Presence or absence of supraneural dorsal to Weberian apparatus" states="c6898c2d-a464-493b-ad2e-2df8ee06b331" />
-      <char id="u3e5e16d6-2393-4611-b0ba-ced5b43685cb" label="Presence or absence of two or more intercostal ligaments uniting in total four or more of the anterior full ribs" states="u073e852b-544e-4c48-8428-570a7ec59438" />
+      <char id="u3e5e16d6-2393-4611-b0ba-ced5b43685cb" label="Presence or absence of two or more intercostal ligaments uniting in total four or more of the anterior full ribs" states="u073e852b-544e-4c48-8428-570a7ec59438" about="#u3e5e16d6-2393-4611-b0ba-ced5b43685cb">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="fe8ee6bf-c099-4d6a-9123-fc7748442fdf" label="Modal number of branched dorsal-fin rays" states="u1927a80c-8752-42b8-a4f9-678fa3d39b05" />
       <char id="u6e323292-1182-4ff3-8878-3fe5f0df44ab" label="Development of dorsomedial flange of mesocoracoid" states="u3306fe58-a7f1-45df-830b-847bd0a2d1fd" />
       <char id="u055d4f23-42c0-478c-bb0b-57cdda767d92" label="Width of dorsal portion of supracleithrum" states="u2567ebb6-0754-4b4e-b631-ba8629e7bb20" />
@@ -10749,9 +10757,7 @@
       <char id="fa4bb9fe-b659-4252-9708-aef7965b6bb8" label="Vertical bands encircling body" states="u4b6b20f4-f061-45a9-9ae5-547055226cc4" />
       <char id="u99032d80-00ab-48ab-8ee8-3b1ca8117623" label="Possession and form of dark vertical blotches on lateral surface of body" states="u1ef4c984-6a54-4e04-8d20-f5f535441b83" />
       <char id="u2af9f6b8-e5aa-4943-8a1e-0ceed3cf06ed" label="Presence or absence of lateral-line spots" states="dd77617f-a76b-496b-80e7-86319e18ff67" />
-      <char id="e551f075-fed1-41c8-b568-fc8d55f55066" label="Presence or absence of dark spots above and below lateral-line" states="u6eca085a-5664-4224-95e3-8349fdb71b72" about="#e551f075-fed1-41c8-b568-fc8d55f55066">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
-      </char>
+      <char id="e551f075-fed1-41c8-b568-fc8d55f55066" label="Presence or absence of dark spots above and below lateral-line" states="u6eca085a-5664-4224-95e3-8349fdb71b72" about="#e551f075-fed1-41c8-b568-fc8d55f55066" />
       <char id="u599a2ada-8527-4435-a614-f5e411a87513" label="Presence or absence of complete dark stripe along lateral-line scale row" states="u643a5ab1-ec08-4cec-a245-38a34044f961" />
       <char id="aa2da33b-05d7-4965-b64b-a8da40dc81ac" label="Presence or absence of longitudinal stripes located dorsal and ventral to lateral-line scale row" states="u1a38e401-db50-4bac-ad80-36381250f173" />
       <char id="u16a97599-9516-4e97-8c88-42b1d99eeb30" label="Presence or absence of small dark spots positioned at centers of scales" states="u3d923e9b-3f75-413a-aef6-924d7d93bd94" />
@@ -20113,7 +20119,7 @@
       <row id="u8f2b8e9b-c541-4d21-849f-8c44bf4abdba" otu="ef832bde-0a4e-4d42-9f0a-837c3808b157" />
     </matrix>
   </characters>
-  <trees id="taaaf669d-d98f-4476-af0f-7d56bc1b8f07" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
+  <trees id="tde417d70-039e-4fb3-97af-361adaf5a815" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="te528e6b1-97e7-4326-bac0-69b050d0cce1" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t768d5e45-e12f-4762-9dd3-71f7acf4c673" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="tc4834dcc-101d-4997-9142-a312a34b1c4b" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
