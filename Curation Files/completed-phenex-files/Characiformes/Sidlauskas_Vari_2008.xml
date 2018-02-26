@@ -4490,7 +4490,7 @@
                   <phen:typeref about="UBERON:2001828" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141" />
+                  <phen:typeref about="PATO:0001667" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0002397" />
                   </phen:related_entity>
@@ -4508,7 +4508,7 @@
                   <phen:typeref about="UBERON:2001828" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141" />
+                  <phen:typeref about="PATO:0001667" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0002397" />
                   </phen:related_entity>
@@ -4830,7 +4830,13 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://data.bioontology.org/provisional_classes/e9c8cd30-fd49-0135-391b-005056010073" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4857,7 +4863,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/e9c8cd30-fd49-0135-391b-005056010073" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4884,6 +4890,20 @@
                   <phen:typeref about="PATO:0001875" />
                 </phen:quality>
               </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004742" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002212" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
@@ -4891,14 +4911,6 @@
           <meta xsi:type="LiteralMeta" property="ps:inFigure">37</meta>
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0004742" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0002212" />
-                </phen:quality>
-              </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0004742" />
@@ -10763,25 +10775,38 @@
       </char>
       <char id="u7b098bd3-bceb-4a21-a6ba-211bd984d523" label="Presence or absence of cusps on posterior lobes of dentary teeth" states="u593ea831-f7d6-4398-92e2-e17d3b6485ca" />
       <char id="u870aac71-bc81-4a79-afb8-4d5206db7349" label="Form of ascending process of premaxilla" states="u0dc8880b-6d98-460b-bc06-5958a616c615" />
-      <char id="u278a9926-644a-4d83-b90b-660c51d01afb" label="Orientation of premaxilla" states="u43c7069c-c7fe-47ba-868a-fe0495d12f45" about="#278a9926-644a-4d83-b90b-660c51d01afb" />
+      <char id="u278a9926-644a-4d83-b90b-660c51d01afb" label="Orientation of premaxilla" states="u43c7069c-c7fe-47ba-868a-fe0495d12f45" about="#u278a9926-644a-4d83-b90b-660c51d01afb">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="u6bfb6a67-760d-4df8-abaf-8666ff54757c" label="Presence or absence of block-like anterodorsal process of premaxilla" states="e3df6ced-585e-4871-ae28-2cdb35168862" />
       <char id="bca5a94c-7494-47ea-98c0-2b9641b72ce8" label="Orientation of maxilla" states="u2265d930-5fd7-4d79-a465-80fcabe1a97a" />
-      <char id="u27d7e614-0c55-4756-9f46-3e25b4c61d00" label="Insertion of primordial ligament on medial surface of maxilla" states="be36e3aa-cfb5-40fc-976c-b729f3def3c9" />
+      <char id="u27d7e614-0c55-4756-9f46-3e25b4c61d00" label="Insertion of primordial ligament on medial surface of maxilla" states="be36e3aa-cfb5-40fc-976c-b729f3def3c9" about="#u27d7e614-0c55-4756-9f46-3e25b4c61d00">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="u24e2aec3-0506-43ef-a5f9-86608cf824c6" label="Form of insertion of anterolateral flange of maxilla on flat ventral portion of maxilla" about="#u24e2aec3-0506-43ef-a5f9-86608cf824c6" states="dc1e7ec7-a8d6-410d-84b2-e8bad8796a0c">
         <meta xsi:type="LiteralMeta" property="ps:inFigure">35</meta>
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
-      <char id="f46b4456-d947-4b5f-8e42-6f8404696ff4" label="Rotation of ventral portion of maxilla relative to anterolateral flange of maxilla" states="u857faa4e-3cbc-4877-a8a6-7925b11a4ebd" />
+      <char id="f46b4456-d947-4b5f-8e42-6f8404696ff4" label="Rotation of ventral portion of maxilla relative to anterolateral flange of maxilla" states="u857faa4e-3cbc-4877-a8a6-7925b11a4ebd" about="#f46b4456-d947-4b5f-8e42-6f8404696ff4">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="u894927a8-374b-416f-b719-11b66bc654e9" label="Width of ventral portion of maxilla" states="u4b47d056-bde1-4de4-ab8a-8abd06de0e98" />
       <char id="u0f2c5428-46ab-4dc5-8bff-f39b04fea89d" label="Form of dorsal tip of maxilla" states="u33efb212-976d-4156-820d-533549379035" />
-      <char id="u390b193a-e0b1-4485-a743-1997d2c01505" label="Form of contact of dorsal portion of maxilla with anterolateral and posterior portions of maxilla" states="u35065730-c1da-46ce-8e72-b70ef5df3cc7" />
+      <char id="u390b193a-e0b1-4485-a743-1997d2c01505" label="Form of contact of dorsal portion of maxilla with anterolateral and posterior portions of maxilla" states="u35065730-c1da-46ce-8e72-b70ef5df3cc7" about="#u390b193a-e0b1-4485-a743-1997d2c01505">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="f1e51fd7-df92-416a-bcab-bac245c31176" label="Width of ascending process of anguloarticular" about="#f1e51fd7-df92-416a-bcab-bac245c31176" states="u40788e2e-8333-4193-92ee-0f748a89fc34">
         <meta xsi:type="LiteralMeta" property="ps:inFigure">36</meta>
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">NT? Ascending process of aa</meta>
       </char>
       <char id="u5659860f-4acc-4817-8f75-9f44089d17fa" label="Presence or absence of trough-like form of dorsal portion of ascending process of anguloarticular" about="#u5659860f-4acc-4817-8f75-9f44089d17fa" states="fa29835f-7690-43f9-b157-fb83aa091af5">
         <meta xsi:type="LiteralMeta" property="ps:inFigure">5</meta>
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">NT? Ascending process of aa</meta>
       </char>
       <char id="u3067c6c4-429f-4616-844e-7426ad5efb43" label="Elongation of dentary" states="a166d752-3b5c-43d2-8fcc-790d745036ab" />
-      <char id="u5f54c6e3-6ef5-4ed3-b9bb-bcc0399fca5c" label="Form of anterior margin of dentary and angle of teeth" states="u63b43aac-4efe-428c-a833-4d42cf651aae" />
+      <char id="u5f54c6e3-6ef5-4ed3-b9bb-bcc0399fca5c" label="Form of anterior margin of dentary and angle of teeth" states="u63b43aac-4efe-428c-a833-4d42cf651aae" about="#u5f54c6e3-6ef5-4ed3-b9bb-bcc0399fca5c">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
       <char id="u1a449ddf-b61d-47de-aa5e-7f16982d5b4d" label="Angle formed by long axis of dentary and long axis of anguloarticular" states="u5b7e6c27-6663-44bb-9d1a-ca6a72aabe20" />
       <char id="u6e54ed9f-1e5f-4900-b1ad-1e9b6c8cac47" label="Form of dentary replacement tooth trench or crypt" states="f8b24c52-d5bf-4ca0-a1e6-2d988599fd48" />
       <char id="e647cf72-292f-4760-b034-a83f9e9eb85b" label="Presence or absence of sensory canal of dentary" states="u73058b39-b144-4d04-b14b-0b3b93067a9c" />
@@ -20222,7 +20247,7 @@
       <row id="u8f2b8e9b-c541-4d21-849f-8c44bf4abdba" otu="ef832bde-0a4e-4d42-9f0a-837c3808b157" />
     </matrix>
   </characters>
-  <trees id="tbfa151f9-a4a0-425f-aafa-f486be1690c0" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
+  <trees id="tdcc7e14c-3233-4ffb-adb7-9ea38ea61d56" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="te528e6b1-97e7-4326-bac0-69b050d0cce1" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="t768d5e45-e12f-4762-9dd3-71f7acf4c673" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
   <trees id="tc4834dcc-101d-4997-9142-a312a34b1c4b" otus="ad1942be-910b-4c4a-8769-ba3e70f190a6" />
