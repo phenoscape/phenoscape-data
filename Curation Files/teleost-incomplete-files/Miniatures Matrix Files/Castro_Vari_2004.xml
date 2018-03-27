@@ -6960,7 +6960,13 @@
                   <phen:typeref about="UBERON:0007380" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001365" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -6974,7 +6980,7 @@
                   <phen:typeref about="UBERON:0007380" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0001365" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -6982,8 +6988,40 @@
         </state>
       </states>
       <states id="u1883f732-d6f0-4035-b796-1de4150a667b">
-        <state id="u467e2a84-f73b-4254-b93f-46c2a30788a7" label="present" symbol="1" />
-        <state id="u08e287a2-f490-4c5c-a25c-88e969b5da3f" label="absent" symbol="0" />
+        <state id="u467e2a84-f73b-4254-b93f-46c2a30788a7" label="present" symbol="1" about="#u467e2a84-f73b-4254-b93f-46c2a30788a7">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002118" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001504" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="u08e287a2-f490-4c5c-a25c-88e969b5da3f" label="absent" symbol="0" about="#u08e287a2-f490-4c5c-a25c-88e969b5da3f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002118" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001504" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <char id="u99d63f73-2250-42c1-81f3-32f70e23b3f6" label="Condition of the basal portions of the gill filaments" about="#99d63f73-2250-42c1-81f3-32f70e23b3f6" states="afe02ba8-4d72-45fc-8606-0e53ae247abb" />
       <char id="u6c47c9f3-0084-46f4-a9cc-7d1365c597c9" label="Relative width of basal portion of first infrapharyngobranchial" states="b2acbdec-181c-48e9-8856-ad4c21ddda6d" />
@@ -9898,6 +9936,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t4ce4571a-f11f-46cb-a211-54c7de2dfcec" otus="u157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="tb2b730c7-ec6b-472f-a161-a619313caeea" otus="u157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="t9b85bb4a-6c37-4ff4-9507-774eea22ab18" otus="u157aa27d-722a-45a9-addf-c9664f79d715" />
   <trees id="ta8fe14e9-5cf4-43b5-88c4-ec85b2980306" otus="u157aa27d-722a-45a9-addf-c9664f79d715" />
