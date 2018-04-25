@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.5479/si.00810282.529</meta>
@@ -110,7 +110,50 @@
   </otus>
   <characters id="u34107609-ddd7-4c2d-9b8e-ff5921d87a62" xsi:type="StandardCells" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e">
     <format>
-      <states id="s2e26d804-d3b0-444c-a36b-cdfaaf592080" />
+      <states id="s2e26d804-d3b0-444c-a36b-cdfaaf592080">
+        <state id="se296acb8-45bf-453a-854d-ed1011983172" label="absent in C. signatus and C. punctatus" symbol="0" about="#se296acb8-45bf-453a-854d-ed1011983172">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sf383cd74-642e-4cfc-855d-03c11246063c" label="sixth infraorbital in C. vexillapinnus and C. gangamon reduced relative to that typical among curimatids" symbol="1" about="#sf383cd74-642e-4cfc-855d-03c11246063c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sa873714c-9bf2-4df5-856e-1f30436111c4" label="sixth infraorbital in C. vexillapinnus and C. gangamon reduced relative to that typical among curimatids" symbol="2" about="#sa873714c-9bf2-4df5-856e-1f30436111c4">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="sdc7141b0-22d2-4305-bb61-3b10f906b6e1" />
       <states id="saf9a58bf-4887-4cd4-86ee-e4d43cd6dea3" />
       <states id="s2d8a5d64-173c-414f-877c-dcd4554daf16" />
@@ -171,6 +214,7 @@
       <row id="r22b40623-73a2-486e-8946-70d931660fd2" otu="t7aeb20e6-c0b5-4d69-8ca1-cad565cd3f94" />
     </matrix>
   </characters>
+  <trees id="td917d5c5-6307-49ac-b9ae-c94b6ad1039e" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e" />
   <trees id="tf961291a-ded3-4933-ba32-f02c8e3195cf" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e" />
   <trees id="tce44fbf9-faf7-4ca3-b0d2-09c3e1fd2bb9" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e" />
   <trees id="t8cd6002a-9433-472d-9cf5-c9b7b0dd0917" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e" />
