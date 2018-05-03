@@ -7,12 +7,12 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Britz and Conway (2016)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="t74d00aa4-e74f-4e77-8008-f82d358a25e6">
+  <otus id="te4713350-290a-4c60-bd3f-ea194334ded0">
     <otu id="t7a2575b2-43a4-4d9b-9303-c8addbd405d0" label="Danionella dracula" about="#t7a2575b2-43a4-4d9b-9303-c8addbd405d0">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0040700" />
     </otu>
   </otus>
-  <characters id="1ac88b03-9034-42c0-b80b-60b4a7d2468d" xsi:type="StandardCells" otus="t74d00aa4-e74f-4e77-8008-f82d358a25e6">
+  <characters id="1ac88b03-9034-42c0-b80b-60b4a7d2468d" xsi:type="StandardCells" otus="te4713350-290a-4c60-bd3f-ea194334ded0">
     <format>
       <states id="s6a633931-65bb-4265-8daa-79d728662526">
         <state id="sfec53bbc-b7fd-440c-96cb-f6861cfbf770" label="absent" symbol="0" about="#sfec53bbc-b7fd-440c-96cb-f6861cfbf770">
@@ -190,19 +190,7 @@
           </meta>
         </state>
       </states>
-      <states id="s3f7b300e-5768-4ab1-a12e-9ee1bfbaf2bf">
-        <state id="se13028c7-3863-4d7c-90fe-a942c29ca805" label="absent" symbol="0" about="#se13028c7-3863-4d7c-90fe-a942c29ca805">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462" />
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-      </states>
+      <states id="s3f7b300e-5768-4ab1-a12e-9ee1bfbaf2bf" />
       <states id="s7abff0ce-90cd-4f35-9c45-795945a2184d">
         <state id="s9f336f12-20c3-4d04-a038-e29db8169921" label="the well-ossified mesethmoid of the male is lacking in the female" symbol="0" about="#s9f336f12-20c3-4d04-a038-e29db8169921">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
@@ -655,6 +643,9 @@
                 <phen:bearer>
                   <phen:typeref about="http://data.bioontology.org/provisional_classes/3172ea30-3143-0136-3944-005056010073" />
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -960,7 +951,7 @@
       <char id="cb15deb50-8481-4f81-9c7c-25fdbb1445fc" label="Supratemporal sensory canal" states="s474df2a6-ddc1-4b9c-9ed7-0a22a73d3d66" />
       <char id="cb980cdc6-1ed1-49af-98ca-370fce5d3017" label="Supraoccipital crest" states="s401140d3-2b2a-461f-8a6e-a9591c996fb2" />
       <char id="c7a41b585-765f-4388-af8f-b4af6de95c04" label="Pharyngeal process of basioccipital process" about="#c7a41b585-765f-4388-af8f-b4af6de95c04" states="s3f7b300e-5768-4ab1-a12e-9ee1bfbaf2bf">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">NTR?</meta>
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">needs review</meta>
       </char>
       <char id="c54388fa1-c9c2-42d4-8006-1299a32cfd78" label="Mesethmoid" states="s7abff0ce-90cd-4f35-9c45-795945a2184d" />
       <char id="c7f144221-ed12-42b6-b868-9f7fedeaa9fe" label="Ectopterygoid" states="sb131794f-daa2-412c-b422-48461c818958" />
@@ -969,9 +960,7 @@
       <char id="c8f2eb492-46fc-4b54-b388-6674fee3b7d7" label="Retroarticular?" about="#c8f2eb492-46fc-4b54-b388-6674fee3b7d7" states="sede8445c-d1f3-441c-a589-d8ae24f4abbf">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">"There is uncertainty about the presence of the retroarticular. "</meta>
       </char>
-      <char id="c54a8e148-182e-4e86-b8d2-779266af6567" label="Kinethmoid" about="#c54a8e148-182e-4e86-b8d2-779266af6567" states="s75547015-a220-41a6-a636-1fbd9c5c0209">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">kinethmoid bone and carilage?  see uberon defs</meta>
-      </char>
+      <char id="c54a8e148-182e-4e86-b8d2-779266af6567" label="Kinethmoid" states="s75547015-a220-41a6-a636-1fbd9c5c0209" />
       <char id="c83efb1ee-8ef0-4944-b256-111009a35caa" label="Upper jaw bone (premaxilla likely absent)" states="s5ef0a655-8e86-4cb6-8250-1ed048b255e0" />
       <char id="cf8e4838a-b72c-4523-8a7a-e63378ef9c87" label="Infraorbital 2" states="s25793476-6761-4a80-9a7f-02678202a6ad" />
       <char id="c1a59ebf8-c1ae-4a46-ae60-e3ed21a9885a" label="Infraorbital 3" states="se97e3392-5375-4b7f-8e63-e47a1ba3530f" />
@@ -1029,7 +1018,7 @@
       <char id="c7face3b9-49c2-4525-bdcd-3ca3a97c63a2" label="Scales" states="s9b14b4a8-4199-4ac7-b44c-f6cfdc1ea4af" />
     </format>
     <matrix>
-      <row id="r876cfa81-afc4-42f3-bace-d0ec2413a622" otu="t7a2575b2-43a4-4d9b-9303-c8addbd405d0">
+      <row id="ra71ad7a7-87b6-436a-9a4c-4e98d30cb901" otu="t7a2575b2-43a4-4d9b-9303-c8addbd405d0">
         <cell char="c17f4154f-aadd-48fe-bcd1-7d5084a5052e" state="sfec53bbc-b7fd-440c-96cb-f6861cfbf770" />
         <cell char="cb474eb2a-c329-48a8-847e-a707b0c3aa18" state="s93ed00a7-3379-4954-b05d-7b5f98a5ec88" />
         <cell char="c593b51ed-8760-4b0f-bf85-b91a3e68cf96" state="s0543a39f-6828-4f44-b212-c7b38511e85a" />
@@ -1041,7 +1030,6 @@
         <cell char="c6919971f-0bf5-4afe-9f23-2b7a90debe51" state="s4946879c-6a00-4f86-9371-71474f02fb68" />
         <cell char="cb15deb50-8481-4f81-9c7c-25fdbb1445fc" state="sdd5419d0-b3f4-4a23-9b3c-b41d1de849e1" />
         <cell char="cb980cdc6-1ed1-49af-98ca-370fce5d3017" state="s23451c01-4a17-4eb1-beda-e737e2b97420" />
-        <cell char="c7a41b585-765f-4388-af8f-b4af6de95c04" state="se13028c7-3863-4d7c-90fe-a942c29ca805" />
         <cell char="c54388fa1-c9c2-42d4-8006-1299a32cfd78" state="s9f336f12-20c3-4d04-a038-e29db8169921" />
         <cell char="c7f144221-ed12-42b6-b868-9f7fedeaa9fe" state="scd335b62-8c4f-4481-a617-599a162f6852" />
         <cell char="c30b5ba2c-16e9-42fe-92be-0bedb7a39812" state="s3d9ab6a6-ac1a-4506-baca-9b3f9c4cf22c" />
@@ -1086,5 +1074,5 @@
       </row>
     </matrix>
   </characters>
-  <trees id="te0fe7862-81af-418b-b73e-6d796d44f88c" otus="t74d00aa4-e74f-4e77-8008-f82d358a25e6" />
+  <trees id="t3ac23866-02d7-4c90-9c57-cad983f38d78" otus="te4713350-290a-4c60-bd3f-ea194334ded0" />
 </nexml>
