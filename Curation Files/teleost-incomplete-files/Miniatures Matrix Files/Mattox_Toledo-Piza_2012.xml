@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
+  <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1111/j.1096-3642.2012.00830.x</meta>
+    <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Mattox, G. M., and Toledo-Piza, M. (2012) Phylogenetic study of the Characinae (Teleostei: Characiformes: Characidae). Zoological Journal of the Linnean Society 165:809–915</meta>
+    <meta xsi:type="LiteralMeta" property="dc:title">Mattox and Toledo-Piza (2012)</meta>
+  </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus about="#otus1" id="otus1" label="Taxa">
     <meta content="mesquite.lib.MesquiteProject@f782fdd" datatype="xsd:anySimpleType" id="meta267" property="bean:Project" xsi:type="LiteralMeta" />
@@ -421,18 +426,10 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002542" />
+                  <phen:typeref about="UBERON:2002273" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0007380" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="" />
+                  <phen:typeref about="PATO:0000467" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -443,18 +440,10 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002542" />
+                  <phen:typeref about="UBERON:2002285" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0007380" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="" />
+                  <phen:typeref about="PATO:0000467" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -463,14 +452,6 @@
         <state id="state273" label="spinoid" symbol="2" about="#state273">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0002542" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="" />
-                </phen:quality>
-              </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:0007380" />
@@ -489,15 +470,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002542" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0007380" />
+                  <phen:typeref about="UBERON:0007380">
+                    <phen:qualifier relation="BSPO:0000096">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003097" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -511,15 +490,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002542" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0007380" />
+                  <phen:typeref about="UBERON:0007380">
+                    <phen:qualifier relation="BSPO:0000096">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003097" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462" />
@@ -949,23 +926,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0002542" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0000152" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0007380" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/4e276aa0-ac79-0135-854f-005056010088" />
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -15090,7 +15051,7 @@
         </state>
       </states>
       <states id="states533">
-        <state id="state535" label="present, developed and con- tributing to two margins of orbital ring" symbol="0" about="#state535">
+        <state id="state535" label="present, developed and contributing to two margins of orbital ring" symbol="0" about="#state535">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -15160,7 +15121,7 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state536" label="present but small, contributing only to inner margin of orbital ring;" symbol="1" about="#state536">
+        <state id="state536" label="present but small, contributing only to inner margin of orbital ring" symbol="1" about="#state536">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -15214,7 +15175,7 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state537" label="absent as an autog- enous element" symbol="2" about="#state537">
+        <state id="state537" label="absent as an autogenous element" symbol="2" about="#state537">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -15654,7 +15615,7 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state553" label="present and short, formed only by extension of laminar margin of bone;" symbol="1" about="#state553">
+        <state id="state553" label="present and short, formed only by extension of laminar margin of bone" symbol="1" about="#state553">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -16580,7 +16541,7 @@
         </state>
       </states>
       <states id="states568">
-        <state id="state570" label="anterior tip not reaching region between premaxilla and maxilla;" symbol="0" about="#state570">
+        <state id="state570" label="anterior tip not reaching region between premaxilla and maxilla" symbol="0" about="#state570">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -17848,7 +17809,7 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state585" label="teeth cuspidate and anteroposteriorly flattened, with 3?7 cusps." symbol="2" about="#state585">
+        <state id="state585" label="teeth cuspidate and anteroposteriorly flattened, with 3?7 cusps" symbol="2" about="#state585">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -47288,5 +47249,5 @@
       </row>
     </matrix>
   </characters>
-  <trees id="tc0d8ca62-572f-4fa3-801b-b292f1899c56" otus="otus1" />
+  <trees id="t9acfe062-7e89-4380-ba1a-f423c1d8ad50" otus="otus1" />
 </nex:nexml>
