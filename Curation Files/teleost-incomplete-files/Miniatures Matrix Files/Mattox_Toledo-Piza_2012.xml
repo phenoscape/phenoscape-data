@@ -557,14 +557,6 @@
                 <phen:bearer>
                   <phen:typeref about="http://data.bioontology.org/provisional_classes/f1cd2d80-369d-0136-39c1-005056010088" />
                 </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="http://data.bioontology.org/provisional_classes/f1cd2d80-369d-0136-39c1-005056010088" />
-                </phen:bearer>
                 <phen:quality count="1">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
@@ -577,7 +569,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="http://data.bioontology.org/provisional_classes/f1cd2d80-369d-0136-39c1-005056010088" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/f1cd2d80-369d-0136-39c1-005056010088">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="http://data.bioontology.org/provisional_classes/aceb8980-3f7f-0136-2940-005056010074" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -12586,6 +12584,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t99a9e1c0-3d0a-4d8b-b2ba-65d331997c13" otus="otus1" />
   <trees id="t1f8cdc43-0938-4e5f-b129-9b93f688c2f4" otus="otus1" />
   <trees id="t3c3ff021-8a61-4cb1-907c-8346060bb9f5" otus="otus1" />
   <trees id="t3b60c4b6-ed51-4e6f-8cee-e3c7ca96c196" otus="otus1" />
