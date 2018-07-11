@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:references" />
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://scholar.google.com/scholar?hl=en&amp;btnG=Search&amp;q=intitle:Incorporating+ontogeny+into+the+matrix:+a+phylogenetic+evaluation+of+developmental+evidence+for+the+origin+of+modern+amphibians#0</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Anderson, J. S. (2007). Incorporating ontogeny into the matrix: a phylogenetic evaluation of developmental evidence for the origin of modern amphibians. In J. S. Anderson &amp; H.-D. Sues (Eds.), Major Transitions in Vertebrate Evolution (pp. 182–227). Indiana University Press</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Anderson (2007)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus about="#otus1" id="otus1" label="Taxa">
     <meta content="5477804405677615732" datatype="xsd:long" id="meta258" property="bean:AssignedIDNumber" xsi:type="LiteralMeta" />
     <meta content="Default Bush (id 6, version 252)" datatype="xsd:anySimpleType" id="meta257" property="bean:DefaultTree" xsi:type="LiteralMeta" />
@@ -2389,7 +2389,7 @@
                 <phen:quality>
                   <phen:typeref about="PATO:0002278" />
                   <phen:related_entity>
-                    <phen:typeref about="http://purl.bioontology.org/ontology/provisional/c2cbf22d-4c83-43a3-ae51-dcdfa15a7536" />
+                    <phen:typeref about="http://data.bioontology.org/provisional_classes/dbe94df0-6778-0136-39c1-005056010088" />
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -2475,7 +2475,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/45bb6a27-5bc5-4e24-9127-c4f7dd70846a" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/71de5f00-034c-0131-abbd-001ec9b0ea92" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0003861">
                       <phen:qualifier relation="BSPO:0000099">
@@ -4052,8 +4052,8 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/77659721-3bbb-473b-bf5f-49cc0d7447cd" />
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4124,8 +4124,8 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/43e83028-4821-437f-9e4c-4163b0d379ea" />
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -14136,6 +14136,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t0f59cee1-2aaf-4382-b7ef-f0663c2e978e" otus="otus1" />
   <trees id="t718b2522-1e4f-4325-8df6-1e76a58acc97" otus="otus1" />
   <trees id="tf07d5626-a534-40a7-8cd6-18bef05751e5" otus="otus1" />
   <trees id="t250253f3-e507-44ff-a4fb-0660ec491178" otus="otus1" />
