@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:references" />
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://dx.doi.org/10.1111/j.1096-0031.2005.00079.x</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Scott, E. (2005). A phylogeny of ranid frogs (Anura: Ranoidea: Ranidae), based on a simultaneous analysis of morphological and molecular data. Cladistics, 21, 507–574. doi:10.1111/j.1096-0031.2005.00079.x</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Scott (2005)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus about="#otus1438" id="otus1438" label="Taxa">
     <meta content="1173555906555044907" datatype="xsd:long" id="meta1743" property="bean:AssignedIDNumber" xsi:type="LiteralMeta" />
     <meta content="Default Bush (id 2, version 300)" datatype="xsd:anySimpleType" id="meta1742" property="bean:DefaultTree" xsi:type="LiteralMeta" />
@@ -915,7 +915,7 @@
                   <phen:typeref about="UBERON:0001105" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/3600bf10-f422-4b94-92ae-2f75bd2c6ceb" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/7bdf4530-034c-0131-abbd-001ec9b0ea92" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -962,7 +962,7 @@
                   <phen:typeref about="UBERON:0001105" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/3600bf10-f422-4b94-92ae-2f75bd2c6ceb" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/7bdf4530-034c-0131-abbd-001ec9b0ea92" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1447,7 +1447,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/3600bf10-f422-4b94-92ae-2f75bd2c6ceb" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/7bdf4530-034c-0131-abbd-001ec9b0ea92" />
                   <phen:related_entity>
                     <phen:typeref about="BSPO:0000682">
                       <phen:qualifier relation="BFO:0000050">
@@ -1506,8 +1506,8 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/43e83028-4821-437f-9e4c-4163b0d379ea" />
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1755,7 +1755,13 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/43e83028-4821-437f-9e4c-4163b0d379ea" />
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0001784" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3661,7 +3667,7 @@
                   <phen:typeref about="UBERON:0002498" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/aeb6f28c-22bc-46a4-bd85-170785075839" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/71de5f00-034c-0131-abbd-001ec9b0ea92" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -4482,7 +4488,7 @@
                   <phen:typeref about="UBERON:0006049" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a205bd8a-ffb3-49c6-b003-801e05b299a5" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/71de5f00-034c-0131-abbd-001ec9b0ea92" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0006050" />
                   </phen:related_entity>
@@ -4541,7 +4547,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a205bd8a-ffb3-49c6-b003-801e05b299a5" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/71de5f00-034c-0131-abbd-001ec9b0ea92" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0006049" />
                   </phen:related_entity>
@@ -4631,20 +4637,6 @@
         <state id="state2458" label="even width tip of digit, not enlarged and without terminal bead or circum-marginal groove" symbol="1" about="#state2458">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001840">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:0004318" />
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/3600bf10-f422-4b94-92ae-2f75bd2c6ceb" />
-                </phen:quality>
-              </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001840">
@@ -4798,7 +4790,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a205bd8a-ffb3-49c6-b003-801e05b299a5" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/71de5f00-034c-0131-abbd-001ec9b0ea92" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0006052" />
                   </phen:related_entity>
@@ -18029,6 +18021,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t251425cd-7d43-4f83-b4ce-e8634f3a73bc" otus="otus1438" />
   <trees id="t646dd394-49f2-4588-9a5f-d556ba44d335" otus="otus1438" />
   <trees id="tf50d966c-2040-4d2a-876d-434416b84baa" otus="otus1438" />
   <trees id="t57a7f02c-28db-404a-9fa6-518de6d51402" otus="otus1438" />
