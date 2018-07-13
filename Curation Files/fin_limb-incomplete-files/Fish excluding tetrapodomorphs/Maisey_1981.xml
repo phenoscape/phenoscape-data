@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:references" />
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://dx.doi.org/10.1111/j.1096-0031.1986.tb00462.x</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Maisey, J. G. (1981). Heads and Tails: A Chordate Phylogeny. Cladistics, 2(3), 201–256.</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Maisey (1981)</meta>
   </meta>
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus id="bbbc5d77-1619-42cc-b36f-2b855abce336">
     <otu id="bbb14449-ee58-4916-a8d4-6cc0d639dffa" label="Enteropneusta" about="#bbb14449-ee58-4916-a8d4-6cc0d639dffa">
       <meta xsi:type="LiteralMeta" property="rdfs:comment">Request to add to VTO</meta>
@@ -1306,34 +1306,8 @@
         <state id="u479bf0a0-1a53-4ae8-94d0-7565b6d803c3" label="present" symbol="1" />
       </states>
       <states id="dbe54d71-68e1-4f8a-a564-649d87d43bfc">
-        <state id="u73578ce3-4fc5-45fd-be30-01f3f3c45100" label="absent" symbol="0" about="#u73578ce3-4fc5-45fd-be30-01f3f3c45100">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001586" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a67a517b-adb3-4ea1-8f83-0085318a977d" />
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="u83fcdeef-6294-4a87-bd58-f71eeed946c0" label="present" symbol="1" about="#u83fcdeef-6294-4a87-bd58-f71eeed946c0">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001586" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/06bad35f-7f2b-4d2e-a57c-122665631087" />
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="u73578ce3-4fc5-45fd-be30-01f3f3c45100" label="absent" symbol="0" about="#u73578ce3-4fc5-45fd-be30-01f3f3c45100" />
+        <state id="u83fcdeef-6294-4a87-bd58-f71eeed946c0" label="present" symbol="1" about="#u83fcdeef-6294-4a87-bd58-f71eeed946c0" />
       </states>
       <states id="bdbd9970-8ca8-43be-8369-ef1441b18ccc">
         <state id="u5a9100a4-ab9f-419f-a6c0-3b290afe8f46" label="absent" symbol="0" />
@@ -2107,7 +2081,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/a67a517b-adb3-4ea1-8f83-0085318a977d" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/0fe941e0-06bf-0132-2b01-005056010074" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -2141,7 +2115,7 @@
                   </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="http://purl.bioontology.org/ontology/provisional/06bad35f-7f2b-4d2e-a57c-122665631087" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/53645390-034c-0131-abbd-001ec9b0ea92" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -22483,6 +22457,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t51c28f38-e0fc-4de8-b10a-9c8213e9a161" otus="bbbc5d77-1619-42cc-b36f-2b855abce336" />
   <trees id="t0d56ed09-35a2-4b21-81cb-a50a4ab1e91c" otus="bbbc5d77-1619-42cc-b36f-2b855abce336" />
   <trees id="t19b20536-34f6-4f97-b0ee-7166acaaa2ea" otus="bbbc5d77-1619-42cc-b36f-2b855abce336" />
   <trees id="t8d09a1e1-bd26-4512-9156-5261a83718ba" otus="bbbc5d77-1619-42cc-b36f-2b855abce336" />
