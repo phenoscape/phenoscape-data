@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
+  <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1139/z70-144</meta>
+    <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Tarasoff , F., and H. D. Fisher. 1970. Anatomy of the hind flippers of two species of seals with reference to thermoregulation. Canadian Journal of Zoology 48:821-829</meta>
+  </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="tdfb651b8-8c82-453a-aa60-9b079bdfaeb7" />
-  <characters id="8d487e57-9b18-4297-be24-753779bcb219" xsi:type="StandardCells" otus="tdfb651b8-8c82-453a-aa60-9b079bdfaeb7">
+  <otus id="t1cd64356-2470-43ee-8aa4-ca29c9fcb469">
+    <otu id="t3d6f540c-c1ee-4921-bc90-4d5cf736e01f" label="Callorhinus ursinus" about="#t3d6f540c-c1ee-4921-bc90-4d5cf736e01f">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0010481" />
+    </otu>
+    <otu id="tdaec3cfb-151e-4cca-80fd-ef9b13ff3f02" label="Phoca vitulina" about="#tdaec3cfb-151e-4cca-80fd-ef9b13ff3f02">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0010673" />
+    </otu>
+  </otus>
+  <characters id="8d487e57-9b18-4297-be24-753779bcb219" xsi:type="StandardCells" otus="t1cd64356-2470-43ee-8aa4-ca29c9fcb469">
     <format>
-      <states id="s06a8ce87-dc72-4aa1-8b98-75b89324ce24" />
-      <char id="c6dbfff4a-790a-42a5-bd20-1579ea33d9a2" label="" states="s06a8ce87-dc72-4aa1-8b98-75b89324ce24" />
+      <states id="s06a8ce87-dc72-4aa1-8b98-75b89324ce24">
+        <state id="s635797da-6ac2-4f04-9ca3-ff68b9dde756" label="Both surfaces of the fur seal's hind flipper are for the most part naked, with some hair appearing only on the dorsal surface as far distal as the tarsal region" symbol="0" about="#s635797da-6ac2-4f04-9ca3-ff68b9dde756">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000453" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="saae55a69-3edf-4256-8083-c43f7f04c725">
+        <state id="sffbaefbc-0f9e-4b72-9a54-6184986b1c1e" label="The external features of the harbor seal's hind flipper are very different from those of the fur seal. Both surfaces of the flipper are completely coveredby hair that varies from 0.4 to 4 mm in length." symbol="0" about="#sffbaefbc-0f9e-4b72-9a54-6184986b1c1e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000454" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char id="c6dbfff4a-790a-42a5-bd20-1579ea33d9a2" label="Both surfaces of the fur seal's hind flipper are for the most part naked, with some hair appearing only on the dorsal surface as far distal as the tarsal region" states="s06a8ce87-dc72-4aa1-8b98-75b89324ce24" />
+      <char id="c076b2b0e-8572-406e-bdad-73ceb13a1731" label="The external features of the harbor seal's hind flipper are very different from those of the fur seal. Both surfaces of the flipper are completely coveredby hair that varies from 0.4 to 4 mm in length" states="saae55a69-3edf-4256-8083-c43f7f04c725" />
     </format>
-    <matrix />
+    <matrix>
+      <row id="r0bd87f58-cd2d-4717-a27b-f4b0dbca9091" otu="t3d6f540c-c1ee-4921-bc90-4d5cf736e01f">
+        <cell char="c6dbfff4a-790a-42a5-bd20-1579ea33d9a2" state="s635797da-6ac2-4f04-9ca3-ff68b9dde756" />
+      </row>
+      <row id="r908482d1-9acd-4e9f-8e79-b4a11d7a8e7a" otu="tdaec3cfb-151e-4cca-80fd-ef9b13ff3f02">
+        <cell char="c076b2b0e-8572-406e-bdad-73ceb13a1731" state="sffbaefbc-0f9e-4b72-9a54-6184986b1c1e" />
+      </row>
+    </matrix>
   </characters>
-  <trees id="t64d8c9da-b0d8-420f-8c04-5144a33dd25a" otus="tdfb651b8-8c82-453a-aa60-9b079bdfaeb7" />
+  <trees id="t2c0c85f6-1c90-4f24-b183-744616d7a17b" otus="t1cd64356-2470-43ee-8aa4-ca29c9fcb469" />
 </nexml>
