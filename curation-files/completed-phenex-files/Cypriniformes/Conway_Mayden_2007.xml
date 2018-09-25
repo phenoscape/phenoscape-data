@@ -742,6 +742,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
     <otu id="u997b5eeb-2644-4830-be2f-31d2024c1f02" label="Ellopostoma" about="#u997b5eeb-2644-4830-be2f-31d2024c1f02">
       <meta xsi:type="LiteralMeta" property="rdfs:comment">not found on Conway &amp; Mayden taxon list, but in the matrix</meta>
       <meta xsi:type="LiteralMeta" property="ps:hasMatrixName">Ellopostoma</meta>
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0041167" />
     </otu>
     <otu id="e2d843c6-271c-4ce4-b858-69f942e69a85" label="" about="#e2d843c6-271c-4ce4-b858-69f942e69a85">
       <meta xsi:type="LiteralMeta" property="rdfs:comment">Outgroup is a taxon listed in the matrix and the tree</meta>
@@ -862,15 +863,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2001635" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001634" />
+                  <phen:typeref about="UBERON:2001910" />
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462" />
@@ -1119,7 +1112,13 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001243" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0000052">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002445" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1133,7 +1132,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001243" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000052" />
+                  <phen:typeref about="PATO:0002445" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1143,9 +1142,45 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
       <states id="u453d7a7f-9daa-483b-8404-30ca6aa956eb">
         <state id="u46bec701-d566-4179-af65-587dab6c4f7f" label="not overlapping Pb2" about="#u46bec701-d566-4179-af65-587dab6c4f7f" symbol="0">
           <meta xsi:type="LiteralMeta" property="ps:inFigure">3A, 3B</meta>
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001252" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002488" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001250" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
         </state>
         <state id="u7535f527-9901-42bc-875d-b74442c24d50" label="overlapping Pb2" about="#u7535f527-9901-42bc-875d-b74442c24d50" symbol="1">
           <meta xsi:type="LiteralMeta" property="ps:inFigure">3C, 3D</meta>
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001252" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002488" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001250" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
         </state>
       </states>
       <states id="e579bd8c-b660-48e5-ab42-d5c93c815a72">
@@ -1232,7 +1267,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001243" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000133" />
+                  <phen:typeref about="PATO:0002514" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1240,7 +1275,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001246" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000133" />
+                  <phen:typeref about="PATO:0002514" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1248,7 +1283,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001247" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000133" />
+                  <phen:typeref about="PATO:0002514" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1256,7 +1291,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001245" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000133" />
+                  <phen:typeref about="PATO:0002514" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1271,7 +1306,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001243" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000133" />
+                  <phen:typeref about="PATO:0002498" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1279,7 +1314,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001246" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000133" />
+                  <phen:typeref about="PATO:0002498" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1287,7 +1322,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001247" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000133" />
+                  <phen:typeref about="PATO:0002498" />
                 </phen:quality>
               </phen:phenotype_character>
               <phen:phenotype_character>
@@ -1295,7 +1330,7 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
                   <phen:typeref about="UBERON:2001245" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000133" />
+                  <phen:typeref about="PATO:0002498" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -3888,5 +3923,6 @@ Checked for polymorphs. There were none. AB 10/17/12</meta>
       </row>
     </matrix>
   </characters>
-  <trees id="t437ddebd-451d-4523-b16a-3dfdc6bcabd6" otus="u9ab433af-4f88-43f3-822e-392097ff63c8" />
+  <trees id="t83673288-876b-46fb-bc68-39ed04938ce0" otus="u9ab433af-4f88-43f3-822e-392097ff63c8" />
+  <trees id="t18337fd7-6afb-42af-80e6-ebf84bfbbd7c" otus="u9ab433af-4f88-43f3-822e-392097ff63c8" />
 </nexml>
