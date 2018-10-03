@@ -927,8 +927,34 @@
         <state id="state430" label="posterior margin of levator operculi situated anterior to posterior margin of adductor operculi" symbol="2" />
       </states>
       <states id="states431">
-        <state id="state433" label="length and width of similar size" symbol="0" />
-        <state id="state434" label="longer than wide" symbol="1" />
+        <state id="state433" label="length and width of similar size" symbol="0" about="#state433">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011238" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state434" label="longer than wide" symbol="1" about="#state434">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011238" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states435">
         <state id="state437" label="well developed" symbol="0" about="#state437">
@@ -1540,7 +1566,11 @@
         <state id="state488" label="canal positioned towards middle of infraorbital bones" symbol="1" />
       </states>
       <states id="states489">
-        <state id="state491" label="absent" symbol="0" />
+        <state id="state491" label="absent" symbol="0" about="#state491">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype />
+          </meta>
+        </state>
         <state id="state492" label="present" symbol="1" />
       </states>
       <states id="states493">
@@ -2365,17 +2395,7 @@
         </state>
       </states>
       <states id="states568">
-        <state id="state570" label="anterior tip not reaching region between premaxilla and maxilla" symbol="0" about="#state570">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0001681" />
-                </phen:bearer>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="state570" label="anterior tip not reaching region between premaxilla and maxilla" symbol="0" />
         <state id="state571" label="anterior tip reaching region between premaxilla and maxilla" symbol="1" />
         <state id="state572" label="anterior tip reaching horizontal arm of premaxilla near base of tooth series" symbol="2" />
       </states>
@@ -2594,11 +2614,106 @@
       <states id="states594">
         <state id="state596" label="toothed margin shorter than edentulous margin" symbol="0" about="#state596">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype />
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000006">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001091" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002397" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000006">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0002397" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
-        <state id="state597" label="toothed margin longer than edentulous margin" symbol="1" />
-        <state id="state598" label="toothed and edentulous margins of similar length" symbol="2" />
+        <state id="state597" label="toothed margin longer than edentulous margin" symbol="1" about="#state597">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000006">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001091" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002397" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000573" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000006">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0002397" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state598" label="toothed and edentulous margins of similar length" symbol="2" about="#state598">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000006">
+                    <phen:qualifier relation="BFO:0000051">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0001091" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0002397" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000122" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000006">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0002397" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states599">
         <state id="state601" label="directed slightly medially, forming obtuse angle with longitudinal axis of bone" symbol="0" about="#state601">
@@ -2671,11 +2786,14 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state952" symbol="2" label="" />
       </states>
       <states id="states603">
         <state id="state605" label="deeper posteriorly" symbol="0" />
-        <state id="state606" label="of similar depth along entire maxilla" symbol="1" />
+        <state id="state606" label="of similar depth along entire maxilla" symbol="1" about="#state606">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype />
+          </meta>
+        </state>
       </states>
       <states id="states607">
         <state id="state609" label="two" symbol="0" about="#state609">
@@ -2708,12 +2826,106 @@
         </state>
       </states>
       <states id="states611">
-        <state id="state613" label="continuous along regions of contact with neurocranium and maxilla" symbol="0" />
-        <state id="state614" label="separated by aperture delimiting medial rounded portion and straight lateral portion in contact with neurocranium and maxilla, respectively" symbol="1" about="#state614" />
+        <state id="state613" label="continuous along regions of contact with neurocranium and maxilla" symbol="0" about="#state613">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000671">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000620" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005011" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state614" label="separated by aperture delimiting medial rounded portion and straight lateral portion in contact with neurocranium and maxilla, respectively" symbol="1" about="#state614">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000671">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000620" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/9728aed0-0467-0132-2b01-005056010074" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states615">
-        <state id="state617" label="anterior margin of ectopterygoid situated posterior to anterior margin of palatine" symbol="0" />
-        <state id="state618" label="anterior margin of ectopterygoid situated anterior to anterior margin of palatine" symbol="1" />
+        <state id="state617" label="anterior margin of ectopterygoid situated posterior to anterior margin of palatine" symbol="0" about="#state617">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000671">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0011634" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001633" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000671">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:2000620" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state618" label="anterior margin of ectopterygoid situated anterior to anterior margin of palatine" symbol="1" about="#state618">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000671">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0011634" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001632" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000671">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:2000620" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states619">
         <state id="state621" label="absent" symbol="0" about="#state621">
@@ -3058,8 +3270,58 @@
         </state>
       </states>
       <states id="states647">
-        <state id="state649" label="present" symbol="0" />
-        <state id="state650" label="absent" symbol="1" />
+        <state id="state649" label="present" symbol="0" about="#state649">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000026">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2000240" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state650" label="absent" symbol="1" about="#state650">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000026">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2000240" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states661">
         <state id="state663" label="absent" symbol="0" about="#state663">
@@ -6334,9 +6596,11 @@
       </char>
       <char about="#char486" id="char486" label="Relative position of laterosensory canal on infraorbital bones" states="states485">
         <meta content="false" datatype="xsd:boolean" id="meta1064" property="nr:selected" xsi:type="LiteralMeta" />
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
       <char about="#char490" id="char490" label="Superficial neuromasts associated with pores and striae on surface of infraorbital series" states="states489">
         <meta content="false" datatype="xsd:boolean" id="meta1065" property="nr:selected" xsi:type="LiteralMeta" />
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
       <char about="#char494" id="char494" label="Antorbital" states="states493">
         <meta content="false" datatype="xsd:boolean" id="meta1066" property="nr:selected" xsi:type="LiteralMeta" />
@@ -6358,12 +6622,14 @@
       </char>
       <char about="#char520" id="char520" label="Overlap between laminar expansion of infraorbital 1 ventral to laterosensory canal and dorsolateral portion of maxilla" states="states519">
         <meta content="false" datatype="xsd:boolean" id="meta1072" property="nr:selected" xsi:type="LiteralMeta" />
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
       <char about="#char524" id="char524" label="Extent of development of anteroventral projection of infraorbital 2" states="states523">
         <meta content="false" datatype="xsd:boolean" id="meta1073" property="nr:selected" xsi:type="LiteralMeta" />
       </char>
       <char about="#char529" id="char529" label="Contribution of infraorbital 2 to outer border of orbital ring" states="states528">
         <meta content="false" datatype="xsd:boolean" id="meta1074" property="nr:selected" xsi:type="LiteralMeta" />
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
       <char about="#char534" id="char534" label="Infraorbital 4" states="states533">
         <meta content="false" datatype="xsd:boolean" id="meta1075" property="nr:selected" xsi:type="LiteralMeta" />
@@ -6373,6 +6639,7 @@
       </char>
       <char about="#char543" id="char543" label="Anterodorsal branch of laterosensory canal on infraorbital 6" states="states542">
         <meta content="false" datatype="xsd:boolean" id="meta1077" property="nr:selected" xsi:type="LiteralMeta" />
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
       <char about="#char547" id="char547" label="Length of anterodorsal branch of laterosensory canal on infraorbital 6" states="states546">
         <meta content="false" datatype="xsd:boolean" id="meta1078" property="nr:selected" xsi:type="LiteralMeta" />
@@ -6391,6 +6658,7 @@
       </char>
       <char about="#char569" id="char569" label="Relative length of nasal" states="states568">
         <meta content="false" datatype="xsd:boolean" id="meta1083" property="nr:selected" xsi:type="LiteralMeta" />
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">EQ requires 3 entities</meta>
       </char>
       <char about="#char574" id="char574" label="Mamilliform teeth outside mouth in adults" states="states573">
         <meta content="false" datatype="xsd:boolean" id="meta1084" property="nr:selected" xsi:type="LiteralMeta" />
@@ -6415,12 +6683,14 @@
       </char>
       <char about="#char604" id="char604" label="Depth of maxilla along longitudinal axis " states="states603">
         <meta content="false" datatype="xsd:boolean" id="meta1091" property="nr:selected" xsi:type="LiteralMeta" />
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
       <char about="#char608" id="char608" label="Number of tooth series on dentary" states="states607">
         <meta content="false" datatype="xsd:boolean" id="meta1092" property="nr:selected" xsi:type="LiteralMeta" />
       </char>
       <char about="#char612" id="char612" label="Form of anterior margin of palatine" states="states611">
         <meta content="false" datatype="xsd:boolean" id="meta1093" property="nr:selected" xsi:type="LiteralMeta" />
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
       <char about="#char616" id="char616" label="Relative positions of anterior margins of ectopterygoid and palatine" states="states615">
         <meta content="false" datatype="xsd:boolean" id="meta1094" property="nr:selected" xsi:type="LiteralMeta" />
@@ -12613,7 +12883,6 @@
         <cell char="char587" state="state588" />
         <cell char="char591" state="state592" />
         <cell char="char595" state="state597" />
-        <cell char="char600" state="state952" />
         <cell char="char604" state="state606" />
         <cell char="char608" state="state610" />
         <cell char="char616" state="state618" />
@@ -14253,7 +14522,6 @@
         <cell char="char587" state="state588" />
         <cell char="char591" state="state592" />
         <cell char="char595" state="state597" />
-        <cell char="char600" state="state952" />
         <cell char="char604" state="state606" />
         <cell char="char608" state="state610" />
         <cell char="char616" state="state618" />
@@ -15955,7 +16223,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t2b030913-4869-478e-a917-38fcbdd566c7" otus="otus1" />
+  <trees id="t77c05b5f-e758-4bc2-83aa-47aa35ec4af9" otus="otus1" />
   <trees id="t7823f8e2-1eac-4c73-adbf-efe2b2159227" otus="otus1" />
   <trees id="tb2ef0a9e-5ed2-41d4-9d33-beee0b86c229" otus="otus1" />
   <trees id="tc2a403ce-edc1-4a27-ae75-3ee5417d1a0d" otus="otus1" />
