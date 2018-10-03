@@ -2592,7 +2592,11 @@
         </state>
       </states>
       <states id="states594">
-        <state id="state596" label="toothed margin shorter than edentulous margin" symbol="0" />
+        <state id="state596" label="toothed margin shorter than edentulous margin" symbol="0" about="#state596">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype />
+          </meta>
+        </state>
         <state id="state597" label="toothed margin longer than edentulous margin" symbol="1" />
         <state id="state598" label="toothed and edentulous margins of similar length" symbol="2" />
       </states>
@@ -2754,8 +2758,34 @@
         </state>
       </states>
       <states id="states623">
-        <state id="state625" label="absent" symbol="0" about="#state625" />
-        <state id="state626" label="present" symbol="1" />
+        <state id="state625" label="absent" symbol="0" about="#state625">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001632" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state626" label="present" symbol="1" about="#state626">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001632" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002021" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states627">
         <state id="state629" label="absent" symbol="0" about="#state629">
@@ -3396,8 +3426,58 @@
         </state>
       </states>
       <states id="states678">
-        <state id="state680" label="absent" symbol="0" />
-        <state id="state681" label="present" symbol="1" />
+        <state id="state680" label="absent" symbol="0" about="#state680">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000672">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2000264" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state681" label="present" symbol="1" about="#state681">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000672">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2000264" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/d3368fe0-a957-0136-3329-005056010088" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states682">
         <state id="state684" label="straight to convex" symbol="0" about="#state684">
@@ -15604,7 +15684,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t69d94a51-0df9-4b1e-8618-0dfa198182e7" otus="otus1" />
+  <trees id="t5c4920d7-d17a-4499-8f0e-6531f26130b1" otus="otus1" />
   <trees id="t7823f8e2-1eac-4c73-adbf-efe2b2159227" otus="otus1" />
   <trees id="tb2ef0a9e-5ed2-41d4-9d33-beee0b86c229" otus="otus1" />
   <trees id="tc2a403ce-edc1-4a27-ae75-3ee5417d1a0d" otus="otus1" />
