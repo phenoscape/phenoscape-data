@@ -746,9 +746,69 @@
         </state>
       </states>
       <states id="states300">
-        <state id="state302" label="parallel to longitudinal axis of body" symbol="0" />
-        <state id="state303" label="ventrally inclined" symbol="1" />
-        <state id="state304" label="bifurcated, with dorsal and ventral branch" symbol="2" />
+        <state id="state302" label="parallel to longitudinal axis of body" symbol="0" about="#state302">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000154" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002272" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000013" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state303" label="ventrally inclined" symbol="1" about="#state303">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000154" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002501" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state304" label="bifurcated, with dorsal and ventral branch" symbol="2" about="#state304">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000154" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001784" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states305">
         <state id="state307" label="present" symbol="0" about="#state307">
@@ -788,6 +848,40 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001920" />
                 </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002259" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001751" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001920" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002259" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001750" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001920" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002463" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000070">
+                      <phen:qualifier relation="BSPO:0000096">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:2001751" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -16306,7 +16400,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t5ab1e154-1a80-49fb-9c3f-3e68e7a13450" otus="otus1" />
+  <trees id="t5979240d-2804-48e4-81ba-3faa4607e9d9" otus="otus1" />
   <trees id="t7823f8e2-1eac-4c73-adbf-efe2b2159227" otus="otus1" />
   <trees id="tb2ef0a9e-5ed2-41d4-9d33-beee0b86c229" otus="otus1" />
   <trees id="tc2a403ce-edc1-4a27-ae75-3ee5417d1a0d" otus="otus1" />
