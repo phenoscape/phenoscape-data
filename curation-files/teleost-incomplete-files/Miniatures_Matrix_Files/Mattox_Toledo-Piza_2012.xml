@@ -4250,10 +4250,50 @@
         <state id="state695" label="space absent, with posterior arms fused" symbol="2" />
       </states>
       <states id="states696">
-        <state id="state698" label="canal opening on anterior region of anterior ceratohyal" symbol="0" />
+        <state id="state698" label="canal opening on anterior region of anterior ceratohyal" symbol="0" about="#state698">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0005744" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002261" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000071">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0011611" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
         <state id="state699" label="canal opening on posterodorsal region of anterior ceratohyal" symbol="1" about="#state699">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype />
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0005744" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002261" />
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000030">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:0011611" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
       </states>
@@ -7342,7 +7382,6 @@
       </char>
       <char about="#char697" id="char697" label="Extent of canal on anterior ceratohyal" states="states696">
         <meta content="false" datatype="xsd:boolean" id="meta1111" property="nr:selected" xsi:type="LiteralMeta" />
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
       </char>
       <char about="#char701" id="char701" label="Articulation between anterior and posterior ceratohyals in region of canal" states="states700">
         <meta content="false" datatype="xsd:boolean" id="meta1112" property="nr:selected" xsi:type="LiteralMeta" />
@@ -16817,7 +16856,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t0729c2ae-5988-465e-8766-d00372d8672d" otus="otus1" />
+  <trees id="td3a82a0c-6ff3-4d0b-b6c8-8c2c014f8c18" otus="otus1" />
   <trees id="t7823f8e2-1eac-4c73-adbf-efe2b2159227" otus="otus1" />
   <trees id="tb2ef0a9e-5ed2-41d4-9d33-beee0b86c229" otus="otus1" />
   <trees id="tc2a403ce-edc1-4a27-ae75-3ee5417d1a0d" otus="otus1" />
