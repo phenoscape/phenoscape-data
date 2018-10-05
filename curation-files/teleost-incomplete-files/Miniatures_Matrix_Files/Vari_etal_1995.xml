@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xsi:type="LiteralMeta" property="dc:description">p. 2: Observations on osteological characters in outgroups to Caenotropus and Chilodus are based on specimens cited in Vari (1989a:10-l 1) and Vari (1995).</meta>
+  <meta xsi:type="LiteralMeta" property="dc:description">p. 2: Observations on osteological characters in outgroups to Caenotropus and Chilodus are based on specimens cited in Vari (1989a:10-l 1) and Vari (1995).
+Regarding characters 1-26 (p. 10):  Vari (1983:51-52) described an extensive series of derived modifications, largely of the gill-arches, suspensorium, pecto- ral girdle, and anterior portions of the vertebral column, that define the Chilodontidae as a monophyletic lineage. These features are summarized (synapomorphies 1-26), and the reader is referred to that publication for a more detailed description and analysis of the features and a discussion of the generalized conditions in outgroups.</meta>
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://repository.si.edu/handle/10088/5190</meta>
@@ -1012,6 +1013,41 @@
             </phen:phenotype>
           </meta>
         </state>
+        <state id="s1d9bbbf4-c3fa-4a32-94e1-977f7fdbb3b0" label="Not as in state 0" symbol="1" about="#s1d9bbbf4-c3fa-4a32-94e1-977f7fdbb3b0">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000026">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001408" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002489" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="BSPO:0000030">
+                      <phen:qualifier relation="BFO:0000050">
+                        <phen:holds_in_relation_to>
+                          <phen:typeref about="UBERON:2001407" />
+                        </phen:holds_in_relation_to>
+                      </phen:qualifier>
+                    </phen:typeref>
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s887e52cb-c957-41c2-9714-0d7552c765ca">
         <state id="sbee5d867-29d2-41d7-9a16-7e7c9f8f7824" label="The reduction of the posterior portion of the supraorbital laterosensory canal in the frontal" symbol="0" about="#sbee5d867-29d2-41d7-9a16-7e7c9f8f7824">
@@ -1025,7 +1061,7 @@
                         <phen:typeref about="UBERON:2001810">
                           <phen:qualifier relation="BFO:0000050">
                             <phen:holds_in_relation_to>
-                              <phen:typeref about="UBERON:0004865" />
+                              <phen:typeref about="UBERON:0004866" />
                             </phen:holds_in_relation_to>
                           </phen:qualifier>
                         </phen:typeref>
@@ -1035,6 +1071,32 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s701ec87c-0df0-45bf-bfc9-8929773b3d79" label="the widespread occurrence of a complete supraorbital laterosensory canal segment contacting the pterotic in characiforms, including proximate outgroups to the Chilodontidae" symbol="1" about="#s701ec87c-0df0-45bf-bfc9-8929773b3d79">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000072">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001810">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0004866" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -1064,6 +1126,28 @@
                   <phen:typeref about="PATO:0001505" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:0003278" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001091" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0001834" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001091" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001667" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0001835" />
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -1424,6 +1508,32 @@
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s5ae1ddb3-f49c-4e01-a9ea-81e21a2a2e71" label="The reduction of the posterior portion of the supraorbital laterosensory canal in the frontal [see Character 18]" symbol="1" about="#s5ae1ddb3-f49c-4e01-a9ea-81e21a2a2e71">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000072">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001810">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0004866" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -2584,7 +2694,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t371d66ce-3a32-48b3-9aa8-13db980b08cb" otus="td8e949c9-6505-46d4-9c41-868d3c11ab33" />
+  <trees id="t63bf763a-671e-4d70-9f2d-bc0f9050d205" otus="td8e949c9-6505-46d4-9c41-868d3c11ab33" />
   <trees id="t0c4319dc-9d6f-4015-ae17-015f639c68b4" otus="td8e949c9-6505-46d4-9c41-868d3c11ab33" />
   <trees id="t36746b23-878f-4598-9848-265b70cd80d3" otus="td8e949c9-6505-46d4-9c41-868d3c11ab33" />
   <trees id="t937cc232-db52-4627-a3cb-856f662faa5f" otus="td8e949c9-6505-46d4-9c41-868d3c11ab33" />
