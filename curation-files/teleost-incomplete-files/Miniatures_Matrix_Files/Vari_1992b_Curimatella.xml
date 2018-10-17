@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.5479/si.00810282.533</meta>
@@ -71,36 +71,195 @@
   <characters id="u34107609-ddd7-4c2d-9b8e-ff5921d87a62" xsi:type="StandardCells" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e">
     <format>
       <states id="s2e26d804-d3b0-444c-a36b-cdfaaf592080">
-        <state id="s79919bc9-6ed0-4cff-a8b0-d8d02bdee8b5" label="Four of the species of Curimatella (alburna, dorsalis, immaculata, and meyeri) retain this generalized condition of the mesopterygoid" symbol="0" />
-        <state id="s4777578f-9fd8-4072-b1ba-8932a7d1142f" label="Curimatella lepidura, although having a fully developed ligament, has the dorsomedial process on the mesopterygoid notably much less developed (Figure 3), a hypothesized autapomorphy for the species. " symbol="1" />
+        <state id="s79919bc9-6ed0-4cff-a8b0-d8d02bdee8b5" label="Four of the species of Curimatella (alburna, dorsalis, immaculata, and meyeri) retain this generalized condition of the mesopterygoid" symbol="0" about="#s79919bc9-6ed0-4cff-a8b0-d8d02bdee8b5">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000069">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:4300081" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s4777578f-9fd8-4072-b1ba-8932a7d1142f" label="Curimatella lepidura, although having a fully developed ligament, has the dorsomedial process on the mesopterygoid notably much less developed (Figure 3), a hypothesized autapomorphy for the species. " symbol="1" about="#s4777578f-9fd8-4072-b1ba-8932a7d1142f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000069">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:4300081" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sdc7141b0-22d2-4305-bb61-3b10f906b6e1">
-        <state id="se6cc6096-d23c-4251-84f9-7bf019f7d04c" label="The metapterygoid in all members of Curimatella with the exception of C. lepidura is relatively wide in the region dorsal to the metapterygoid-quadrate fenestra" symbol="0" />
-        <state id="s842c41a5-3274-4d79-bf34-28abe09da4a0" label="Curimatella lepidura differs from the generalized condition in the genus in having the central portion of the metapterygoid reduced to a narrow bar-like structure (Figure 3). " symbol="1" />
+        <state id="se6cc6096-d23c-4251-84f9-7bf019f7d04c" label="The metapterygoid in all members of Curimatella with the exception of C. lepidura is relatively wide in the region dorsal to the metapterygoid-quadrate fenestra" symbol="0" about="#se6cc6096-d23c-4251-84f9-7bf019f7d04c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000075">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000240" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="BSPO:0000098">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2002110" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000600" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s842c41a5-3274-4d79-bf34-28abe09da4a0" label="Curimatella lepidura differs from the generalized condition in the genus in having the central portion of the metapterygoid reduced to a narrow bar-like structure (Figure 3). " symbol="1" about="#s842c41a5-3274-4d79-bf34-28abe09da4a0">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000075">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000240" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                    <phen:qualifier relation="BSPO:0000098">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2002110" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="saf9a58bf-4887-4cd4-86ee-e4d43cd6dea3">
-        <state id="s717f7ae7-51c9-457c-b0cc-a0535eac6f17" label="All species of Curimatella, other than C. lepidura, retain the form of the medial bony spur generalized for the other members of the terminal polytomy within the Curimatidae defined by Vari (1989a:50)" symbol="0" />
-        <state id="se72bd8b0-f0b6-4b64-ab5f-e10efeaf8393" label="Curimatella lepidura, in contrast, has the distal portion of the process expanded ventrally into a broad, bowl-like process (Figure 2) that contacts the ventral surface of the epibranchial organ" symbol="1" />
-      </states>
-      <states id="s2d8a5d64-173c-414f-877c-dcd4554daf16">
-        <state id="s8171c6b9-b225-4452-95fb-170f1672ae27" label="" symbol="0" />
-        <state id="s197c2f53-c8ec-4004-9403-091a8264fd6b" label="" symbol="1" />
-        <state id="s91103133-631d-4248-919e-d908e5198f45" label="" symbol="2" />
-        <state id="s943b3ef5-b8b9-429a-b731-0762619959f1" label="" symbol="3" />
+        <state id="s717f7ae7-51c9-457c-b0cc-a0535eac6f17" label="All species of Curimatella, other than C. lepidura, retain the form of the medial bony spur generalized for the other members of the terminal polytomy within the Curimatidae defined by Vari (1989a:50)" symbol="0" about="#s717f7ae7-51c9-457c-b0cc-a0535eac6f17">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000083">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2001908" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="se72bd8b0-f0b6-4b64-ab5f-e10efeaf8393" label="Curimatella lepidura, in contrast, has the distal portion of the process expanded ventrally into a broad, bowl-like process (Figure 2) that contacts the ventral surface of the epibranchial organ" symbol="1" about="#se72bd8b0-f0b6-4b64-ab5f-e10efeaf8393">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000083">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2001908" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/4112aa30-b47d-0136-90bc-005056010088" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000083">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:2001908" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sbe97045d-6f17-4d84-9eb9-2881810555ec" />
       <states id="sabf2155b-5acf-457c-8995-d5aa692b993a" />
       <char id="c578144ac-91b4-4b16-8f9e-f529bb9196f9" label="The dorsomedial region of the mesopterygoid onto which this ligament attaches is typically expanded into dorsomedial process" states="s2e26d804-d3b0-444c-a36b-cdfaaf592080" about="#c578144ac-91b4-4b16-8f9e-f529bb9196f9">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">page 6</meta>
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">page 6; Dillman #186</meta>
       </char>
       <char id="c308ce20f-7d81-4ae2-880d-90a188740c33" label="The metapterygoid in all members of Curimatella with the exception of C. lepidura is relatively wide in the region dorsal to the metapterygoid-quadrate fenestra. Curimatella lepidura differs from the generalized condition in the genus in having the central portion of the metapterygoid reduced to a narrow bar-like structure (Figure 3). " states="sdc7141b0-22d2-4305-bb61-3b10f906b6e1" about="#c308ce20f-7d81-4ae2-880d-90a188740c33">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">page 6</meta>
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">page 6; Dillman #203</meta>
       </char>
       <char id="cfeccf0a9-0914-4e13-b993-02bc5446b284" label="The fourth epibranchial demonstrates the largest number of modifications of any component of the gill-arches in the Curimatidae. One of the most distinctive features is the development of a bony spur (Vari, 1989a:15) that extends medially from the main body of the bone in all curimatids other than the species of Curimatopsis" states="saf9a58bf-4887-4cd4-86ee-e4d43cd6dea3" about="#cfeccf0a9-0914-4e13-b993-02bc5446b284">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">pages 5-6</meta>
-      </char>
-      <char id="cf61d4a59-b3ba-49e6-8cf0-ac1498c403e9" label="Modal number of vertebrae -- Dillmann 394" states="s2d8a5d64-173c-414f-877c-dcd4554daf16" about="#cf61d4a59-b3ba-49e6-8cf0-ac1498c403e9">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">page 7, Table 2</meta>
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">pages 5-6; Dillman #306</meta>
       </char>
       <char id="c6164a67b-a3d7-4a67-9aff-825b9376e294" label="scales on caudal fin..." about="#c6164a67b-a3d7-4a67-9aff-825b9376e294" states="sbe97045d-6f17-4d84-9eb9-2881810555ec">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">pages 4-5</meta>
@@ -137,6 +296,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t584da358-489a-4c81-a18b-40fef6264613" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e" />
   <trees id="tae61f43f-6280-493f-8865-cf4859994429" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e" />
   <trees id="tfaff5bcb-f004-4f82-a7d2-93a7486ca164" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e" />
   <trees id="t8cd6002a-9433-472d-9cf5-c9b7b0dd0917" otus="t9d1f32ac-7df8-45fa-96af-f1f791ed609e" />
