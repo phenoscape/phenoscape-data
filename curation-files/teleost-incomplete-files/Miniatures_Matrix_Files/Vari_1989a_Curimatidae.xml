@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.5479/si.00810282.471</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Vari, R. P. (1989a). A phylogenetic study of the Neotropical characiform family Curimatidae (Pisces: Ostariophysi). Smithsonian Contributions to Zoology 471:iv+1-71</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Vari (1989a)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus id="td17a58c3-4f05-4b0e-a575-3ed83d40c81f">
     <otu id="ceb0e86c-377f-4f46-a6c4-1c10a9fa6567" label="Abramites hypselonotus " about="#ceb0e86c-377f-4f46-a6c4-1c10a9fa6567">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0064719" />
@@ -2674,13 +2674,26 @@
                   <phen:typeref about="http://data.bioontology.org/provisional_classes/75071100-ecee-0135-3694-005056010073" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000467" />
+                  <phen:typeref about="PATO:0000587" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="s98f15e34-f611-4aaf-b31d-bd9b9e90d60b" label="The ethmo-palatine cartilage is usually a relatively well developed thick body extending along most of the anterior margin of the palatine and much of the rear of the dorsal process of the premaxilla (e.g., Steindachnerina argentea, Figure 40B) to which it is relatively closely joined by connective tissue bands" symbol="1" />
+        <state id="s98f15e34-f611-4aaf-b31d-bd9b9e90d60b" label="The ethmo-palatine cartilage is usually a relatively well developed thick body extending along most of the anterior margin of the palatine and much of the rear of the dorsal process of the premaxilla (e.g., Steindachnerina argentea, Figure 40B) to which it is relatively closely joined by connective tissue bands" symbol="1" about="#s98f15e34-f611-4aaf-b31d-bd9b9e90d60b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/75071100-ecee-0135-3694-005056010073" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s22d39f98-e400-426e-a78d-09ae796e2df7">
         <state id="sb210d40e-d174-49c1-a944-2fca630a3f49" label="Reduction in the degree of scale poring of the laterosensory canal system of the body" symbol="0" about="#sb210d40e-d174-49c1-a944-2fca630a3f49">
@@ -9529,6 +9542,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t637d03a2-d2ce-44d5-9dea-5c7235eda551" otus="td17a58c3-4f05-4b0e-a575-3ed83d40c81f" />
   <trees id="t4bb3c7dc-fbfd-4edc-af3f-82d24c89bf66" otus="td17a58c3-4f05-4b0e-a575-3ed83d40c81f" />
   <trees id="tdfb71568-daea-43b3-9d93-d274d2e3c8ad" otus="td17a58c3-4f05-4b0e-a575-3ed83d40c81f" />
   <trees id="td348a7cf-5c72-4dd5-9ab4-6423591c9614" otus="td17a58c3-4f05-4b0e-a575-3ed83d40c81f" />
