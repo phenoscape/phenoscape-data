@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://repository.si.edu/handle/10088/5203</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Vari, R. P. (1989b). Systematics of the Neotropical characiform genus Curimata Bosc (Pisces: Characiformes). Smithsonian Contributions to Zoology 474:iii+1-63</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Vari (1989b)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus about="#otus1" id="otus1" label="Taxa">
     <meta content="mesquite.lib.MesquiteProject@27c99483" datatype="xsd:anySimpleType" id="meta59" property="bean:Project" xsi:type="LiteralMeta" />
     <meta content="Default Bush (id 1, version 52)" datatype="xsd:anySimpleType" id="meta58" property="bean:DefaultTree" xsi:type="LiteralMeta" />
@@ -1659,7 +1659,26 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="s12b9e624-1849-434f-a5b0-0bb2b8881f04" label="This widened form of the fifth upper pharyngeal tooth plate in this subunit of Curimata contrasts with the narrower form of the element in the remaining members of the genus and in most other curimatids" symbol="1" />
+        <state id="s12b9e624-1849-434f-a5b0-0bb2b8881f04" label="This widened form of the fifth upper pharyngeal tooth plate in this subunit of Curimata contrasts with the narrower form of the element in the remaining members of the genus and in most other curimatids" symbol="1" about="#s12b9e624-1849-434f-a5b0-0bb2b8881f04">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000018">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001656" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000599" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states169">
         <state id="state171" label="The highly convex longitudinal ridge on the dorsal surface of the third hypobranchial (H3)" symbol="0" about="#state171">
@@ -2818,7 +2837,7 @@
                               <phen:typeref about="UBERON:0004529">
                                 <phen:qualifier relation="BFO:0000050">
                                   <phen:holds_in_relation_to>
-                                    <phen:typeref about="BSPO:0000029">
+                                    <phen:typeref about="BSPO:0000027">
                                       <phen:qualifier relation="BFO:0000050">
                                         <phen:holds_in_relation_to>
                                           <phen:typeref about="UBERON:2001235" />
@@ -2856,7 +2875,7 @@
                               <phen:typeref about="UBERON:0004529">
                                 <phen:qualifier relation="BFO:0000050">
                                   <phen:holds_in_relation_to>
-                                    <phen:typeref about="BSPO:0000029">
+                                    <phen:typeref about="BSPO:0000027">
                                       <phen:qualifier relation="BFO:0000050">
                                         <phen:holds_in_relation_to>
                                           <phen:typeref about="UBERON:2001235" />
@@ -4265,6 +4284,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t8acdaf44-aa3d-4258-bd32-763ce909e47d" otus="otus1" />
   <trees id="te4ccd98e-a482-4bea-bc02-2a51979dd0be" otus="otus1" />
   <trees id="t16c8ba2a-8ff5-4ce3-9e1c-c167374c81ab" otus="otus1" />
   <trees id="te98e22ca-5e2f-43ec-b7de-cb3a27b851bc" otus="otus1" />
