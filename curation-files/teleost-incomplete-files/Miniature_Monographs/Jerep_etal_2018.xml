@@ -7,19 +7,52 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Jerep et al. (2018)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="t1cc70b6e-16d4-44a4-aadc-aed454a71938" />
-  <characters id="491fd438-4153-4c89-8ef0-7d180fb23af0" xsi:type="StandardCells" otus="t1cc70b6e-16d4-44a4-aadc-aed454a71938">
+  <otus id="tb574994c-acb5-4c00-ace9-df7efbd3331d">
+    <otu id="tea933a1b-a0ce-4064-a09b-5b6cee3d5b48" label="Serrapinnus malabarbai" about="#tea933a1b-a0ce-4064-a09b-5b6cee3d5b48">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/a87b84d0-dfaa-0136-90bd-005056010088" />
+    </otu>
+  </otus>
+  <characters id="491fd438-4153-4c89-8ef0-7d180fb23af0" xsi:type="StandardCells" otus="tb574994c-acb5-4c00-ace9-df7efbd3331d">
     <format>
       <states id="s58099085-c318-4dee-9dff-a3e96df81e66">
-        <state id="s834a2d43-f253-4fce-b402-236cf93e356b" label="" symbol="0" about="#s834a2d43-f253-4fce-b402-236cf93e356b">
+        <state id="s834a2d43-f253-4fce-b402-236cf93e356b" label="reduction of the infraorbital bone series with the absence of the fourth to sixth" symbol="0" about="#s834a2d43-f253-4fce-b402-236cf93e356b">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype />
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001409" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000495" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
       </states>
-      <char id="c3c58ab02-4cba-4fa5-bc1b-b761cd5e7a01" label="" states="s58099085-c318-4dee-9dff-a3e96df81e66" />
+      <char id="c3c58ab02-4cba-4fa5-bc1b-b761cd5e7a01" label="Infraorbital bones" states="s58099085-c318-4dee-9dff-a3e96df81e66" />
     </format>
-    <matrix />
+    <matrix>
+      <row id="r71e669ef-ea82-46cc-bdeb-51ac0f80c16d" otu="tea933a1b-a0ce-4064-a09b-5b6cee3d5b48">
+        <cell char="c3c58ab02-4cba-4fa5-bc1b-b761cd5e7a01" state="s834a2d43-f253-4fce-b402-236cf93e356b" />
+      </row>
+    </matrix>
   </characters>
-  <trees id="t156a4458-9455-42f6-b27b-27ad4dc03e66" otus="t1cc70b6e-16d4-44a4-aadc-aed454a71938" />
+  <trees id="t502e6404-96e9-4c5b-a6a2-79e735134ab7" otus="tb574994c-acb5-4c00-ace9-df7efbd3331d" />
 </nexml>
