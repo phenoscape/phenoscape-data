@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://dx.doi.org/10.1590/1982-0224-20130171</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Toledo-Piza, M., G. M. T. Mattox, and R. Britz (2014). Priocharax nanus, a new miniature characid from the rio Negro, Amazon basin (Ostariophysi: Characiformes), with an updated list of miniature Neotropical freshwater fishes. Neotropical Ichthyology 12(2): 229-246</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Toledo-Piza et al. (2014)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus id="t79369f66-6ccb-4054-a062-665b3e61ff72">
     <otu id="u16385792-0ba3-4e5c-9cb0-44934d16dc7d" label="Priocharax nanus" about="#u16385792-0ba3-4e5c-9cb0-44934d16dc7d">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_9046507" />
@@ -318,10 +318,63 @@
         </state>
       </states>
       <states id="sbbff95b6-176a-4b45-bd34-f9f17b7d74e9">
-        <state id="sd2d9fc20-5b74-45a2-b862-8e3a3e2c4982" label="" symbol="0" about="#sd2d9fc20-5b74-45a2-b862-8e3a3e2c4982" />
+        <state id="sd2d9fc20-5b74-45a2-b862-8e3a3e2c4982" label="All jaw teeth small, conical and lingually curved to a moderate extent" symbol="0" about="#sd2d9fc20-5b74-45a2-b862-8e3a3e2c4982">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002021" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002021" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005019" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005019" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s87492955-1257-4962-920e-83fe524268a6">
-        <state id="sfd6e4815-e8a6-40d8-af12-da4d01e6f95c" label="" symbol="0" about="#sfd6e4815-e8a6-40d8-af12-da4d01e6f95c">
+        <state id="sfd6e4815-e8a6-40d8-af12-da4d01e6f95c" label="ii.8(2) or 9*(35)" symbol="0" about="#sfd6e4815-e8a6-40d8-af12-da4d01e6f95c">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -336,9 +389,11 @@
           </meta>
         </state>
       </states>
-      <states id="s4b199d34-d893-4f0c-b5fa-57f0a8fab5e2" />
+      <states id="s4b199d34-d893-4f0c-b5fa-57f0a8fab5e2">
+        <state id="s285bba7b-a17b-4616-82da-b0846e26ee4a" label="incompletely divided longitudinally, articulating anteriorly with vertically elongated scapulocoracoid cartilage and posteriorly with larval-like pectoral-fin fold supported only by actinotrichia" symbol="0" />
+      </states>
       <states id="s011a679f-6ee6-4bfb-9465-d5603a8f2f28">
-        <state id="sc3cf0115-b4eb-4393-8e63-a98b89454251" label="" symbol="0" about="#sc3cf0115-b4eb-4393-8e63-a98b89454251">
+        <state id="sc3cf0115-b4eb-4393-8e63-a98b89454251" label="absent" symbol="0" about="#sc3cf0115-b4eb-4393-8e63-a98b89454251">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -354,7 +409,7 @@
         </state>
       </states>
       <states id="sc25ced65-dfaf-48e0-a204-5886b672b1ea">
-        <state id="s3f50d788-a0a3-48d0-921f-bcf2e9bd4e62" label="" symbol="0" about="#s3f50d788-a0a3-48d0-921f-bcf2e9bd4e62">
+        <state id="s3f50d788-a0a3-48d0-921f-bcf2e9bd4e62" label="Endoskeletal bones of pectoral girdle absent, exoskeletal part with posttemporal, supracleithrum, cleithrum and two postcleithra" symbol="0" about="#s3f50d788-a0a3-48d0-921f-bcf2e9bd4e62">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -547,7 +602,20 @@
         <state id="s7bba16bd-6cb8-4501-af8b-80b9b0a133c9" label="" symbol="0" about="#s7bba16bd-6cb8-4501-af8b-80b9b0a133c9" />
       </states>
       <states id="sc7943796-304b-4b9e-ac64-10926ca721bc">
-        <state id="s2957555f-c6c4-4e36-bad2-0d3d7fb9e816" label="Weberian apparatus well developed, all components ossified" symbol="0" />
+        <state id="s2957555f-c6c4-4e36-bad2-0d3d7fb9e816" label="Weberian apparatus well developed, all components ossified" symbol="0" about="#s2957555f-c6c4-4e36-bad2-0d3d7fb9e816">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001188" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s910bdce0-9b6e-4721-a96a-7dfedd12c9e1">
         <state id="s75fc95f8-5a83-4c52-9ef0-1950fbd9c77d" label="Claustrum present as tiny, circular bone" symbol="0" about="#s75fc95f8-5a83-4c52-9ef0-1950fbd9c77d">
@@ -629,10 +697,10 @@
       <char id="cb86c22a6-60b8-4ead-b5d2-cbd81a751365" label="Dorsal-fin rays ii.8(2) or 9*(35)" about="#cb86c22a6-60b8-4ead-b5d2-cbd81a751365" states="s87492955-1257-4962-920e-83fe524268a6">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 232</meta>
       </char>
-      <char id="caa915394-a0e0-4374-bdbc-b296af984b30" label="Cartilaginous pectoral radial plate incompletely divided longitudinally, articulating anteriorly with vertically elongated scapulocoracoid cartilage and posteriorly with larval-like pectoral-fin fold supported only by actinotrichia." about="#caa915394-a0e0-4374-bdbc-b296af984b30" states="s4b199d34-d893-4f0c-b5fa-57f0a8fab5e2">
+      <char id="caa915394-a0e0-4374-bdbc-b296af984b30" label="Cartilaginous pectoral radial plate" about="#caa915394-a0e0-4374-bdbc-b296af984b30" states="s4b199d34-d893-4f0c-b5fa-57f0a8fab5e2">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 232</meta>
       </char>
-      <char id="c2f626519-d5fc-4583-b9d6-9321b60af731" label="Pectoral-fin rays absent" about="#c2f626519-d5fc-4583-b9d6-9321b60af731" states="s011a679f-6ee6-4bfb-9465-d5603a8f2f28">
+      <char id="c2f626519-d5fc-4583-b9d6-9321b60af731" label="Pectoral-fin rays" about="#c2f626519-d5fc-4583-b9d6-9321b60af731" states="s011a679f-6ee6-4bfb-9465-d5603a8f2f28">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 232</meta>
       </char>
       <char id="cb00057c2-d27a-44e5-8a4e-c5873d1461d4" label="Endoskeletal bones of pectoral girdle absent, exoskeletal part with posttemporal, supracleithrum, cleithrum and two postcleithra" about="#cb00057c2-d27a-44e5-8a4e-c5873d1461d4" states="sc25ced65-dfaf-48e0-a204-5886b672b1ea">
@@ -674,10 +742,10 @@
       <char id="c53550948-ee9f-46a4-8394-e7746d29578b" label="Upper limb gill-rakers 3(7) or 4(4), lower limb gill-rakers 9(6) or 10(5)" about="#c53550948-ee9f-46a4-8394-e7746d29578b" states="s2fd4866c-9b2e-45bf-affb-c4fdf707d221">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 233</meta>
       </char>
-      <char id="c3167551e-0d17-4a3a-bbf8-bc8797aeebd0" label="Weberian apparatus well developed, all components ossified" about="#c3167551e-0d17-4a3a-bbf8-bc8797aeebd0" states="sc7943796-304b-4b9e-ac64-10926ca721bc">
+      <char id="c3167551e-0d17-4a3a-bbf8-bc8797aeebd0" label="Weberian apparatus" about="#c3167551e-0d17-4a3a-bbf8-bc8797aeebd0" states="sc7943796-304b-4b9e-ac64-10926ca721bc">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 233</meta>
       </char>
-      <char id="cbc7cae53-bf4a-45df-b8a6-9c54f28ea3ac" label="Claustrum present as tiny, circular bone" about="#cbc7cae53-bf4a-45df-b8a6-9c54f28ea3ac" states="s910bdce0-9b6e-4721-a96a-7dfedd12c9e1">
+      <char id="cbc7cae53-bf4a-45df-b8a6-9c54f28ea3ac" label="Claustrum" about="#cbc7cae53-bf4a-45df-b8a6-9c54f28ea3ac" states="s910bdce0-9b6e-4721-a96a-7dfedd12c9e1">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 233</meta>
       </char>
       <char id="ce136b15d-6256-49b6-99f9-f61078882d5b" label="Large gap present between neural arches 3 and 4, with gap partially filled by dorsally projecting pointed process from vertebral centrum 3" about="#ce136b15d-6256-49b6-99f9-f61078882d5b" states="s844c07ff-f029-4bc4-aa50-c9b287e44e2f">
@@ -702,6 +770,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tf5133e9f-c05e-4694-b18f-45adcfb6653a" otus="t79369f66-6ccb-4054-a062-665b3e61ff72" />
   <trees id="tf6cb6699-1c60-41f4-9b06-fdd4e7ae1556" otus="t79369f66-6ccb-4054-a062-665b3e61ff72" />
   <trees id="t647cc817-4fb7-463e-ba83-0a88e189635f" otus="t79369f66-6ccb-4054-a062-665b3e61ff72" />
   <trees id="t88e83c93-c78b-4b50-968e-76b2a30c2cc1" otus="t79369f66-6ccb-4054-a062-665b3e61ff72" />
