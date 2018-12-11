@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1111/jfb.13579</meta>
@@ -7,16 +7,162 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Camelier et al. (2018)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="td2f67513-71ce-4fde-8cdb-0e4e3c901f1d">
+  <otus id="t73d31806-ea95-4e0c-9e93-cffb3c453038">
     <otu id="t3674802e-4b9a-4994-bbb8-8fd8b8329e71" label="Hyphessobrycon piranga" about="#t3674802e-4b9a-4994-bbb8-8fd8b8329e71">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/cdc78090-df94-0136-90bd-005056010088" />
     </otu>
+    <otu id="tc36004ea-14c6-4b9a-b4de-a3c86c059d49" label="Hyphessobrycon sovichthys" about="#tc36004ea-14c6-4b9a-b4de-a3c86c059d49">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065172" />
+    </otu>
+    <otu id="te1d8bbc2-bc86-4bd7-a436-af2656662b25" label="Hyphessobrycon tuyensis" about="#te1d8bbc2-bc86-4bd7-a436-af2656662b25">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065181" />
+    </otu>
+    <otu id="t1af7cb7e-86be-4cce-9dcc-4ee49d63be29" label="Hyphessobrycon ataktos" about="#t1af7cb7e-86be-4cce-9dcc-4ee49d63be29">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/ab9a22e0-df97-0136-4ba7-005056010073" />
+    </otu>
   </otus>
-  <characters id="42502465-6075-4c1e-acd5-6098d3284df9" xsi:type="StandardCells" otus="td2f67513-71ce-4fde-8cdb-0e4e3c901f1d">
-    <format />
+  <characters id="42502465-6075-4c1e-acd5-6098d3284df9" xsi:type="StandardCells" otus="t73d31806-ea95-4e0c-9e93-cffb3c453038">
+    <format>
+      <states id="s9bd4c3d4-5094-42df-acce-b835add33246">
+        <state id="sf50fda1a-61aa-4457-9499-fd3a28595981" label="absent" symbol="0" about="#sf50fda1a-61aa-4457-9499-fd3a28595981">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001948">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003101" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/1ead0eb0-df97-0136-90bd-005056010088">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003101" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s3a0a61f6-09fd-4cd8-b67b-5f3a55505cd3" label="present" symbol="1" about="#s3a0a61f6-09fd-4cd8-b67b-5f3a55505cd3">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001948">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003101" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/1ead0eb0-df97-0136-90bd-005056010088">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003101" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s02cdb875-c728-4787-b66d-5163ba4b88ef">
+        <state id="s6704896a-214f-4888-b046-2c4f122ad7a6" label="absent" symbol="0" about="#s6704896a-214f-4888-b046-2c4f122ad7a6">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4000164" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s4cc9996b-fdb9-47d3-9647-4c84f728d548" label="present" symbol="1" about="#s4cc9996b-fdb9-47d3-9647-4c84f728d548">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542">
+                    <phen:qualifier relation="UBERON:attaches_to">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4000164" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s4a0afe5e-4d51-4100-bb59-a953cdf5e818">
+        <state id="s48c6015c-d44b-4936-911b-8497aa84ea51" label="15-18 branched anal-fin rays" symbol="0" />
+        <state id="s924dd4d8-dd16-4c12-a872-93b1644b7313" label="≥20 branched anal-fin rays" symbol="1" />
+      </states>
+      <states id="s295fc6ca-1413-4c5d-87d5-a1d2f9d5878b">
+        <state id="s77c2e552-6167-446f-b210-aab132a9502c" label="6 branched pelvic-fin rays" symbol="0" />
+        <state id="sb56322a9-3819-4c6a-8f33-c816f2e4c86e" label="7 branched pelvic-fin rays" symbol="1" />
+      </states>
+      <char id="cd024a588-4495-4806-8d96-24626133c098" label="Bony hooks on pelvic and anal-fin rays of mature males" states="s9bd4c3d4-5094-42df-acce-b835add33246" />
+      <char id="cbefe18ab-d772-439a-bc06-d9b2740f1935" label="Caudal-fin squamation" states="s02cdb875-c728-4787-b66d-5163ba4b88ef" />
+      <char id="cfffc2bc3-377c-4e9d-8d42-f80f852fd839" label="Anal-fin rays" states="s4a0afe5e-4d51-4100-bb59-a953cdf5e818" />
+      <char id="c9ae1c025-f576-470c-86df-b421e48a0e47" label="Pelvic-fin rays" states="s295fc6ca-1413-4c5d-87d5-a1d2f9d5878b" />
+    </format>
     <matrix>
-      <row id="rbdeb3e29-cd90-4531-9af9-a3ad4e8d46d8" otu="t3674802e-4b9a-4994-bbb8-8fd8b8329e71" />
+      <row id="rce0e4493-84fd-490b-a325-5ade61bda8b6" otu="t3674802e-4b9a-4994-bbb8-8fd8b8329e71">
+        <cell char="cd024a588-4495-4806-8d96-24626133c098" state="sf50fda1a-61aa-4457-9499-fd3a28595981" />
+        <cell char="cbefe18ab-d772-439a-bc06-d9b2740f1935" state="s6704896a-214f-4888-b046-2c4f122ad7a6" />
+      </row>
+      <row id="r879a9679-8710-4fe4-b753-f0c3291b1fda" otu="tc36004ea-14c6-4b9a-b4de-a3c86c059d49">
+        <cell char="cd024a588-4495-4806-8d96-24626133c098" state="s3a0a61f6-09fd-4cd8-b67b-5f3a55505cd3" />
+      </row>
+      <row id="r14b4b90b-6af8-4de5-8d4b-9a6851ce4d07" otu="te1d8bbc2-bc86-4bd7-a436-af2656662b25">
+        <cell char="cd024a588-4495-4806-8d96-24626133c098" state="s3a0a61f6-09fd-4cd8-b67b-5f3a55505cd3" />
+      </row>
+      <row id="rb832db75-a681-4c09-af49-dc2e13f1dd89" otu="t1af7cb7e-86be-4cce-9dcc-4ee49d63be29">
+        <cell char="cbefe18ab-d772-439a-bc06-d9b2740f1935" state="s4cc9996b-fdb9-47d3-9647-4c84f728d548" />
+      </row>
     </matrix>
   </characters>
-  <trees id="ta0658e19-9cab-40bd-9aa4-8a6735ff2f2d" otus="td2f67513-71ce-4fde-8cdb-0e4e3c901f1d" />
+  <trees id="tb7e25fc2-7743-440d-852b-123584fc1509" otus="t73d31806-ea95-4e0c-9e93-cffb3c453038" />
 </nexml>
