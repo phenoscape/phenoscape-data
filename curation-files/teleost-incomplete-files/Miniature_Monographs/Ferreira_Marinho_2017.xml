@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+  <meta xsi:type="LiteralMeta" property="dc:creator" />
+  <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1111/jfb.13384</meta>
+    <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Ferreira Marinho, M. M. (2017), Comparative development in Moenkhausia pittieri and Paracheirodon innesi(Ostariophysi: Characiformes) with comments on heterochrony and miniaturization in the Characidae. J Fish Biol, 91: 851-865</meta>
+    <meta xsi:type="LiteralMeta" property="dc:title">Ferreira Marinho (2017)</meta>
+  </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
+  <otus id="t02d15c2f-0cc1-4e43-95f1-31e3fd119ac8">
+    <otu id="td707fd24-2e95-48fa-8805-35accc21b593" label="Moenkhausia pittieri" about="#td707fd24-2e95-48fa-8805-35accc21b593">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065396" />
+    </otu>
+    <otu id="t2c36fd96-566b-4150-afbc-72aa81237d4c" label="Paracheirodon innesi" about="#t2c36fd96-566b-4150-afbc-72aa81237d4c">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0038092" />
+    </otu>
+  </otus>
+  <characters id="46390335-56c3-417c-9be2-cda0c285d9c3" xsi:type="StandardCells" otus="t02d15c2f-0cc1-4e43-95f1-31e3fd119ac8">
+    <format>
+      <states id="sc34d083f-051a-446c-8acd-de5ec46274e3">
+        <state id="s53f129b3-c740-4978-a4f4-8bc16db44974" label="absent" symbol="0" about="#s53f129b3-c740-4978-a4f4-8bc16db44974">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000691" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char id="c62bda460-4c7e-4d78-8a94-e025ae91743a" label="Supraorbital bone" states="sc34d083f-051a-446c-8acd-de5ec46274e3" />
+    </format>
+    <matrix>
+      <row id="raed1dcfb-96b2-4ae8-945e-79f8eca2c41d" otu="td707fd24-2e95-48fa-8805-35accc21b593">
+        <cell char="c62bda460-4c7e-4d78-8a94-e025ae91743a" state="s53f129b3-c740-4978-a4f4-8bc16db44974" />
+      </row>
+      <row id="rec016bd4-732e-45fa-a271-034d250953ac" otu="t2c36fd96-566b-4150-afbc-72aa81237d4c">
+        <cell char="c62bda460-4c7e-4d78-8a94-e025ae91743a" state="s53f129b3-c740-4978-a4f4-8bc16db44974" />
+      </row>
+    </matrix>
+  </characters>
+  <trees id="t9e103832-97cc-4a93-8b89-d616ac17a332" otus="t02d15c2f-0cc1-4e43-95f1-31e3fd119ac8" />
+</nexml>
