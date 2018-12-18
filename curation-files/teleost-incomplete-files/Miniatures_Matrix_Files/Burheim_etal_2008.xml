@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://dx.doi.org/10.1590/S1679-62252008000400016</meta>
@@ -7,7 +7,7 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Bührnheim et al. (2008)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="t0c14e14a-3dfe-49f2-aaca-9a64895f21bc">
+  <otus id="t963c7204-41f1-4ff2-85e8-c436b1500be2">
     <otu id="t5a4fa5b2-209b-4ccf-a7a2-048da0cd7319" label="Outgroup" />
     <otu id="t459a2180-f51e-4b38-b2ac-6f85f182bb40" label="Odontostilbe" />
     <otu id="tb3db75e8-f974-4e28-90cc-07cc2eea9101" label="Cheirodon" />
@@ -29,7 +29,7 @@
     </otu>
     <otu id="t17eda0cc-a999-41da-90bc-39802eb0aa2c" label="Megacheirodon" />
   </otus>
-  <characters id="f6ea7301-c38a-40de-961d-c3bc77bbd137" xsi:type="StandardCells" otus="t0c14e14a-3dfe-49f2-aaca-9a64895f21bc">
+  <characters id="f6ea7301-c38a-40de-961d-c3bc77bbd137" xsi:type="StandardCells" otus="t963c7204-41f1-4ff2-85e8-c436b1500be2">
     <format>
       <states id="sae1fe04e-6fe6-4edb-b3c8-ce12c6b441cc">
         <state id="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" label="absent" symbol="1" />
@@ -149,49 +149,94 @@
         <state id="sd9735517-4f04-4609-88da-454c62f0fd27" label="" symbol="1" />
       </states>
       <states id="s1183cc8d-d3c7-4e82-a989-cfd362b158ee">
-        <state id="sbd7e1810-a1b9-462b-95d1-88c32e0d5d75" label="" symbol="0" />
-        <state id="sca8e7c47-d8ac-4a6e-aa01-42d2941d347b" label="" symbol="1" />
+        <state id="sbd7e1810-a1b9-462b-95d1-88c32e0d5d75" label="Small adult size, reaching 18 to 28 mm SL" symbol="0" />
+        <state id="sca8e7c47-d8ac-4a6e-aa01-42d2941d347b" label="Large adult size, reaching at least 60.8 mm SL in Spintherobolus papilliferus, and 51.5-55.0 mm SL in Megacheirodon unicus" symbol="1" />
       </states>
       <states id="s82d20cc4-3a2d-447d-9ad2-f83bfd648dff">
-        <state id="sa42fd016-d9c4-4f59-80f6-459f4b7af294" label="" symbol="0" />
-        <state id="s304d9a45-eda0-4562-8155-a8d5401f8636" label="" symbol="1" />
+        <state id="sa42fd016-d9c4-4f59-80f6-459f4b7af294" label="Comparatively low vertebral count of 32-34 or different from state 1" symbol="0" />
+        <state id="s304d9a45-eda0-4562-8155-a8d5401f8636" label="High vertebral count of 35-36" symbol="1" />
       </states>
       <states id="s2094e4b6-c70c-4749-b5f9-709d407afaad">
-        <state id="sb0ebb36e-3a22-4ee9-9a29-2cc803ff7a4e" label="" symbol="0" />
-        <state id="sa7eff329-01e7-418d-b1c5-f2d0cc735ca6" label="" symbol="1" />
+        <state id="sb0ebb36e-3a22-4ee9-9a29-2cc803ff7a4e" label="Ray segments relatively rectangular, either short or elongate, in males" symbol="0" />
+        <state id="sa7eff329-01e7-418d-b1c5-f2d0cc735ca6" label="The ray segments of the posterior branch of the second through fifth anal-fin rays of fully adult males are thickened and have a characteristic somewhat asymmetrical chevron shape in lateral profile" symbol="1" />
       </states>
       <states id="s9bdfd3d9-eb8a-44ce-b085-720708738a3d">
-        <state id="sb18d4c14-15e4-4d1f-ae78-c5fbd7849d1a" label="" symbol="0" />
-        <state id="s26a6fff6-38b2-4a21-b0de-1a85d48ab0f2" label="" symbol="1" />
+        <state id="sb18d4c14-15e4-4d1f-ae78-c5fbd7849d1a" label="Anteriorly directed pterygiophores of the branched anal-fin ray in both males and females" symbol="0" />
+        <state id="s26a6fff6-38b2-4a21-b0de-1a85d48ab0f2" label="The pterygiophore of the sixth branched anal-fin ray in both males and females is directed dorsally, away from the fifth which is directed anteriorly and in parallel with the pterygiophores anterior to it" symbol="1" />
       </states>
-      <states id="s0b44675a-943b-4924-bd4e-d359219d1d4f" />
+      <states id="s0b44675a-943b-4924-bd4e-d359219d1d4f">
+        <state id="s3a8e1cb4-6a03-4cb3-b80c-901a81e405e1" label="A black pigmented area lies ventral to the eyes" symbol="1" />
+        <state id="s0f9032e6-a869-4754-ba6d-55ee42e78383" label="None black pigmented area ventral to the eyes or different from state 1" symbol="0" />
+      </states>
       <states id="s41d445d5-b2a3-4968-9ead-e2d96a778f6c">
-        <state id="sb4dc196a-c9ef-49c7-8b25-6c84787e539a" label="" symbol="0" />
-        <state id="sd59d532a-fc09-4273-b54f-e5aeae884a11" label="" symbol="1" />
+        <state id="sb4dc196a-c9ef-49c7-8b25-6c84787e539a" label="None longitu- dinal stripe as described in state 1" symbol="0" />
+        <state id="sd59d532a-fc09-4273-b54f-e5aeae884a11" label="A longitudinal stripe occurs on the body dorsal to the anterior lobe of the anal-fin and extends onto the short posterior branched anal-fin rays" symbol="1" />
       </states>
       <states id="s5209a9a7-0d75-4317-8d96-1b6ce939aa5e">
-        <state id="s43f83280-f444-45aa-afa0-d49251c95481" label="0" symbol="0" />
-        <state id="s0c85d8cb-9eb5-4869-b74f-bc0a6ee04b61" label="" symbol="1" />
+        <state id="s43f83280-f444-45aa-afa0-d49251c95481" label="Teeth with four cusps or more" symbol="0" />
+        <state id="s0c85d8cb-9eb5-4869-b74f-bc0a6ee04b61" label="Conical to tricuspid teeth" symbol="1" />
       </states>
       <states id="sdd477fbb-ade0-4663-8108-6e145e933c09">
-        <state id="sede9e50f-9493-4d78-bf0a-a47f60c69e7b" label="" symbol="0" />
-        <state id="s388e26f7-f749-47a4-9f96-cec5fe3d6f2e" label="" symbol="1" />
+        <state id="sede9e50f-9493-4d78-bf0a-a47f60c69e7b" label="Different from the state 1" symbol="0" />
+        <state id="s388e26f7-f749-47a4-9f96-cec5fe3d6f2e" label="The last unbranched and about four branched anal-fin rays slab-shaped, including all the branches expanded forming a typical fan" symbol="1" />
       </states>
       <states id="s4bf3cfee-de8d-4738-9c7c-dfb12f494a4b">
-        <state id="scd839ab3-f492-439c-8ade-6668375fb7cc" label="" symbol="0" />
-        <state id="s6a86e770-2dd3-40ca-a838-f2e6a1a212bb" label="" symbol="1" />
+        <state id="scd839ab3-f492-439c-8ade-6668375fb7cc" label="Form different from state 1, elongate, slender, ventrally expanded, in form of a inverse comma in Cheirodontinae" symbol="0" about="#scd839ab3-f492-439c-8ade-6668375fb7cc">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000127" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001154" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000127" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002212" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s6a86e770-2dd3-40ca-a838-f2e6a1a212bb" label="Short, rounded to oval" symbol="1" about="#s6a86e770-2dd3-40ca-a838-f2e6a1a212bb">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000127" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000574" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000127" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001891" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s30948f73-cbac-4649-bf48-4442c07f7cc5">
-        <state id="s1ed69a0a-b6ad-4aa5-a645-7ddeda395ec2" label="" symbol="0" />
-        <state id="s6931996a-f5b3-4bb9-88ed-aa8359baea15" label="" symbol="1" />
+        <state id="s1ed69a0a-b6ad-4aa5-a645-7ddeda395ec2" label="High number gill rakers, 4-7" symbol="0" />
+        <state id="s6931996a-f5b3-4bb9-88ed-aa8359baea15" label="Low number of gill rakers, 1-3" symbol="1" />
       </states>
       <states id="s5b41cce0-7ed9-401a-8d4e-61be7599c06b">
-        <state id="s6da07c8b-ad9f-48a9-95c5-c21cd24a6bf8" label="" symbol="0" />
-        <state id="s8580abb0-ac3a-4e83-865c-c510058540c1" label="" symbol="1" />
+        <state id="s6da07c8b-ad9f-48a9-95c5-c21cd24a6bf8" label="Elongate, lanceolate" symbol="0" />
+        <state id="s8580abb0-ac3a-4e83-865c-c510058540c1" label="Short in a conical form" symbol="1" />
       </states>
       <states id="seb6207a8-eb0f-4847-81cf-67a4e2170761">
-        <state id="s7dff5df6-824f-4829-8ed3-84df25afbca2" label="" symbol="0" />
-        <state id="s800806eb-a9cd-438f-9ebf-9bee18de29c8" label="" symbol="1" />
+        <state id="s7dff5df6-824f-4829-8ed3-84df25afbca2" label="Present" symbol="0" />
+        <state id="s800806eb-a9cd-438f-9ebf-9bee18de29c8" label="Absent or with only the posteriormost gill raker at the junction of the ceratobranchial and the epibranchial" symbol="1" />
       </states>
       <states id="s165e6468-154c-4919-8221-b0c121c276a4">
         <state id="seffdc931-119a-4f5f-851c-6b2c86613d4b" label="Almost straight, slightly convex on posteriormost border or not" symbol="0" />
@@ -234,52 +279,52 @@
       <char id="caa36218c-4497-4da6-9d56-7a7f2fd3c6ae" label="" states="sd11e0e6d-e0a6-4634-9531-c7139bcbf03b" />
       <char id="ca6b02ece-1d2e-4413-9ec8-448e621ee0a9" label="" states="s09599383-9a43-4d3b-9779-9b2fe5e0351d" />
       <char id="c06403f7a-f011-49fb-b619-39afa2867d4b" label="" states="s68f8426e-25f7-4918-b3e8-9c6251f8e894" />
-      <char id="cb81f2bb9-5708-4119-8c88-7f66d479ae60" label="" states="s1183cc8d-d3c7-4e82-a989-cfd362b158ee" />
-      <char id="c223713f4-080c-4c23-986d-ba388e83620a" label="" states="s82d20cc4-3a2d-447d-9ad2-f83bfd648dff" />
-      <char id="cea3e0a48-1dc1-4b2a-90d3-8e8e72e083c8" label="" states="s2094e4b6-c70c-4749-b5f9-709d407afaad" />
-      <char id="c149d6e34-3540-4fa2-972f-654037494012" label="" states="s9bdfd3d9-eb8a-44ce-b085-720708738a3d" />
-      <char id="cce710f9f-96c5-4a35-9e1b-1beb0e96b917" label="" states="s0b44675a-943b-4924-bd4e-d359219d1d4f" />
-      <char id="c3ef525c8-e19a-404b-81f5-2b645dea4a16" label="" states="s41d445d5-b2a3-4968-9ead-e2d96a778f6c" />
-      <char id="c707ca947-a9cb-4bdf-b9c7-c4dc6a063bb1" label="" states="s5209a9a7-0d75-4317-8d96-1b6ce939aa5e" />
-      <char id="c2897e9c3-0aa0-404d-a218-95db4e072c7f" label="" states="sdd477fbb-ade0-4663-8108-6e145e933c09" />
-      <char id="cb21d8641-e999-4ed7-a89e-6107ee164462" label="" states="s4bf3cfee-de8d-4738-9c7c-dfb12f494a4b" />
-      <char id="cbf7a886a-9804-400d-965c-57c1dbbf8d64" label="" states="s30948f73-cbac-4649-bf48-4442c07f7cc5" />
-      <char id="cacb35dbe-a084-4569-8f23-644b7267e3e2" label="" states="s5b41cce0-7ed9-401a-8d4e-61be7599c06b" />
-      <char id="cadb5287e-9d99-4e04-8339-46baa4a42dc6" label="" states="seb6207a8-eb0f-4847-81cf-67a4e2170761" />
+      <char id="cb81f2bb9-5708-4119-8c88-7f66d479ae60" label="Adult size" states="s1183cc8d-d3c7-4e82-a989-cfd362b158ee" />
+      <char id="c223713f4-080c-4c23-986d-ba388e83620a" label="Vertebral count" states="s82d20cc4-3a2d-447d-9ad2-f83bfd648dff" />
+      <char id="cea3e0a48-1dc1-4b2a-90d3-8e8e72e083c8" label="Anal-fin rays" states="s2094e4b6-c70c-4749-b5f9-709d407afaad" />
+      <char id="c149d6e34-3540-4fa2-972f-654037494012" label="Pterygiophores of the branched anal-fin ray " states="s9bdfd3d9-eb8a-44ce-b085-720708738a3d" />
+      <char id="cce710f9f-96c5-4a35-9e1b-1beb0e96b917" label="A black pigmented area ventral to the eyes" states="s0b44675a-943b-4924-bd4e-d359219d1d4f" />
+      <char id="c3ef525c8-e19a-404b-81f5-2b645dea4a16" label="Longitudinal stripe" states="s41d445d5-b2a3-4968-9ead-e2d96a778f6c" />
+      <char id="c707ca947-a9cb-4bdf-b9c7-c4dc6a063bb1" label="Number of teeth cusps" states="s5209a9a7-0d75-4317-8d96-1b6ce939aa5e" />
+      <char id="c2897e9c3-0aa0-404d-a218-95db4e072c7f" label="Anal-fin rays of males" states="sdd477fbb-ade0-4663-8108-6e145e933c09" />
+      <char id="cb21d8641-e999-4ed7-a89e-6107ee164462" label="Form of antorbital" states="s4bf3cfee-de8d-4738-9c7c-dfb12f494a4b" />
+      <char id="cbf7a886a-9804-400d-965c-57c1dbbf8d64" label="Number of gill rakers on upper branch of first gill arch" states="s30948f73-cbac-4649-bf48-4442c07f7cc5" />
+      <char id="cacb35dbe-a084-4569-8f23-644b7267e3e2" label="Form of gill rakers" states="s5b41cce0-7ed9-401a-8d4e-61be7599c06b" />
+      <char id="cadb5287e-9d99-4e04-8339-46baa4a42dc6" label="Gill rakers on lower branch of the first gill arch" states="seb6207a8-eb0f-4847-81cf-67a4e2170761" />
       <char id="ce6c2baa1-0dc1-4885-96f5-b3c91cf3ec17" label="Form of maxilla, dorsal profile" states="s165e6468-154c-4919-8221-b0c121c276a4" />
       <char id="cb0f88635-7c2e-49e2-9591-45d455c16860" label="Dark black blotches on the base of dorsal, anal, and caudal fins" states="sae19122a-2f37-4794-9cf2-46f83b5e92c9" />
       <char id="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" label="Anteriormost proximal radial of anal fin" states="s8e631618-4313-4082-a9fd-9fdd3d4f9df9" />
     </format>
     <matrix>
-      <row id="rb3ea85bb-3c07-48fc-8535-c4430bd50195" otu="t5a4fa5b2-209b-4ccf-a7a2-048da0cd7319">
+      <row id="r40ce2ced-1c9f-4b25-ad9c-8ca7ac11a6fe" otu="t5a4fa5b2-209b-4ccf-a7a2-048da0cd7319">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="se5ee82e7-cafb-48aa-86ca-b49937ae28ee" />
       </row>
-      <row id="r28b7581b-0514-4a63-ad52-cf995435b2be" otu="t459a2180-f51e-4b38-b2ac-6f85f182bb40">
+      <row id="re89466a7-6a2a-4e82-ba8a-8cb36a45b727" otu="t459a2180-f51e-4b38-b2ac-6f85f182bb40">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
       </row>
-      <row id="r660e548b-5212-45f7-bae1-c844c598ec52" otu="tb3db75e8-f974-4e28-90cc-07cc2eea9101">
+      <row id="re9c56b42-0d73-4464-a884-3aa17197accb" otu="tb3db75e8-f974-4e28-90cc-07cc2eea9101">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
       </row>
-      <row id="r05bbfb7a-24e8-4692-a99a-a21264a8ab0c" otu="t4ff56039-ed83-46e8-bfb9-1c6aa64dbbb2">
+      <row id="rc52e93af-d16a-44b5-a801-ba61b0bedde7" otu="t4ff56039-ed83-46e8-bfb9-1c6aa64dbbb2">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
       </row>
-      <row id="rf8ede325-9ae6-4417-b7a7-93c36074814d" otu="t68a8b527-0129-48d7-81a3-717deca02c36">
+      <row id="ra6fc8219-80b5-4b4d-9ce0-104100ba1224" otu="t68a8b527-0129-48d7-81a3-717deca02c36">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
       </row>
-      <row id="ra8a2d257-3bf8-4c7b-ad31-bb4bc43b425e" otu="t0eaedd74-29c9-464d-8430-2648b4b60787">
+      <row id="rc1055272-8680-474c-97ff-ece1c40d15d9" otu="t0eaedd74-29c9-464d-8430-2648b4b60787">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
       </row>
-      <row id="r960f0ece-8581-480a-b856-a125b57a65e7" otu="t1a309767-ff84-4cad-86c7-87aa9982fbf5">
+      <row id="r71210f58-ad7a-4986-b745-3c5172075fd9" otu="t1a309767-ff84-4cad-86c7-87aa9982fbf5">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
       </row>
-      <row id="r4b452afe-74e3-44a1-8f75-f7538ff729d0" otu="t8f0b6d16-b00f-4136-b9b4-30884b616283">
+      <row id="rfdcb1787-13d4-439f-9903-67e60d49e6eb" otu="t8f0b6d16-b00f-4136-b9b4-30884b616283">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
       </row>
-      <row id="r56b64612-d5cf-4fda-8a4a-003b77446f58" otu="tff618543-91d0-47f4-8992-b0f9adac3808">
+      <row id="r0ea50793-d6db-4edb-9f08-834b98400de9" otu="tff618543-91d0-47f4-8992-b0f9adac3808">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
       </row>
-      <row id="rc0b5b765-719b-4550-b13b-12e6c95fee66" otu="t17eda0cc-a999-41da-90bc-39802eb0aa2c" />
+      <row id="r727b0945-837c-4404-aac4-8a608a6b87a9" otu="t17eda0cc-a999-41da-90bc-39802eb0aa2c" />
     </matrix>
   </characters>
-  <trees id="t647cf7f5-fd8c-497c-8a59-9c162a25c16b" otus="t0c14e14a-3dfe-49f2-aaca-9a64895f21bc" />
+  <trees id="ta91c6a68-c0c4-42ab-bbf6-2dabe2316f27" otus="t963c7204-41f1-4ff2-85e8-c436b1500be2" />
 </nexml>
