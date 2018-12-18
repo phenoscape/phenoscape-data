@@ -7,7 +7,7 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Bührnheim et al. (2008)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description">Character 18 has states 0, 1, 2 in matrix, but only states 0 and 1 described in text.</meta>
-  <otus id="t888e7b26-a536-44f3-9191-e824cc558927">
+  <otus id="t1bd9043b-78d1-41f8-84e9-19b8c66921e3">
     <otu id="t5a4fa5b2-209b-4ccf-a7a2-048da0cd7319" label="Outgroup" />
     <otu id="t459a2180-f51e-4b38-b2ac-6f85f182bb40" label="Odontostilbe" about="#t459a2180-f51e-4b38-b2ac-6f85f182bb40">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/f96a3d90-e4be-0136-90bd-005056010088" />
@@ -37,7 +37,7 @@
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/19effbe0-e4bf-0136-90bd-005056010088" />
     </otu>
   </otus>
-  <characters id="f6ea7301-c38a-40de-961d-c3bc77bbd137" xsi:type="StandardCells" otus="t888e7b26-a536-44f3-9191-e824cc558927">
+  <characters id="f6ea7301-c38a-40de-961d-c3bc77bbd137" xsi:type="StandardCells" otus="t1bd9043b-78d1-41f8-84e9-19b8c66921e3">
     <format>
       <states id="sae1fe04e-6fe6-4edb-b3c8-ce12c6b441cc">
         <state id="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" label="absent" symbol="1" />
@@ -896,8 +896,36 @@
         <state id="sd59d532a-fc09-4273-b54f-e5aeae884a11" label="A longitudinal stripe occurs on the body dorsal to the anterior lobe of the anal-fin and extends onto the short posterior branched anal-fin rays" symbol="1" />
       </states>
       <states id="s5209a9a7-0d75-4317-8d96-1b6ce939aa5e">
-        <state id="s43f83280-f444-45aa-afa0-d49251c95481" label="Teeth with four cusps or more" symbol="0" />
-        <state id="s0c85d8cb-9eb5-4869-b74f-bc0a6ee04b61" label="Conical to tricuspid teeth" symbol="1" />
+        <state id="s43f83280-f444-45aa-afa0-d49251c95481" label="Teeth with four cusps or more" symbol="0" about="#s43f83280-f444-45aa-afa0-d49251c95481">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>≥4</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006844" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s0c85d8cb-9eb5-4869-b74f-bc0a6ee04b61" label="Conical to tricuspid teeth" symbol="1" about="#s0c85d8cb-9eb5-4869-b74f-bc0a6ee04b61">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>1-3</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006844" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sdd477fbb-ade0-4663-8108-6e145e933c09">
         <state id="sede9e50f-9493-4d78-bf0a-a47f60c69e7b" label="Different from the state 1" symbol="0" />
@@ -950,8 +978,48 @@
         </state>
       </states>
       <states id="s30948f73-cbac-4649-bf48-4442c07f7cc5">
-        <state id="s1ed69a0a-b6ad-4aa5-a645-7ddeda395ec2" label="High number gill rakers, 4-7" symbol="0" />
-        <state id="s6931996a-f5b3-4bb9-88ed-aa8359baea15" label="Low number of gill rakers, 1-3" symbol="1" />
+        <state id="s1ed69a0a-b6ad-4aa5-a645-7ddeda395ec2" label="High number gill rakers, 4-7" symbol="0" about="#s1ed69a0a-b6ad-4aa5-a645-7ddeda395ec2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>4-7</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001905" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s6931996a-f5b3-4bb9-88ed-aa8359baea15" label="Low number of gill rakers, 1-3" symbol="1" about="#s6931996a-f5b3-4bb9-88ed-aa8359baea15">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:description>1-3</phen:description>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001905" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s5b41cce0-7ed9-401a-8d4e-61be7599c06b">
         <state id="s6da07c8b-ad9f-48a9-95c5-c21cd24a6bf8" label="Elongate, lanceolate" symbol="0" about="#s6da07c8b-ad9f-48a9-95c5-c21cd24a6bf8">
@@ -1000,8 +1068,74 @@
         </state>
       </states>
       <states id="seb6207a8-eb0f-4847-81cf-67a4e2170761">
-        <state id="s7dff5df6-824f-4829-8ed3-84df25afbca2" label="Present" symbol="0" />
-        <state id="s800806eb-a9cd-438f-9ebf-9bee18de29c8" label="Absent or with only the posteriormost gill raker at the junction of the ceratobranchial and the epibranchial" symbol="1" />
+        <state id="s7dff5df6-824f-4829-8ed3-84df25afbca2" label="Present" symbol="0" about="#s7dff5df6-824f-4829-8ed3-84df25afbca2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001894" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001899" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s800806eb-a9cd-438f-9ebf-9bee18de29c8" label="Absent or with only the posteriormost gill raker at the junction of the ceratobranchial and the epibranchial" symbol="1" about="#s800806eb-a9cd-438f-9ebf-9bee18de29c8">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001894" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001899" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s165e6468-154c-4919-8221-b0c121c276a4">
         <state id="seffdc931-119a-4f5f-851c-6b2c86613d4b" label="Almost straight, slightly convex on posteriormost border or not" symbol="0" about="#seffdc931-119a-4f5f-851c-6b2c86613d4b">
@@ -1099,7 +1233,7 @@
       <char id="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" label="Anteriormost proximal radial of anal fin" states="s8e631618-4313-4082-a9fd-9fdd3d4f9df9" />
     </format>
     <matrix>
-      <row id="r24b04828-74f2-49e5-aa01-ae1726e2b4b8" otu="t5a4fa5b2-209b-4ccf-a7a2-048da0cd7319">
+      <row id="r6e27c33c-ee3e-4ad6-99b1-b31a5cd91bad" otu="t5a4fa5b2-209b-4ccf-a7a2-048da0cd7319">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="se5ee82e7-cafb-48aa-86ca-b49937ae28ee" />
         <cell char="c993a6f88-ce08-4b62-81f0-4514aa6d507f" state="s46f3e59b-1667-47ee-b225-21db79caeb17" />
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sd7339342-eba0-46f0-9824-1a79f4598989" />
@@ -1145,7 +1279,7 @@
         <cell char="cb0f88635-7c2e-49e2-9591-45d455c16860" state="sc51f9dcb-c08b-4d8d-ab61-eef1a3f09043" />
         <cell char="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" state="s86eadd5b-5184-4536-bbda-618f2f3667c3" />
       </row>
-      <row id="rd99e39bf-c9b9-4294-bbdb-f2d04d0c2c53" otu="t459a2180-f51e-4b38-b2ac-6f85f182bb40">
+      <row id="r44b64573-4f44-4345-9ba2-79d894085c36" otu="t459a2180-f51e-4b38-b2ac-6f85f182bb40">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
         <cell char="c993a6f88-ce08-4b62-81f0-4514aa6d507f" state="sdb49609e-0dd0-4480-ba4c-8721e0e25e57" />
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sa36c62d5-c7ca-485f-9539-017021f046be" />
@@ -1191,7 +1325,7 @@
         <cell char="cb0f88635-7c2e-49e2-9591-45d455c16860" state="sc51f9dcb-c08b-4d8d-ab61-eef1a3f09043" />
         <cell char="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" state="s86eadd5b-5184-4536-bbda-618f2f3667c3" />
       </row>
-      <row id="rcce19888-ec7f-4cee-8709-c7ecd6839134" otu="tb3db75e8-f974-4e28-90cc-07cc2eea9101">
+      <row id="r2f86ca45-f399-48a3-a990-a63d8a3357c7" otu="tb3db75e8-f974-4e28-90cc-07cc2eea9101">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
         <cell char="c993a6f88-ce08-4b62-81f0-4514aa6d507f" state="sdb49609e-0dd0-4480-ba4c-8721e0e25e57" />
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sa36c62d5-c7ca-485f-9539-017021f046be" />
@@ -1237,7 +1371,7 @@
         <cell char="cb0f88635-7c2e-49e2-9591-45d455c16860" state="sc51f9dcb-c08b-4d8d-ab61-eef1a3f09043" />
         <cell char="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" state="s86eadd5b-5184-4536-bbda-618f2f3667c3" />
       </row>
-      <row id="r64d2b306-fcb6-4622-b369-9adfd322af7a" otu="t4ff56039-ed83-46e8-bfb9-1c6aa64dbbb2">
+      <row id="rbfa9a9cb-821d-4700-a931-9a32975b8ce1" otu="t4ff56039-ed83-46e8-bfb9-1c6aa64dbbb2">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
         <cell char="c993a6f88-ce08-4b62-81f0-4514aa6d507f" state="sdb49609e-0dd0-4480-ba4c-8721e0e25e57" />
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sa36c62d5-c7ca-485f-9539-017021f046be" />
@@ -1283,7 +1417,7 @@
         <cell char="cb0f88635-7c2e-49e2-9591-45d455c16860" state="sc51f9dcb-c08b-4d8d-ab61-eef1a3f09043" />
         <cell char="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" state="s86eadd5b-5184-4536-bbda-618f2f3667c3" />
       </row>
-      <row id="r3ae45572-821c-4b7c-a594-59274c314f69" otu="t68a8b527-0129-48d7-81a3-717deca02c36">
+      <row id="ra9ed0b72-da1d-4dbc-a5b7-1cfd9d3feb9b" otu="t68a8b527-0129-48d7-81a3-717deca02c36">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
         <cell char="c993a6f88-ce08-4b62-81f0-4514aa6d507f" state="sdb49609e-0dd0-4480-ba4c-8721e0e25e57" />
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sa36c62d5-c7ca-485f-9539-017021f046be" />
@@ -1314,7 +1448,7 @@
         <cell char="cb0f88635-7c2e-49e2-9591-45d455c16860" state="s8de86bef-c71f-4767-95b8-4584188e33e3" />
         <cell char="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" state="s264dbc4b-fda9-4d12-9ff3-314ff51977a3" />
       </row>
-      <row id="rf34fd32b-796c-4822-8248-6c4f17d6c541" otu="t0eaedd74-29c9-464d-8430-2648b4b60787">
+      <row id="r7d82a380-eb45-48b2-b2e4-201c21090e2f" otu="t0eaedd74-29c9-464d-8430-2648b4b60787">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
         <cell char="c993a6f88-ce08-4b62-81f0-4514aa6d507f" state="sdb49609e-0dd0-4480-ba4c-8721e0e25e57" />
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sff0e5a28-dca4-4c9a-9539-4094e886795c" />
@@ -1359,7 +1493,7 @@
         <cell char="cb0f88635-7c2e-49e2-9591-45d455c16860" state="sc51f9dcb-c08b-4d8d-ab61-eef1a3f09043" />
         <cell char="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" state="s86eadd5b-5184-4536-bbda-618f2f3667c3" />
       </row>
-      <row id="r2d4c683b-fdb8-4787-921a-41b676519206" otu="t1a309767-ff84-4cad-86c7-87aa9982fbf5">
+      <row id="r0759139e-082a-4493-9c97-2f2afb91d6e2" otu="t1a309767-ff84-4cad-86c7-87aa9982fbf5">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
         <cell char="c993a6f88-ce08-4b62-81f0-4514aa6d507f" state="sdb49609e-0dd0-4480-ba4c-8721e0e25e57" />
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sff0e5a28-dca4-4c9a-9539-4094e886795c" />
@@ -1405,7 +1539,7 @@
         <cell char="cb0f88635-7c2e-49e2-9591-45d455c16860" state="sc51f9dcb-c08b-4d8d-ab61-eef1a3f09043" />
         <cell char="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" state="s86eadd5b-5184-4536-bbda-618f2f3667c3" />
       </row>
-      <row id="rf8c1433b-b1db-488b-b425-cc4dec2ba145" otu="t8f0b6d16-b00f-4136-b9b4-30884b616283">
+      <row id="r570baaf6-34ab-47a0-b8e5-dc9dfc7d4954" otu="t8f0b6d16-b00f-4136-b9b4-30884b616283">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
         <cell char="c993a6f88-ce08-4b62-81f0-4514aa6d507f" state="sdb49609e-0dd0-4480-ba4c-8721e0e25e57" />
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sff0e5a28-dca4-4c9a-9539-4094e886795c" />
@@ -1450,7 +1584,7 @@
         <cell char="cb0f88635-7c2e-49e2-9591-45d455c16860" state="sc51f9dcb-c08b-4d8d-ab61-eef1a3f09043" />
         <cell char="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" state="s86eadd5b-5184-4536-bbda-618f2f3667c3" />
       </row>
-      <row id="r006df766-6ad8-49f0-92fa-64e01e6d2e30" otu="tff618543-91d0-47f4-8992-b0f9adac3808">
+      <row id="r3fcf38c8-aa26-42d1-a8d7-823952384a2c" otu="tff618543-91d0-47f4-8992-b0f9adac3808">
         <cell char="cc088ea7b-718c-4b75-8b7e-c9c14174fa04" state="s59b3c97c-a742-4714-b0ca-1bc4ba1ce973" />
         <cell char="c993a6f88-ce08-4b62-81f0-4514aa6d507f" state="sdb49609e-0dd0-4480-ba4c-8721e0e25e57" />
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sff0e5a28-dca4-4c9a-9539-4094e886795c" />
@@ -1495,7 +1629,7 @@
         <cell char="cb0f88635-7c2e-49e2-9591-45d455c16860" state="sc51f9dcb-c08b-4d8d-ab61-eef1a3f09043" />
         <cell char="cb33b1fd5-7781-4aa0-9651-5a8e08c12af4" state="s86eadd5b-5184-4536-bbda-618f2f3667c3" />
       </row>
-      <row id="r328d0c4f-6189-4c5c-9884-f651b5ac9599" otu="t17eda0cc-a999-41da-90bc-39802eb0aa2c">
+      <row id="rcca15ddc-a301-4e47-b7f2-dadd05019fc1" otu="t17eda0cc-a999-41da-90bc-39802eb0aa2c">
         <cell char="ce1b867b7-af99-4af5-abb4-fa376f9e029b" state="sa36c62d5-c7ca-485f-9539-017021f046be" />
         <cell char="c42d2b484-7f6e-4677-a252-19e8bc108eaf" state="s5ce891af-b809-4ae4-8168-14e87c2868e8" />
         <cell char="cf02a19c0-8851-4d4b-b7e5-b25858ac94ae" state="sbbdd834e-9752-484c-97d0-dbcc8218e47c" />
@@ -1527,5 +1661,5 @@
       </row>
     </matrix>
   </characters>
-  <trees id="tfc86eb14-4109-4f25-bd34-aa9e40870eb6" otus="t888e7b26-a536-44f3-9191-e824cc558927" />
+  <trees id="td24459ce-087f-4f38-8252-a9a9305819c7" otus="t1bd9043b-78d1-41f8-84e9-19b8c66921e3" />
 </nexml>
