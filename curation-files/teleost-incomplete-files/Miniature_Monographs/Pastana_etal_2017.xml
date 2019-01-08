@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1111/jfb.13449</meta>
@@ -7,13 +7,157 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Pastana et al (2017)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="ta0c3addc-737e-48d5-81b3-900f9e2afbbe" />
-  <characters id="1288191c-5330-4e6e-83f7-dea6cf6e9ee2" xsi:type="StandardCells" otus="ta0c3addc-737e-48d5-81b3-900f9e2afbbe">
+  <otus id="t21e1edff-ea7b-44b6-9a22-df7409bd7f39">
+    <otu id="tccfe3315-9515-4ae2-b255-72f01fd48cb1" label="Hyphessobrycon myrmex" about="#tccfe3315-9515-4ae2-b255-72f01fd48cb1">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/5ee7e270-f504-0136-4ba7-005056010073" />
+    </otu>
+  </otus>
+  <characters id="1288191c-5330-4e6e-83f7-dea6cf6e9ee2" xsi:type="StandardCells" otus="t21e1edff-ea7b-44b6-9a22-df7409bd7f39">
     <format>
-      <states id="secd0f696-c1b3-478e-bb2e-3ceb118e15d7" />
-      <char id="cffd43694-5356-4734-b74f-e246b1424f9d" label="" states="secd0f696-c1b3-478e-bb2e-3ceb118e15d7" />
+      <states id="secd0f696-c1b3-478e-bb2e-3ceb118e15d7">
+        <state id="s2457808f-e489-40fd-9fbf-180832394aef" label="wide" symbol="0" about="#s2457808f-e489-40fd-9fbf-180832394aef">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001740" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000600" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s38120c33-69c9-4072-8015-833c40676e12">
+        <state id="s63746589-a729-46fa-aee9-a453b9285215" label="absent" symbol="0" about="#s63746589-a729-46fa-aee9-a453b9285215">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300176" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="sbbd852d4-f41d-4f67-8afd-7970bbe2aa82">
+        <state id="s99c1152f-d0ac-4b88-8233-b17b7e69930b" label="absent" symbol="0" about="#s99c1152f-d0ac-4b88-8233-b17b7e69930b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000495" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s0460dc1c-22af-4157-a9ff-f7294e7d56fc">
+        <state id="s1e635da7-c47f-46f6-86ff-40e963048297" label="represented only by the non-ossified infraorbital canal without associated lamellar portion" symbol="0" about="#s1e635da7-c47f-46f6-86ff-40e963048297">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000223" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001409" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="sc2767f9a-2cb5-44e6-9ce3-a4753cbe1e2d">
+        <state id="sd827b5d9-4b20-4368-807a-a334db396a91" label="Extrascapular canal not completely enclosed in an extrascapular lamella" symbol="0" about="#sd827b5d9-4b20-4368-807a-a334db396a91">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype />
+          </meta>
+        </state>
+      </states>
+      <states id="s476c580d-0515-4b8a-b73a-2d9f924ef56b" />
+      <states id="s0f195afd-cf2f-443f-bb19-9fcf4d94b6a9" />
+      <states id="sa578931e-17bc-47f3-ae4c-892ea2d886ff">
+        <state id="scaf7986e-6f2b-4933-8ab3-97f6040b61cd" label="present" symbol="0" about="#scaf7986e-6f2b-4933-8ab3-97f6040b61cd">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000127" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s6004210c-1164-42d4-b9f0-f1f59eba3bc2">
+        <state id="s1f4081a0-0035-4b9d-b144-63fad531a82c" label="four" symbol="0" about="#s1f4081a0-0035-4b9d-b144-63fad531a82c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000476" />
+                </phen:bearer>
+                <phen:quality count="4">
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char id="cffd43694-5356-4734-b74f-e246b1424f9d" label="Frontal fontanel" states="secd0f696-c1b3-478e-bb2e-3ceb118e15d7" />
+      <char id="cc61078ec-cccb-49cf-a254-d1f6f8b2a1fb" label="Parietal branch of supraorbital canal" states="s38120c33-69c9-4072-8015-833c40676e12" />
+      <char id="c8110c510-4bd1-42c9-9a88-8aa66961990e" label="Fifth and sixth infraorbitals" states="sbbd852d4-f41d-4f67-8afd-7970bbe2aa82" />
+      <char id="c90105b0c-22a8-4aed-9c3f-f6d3b9cebbfe" label="Reduction of the lamellar portion of the first and fourth infraorbitals" about="#c90105b0c-22a8-4aed-9c3f-f6d3b9cebbfe" states="s0460dc1c-22af-4157-a9ff-f7294e7d56fc">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">review</meta>
+      </char>
+      <char id="c6ebe7508-5fb2-48c8-a093-725e04eb3119" label="Extrascapular canal not completely enclosed in an extrascapular lamella" states="sc2767f9a-2cb5-44e6-9ce3-a4753cbe1e2d" />
+      <char id="ca35cbd69-424b-4d85-88e2-97fdc3673367" label="Supraneurals poorly ossified" states="s476c580d-0515-4b8a-b73a-2d9f924ef56b" />
+      <char id="cef0940d1-1511-48be-8a09-622633867eab" label="Dorsal and anal-fin distal radials predominantly cartilaginous" states="s0f195afd-cf2f-443f-bb19-9fcf4d94b6a9" />
+      <char id="c73730273-157e-4eb0-89c4-936a0e666b39" label="Antorbital" states="sa578931e-17bc-47f3-ae4c-892ea2d886ff" />
+      <char id="c8a1f9b0e-fd22-4b16-8b75-61e1b5ed4879" label="Branchiostegal rays" states="s6004210c-1164-42d4-b9f0-f1f59eba3bc2" />
     </format>
-    <matrix />
+    <matrix>
+      <row id="re50244a2-a82b-4e24-8e34-7f84d4b5be99" otu="tccfe3315-9515-4ae2-b255-72f01fd48cb1">
+        <cell char="cffd43694-5356-4734-b74f-e246b1424f9d" state="s2457808f-e489-40fd-9fbf-180832394aef" />
+        <cell char="cc61078ec-cccb-49cf-a254-d1f6f8b2a1fb" state="s63746589-a729-46fa-aee9-a453b9285215" />
+        <cell char="c8110c510-4bd1-42c9-9a88-8aa66961990e" state="s99c1152f-d0ac-4b88-8233-b17b7e69930b" />
+        <cell char="c90105b0c-22a8-4aed-9c3f-f6d3b9cebbfe" state="s1e635da7-c47f-46f6-86ff-40e963048297" />
+        <cell char="c6ebe7508-5fb2-48c8-a093-725e04eb3119" state="sd827b5d9-4b20-4368-807a-a334db396a91" />
+        <cell char="c73730273-157e-4eb0-89c4-936a0e666b39" state="scaf7986e-6f2b-4933-8ab3-97f6040b61cd" />
+        <cell char="c8a1f9b0e-fd22-4b16-8b75-61e1b5ed4879" state="s1f4081a0-0035-4b9d-b144-63fad531a82c" />
+      </row>
+    </matrix>
   </characters>
-  <trees id="tb20488f0-6770-4312-a202-4d55fe85a3d6" otus="ta0c3addc-737e-48d5-81b3-900f9e2afbbe" />
+  <trees id="t719c19a5-bb4f-404b-b1eb-bfc44fb6a141" otus="t21e1edff-ea7b-44b6-9a22-df7409bd7f39" />
 </nexml>
