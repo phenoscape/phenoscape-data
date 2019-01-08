@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://dx.doi.org/10.1590/S1679-62252013000400002</meta>
@@ -7,16 +7,118 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Marinho et al. (2013)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="t6ed74766-f9be-42d2-8526-d909a9955d38">
+  <otus id="t03a2364e-1b0d-4cb1-b512-986438f66115">
     <otu id="tbc7652b9-b5bb-4623-bb1e-401e08a866b9" label="Tyttobrycon marajoara" about="#tbc7652b9-b5bb-4623-bb1e-401e08a866b9">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_9046515" />
     </otu>
+    <otu id="te2f95ec2-d862-4e9c-b48c-c6d07b13fce3" label="" />
+    <otu id="t145e6411-feed-41ff-bc41-05b8503d7c50" label="" />
   </otus>
-  <characters id="1016b5e4-3485-49ab-889e-5c3e59212d24" xsi:type="StandardCells" otus="t6ed74766-f9be-42d2-8526-d909a9955d38">
-    <format />
+  <characters id="1016b5e4-3485-49ab-889e-5c3e59212d24" xsi:type="StandardCells" otus="t03a2364e-1b0d-4cb1-b512-986438f66115">
+    <format>
+      <states id="s7087bd7c-a93f-4e86-b0c5-d799b340b8d6">
+        <state id="sb786d91a-de5d-42f8-8972-814aea732d82" label="Tricuspid premaxillary teeth, tri- or pentacuspid maxillary teeth and four broad tricuspid anterior dentary teeth" symbol="0" />
+        <state id="s00174b4f-60d2-41a3-bf31-3e5035582a21" label="All teeth conical in the jaw" symbol="1" />
+      </states>
+      <states id="s20ee421e-7022-4018-8102-42f8231deba5" />
+      <states id="sedbec88d-9b41-490b-8055-583a8b1e4591" />
+      <states id="scb8ff2cd-bc3b-4818-b341-e19aab81309a">
+        <state id="s7f0314e3-69a2-40c6-8da5-b5910503c31a" label="absent" symbol="0" about="#s7f0314e3-69a2-40c6-8da5-b5910503c31a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s874c56e3-b52d-4dd3-8950-8b640c691cbf" label="present" symbol="1" about="#s874c56e3-b52d-4dd3-8950-8b640c691cbf">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="sc4ad7884-8f4c-46ce-9799-e27918abc4b7">
+        <state id="s6bdb6420-a379-4515-a1f7-d06d388b8277" label="reduced in number: infraorbital four, five and six absent" symbol="0" about="#s6bdb6420-a379-4515-a1f7-d06d388b8277">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001409" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000495" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000223" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001407" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001408" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char id="cc5d34e2d-d395-4f1e-a74a-d1de3d4372c8" label="Jaw teeth" states="s7087bd7c-a93f-4e86-b0c5-d799b340b8d6" />
+      <char id="c98b367c6-39ce-4afd-b3d3-822d605937c3" label="Additionally, it can be distinguished from all congeners, except T. dorsimaculatus, by having 5-7 premaxillary teeth (vs. 8-9)" states="s20ee421e-7022-4018-8102-42f8231deba5" />
+      <char id="cd864f18d-e3a8-489b-8bb4-398d2464959b" label="it can be distinguished from T. dorsimaculatus by having only scattered melanophores on the dorsal fin (vs. dorsal fin with a conspicuous black spot)" states="sedbec88d-9b41-490b-8055-583a8b1e4591" />
+      <char id="c3466569b-9cd4-47a5-a0c5-7126ff038b39" label="Tyttobrycon marajoara can be distinguished from T. hamatus and T. spinosus by having an adipose fin (vs. adipose fin absent)." states="scb8ff2cd-bc3b-4818-b341-e19aab81309a" />
+      <char id="cdba51ad3-d091-4a40-9c75-45beda747e87" label="Infraorbital bones" states="sc4ad7884-8f4c-46ce-9799-e27918abc4b7" />
+    </format>
     <matrix>
-      <row id="r5681711d-8232-406f-87df-9b4663c2fb8c" otu="tbc7652b9-b5bb-4623-bb1e-401e08a866b9" />
+      <row id="r9d25611d-4e34-426a-8a74-e7fb650c16e1" otu="tbc7652b9-b5bb-4623-bb1e-401e08a866b9" />
+      <row id="rfb3839e6-de73-457b-a9e9-f84c2cb92d40" otu="te2f95ec2-d862-4e9c-b48c-c6d07b13fce3" />
+      <row id="r0824440f-155f-456b-ab3b-ec9f022dec33" otu="t145e6411-feed-41ff-bc41-05b8503d7c50" />
     </matrix>
   </characters>
-  <trees id="t66471617-d91b-4694-9b41-098f35f7c840" otus="t6ed74766-f9be-42d2-8526-d909a9955d38" />
+  <trees id="t5175bb1f-687c-4680-98c6-f24564679433" otus="t03a2364e-1b0d-4cb1-b512-986438f66115" />
 </nexml>
