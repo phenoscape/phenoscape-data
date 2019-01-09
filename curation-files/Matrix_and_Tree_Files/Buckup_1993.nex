@@ -1,0 +1,383 @@
+#NEXUS
+[written Wed Jan 09 11:42:48 PST 2019 by Mesquite  version 3.51 (build 898) at itsadmins-MacBook-Pro.local/10.0.1.2]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=48;
+	TAXLABELS
+		Outgroup Crenuchus Odontocharacidium_aphanes Characidium_bahiense Melanocharacidium_blennioides Characidium_boaevistae Characidium_bolivianum Melanocharacidium_compressum Characidium_crandellii Characidium_declivirostre Melanocharacidium_depressum Melanocharacidium_dispilomma Ammocryptocharax_elegans Microcharacidium_eleotrioides Characidium_fasciatum Elachocharax_geryi Microcharacidium_gnomus Characidium_gomesi Characidium_hasemani Characidium_interruptum Elachocharax_junki Characidium_lanei Ammocryptocharax_lateralis Melanocharacidium_melanopteron Ammocryptocharax_minutus Elachocharax_mitopterus Melanocharacidium_nigrum Leptocharacidium_osmospilus Melanocharacidium_pectorale Characidium_pellucidum Characidium_pteroides Elachocharax_pulcher Characidium_purpuratum Microcharacidium_rex Klausewitzia_ritae 'Characidium sp. (Urumari)' Characidium_steindachneri Ammocryptocharax_vintonae Microcharacidium_weitzmani Characidium_zebra Characidium_cf._grajahuens Characidium_chupa Characidium_japuhybense Characidium_lagosantense Characidium_laterale Characidium_pterostictum Characidium_rachovii Characidium_timbuiense 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=64;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 Dorsal_lamina_of_mesethmoid /  wide_ narrow,
+		2 ventral_articulation_between_vomer_and_mesethmoid /  vomer_and_mesethmoid_closely_articulated_ventrally mesethmoid_separated_from_vomer_by_a_large_block_of_cartilage,
+		3 pterosphenoid_foramen_for_ophthalmic_never /  'foramen formed by a tunnel crossing ptersphenoid diagonally, bordered ventrally by a bony crest which does not permit a direct ventral view of the brain cavity through the foramen' 'foramen formed by a large opening in the center of the pterosphenoid, usually not bordered by bony crests (fig. 1)',
+		4 contact_between_ascending_processes_of_parasphenoid_and_pterosphenoids /  no_contact 'ascending of parasphenoid come into contact with pterosphenoids (fig. 1)',
+		5 anterior_portion_of_pterotic_laterosensory_canal /  no_laterosensory_canal_present_on_sphenotic pterotic_laterosensory_canal_piercing_sphenotic,
+		6 auditory_foramen_of_prootic /  'large, elongate antero-posteriorly' small_and_articular,
+		7 parietal_branch_of_supraorbital_laterosensory_canal /  parietal_branch_reaches_parietal _parietal_branch_restricted_to_frontal parietal_branch_entirely_absent,
+		8 cranial_fontanel /  fontanel_bordered_anteriorly_by_the_frontals 'absent or reduced, with anterior margin formed solely by the parietal',
+		9 infraorbital_1 /  dorsal_margin_of_infraorbital_1_in_general_alignment_with_dorsal_margin_of_adjacent_infraorbitals ' dorsal portion of infraorbital 1 greatly expanded vertically, forming anterior margin of orbit',
+		10 'llamelar portion of infraorbitals 3-6' /  well_developed absent_or_greatly_reduced,
+		11 supraorbital /  present absent,
+		12 mesopterygoid_teeth /  absent present,
+		13 'gap between dentary and angulo-articular' /  absent present,
+		14 maxillary_teeth /  teeth_absent teeth_present,
+		15 webwrian_apparatus /  'vertebral central 1-4 independently ossified' vertebrae_of_weberian_apparatus_fused_together,
+		16 ventral_processes_of_centrum /  absent_or_directed_posteroventrally_towards_the_os_suspensorium projecting_anteroventrally_towards present,
+		17 medial_process_of_rib_of_fifth_centrum /  absent present,
+		18 supraneurals /  'anterior dorsal-fin pterygiophore located posterior to neural spine of the eighth centrum, leaving space for full development of four or more supraneurals posterior to the neural spine of the fourth centrum' 'anterior dorsal-fin pterygiophore located anteriorly, allowing the development of only three fully-developed supraneurals anterior to the neural spine of the seventh centrum',
+		19 supraneurals_preceding_the_dorsal_fin /  supraneurals_well_ossified supraneurals_mostly_unossified_or_entirely_absent,
+		20 medial_process_of_posttemporal /  present absent,
+		21 supracleithrum /  supracleithrum_elongate_and_closely_connected_to_ascending_process_of_cleithrum 'supracleithrum greatly arched, with a tapering ventral tip, loosely attached to cleithrum, and with a conspicuous scalelike projection on its posterodorsalmargin where the laterosensory canal passes into the lateral line' 'supracleithrum vertically short, slightly arched posteriorly',
+		22 dorsal_process_of_cleithrum /  ' dorsal tip of cleithrum closely attached to medial surface of posttemporal, and barely visible above the ventral expansion of that bone' _dorsal_tip_of_cleithrum_extending_posterodorsally_considerably_beyond_the_posttemporal_into_the_expaxial_musculature_of_the_body,
+		23 postcleithrum_1 /  postclethrum_1_well_developed postcleithrum_1_rudimentary_or_absent,
+		24 postcleithra_2_and_3 /  _autogenous_postcleithra postcleithra_2_and_3_represent_by_a_single_ossification,
+		25 coracoids /  postcleithra_2_and_3_represent_by_a_single_ossification a_well_defined_foramen_present_on_the_posterior_region_of_the_medial_laminae_of_the_coracoids,
+		26 posterior_ventral_margin_of_coracoid /  a_well_defined_foramen_present_on_the_posterior_region_of_the_medial_laminae_of_the_coracoids 'posterior margin of coracoid bent ventrally, slightly recurved anteriad, and reinforced so as to partially form the posterior limit of the space located ventral to the coracoids on each side of the midsagittal laminae of these bones.',
+		27 posterior_process_of_coracoid /  _presence_of_a_process_extending_into_the_ventral_abdominal_wall _process_absent_or_reduced_to_a_squarish_bump_on_the_posterior_margin_of_the_coracoid,
+		28 number_of_unbranched_rays_on_leading_of_pectoral_fin /  one_ray two_rays three_rays four_rays,
+		29 number_of_pectoral_fin_rays /  'more than an nine, usually 13 rays' 'reduced, nine or fewer rays',
+		30 pelvic_girdle /  gap_between_anterior_lamellae_of_pelvic_bones_with_a_smooth_posterior_margin gap_between_anterior_lamellae_of_pelvic_bones_constricted_posterirly,
+		31 number_of_unbranched_rays_on_lateral_portion_of_the_pelvic_fin /  one_unbranched_ray two_unbranched_rays,
+		32 'dorsal-fin rays' /  fewer_than_10_rays ' 11-14 rays' 15_or_more_rays,
+		33 fourth_dorsal_fin_ray /  fourth_ray_about_the_same_size_as_adjacent_rays fourth_ray_greatly_elongated_relative_to_other_rays_and_body_size,
+		34 'relative position of anal and dorsal-fin bases' /  anal_fin_origin_located_posterior_to_dorsal_fin_base anal_fin_origin_located_very_slinghtly_posterior_or_in_advance_of_termination_of_dorsal_fin_base,
+		35 uroneural /  present absent,
+		36 number_of_principal_caudal_fin_rays /  caudal_fin_with_19_principal_rays caudal_fin_with_17_principal_rays,
+		37 mouth_position /  mouth_terminal_or_subterminal mouth_ventral,
+		38 tooth_morphology /  at_least_some_of_the_lower_jaw_teeth_tricuspid absence_of_tricuspid_teeth_in_both_jaws,
+		39 nasal_openings /  anterior_and_posterior_nasal_openings_adjacent_to_each_other anterior_and_posterior_nasal_openings_separated_from_each_other,
+		40 nasal_dermal_flaps /  anterior_and_posterior_nasal_flaps_not_touching_each_other_distally dermal_flaps_of_anterior_and_posterior_nares_independent_but_touching_eachother_distally,
+		41 cheek_orientation /  ' surface of cheek-oriented vertically' cheek_greatly_reduced_and_ventromesially_slanted,
+		42 branchiostegal_membranes /  membranes_free_from_each_other_and_from_isthmus membranes_united_to_each_other_across_isthmus,
+		43 ventral_squamation /  complete isthmus_scaleless isthmus_and_area_between_pectoral_fins_scaleless belly_scaleless_to_the_level_of_the_pelvic_fins,
+		44 lateral_line /  complete incomplete,
+		45 adipose_fin /  present_ absent,
+		46 body_shape /  not_particularly_elongate 'highly elongate, fusiform body shape',
+		47 body_shape /  _body_elongate ' body relatively short, slab-shape',
+		48 scale_structure /  'circuli present on apical field of scale, converging towards the anteroposterior axis of the scale' 'circuli excluded from apical field of escales, parallel to or posteriorly divergent relative to anteroposterior axis of scale',
+		49 pigmentation__on_subordital_area /  _absent_or_homogeneously_dark presence_of_a_vertical_dark_band,
+		50 accessory_suborbital_dark_bar /  bar_absent_or_diffuse ' accessory suborbital bar well defined, directed posteroventrally towards the corner of the subopercle',
+		51 pigmentation_on_supraorbital_area /  dark_marks_either_absent_or_with_diffuse_borders at_least_one_well_defined_short_transverse_drak_bar_located_immediately_above_eye,
+		52 pigmentation_on_supraorbital_area /  supraorbital_region_homogeneously_pigmented_or_with_a_single_darker_area two_dark_marks_above_each_orbit,
+		53 pigmentation_on_prepectoral_area /  prepectoral_area_unpigmented_or_with_scattered_chromatophores_not_forming_conspicuously_dark_areas dark_patches_of_pigmentation_present_in_the_preperctoral_area_either_as_a_pair_of_dark_marks_in_the_skin_covering_the_cleithrum_or_as_a_continuous_band_extending_across_the_isthmus,
+		54 pigmentation_at_pectoral_and_pelvic_fin_bases /  condition_described_in_state_1_absent a_dark_blotch_of_melanophores_present_at_the_base_of_the_medial_rays_of_the_pectoral_and_pelvic_fins,
+		55 pigmentation_pattern_of_pectoral_and_pelvic_fins /  area_near_leading_edge_and_tip_of_fins_not_particulary_distinct_in_pigmentation_pattern_from_remaining_of_fins 'fins with varied patterns of dark pigmentation, but area near leading edge and tip of fins conspicuosly unpigmented',
+		56 pigmentation_pattern_of_dorsal_fin /  'no pigmenttion, or condition described in state 1' dorsal_fin_intensely_pigmented_with_a_horizontal_dark_band_near_its_base_associated_with_a_series_of_darker_spots_formed_by_the_extension_of_lateral_bands_onto_the_dorsal_fin,
+		57 pattern_of_vertical_bands /  portion_of_vertical_dark_band_located_below_lateral_line_aligned_with_corresponding_dorsal_portion 'dark patches below lateral line located between adjacent bandson dorsum, forming a pattern of alternating dark marks along the flanks',
+		58 pattern_of_vertical_bands /  wide_bands 'narrow, widely spaced bands, separated by unpigmented areas',
+		59 thickness_of_vertical_bands /  vertical_bands_on_body_usually_thicker_than_the_length_of_a_scale 'vertical bands reduced to of vertical lines, or even fragmented	',
+		60 fragmentation_of_vertical_bands /  dorsal_root_of_vertical_bands_usually_extending_at_least_to_midlateral_line 'dorsal root of vrtical bands not connected to lateral fragments of lateral line, wich are modified into posteriorly directed semicircles		',
+		61 'longitudinal mid-lateral band' /  'absent or if present, dark with diffuse borders' wide_brown_stripe_with_sharply_defined_borders,
+		62 pigmentation_on_caudal_fin_base /  condition_described_in_state_1_absent presence_of_a_pair_of_dark_spots_at_the_base_of_the_caudal_fin,
+		63 pigmentation_on_caudal_fin_base /  _no_basicaudal_stop dark_stop_near_base_of_middle_caudal_fin_rays,
+		64 pigmentation_pattern_of_caudal_fin /  lower_lobe_of_caudal_fin_hyaline_or_variegated lower_lobe_of_caudal_fin_uniformly_black ; 
+	MATRIX
+	Outgroup                        00000000000?0?00000000000001000100000000000000000000000000000000
+	Crenuchus                       00000000001101000000000?000200021000000000010000?000000000000000
+	Odontocharacidium_aphanes       110111201110110010010010000?10010010011000?100011010100000000100
+	Characidium_bahiense            1101112011001000100100000003000100000110000100000000000000000101
+	Melanocharacidium_blennioides   1101110011101000110110011014000100000010001000011010101010000000
+	Characidium_boaevistae          1111110111001001100100100003000100000010002000010000000000000010
+	Characidium_bolivianum          1111110?11001001100100100003000100000010001000010000000000000010
+	Melanocharacidium_compressum    1101110011101000110110011014000100000010001000011010101010000000
+	Characidium_crandellii          1101110111001000100100100014000100000011013000010000?010?00?0000
+	Characidium_declivirostre       1101110111001010100100100013000100000111013000010000000010000000
+	Melanocharacidium_depressum     1101110011101010110121111114000100000010002000011011100010000000
+	Melanocharacidium_dispilomma    1101110011101000110110011114000100000010001000011011100010000000
+	Ammocryptocharax_elegans        1101110111001100101100110002001100001110100001011010000000001000
+	Microcharacidium_eleotrioides   110111201110100010010011?004110110110010000100011010110000001100
+	Characidium_fasciatum           1111110011001001100100100003000100000010002000010000000000000010
+	Elachocharax_geryi              11?1112011101000100100100014100201100110000110111110?10100000100
+	Microcharacidium_gnomus         11?1112011001000100100010003100100110110000100011010110000001100
+	Characidium_gomesi              11111100110010011001001000030?0100000010002000010000000000000010
+	Characidium_hasemani            1101110011001000100100100003000100000010001000010000000000000010
+	Characidium_interruptum         1101112011001000100100000003000100000010001100010000000000000010
+	Elachocharax_junki              11?111?011?0100?1??1?0???0?41?0201?001100?0110111110?10100000100
+	Characidium_lanei               1101112011001000100100000003000100000010001000010000000000000010
+	Ammocryptocharax_lateralis      1101110011001100100100000004001100001010101001010010000010001000
+	Melanocharacidium_melanopteron  11?111011110100?1101???????40?0100000010001000011010?01010000001
+	Ammocryptocharax_minutus        1101112011001100101100110002001100001110100001010010000000001000
+	Elachocharax_mitopterus         110111201100100010010000000?100201100110000110111010?10100000100
+	Melanocharacidium_nigrum        1101110111101000110110011014000100000010001000011010101010000001
+	Leptocharacidium_osmospilus     1101111011001000100100000004001100000110001000011110100010001000
+	Melanocharacidium_pectorale     1101110111101010110121111114000100000010002000011011101010000000
+	Characidium_pellucidum          11?111001100100?1??100?0?0030?0100?00010000000010000000001110010
+	Characidium_pteroides           11?111001100100?1??100?0?0030?0100?00010000000010000000001110010
+	Elachocharax_pulcher            110111201100100010010000000?100201100010000100111010110100000100
+	Characidium_purpuratum          1111110111001001100100100003000100000010001000010000000000000010
+	Microcharacidium_rex            11?11101111010011?01?0?????40?010000001000100001?0?0?010?0000001
+	Klausewitzia_ritae              1101111011001100100100000004100100000010000000011010110000000000
+	'Characidium sp. (Urumari)'     1101111011001000100100100003000100000010000000010000000001110010
+	Characidium_steindachneri       1101110011001000100100100003000100000110000000010000000000000010
+	Ammocryptocharax_vintonae       1101110?110111001001000000040011000010100010010110?0?00010001000
+	Microcharacidium_weitzmani      1101112011101000100100110004110010110110001100011010110000001100
+	Characidium_zebra               1101110011001000100100000003000100000010000000010000000000000010
+	Characidium_cf._grajahuens      ??????????????????????????????????????10????????????????????????
+	Characidium_chupa               ????????????????????????????????????????????????????????????????
+	Characidium_japuhybense         ????????????????????????????????????????????????????????????????
+	Characidium_lagosantense        ????????????????????????????????????????????????????????????????
+	Characidium_laterale            ????????????????????????????????????????????????????????????????
+	Characidium_pterostictum        ????????????????????????????????????????????????????????????????
+	Characidium_rachovii            ????????????????????????????????????????????????????????????????
+	Characidium_timbuiense          ????????????????????????????????????????????????????????????????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 64;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 64;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1547062968410;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 595341561611015970;
+			tell It;
+				setDefaultOrder  38 1 52 4 33 5 6 34 8 9 35 36 44 47 10 28 48 11 13 14 40 17 0 37 2 28 37 20 42 49 51 29 21 43 30 23 24 3 48 26 12 7 15 16 18 20 22 25;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 203845630854079424;
+			mqVersion 351;
+			checksumv 0 3 149665741 null  getNumChars 64 numChars 64 getNumTaxa 48 numTaxa 48   short true   bits 31   states 31   sumSquaresStatesOnly 10820.0 sumSquares 10820.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1239 719;
+			setLocation 17 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #595341561611015970 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #595341561611015970;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1139 647;
+					setLocation 17 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #203845630854079424 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 205;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1139 647;
+					setLocation 17 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames off;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1139 647;
+						setLocation 17 23;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #203845630854079424 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					newAssistant  #mesquite.lists.CharacterStats.CharacterStats;
+				tell It;
+					toggleSelectedOnly off;
+				endTell;
+					getTable;
+					tell It;
+						rowNamesWidth 130;
+						columnWidth 1 68;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1139 647;
+					setLocation 17 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
