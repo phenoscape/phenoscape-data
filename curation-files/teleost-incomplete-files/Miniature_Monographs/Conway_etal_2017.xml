@@ -956,71 +956,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2002123" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="BSPO:0000056" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2002123" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0001633" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2002123" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0003861" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="BSPO:0000056" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0003861" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0001633" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0003861" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0001353" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="BSPO:0000056" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0001353" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0001633" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0001353" />
+                  <phen:typeref about="UBERON:0003861">
+                    <phen:qualifier relation="BSPO:0000099">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2002123" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -1047,20 +989,7 @@
         </state>
       </states>
       <states id="states995">
-        <state id="state998" label="present" symbol="1" about="#state998">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001392" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000467" />
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
+        <state id="state998" label="present" symbol="1" />
       </states>
       <states id="states999">
         <state id="state1002" label="present" symbol="1" about="#state1002">
@@ -1084,7 +1013,13 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0006065" />
+                  <phen:typeref about="UBERON:0006065">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000586" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -3859,7 +3794,6 @@
       </char>
       <char about="#char988" id="char988" label="Neural arches posterior to Neural arch 5" states="states987">
         <meta content="false" datatype="xsd:boolean" id="meta1611" property="nr:selected" xsi:type="LiteralMeta" />
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">check this</meta>
       </char>
       <char about="#char992" id="char992" label="Neural spine 5" states="states991">
         <meta content="false" datatype="xsd:boolean" id="meta1612" property="nr:selected" xsi:type="LiteralMeta" />
@@ -3873,7 +3807,6 @@
       </char>
       <char about="#char1004" id="char1004" label="Hemal arch PU2" states="states1003">
         <meta content="false" datatype="xsd:boolean" id="meta1615" property="nr:selected" xsi:type="LiteralMeta" />
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">check this</meta>
       </char>
       <char about="#char1008" id="char1008" label="Hemal arch PU3" states="states1007">
         <meta content="false" datatype="xsd:boolean" id="meta1616" property="nr:selected" xsi:type="LiteralMeta" />
@@ -4681,5 +4614,5 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t1a3af530-dcd0-4696-810d-bc382915eff4" otus="otus739" />
+  <trees id="tec80ba78-1024-4814-8a73-cd413318a4a9" otus="otus739" />
 </nex:nexml>
