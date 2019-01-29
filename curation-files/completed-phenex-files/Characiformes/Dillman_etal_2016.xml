@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xsi:type="LiteralMeta" property="dc:description">Need taxonomy update from CoF. 1/29/2019</meta>
+  <meta xsi:type="LiteralMeta" property="dc:description">Need taxonomy update from CoF. 1/29/2019
+Character 394 state 3 not defined in text</meta>
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1111/cla.12127</meta>
@@ -6231,6 +6232,9 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001626" />
                 </phen:bearer>
+                <phen:quality count="5">
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -6242,6 +6246,9 @@
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001626" />
                 </phen:bearer>
+                <phen:quality count="4">
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
@@ -7900,7 +7907,7 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state2916" symbol="1" label="&quot; in form of discrete, approximately tubular mass&quot;" about="#state2916">
+        <state id="state2916" symbol="1" label="in form of discrete, approximately tubular mass" about="#state2916">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -12691,17 +12698,17 @@
         </state>
       </states>
       <states id="states1251">
-        <state id="state1921" symbol="1" label="&quot; pronounced degree of mobility between ectopterygoid and quadrate" about="#state1921">
+        <state id="state1921" symbol="1" label="pronounced degree of mobility between ectopterygoid and quadrate" about="#state1921">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="Castro &amp; Vari 2004: #81" />
+                  <phen:typeref about="UBERON:0011634" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="ectopterygoid bone" />
+                  <phen:typeref about="PATO:0040010" />
                   <phen:related_entity>
-                    <phen:typeref about="mobile relative to" />
+                    <phen:typeref about="UBERON:0006597" />
                   </phen:related_entity>
                 </phen:quality>
               </phen:phenotype_character>
@@ -17536,30 +17543,28 @@
         </state>
       </states>
       <states id="states1399">
-        <state id="state1966" symbol="4" label="" />
-        <state id="state2369" symbol="3" label="" />
-        <state id="sd5b9d107-cd2c-4b37-84ad-05732fa2d8bc" label="three" symbol="0" about="#sd5b9d107-cd2c-4b37-84ad-05732fa2d8bc">
+        <state id="state1966" symbol="4" label="four" about="#state1966">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000476" />
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="4">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="sbd2f4843-99c5-4ac5-bcc8-8be99431be97" label="four" symbol="1" about="#sbd2f4843-99c5-4ac5-bcc8-8be99431be97">
+        <state id="state2369" symbol="3" label="three" about="#state2369">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2000476" />
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="3">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -21931,17 +21936,9 @@
         </state>
       </states>
       <states id="states1537">
-        <state id="state2007" symbol="1" label="most teeth on fifth upper pharyngeal tooth-plate bicuspid but with occasional teeth unicuspid" about="#state2007">
+        <state id="state2007" symbol="1" label="all teeth on fifth upper pharyngeal tooth-plate unicuspid" about="#state2007">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001659" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0002281" />
-                </phen:quality>
-              </phen:phenotype_character>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001659" />
@@ -21953,8 +21950,7 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state2247" symbol="3" label="" />
-        <state id="state2371" symbol="2" label="at least some teeth on fifth upper pharyngeal tooth-plate tricuspid and other teeth bicuspid" about="#state2371">
+        <state id="state2247" symbol="3" label="at least some teeth on fifth upper pharyngeal tooth-plate tricuspid and other teeth bicuspid" about="#state2247">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -21976,16 +21972,23 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="s74bb5b91-e4e5-4c8c-90ec-d0a88ed15ed6" label="all teeth on fifth upper pharyngeal tooth-plate unicuspid" symbol="0" about="#s74bb5b91-e4e5-4c8c-90ec-d0a88ed15ed6">
+        <state id="state2371" symbol="2" label="most teeth on fifth upper pharyngeal tooth-plate bicuspid but with occasional teeth unicuspid" about="#state2371">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
-                <phen:description>"Coding contingent on possession of pharyngeal teeth, states 1 or 2 of character 322. Vari (1983) treated this character as ordered, but it treated herein as unordered. "</phen:description>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001659" />
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0005021" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001659" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002281" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
@@ -30692,7 +30695,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3129" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Castro &amp; Vari 2004: #109</meta>
       </char>
-      <char about="#char1026" id="char1026" label="&quot;Width of bony shelf above orbit formed by lateral ethmoid, frontal and sphenotic bones &quot;" states="states1025">
+      <char about="#char1026" id="char1026" label="Width of bony shelf above orbit formed by lateral ethmoid, frontal and sphenotic bones" states="states1025">
         <meta content="false" datatype="xsd:boolean" id="meta3130" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Sidlauskas &amp; Vari 2008: #30</meta>
       </char>
@@ -30812,7 +30815,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3159" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Modified from Vari 1989a: #59; Modified from Castro and Vari 2004: #32</meta>
       </char>
-      <char about="#char1086" id="char1086" label="&quot;Form of non-ossified connective tissues at junction of premaxilla, maxilla and palatine &quot;" states="states1085">
+      <char about="#char1086" id="char1086" label="Form of non-ossified connective tissues at junction of premaxilla, maxilla and palatine" states="states1085">
         <meta content="false" datatype="xsd:boolean" id="meta3160" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Castro &amp; Vari 2004: #30</meta>
       </char>
@@ -31146,7 +31149,7 @@
       </char>
       <char about="#char1252" id="char1252" label="Mobility between ectopterygoid and quadrate" states="states1251">
         <meta content="false" datatype="xsd:boolean" id="meta3243" property="nr:selected" xsi:type="LiteralMeta" />
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">"</meta>
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">Castro &amp; Vari 2004: #81</meta>
       </char>
       <char about="#char1254" id="char1254" label="Form of mesopterygoid" states="states1253">
         <meta content="false" datatype="xsd:boolean" id="meta3244" property="nr:selected" xsi:type="LiteralMeta" />
@@ -31288,7 +31291,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3278" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Modified from Castro &amp; Vari 2004: #91</meta>
       </char>
-      <char about="#char1324" id="char1324" label="&quot;Position of joint of interhyal, metapterygoid, symplectic and hyomandibular &quot;" states="states1323">
+      <char about="#char1324" id="char1324" label="Position of joint of interhyal, metapterygoid, symplectic and hyomandibular" states="states1323">
         <meta content="false" datatype="xsd:boolean" id="meta3279" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Sidlauskas &amp; Vari 2008: #89</meta>
       </char>
@@ -31392,7 +31395,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3304" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1989a: #94; Vari 1989b: #21; Vari 1989b: #69</meta>
       </char>
-      <char about="#char1376" id="char1376" label="&quot;Lateral development of anterior portion of basihyal complex (basihyal and associated basihyal tooth-plate, if present) &quot;" states="states1375">
+      <char about="#char1376" id="char1376" label="Lateral development of anterior portion of basihyal complex (basihyal and associated basihyal tooth-plate, if present)" states="states1375">
         <meta content="false" datatype="xsd:boolean" id="meta3305" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Modified from Vari 1983: #33; Modified Vari 1989a: #100; Modified from Castro and Vari 2004: #14</meta>
       </char>
@@ -31436,7 +31439,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3315" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1983: #34; Castro and Vari 2004: #17</meta>
       </char>
-      <char about="#char1398" id="char1398" label="&quot;Thickness of interhyal, presence or absence of distinct medial process of that bone, and attachment point of ligament extending to metapterygoid and quadrate &quot;" states="states1397">
+      <char about="#char1398" id="char1398" label="Thickness of interhyal, presence or absence of distinct medial process of that bone, and attachment point of ligament extending to metapterygoid and quadrate" states="states1397">
         <meta content="false" datatype="xsd:boolean" id="meta3316" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1983: #92; Vari et al. 1995: #19</meta>
       </char>
@@ -31452,7 +31455,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3319" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1989a: #33</meta>
       </char>
-      <char about="#char1406" id="char1406" label="&quot;Horizontal elongation of fourth basibranchial, fourth ceratobranchial and complex formed by fourth infrapharyngobranchial and fourth upper tooth-plate &quot;" states="states1405">
+      <char about="#char1406" id="char1406" label="Horizontal elongation of fourth basibranchial, fourth ceratobranchial and complex formed by fourth infrapharyngobranchial and fourth upper tooth-plate" states="states1405">
         <meta content="false" datatype="xsd:boolean" id="meta3320" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1984: #3; Vari 1989a: #66</meta>
       </char>
@@ -31540,7 +31543,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3341" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1983: #85 (in part); Vari 1989a: #91; Vari 1989c: #6; Vari et al. 1995: #12 (in part)</meta>
       </char>
-      <char about="#char1450" id="char1450" label="&quot;Presence or absence of flattened, elongate triangular process on dorsal surface of anterior margin of first epibranchial &quot;" states="states1449">
+      <char about="#char1450" id="char1450" label="Presence or absence of flattened, elongate triangular process on dorsal surface of anterior margin of first epibranchial" states="states1449">
         <meta content="false" datatype="xsd:boolean" id="meta3342" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1989b: #16</meta>
       </char>
@@ -31640,7 +31643,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3366" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1989a: #79; Vari 1989b: #2</meta>
       </char>
-      <char about="#char1500" id="char1500" label="&quot;Position of medial spur and ventral articular processes of fourth epibranchial, and of associated fifth upper pharyngeal tooth-plate &quot;" states="states1499">
+      <char about="#char1500" id="char1500" label="Position of medial spur and ventral articular processes of fourth epibranchial, and of associated fifth upper pharyngeal tooth-plate" states="states1499">
         <meta content="false" datatype="xsd:boolean" id="meta3367" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1989a: #80; Vari 1989b: #3</meta>
       </char>
@@ -31752,7 +31755,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3394" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1989b: #7</meta>
       </char>
-      <char about="#char1556" id="char1556" label="&quot;Presence or absence of triangular, anteriorly directed process on ventral surface of anterolateral corner of second hypobranchial that serves as point of attachment for ligament extending from second hypobranchial to anterior portion of vertical process on third hypobranchial &quot;" states="states1555">
+      <char about="#char1556" id="char1556" label="Presence or absence of triangular, anteriorly directed process on ventral surface of anterolateral corner of second hypobranchial that serves as point of attachment for ligament extending from second hypobranchial to anterior portion of vertical process on third hypobranchial" states="states1555">
         <meta content="false" datatype="xsd:boolean" id="meta3395" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1989b: #49</meta>
       </char>
@@ -31931,7 +31934,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3439" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1989b: #22</meta>
       </char>
-      <char about="#char1646" id="char1646" label="&quot;Presence or absence of well developed, procumbent, dorsal-fin spine &quot;" states="states1645">
+      <char about="#char1646" id="char1646" label="Presence or absence of well developed, procumbent, dorsal-fin spine" states="states1645">
         <meta content="false" datatype="xsd:boolean" id="meta3440" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Castro &amp; Vari 2004: #120</meta>
       </char>
@@ -32071,7 +32074,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3474" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1989b: #42</meta>
       </char>
-      <char about="#char1716" id="char1716" label="&quot;Presence or absence of dark, wavy horizontal striping on body formed by concentrations of dark chromatophores along dorsal and ventral margins of scales &quot;" states="states1715">
+      <char about="#char1716" id="char1716" label="Presence or absence of dark, wavy horizontal striping on body formed by concentrations of dark chromatophores along dorsal and ventral margins of scales" states="states1715">
         <meta content="false" datatype="xsd:boolean" id="meta3475" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Castro &amp; Vari 2004: #116</meta>
       </char>
@@ -32115,7 +32118,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3485" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Sidlauskas &amp; Vari 2008: #121; Vari 1991: #28; Vari 1992a: page 124</meta>
       </char>
-      <char about="#char1738" id="char1738" label="&quot;Presence or absence of dark, round or transversely wider, mid-dorsal spot immediately anterior to origin of dorsal fin &quot;" states="states1737">
+      <char about="#char1738" id="char1738" label="Presence or absence of dark, round or transversely wider, mid-dorsal spot immediately anterior to origin of dorsal fin" states="states1737">
         <meta content="false" datatype="xsd:boolean" id="meta3486" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">"Vari 1991: #11; Vari and Reis, 1995: character B"</meta>
       </char>
@@ -32139,7 +32142,7 @@
         <meta content="false" datatype="xsd:boolean" id="meta3491" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Castro &amp; Vari 2004: #117</meta>
       </char>
-      <char about="#char1750" id="char1750" label="&quot;Presence or absence of irregular, vertical, somewhat chevron-shaped bars formed of small black marks on caudal fin &quot;" states="states1749">
+      <char about="#char1750" id="char1750" label="Presence or absence of irregular, vertical, somewhat chevron-shaped bars formed of small black marks on caudal fin" states="states1749">
         <meta content="false" datatype="xsd:boolean" id="meta3492" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Castro &amp; Vari 2004: #119</meta>
       </char>
@@ -32227,11 +32230,11 @@
         <meta content="false" datatype="xsd:boolean" id="meta3513" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1983: #4; Castro &amp; Vari 2004: #D</meta>
       </char>
-      <char about="#char1794" id="char1794" label="&quot;Presence or absence of triangular, autogenous section of levator arcus palatini that arises from posterodorsal portion of orbital cavity and inserts on anterodorsal margin of hyomandibula &quot;" states="states1793">
+      <char about="#char1794" id="char1794" label="Presence or absence of triangular, autogenous section of levator arcus palatini that arises from posterodorsal portion of orbital cavity and inserts on anterodorsal margin of hyomandibula" states="states1793">
         <meta content="false" datatype="xsd:boolean" id="meta3514" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Vari 1983: #69</meta>
       </char>
-      <char about="#char1796" id="char1796" label="&quot;Presence or absence of large sac-like, muscular epibranchial organ that extends dorsal to medial elements of dorsal portion of gill arches &quot;" states="states1795">
+      <char about="#char1796" id="char1796" label="Presence or absence of large sac-like, muscular epibranchial organ that extends dorsal to medial elements of dorsal portion of gill arches" states="states1795">
         <meta content="false" datatype="xsd:boolean" id="meta3515" property="nr:selected" xsi:type="LiteralMeta" />
         <meta xsi:type="LiteralMeta" property="rdfs:comment">Modified from Vari 1983: #7; Modified from Vari 1989a: #3; Sidlauskas &amp; Vari 2008: #154</meta>
       </char>
@@ -64767,7 +64770,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t0509a785-2139-4dbe-bda4-63082e284508" otus="otus1" />
+  <trees id="tae4ca4fd-b1b8-455d-80ad-882fc7b55fbf" otus="otus1" />
   <trees id="t7a904a3a-6eb4-4157-8f61-3a63d922aefb" otus="otus1" />
   <trees id="tf965560d-c45e-4735-b213-6ca561bbdfb9" otus="otus1" />
   <trees id="tc1340ff5-9643-4c0a-9d56-7ece00cbebec" otus="otus1" />
