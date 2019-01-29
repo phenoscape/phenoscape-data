@@ -6224,16 +6224,36 @@
         </state>
       </states>
       <states id="states1053">
-        <state id="state1872" symbol="5" label="" />
-        <state id="state2115" symbol="4" label="" />
-        <state id="state2343" symbol="3" label="five or more teeth on premaxilla" about="#state2343">
+        <state id="state1872" symbol="5" label="five or more teeth on premaxilla" about="#state1872">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
                   <phen:typeref about="UBERON:2001626" />
                 </phen:bearer>
-                <phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state2115" symbol="4" label="four teeth on premaxilla" about="#state2115">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state2343" symbol="3" label="three teeth on premaxilla" about="#state2343">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality count="3">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -6255,38 +6275,9 @@
             </phen:phenotype>
           </meta>
         </state>
-        <state id="s59af8113-bf28-4010-8a8c-93edbf0858b7" label="&quot; three teeth on premaxilla, &quot;" symbol="1" about="#s59af8113-bf28-4010-8a8c-93edbf0858b7">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001626" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000070" />
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="s7fc668a8-a35f-4dfc-95c4-a52ff24ab10f" label="&quot; four teeth on premaxilla, &quot;" symbol="2" about="#s7fc668a8-a35f-4dfc-95c4-a52ff24ab10f">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001626" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000070" />
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
       </states>
       <states id="states1055">
-        <state id="state1873" symbol="5" label="" />
-        <state id="state2284" symbol="1" label="tooth with two cusps" about="#state2284">
+        <state id="state1873" symbol="5" label="tooth with five cusps" about="#state1873">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -6299,14 +6290,14 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="5">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state2285" symbol="2" label="tooth with three cusps" about="#state2285">
+        <state id="state2284" symbol="1" label="tooth with only single cusp" about="#state2284">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -6319,7 +6310,27 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state2285" symbol="2" label="tooth with two cusps" about="#state2285">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006844">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001626" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -6330,7 +6341,7 @@
           <member state="state2285" />
           <member state="state2284" />
         </polymorphic_state_set>
-        <state id="state2390" symbol="3" label="tooth with four cusps" about="#state2390">
+        <state id="state2390" symbol="3" label="tooth with three cusps" about="#state2390">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -6343,14 +6354,14 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="3">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state2443" symbol="4" label="tooth with five cusps" about="#state2443">
+        <state id="state2443" symbol="4" label="tooth with four cusps" about="#state2443">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -6363,28 +6374,7 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000070" />
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="sd1d7f9d3-b575-43b7-a72e-89715baac102" label="tooth with only single cusp" symbol="0" about="#sd1d7f9d3-b575-43b7-a72e-89715baac102">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:description>Coding contingent on possession of teeth on premaxilla (state other than 0 for character 81). Coding of Caenotropus maculosus as polymorphic for states 1 and 2 based upon discussion in Scharcansky and Lucena (2007)</phen:description>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0006844">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:2001626" />
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
+                <phen:quality count="4">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -6393,8 +6383,7 @@
         </state>
       </states>
       <states id="states1057">
-        <state id="state1874" symbol="5" label="" />
-        <state id="state2287" symbol="1" label="each tooth with two cusps" about="#state2287">
+        <state id="state1874" symbol="5" label="each tooth with five cusps" about="#state1874">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -6407,7 +6396,7 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="5">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -6421,14 +6410,14 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="5">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
             </phen:phenotype>
           </meta>
         </state>
-        <state id="state2288" symbol="2" label="each tooth with three cusps" about="#state2288">
+        <state id="state2287" symbol="1" label="each tooth with single cusp" about="#state2287">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -6441,7 +6430,7 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -6455,7 +6444,41 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="1">
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state2288" symbol="2" label="each tooth with two cusps" about="#state2288">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006844">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4300243" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006844">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:4300244" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality count="2">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -6466,7 +6489,7 @@
           <member state="state2287" />
           <member state="state2288" />
         </polymorphic_state_set>
-        <state id="state2381" symbol="3" label="each tooth with four cusps" about="#state2381">
+        <state id="state2381" symbol="3" label="each tooth with three cusps" about="#state2381">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -6479,7 +6502,7 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="3">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -6493,7 +6516,7 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="3">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -6504,7 +6527,7 @@
           <member state="state2381" />
           <member state="state2288" />
         </polymorphic_state_set>
-        <state id="state2444" symbol="4" label="each tooth with five cusps" about="#state2444">
+        <state id="state2444" symbol="4" label="each tooth with four cusps" about="#state2444">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -6517,7 +6540,7 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="4">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -6531,43 +6554,7 @@
                     </phen:qualifier>
                   </phen:typeref>
                 </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000070" />
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-        <state id="s5c97d50b-232c-4e68-a829-8fa2236a311c" label="each tooth with single cusp" symbol="0" about="#s5c97d50b-232c-4e68-a829-8fa2236a311c">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:description>Coding contingent on possession of teeth on premaxilla (state other than 0 for character 81). Coding of Caenotropus maculosus as polymorphic for states 1 and 2 based upon discussion in Scharcansky and Lucena (2007)</phen:description>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0006844">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:4300243" />
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000070" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:description>Coding contingent on possession of teeth on premaxilla (state other than 0 for character 81). Coding of Caenotropus maculosus as polymorphic for states 1 and 2 based upon discussion in Scharcansky and Lucena (2007)</phen:description>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:0006844">
-                    <phen:qualifier relation="BFO:0000050">
-                      <phen:holds_in_relation_to>
-                        <phen:typeref about="UBERON:4300244" />
-                      </phen:holds_in_relation_to>
-                    </phen:qualifier>
-                  </phen:typeref>
-                </phen:bearer>
-                <phen:quality>
+                <phen:quality count="4">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -64780,7 +64767,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t316ea692-5234-4969-8e9e-544dea13466c" otus="otus1" />
+  <trees id="t7a904a3a-6eb4-4157-8f61-3a63d922aefb" otus="otus1" />
   <trees id="tf965560d-c45e-4735-b213-6ca561bbdfb9" otus="otus1" />
   <trees id="tc1340ff5-9643-4c0a-9d56-7ece00cbebec" otus="otus1" />
 </nex:nexml>
