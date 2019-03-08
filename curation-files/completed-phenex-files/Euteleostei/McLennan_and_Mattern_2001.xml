@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nex:nexml xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009" xmlns:bean="http://mesquiteproject.org/bean#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:msq="http://mesquiteproject.org#" xmlns:nr="http://mesquiteproject.org/namereference#" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://dx.doi.org/10.1111/j.1096-0031.2001.tb00108.x</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">McLennan, D. A., &amp; Mattern, M. Y. (2001). The Phylogeny of the Gasterosteidae: Combining Behavioral and Morphological Data Sets. Cladistics, 17(1), 11–27.</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">McLennan and Mattern (2001)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus about="#otus1" id="otus1" label="Taxa">
     <meta content="mesquite.lib.MesquiteProject@402f7a9b" datatype="xsd:anySimpleType" id="meta58" property="bean:Project" xsi:type="LiteralMeta" />
     <meta content="Default Bush (id 1, version 52)" datatype="xsd:anySimpleType" id="meta57" property="bean:DefaultTree" xsi:type="LiteralMeta" />
@@ -855,7 +855,7 @@
         </state>
       </states>
       <states id="states119">
-        <state id="state121" label="bony canal;" symbol="0" about="#state121">
+        <state id="state121" label="bony canal" symbol="0" about="#state121">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
@@ -5650,6 +5650,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="t8603a371-56a5-4815-9e2f-ea063b8b7025" otus="otus1" />
   <trees id="tc801e6b2-c81d-45a6-9ab9-6e176b3dfd11" otus="otus1" />
   <trees id="t809e27b4-77f1-4a2e-a1ab-841fd14d6131" otus="otus1" />
   <trees id="t71184883-fc0d-4342-bc3a-afb4c988db0e" otus="otus1" />
