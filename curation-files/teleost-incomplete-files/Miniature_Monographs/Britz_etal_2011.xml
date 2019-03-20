@@ -7,12 +7,12 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Britz et al. (2011)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="t43eac91b-9283-4a7f-90aa-ebe66e41e58e">
+  <otus id="tb3f677b5-30d9-47e5-b6c2-d821788a2530">
     <otu id="t8dbc4b7a-0999-4006-8017-55cf55d8a185" label="Fangfangia spinicleithralis" about="#t8dbc4b7a-0999-4006-8017-55cf55d8a185">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/121dee50-2d5e-0137-77a1-005056010073" />
     </otu>
   </otus>
-  <characters id="dad67f8e-8be4-4f74-98f7-6684afa6c168" xsi:type="StandardCells" otus="t43eac91b-9283-4a7f-90aa-ebe66e41e58e">
+  <characters id="dad67f8e-8be4-4f74-98f7-6684afa6c168" xsi:type="StandardCells" otus="tb3f677b5-30d9-47e5-b6c2-d821788a2530">
     <format>
       <states id="s51b4d5ed-28b0-40b0-8f5a-800b406680e8">
         <state id="sa4455d01-e889-40ac-a04a-c8019803db8d" label="anteroventral tip of the left cleithrum projecting into a strong anteriorly directed spine" symbol="0" about="#sa4455d01-e889-40ac-a04a-c8019803db8d">
@@ -868,14 +868,22 @@
         </state>
       </states>
       <states id="sff1eee18-81eb-4d6b-beee-f20213db8dd0">
-        <state id="s08b0be8d-9a73-482c-9bdc-20b3c6eb91d9" label="four dorsal and three ventral radial cartilages" symbol="0" about="#s08b0be8d-9a73-482c-9bdc-20b3c6eb91d9">
+        <state id="s08b0be8d-9a73-482c-9bdc-20b3c6eb91d9" label="four dorsal (CINPU2, 3, 4, 5) and three ventral radial cartilages (CIHPU2, 3, 4). Fig. 2d. (CINPU, interneural spine cartilage; CIHPU, interhaemal spine cartilage)" symbol="0" about="#s08b0be8d-9a73-482c-9bdc-20b3c6eb91d9">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:0018325" />
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/be8ad1b0-2d77-0137-7d60-005056010088" />
                 </phen:bearer>
-                <phen:quality>
+                <phen:quality count="4">
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="http://data.bioontology.org/provisional_classes/ab593d90-2d77-0137-7d60-005056010088" />
+                </phen:bearer>
+                <phen:quality count="3">
                   <phen:typeref about="PATO:0000070" />
                 </phen:quality>
               </phen:phenotype_character>
@@ -955,7 +963,7 @@
       <char id="cdd7cb061-1a79-4531-91cc-66afcc573df9" label="Pelvic splint" states="s6f25f694-58a7-4719-9cd0-23d3e12ccd31" />
     </format>
     <matrix>
-      <row id="r721b3f61-222b-4652-8e78-6717b007713b" otu="t8dbc4b7a-0999-4006-8017-55cf55d8a185">
+      <row id="r32d0f58e-0c51-435e-834f-51d2a974fb2c" otu="t8dbc4b7a-0999-4006-8017-55cf55d8a185">
         <cell char="c883581c6-ddc3-4857-bf11-7ac1caf6af70" state="sa4455d01-e889-40ac-a04a-c8019803db8d" />
         <cell char="c3adc2b6f-8479-40b0-97dc-9d17fe24a7a2" state="se6fd8165-a539-4114-8f59-026609d64ab1" />
         <cell char="c42266f0f-37bd-4e29-8c2a-daef169d0544" state="s223dff4d-05b1-40e9-9dc0-fbbc0baf36e3" />
@@ -990,8 +998,9 @@
         <cell char="c49f049c0-1ecb-4b7d-b6bf-7ad435303370" state="sb217085d-17e4-4f97-8e92-327695c4b2e9" />
         <cell char="c45bf49d7-1721-471e-8756-07af28e512c8" state="s08b0be8d-9a73-482c-9bdc-20b3c6eb91d9" />
         <cell char="cde9a4e02-2dbc-4ea1-9bcb-43a7bcbaafef" state="s0e88d08f-3806-490f-869c-6ebb9aca08d4" />
+        <cell char="cdd7cb061-1a79-4531-91cc-66afcc573df9" state="s6b24ef17-63b5-4014-b684-ec8776e1d047" />
       </row>
     </matrix>
   </characters>
-  <trees id="t23791b76-36f6-4e49-b61b-a2436b792606" otus="t43eac91b-9283-4a7f-90aa-ebe66e41e58e" />
+  <trees id="t1d314bcd-8b61-4144-bc25-8841feb08f4a" otus="tb3f677b5-30d9-47e5-b6c2-d821788a2530" />
 </nexml>
