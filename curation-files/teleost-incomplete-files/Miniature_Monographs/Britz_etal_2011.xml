@@ -7,12 +7,12 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Britz et al. (2011)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="t0e00ac67-75ca-42c2-869a-4f6b444c6e0d">
+  <otus id="t43eac91b-9283-4a7f-90aa-ebe66e41e58e">
     <otu id="t8dbc4b7a-0999-4006-8017-55cf55d8a185" label="Fangfangia spinicleithralis" about="#t8dbc4b7a-0999-4006-8017-55cf55d8a185">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/121dee50-2d5e-0137-77a1-005056010073" />
     </otu>
   </otus>
-  <characters id="dad67f8e-8be4-4f74-98f7-6684afa6c168" xsi:type="StandardCells" otus="t0e00ac67-75ca-42c2-869a-4f6b444c6e0d">
+  <characters id="dad67f8e-8be4-4f74-98f7-6684afa6c168" xsi:type="StandardCells" otus="t43eac91b-9283-4a7f-90aa-ebe66e41e58e">
     <format>
       <states id="s51b4d5ed-28b0-40b0-8f5a-800b406680e8">
         <state id="sa4455d01-e889-40ac-a04a-c8019803db8d" label="anteroventral tip of the left cleithrum projecting into a strong anteriorly directed spine" symbol="0" about="#sa4455d01-e889-40ac-a04a-c8019803db8d">
@@ -768,9 +768,30 @@
         </state>
       </states>
       <states id="s2b43d1ab-4377-4742-826a-242b1640bf2a">
-        <state id="sc1fe8a71-2eee-4124-9f2f-f8b83ebba3ab" label="" symbol="0" about="#sc1fe8a71-2eee-4124-9f2f-f8b83ebba3ab">
+        <state id="sc1fe8a71-2eee-4124-9f2f-f8b83ebba3ab" label="directed ventrally and connected to pharyngeal process of basioccipital process via ligament" symbol="0" about="#sc1fe8a71-2eee-4124-9f2f-f8b83ebba3ab">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype />
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="BSPO:0000082">
+                          <phen:qualifier relation="BFO:0000050">
+                            <phen:holds_in_relation_to>
+                              <phen:typeref about="UBERON:0001092" />
+                            </phen:holds_in_relation_to>
+                          </phen:qualifier>
+                        </phen:typeref>
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002501" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
       </states>
@@ -849,7 +870,16 @@
       <states id="sff1eee18-81eb-4d6b-beee-f20213db8dd0">
         <state id="s08b0be8d-9a73-482c-9bdc-20b3c6eb91d9" label="four dorsal and three ventral radial cartilages" symbol="0" about="#s08b0be8d-9a73-482c-9bdc-20b3c6eb91d9">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype />
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0018325" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
           </meta>
         </state>
       </states>
@@ -917,17 +947,15 @@
       <char id="c08bcfca9-9f0e-4656-b803-ed0f9fb69c20" label="Branchiostegal ray 1" states="sec089638-df93-4614-9703-a42fd906b408" />
       <char id="c9c4930cd-402a-4fe1-917a-63ad46cb20ab" label="Pectoral radials" states="s2f9ce469-ddee-416d-b4d7-314a777d5ec2" />
       <char id="c0506fa22-acdf-48cb-9bfd-15aeadbdfc45" label="Supraneural cartilages 5-9" states="s50619150-c152-4dc2-a07e-9b7ef195160a" />
-      <char id="cfe09a519-287b-4076-ba29-c57856957fc3" label="Lateral process on first vertebra directed ventrally and connected to pharyngeal process of basioccipital process via ligament" states="s2b43d1ab-4377-4742-826a-242b1640bf2a" />
+      <char id="cfe09a519-287b-4076-ba29-c57856957fc3" label="Lateral process on first vertebra" states="s2b43d1ab-4377-4742-826a-242b1640bf2a" />
       <char id="cff0210df-dbad-44a3-80c8-3c15f2000e35" label="Hypurals" states="sc0124ebd-6e08-40f2-952b-70f67a488562" />
       <char id="c49f049c0-1ecb-4b7d-b6bf-7ad435303370" label="Epural cartilage " states="s7fa7c200-be33-4440-9e15-daca9f617430" />
-      <char id="c45bf49d7-1721-471e-8756-07af28e512c8" label="Caudal fin radial cartilages " about="#c45bf49d7-1721-471e-8756-07af28e512c8" states="sff1eee18-81eb-4d6b-beee-f20213db8dd0">
-        <meta xsi:type="LiteralMeta" property="rdfs:comment">REVIEW</meta>
-      </char>
+      <char id="c45bf49d7-1721-471e-8756-07af28e512c8" label="Caudal fin radial cartilages " states="sff1eee18-81eb-4d6b-beee-f20213db8dd0" />
       <char id="cde9a4e02-2dbc-4ea1-9bcb-43a7bcbaafef" label="Vertebrae" states="s704b7aeb-2f94-4115-8029-d1456fabec0d" />
       <char id="cdd7cb061-1a79-4531-91cc-66afcc573df9" label="Pelvic splint" states="s6f25f694-58a7-4719-9cd0-23d3e12ccd31" />
     </format>
     <matrix>
-      <row id="r60a4468f-0a50-41d2-9472-891a9070e2dd" otu="t8dbc4b7a-0999-4006-8017-55cf55d8a185">
+      <row id="r721b3f61-222b-4652-8e78-6717b007713b" otu="t8dbc4b7a-0999-4006-8017-55cf55d8a185">
         <cell char="c883581c6-ddc3-4857-bf11-7ac1caf6af70" state="sa4455d01-e889-40ac-a04a-c8019803db8d" />
         <cell char="c3adc2b6f-8479-40b0-97dc-9d17fe24a7a2" state="se6fd8165-a539-4114-8f59-026609d64ab1" />
         <cell char="c42266f0f-37bd-4e29-8c2a-daef169d0544" state="s223dff4d-05b1-40e9-9dc0-fbbc0baf36e3" />
@@ -965,5 +993,5 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t6cb67730-1a9b-4148-bad0-857503bfc325" otus="t0e00ac67-75ca-42c2-869a-4f6b444c6e0d" />
+  <trees id="t23791b76-36f6-4e49-b61b-a2436b792606" otus="t43eac91b-9283-4a7f-90aa-ebe66e41e58e" />
 </nexml>
