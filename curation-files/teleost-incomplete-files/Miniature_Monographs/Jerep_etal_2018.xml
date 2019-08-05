@@ -1,59 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1643/CI-17-653</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Jerep F. C., F. C. P. Dagosta, and W. M. Ohara (2018) A new miniature species of Serrapinnus (Characiformes: Characidae) from the Upper Rio Araguaia, Brazil. Copeia 106, 180-187</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Jerep et al. (2018)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus id="tb574994c-acb5-4c00-ace9-df7efbd3331d">
     <otu id="tea933a1b-a0ce-4064-a09b-5b6cee3d5b48" label="Serrapinnus malabarbai" about="#tea933a1b-a0ce-4064-a09b-5b6cee3d5b48">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/a87b84d0-dfaa-0136-90bd-005056010088" />
     </otu>
   </otus>
   <characters id="491fd438-4153-4c89-8ef0-7d180fb23af0" xsi:type="StandardCells" otus="tb574994c-acb5-4c00-ace9-df7efbd3331d">
-    <format>
-      <states id="s58099085-c318-4dee-9dff-a3e96df81e66">
-        <state id="s834a2d43-f253-4fce-b402-236cf93e356b" label="reduction of the infraorbital bone series with the absence of the fourth to sixth" symbol="0" about="#s834a2d43-f253-4fce-b402-236cf93e356b">
-          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
-            <phen:phenotype>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001409" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2000495" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462" />
-                </phen:quality>
-              </phen:phenotype_character>
-              <phen:phenotype_character>
-                <phen:bearer>
-                  <phen:typeref about="UBERON:2001674" />
-                </phen:bearer>
-                <phen:quality>
-                  <phen:typeref about="PATO:0000462" />
-                </phen:quality>
-              </phen:phenotype_character>
-            </phen:phenotype>
-          </meta>
-        </state>
-      </states>
-      <char id="c3c58ab02-4cba-4fa5-bc1b-b761cd5e7a01" label="Infraorbital bones" states="s58099085-c318-4dee-9dff-a3e96df81e66" />
-    </format>
+    <format />
     <matrix>
-      <row id="r71e669ef-ea82-46cc-bdeb-51ac0f80c16d" otu="tea933a1b-a0ce-4064-a09b-5b6cee3d5b48">
-        <cell char="c3c58ab02-4cba-4fa5-bc1b-b761cd5e7a01" state="s834a2d43-f253-4fce-b402-236cf93e356b" />
-      </row>
+      <row id="r71e669ef-ea82-46cc-bdeb-51ac0f80c16d" otu="tea933a1b-a0ce-4064-a09b-5b6cee3d5b48" />
     </matrix>
   </characters>
+  <trees id="tb14bb473-a772-489d-9f53-31ace0b265ed" otus="tb574994c-acb5-4c00-ace9-df7efbd3331d" />
   <trees id="td924c984-71f1-4ac1-8fce-c9610474f1b1" otus="tb574994c-acb5-4c00-ace9-df7efbd3331d" />
   <trees id="t03632a0e-1c6d-4099-aca0-d42ea232062b" otus="tb574994c-acb5-4c00-ace9-df7efbd3331d" />
   <trees id="t502e6404-96e9-4c5b-a6a2-79e735134ab7" otus="tb574994c-acb5-4c00-ace9-df7efbd3331d" />
