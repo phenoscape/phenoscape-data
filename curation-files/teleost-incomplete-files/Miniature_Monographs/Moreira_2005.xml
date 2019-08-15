@@ -2,7 +2,7 @@
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
-     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.2988/0006-324X(2005)118%5B855%3AXCANGF%5D2.0.CO%3B2</meta>
+    <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.2988/0006-324X(2005)118%5B855%3AXCANGF%5D2.0.CO%3B2</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Moreira, C. R. (2005). Xenurobrycon coracoralinae, a new glandulocaudine fish (Ostariophysi: Characiformes: Characidae) from central Brazil. Proceedings of the Biological Society of Washington 118(4): 855-862</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Moreira (2005)</meta>
   </meta>
@@ -76,8 +76,34 @@
         <state id="s78f2d218-5e47-4c8a-9072-e0fd51346110" label="from X. macropus by the absence of a semi- circular flange-like process on principal caudal-fin ray 18 (vs. its presence in mature males" symbol="0" />
       </states>
       <states id="s7fcae42a-3859-4560-a835-c5f91da3d304">
-        <state id="sf4665801-cc62-477d-8dc4-50fa08292d0d" label="absent" symbol="0" />
-        <state id="sf14f70a3-3f0e-49f4-8233-06bf64941eab" label="present" symbol="1" />
+        <state id="sf4665801-cc62-477d-8dc4-50fa08292d0d" label="absent" symbol="0" about="#sf4665801-cc62-477d-8dc4-50fa08292d0d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sf14f70a3-3f0e-49f4-8233-06bf64941eab" label="present" symbol="1" about="#sf14f70a3-3f0e-49f4-8233-06bf64941eab">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s341db128-059a-425d-925c-14a934dc0158">
         <state id="s5f76991c-f4ad-449b-9c05-158d0f2c85f3" label="7" symbol="0" about="#s5f76991c-f4ad-449b-9c05-158d0f2c85f3">
@@ -436,6 +462,7 @@
       </row>
     </matrix>
   </characters>
+  <trees id="td10c50c2-38d7-40a9-a66b-293693afd035" otus="t5c8551e4-ce1b-4277-883a-4055f11b777b" />
   <trees id="t423b671c-f960-4e00-9abb-5f6be11ee815" otus="t5c8551e4-ce1b-4277-883a-4055f11b777b" />
   <trees id="t1c19b974-ed20-49e5-a568-649b45fe26d5" otus="t5c8551e4-ce1b-4277-883a-4055f11b777b" />
 </nexml>
