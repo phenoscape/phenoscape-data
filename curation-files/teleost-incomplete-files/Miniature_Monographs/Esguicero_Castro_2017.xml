@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1643/CI-16-481</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Esguícero, A. L., and R. M. Castro (2017) Taxonomic revision of the genus Aphyodite, with description of two new species (Teleostei: Characidae). Copeia 105(4):753-764</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Esguícero and Castro (2017)</meta>
   </meta>
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus id="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e">
     <otu id="t7025c0a2-193a-45de-ae67-9efe32a4c666" label="Aphyodite grammica" about="#t7025c0a2-193a-45de-ae67-9efe32a4c666">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0037967" />
@@ -16,6 +16,21 @@
     </otu>
     <otu id="t8fdcfdbf-7132-4968-829d-03300db20e1a" label="Aphyodite tupebas" about="#t8fdcfdbf-7132-4968-829d-03300db20e1a">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/f565e780-acad-0137-27a2-005056010088" />
+    </otu>
+    <otu id="tc74b3796-f20e-4515-abfb-a983106bf548" label="Axelrodia lindeae" about="#tc74b3796-f20e-4515-abfb-a983106bf548">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065029" />
+    </otu>
+    <otu id="t14f740b5-f589-408e-8078-d0c3993bd3d5" label="Axelrodia riesei" about="#t14f740b5-f589-408e-8078-d0c3993bd3d5">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065031" />
+    </otu>
+    <otu id="tc8806b4f-24db-4ef9-a8e9-8c7f61b3f94f" label="Axelrodia stigmatias" about="#tc8806b4f-24db-4ef9-a8e9-8c7f61b3f94f">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065030" />
+    </otu>
+    <otu id="tdea75836-c954-407a-a81a-bb2e9b4b4d5a" label="Atopomesus pachyodus" about="#tdea75836-c954-407a-a81a-bb2e9b4b4d5a">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065468" />
+    </otu>
+    <otu id="t8fdac3b1-8bce-40db-a32b-97f121cda4e1" label="Leptobrycon jatuaranae" about="#t8fdac3b1-8bce-40db-a32b-97f121cda4e1">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065593" />
     </otu>
   </otus>
   <characters id="be9c66d2-d8af-4e37-aafe-ae02fe5bf90c" xsi:type="StandardCells" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e">
@@ -1860,6 +1875,53 @@
           </meta>
         </state>
       </states>
+      <states id="sec3261d9-41e7-460a-88b1-a27242f79240">
+        <state id="sc699f4af-8510-4bc9-add9-80ea18ffd01e" label="ventral border of the third infraorbital not reaching the horizontal arm of the preopercle is also present in Atopomesus pachyodus, Axelrodia lindeae, Axelrodia riesei, and Leptobrycon jatuaranae" symbol="0" about="#sc699f4af-8510-4bc9-add9-80ea18ffd01e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="BSPO:0000684">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001408" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002233" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2000289" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s8b33282c-78f4-41fb-92fc-e6d6570fc4f6">
+        <state id="s38de26bc-babe-43ac-b9eb-84cd5bf3914f" label="absence of a scapular process forming the anterior border of the scapular foramen was also observed in A. pachyodus, Axelrodia stigmatias, and L. jatuaranae" symbol="0" about="#s38de26bc-babe-43ac-b9eb-84cd5bf3914f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004529">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0006849" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <char id="cc5943f06-0d94-4ccc-aefb-174729c0b399" label="Infraorbitals" about="#cc5943f06-0d94-4ccc-aefb-174729c0b399" states="s1984afe6-9bd7-4307-8ea3-1a15a85653ad">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 757</meta>
       </char>
@@ -2058,6 +2120,10 @@
       <char id="c4b9a4c52-4d2d-45a4-8e45-174890ee1d93" label="Branchiostegal rays" about="#c4b9a4c52-4d2d-45a4-8e45-174890ee1d93" states="s0f02cfe2-9314-4c88-8139-0fbaf2bc3e08">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 763</meta>
       </char>
+      <char id="c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" label="Third infraorbital" about="#c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" states="sec3261d9-41e7-460a-88b1-a27242f79240">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 761</meta>
+      </char>
+      <char id="cd7730a10-46dd-44b9-a97c-d6a0646d7b8f" label="Scapular process" states="s8b33282c-78f4-41fb-92fc-e6d6570fc4f6" />
     </format>
     <matrix>
       <row id="re6c0703e-99a2-4f01-bb8d-9d8e2ebe52b3" otu="t7025c0a2-193a-45de-ae67-9efe32a4c666">
@@ -2139,8 +2205,26 @@
         <cell char="ce707d9af-12ce-4509-8b89-2fa051f8347d" state="sf87e9a48-0fc5-40ee-8e27-890bbabb1baa" />
         <cell char="c4b9a4c52-4d2d-45a4-8e45-174890ee1d93" state="s96ec5101-ca5e-4b2c-a05c-0232fa66e60a" />
       </row>
+      <row id="r9e64ab75-472a-4c05-a834-e7993d2e00fa" otu="tc74b3796-f20e-4515-abfb-a983106bf548">
+        <cell char="c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" state="sc699f4af-8510-4bc9-add9-80ea18ffd01e" />
+      </row>
+      <row id="r65074c39-e91e-4c69-be13-8d1bd0b9b360" otu="t14f740b5-f589-408e-8078-d0c3993bd3d5">
+        <cell char="c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" state="sc699f4af-8510-4bc9-add9-80ea18ffd01e" />
+      </row>
+      <row id="r6af3e29c-75a4-473b-bf34-25afb2c136a7" otu="tc8806b4f-24db-4ef9-a8e9-8c7f61b3f94f">
+        <cell char="ce707d9af-12ce-4509-8b89-2fa051f8347d" state="sf87e9a48-0fc5-40ee-8e27-890bbabb1baa" />
+      </row>
+      <row id="r049c7504-37f1-4329-bbcf-22b4830b18bd" otu="tdea75836-c954-407a-a81a-bb2e9b4b4d5a">
+        <cell char="ce707d9af-12ce-4509-8b89-2fa051f8347d" state="sf87e9a48-0fc5-40ee-8e27-890bbabb1baa" />
+        <cell char="c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" state="sc699f4af-8510-4bc9-add9-80ea18ffd01e" />
+      </row>
+      <row id="r05c70a9d-00ad-4cac-b35a-6f227de30d84" otu="t8fdac3b1-8bce-40db-a32b-97f121cda4e1">
+        <cell char="ce707d9af-12ce-4509-8b89-2fa051f8347d" state="sf87e9a48-0fc5-40ee-8e27-890bbabb1baa" />
+        <cell char="c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" state="sc699f4af-8510-4bc9-add9-80ea18ffd01e" />
+      </row>
     </matrix>
   </characters>
+  <trees id="t4984ec30-73c9-4f73-a9b4-2b0e320f6d6f" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e" />
   <trees id="tddc8bd80-e8da-4596-9eda-e2c1f3c0b26f" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e" />
   <trees id="t2804f98c-9772-4edc-9e77-9d1bf10d45ac" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e" />
   <trees id="t9d18e740-8521-487d-94c1-b34fe3b8ea66" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e" />
