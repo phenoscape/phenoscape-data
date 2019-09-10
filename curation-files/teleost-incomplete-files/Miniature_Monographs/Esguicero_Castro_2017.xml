@@ -32,6 +32,21 @@
     <otu id="t8fdac3b1-8bce-40db-a32b-97f121cda4e1" label="Leptobrycon jatuaranae" about="#t8fdac3b1-8bce-40db-a32b-97f121cda4e1">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065593" />
     </otu>
+    <otu id="td9f1418d-97db-4559-be6a-1a1214a5d733" label="Microschemobrycon melanotus" about="#td9f1418d-97db-4559-be6a-1a1214a5d733">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065644" />
+    </otu>
+    <otu id="td58bf3ba-04de-4ab2-856c-3d139dad42ca" label="Oxybrycon parvulus" about="#td58bf3ba-04de-4ab2-856c-3d139dad42ca">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065013" />
+    </otu>
+    <otu id="t20abe242-42e3-4a01-9d73-0c00e545496d" label="Tyttobrycon dorsimaculatus" about="#t20abe242-42e3-4a01-9d73-0c00e545496d">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065104" />
+    </otu>
+    <otu id="t460572ea-2a0b-43ce-b9e7-9a710afc9c20" label="Tyttobrycon hamatus" about="#t460572ea-2a0b-43ce-b9e7-9a710afc9c20">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065102" />
+    </otu>
+    <otu id="t94e564ee-2788-43cd-8aa8-ab2d2ce65a09" label="Tyttobrycon xeruini" about="#t94e564ee-2788-43cd-8aa8-ab2d2ce65a09">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065105" />
+    </otu>
   </otus>
   <characters id="be9c66d2-d8af-4e37-aafe-ae02fe5bf90c" xsi:type="StandardCells" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e">
     <format>
@@ -1922,6 +1937,22 @@
           </meta>
         </state>
       </states>
+      <states id="sd8412a00-952b-44f8-a46a-3279dbb7bd91">
+        <state id="s14a3bdbd-4098-44fc-9332-4561c46d5a78" label="Possession of exclusively conical teeth in the maxilla is a condition also present in A. pachyodus, M. melanotus, Oxybrycon parvulus, Tyttobrycon dorsimaculatus, T. hamatus, T. xeruini, and in all representatives of the genus Axelrodia" symbol="0" about="#s14a3bdbd-4098-44fc-9332-4561c46d5a78">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011593" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002021" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <char id="cc5943f06-0d94-4ccc-aefb-174729c0b399" label="Infraorbitals" about="#cc5943f06-0d94-4ccc-aefb-174729c0b399" states="s1984afe6-9bd7-4307-8ea3-1a15a85653ad">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 757</meta>
       </char>
@@ -2124,6 +2155,7 @@
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 761</meta>
       </char>
       <char id="cd7730a10-46dd-44b9-a97c-d6a0646d7b8f" label="Scapular process" states="s8b33282c-78f4-41fb-92fc-e6d6570fc4f6" />
+      <char id="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" label="Maxillary teeth" states="sd8412a00-952b-44f8-a46a-3279dbb7bd91" />
     </format>
     <matrix>
       <row id="re6c0703e-99a2-4f01-bb8d-9d8e2ebe52b3" otu="t7025c0a2-193a-45de-ae67-9efe32a4c666">
@@ -2205,26 +2237,48 @@
         <cell char="ce707d9af-12ce-4509-8b89-2fa051f8347d" state="sf87e9a48-0fc5-40ee-8e27-890bbabb1baa" />
         <cell char="c4b9a4c52-4d2d-45a4-8e45-174890ee1d93" state="s96ec5101-ca5e-4b2c-a05c-0232fa66e60a" />
       </row>
-      <row id="r9e64ab75-472a-4c05-a834-e7993d2e00fa" otu="tc74b3796-f20e-4515-abfb-a983106bf548">
+      <row id="r55295e59-4883-4baf-a327-5adfe3cb5f53" otu="tc74b3796-f20e-4515-abfb-a983106bf548">
         <cell char="c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" state="sc699f4af-8510-4bc9-add9-80ea18ffd01e" />
+        <cell char="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" state="s14a3bdbd-4098-44fc-9332-4561c46d5a78" />
       </row>
-      <row id="r65074c39-e91e-4c69-be13-8d1bd0b9b360" otu="t14f740b5-f589-408e-8078-d0c3993bd3d5">
+      <row id="r95679d74-c56a-426a-891e-b4769e34d085" otu="t14f740b5-f589-408e-8078-d0c3993bd3d5">
         <cell char="c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" state="sc699f4af-8510-4bc9-add9-80ea18ffd01e" />
+        <cell char="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" state="s14a3bdbd-4098-44fc-9332-4561c46d5a78" />
       </row>
-      <row id="r6af3e29c-75a4-473b-bf34-25afb2c136a7" otu="tc8806b4f-24db-4ef9-a8e9-8c7f61b3f94f">
+      <row id="rea8eef14-446d-4438-be1c-895db41645de" otu="tc8806b4f-24db-4ef9-a8e9-8c7f61b3f94f">
         <cell char="ce707d9af-12ce-4509-8b89-2fa051f8347d" state="sf87e9a48-0fc5-40ee-8e27-890bbabb1baa" />
+        <cell char="cd7730a10-46dd-44b9-a97c-d6a0646d7b8f" state="s38de26bc-babe-43ac-b9eb-84cd5bf3914f" />
+        <cell char="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" state="s14a3bdbd-4098-44fc-9332-4561c46d5a78" />
       </row>
-      <row id="r049c7504-37f1-4329-bbcf-22b4830b18bd" otu="tdea75836-c954-407a-a81a-bb2e9b4b4d5a">
+      <row id="r013debe8-138b-44ed-8f42-70b9be404cb8" otu="tdea75836-c954-407a-a81a-bb2e9b4b4d5a">
         <cell char="ce707d9af-12ce-4509-8b89-2fa051f8347d" state="sf87e9a48-0fc5-40ee-8e27-890bbabb1baa" />
         <cell char="c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" state="sc699f4af-8510-4bc9-add9-80ea18ffd01e" />
+        <cell char="cd7730a10-46dd-44b9-a97c-d6a0646d7b8f" state="s38de26bc-babe-43ac-b9eb-84cd5bf3914f" />
+        <cell char="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" state="s14a3bdbd-4098-44fc-9332-4561c46d5a78" />
       </row>
-      <row id="r05c70a9d-00ad-4cac-b35a-6f227de30d84" otu="t8fdac3b1-8bce-40db-a32b-97f121cda4e1">
+      <row id="rf9724015-8a0e-4a1a-8c78-926ce0581edb" otu="t8fdac3b1-8bce-40db-a32b-97f121cda4e1">
         <cell char="ce707d9af-12ce-4509-8b89-2fa051f8347d" state="sf87e9a48-0fc5-40ee-8e27-890bbabb1baa" />
         <cell char="c6e0b1da2-1b24-4e85-88c0-b025eb6334b9" state="sc699f4af-8510-4bc9-add9-80ea18ffd01e" />
+        <cell char="cd7730a10-46dd-44b9-a97c-d6a0646d7b8f" state="s38de26bc-babe-43ac-b9eb-84cd5bf3914f" />
+      </row>
+      <row id="r0ad56665-db56-4978-bff2-f9c2a66ef8f3" otu="td9f1418d-97db-4559-be6a-1a1214a5d733">
+        <cell char="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" state="s14a3bdbd-4098-44fc-9332-4561c46d5a78" />
+      </row>
+      <row id="r38e348b3-bd22-43c5-ba4d-10aaaa28400e" otu="td58bf3ba-04de-4ab2-856c-3d139dad42ca">
+        <cell char="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" state="s14a3bdbd-4098-44fc-9332-4561c46d5a78" />
+      </row>
+      <row id="rd12ad37a-985a-4afe-8af6-512ab6e7bb43" otu="t20abe242-42e3-4a01-9d73-0c00e545496d">
+        <cell char="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" state="s14a3bdbd-4098-44fc-9332-4561c46d5a78" />
+      </row>
+      <row id="rd103c2b6-12c1-42c4-9205-e4ec7c4fa318" otu="t460572ea-2a0b-43ce-b9e7-9a710afc9c20">
+        <cell char="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" state="s14a3bdbd-4098-44fc-9332-4561c46d5a78" />
+      </row>
+      <row id="r94c849ba-3283-4481-97ff-cae6c13b2928" otu="t94e564ee-2788-43cd-8aa8-ab2d2ce65a09">
+        <cell char="cd5efbe49-d8a7-4c3d-9e72-caaea68027ca" state="s14a3bdbd-4098-44fc-9332-4561c46d5a78" />
       </row>
     </matrix>
   </characters>
-  <trees id="t4984ec30-73c9-4f73-a9b4-2b0e320f6d6f" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e" />
+  <trees id="t5cec47b6-ee6b-4786-a504-e37a8232f8c1" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e" />
   <trees id="tddc8bd80-e8da-4596-9eda-e2c1f3c0b26f" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e" />
   <trees id="t2804f98c-9772-4edc-9e77-9d1bf10d45ac" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e" />
   <trees id="t9d18e740-8521-487d-94c1-b34fe3b8ea66" otus="t6a950bb4-bbf9-49ee-a55a-28542f71ce3e" />
