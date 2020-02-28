@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd" generator="Phenex null">
+  <meta xsi:type="LiteralMeta" property="dc:description">Coding from Table 1B for Priocharax sp.: new coding presented herein based on recently collected specimens of Priocharax sp., character states as in Mattox and Toledo Piza (2012) except for character 60, which is coded as 3 (i.e. absence of IO4);</meta>
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1002/jmor.20477</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Mattox, G. M., R. Britz, and M. Toledo‐Piza. (2016), Osteology of Priocharax and remarkable developmental truncation in a miniature Amazonian fish (Teleostei: Characiformes: Characidae). Journal of Morphology, 277: 65-85</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Mattox et al. (2016)</meta>
   </meta>
-  <meta xsi:type="LiteralMeta" property="dc:description">Coding from Table 1B for Priocharax sp.: new coding presented herein based on recently collected specimens of Priocharax sp., character states as in Mattox and Toledo Piza (2012) except for character 60, which is coded as 3 (i.e. absence of IO4);</meta>
   <otus id="t7d61cb52-8101-40fd-8236-06317fc99011">
     <otu id="otu3" label="Xenocharax spilurus" about="#otu3">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0038554" />
@@ -155,7 +155,9 @@
     <otu id="otu195" label="Phenacogaster franciscoensis" about="#otu195">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0038073" />
     </otu>
-    <otu id="otu199" label="Phenacogaster prolatus " />
+    <otu id="otu199" label="Phenacogaster prolatus " about="#otu199">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/fa2a40a0-396d-0138-8bec-005056010073" />
+    </otu>
     <otu id="otu203" label="Phenacogaster tegatus " about="#otu203">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0064997" />
     </otu>
@@ -7082,592 +7084,2515 @@
         </state>
       </states>
       <states id="sc7261989-4d65-4baf-9045-8cf564fe386a">
-        <state id="scd64b3e8-f5b5-464c-8af0-d3a8391b4546" label="absent" symbol="0" />
-        <state id="s779c24c6-344d-49d7-bace-39f77a9880f6" label="present" symbol="1" />
+        <state id="scd64b3e8-f5b5-464c-8af0-d3a8391b4546" label="absent" symbol="0" about="#scd64b3e8-f5b5-464c-8af0-d3a8391b4546">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004741" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s779c24c6-344d-49d7-bace-39f77a9880f6" label="present" symbol="1" about="#s779c24c6-344d-49d7-bace-39f77a9880f6">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004741" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s0da9ee67-152e-4d7d-ad9e-cddbe296d848">
-        <state id="s1f1f973b-ded5-4686-8f9f-d67c82737b06" label="absent" symbol="0" />
-        <state id="s696fe24d-0edb-43ad-999f-2ae98ad590a9" label="present" symbol="1" />
+        <state id="s696fe24d-0edb-43ad-999f-2ae98ad590a9" label="present" symbol="1" about="#s696fe24d-0edb-43ad-999f-2ae98ad590a9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001647">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2001239" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s347d077f-ca54-4b42-9f54-a4f5ca1b6b95">
-        <state id="sf47025d1-fefe-44e1-8902-e5a406eca778" label="absent" symbol="0" />
-        <state id="s44c1efa5-dfb5-425b-bda1-0846e3d5d101" label="present" symbol="1" />
+        <state id="s44c1efa5-dfb5-425b-bda1-0846e3d5d101" label="present" symbol="1" about="#s44c1efa5-dfb5-425b-bda1-0846e3d5d101">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002016" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sda9a7cfd-9b22-411b-b0bd-afa1bdaeef91">
-        <state id="s135d262a-6415-4b74-8227-8bfa49a02f2b" label="absent" symbol="0" />
-        <state id="sb6b16ce6-bd9a-4314-9dcc-31d4f6cb2a72" label="present" symbol="1" />
+        <state id="sb6b16ce6-bd9a-4314-9dcc-31d4f6cb2a72" label="present" symbol="1" about="#sb6b16ce6-bd9a-4314-9dcc-31d4f6cb2a72">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004742" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s40ae9480-1a13-46a4-8df5-3312de6f60f1">
-        <state id="s66c2d6e7-43b5-4caf-837d-ce053ea4c6a8" label="absent" symbol="0" />
-        <state id="s9e3fb4c0-bbc3-4cb3-81f7-cc4e690c0973" label="present" symbol="1" />
+        <state id="s9e3fb4c0-bbc3-4cb3-81f7-cc4e690c0973" label="present" symbol="1" about="#s9e3fb4c0-bbc3-4cb3-81f7-cc4e690c0973">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000250" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sb5023d31-a698-497f-8bcd-e53bf51014e7">
-        <state id="s6f8e6b2e-ca4a-494a-b238-8c82a2f8857c" label="absent" symbol="0" />
-        <state id="s0786415b-bfc1-46b6-9d91-2ca6184693b4" label="present" symbol="1" />
+        <state id="s0786415b-bfc1-46b6-9d91-2ca6184693b4" label="present" symbol="1" about="#s0786415b-bfc1-46b6-9d91-2ca6184693b4">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002244" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sd569f6dc-5c74-4a44-9b01-bff23a77d533">
-        <state id="s80edd06a-55e5-4362-83c9-34cb74d7567f" label="absent" symbol="0" />
-        <state id="sb95e6ee4-b2e8-49b2-be94-f09f9404f347" label="present" symbol="1" />
+        <state id="sb95e6ee4-b2e8-49b2-be94-f09f9404f347" label="present" symbol="1" about="#sb95e6ee4-b2e8-49b2-be94-f09f9404f347">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002397" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sb09c6682-d4c2-4965-94e4-2c01a49a16d2">
-        <state id="sae8b887f-95f4-41f5-a255-9a4ee1f8bd13" label="absent" symbol="0" />
-        <state id="s82f5119e-372f-47d0-9e77-0972b601a381" label="present" symbol="1" />
+        <state id="s82f5119e-372f-47d0-9e77-0972b601a381" label="present" symbol="1" about="#s82f5119e-372f-47d0-9e77-0972b601a381">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000476" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sbacc38e3-f7e3-456f-8de6-c40b08c330b5">
-        <state id="sd1c567ff-9cd4-4492-b635-c1e1403af876" label="absent" symbol="0" />
-        <state id="s2d9ab107-be4d-4162-bf89-313367d84aed" label="present" symbol="1" />
+        <state id="s2d9ab107-be4d-4162-bf89-313367d84aed" label="present" symbol="1" about="#s2d9ab107-be4d-4162-bf89-313367d84aed">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011611" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sf46ed3e9-689b-4688-ac80-cd128cb81109">
-        <state id="s6dfa295c-18b6-49ba-8f24-46f18e5e47e1" label="absent" symbol="0" />
-        <state id="s50923ad9-7485-44cc-87be-3b011a58011d" label="present" symbol="1" />
+        <state id="s50923ad9-7485-44cc-87be-3b011a58011d" label="present" symbol="1" about="#s50923ad9-7485-44cc-87be-3b011a58011d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001692" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sa9fe78bf-9ecf-42ae-9b28-942034a18258">
-        <state id="sdab8e067-2cd0-4c32-95a0-2932c8da7d60" label="absent" symbol="0" />
-        <state id="se1949e9a-70a8-4298-b12f-6f5571a2acf8" label="present" symbol="1" />
+        <state id="se1949e9a-70a8-4298-b12f-6f5571a2acf8" label="present" symbol="1" about="#se1949e9a-70a8-4298-b12f-6f5571a2acf8">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004745" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="seae52634-d074-4396-b320-35dc91916876">
-        <state id="s2a71c888-87d2-467a-8689-66ede28480e6" label="absent" symbol="0" />
-        <state id="sd6454508-a048-4f65-bb67-1214bb4606d2" label="present" symbol="1" />
+        <state id="sd6454508-a048-4f65-bb67-1214bb4606d2" label="present" symbol="1" about="#sd6454508-a048-4f65-bb67-1214bb4606d2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006597" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s19d1b892-db84-45ba-bb14-bca9e6011755">
-        <state id="s471db58a-1ffb-4691-8ba3-dc588c1b05fe" label="absent" symbol="0" />
-        <state id="sc7273493-734f-4300-ae91-cb8cd75b3252" label="present" symbol="1" />
+        <state id="sc7273493-734f-4300-ae91-cb8cd75b3252" label="present" symbol="1" about="#sc7273493-734f-4300-ae91-cb8cd75b3252">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011606" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s15a6deee-c139-4874-b0a7-9a62d479d574">
-        <state id="sdbd6c784-e126-4b44-ad90-836812af579d" label="absent" symbol="0" />
-        <state id="s88dca1d7-053c-46bd-aa98-01d04a4f25a3" label="present" symbol="1" />
+        <state id="s88dca1d7-053c-46bd-aa98-01d04a4f25a3" label="present" symbol="1" about="#s88dca1d7-053c-46bd-aa98-01d04a4f25a3">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000452" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sa2568a1f-4b77-430f-a20a-03182e8ead4e">
-        <state id="s9ef2917f-4117-4ec6-a2c0-f698f5771f95" label="absent" symbol="0" />
-        <state id="s6cbebab3-c085-49fe-93fd-1b0c3e464a4b" label="present" symbol="1" />
+        <state id="s6cbebab3-c085-49fe-93fd-1b0c3e464a4b" label="present" symbol="1" about="#s6cbebab3-c085-49fe-93fd-1b0c3e464a4b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001237" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s79128668-4ed0-4f2c-9e8f-7551c41f0391">
-        <state id="s73227f5b-f970-462d-8329-7c50a81aa510" label="absent" symbol="0" />
-        <state id="s12e3b58f-5146-444c-932a-d1299e3d412e" label="present" symbol="1" />
+        <state id="s12e3b58f-5146-444c-932a-d1299e3d412e" label="present" symbol="1" about="#s12e3b58f-5146-444c-932a-d1299e3d412e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000422" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s31d23345-d0e0-44e1-9d95-7ab05b116ea2">
-        <state id="s0fb82ee8-e763-4fe2-8a9c-f871792feae9" label="absent" symbol="0" />
-        <state id="s0acca213-0edb-43f3-8372-6a29618cbd0e" label="present" symbol="1" />
+        <state id="s0acca213-0edb-43f3-8372-6a29618cbd0e" label="present" symbol="1" about="#s0acca213-0edb-43f3-8372-6a29618cbd0e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001585" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s05a09cb7-e1d9-4c98-9410-05c0cfd23560">
-        <state id="s8f591add-7edd-463e-bdb9-83cda64025c6" label="absent" symbol="0" />
-        <state id="sbee51b8f-7c80-4766-b6e9-0bf8a6f00e43" label="present" symbol="1" />
+        <state id="sbee51b8f-7c80-4766-b6e9-0bf8a6f00e43" label="present" symbol="1" about="#sbee51b8f-7c80-4766-b6e9-0bf8a6f00e43">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001242" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s7b02efc9-a3b4-4a9b-a940-27206ac4456d">
-        <state id="sb9d2419a-cdcd-4248-a49d-f1e7c8832c8b" label="absent" symbol="0" />
-        <state id="sef1bbebe-c6dc-47ee-a278-6488de0eccc9" label="present" symbol="1" />
+        <state id="sef1bbebe-c6dc-47ee-a278-6488de0eccc9" label="present" symbol="1" about="#sef1bbebe-c6dc-47ee-a278-6488de0eccc9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001241" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s77525957-7e24-4e13-abd9-a8f1428ec870">
-        <state id="scc0708ab-698f-49fa-ae55-ca7c1212753f" label="absent" symbol="0" />
-        <state id="s7ddaba96-98d4-47b6-bfde-29de57b6f56f" label="present" symbol="1" />
+        <state id="s7ddaba96-98d4-47b6-bfde-29de57b6f56f" label="present" symbol="1" about="#s7ddaba96-98d4-47b6-bfde-29de57b6f56f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000657" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s7e073e4e-f9a0-461e-be45-f2a3e317ef52">
-        <state id="s58630e0f-a20c-4bc0-b296-7e7e88babba1" label="absent" symbol="0" />
-        <state id="s58886eab-fb90-4edd-87e4-9bb45a20a68b" label="present" symbol="1" />
+        <state id="s58886eab-fb90-4edd-87e4-9bb45a20a68b" label="present" symbol="1" about="#s58886eab-fb90-4edd-87e4-9bb45a20a68b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001693" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s45434535-ad56-4c47-8c3d-d2920e0d578e">
-        <state id="s0edfd33b-0635-4d42-bc1f-407c30df931e" label="absent" symbol="0" />
-        <state id="s635cf7b1-70b1-405f-b4b9-e8d87e21a1ec" label="present" symbol="1" />
+        <state id="s635cf7b1-70b1-405f-b4b9-e8d87e21a1ec" label="present" symbol="1" about="#s635cf7b1-70b1-405f-b4b9-e8d87e21a1ec">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000300" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sd2dbe7d1-35d8-41d5-beb2-f79793455037">
-        <state id="se7c25672-0bb2-48bc-b3a9-341e9da6f63d" label="absent" symbol="0" />
-        <state id="sd7c64adf-397a-4900-82eb-ca1d30d3b87c" label="present" symbol="1" />
+        <state id="sd7c64adf-397a-4900-82eb-ca1d30d3b87c" label="present" symbol="1" about="#sd7c64adf-397a-4900-82eb-ca1d30d3b87c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001239" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s284862fb-02c5-44c3-867d-409f96b4392c">
-        <state id="s3d756e6b-fdbf-4b3e-8422-5d6949bc94d2" label="absent" symbol="0" />
-        <state id="s96056ef6-2196-4405-bcbb-e133f3465ba7" label="present" symbol="1" />
+        <state id="s96056ef6-2196-4405-bcbb-e133f3465ba7" label="present" symbol="1" about="#s96056ef6-2196-4405-bcbb-e133f3465ba7">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000356" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sf0e90147-a36f-420c-a44a-51c61762d0d8">
-        <state id="sa913af4d-2654-4fc8-ba8f-ebc9e4586228" label="absent" symbol="0" />
-        <state id="sdbea0fe7-ed6c-4c2f-8f79-d37ea7a2a263" label="present" symbol="1" />
+        <state id="sdbea0fe7-ed6c-4c2f-8f79-d37ea7a2a263" label="present" symbol="1" about="#sdbea0fe7-ed6c-4c2f-8f79-d37ea7a2a263">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s02cfd18a-9bdc-4fa9-8cc0-73cb2ad8544d">
-        <state id="s0cfea1fd-74ab-4bd9-a621-2127dae7f6e3" label="absent" symbol="0" />
-        <state id="s613602f3-ca75-4783-a949-2cfdec9f13c8" label="present" symbol="1" />
+        <state id="s613602f3-ca75-4783-a949-2cfdec9f13c8" label="present" symbol="1" about="#s613602f3-ca75-4783-a949-2cfdec9f13c8">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000284" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s7bf43c02-96b1-4767-a19a-7c35e4a34518">
-        <state id="se895c382-82ad-47b9-82ac-0e2ce3c4fe8f" label="absent" symbol="0" />
-        <state id="s1f5f1654-26cf-4db6-85b8-baa4ae4f67d2" label="present" symbol="1" />
+        <state id="s1f5f1654-26cf-4db6-85b8-baa4ae4f67d2" label="present" symbol="1" about="#s1f5f1654-26cf-4db6-85b8-baa4ae4f67d2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000692" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s1d725742-25e2-439d-9196-916d1b2f5735">
-        <state id="sabe770cd-bf60-4771-a6b9-5609214c7a90" label="absent" symbol="0" />
-        <state id="s6c7994a9-2d89-42f0-bac4-56dc6fc950dd" label="present" symbol="1" />
+        <state id="s6c7994a9-2d89-42f0-bac4-56dc6fc950dd" label="present" symbol="1" about="#s6c7994a9-2d89-42f0-bac4-56dc6fc950dd">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000264" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s92aafe51-a8ba-41a1-a4e4-6ff6aca3b865">
-        <state id="s53a60e52-c1e4-43e3-9b12-be552c86f6cb" label="absent" symbol="0" />
-        <state id="s6c19732c-8073-4497-97d2-e1e562521a64" label="present" symbol="1" />
+        <state id="s6c19732c-8073-4497-97d2-e1e562521a64" label="present" symbol="1" about="#s6c19732c-8073-4497-97d2-e1e562521a64">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000627" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="se669eac5-69d0-4a82-a80b-6ae30740618c">
-        <state id="sfe49d875-abd7-45cd-a79f-6a3a8f9fe6b6" label="absent" symbol="0" />
-        <state id="sb0fd8239-e0f8-4f1c-8321-080c4d3c83a2" label="present" symbol="1" />
+        <state id="sb0fd8239-e0f8-4f1c-8321-080c4d3c83a2" label="present" symbol="1" about="#sb0fd8239-e0f8-4f1c-8321-080c4d3c83a2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011079" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s75544195-d3dc-4b44-a7f0-27bafa0f0a51">
-        <state id="s82500923-189a-4507-a459-2a1567af13bb" label="absent" symbol="0" />
-        <state id="sa728e920-50b9-408f-87eb-bb2261fc6062" label="present" symbol="1" />
+        <state id="sa728e920-50b9-408f-87eb-bb2261fc6062" label="present" symbol="1" about="#sa728e920-50b9-408f-87eb-bb2261fc6062">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s3f7a4d4d-7017-4f9b-81bf-f26dac752d78">
-        <state id="s9dd4c61f-73cb-43bd-9194-0c06b9acaa00" label="absent" symbol="0" />
-        <state id="sed05ed91-4770-4f60-b350-4fa168c2b8af" label="present" symbol="1" />
+        <state id="sed05ed91-4770-4f60-b350-4fa168c2b8af" label="present" symbol="1" about="#sed05ed91-4770-4f60-b350-4fa168c2b8af">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s3f618b00-6cee-45a9-a93d-212a80606bcf">
-        <state id="sc3e82a2e-fd7b-471b-a7a7-29a49cb20a91" label="absent" symbol="0" />
-        <state id="s7e50f1ba-daa0-4531-b1af-f800cb0bdfaf" label="present" symbol="1" />
+        <state id="s7e50f1ba-daa0-4531-b1af-f800cb0bdfaf" label="present" symbol="1" about="#s7e50f1ba-daa0-4531-b1af-f800cb0bdfaf">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001985" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s660cccf2-1c33-4564-8e57-4e80b735b1a6">
-        <state id="s2b726f4c-0851-4af0-8f96-7782d0f951f8" label="absent" symbol="0" />
-        <state id="s88b12273-29af-4384-9ef9-01d3ec9719bb" label="present" symbol="1" />
+        <state id="s88b12273-29af-4384-9ef9-01d3ec9719bb" label="present" symbol="1" about="#s88b12273-29af-4384-9ef9-01d3ec9719bb">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001986" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sfe1560e1-1ad0-404f-b8b2-711fc8bc2dfd">
-        <state id="s3219dfba-f099-42da-8c4e-90d1be8ca436" label="absent" symbol="0" />
-        <state id="sa67f053e-3ef1-41af-9006-f33a7d4e63d2" label="present" symbol="1" />
+        <state id="sa67f053e-3ef1-41af-9006-f33a7d4e63d2" label="present" symbol="1" about="#sa67f053e-3ef1-41af-9006-f33a7d4e63d2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001240" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s8a94374c-cdf2-43ce-964f-7b2060f7ba54">
-        <state id="s347dc990-846b-4a0a-9f93-c65dfb71d014" label="absent" symbol="0" />
-        <state id="s2f91a7ba-cd20-47ca-97bc-9322e9c558ac" label="present" symbol="1" />
+        <state id="s2f91a7ba-cd20-47ca-97bc-9322e9c558ac" label="present" symbol="1" about="#s2f91a7ba-cd20-47ca-97bc-9322e9c558ac">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001560" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="se00aa127-5802-45dd-9ed6-649bf1c9ebc6">
-        <state id="sc9920000-2276-491e-baa6-a0121cb48544" label="absent" symbol="0" />
-        <state id="se3fb92ce-7c8c-4753-820e-9857c97e0517" label="present" symbol="1" />
+        <state id="se3fb92ce-7c8c-4753-820e-9857c97e0517" label="present" symbol="1" about="#se3fb92ce-7c8c-4753-820e-9857c97e0517">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001561" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s804598a0-960d-452c-8c00-037fcf49f14c">
-        <state id="s3b82b57a-e49f-40a5-b5b5-4300cb574336" label="absent" symbol="0" />
-        <state id="s11f5eec9-8425-431c-adb3-c4bceb239929" label="present" symbol="1" />
+        <state id="s11f5eec9-8425-431c-adb3-c4bceb239929" label="present" symbol="1" about="#s11f5eec9-8425-431c-adb3-c4bceb239929">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000438" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sbde103fb-fd4b-4f60-8cec-e85fe3ac9bd7">
-        <state id="s0f56d552-24ba-41e0-8d26-d2c52b13f3ed" label="absent" symbol="0" />
-        <state id="s2c5c0690-baa9-43ce-9eb9-c0be76289c42" label="present" symbol="1" />
+        <state id="s2c5c0690-baa9-43ce-9eb9-c0be76289c42" label="present" symbol="1" about="#s2c5c0690-baa9-43ce-9eb9-c0be76289c42" />
       </states>
       <states id="s17bd807d-f39b-4aae-bb97-b38fb4534deb">
-        <state id="s03ec6f34-411d-42e0-8add-dbbf314514d6" label="absent" symbol="0" />
-        <state id="s2313f5f9-421e-409d-8a28-82dc823462ab" label="present" symbol="1" />
+        <state id="s2313f5f9-421e-409d-8a28-82dc823462ab" label="present" symbol="1" about="#s2313f5f9-421e-409d-8a28-82dc823462ab">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001984" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sba853037-3f47-4bd9-a7b8-76a0af9c19c9">
-        <state id="sc931f549-871a-410f-96df-c99897782283" label="absent" symbol="0" />
-        <state id="s10d88a7d-7fd2-47ec-af03-4a226cb75758" label="present" symbol="1" />
+        <state id="s10d88a7d-7fd2-47ec-af03-4a226cb75758" label="present" symbol="1" about="#s10d88a7d-7fd2-47ec-af03-4a226cb75758">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300116" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s6299ab16-62c1-4ddb-8f2f-55508434458e">
-        <state id="sab9757af-57a7-491c-bd9e-8391b520a2e7" label="absent" symbol="0" />
-        <state id="sc2f9b2de-29b0-4e0d-a6af-336d528cf815" label="present" symbol="1" />
+        <state id="sc2f9b2de-29b0-4e0d-a6af-336d528cf815" label="present" symbol="1" about="#sc2f9b2de-29b0-4e0d-a6af-336d528cf815">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001246" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s16759c00-91f5-4c45-bef0-0f1078c6dd7a">
-        <state id="s5df6160c-417d-457d-a295-249b14243a79" label="absent" symbol="0" />
-        <state id="s0b0d4db2-9f4e-4b35-a2f7-331eedd3ba6b" label="present" symbol="1" />
+        <state id="s0b0d4db2-9f4e-4b35-a2f7-331eedd3ba6b" label="present" symbol="1" about="#s0b0d4db2-9f4e-4b35-a2f7-331eedd3ba6b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001247" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s93093fc7-b9a9-4911-aa29-447bd17eda21">
-        <state id="s7b92bed7-295b-4124-aed1-a40b5b612315" label="absent" symbol="0" />
-        <state id="s51734463-a803-46db-a52e-28d212c2d682" label="present" symbol="1" />
+        <state id="s51734463-a803-46db-a52e-28d212c2d682" label="present" symbol="1" about="#s51734463-a803-46db-a52e-28d212c2d682">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001805" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s304a5b7e-2266-45bc-95d0-aa809c223cae">
-        <state id="sf757f147-0106-4fdb-95fb-a9957b674bf2" label="absent" symbol="0" />
-        <state id="s0f61ca82-3f74-4770-ac7b-8f2cad9b1bd9" label="present" symbol="1" />
+        <state id="s0f61ca82-3f74-4770-ac7b-8f2cad9b1bd9" label="present" symbol="1" about="#s0f61ca82-3f74-4770-ac7b-8f2cad9b1bd9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001245" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sc1b2bfe3-74cb-406c-9816-26114bf787de">
-        <state id="sdcfd6dba-f532-4a07-b2b2-0598a927387a" label="absent" symbol="0" />
-        <state id="s27a35845-4817-4c21-8930-a178de0f2f4e" label="present" symbol="1" />
+        <state id="s27a35845-4817-4c21-8930-a178de0f2f4e" label="present" symbol="1" about="#s27a35845-4817-4c21-8930-a178de0f2f4e" />
       </states>
       <states id="s8dd23f5c-cee3-441c-8e12-d89a47390d37">
-        <state id="s9c6e2025-8aa6-4729-9a1c-fd682564f8f7" label="absent" symbol="0" />
-        <state id="s67164cc0-78db-4b6d-8fa0-1c754f941806" label="present" symbol="1" />
+        <state id="s67164cc0-78db-4b6d-8fa0-1c754f941806" label="present" symbol="1" about="#s67164cc0-78db-4b6d-8fa0-1c754f941806">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001983" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s72b327b5-d208-4137-bd77-143e8a96efeb">
-        <state id="sbfb5886d-f6e6-434d-b9b8-f665e515e6e4" label="absent" symbol="0" />
-        <state id="s2a215656-eb50-4965-b889-f3261035fe8b" label="present" symbol="1" />
+        <state id="s2a215656-eb50-4965-b889-f3261035fe8b" label="present" symbol="1" about="#s2a215656-eb50-4965-b889-f3261035fe8b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000196" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s2b4519e1-1a49-4c9a-af0a-e06c26c2d659">
-        <state id="s2e4a457b-f119-422a-adfb-f7a1d3922e32" label="absent" symbol="0" />
-        <state id="s2cd521ba-22c3-4b79-bf1c-cc1958f18fd6" label="present" symbol="1" />
+        <state id="s2cd521ba-22c3-4b79-bf1c-cc1958f18fd6" label="present" symbol="1" about="#s2cd521ba-22c3-4b79-bf1c-cc1958f18fd6">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011634" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s13185a05-8646-4ce6-86c6-cda8bf3a0483">
-        <state id="s8e06eb49-ae59-485a-9913-ef5faea64573" label="absent" symbol="0" />
-        <state id="s40093ac8-a5af-428e-8009-44ac3442704e" label="present" symbol="1" />
+        <state id="s40093ac8-a5af-428e-8009-44ac3442704e" label="present" symbol="1" about="#s40093ac8-a5af-428e-8009-44ac3442704e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001243" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s712da12e-7fd4-4658-b7b1-a2afded60c70">
-        <state id="sb08f4af5-0071-4557-a06c-1fe70e8fc160" label="absent" symbol="0" />
-        <state id="s3ca0b2a5-c9a6-4865-a91b-6ec19a3caab9" label="present" symbol="1" />
+        <state id="s3ca0b2a5-c9a6-4865-a91b-6ec19a3caab9" label="present" symbol="1" about="#s3ca0b2a5-c9a6-4865-a91b-6ec19a3caab9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006065">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000586" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s7d3940d9-273c-4a6e-89c5-e0b18fc91f34">
-        <state id="s6145585f-c95f-4ea2-989c-0b83a7620127" label="absent" symbol="0" />
-        <state id="s8ca99f9d-d811-434f-8963-8e0afa0aea99" label="present" symbol="1" />
+        <state id="s8ca99f9d-d811-434f-8963-8e0afa0aea99" label="present" symbol="1" about="#s8ca99f9d-d811-434f-8963-8e0afa0aea99">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001364">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000586" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s0e19e7b7-b829-4818-8ae4-5f5f6b85074d">
-        <state id="sf1315b7d-11ce-4c70-b98c-6a8374bf18f3" label="absent" symbol="0" />
-        <state id="se141651b-334d-4d40-adb4-9a9dbb6dd0c9" label="present" symbol="1" />
+        <state id="se141651b-334d-4d40-adb4-9a9dbb6dd0c9" label="present" symbol="1" about="#se141651b-334d-4d40-adb4-9a9dbb6dd0c9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001562" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s9cd5da30-e193-4812-a37d-1f410234e0d3">
-        <state id="s8a37b427-5052-4756-8bf9-052be8c1c354" label="absent" symbol="0" />
-        <state id="s4f58f091-a400-4476-b0e2-59a63d7ee5a7" label="present" symbol="1" />
+        <state id="s4f58f091-a400-4476-b0e2-59a63d7ee5a7" label="present" symbol="1" about="#s4f58f091-a400-4476-b0e2-59a63d7ee5a7">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000240" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="scf6eac95-8a94-4245-815a-2c301ac70d6e">
-        <state id="s1fca785f-9365-49ab-8bf1-487770fc2637" label="absent" symbol="0" />
-        <state id="s39a5b751-442a-42ff-b492-e256258dc013" label="present" symbol="1" />
+        <state id="s39a5b751-442a-42ff-b492-e256258dc013" label="present" symbol="1" about="#s39a5b751-442a-42ff-b492-e256258dc013">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001395" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s5ad04338-33e9-4552-915a-4305caaae903">
-        <state id="s3b64c5a7-f9d3-4c2c-89b2-8adc5cfc8220" label="absent" symbol="0" />
-        <state id="s971a15a8-5b81-4dad-800a-963392e22409" label="present" symbol="1" />
+        <state id="s971a15a8-5b81-4dad-800a-963392e22409" label="present" symbol="1" about="#s971a15a8-5b81-4dad-800a-963392e22409">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001252" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s36313b36-917b-4fd6-9120-58de13bdd196">
-        <state id="s5c88d454-4485-475a-afa6-0ef4ed71e78d" label="absent" symbol="0" />
-        <state id="s497f0a80-8c42-427f-bc29-94b6fdc146d3" label="present" symbol="1" />
+        <state id="s497f0a80-8c42-427f-bc29-94b6fdc146d3" label="present" symbol="1" about="#s497f0a80-8c42-427f-bc29-94b6fdc146d3">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000549" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s41f32e3e-1a14-424a-9a66-86997ca6a702">
-        <state id="s54283caa-c16f-4f9d-a82f-b7dc8a3b2b8d" label="absent" symbol="0" />
-        <state id="s893f9413-4daa-48f5-8276-60d4ce2a2b1a" label="present" symbol="1" />
+        <state id="s893f9413-4daa-48f5-8276-60d4ce2a2b1a" label="present" symbol="1" about="#s893f9413-4daa-48f5-8276-60d4ce2a2b1a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002064" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sfbb71008-de18-4341-825b-a12d4ace8cc2">
-        <state id="s8a356f1d-5fab-45db-9581-ccdde6a34577" label="absent" symbol="0" />
-        <state id="s1831ff59-9c9a-4ec6-a514-164a456cf346" label="present" symbol="1" />
+        <state id="s1831ff59-9c9a-4ec6-a514-164a456cf346" label="present" symbol="1" about="#s1831ff59-9c9a-4ec6-a514-164a456cf346">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004866" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s2e873c15-d31f-45c0-9711-35d1ed729c4b">
-        <state id="s0c0b1a75-6a56-462f-8b33-6a54e72ce52b" label="absent" symbol="0" />
-        <state id="s649fe707-8aea-48e8-b1d6-715199cba45e" label="present" symbol="1" />
+        <state id="s649fe707-8aea-48e8-b1d6-715199cba45e" label="present" symbol="1" about="#s649fe707-8aea-48e8-b1d6-715199cba45e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001364">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2002112" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sfa7e83b8-66ad-488a-92ad-8541a929e1a1">
-        <state id="s87f3152e-f623-41c9-bd08-39c8d04bdc5d" label="absent" symbol="0" />
-        <state id="s5c18c366-8214-4534-8341-5875162ac19e" label="present" symbol="1" />
+        <state id="s5c18c366-8214-4534-8341-5875162ac19e" label="present" symbol="1" about="#s5c18c366-8214-4534-8341-5875162ac19e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001253">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000586" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s49daec00-9559-4d45-98c1-90299f9b04b4">
-        <state id="s5c5e2c7d-baea-4dca-9f53-561e733c6725" label="absent" symbol="0" />
-        <state id="sa921edcb-e780-4f99-87e4-2697e9b668f5" label="present" symbol="1" />
+        <state id="sa921edcb-e780-4f99-87e4-2697e9b668f5" label="present" symbol="1" about="#sa921edcb-e780-4f99-87e4-2697e9b668f5">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001394">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2002112" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sc4825237-9282-45a3-a611-62f5dfe96310">
-        <state id="s3fbaeba8-bc9f-42da-8826-53306bac4196" label="absent" symbol="0" />
-        <state id="s53e27664-c7a1-49b3-970c-20d6a1575fb0" label="present" symbol="1" />
+        <state id="s53e27664-c7a1-49b3-970c-20d6a1575fb0" label="present" symbol="1" about="#s53e27664-c7a1-49b3-970c-20d6a1575fb0" />
       </states>
       <states id="s11fcde6c-8cfa-4f9e-bb9d-7c7fbdac8c46">
-        <state id="sfff283bc-6530-4b5d-a442-53443a09464b" label="absent" symbol="0" />
-        <state id="s163fc5bb-61e9-4056-871e-e6fdb8938dc0" label="present" symbol="1" />
+        <state id="s163fc5bb-61e9-4056-871e-e6fdb8938dc0" label="present" symbol="1" about="#s163fc5bb-61e9-4056-871e-e6fdb8938dc0">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001250" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sae417707-1ab5-4639-b1a6-15b9c0d8d52b">
-        <state id="s5849dce2-391e-4ddd-bf87-73af7866c6ae" label="absent" symbol="0" />
-        <state id="s7c94c64c-d309-443f-958c-c9b7d9cf7b66" label="present" symbol="1" />
+        <state id="s7c94c64c-d309-443f-958c-c9b7d9cf7b66" label="present" symbol="1" about="#s7c94c64c-d309-443f-958c-c9b7d9cf7b66">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001830" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sb8beb8c4-b5fc-41bb-9811-8b5dd058bc50">
-        <state id="s0b77577e-237c-4c30-a705-fbbdee86ddb7" label="absent" symbol="0" />
-        <state id="s5e7804ee-ffc9-4cf5-b05c-507fa73523dc" label="present" symbol="1" />
+        <state id="s5e7804ee-ffc9-4cf5-b05c-507fa73523dc" label="present" symbol="1" about="#s5e7804ee-ffc9-4cf5-b05c-507fa73523dc">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006065">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2002112" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s8e2edf68-7e31-4ce0-850a-e8a481ea243c">
-        <state id="s6cd85e47-d7ed-45b2-9db4-af59a7c8487d" label="absent" symbol="0" />
-        <state id="sa2c03367-4a1b-4849-8e06-a21322f3313a" label="present" symbol="1" />
+        <state id="sa2c03367-4a1b-4849-8e06-a21322f3313a" label="present" symbol="1" about="#sa2c03367-4a1b-4849-8e06-a21322f3313a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001563" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s4e4e44e8-a3bd-4e77-a0b0-bccd0c6c10b3">
-        <state id="s1cac1685-7139-47e2-a10a-e3606e60f4eb" label="absent" symbol="0" />
-        <state id="sd386c5ec-9894-4b13-a4be-8e422ed0cf69" label="present" symbol="1" />
+        <state id="sd386c5ec-9894-4b13-a4be-8e422ed0cf69" label="present" symbol="1" about="#sd386c5ec-9894-4b13-a4be-8e422ed0cf69">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001564" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s75fbe941-789b-4ce1-aa08-fd8b9e93e883">
-        <state id="s944c9b7e-d768-4563-947c-e2f919a400c0" label="absent" symbol="0" />
-        <state id="s73d33406-7805-46f4-bd4b-5c810ed1fea3" label="present" symbol="1" />
+        <state id="s73d33406-7805-46f4-bd4b-5c810ed1fea3" label="present" symbol="1" about="#s73d33406-7805-46f4-bd4b-5c810ed1fea3">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000525" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s128a03ff-d45f-47ac-87d2-590e3e826aa5">
-        <state id="sb37a30c2-2f15-4998-bfa0-8aa6dc768052" label="absent" symbol="0" />
-        <state id="s9e1e1dab-9d38-4fea-a995-62070b138671" label="present" symbol="1" />
+        <state id="s9e1e1dab-9d38-4fea-a995-62070b138671" label="present" symbol="1" about="#s9e1e1dab-9d38-4fea-a995-62070b138671">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011238" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s9248b77b-13cb-4589-bdc5-2ec8bf51164a">
-        <state id="s6063b172-bdc0-4897-997c-1c1c068e1b47" label="absent" symbol="0" />
-        <state id="sf37db4be-8b32-431d-819b-3227c4043609" label="present" symbol="1" />
+        <state id="sf37db4be-8b32-431d-819b-3227c4043609" label="present" symbol="1" about="#sf37db4be-8b32-431d-819b-3227c4043609">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001394" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s2ac54a59-e4c1-40e7-998e-d3bf037bacf3">
-        <state id="sd30318bc-1931-4750-adb5-0e07f489f870" label="absent" symbol="0" />
-        <state id="s9ae5c275-0825-4862-846a-9acbd29b6542" label="present" symbol="1" />
+        <state id="s9ae5c275-0825-4862-846a-9acbd29b6542" label="present" symbol="1" about="#s9ae5c275-0825-4862-846a-9acbd29b6542">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001635" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s43ed863a-aa77-4dfb-bc1b-1325bc40972c">
-        <state id="se8fe9e13-b1b9-4aee-934b-10afb5bc6a22" label="absent" symbol="0" />
-        <state id="sa9581496-3d97-4d80-ad61-dc240d07869c" label="present" symbol="1" />
+        <state id="sa9581496-3d97-4d80-ad61-dc240d07869c" label="present" symbol="1" about="#sa9581496-3d97-4d80-ad61-dc240d07869c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004746" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s6dcbeb5e-3ba0-4419-a9d4-35e6ae3284d4">
-        <state id="s2cc88937-e28b-4099-9392-1b891ef655d0" label="absent" symbol="0" />
-        <state id="sd3dfcdab-3cd7-475a-bb49-7a24e970d36f" label="present" symbol="1" />
+        <state id="sd3dfcdab-3cd7-475a-bb49-7a24e970d36f" label="present" symbol="1" about="#sd3dfcdab-3cd7-475a-bb49-7a24e970d36f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000429" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="se4e2ca02-f7f8-43a4-81ee-9938e699fe43">
-        <state id="s42d7e681-742f-45ff-a7ce-f8f51992f1f9" label="absent" symbol="0" />
-        <state id="s90a9ae43-c359-4313-b133-cc9f96fbeb68" label="present" symbol="1" />
+        <state id="s90a9ae43-c359-4313-b133-cc9f96fbeb68" label="present" symbol="1" about="#s90a9ae43-c359-4313-b133-cc9f96fbeb68">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000268" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s61345cc0-4426-489c-bec4-31646d7ddb07">
-        <state id="scf62420b-425d-4df0-8622-e17cfd33a517" label="absent" symbol="0" />
-        <state id="s7dded4e8-0988-4f87-a525-2027d66d94b1" label="present" symbol="1" />
+        <state id="s7dded4e8-0988-4f87-a525-2027d66d94b1" label="present" symbol="1" about="#s7dded4e8-0988-4f87-a525-2027d66d94b1">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001224" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s7f76df01-485d-4ee5-9ae1-55294cfe8835">
-        <state id="s895a4823-156a-498c-b4a9-918d99ed83d9" label="absent" symbol="0" />
-        <state id="s3a2d2fb8-7987-4e12-a792-f0e3ba117938" label="present" symbol="1" />
+        <state id="s3a2d2fb8-7987-4e12-a792-f0e3ba117938" label="present" symbol="1" about="#s3a2d2fb8-7987-4e12-a792-f0e3ba117938">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001225" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s9f32d393-e413-4293-a119-19779d559883">
-        <state id="s2dc476fa-ac5a-4ce8-9e10-052f4518cdea" label="absent" symbol="0" />
-        <state id="s7b68de18-ce6c-4e79-8d28-a8781f7b4155" label="present" symbol="1" />
+        <state id="s7b68de18-ce6c-4e79-8d28-a8781f7b4155" label="present" symbol="1" about="#s7b68de18-ce6c-4e79-8d28-a8781f7b4155">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001274" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s6add6030-af82-4b5c-8b16-d53ec50a24e9">
-        <state id="sc563cbcb-6373-4497-bfef-e374800727b7" label="absent" symbol="0" />
-        <state id="s50352b09-a4d4-4194-bc09-ab0ea49e398e" label="present" symbol="1" />
+        <state id="s50352b09-a4d4-4194-bc09-ab0ea49e398e" label="present" symbol="1" about="#s50352b09-a4d4-4194-bc09-ab0ea49e398e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001076">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000586" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s451f1af9-0325-4feb-95bb-ed2139e0622d">
-        <state id="scdb6d291-d989-421f-a448-3313aa4512aa" label="absent" symbol="0" />
-        <state id="s32f50518-2085-483c-8238-db4412b387dd" label="present" symbol="1" />
+        <state id="s32f50518-2085-483c-8238-db4412b387dd" label="present" symbol="1" about="#s32f50518-2085-483c-8238-db4412b387dd">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001076">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2002112" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s019eebb0-1088-459d-bf57-5b9f0d369d5f">
-        <state id="sc0a6ae0f-72da-4e71-884d-79c6a4ad9726" label="absent" symbol="0" />
-        <state id="s9c18a73c-625f-4f8a-9898-29f74d11692c" label="present" symbol="1" />
+        <state id="s9c18a73c-625f-4f8a-9898-29f74d11692c" label="present" symbol="1" about="#s9c18a73c-625f-4f8a-9898-29f74d11692c" />
       </states>
       <states id="s52ebba54-e058-4885-9053-a3d51ff1e22d">
-        <state id="s5af146ef-c5f1-4225-9561-2f6626bd18fb" label="absent" symbol="0" />
-        <state id="s7f23415c-a429-4250-9c62-e078c104146e" label="present" symbol="1" />
+        <state id="s7f23415c-a429-4250-9c62-e078c104146e" label="present" symbol="1" about="#s7f23415c-a429-4250-9c62-e078c104146e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000557" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="se375b12b-d512-477b-9901-6245e2570bbe">
-        <state id="s38548178-0c56-447c-a43c-472f337d2371" label="absent" symbol="0" />
-        <state id="s5490567a-eed0-4c99-9300-f6d5b515bdd1" label="present" symbol="1" />
+        <state id="s5490567a-eed0-4c99-9300-f6d5b515bdd1" label="present" symbol="1" about="#s5490567a-eed0-4c99-9300-f6d5b515bdd1">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000586" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s2f0fa321-3b07-4d6e-a1bb-f0211d269eb5">
-        <state id="s9aab77ac-f127-41cc-b1c0-15cd7097bc05" label="absent" symbol="0" />
-        <state id="sc3d6fef7-29c3-449d-b4bf-8ef960d0d4a1" label="present" symbol="1" />
+        <state id="sc3d6fef7-29c3-449d-b4bf-8ef960d0d4a1" label="present" symbol="1" about="#sc3d6fef7-29c3-449d-b4bf-8ef960d0d4a1">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002112" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s812a0f50-9ae9-43a8-a404-b281a8294ea7">
-        <state id="s94272cbd-85cb-4d03-bf8a-12157fe4f1da" label="absent" symbol="0" />
-        <state id="s19d02761-1b31-4f29-9be3-938c8a6b0903" label="present" symbol="1" />
+        <state id="s19d02761-1b31-4f29-9be3-938c8a6b0903" label="present" symbol="1" about="#s19d02761-1b31-4f29-9be3-938c8a6b0903">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000587" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s726752ca-919a-4171-90f1-87ee33f61132">
-        <state id="s93275a25-f4bc-4fba-aa26-59d691b90cd0" label="absent" symbol="0" />
-        <state id="s829c2cc1-0e9a-4ce5-acd4-8cc5513d3803" label="present" symbol="1" />
+        <state id="s829c2cc1-0e9a-4ce5-acd4-8cc5513d3803" label="present" symbol="1" about="#s829c2cc1-0e9a-4ce5-acd4-8cc5513d3803">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000947" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s1634a62f-55f5-4d64-a7a6-d673465b288b">
-        <state id="saded8396-bef4-4b2b-b310-0066da3b8350" label="absent" symbol="0" />
-        <state id="saa90bec2-d239-422d-b538-cf7772733feb" label="present" symbol="1" />
+        <state id="saa90bec2-d239-422d-b538-cf7772733feb" label="present" symbol="1" about="#saa90bec2-d239-422d-b538-cf7772733feb">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002065" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sf65219c3-957f-4efe-b57b-596ec45c5d0a">
-        <state id="saa602e6e-c24f-4742-8292-2b2224a439ef" label="absent" symbol="0" />
-        <state id="s361cfd9a-6e26-4eec-a813-753868a5308d" label="present" symbol="1" />
+        <state id="s361cfd9a-6e26-4eec-a813-753868a5308d" label="present" symbol="1" about="#s361cfd9a-6e26-4eec-a813-753868a5308d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004747" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s073b2409-2ec2-4088-ab7d-742a43b55413">
-        <state id="s954110b9-602f-4bde-b3cb-ef4f5e0d7826" label="absent" symbol="0" />
-        <state id="s06915a09-4230-4b7b-a40a-f946c1c75415" label="present" symbol="1" />
+        <state id="s06915a09-4230-4b7b-a40a-f946c1c75415" label="present" symbol="1" about="#s06915a09-4230-4b7b-a40a-f946c1c75415">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002214" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s6212a95b-2eac-4cc8-a30c-0363493ec741">
-        <state id="s0c29259f-38dc-4149-829f-141bbe99156c" label="absent" symbol="0" />
-        <state id="s05cb0c52-0240-4196-86ca-50495b1850ee" label="present" symbol="1" />
+        <state id="s05cb0c52-0240-4196-86ca-50495b1850ee" label="present" symbol="1" about="#s05cb0c52-0240-4196-86ca-50495b1850ee" />
       </states>
       <states id="sf62e5ab3-ec46-4620-a1b0-220c6be27650">
-        <state id="s8e00c694-6f78-4e6e-91c1-1f88834e1958" label="absent" symbol="0" />
-        <state id="s9f91a96a-12ad-4242-99ad-9bca90529d00" label="present" symbol="1" />
+        <state id="s9f91a96a-12ad-4242-99ad-9bca90529d00" label="present" symbol="1" about="#s9f91a96a-12ad-4242-99ad-9bca90529d00">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011618" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sc42fe35a-6b8e-443f-80b1-f9476d7ba9bb">
-        <state id="s4233c32a-5468-419c-8d75-9a378561ccb1" label="absent" symbol="0" />
-        <state id="s9b39d981-1f63-4c6d-9f96-c1d4b40af6f2" label="present" symbol="1" />
+        <state id="s9b39d981-1f63-4c6d-9f96-c1d4b40af6f2" label="present" symbol="1" about="#s9b39d981-1f63-4c6d-9f96-c1d4b40af6f2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001235" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s75ab10a7-2ef7-4852-b19f-bf47a3835e8a">
-        <state id="s0473e390-55fb-4a12-8d13-349374b0e83b" label="absent" symbol="0" />
-        <state id="s1c05c8f6-7b29-4c17-bd84-bc82f1a0fc63" label="present" symbol="1" />
+        <state id="s1c05c8f6-7b29-4c17-bd84-bc82f1a0fc63" label="present" symbol="1" about="#s1c05c8f6-7b29-4c17-bd84-bc82f1a0fc63" />
       </states>
       <states id="s46e18fb3-1f7c-4a2e-8485-a54bee27f85f">
-        <state id="sab070906-2a57-45eb-98c7-c6160da373f5" label="absent" symbol="0" />
-        <state id="scc91ce74-0411-40f4-aa97-a8d8ffb898c7" label="present" symbol="1" />
-      </states>
-      <states id="s02c274ba-f709-478e-ac74-e0db41060b8d">
-        <state id="sa272b865-9bf9-4d76-8e76-5f23b30c5614" label="absent" symbol="0" />
-        <state id="s1c989672-c07a-4fe3-b5c8-3b43312360ff" label="present" symbol="1" />
+        <state id="scc91ce74-0411-40f4-aa97-a8d8ffb898c7" label="present" symbol="1" about="#scc91ce74-0411-40f4-aa97-a8d8ffb898c7" />
       </states>
       <states id="sd6cab0a7-a3e8-48af-8b8a-eaf1f896903f">
-        <state id="sabdec04a-5273-4146-85bc-afdf1a5b192e" label="absent" symbol="0" />
-        <state id="s00be2bbf-d2f9-454a-a551-0a03c22ba625" label="present" symbol="1" />
+        <state id="s00be2bbf-d2f9-454a-a551-0a03c22ba625" label="present" symbol="1" about="#s00be2bbf-d2f9-454a-a551-0a03c22ba625">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001223" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="scfffb307-5f12-411d-a43b-10e1c23d3bae">
-        <state id="s1a742e2f-d255-4c45-9157-938bc845bd23" label="absent" symbol="0" />
-        <state id="s3c5a5066-7077-4a39-8d41-0239673bd535" label="present" symbol="1" />
+        <state id="s3c5a5066-7077-4a39-8d41-0239673bd535" label="present" symbol="1" about="#s3c5a5066-7077-4a39-8d41-0239673bd535">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001236" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s7608cd66-36b6-4a18-a64a-36ec011cd339">
-        <state id="sd6c2df33-51b9-482f-8438-52c6b8ccbfa6" label="absent" symbol="0" />
-        <state id="s33155d9b-bb37-4782-9ca9-161bef619863" label="present" symbol="1" />
+        <state id="s33155d9b-bb37-4782-9ca9-161bef619863" label="present" symbol="1" about="#s33155d9b-bb37-4782-9ca9-161bef619863">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000419" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s84632ed2-3f4e-4404-b3c1-9651435f3a5a">
-        <state id="saf4efe8e-b396-4efe-a14e-6bd7fcf7b021" label="absent" symbol="0" />
-        <state id="sdeac7800-34ce-44bc-a57a-8feea08c644d" label="present" symbol="1" />
+        <state id="sdeac7800-34ce-44bc-a57a-8feea08c644d" label="present" symbol="1" about="#sdeac7800-34ce-44bc-a57a-8feea08c644d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000226" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s6ec00aee-74b5-4098-bc38-6955809de6ab">
-        <state id="seadc7215-2ca6-4c71-b67c-7a6f567f95f7" label="absent" symbol="0" />
-        <state id="s6e7505d9-ddd1-436d-be58-9dda0d48b510" label="present" symbol="1" />
+        <state id="s6e7505d9-ddd1-436d-be58-9dda0d48b510" label="present" symbol="1" about="#s6e7505d9-ddd1-436d-be58-9dda0d48b510">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002056" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s4239ddc5-2bad-447b-a6e3-eca03102339e">
-        <state id="s5b6a54a4-22a0-49d5-b3d0-d38e03e81c7f" label="absent" symbol="0" />
-        <state id="s1236e3e8-e0c5-4dac-b9d4-79ba09a56ba2" label="present" symbol="1" />
+        <state id="s1236e3e8-e0c5-4dac-b9d4-79ba09a56ba2" label="present" symbol="1" about="#s1236e3e8-e0c5-4dac-b9d4-79ba09a56ba2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003109" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sb14a6e38-6fa1-4073-90a5-114c3ed9f5f5">
-        <state id="sc9faf213-730c-44d3-8e99-8f229ef905b1" label="absent" symbol="0" />
-        <state id="sd3d3f3dd-500d-445c-b74e-c814f352293c" label="present" symbol="1" />
+        <state id="sd3d3f3dd-500d-445c-b74e-c814f352293c" label="present" symbol="1" about="#sd3d3f3dd-500d-445c-b74e-c814f352293c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002252" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s39e28712-1124-4933-9dad-b964f5565b35">
-        <state id="sef079b83-d107-4fa1-911d-ccb42bfb12dc" label="absent" symbol="0" />
-        <state id="sd6bb6e13-803d-4e6e-96ed-b3d33f9c2adf" label="present" symbol="1" />
+        <state id="sd6bb6e13-803d-4e6e-96ed-b3d33f9c2adf" label="present" symbol="1" about="#sd6bb6e13-803d-4e6e-96ed-b3d33f9c2adf">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001546" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s9746f739-5c0f-4bf2-aac4-56a2ec79ff9a">
-        <state id="s030002c4-a309-44b7-914a-e92ba5b16eef" label="absent" symbol="0" />
-        <state id="sa5b35637-4024-42d4-9a9d-48524ad2ce5f" label="present" symbol="1" />
+        <state id="sa5b35637-4024-42d4-9a9d-48524ad2ce5f" label="present" symbol="1" about="#sa5b35637-4024-42d4-9a9d-48524ad2ce5f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002478" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s6f40bd0e-5cc8-40e3-adc5-b581aceefdca">
-        <state id="sa244b6ef-9c5c-40ba-890f-a9256eb6232e" label="absent" symbol="0" />
-        <state id="s8b104344-206f-4f07-829e-316811251869" label="present" symbol="1" />
+        <state id="s8b104344-206f-4f07-829e-316811251869" label="present" symbol="1" about="#s8b104344-206f-4f07-829e-316811251869">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002109" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s994f4b1b-9620-4277-9768-68efba526ebe">
-        <state id="sd02a3f8b-7202-4949-8f91-2080bf819d33" label="absent" symbol="0" />
-        <state id="s4d50501c-c8a0-40b1-bf7a-0bbbed4f5f01" label="present" symbol="1" />
+        <state id="s4d50501c-c8a0-40b1-bf7a-0bbbed4f5f01" label="present" symbol="1" about="#s4d50501c-c8a0-40b1-bf7a-0bbbed4f5f01">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002396" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sd6c18623-ef61-421b-b1fa-35760dece156">
-        <state id="s4b010e54-4118-4855-9fa0-99ab251ecec2" label="absent" symbol="0" />
-        <state id="s3e42811c-456d-4915-9065-7b572a93722c" label="present" symbol="1" />
+        <state id="s3e42811c-456d-4915-9065-7b572a93722c" label="present" symbol="1" about="#s3e42811c-456d-4915-9065-7b572a93722c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001829" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s97daf922-fc8a-490c-a832-7698793e32a6">
-        <state id="s192520f3-e369-4620-ad48-9d5d4a8eb193" label="absent" symbol="0" />
-        <state id="sd1de394c-0547-4670-a2a8-7bd0b782be81" label="present" symbol="1" />
+        <state id="sd1de394c-0547-4670-a2a8-7bd0b782be81" label="present" symbol="1" about="#sd1de394c-0547-4670-a2a8-7bd0b782be81">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000936" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s02cd3985-5876-458e-8cb1-a0cd68f1aea6">
-        <state id="s56fc4ece-ffe9-4841-b8b0-3056661c2392" label="absent" symbol="0" />
-        <state id="s670e2280-1cda-4ace-a12f-1002e3423f53" label="present" symbol="1" />
+        <state id="s670e2280-1cda-4ace-a12f-1002e3423f53" label="present" symbol="1" about="#s670e2280-1cda-4ace-a12f-1002e3423f53">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002250" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s30b8a13a-7b8f-4caa-8fbb-a997184bae9d">
-        <state id="s3cacf333-e2b8-4429-8550-0d7783998376" label="absent" symbol="0" />
-        <state id="sfe669f8e-0e0f-4131-8208-95212817b596" label="present" symbol="1" />
+        <state id="sfe669f8e-0e0f-4131-8208-95212817b596" label="present" symbol="1" about="#sfe669f8e-0e0f-4131-8208-95212817b596">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001192" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sf0e1c50a-0b3a-466b-95f0-37ddea8db563">
-        <state id="s3fb8c31e-0f31-4d47-aa7e-daf3ad6d7cec" label="absent" symbol="0" />
-        <state id="sd1091c8d-268f-473a-babc-a9703d7bd993" label="present" symbol="1" />
+        <state id="sd1091c8d-268f-473a-babc-a9703d7bd993" label="present" symbol="1" about="#sd1091c8d-268f-473a-babc-a9703d7bd993">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004865" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s09f2cff6-bd49-4754-bfb0-528fc9243b74">
-        <state id="sa32ef567-94b5-43a6-90a7-ef5a954767c5" label="absent" symbol="0" />
-        <state id="sfca7025d-0706-453c-8905-94345c9151ee" label="present" symbol="1" />
+        <state id="sfca7025d-0706-453c-8905-94345c9151ee" label="present" symbol="1" about="#sfca7025d-0706-453c-8905-94345c9151ee">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000474" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="scd31749e-5f96-4a2c-89a8-bbf489ee2810">
-        <state id="se1268041-f1bb-4ec4-8d62-5c352b15f150" label="absent" symbol="0" />
-        <state id="sa22449a0-9bda-4701-a1cb-879b3a736a80" label="present" symbol="1" />
+        <state id="sa22449a0-9bda-4701-a1cb-879b3a736a80" label="present" symbol="1" about="#sa22449a0-9bda-4701-a1cb-879b3a736a80">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000576" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s5a42bab3-78d9-4b55-baa5-772036bfdfeb">
-        <state id="sc6330ae6-1324-44fd-8a8a-f054bcb365b6" label="absent" symbol="0" />
-        <state id="sd61ec046-66d2-4b36-9e79-1672bae5caf5" label="present" symbol="1" />
+        <state id="sd61ec046-66d2-4b36-9e79-1672bae5caf5" label="present" symbol="1" about="#sd61ec046-66d2-4b36-9e79-1672bae5caf5">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001233" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s55c68f81-1891-46fb-aacf-35c66df5122a">
-        <state id="s42afb443-54b0-4725-983b-1d6b1560e5e0" label="absent" symbol="0" />
-        <state id="se7fd8903-28a0-451e-afb5-626e1fb0d74e" label="present" symbol="1" />
+        <state id="se7fd8903-28a0-451e-afb5-626e1fb0d74e" label="present" symbol="1" about="#se7fd8903-28a0-451e-afb5-626e1fb0d74e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000646" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s6f55314e-6840-469c-bb9e-a2cab9075ee9">
-        <state id="scc2754ca-d384-4794-a9e4-fcd5352d128d" label="absent" symbol="0" />
-        <state id="s19d2d45a-44e8-4263-87b0-4176e2f85634" label="present" symbol="1" />
+        <state id="scc2754ca-d384-4794-a9e4-fcd5352d128d" label="absent" symbol="0" about="#scc2754ca-d384-4794-a9e4-fcd5352d128d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001592" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s19d2d45a-44e8-4263-87b0-4176e2f85634" label="present" symbol="1" about="#s19d2d45a-44e8-4263-87b0-4176e2f85634">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001592" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sf4c0dcdd-a6ff-4d30-944e-eabefc9a9c76">
-        <state id="s0c3fe81c-8b36-4e23-8386-2b2722a0126f" label="absent" symbol="0" />
-        <state id="sd7bb6d51-541d-44e5-8b89-eb572aaba917" label="present" symbol="1" />
+        <state id="s0c3fe81c-8b36-4e23-8386-2b2722a0126f" label="absent" symbol="0" about="#s0c3fe81c-8b36-4e23-8386-2b2722a0126f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500007" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sd7bb6d51-541d-44e5-8b89-eb572aaba917" label="present" symbol="1" about="#sd7bb6d51-541d-44e5-8b89-eb572aaba917">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500007" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s9687ecad-c460-4fdd-a5bf-41b9b4fab6a1">
-        <state id="s63543232-ffb7-4010-b21c-d2925f407aa1" label="absent" symbol="0" />
-        <state id="s1acedc00-23cb-4f5a-9b1c-420717d3897a" label="present" symbol="1" />
+        <state id="s1acedc00-23cb-4f5a-9b1c-420717d3897a" label="present" symbol="1" about="#s1acedc00-23cb-4f5a-9b1c-420717d3897a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001652" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s5a550a89-caec-49ec-94c8-92275905bec9">
-        <state id="sbaed30f4-73d2-4bc0-8b55-e4bafd11c257" label="absent" symbol="0" />
-        <state id="s5c3dc937-bd70-4f10-8bce-cead457796fc" label="present" symbol="1" />
+        <state id="s5c3dc937-bd70-4f10-8bce-cead457796fc" label="present" symbol="1" about="#s5c3dc937-bd70-4f10-8bce-cead457796fc">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001412" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sd1ec3692-3e41-44d5-9f70-d1b4f4902f51">
-        <state id="s332b06cd-c99f-4d1e-a8b5-00635a1020bd" label="absent" symbol="0" />
-        <state id="sf01677e3-0711-491c-b6d2-51fd16ae6005" label="present" symbol="1" />
+        <state id="sf01677e3-0711-491c-b6d2-51fd16ae6005" label="present" symbol="1" about="#sf01677e3-0711-491c-b6d2-51fd16ae6005">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000127" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s324570cd-e2e7-4126-9b2c-eacc0b0a1488">
-        <state id="s1ec95853-ddd5-4c0e-99da-b8ec430be633" label="absent" symbol="0" />
-        <state id="sad0867d9-a983-4bf2-9e4f-7bdbb91e114a" label="present" symbol="1" />
+        <state id="sad0867d9-a983-4bf2-9e4f-7bdbb91e114a" label="present" symbol="1" about="#sad0867d9-a983-4bf2-9e4f-7bdbb91e114a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300117" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="saab35f49-2293-4900-a751-f40be589c26a">
-        <state id="sf9a786b5-17f7-492f-8564-69ffdeed33c2" label="absent" symbol="0" />
-        <state id="sfa5d725c-416d-4380-9604-b4f713eca6ef" label="present" symbol="1" />
+        <state id="sf9a786b5-17f7-492f-8564-69ffdeed33c2" label="absent" symbol="0" about="#sf9a786b5-17f7-492f-8564-69ffdeed33c2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001397" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sfa5d725c-416d-4380-9604-b4f713eca6ef" label="present" symbol="1" about="#sfa5d725c-416d-4380-9604-b4f713eca6ef">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001397" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s6e44e3b2-97dc-401f-a96b-a730e5027b66">
-        <state id="s796e749b-3404-4816-ade0-e315fb85f661" label="absent" symbol="0" />
-        <state id="s407eafcd-3489-4795-9484-3b65d85253f2" label="present" symbol="1" />
+        <state id="s796e749b-3404-4816-ade0-e315fb85f661" label="absent" symbol="0" about="#s796e749b-3404-4816-ade0-e315fb85f661">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001681" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s407eafcd-3489-4795-9484-3b65d85253f2" label="present" symbol="1" about="#s407eafcd-3489-4795-9484-3b65d85253f2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0001681" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sc6a99565-5e5f-476d-93cd-4ec8c5eb50c3">
-        <state id="s3dd19356-99ec-4c96-bbd7-1b21b835ad35" label="absent" symbol="0" />
-        <state id="s7f605886-c677-4a7f-a7b6-797dd55101cc" label="present" symbol="1" />
+        <state id="s7f605886-c677-4a7f-a7b6-797dd55101cc" label="present" symbol="1" about="#s7f605886-c677-4a7f-a7b6-797dd55101cc">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000526" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s843d38ed-1afc-4243-bed2-82861a572e60">
-        <state id="s2410f1d1-d917-4bdd-ada6-fc4cc4b23d46" label="absent" symbol="0" />
-        <state id="s18c3712e-8e1c-4ab4-a240-da52e2b30280" label="present" symbol="1" />
+        <state id="s18c3712e-8e1c-4ab4-a240-da52e2b30280" label="present" symbol="1" about="#s18c3712e-8e1c-4ab4-a240-da52e2b30280">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000623" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sa0a9540b-288c-41d8-8d67-6dcdc97e261a">
-        <state id="sdc1b4038-2495-4633-a1f4-a9b423dc1230" label="absent" symbol="0" />
-        <state id="sebde0981-086f-48c1-aff8-58aaeae10807" label="present" symbol="1" />
+        <state id="sdc1b4038-2495-4633-a1f4-a9b423dc1230" label="absent" symbol="0" about="#sdc1b4038-2495-4633-a1f4-a9b423dc1230">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001852" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sebde0981-086f-48c1-aff8-58aaeae10807" label="present" symbol="1" about="#sebde0981-086f-48c1-aff8-58aaeae10807">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001852" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sd1c92604-5dd9-4e51-adaf-6a1195a87d02">
-        <state id="sbc1b4ab6-73ad-46a8-a48e-d84f993d7e29" label="absent" symbol="0" />
-        <state id="s393cd2c5-97d2-48dd-a818-874205001004" label="present" symbol="1" />
+        <state id="sbc1b4ab6-73ad-46a8-a48e-d84f993d7e29" label="absent" symbol="0" about="#sbc1b4ab6-73ad-46a8-a48e-d84f993d7e29">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006849" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s393cd2c5-97d2-48dd-a818-874205001004" label="present" symbol="1" about="#s393cd2c5-97d2-48dd-a818-874205001004">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0006849" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sa95c9115-9105-48b7-94ed-8603e3482fc3">
-        <state id="s39ea49e0-995e-4e01-b400-cf67d333440c" label="absent" symbol="0" />
-        <state id="sf357cdd2-7c2e-413d-964c-7409a7add9d2" label="present" symbol="1" />
+        <state id="s39ea49e0-995e-4e01-b400-cf67d333440c" label="absent" symbol="0" about="#s39ea49e0-995e-4e01-b400-cf67d333440c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004743" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sf357cdd2-7c2e-413d-964c-7409a7add9d2" label="present" symbol="1" about="#sf357cdd2-7c2e-413d-964c-7409a7add9d2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004743" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s0e33b9d2-1a2e-40b9-9b97-c95052008718">
-        <state id="scd695087-9dfe-4c0c-944e-8d773ce6f5a8" label="absent" symbol="0" />
-        <state id="s736d6541-8c2d-48d5-83b2-365e10f0efb7" label="present" symbol="1" />
+        <state id="s736d6541-8c2d-48d5-83b2-365e10f0efb7" label="present" symbol="1" about="#s736d6541-8c2d-48d5-83b2-365e10f0efb7">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000171" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s1d4fdcf7-d868-4d57-991e-ae387042f02d">
-        <state id="se3ade0de-82f2-4ad0-9c69-6fb5614c83c3" label="absent" symbol="0" />
-        <state id="s14e92979-cf06-4cc4-b9ac-76b43ae5775f" label="present" symbol="1" />
+        <state id="s14e92979-cf06-4cc4-b9ac-76b43ae5775f" label="present" symbol="1" about="#s14e92979-cf06-4cc4-b9ac-76b43ae5775f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000223" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s93639eff-8ee7-4f5c-9cea-f6d1a6078a8e">
-        <state id="sc7f755a6-4a5c-4ce8-8212-39518c2b335f" label="absent" symbol="0" />
-        <state id="s2e47a0a7-6c23-4b86-8883-7f3306b73af3" label="present" symbol="1" />
+        <state id="s2e47a0a7-6c23-4b86-8883-7f3306b73af3" label="present" symbol="1" about="#s2e47a0a7-6c23-4b86-8883-7f3306b73af3">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001407" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s0456e26f-1720-4f48-a75d-f90b01bd97e7">
-        <state id="sb15257db-b830-4871-b642-a7c63ced3ae7" label="absent" symbol="0" />
-        <state id="s6ab68ed7-4991-4393-b6d8-01b6635a6d20" label="present" symbol="1" />
+        <state id="sb15257db-b830-4871-b642-a7c63ced3ae7" label="absent" symbol="0" about="#sb15257db-b830-4871-b642-a7c63ced3ae7">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000239" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s6ab68ed7-4991-4393-b6d8-01b6635a6d20" label="present" symbol="1" about="#s6ab68ed7-4991-4393-b6d8-01b6635a6d20">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000239" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sa2f8124d-35a5-4215-b468-9f2904f2b4ad">
-        <state id="s05ed99ad-f997-4a3c-8fbc-a51ed3ef3092" label="absent" symbol="0" />
-        <state id="s6bfc5b5a-707b-4915-8476-3ec4f60db361" label="present" symbol="1" />
+        <state id="s05ed99ad-f997-4a3c-8fbc-a51ed3ef3092" label="absent" symbol="0" about="#s05ed99ad-f997-4a3c-8fbc-a51ed3ef3092">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001853" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s6bfc5b5a-707b-4915-8476-3ec4f60db361" label="present" symbol="1" about="#s6bfc5b5a-707b-4915-8476-3ec4f60db361">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001853" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s19579307-21c5-4cb9-a5a9-4d00f5eb00db">
-        <state id="se0fce6d6-6a39-4b5c-93ff-ef99ed1292a0" label="absent" symbol="0" />
-        <state id="sa5e8e803-978a-4919-8ddf-0ef0452c3fcf" label="present" symbol="1" />
+        <state id="se0fce6d6-6a39-4b5c-93ff-ef99ed1292a0" label="absent" symbol="0" about="#se0fce6d6-6a39-4b5c-93ff-ef99ed1292a0">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001854" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sa5e8e803-978a-4919-8ddf-0ef0452c3fcf" label="present" symbol="1" about="#sa5e8e803-978a-4919-8ddf-0ef0452c3fcf">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001854" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s299f7665-3a56-4023-ae7c-80054da15cb9">
-        <state id="sc4ce486e-c0bd-4416-b55d-c8ad4f793613" label="absent" symbol="0" />
-        <state id="sc73da3ea-0ffb-4046-a796-8d82759c986c" label="present" symbol="1" />
+        <state id="sc73da3ea-0ffb-4046-a796-8d82759c986c" label="present" symbol="1" about="#sc73da3ea-0ffb-4046-a796-8d82759c986c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001408" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s8d49c7c0-7eb0-4c85-88f7-7d60862602e8">
-        <state id="s2073881f-8ba9-42b9-b6da-d2c034be37bb" label="absent" symbol="0" />
-        <state id="s5cead436-c3f4-47e8-9492-0b6a519bbf3b" label="present" symbol="1" />
+        <state id="s2073881f-8ba9-42b9-b6da-d2c034be37bb" label="absent" symbol="0" about="#s2073881f-8ba9-42b9-b6da-d2c034be37bb">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001409" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s5cead436-c3f4-47e8-9492-0b6a519bbf3b" label="present" symbol="1" about="#s5cead436-c3f4-47e8-9492-0b6a519bbf3b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001409" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s2ce64f3d-4cd3-4261-bf99-f865fe113cef">
-        <state id="s577c76a6-5da6-4f58-9893-8b2ba8627cf7" label="absent" symbol="0" />
-        <state id="s016d5177-9b8d-440a-8630-493abc156060" label="present" symbol="1" />
+        <state id="s577c76a6-5da6-4f58-9893-8b2ba8627cf7" label="absent" symbol="0" about="#s577c76a6-5da6-4f58-9893-8b2ba8627cf7">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000495" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s016d5177-9b8d-440a-8630-493abc156060" label="present" symbol="1" about="#s016d5177-9b8d-440a-8630-493abc156060">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000495" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s5457cf4a-5d2c-46a0-98ee-796ce758e141">
-        <state id="s80c197ea-6740-4c45-adfe-4c9a7d5249ef" label="absent" symbol="0" />
-        <state id="s8aec2e50-ce7b-4863-b4a5-61a9c3006028" label="present" symbol="1" />
+        <state id="s80c197ea-6740-4c45-adfe-4c9a7d5249ef" label="absent" symbol="0" about="#s80c197ea-6740-4c45-adfe-4c9a7d5249ef" />
+        <state id="s8aec2e50-ce7b-4863-b4a5-61a9c3006028" label="present" symbol="1" about="#s8aec2e50-ce7b-4863-b4a5-61a9c3006028" />
       </states>
       <states id="s83ed11b1-3972-4b47-bef9-61f40ee24e1d">
-        <state id="s4d68cb50-b30b-4677-b975-422cc8e8b264" label="absent" symbol="0" />
-        <state id="s2ed3f5be-41c1-402b-b94d-857bedea3df8" label="present" symbol="1" />
+        <state id="s2ed3f5be-41c1-402b-b94d-857bedea3df8" label="present" symbol="1" about="#s2ed3f5be-41c1-402b-b94d-857bedea3df8">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000620" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sbd3ab72a-dfdd-4d6a-a99c-41f3d41e89b3">
-        <state id="s9aabeaa5-b917-42c8-a7d9-80064d2f90f8" label="absent" symbol="0" />
-        <state id="s5fab2bf1-b89e-4788-b3f2-db9e4102ed5e" label="present" symbol="1" />
+        <state id="s9aabeaa5-b917-42c8-a7d9-80064d2f90f8" label="absent" symbol="0" about="#s9aabeaa5-b917-42c8-a7d9-80064d2f90f8">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s5fab2bf1-b89e-4788-b3f2-db9e4102ed5e" label="present" symbol="1" about="#s5fab2bf1-b89e-4788-b3f2-db9e4102ed5e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000663" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s3adbeb29-b3c0-482a-b3b1-a45ec3720320">
-        <state id="sab2fba6b-7335-4544-972e-1208697124e7" label="absent" symbol="0" />
-        <state id="sec663377-4931-4286-ad9b-0c946ad9b8da" label="present" symbol="1" />
+        <state id="sab2fba6b-7335-4544-972e-1208697124e7" label="absent" symbol="0" about="#sab2fba6b-7335-4544-972e-1208697124e7">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001586" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sec663377-4931-4286-ad9b-0c946ad9b8da" label="present" symbol="1" about="#sec663377-4931-4286-ad9b-0c946ad9b8da">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001586" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sfddb5f6c-2df7-4835-9261-4db7114a33ae">
-        <state id="sdc8813fb-e476-4c71-be49-2c30236b263e" label="absent" symbol="0" />
-        <state id="s2ce141b4-0178-4f3c-8429-a63fcbbf4537" label="present" symbol="1" />
+        <state id="sdc8813fb-e476-4c71-be49-2c30236b263e" label="absent" symbol="0" about="#sdc8813fb-e476-4c71-be49-2c30236b263e" />
+        <state id="s2ce141b4-0178-4f3c-8429-a63fcbbf4537" label="present" symbol="1" about="#s2ce141b4-0178-4f3c-8429-a63fcbbf4537" />
       </states>
       <states id="s2399b91c-3a4d-4ca8-b3aa-c62469d68e1c">
-        <state id="sb71a1401-240a-49ac-aefb-fafbe0562db2" label="absent" symbol="0" />
-        <state id="sad359e81-e8a9-46e1-b25f-35184ac7ad96" label="present" symbol="1" />
+        <state id="sb71a1401-240a-49ac-aefb-fafbe0562db2" label="absent" symbol="0" about="#sb71a1401-240a-49ac-aefb-fafbe0562db2">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010290" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sad359e81-e8a9-46e1-b25f-35184ac7ad96" label="present" symbol="1" about="#sad359e81-e8a9-46e1-b25f-35184ac7ad96">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010290" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s686f5288-afb0-47c2-9d35-cef119a58c94">
-        <state id="s79b6297c-4d0f-4646-95b4-0663f1df852b" label="absent" symbol="0" />
-        <state id="seafdd6ce-35ee-403d-af03-eba060e69432" label="present" symbol="1" />
+        <state id="s79b6297c-4d0f-4646-95b4-0663f1df852b" label="absent" symbol="0" about="#s79b6297c-4d0f-4646-95b4-0663f1df852b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001699" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="seafdd6ce-35ee-403d-af03-eba060e69432" label="present" symbol="1" about="#seafdd6ce-35ee-403d-af03-eba060e69432">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001699" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s10fdc8cc-9872-4fcf-a69f-5876268cb9ef">
-        <state id="sa05fd0a9-4367-427e-9257-584fac0458a4" label="absent" symbol="0" />
-        <state id="s4c418240-a964-4aac-853f-d7403f499d61" label="present" symbol="1" />
+        <state id="sa05fd0a9-4367-427e-9257-584fac0458a4" label="absent" symbol="0" about="#sa05fd0a9-4367-427e-9257-584fac0458a4">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s4c418240-a964-4aac-853f-d7403f499d61" label="present" symbol="1" about="#s4c418240-a964-4aac-853f-d7403f499d61">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s5434d8bd-a184-4bca-99ea-2c6b1d158428">
-        <state id="sfc7c4bfb-bc82-4413-b51e-3f26c4aaf2d0" label="absent" symbol="0" />
-        <state id="scf9bb6f1-6237-413e-8587-0ff7072271c7" label="present" symbol="1" />
-      </states>
-      <states id="s51ef0832-1ad5-4d33-a023-fd0967270357">
-        <state id="scd5f70fb-6c0f-45a7-9323-0f1bbc1cc7e4" label="absent" symbol="0" />
-        <state id="s1ca70668-6a16-40d6-a4d4-f4d6ae703c48" label="present" symbol="1" />
+        <state id="scf9bb6f1-6237-413e-8587-0ff7072271c7" label="present" symbol="1" about="#scf9bb6f1-6237-413e-8587-0ff7072271c7">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:1500010" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <char id="char270" label="Type of scale" states="states269" />
       <char id="char275" label="Pre-dorsal scales" states="states274" />
@@ -7923,7 +9848,7 @@
       <char id="c267ffbed-538b-4e1c-af61-ce7334d41297" label="post-Weberian neural arches" states="sc1b2bfe3-74cb-406c-9816-26114bf787de" />
       <char id="c400b2bba-25d4-4647-abfe-0229a7d26f01" label="centrum 1" states="s8dd23f5c-cee3-441c-8e12-d89a47390d37" />
       <char id="c033cf452-4068-4e63-a074-65e9ee5c1f9b" label="dorsal hypohyal" states="s72b327b5-d208-4137-bd77-143e8a96efeb" />
-      <char id="cf1bd300c-d9e5-46bb-a8c8-4ebb77aa749f" label="ectopterygod" states="s2b4519e1-1a49-4c9a-af0a-e06c26c2d659" />
+      <char id="cf1bd300c-d9e5-46bb-a8c8-4ebb77aa749f" label="ectopterygoid" states="s2b4519e1-1a49-4c9a-af0a-e06c26c2d659" />
       <char id="c769f9b98-cbb0-4b26-8108-6b2377a4b260" label="epibranchial 1" states="s13185a05-8646-4ce6-86c6-cda8bf3a0483" />
       <char id="cd3404f77-6cfc-4e1f-8f6d-9f198d903ffc" label="hemal arch PU2" states="s712da12e-7fd4-4658-b7b1-a2afded60c70" />
       <char id="cff7fc9b2-4207-49de-b825-e175ed62744d" label="hemal spine PU2" states="s7d3940d9-273c-4a6e-89c5-e0b18fc91f34" />
@@ -7969,13 +9894,12 @@
       <char id="cddd64a0c-ba5d-4894-8869-32801f61f9ca" label="hypobranchial 3" states="sc42fe35a-6b8e-443f-80b1-f9476d7ba9bb" />
       <char id="c50a5b5f4-56d2-4688-b25a-db7fabdb64b2" label="post-Weberian neural spines" states="s75ab10a7-2ef7-4852-b19f-bf47a3835e8a" />
       <char id="cbf559d89-cb13-44e3-ab64-1f35b6fd7236" label="os suspensorium outer arm" states="s46e18fb3-1f7c-4a2e-8485-a54bee27f85f" />
-      <char id="c93c3f034-913e-49af-8e69-8cd4ae5685f3" label="tripus" states="s02c274ba-f709-478e-ac74-e0db41060b8d" />
       <char id="c3965319c-21c0-4c5c-820e-a4709b3355a9" label="basibranchial 1" states="sd6cab0a7-a3e8-48af-8b8a-eaf1f896903f" />
       <char id="cf3b67539-0d69-4d70-9ae1-6986d30cb29a" label="hypobranchial 2" states="scfffb307-5f12-411d-a43b-10e1c23d3bae" />
       <char id="c304f2132-7432-4bb5-8805-2da69a3acc42" label="pterosphenoid" states="s7608cd66-36b6-4a18-a64a-36ec011cd339" />
       <char id="cf51ff1f2-c96e-4925-a743-93ade2c332f0" label="lateral ethmoid" states="s84632ed2-3f4e-4404-b3c1-9651435f3a5a" />
       <char id="c414f20a3-17e4-475a-a83e-c5d8a67265e0" label="hypural 6" states="s6ec00aee-74b5-4098-bc38-6955809de6ab" />
-      <char id="cbb275807-ae0f-4f98-856e-724638781035" label="paraspophyses" states="s4239ddc5-2bad-447b-a6e3-eca03102339e" />
+      <char id="cbb275807-ae0f-4f98-856e-724638781035" label="parapophyses" states="s4239ddc5-2bad-447b-a6e3-eca03102339e" />
       <char id="cd0aa2fba-a110-4d9e-905f-e249404a177f" label="epural 1" states="sb14a6e38-6fa1-4073-90a5-114c3ed9f5f5" />
       <char id="c8099e102-712b-4bff-a483-14e6dcaca2c9" label="neural spine 4" states="s39e28712-1124-4933-9dad-b964f5565b35" />
       <char id="cbdb4ecea-3bf5-4017-af57-eff04202d1ae" label="orbitosphenoid" states="s9746f739-5c0f-4bf2-aac4-56a2ec79ff9a" />
@@ -8021,7 +9945,6 @@
       <char id="c4e6486f6-5d68-4ab6-8de6-de906527f23e" label="dorsal-fin bony stay" states="s686f5288-afb0-47c2-9d35-cef119a58c94" />
       <char id="ce01b5a8e-e5cf-4df8-ba3d-aac25e3691cd" label="infraorbital 6" states="s10fdc8cc-9872-4fcf-a69f-5876268cb9ef" />
       <char id="c1cf60df0-f60b-4f29-bf52-e0d65629d1e8" label="pelvic-fin middle radial" states="s5434d8bd-a184-4bca-99ea-2c6b1d158428" />
-      <char id="c2f83deee-37fa-40b0-975c-a7e0ddbf03af" label="supraorbital" states="s51ef0832-1ad5-4d33-a023-fd0967270357" />
     </format>
     <matrix>
       <row id="r012c9984-fcbe-4926-8430-fc6d2473fd10" otu="otu3">
@@ -15722,7 +17645,6 @@
         <cell char="c21f0f23a-7294-48c0-ba3b-c69dcc1a9be7" state="sd386c5ec-9894-4b13-a4be-8e422ed0cf69" />
         <cell char="c202cc00a-1182-419f-977b-ffd36ea0e4bc" state="s73d33406-7805-46f4-bd4b-5c810ed1fea3" />
         <cell char="c7ab36ecc-b95e-4845-ae53-d3b38c9e3daa" state="s9e1e1dab-9d38-4fea-a995-62070b138671" />
-        <cell char="c22c94c6f-bab3-4289-9a40-a4e888626a58" state="sf37db4be-8b32-431d-819b-3227c4043609" />
         <cell char="c10bf716b-3709-42c0-874d-4482fa54a928" state="s9ae5c275-0825-4862-846a-9acbd29b6542" />
         <cell char="c742a49e0-eda6-40db-8024-7c586ffc69af" state="sa9581496-3d97-4d80-ad61-dc240d07869c" />
         <cell char="cebce35af-93b4-4035-a4e1-88da847fe96d" state="sd3dfcdab-3cd7-475a-bb49-7a24e970d36f" />
@@ -15746,7 +17668,6 @@
         <cell char="cddd64a0c-ba5d-4894-8869-32801f61f9ca" state="s9b39d981-1f63-4c6d-9f96-c1d4b40af6f2" />
         <cell char="c50a5b5f4-56d2-4688-b25a-db7fabdb64b2" state="s1c05c8f6-7b29-4c17-bd84-bc82f1a0fc63" />
         <cell char="cbf559d89-cb13-44e3-ab64-1f35b6fd7236" state="scc91ce74-0411-40f4-aa97-a8d8ffb898c7" />
-        <cell char="c93c3f034-913e-49af-8e69-8cd4ae5685f3" state="s1c989672-c07a-4fe3-b5c8-3b43312360ff" />
         <cell char="c3965319c-21c0-4c5c-820e-a4709b3355a9" state="s00be2bbf-d2f9-454a-a551-0a03c22ba625" />
         <cell char="cf3b67539-0d69-4d70-9ae1-6986d30cb29a" state="s3c5a5066-7077-4a39-8d41-0239673bd535" />
         <cell char="c304f2132-7432-4bb5-8805-2da69a3acc42" state="s33155d9b-bb37-4782-9ca9-161bef619863" />
@@ -15798,7 +17719,6 @@
         <cell char="c4e6486f6-5d68-4ab6-8de6-de906527f23e" state="s79b6297c-4d0f-4646-95b4-0663f1df852b" />
         <cell char="ce01b5a8e-e5cf-4df8-ba3d-aac25e3691cd" state="sa05fd0a9-4367-427e-9257-584fac0458a4" />
         <cell char="c1cf60df0-f60b-4f29-bf52-e0d65629d1e8" state="scf9bb6f1-6237-413e-8587-0ff7072271c7" />
-        <cell char="c2f83deee-37fa-40b0-975c-a7e0ddbf03af" state="scd5f70fb-6c0f-45a7-9323-0f1bbc1cc7e4" />
       </row>
       <row id="r9b1c1a89-bd40-4a63-a980-7779a28f5a8b" otu="otu211">
         <cell char="char270" state="state272" />
@@ -17347,7 +19267,6 @@
         <cell char="c21f0f23a-7294-48c0-ba3b-c69dcc1a9be7" state="sd386c5ec-9894-4b13-a4be-8e422ed0cf69" />
         <cell char="c202cc00a-1182-419f-977b-ffd36ea0e4bc" state="s73d33406-7805-46f4-bd4b-5c810ed1fea3" />
         <cell char="c7ab36ecc-b95e-4845-ae53-d3b38c9e3daa" state="s9e1e1dab-9d38-4fea-a995-62070b138671" />
-        <cell char="c22c94c6f-bab3-4289-9a40-a4e888626a58" state="sf37db4be-8b32-431d-819b-3227c4043609" />
         <cell char="c10bf716b-3709-42c0-874d-4482fa54a928" state="s9ae5c275-0825-4862-846a-9acbd29b6542" />
         <cell char="c742a49e0-eda6-40db-8024-7c586ffc69af" state="sa9581496-3d97-4d80-ad61-dc240d07869c" />
         <cell char="cebce35af-93b4-4035-a4e1-88da847fe96d" state="sd3dfcdab-3cd7-475a-bb49-7a24e970d36f" />
@@ -17371,7 +19290,6 @@
         <cell char="cddd64a0c-ba5d-4894-8869-32801f61f9ca" state="s9b39d981-1f63-4c6d-9f96-c1d4b40af6f2" />
         <cell char="c50a5b5f4-56d2-4688-b25a-db7fabdb64b2" state="s1c05c8f6-7b29-4c17-bd84-bc82f1a0fc63" />
         <cell char="cbf559d89-cb13-44e3-ab64-1f35b6fd7236" state="scc91ce74-0411-40f4-aa97-a8d8ffb898c7" />
-        <cell char="c93c3f034-913e-49af-8e69-8cd4ae5685f3" state="s1c989672-c07a-4fe3-b5c8-3b43312360ff" />
         <cell char="c3965319c-21c0-4c5c-820e-a4709b3355a9" state="s00be2bbf-d2f9-454a-a551-0a03c22ba625" />
         <cell char="cf3b67539-0d69-4d70-9ae1-6986d30cb29a" state="s3c5a5066-7077-4a39-8d41-0239673bd535" />
         <cell char="c304f2132-7432-4bb5-8805-2da69a3acc42" state="s33155d9b-bb37-4782-9ca9-161bef619863" />
@@ -17423,7 +19341,6 @@
         <cell char="c4e6486f6-5d68-4ab6-8de6-de906527f23e" state="seafdd6ce-35ee-403d-af03-eba060e69432" />
         <cell char="ce01b5a8e-e5cf-4df8-ba3d-aac25e3691cd" state="s4c418240-a964-4aac-853f-d7403f499d61" />
         <cell char="c1cf60df0-f60b-4f29-bf52-e0d65629d1e8" state="scf9bb6f1-6237-413e-8587-0ff7072271c7" />
-        <cell char="c2f83deee-37fa-40b0-975c-a7e0ddbf03af" state="s1ca70668-6a16-40d6-a4d4-f4d6ae703c48" />
       </row>
       <row id="r647862a6-477d-4517-8695-11b90cb2023b" otu="otu251">
         <cell char="char270" state="state272" />
@@ -17721,5 +19638,9 @@
       </row>
     </matrix>
   </characters>
+  <trees id="tf19b933c-c6f8-4ca5-83a6-dbb5173fbb5f" otus="t7d61cb52-8101-40fd-8236-06317fc99011" />
+  <trees id="t22d764b6-f8d0-4250-86b3-4879274d4236" otus="t7d61cb52-8101-40fd-8236-06317fc99011" />
+  <trees id="t881526d2-2ba8-4a3c-9cc1-a0e0a027f0e0" otus="t7d61cb52-8101-40fd-8236-06317fc99011" />
+  <trees id="t8e69196e-7775-4b37-9560-ca848ef454ac" otus="t7d61cb52-8101-40fd-8236-06317fc99011" />
   <trees id="t91cece43-3c7f-49bd-aef5-598e23a6c638" otus="t7d61cb52-8101-40fd-8236-06317fc99011" />
 </nexml>
