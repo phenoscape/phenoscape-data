@@ -2,10 +2,16 @@
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.11646/zootaxa.1686.1.1</meta>
+    <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Conway, K. W., Chen, W. J., and Mayden, R. L. (2008). The “Celestial Pearl danio” is a miniature Danio (ss)(Ostariophysi: Cyprinidae): evidence from morphology and molecules. Zootaxa 1686(1), 1-28.</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Conway et al (2008)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="tced56b60-ce71-4bb3-87a9-fa4ad448f106" />
+  <otus id="tced56b60-ce71-4bb3-87a9-fa4ad448f106">
+    <otu id="t8c4556c9-6868-45f2-a073-a9a8f5bf3487" label="Danio margaritatus" about="#t8c4556c9-6868-45f2-a073-a9a8f5bf3487">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0039822" />
+    </otu>
+  </otus>
   <characters id="cb8a1371d1-b7f4-47e4-978d-9279f4be4914" xsi:type="StandardCells" otus="tced56b60-ce71-4bb3-87a9-fa4ad448f106">
     <format>
       <states id="sd2282ece-3043-4c48-8b8d-10d7bb929ac6">
@@ -14,7 +20,7 @@
             <phen:phenotype>
               <phen:phenotype_character>
                 <phen:bearer>
-                  <phen:typeref about="UBERON:2001808" />
+                  <phen:typeref about="UBERON:2001741" />
                 </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000467" />
@@ -2305,8 +2311,11 @@
         <meta xsi:type="LiteralMeta" property="ps:inFigure">10</meta>
       </char>
     </format>
-    <matrix />
+    <matrix>
+      <row id="rb9009dc1-85c9-4abc-8e4f-748f5ad1f647" otu="t8c4556c9-6868-45f2-a073-a9a8f5bf3487" />
+    </matrix>
   </characters>
+  <trees id="t286e9ee4-6465-4384-a529-ad903425c4e0" otus="tced56b60-ce71-4bb3-87a9-fa4ad448f106" />
   <trees id="t90e2c858-3643-4f3b-925e-7250a2224866" otus="tced56b60-ce71-4bb3-87a9-fa4ad448f106" />
   <trees id="t31da2116-646c-42b5-8b3d-1495058f10c8" otus="tced56b60-ce71-4bb3-87a9-fa4ad448f106" />
   <trees id="ta21da22c-dbad-4e1c-b375-124821c10606" otus="tced56b60-ce71-4bb3-87a9-fa4ad448f106" />
