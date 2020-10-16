@@ -2,7 +2,7 @@
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="t405fc510-ddc5-4beb-9933-5297959470b1">
+  <otus id="tbbe38462-7c2c-44de-8116-af9b3053aa24">
     <otu id="tfa3a970c-9ace-46ad-99d2-0bd6632d2664" label="Neolebias ansorgii" about="#tfa3a970c-9ace-46ad-99d2-0bd6632d2664">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0038593" />
     </otu>
@@ -21,11 +21,18 @@
     <otu id="t015b42b5-8695-4161-a3ba-aade9821cccb" label="Neolebias unifasciatus" about="#t015b42b5-8695-4161-a3ba-aade9821cccb">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0064858" />
     </otu>
+    <otu id="tae73bb58-7ad9-495c-9966-9572323f86cf" label="Phago loricatus" about="#tae73bb58-7ad9-495c-9966-9572323f86cf">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0064863" />
+    </otu>
+    <otu id="td7e1886d-50ce-42c0-a2f1-1671e8b16819" label="Xenocharax spilurus" about="#td7e1886d-50ce-42c0-a2f1-1671e8b16819">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0038554" />
+    </otu>
   </otus>
-  <characters id="cb4cd53a9b-688d-49c1-a240-6d88b516bdd8" xsi:type="StandardCells" otus="t405fc510-ddc5-4beb-9933-5297959470b1">
+  <characters id="cb4cd53a9b-688d-49c1-a240-6d88b516bdd8" xsi:type="StandardCells" otus="tbbe38462-7c2c-44de-8116-af9b3053aa24">
     <format>
       <states id="s0d3c8b84-4db1-4613-82ac-23e755e7e457">
         <state id="s314d8a54-3390-4eca-ae16-e38e6d32668d" label="mouth terminal" symbol="0" />
+        <state id="s33e81b24-3132-4dec-aeec-232cd015c080" label="mouth terminal and elongate" symbol="1" />
       </states>
       <states id="s74f43956-0a57-42a6-b2d0-cc06b83c03a6">
         <state id="s26a92d9e-c1dc-4cbe-9ced-c223f2019130" label="Each jaw with two rows of teeth, outer row teeth bicuspid" symbol="0" />
@@ -110,7 +117,7 @@
       <char id="cbd60f551-e05a-475a-a8ab-25620931cadf" label="" states="s15f4653f-20fc-4eda-ae4a-8f01e9a38b58" />
     </format>
     <matrix>
-      <row id="rea80b62a-c548-477e-8818-c6ece8d04139" otu="tfa3a970c-9ace-46ad-99d2-0bd6632d2664">
+      <row id="r41f776ee-ed7b-48a6-b89f-69e28430ecf3" otu="tfa3a970c-9ace-46ad-99d2-0bd6632d2664">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s26a92d9e-c1dc-4cbe-9ced-c223f2019130" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="sf9637199-f4c8-4f86-96f0-d30b795d9346" />
@@ -124,7 +131,7 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="s2e62d671-3e8a-4dd0-9fb6-76924115e47b" />
       </row>
-      <row id="r6e2a0814-c840-45b5-a1b9-4b04f212bfe5" otu="tb6289964-c999-4ce5-b9ce-79e6c3661908">
+      <row id="r1559bc87-39d8-4521-8fb7-812ee2f13fee" otu="tb6289964-c999-4ce5-b9ce-79e6c3661908">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s042e1dca-1f79-4c6a-ab9a-c3bc68ca37e0" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="sf9637199-f4c8-4f86-96f0-d30b795d9346" />
@@ -136,7 +143,7 @@
         <cell char="c255afd72-1ac3-4112-8170-78023a725f61" state="s96828c3c-2795-4b0a-ac57-f1c19afb8066" />
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
       </row>
-      <row id="ra294aa74-953c-43da-b7d5-1248a31cfc15" otu="tf0acd7ef-0762-4063-9c1e-96f8f3df932f">
+      <row id="rd7169282-a966-4a21-bf55-9c2bf4a687bb" otu="tf0acd7ef-0762-4063-9c1e-96f8f3df932f">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s4cbba229-5d6f-47c0-8bd6-5e39ec72f688" />
         <cell char="ccfa861c3-1c1d-48ff-961a-469d547619c3" state="s8afb36a7-4775-4026-90ef-5d344a7c7c36" />
@@ -147,7 +154,7 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="s4ad2c112-abf9-4b60-be33-1f705edd2881" />
       </row>
-      <row id="rc06e2b8d-3b57-4925-a5c6-9e0862bffef1" otu="t38b80c35-889c-45da-b456-02a17ec2ff8f">
+      <row id="r9cf1b7e8-1f7e-4f0c-97df-0e386a3dfe65" otu="t38b80c35-889c-45da-b456-02a17ec2ff8f">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="sc8b061de-0830-4e7b-b3a6-035b522561e9" />
         <cell char="ccfa861c3-1c1d-48ff-961a-469d547619c3" state="seae05c6d-a9e2-43f0-9b0f-634f964c731c" />
@@ -160,7 +167,7 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="s92a70271-3dbb-458e-abcc-555983fec562" />
       </row>
-      <row id="r77f8d8ea-245e-4569-9aff-844ec57a016b" otu="t80b99814-83f7-433e-91e4-1d8b834431cc">
+      <row id="reb091e19-08df-4ac8-922e-2be49c894eb4" otu="t80b99814-83f7-433e-91e4-1d8b834431cc">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s01e88c61-24e9-4b5b-9325-9540285c7d8f" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="s9e765872-fed0-4643-8542-56afa5c59c18" />
@@ -174,7 +181,7 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="sd8bc438a-2af1-45cc-8ab8-50b696d51c23" />
       </row>
-      <row id="rb8adb60f-8a1d-4f04-92e3-886f2d267420" otu="t015b42b5-8695-4161-a3ba-aade9821cccb">
+      <row id="r45f87a40-8e0a-4dae-811f-d79d78708220" otu="t015b42b5-8695-4161-a3ba-aade9821cccb">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s835d8ef1-ceb8-4c9c-a543-e3b53fe52dd4" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="s9bbfee4b-2b95-455f-b459-421836bd4a2d" />
@@ -187,7 +194,11 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="s3eb4006c-720d-465e-b280-82083f1a931c" />
       </row>
+      <row id="r81f6e75f-8656-4707-ab57-a34575314211" otu="tae73bb58-7ad9-495c-9966-9572323f86cf">
+        <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s33e81b24-3132-4dec-aeec-232cd015c080" />
+      </row>
+      <row id="r4a8239ee-b76d-4eda-a5df-6466bf218e51" otu="td7e1886d-50ce-42c0-a2f1-1671e8b16819" />
     </matrix>
   </characters>
-  <trees id="t85a92dcd-8dbc-4ca1-8f1c-f93007849b26" otus="t405fc510-ddc5-4beb-9933-5297959470b1" />
+  <trees id="t178ce93f-8642-4d29-92d1-ea49548d7b44" otus="tbbe38462-7c2c-44de-8116-af9b3053aa24" />
 </nexml>
