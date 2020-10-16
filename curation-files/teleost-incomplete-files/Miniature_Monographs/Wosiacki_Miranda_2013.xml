@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1643/CI-12-127</meta>
@@ -31,15 +31,84 @@
       <states id="s80c7dece-54cc-414b-91a6-54ef0c85a21c" />
       <states id="s596e0797-e075-4d07-823e-1b70f185d4d2" />
       <states id="sa27eed0e-8415-4d8c-aac2-93f424e56488" />
-      <states id="s07010590-6d51-435f-aaaa-fcf9e568d6be" />
+      <states id="s07010590-6d51-435f-aaaa-fcf9e568d6be">
+        <state id="s9d89ad5f-d42f-42f4-ab33-3a45bd81e77e" label="well developed" symbol="0" about="#s9d89ad5f-d42f-42f4-ab33-3a45bd81e77e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="se32a6708-4a83-4f20-b552-a0aef6ae1417" />
       <states id="sc5578b59-6211-4fe2-a6ad-0f69e5f58abb" />
       <states id="s7d7f7d8c-bbe1-49dd-8594-0f2eee351948" />
       <states id="s59fcfd6a-ca8a-491e-b96e-e05a587e42ef" />
-      <states id="sd7c8dfbb-022a-49a2-8b71-9635ace644fa" />
+      <states id="sd7c8dfbb-022a-49a2-8b71-9635ace644fa">
+        <state id="s3935963c-8921-4d8a-a453-0616d81bfa73" label="infraorbitals 1, 2, 3, and 4 when present, very thin" symbol="0" about="#s3935963c-8921-4d8a-a453-0616d81bfa73">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000223" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000592" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001407" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000592" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001408" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000592" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001409" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000592" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="s76967822-1458-4e52-984d-0f85bb9c7fce" />
       <states id="s3ec23805-da7a-417e-9199-fe4eaf537c4f" />
-      <states id="sd1a9a25c-01ac-4933-a250-bdbbda2075e6" />
+      <states id="sd1a9a25c-01ac-4933-a250-bdbbda2075e6">
+        <state id="s86c253ce-8f99-4d99-834d-0bc672bfa931" label="absence of the sixth infraorbital" symbol="0" about="#s86c253ce-8f99-4d99-834d-0bc672bfa931">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001674" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="scf0e60f5-fcc7-45ac-a423-93f64297fa4c" />
       <char id="cad0655ac-5536-4295-8cb7-3b1c860d08f3" label="Cyphocharax aninha differs from its congeners (except C. vexillapinnus, C. gangamon, C. signatus, and C. punctatus) in having infraorbital sensory canal absent or extremely reduced, when present, in largest specimens (30.0 mm SL), to a fleshy or osseous canal in the fifth infraorbital (vs. canal always present and complete)." states="scff3bbbe-4c00-407a-b1af-4913a63e9e14" about="#cad0655ac-5536-4295-8cb7-3b1c860d08f3">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 627</meta>
@@ -104,7 +173,7 @@
       <char id="c81197fbb-ca2f-49ee-b4c9-65fd3a755877" label="Caudal fin forked with ii,15,ii (3); ii,16,ii (13)*, or ii,17,ii (16) rays; dorsal lobe larger than ventral lobe" about="#c81197fbb-ca2f-49ee-b4c9-65fd3a755877" states="sa27eed0e-8415-4d8c-aac2-93f424e56488">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 629</meta>
       </char>
-      <char id="c0796213c-f56b-42e3-b1e0-db8b9778525e" label="Adipose fin well developed" about="#c0796213c-f56b-42e3-b1e0-db8b9778525e" states="s07010590-6d51-435f-aaaa-fcf9e568d6be">
+      <char id="c0796213c-f56b-42e3-b1e0-db8b9778525e" label="Adipose fin" about="#c0796213c-f56b-42e3-b1e0-db8b9778525e" states="s07010590-6d51-435f-aaaa-fcf9e568d6be">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 629</meta>
       </char>
       <char id="c4cca2430-b4d5-499f-a35a-481ca3b721e2" label="Infraorbital series absent in small specimens (less than 21.4 mm SL) or reduced with infraorbitals 1 to 5 extremely slender and thin" about="#c4cca2430-b4d5-499f-a35a-481ca3b721e2" states="se32a6708-4a83-4f20-b552-a0aef6ae1417">
@@ -119,7 +188,7 @@
       <char id="c08e4d434-bcfb-42c9-854c-47e5579d6870" label="Procurrent ventral caudal-fin rays absent (4)" about="#c08e4d434-bcfb-42c9-854c-47e5579d6870" states="s59fcfd6a-ca8a-491e-b96e-e05a587e42ef">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 629</meta>
       </char>
-      <char id="c2614516f-c79a-44a0-a9c1-46b0b3a052d4" label="Infraorbitals 1, 2, 3, and 4 when present, very thin" about="#c2614516f-c79a-44a0-a9c1-46b0b3a052d4" states="sd7c8dfbb-022a-49a2-8b71-9635ace644fa">
+      <char id="c2614516f-c79a-44a0-a9c1-46b0b3a052d4" label="Infraorbitals" about="#c2614516f-c79a-44a0-a9c1-46b0b3a052d4" states="sd7c8dfbb-022a-49a2-8b71-9635ace644fa">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 631</meta>
       </char>
       <char id="c3a3d1add-1eeb-4fc8-89a8-8daba4a57667" label="Absence of a canal in the infraorbital series or reduced, when present in largest specimens, to a fleshy or osseous canal in the fifth infraorbital" about="#c3a3d1add-1eeb-4fc8-89a8-8daba4a57667" states="s76967822-1458-4e52-984d-0f85bb9c7fce">
@@ -128,7 +197,7 @@
       <char id="c7aa26ced-7cd7-4b87-aaf8-9f0a4375f588" label="Incomplete poring of the lateral line" about="#c7aa26ced-7cd7-4b87-aaf8-9f0a4375f588" states="s3ec23805-da7a-417e-9199-fe4eaf537c4f">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 631</meta>
       </char>
-      <char id="c5c28ff5b-d884-408e-b25d-b46f796eae8f" label="Absence of the sixth infraorbital" about="#c5c28ff5b-d884-408e-b25d-b46f796eae8f" states="sd1a9a25c-01ac-4933-a250-bdbbda2075e6">
+      <char id="c5c28ff5b-d884-408e-b25d-b46f796eae8f" label="Sixth infraorbital" about="#c5c28ff5b-d884-408e-b25d-b46f796eae8f" states="sd1a9a25c-01ac-4933-a250-bdbbda2075e6">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 631</meta>
       </char>
       <char id="c2bd67f1f-27ad-4251-b232-6854c1ff4802" label="Reduction in the number of pectoral-fin rays (i,10–12, rarely i,13 or 14)" about="#c2bd67f1f-27ad-4251-b232-6854c1ff4802" states="scf0e60f5-fcc7-45ac-a423-93f64297fa4c">
@@ -137,6 +206,7 @@
     </format>
     <matrix />
   </characters>
+  <trees id="tad8ebf67-8841-4c90-a7ba-1ce0390f3b68" otus="t520327be-c674-4a57-ab0c-3cb3a88065e3" />
   <trees id="te36930f4-b07d-41a9-b6e2-ff9b7cb699d8" otus="t520327be-c674-4a57-ab0c-3cb3a88065e3" />
   <trees id="t294ce5c7-6e1b-4403-89b7-f9e65609cabe" otus="t520327be-c674-4a57-ab0c-3cb3a88065e3" />
 </nexml>
