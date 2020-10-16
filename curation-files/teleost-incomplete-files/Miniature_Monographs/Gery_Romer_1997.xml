@@ -1,24 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+  <meta xsi:type="LiteralMeta" property="dc:description" />
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:identifier">http://www.aqua-aquapress.com/pdf/AQUA2(4)-Tucanoichthys.pdf</meta>
+    <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Gery, J., and U. Romer. (1997) Tucanoichthys tucano gen. n. sp. n., a new miniature characid fish (Teleostei: Characiformes: Characidae) from the Rio Uaupes basin in Brazil. Journal of Ichthyology and Aquatic Biology 2:65-72</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Gery and Romer (1997)</meta>
   </meta>
-  <meta xsi:type="LiteralMeta" property="dc:description" />
   <otus id="t5d7d2d8b-90e3-47e6-9dbf-1fae1469303d" />
   <characters id="cb822cea87-d33e-4dab-ac14-777862f8f2ed" xsi:type="StandardCells" otus="t5d7d2d8b-90e3-47e6-9dbf-1fae1469303d">
     <format>
-      <states id="sf4dc3c14-c7d8-4692-ba05-20ac06f953c0" />
+      <states id="sf4dc3c14-c7d8-4692-ba05-20ac06f953c0">
+        <state id="s98bc18ec-5132-44ff-88e6-3ad8ce274a12" label="thin jaws set with a single series, in each jaw, of small, acute, slightly recurved conical teeth" symbol="0" />
+      </states>
       <states id="s09c8a096-c167-4a14-a5bf-3c9f2e59d11c" />
       <states id="s493e2dc1-6646-4bd9-96f0-db4c57b96897" />
       <states id="s7b9f8989-0f3a-408a-9818-6cd7acc32152" />
       <states id="s2c0e2b96-3ba5-4f32-b261-2a9b31a74786" />
       <states id="s5315507a-177a-4b2c-9036-54eeb724715c" />
-      <states id="s6ebeaca8-44b1-4af6-bed2-2e9ee3028ae1" />
+      <states id="s6ebeaca8-44b1-4af6-bed2-2e9ee3028ae1">
+        <state id="s3bdaed79-e597-40e8-b79d-510d482502d9" label="thick and strong, with a nucleus of cartilage" symbol="0" about="#s3bdaed79-e597-40e8-b79d-510d482502d9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001502" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000591" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="sc9795146-3457-40b1-9eb9-2a0557e88eb6" />
       <states id="scb55b2d1-7533-4553-8ea9-a6679407030c" />
       <states id="sc4d14388-a69e-4a41-88a5-a65c65a512ae" />
-      <states id="s1ab2b759-9fa6-4ac7-a33f-2689b740d1c5" />
+      <states id="s1ab2b759-9fa6-4ac7-a33f-2689b740d1c5">
+        <state id="s67761ae7-3e2c-4444-9fff-7e7f4f7c1bb3" label="no pseudotympanum visible by transparency" symbol="0" about="#s67761ae7-3e2c-4444-9fff-7e7f4f7c1bb3">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001920" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="scf949bd1-8f61-4ce9-bac7-6a8a1e857824" />
       <states id="sc0a06859-db22-4618-a512-dcc506c29174" />
       <states id="s1d2a00d4-df91-4405-bd9b-50a85730b380" />
@@ -39,17 +73,17 @@
       <states id="sa26c8375-c958-47a1-9076-5ebe128022fe" />
       <states id="s22617606-2351-41a5-bc20-940de7cfa697" />
       <states id="s83ec5d09-be06-411c-b17e-b4585d232a45" />
-      <char id="cd9536941-f06b-452e-ac93-d1c704ed4b44" label="Thin jaws set with a single series, in each jaw, of small, acute, slightly recurved conical teeth" states="sf4dc3c14-c7d8-4692-ba05-20ac06f953c0" />
+      <char id="cd9536941-f06b-452e-ac93-d1c704ed4b44" label="Jaws" states="sf4dc3c14-c7d8-4692-ba05-20ac06f953c0" />
       <char id="c43b563fb-aceb-4ec3-b300-cbbdb6fcb0f9" label="Lateral line very short, with usually only the 3rd and 4th scales pored" states="s09c8a096-c167-4a14-a5bf-3c9f2e59d11c" />
       <char id="cb110fe68-dbf4-493f-aae4-318acd10bf5b" label="Canal very reduced, without parietal branch" states="s493e2dc1-6646-4bd9-96f0-db4c57b96897" />
       <char id="cf75bd2cc-e352-47ce-97a6-1e2ad7720c6c" label="Postorbitals absent" states="s7b9f8989-0f3a-408a-9818-6cd7acc32152" />
       <char id="c4fb9b55b-5909-4994-bda8-cabbbfd35e03" label="Predorsal region naked" states="s2c0e2b96-3ba5-4f32-b261-2a9b31a74786" />
       <char id="c948b976c-cf77-4ea5-ab8e-f65e8f5326e3" label="Fronto-parieto-occipital fontanels very large" states="s5315507a-177a-4b2c-9036-54eeb724715c" />
-      <char id="cb9b1ac7c-fb40-4270-8ce8-a579f159967a" label="Epiphyseal bar thick and strong, with a nucleus of cartilage" states="s6ebeaca8-44b1-4af6-bed2-2e9ee3028ae1" />
+      <char id="cb9b1ac7c-fb40-4270-8ce8-a579f159967a" label="Epiphyseal bar" states="s6ebeaca8-44b1-4af6-bed2-2e9ee3028ae1" />
       <char id="c9ddd9963-76f8-4184-9373-47513d53c679" label="Adipose fin present" states="sc9795146-3457-40b1-9eb9-2a0557e88eb6" />
       <char id="c79eab4a0-f99a-4ebf-8160-a5a53d786334" label="Pectoral not ossified but developed (not post-larval), the rays probably not branched" states="scb55b2d1-7533-4553-8ea9-a6679407030c" />
       <char id="c762c1c86-4a9e-4e93-861d-fecac109b943" label="Interneurals and interhaemals relatively numerous, but not protruding" states="sc4d14388-a69e-4a41-88a5-a65c65a512ae" />
-      <char id="c104d7c27-f2eb-4c25-aded-8c23f9ea9eed" label="No pseudotympanum visible by transparency" states="s1ab2b759-9fa6-4ac7-a33f-2689b740d1c5" />
+      <char id="c104d7c27-f2eb-4c25-aded-8c23f9ea9eed" label="Pseudotympanum absent" states="s1ab2b759-9fa6-4ac7-a33f-2689b740d1c5" />
       <char id="c7a357ecc-63fb-4c8f-8fd6-92a8a66dfdea" label="No sexual hooks on pelvic, anal or caudal fins rays" states="scf949bd1-8f61-4ce9-bac7-6a8a1e857824" />
       <char id="cab88f136-f86e-4231-b8da-f1ffc792a20e" label="No caudal gland" states="sc0a06859-db22-4618-a512-dcc506c29174" />
       <char id="c633f77a5-44ed-4071-aab2-dd7859a97a66" label="No frontal organ (as in the Crenuchidae)" states="s1d2a00d4-df91-4405-bd9b-50a85730b380" />
@@ -73,6 +107,7 @@
     </format>
     <matrix />
   </characters>
+  <trees id="t2c1d1ff0-66d3-49de-9e9e-b55f6d8fbe5f" otus="t5d7d2d8b-90e3-47e6-9dbf-1fae1469303d" />
   <trees id="tb8cc98b5-6c2b-4b34-bc88-1835d722f924" otus="t5d7d2d8b-90e3-47e6-9dbf-1fae1469303d" />
   <trees id="t5a254bde-6fac-4aa1-a854-1219af4221b3" otus="t5d7d2d8b-90e3-47e6-9dbf-1fae1469303d" />
 </nexml>
