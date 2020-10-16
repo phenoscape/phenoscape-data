@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">http://hdl.handle.net/10088/17124</meta>
@@ -7,7 +7,7 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Vari (2007)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="t20471b41-a806-4df1-a304-5f9a5056dde4">
+  <otus id="tac63e9b1-ad6a-4243-8193-1891cf5f06db">
     <otu id="tfa3a970c-9ace-46ad-99d2-0bd6632d2664" label="Neolebias ansorgii" about="#tfa3a970c-9ace-46ad-99d2-0bd6632d2664">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0038593" />
     </otu>
@@ -33,11 +33,45 @@
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0038554" />
     </otu>
   </otus>
-  <characters id="cb4cd53a9b-688d-49c1-a240-6d88b516bdd8" xsi:type="StandardCells" otus="t20471b41-a806-4df1-a304-5f9a5056dde4">
+  <characters id="cb4cd53a9b-688d-49c1-a240-6d88b516bdd8" xsi:type="StandardCells" otus="tac63e9b1-ad6a-4243-8193-1891cf5f06db">
     <format>
       <states id="s0d3c8b84-4db1-4613-82ac-23e755e7e457">
-        <state id="s314d8a54-3390-4eca-ae16-e38e6d32668d" label="mouth terminal" symbol="0" />
-        <state id="s33e81b24-3132-4dec-aeec-232cd015c080" label="mouth terminal and elongate" symbol="1" />
+        <state id="s314d8a54-3390-4eca-ae16-e38e6d32668d" label="mouth terminal" symbol="0" about="#s314d8a54-3390-4eca-ae16-e38e6d32668d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000165" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002476" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s33e81b24-3132-4dec-aeec-232cd015c080" label="mouth terminal and elongate" symbol="1" about="#s33e81b24-3132-4dec-aeec-232cd015c080">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000165" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002476" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0000165" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001154" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s74f43956-0a57-42a6-b2d0-cc06b83c03a6">
         <state id="s26a92d9e-c1dc-4cbe-9ced-c223f2019130" label="Each jaw with two rows of teeth, outer row teeth bicuspid" symbol="0" />
@@ -48,81 +82,933 @@
         <state id="s8c522c5e-7f02-4e2e-9348-f4f046a8cb56" label="Premaxilla and dentary with two rows of teeth, with inner tooth row distinctly separated from outer row. Teeth of outer rows distinctly larger than those of inner row and bicuspid with posterior cusp more developed and proximate teeth in contact. Teeth of upper jaw overlap those of lower jaw in closed mouth." symbol="5" />
       </states>
       <states id="sab0dcb80-28a1-4620-9568-e090d4412ac0">
-        <state id="sf9637199-f4c8-4f86-96f0-d30b795d9346" label="Premaxilla with 6-7 teeth in outer series" symbol="0" />
-        <state id="sc8b061de-0830-4e7b-b3a6-035b522561e9" label="Premaxilla with three rows of bicuspid teeth and 13 teeth in outer series." symbol="1" />
-        <state id="s9e765872-fed0-4643-8542-56afa5c59c18" label="Premaxilla with ten teeth in outer row" symbol="2" />
-        <state id="s9bbfee4b-2b95-455f-b459-421836bd4a2d" label="Premaxilla with eight teeth in outer row" symbol="3" />
-        <state id="s6e8d0d1a-b8c6-406b-bdd6-9d771e3c4a09" label="premaxilla with two rows of bicuspid teeth and 14-16 teeth in outer series" symbol="4" />
+        <state id="sf9637199-f4c8-4f86-96f0-d30b795d9346" label="Premaxilla with 6-7 teeth in outer series" symbol="0" about="#sf9637199-f4c8-4f86-96f0-d30b795d9346">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001833" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sc8b061de-0830-4e7b-b3a6-035b522561e9" label="Premaxilla with three rows of bicuspid teeth and 13 teeth in outer series." symbol="1" about="#sc8b061de-0830-4e7b-b3a6-035b522561e9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001833" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s9e765872-fed0-4643-8542-56afa5c59c18" label="Premaxilla with ten teeth in outer row" symbol="2" about="#s9e765872-fed0-4643-8542-56afa5c59c18">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001833" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s9bbfee4b-2b95-455f-b459-421836bd4a2d" label="Premaxilla with eight teeth in outer row" symbol="3" about="#s9bbfee4b-2b95-455f-b459-421836bd4a2d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001833" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s6e8d0d1a-b8c6-406b-bdd6-9d771e3c4a09" label="premaxilla with two rows of bicuspid teeth and 14-16 teeth in outer series" symbol="4" about="#s6e8d0d1a-b8c6-406b-bdd6-9d771e3c4a09">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001626" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001833" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sca234ca7-7072-47fe-a234-816ba5f785b0">
-        <state id="s74a2af3e-7a82-4542-b1b6-f8a6a726183a" label="maxilla with 6-9 teeth along anterior margin" symbol="0" />
-        <state id="s8afb36a7-4775-4026-90ef-5d344a7c7c36" label="maxilla with five teeth along anterodorsal margin." symbol="1" />
-        <state id="seae05c6d-a9e2-43f0-9b0f-634f964c731c" label="Maxilla with teeth along anterodorsal margin" symbol="2" />
-        <state id="s9a081780-bced-460c-b6e4-cb82c7b08057" label="maxilla with two teeth on anterodorsal margin" symbol="3" />
-        <state id="s6ad20695-ed9c-4854-bebc-5e53c91f7523" label="maxilla with 2-3 teeth along anterodorsal margin" symbol="4" />
-        <state id="s86cdb83f-61b8-4256-84dc-5dd095a1fe0c" label="Maxilla with 4-6 teeth along anterodorsal margin." symbol="5" />
+        <state id="s74a2af3e-7a82-4542-b1b6-f8a6a726183a" label="maxilla with 6-9 teeth along anterior margin" symbol="0" about="#s74a2af3e-7a82-4542-b1b6-f8a6a726183a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011593" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s8afb36a7-4775-4026-90ef-5d344a7c7c36" label="maxilla with five teeth along anterodorsal margin." symbol="1" about="#s8afb36a7-4775-4026-90ef-5d344a7c7c36">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011593" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="seae05c6d-a9e2-43f0-9b0f-634f964c731c" label="Maxilla with teeth along anterodorsal margin" symbol="2" about="#seae05c6d-a9e2-43f0-9b0f-634f964c731c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011593" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s9a081780-bced-460c-b6e4-cb82c7b08057" label="maxilla with two teeth on anterodorsal margin" symbol="3" about="#s9a081780-bced-460c-b6e4-cb82c7b08057">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011593" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s6ad20695-ed9c-4854-bebc-5e53c91f7523" label="maxilla with 2-3 teeth along anterodorsal margin" symbol="4" about="#s6ad20695-ed9c-4854-bebc-5e53c91f7523">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011593" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s86cdb83f-61b8-4256-84dc-5dd095a1fe0c" label="Maxilla with 4-6 teeth along anterodorsal margin." symbol="5" about="#s86cdb83f-61b8-4256-84dc-5dd095a1fe0c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011593" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="scd11807e-98a3-48c1-83be-dcc6634581ab">
-        <state id="sd0272df0-6893-4a1b-8b95-8d8d2cdff4ba" label="dentary with eight teeth in outer series" symbol="0" />
-        <state id="s774580df-9ed3-4a18-a726-4b414726fc86" label="Dentary with several rows of sometimes intermingled bicuspid and conical teeth" symbol="1" />
-        <state id="sa43659f6-dfcc-470b-bd71-4d21649eac2b" label="dentary with 15-16 teeth in outer row" symbol="2" />
-        <state id="s7b7330c0-6767-4efc-8bff-b7af2cf0f722" label="Dentary with three tooth rows, outer row of bicuspid teeth along margin of jaw and two rows internal to replacement tooth trench. Approximately 15-18 teeth in outer row of dentary." symbol="3" />
+        <state id="sd0272df0-6893-4a1b-8b95-8d8d2cdff4ba" label="dentary with eight teeth in outer series" symbol="0" about="#sd0272df0-6893-4a1b-8b95-8d8d2cdff4ba">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001952" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s774580df-9ed3-4a18-a726-4b414726fc86" label="Dentary with several rows of sometimes intermingled bicuspid and conical teeth" symbol="1" about="#s774580df-9ed3-4a18-a726-4b414726fc86">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001952" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sa43659f6-dfcc-470b-bd71-4d21649eac2b" label="dentary with 15-16 teeth in outer row" symbol="2" about="#sa43659f6-dfcc-470b-bd71-4d21649eac2b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001952" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s7b7330c0-6767-4efc-8bff-b7af2cf0f722" label="Dentary with three tooth rows, outer row of bicuspid teeth along margin of jaw and two rows internal to replacement tooth trench. Approximately 15-18 teeth in outer row of dentary." symbol="3" about="#s7b7330c0-6767-4efc-8bff-b7af2cf0f722">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0011594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001952" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s9408ad2d-86b5-4e0b-9f52-5ea79110809a">
-        <state id="s8f6a0e6e-6de2-4bbc-a1f1-d630b615b07c" label="Laterosensory canal system of head unelaborated" symbol="0" />
-        <state id="s9694ef25-36a8-40f3-b845-84ba5b3b8b4e" label="elaborated with series of intersecting canal segments on lateral surface of head anterior, ventral, posterior and posterodorsal of orbit, on snout, lower lip and opercle." symbol="1" />
+        <state id="s8f6a0e6e-6de2-4bbc-a1f1-d630b615b07c" label="laterosensory canal system of head unelaborated" symbol="0" about="#s8f6a0e6e-6de2-4bbc-a1f1-d630b615b07c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001873" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s9694ef25-36a8-40f3-b845-84ba5b3b8b4e" label="elaborated with series of intersecting canal segments on lateral surface of head anterior, ventral, posterior and posterodorsal of orbit, on snout, lower lip and opercle" symbol="1" about="#s9694ef25-36a8-40f3-b845-84ba5b3b8b4e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001873" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000141" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sdb66b506-c62b-4d7a-af84-48402235cea0">
-        <state id="s45c39362-0744-4bb2-b30b-9b52d52d8d32" label="dorsal rays II-III, 9-10, with first ray short to very short." symbol="0" />
-        <state id="s5e74856f-4ebb-42f8-a15c-97b52cd888d3" label="dorsal rays IV, 11" symbol="1" />
-        <state id="sd0d27109-a55a-467f-b0a5-ae7a9fc1d142" label="dorsal rays III, 9-10, with first ray short." symbol="2" />
-        <state id="seab19c06-c866-4e69-95c9-4d8a8d62b6a3" label="Dorsal rays III-IV, 9-12" symbol="3" />
-        <state id="sac4b3ed2-b85a-40bc-b4cb-1bf6b596baf0" label="dorsal rays II-IV, 8-10, with first ray very short to moderate" symbol="4" />
-        <state id="s010f2786-437a-4ccb-b6a7-3107902ab53d" label="Dorsal rays III-IV, 9-11" symbol="5" />
-        <state id="s8b516c64-0582-4e6c-8e10-bf9ce4e21983" label="Dorsal rays III, 9, rarely II, 10, with first ray very short" symbol="6" />
-        <state id="s2e9cf669-8b4b-46dc-a3cd-7d29534cf1c4" label="Dorsal rays IV-V, 15-19" symbol="7" />
+        <state id="s45c39362-0744-4bb2-b30b-9b52d52d8d32" label="dorsal rays II-III, 9-10, with first ray short to very short." symbol="0" about="#s45c39362-0744-4bb2-b30b-9b52d52d8d32">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300116" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s5e74856f-4ebb-42f8-a15c-97b52cd888d3" label="dorsal rays IV, 11" symbol="1" about="#s5e74856f-4ebb-42f8-a15c-97b52cd888d3">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300116" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sd0d27109-a55a-467f-b0a5-ae7a9fc1d142" label="dorsal rays III, 9-10, with first ray short." symbol="2" about="#sd0d27109-a55a-467f-b0a5-ae7a9fc1d142">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300116" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="seab19c06-c866-4e69-95c9-4d8a8d62b6a3" label="Dorsal rays III-IV, 9-12" symbol="3" about="#seab19c06-c866-4e69-95c9-4d8a8d62b6a3">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300116" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sac4b3ed2-b85a-40bc-b4cb-1bf6b596baf0" label="dorsal rays II-IV, 8-10, with first ray very short to moderate" symbol="4" about="#sac4b3ed2-b85a-40bc-b4cb-1bf6b596baf0">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300116" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s010f2786-437a-4ccb-b6a7-3107902ab53d" label="Dorsal rays III-IV, 9-11" symbol="5" about="#s010f2786-437a-4ccb-b6a7-3107902ab53d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300116" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s8b516c64-0582-4e6c-8e10-bf9ce4e21983" label="Dorsal rays III, 9, rarely II, 10, with first ray very short" symbol="6" about="#s8b516c64-0582-4e6c-8e10-bf9ce4e21983">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300116" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s2e9cf669-8b4b-46dc-a3cd-7d29534cf1c4" label="Dorsal rays IV-V, 15-19" symbol="7" about="#s2e9cf669-8b4b-46dc-a3cd-7d29534cf1c4">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300116" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s8eff94e9-865f-4674-9c04-9c8b35ae44a7">
-        <state id="sef825e21-d92c-4ce9-ae2f-b9a9a2ecf276" label="Anal rays II-III, 7-9, with first ray of moderate length" symbol="0" />
-        <state id="sf9b18d06-d2fb-48bc-9d71-023ef26a9c3a" label="anal rays III, 8" symbol="1" />
-        <state id="scbafaef5-26e1-4bfb-b35f-72ed7904108a" label="Anal rays II, 7-9." symbol="2" />
-        <state id="s0b2c6ac4-28e7-4643-9a4c-07f162f496d0" label="Anal rays II-III, 8-9" symbol="3" />
-        <state id="s541037f0-4242-48a9-a2e3-ef3b3e4a36b1" label="Anal rays II-III, 10-12." symbol="4" />
-        <state id="s47eb44da-23cf-49ba-b87a-5d4009d54654" label="Anal rays III, 7-8" symbol="5" />
-        <state id="sc522d4b8-39b3-41a7-8ccf-479bbad25a57" label="Anal rays typically III, 8, rarely II, 8 or III, 9, with first ray often very short." symbol="6" />
-        <state id="s613db16a-6044-459b-8509-c4156756ce34" label="Anal rays III-IV, 10-13." symbol="7" />
+        <state id="sef825e21-d92c-4ce9-ae2f-b9a9a2ecf276" label="Anal rays II-III, 7-9, with first ray of moderate length" symbol="0" about="#sef825e21-d92c-4ce9-ae2f-b9a9a2ecf276">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sf9b18d06-d2fb-48bc-9d71-023ef26a9c3a" label="anal rays III, 8" symbol="1" about="#sf9b18d06-d2fb-48bc-9d71-023ef26a9c3a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="scbafaef5-26e1-4bfb-b35f-72ed7904108a" label="Anal rays II, 7-9." symbol="2" about="#scbafaef5-26e1-4bfb-b35f-72ed7904108a">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s0b2c6ac4-28e7-4643-9a4c-07f162f496d0" label="Anal rays II-III, 8-9" symbol="3" about="#s0b2c6ac4-28e7-4643-9a4c-07f162f496d0">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s541037f0-4242-48a9-a2e3-ef3b3e4a36b1" label="Anal rays II-III, 10-12." symbol="4" about="#s541037f0-4242-48a9-a2e3-ef3b3e4a36b1">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s47eb44da-23cf-49ba-b87a-5d4009d54654" label="Anal rays III, 7-8" symbol="5" about="#s47eb44da-23cf-49ba-b87a-5d4009d54654">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sc522d4b8-39b3-41a7-8ccf-479bbad25a57" label="Anal rays typically III, 8, rarely II, 8 or III, 9, with first ray often very short." symbol="6" about="#sc522d4b8-39b3-41a7-8ccf-479bbad25a57">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s613db16a-6044-459b-8509-c4156756ce34" label="Anal rays III-IV, 10-13." symbol="7" about="#s613db16a-6044-459b-8509-c4156756ce34">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s0d0ddf9d-fdb0-443c-baba-df44fdad5b59">
-        <state id="s96828c3c-2795-4b0a-ac57-f1c19afb8066" label="Caudal fin forked with tips of lobes pointed" symbol="0" />
-        <state id="s23f4fb22-5003-4a3d-85fd-7b150cbbe12c" label="Caudal fin forked with tips of lobes rounded" symbol="1" />
+        <state id="s96828c3c-2795-4b0a-ac57-f1c19afb8066" label="Caudal fin forked with tips of lobes pointed" symbol="0" about="#s96828c3c-2795-4b0a-ac57-f1c19afb8066">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002258" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001593" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002258" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000164" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001784" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s23f4fb22-5003-4a3d-85fd-7b150cbbe12c" label="Caudal fin forked with tips of lobes rounded" symbol="1" about="#s23f4fb22-5003-4a3d-85fd-7b150cbbe12c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001594" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000411" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001593" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000411" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4000164" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001784" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s980144b8-6ba0-4ae8-9a46-f117ecd0f4dc">
-        <state id="s94f3f3c9-0d2c-441c-9ba7-fcbbcbc59d97" label="typically absent" symbol="0" />
-        <state id="s7d725dbb-ed9c-4e2e-8eec-44df27ed646c" label="present" symbol="1" />
-        <state id="s9ac532b6-ed26-47ee-845b-ee9d81b8130e" label="absent" symbol="2" />
-        <state id="sf35232c2-152d-43c7-bbc6-88f7319a7b8b" label="Adipose fin moderately developed and scaled basally" symbol="3" />
+        <state id="s94f3f3c9-0d2c-441c-9ba7-fcbbcbc59d97" label="typically absent" symbol="0" about="#s94f3f3c9-0d2c-441c-9ba7-fcbbcbc59d97">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s7d725dbb-ed9c-4e2e-8eec-44df27ed646c" label="present" symbol="1" about="#s7d725dbb-ed9c-4e2e-8eec-44df27ed646c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s9ac532b6-ed26-47ee-845b-ee9d81b8130e" label="absent" symbol="2" about="#s9ac532b6-ed26-47ee-845b-ee9d81b8130e">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sf35232c2-152d-43c7-bbc6-88f7319a7b8b" label="Adipose fin moderately developed and scaled basally" symbol="3" about="#sf35232c2-152d-43c7-bbc6-88f7319a7b8b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s1ed1eb35-dc9d-4538-8a47-2c10dc4f3c89">
-        <state id="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" label="body scales ctenoid and of moderate size" symbol="0" />
-        <state id="s3ad2b6ba-9b15-4847-a845-6e365ac724d9" label="Scales ctenoid, plate-like and vertically elongate, becoming relatively smaller and more typically scale-like on posterior portion of caudal peduncle and basal portion of median caudal rays." symbol="1" />
-        <state id="scf8d56c2-40f3-4d8e-abe3-115c6b55c088" label="Body scales ctenoid and relatively small" symbol="2" />
+        <state id="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" label="body scales ctenoid and of moderate size" symbol="0" about="#s211ed758-dd4f-4ee6-b1c2-df19e77ec470">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002273" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s3ad2b6ba-9b15-4847-a845-6e365ac724d9" label="Scales ctenoid, plate-like and vertically elongate, becoming relatively smaller and more typically scale-like on posterior portion of caudal peduncle and basal portion of median caudal rays." symbol="1" about="#s3ad2b6ba-9b15-4847-a845-6e365ac724d9">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002273" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002253" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002273" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001154" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="scf8d56c2-40f3-4d8e-abe3-115c6b55c088" label="Body scales ctenoid and relatively small" symbol="2" about="#scf8d56c2-40f3-4d8e-abe3-115c6b55c088">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002273" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="sead33a8a-5ebe-4c59-9175-b9b5dcda6374">
-        <state id="s2e62d671-3e8a-4dd0-9fb6-76924115e47b" label="Lateral line incomplete, with pores on only anterior 3-5 scales." symbol="0" />
-        <state id="sfa633cc2-b1c8-4c15-ad6c-8e0a35ae6d6d" label="Lateral line incomplete with pores on anterior six scales" symbol="1" />
-        <state id="s4ad2c112-abf9-4b60-be33-1f705edd2881" label="Lateral line incomplete with pores on anterior 4-6 scales" symbol="2" />
-        <state id="s92a70271-3dbb-458e-abcc-555983fec562" label="Lateral line incomplete with pores on anterior 3-6 scales" symbol="3" />
-        <state id="sd8bc438a-2af1-45cc-8ab8-50b696d51c23" label="Lateral line incomplete with pores on anterior 3-8 scales." symbol="4" />
-        <state id="s3eb4006c-720d-465e-b280-82083f1a931c" label="Lateral line incomplete with pores on anterior 5-7 scales." symbol="5" />
-        <state id="s3ea010ac-30e0-46f5-a95a-f6f5b1e4c6c6" label="Lateral line mid-lateral, complete with 46-48 scales" symbol="6" />
-        <state id="sf2f4ae21-ee1a-4b78-b8ce-c88b79f5bb9f" label="Lateral line complete, mid-lateral, with 63-75 scales" symbol="7" />
+        <state id="s2e62d671-3e8a-4dd0-9fb6-76924115e47b" label="Lateral line incomplete, with pores on only anterior 3-5 scales." symbol="0" about="#s2e62d671-3e8a-4dd0-9fb6-76924115e47b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005013" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300238" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sfa633cc2-b1c8-4c15-ad6c-8e0a35ae6d6d" label="Lateral line incomplete with pores on anterior six scales" symbol="1" about="#sfa633cc2-b1c8-4c15-ad6c-8e0a35ae6d6d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005013" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300238" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s4ad2c112-abf9-4b60-be33-1f705edd2881" label="Lateral line incomplete with pores on anterior 4-6 scales" symbol="2" about="#s4ad2c112-abf9-4b60-be33-1f705edd2881">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005013" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300238" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s92a70271-3dbb-458e-abcc-555983fec562" label="Lateral line incomplete with pores on anterior 3-6 scales" symbol="3" about="#s92a70271-3dbb-458e-abcc-555983fec562">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005013" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300238" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sd8bc438a-2af1-45cc-8ab8-50b696d51c23" label="Lateral line incomplete with pores on anterior 3-8 scales." symbol="4" about="#sd8bc438a-2af1-45cc-8ab8-50b696d51c23">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005013" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300238" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s3eb4006c-720d-465e-b280-82083f1a931c" label="Lateral line incomplete with pores on anterior 5-7 scales." symbol="5" about="#s3eb4006c-720d-465e-b280-82083f1a931c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005013" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300238" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s3ea010ac-30e0-46f5-a95a-f6f5b1e4c6c6" label="Lateral line mid-lateral, complete with 46-48 scales" symbol="6" about="#s3ea010ac-30e0-46f5-a95a-f6f5b1e4c6c6">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005012" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sf2f4ae21-ee1a-4b78-b8ce-c88b79f5bb9f" label="Lateral line complete, mid-lateral, with 63-75 scales" symbol="7" about="#sf2f4ae21-ee1a-4b78-b8ce-c88b79f5bb9f">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0010202" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005012" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s0e0be50b-824a-4708-8489-5c30ca4a74fd">
-        <state id="s2da45ec3-1875-4e2d-b3aa-2eae8ef18ada" label="Anterior portion of premaxilla somewhat curved ventrally and overlaps anterior portion of dentary" symbol="0" />
+        <state id="s2da45ec3-1875-4e2d-b3aa-2eae8ef18ada" label="Anterior portion of premaxilla somewhat curved ventrally and overlaps anterior portion of dentary" symbol="0" about="#s2da45ec3-1875-4e2d-b3aa-2eae8ef18ada">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002244" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002488" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004742" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s15f4653f-20fc-4eda-ae4a-8f01e9a38b58">
-        <state id="s728c6c49-7d8f-4c33-b5ad-41fe9b869b09" label="Pelvic rays typically with seven branched rays and lateral ray unbranched (rarely with eight branched rays)." symbol="0" />
-        <state id="s95be430c-94c3-41c8-90e6-87b194055fb1" label="Ten, rarely 11, pelvic rays with lateral ray unbranched" symbol="1" />
+        <state id="s728c6c49-7d8f-4c33-b5ad-41fe9b869b09" label="Pelvic rays typically with seven branched rays and lateral ray unbranched (rarely with eight branched rays)." symbol="0" about="#s728c6c49-7d8f-4c33-b5ad-41fe9b869b09">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300117" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="s95be430c-94c3-41c8-90e6-87b194055fb1" label="Ten, rarely 11, pelvic rays with lateral ray unbranched" symbol="1" about="#s95be430c-94c3-41c8-90e6-87b194055fb1">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4300117" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <char id="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" label="Mouth" states="s0d3c8b84-4db1-4613-82ac-23e755e7e457" />
       <char id="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" label="Jaw teeth" states="s74f43956-0a57-42a6-b2d0-cc06b83c03a6" />
@@ -140,7 +1026,7 @@
       <char id="cbd60f551-e05a-475a-a8ab-25620931cadf" label="Pelvic fin" states="s15f4653f-20fc-4eda-ae4a-8f01e9a38b58" />
     </format>
     <matrix>
-      <row id="r89fd1c2c-18e8-48ba-a762-fb547f35c8ea" otu="tfa3a970c-9ace-46ad-99d2-0bd6632d2664">
+      <row id="r5ec939b1-fbf1-420b-bec0-7a6e16055cf4" otu="tfa3a970c-9ace-46ad-99d2-0bd6632d2664">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s26a92d9e-c1dc-4cbe-9ced-c223f2019130" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="sf9637199-f4c8-4f86-96f0-d30b795d9346" />
@@ -154,7 +1040,7 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="s2e62d671-3e8a-4dd0-9fb6-76924115e47b" />
       </row>
-      <row id="r1c164885-fbbb-4805-8fa6-ca5bca44871f" otu="tb6289964-c999-4ce5-b9ce-79e6c3661908">
+      <row id="rb2a39eaf-a93c-46bb-a760-08f77d3bc464" otu="tb6289964-c999-4ce5-b9ce-79e6c3661908">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s042e1dca-1f79-4c6a-ab9a-c3bc68ca37e0" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="sf9637199-f4c8-4f86-96f0-d30b795d9346" />
@@ -166,7 +1052,7 @@
         <cell char="c255afd72-1ac3-4112-8170-78023a725f61" state="s96828c3c-2795-4b0a-ac57-f1c19afb8066" />
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
       </row>
-      <row id="re212eb47-70c5-476c-a688-c2dfe1be74ee" otu="tf0acd7ef-0762-4063-9c1e-96f8f3df932f">
+      <row id="rd1d20ca1-f652-427c-bc6c-e7f8d670b881" otu="tf0acd7ef-0762-4063-9c1e-96f8f3df932f">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s4cbba229-5d6f-47c0-8bd6-5e39ec72f688" />
         <cell char="ccfa861c3-1c1d-48ff-961a-469d547619c3" state="s8afb36a7-4775-4026-90ef-5d344a7c7c36" />
@@ -177,7 +1063,7 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="s4ad2c112-abf9-4b60-be33-1f705edd2881" />
       </row>
-      <row id="r0d907195-4a2d-4b65-958a-63391aaab7d9" otu="t38b80c35-889c-45da-b456-02a17ec2ff8f">
+      <row id="rea53b73c-3f61-406d-bf2b-42717606b7f1" otu="t38b80c35-889c-45da-b456-02a17ec2ff8f">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="sc8b061de-0830-4e7b-b3a6-035b522561e9" />
         <cell char="ccfa861c3-1c1d-48ff-961a-469d547619c3" state="seae05c6d-a9e2-43f0-9b0f-634f964c731c" />
@@ -190,7 +1076,7 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="s92a70271-3dbb-458e-abcc-555983fec562" />
       </row>
-      <row id="re44fae75-0ec3-41f8-8bba-accdaaf97335" otu="t80b99814-83f7-433e-91e4-1d8b834431cc">
+      <row id="r07b3e8ea-4863-465c-90e0-ee60c427ecd4" otu="t80b99814-83f7-433e-91e4-1d8b834431cc">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s01e88c61-24e9-4b5b-9325-9540285c7d8f" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="s9e765872-fed0-4643-8542-56afa5c59c18" />
@@ -204,7 +1090,7 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="sd8bc438a-2af1-45cc-8ab8-50b696d51c23" />
       </row>
-      <row id="rd4bf24d9-c6cc-4364-9daf-2cb86ca3c552" otu="t015b42b5-8695-4161-a3ba-aade9821cccb">
+      <row id="r84ed1a5a-246e-48a5-821b-89b9f4d8c259" otu="t015b42b5-8695-4161-a3ba-aade9821cccb">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s835d8ef1-ceb8-4c9c-a543-e3b53fe52dd4" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="s9bbfee4b-2b95-455f-b459-421836bd4a2d" />
@@ -217,7 +1103,7 @@
         <cell char="c65ac1033-1fc7-48f6-9554-aae66894d02d" state="s211ed758-dd4f-4ee6-b1c2-df19e77ec470" />
         <cell char="c2582092d-e62d-4ef4-b877-7e1075b1ffc8" state="s3eb4006c-720d-465e-b280-82083f1a931c" />
       </row>
-      <row id="r48066d0c-bfa1-41a8-beab-ebc218fa1c5e" otu="tae73bb58-7ad9-495c-9966-9572323f86cf">
+      <row id="rd769d147-a356-41e2-a897-d4b7c1eeb914" otu="tae73bb58-7ad9-495c-9966-9572323f86cf">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s33e81b24-3132-4dec-aeec-232cd015c080" />
         <cell char="cd3820cc3-ff3d-4b74-90ee-5673dd82d957" state="s8c522c5e-7f02-4e2e-9348-f4f046a8cb56" />
         <cell char="c0382aa03-9fb4-43be-a753-2c2d334faff0" state="s8f6a0e6e-6de2-4bbc-a1f1-d630b615b07c" />
@@ -227,7 +1113,7 @@
         <cell char="c4ec68ce1-4cb6-4067-a31a-45d0ade776bd" state="s2da45ec3-1875-4e2d-b3aa-2eae8ef18ada" />
         <cell char="cbd60f551-e05a-475a-a8ab-25620931cadf" state="s728c6c49-7d8f-4c33-b5ad-41fe9b869b09" />
       </row>
-      <row id="ref95caf7-1072-4e8d-9419-4516b2676aab" otu="td7e1886d-50ce-42c0-a2f1-1671e8b16819">
+      <row id="rd69140ae-675b-433b-b803-058e537e835f" otu="td7e1886d-50ce-42c0-a2f1-1671e8b16819">
         <cell char="c92eedd46-a854-4390-a4dc-7ea65cd61ccd" state="s314d8a54-3390-4eca-ae16-e38e6d32668d" />
         <cell char="cd39bcd4f-7582-4acc-923f-596369a33040" state="s6e8d0d1a-b8c6-406b-bdd6-9d771e3c4a09" />
         <cell char="ccfa861c3-1c1d-48ff-961a-469d547619c3" state="s86cdb83f-61b8-4256-84dc-5dd095a1fe0c" />
@@ -241,5 +1127,5 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t909a34bc-3dc2-4de7-8360-efe4356154c4" otus="t20471b41-a806-4df1-a304-5f9a5056dde4" />
+  <trees id="t19ce56da-1e11-49ac-8cb5-1da376b4e4cd" otus="tac63e9b1-ad6a-4243-8193-1891cf5f06db" />
 </nexml>
