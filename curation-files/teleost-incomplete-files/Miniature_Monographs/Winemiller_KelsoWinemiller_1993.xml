@@ -7,7 +7,7 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Winemiller and Kelso-Winemiller (1993)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="td15c7f71-9c0f-4f5d-ac63-a61c43b90037">
+  <otus id="t6fb56dab-6270-4687-a073-2553270314bd">
     <otu id="ta0ed7c8c-6b1c-47fe-9954-d33ff7f29d8f" label="Neolebias lozii" about="#ta0ed7c8c-6b1c-47fe-9954-d33ff7f29d8f">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0064883" />
     </otu>
@@ -15,7 +15,7 @@
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0064921" />
     </otu>
   </otus>
-  <characters id="cbcdcc4d50-96d5-4754-a350-997992379454" xsi:type="StandardCells" otus="td15c7f71-9c0f-4f5d-ac63-a61c43b90037">
+  <characters id="cbcdcc4d50-96d5-4754-a350-997992379454" xsi:type="StandardCells" otus="t6fb56dab-6270-4687-a073-2553270314bd">
     <format>
       <states id="s246e5c60-0d92-46c6-a80a-023b42b1a930">
         <state id="sb9758401-0670-45ef-9c3d-d915cb74a368" label="taller body" symbol="0" about="#sb9758401-0670-45ef-9c3d-d915cb74a368">
@@ -450,6 +450,42 @@
           </meta>
         </state>
       </states>
+      <states id="sb16249bb-3d9a-4572-825b-1fef7685f738">
+        <state id="s65fed212-3d48-4ea6-aee9-3026a300d9f5" label="Neolebias lozii is distinguished from all other species of Neolebias (Vari, 1979) by its distinctive pigmentation pattern of 9-12 tall, black vertical bars along the flanks of the body and caudal peduncle" symbol="0" about="#s65fed212-3d48-4ea6-aee9-3026a300d9f5">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001463">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0000468" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001463">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:2000178" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <char id="c1f5efe2b-8269-491b-8b99-0db862949e57" label="Body height" about="#c1f5efe2b-8269-491b-8b99-0db862949e57" states="s246e5c60-0d92-46c6-a80a-023b42b1a930">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 112</meta>
       </char>
@@ -501,9 +537,12 @@
       <char id="c9ea833d0-381d-4cb2-8c3c-ce65a4094b30" label="Adipose fin" about="#c9ea833d0-381d-4cb2-8c3c-ce65a4094b30" states="sb5563da7-ef08-4d7f-8dc6-c44bb86b650c">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 114</meta>
       </char>
+      <char id="cc91443b7-a978-436b-8acb-b12842b26ad0" label="Pigmentation patterns" about="#cc91443b7-a978-436b-8acb-b12842b26ad0" states="sb16249bb-3d9a-4572-825b-1fef7685f738">
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 112</meta>
+      </char>
     </format>
     <matrix>
-      <row id="r8a681251-95a4-4c76-b9d7-8b1edbd53449" otu="ta0ed7c8c-6b1c-47fe-9954-d33ff7f29d8f">
+      <row id="r309a782d-4217-46c1-9647-0ac9115faab8" otu="ta0ed7c8c-6b1c-47fe-9954-d33ff7f29d8f">
         <cell char="c1f5efe2b-8269-491b-8b99-0db862949e57" state="sb9758401-0670-45ef-9c3d-d915cb74a368" />
         <cell char="c3b31d74d-d67a-490a-ab9f-a77e8b2925dc" state="s6f3f54a4-c8c9-49a7-abea-78f0ea61ac45" />
         <cell char="ca0f430d2-1694-4b23-a3af-a7ec8edb007b" state="s2f855369-a2ad-403d-89a2-94049f4b11f5" />
@@ -522,7 +561,7 @@
         <cell char="c475282eb-f622-4a92-bf82-1f184975a75e" state="sc19775ef-4877-4d98-9c1a-7d19757ee683" />
         <cell char="c9ea833d0-381d-4cb2-8c3c-ce65a4094b30" state="s53dc8cf2-7f81-4e1f-adfd-ce792af5ec06" />
       </row>
-      <row id="racfd2400-53e3-4925-8690-13e5242230eb" otu="te40a976b-ea5b-4735-ac78-bd9dd9ce9767">
+      <row id="r1f3618d6-be4e-40ec-9e5c-be815af7f203" otu="te40a976b-ea5b-4735-ac78-bd9dd9ce9767">
         <cell char="c1f5efe2b-8269-491b-8b99-0db862949e57" state="s3bddfb57-42b1-4fc5-aae5-fb7591297f6e" />
         <cell char="c3b31d74d-d67a-490a-ab9f-a77e8b2925dc" state="s2eccf5c7-bf06-4e20-b219-987b44d7d4b2" />
         <cell char="ca0f430d2-1694-4b23-a3af-a7ec8edb007b" state="se6273ae0-3008-4a1c-b6ee-2d3df6b9bf02" />
@@ -531,5 +570,5 @@
       </row>
     </matrix>
   </characters>
-  <trees id="tb5352286-35ae-46af-9408-ce7b7da57321" otus="td15c7f71-9c0f-4f5d-ac63-a61c43b90037" />
+  <trees id="t51f5e4fc-00bd-4b84-823c-90cd82af92e4" otus="t6fb56dab-6270-4687-a073-2553270314bd" />
 </nexml>
