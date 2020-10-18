@@ -19,7 +19,26 @@
     <format>
       <states id="s8e4827e6-05cd-46be-bea6-a2a73d6c17aa" />
       <states id="s091d1aca-5975-4dfb-8ff1-ef5b9fac61a1">
-        <state id="sbe6597ae-999c-4e88-ad41-36d2e79b9bb6" label="basipterygium of male hypertrophied (versus not hypertrophied)" symbol="0" />
+        <state id="sbe6597ae-999c-4e88-ad41-36d2e79b9bb6" label="basipterygium of male hypertrophied (versus not hypertrophied)" symbol="0" about="#sbe6597ae-999c-4e88-ad41-36d2e79b9bb6">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000623">
+                    <phen:qualifier relation="BFO:0000050">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="UBERON:0003101" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s9f43b091-375c-4e13-916a-73157ea58d1d" />
       <states id="se4dc9101-db56-4fb8-87f2-1374633319c7" />
@@ -347,6 +366,9 @@
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
             <phen:phenotype>
               <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0002542" />
+                </phen:bearer>
                 <phen:quality>
                   <phen:typeref about="PATO:0000462" />
                 </phen:quality>
@@ -464,11 +486,49 @@
       </char>
     </format>
     <matrix>
-      <row id="raec78a3b-d3f1-4dfb-a325-a5e4653d4fd4" otu="t3d4c99ef-23e7-4bb4-a63b-79c24690e1a5" />
-      <row id="re0cc1ee2-3b31-498b-bd30-b3a782578432" otu="tf5671db3-c61e-4de1-9068-ed7667e48758" />
+      <row id="raec78a3b-d3f1-4dfb-a325-a5e4653d4fd4" otu="t3d4c99ef-23e7-4bb4-a63b-79c24690e1a5">
+        <cell char="c3f4b0658-a569-4784-9dc8-4764d04d0728" state="sbe6597ae-999c-4e88-ad41-36d2e79b9bb6" />
+        <cell char="c52085fa5-f6ca-4e30-af6a-1f54f6a73669" state="sa9cc2e80-cccb-4b50-b530-30c8148eaf86" />
+        <cell char="cf2d4a3f9-7bf9-47c2-a313-557aba5242b2" state="sa7e6c21f-fc3b-47dd-9947-132c5c7c3a4d" />
+        <cell char="c9a442fed-6d68-40e9-9bd9-9b6654d305a0" state="s11a59f95-0079-4d6c-b59e-568413e0f298" />
+        <cell char="cc1a74fd9-d3e8-4b3e-8d88-f115f7751629" state="s20542f4c-f7ec-45ef-bf4e-3ab06a9efbba" />
+        <cell char="c60bb4f03-d947-46dd-8e50-895183549d22" state="sb61d3b49-ec3a-488f-af59-898c428ceb49" />
+        <cell char="ceb60f327-639d-4e03-9018-d07797cddd90" state="se7f76d9a-6992-4dda-a23f-b7132ca88154" />
+        <cell char="c2a70d58f-6a3e-40fd-ab85-45dad7c124aa" state="s7e78bdd1-bd6d-48ae-8495-90b6778f97b3" />
+        <cell char="cad4303cb-efe3-49fb-a68c-0e7e93ecc98c" state="sea1f9f45-ae34-4d98-b899-f6177f56396d" />
+        <cell char="c7f331b2f-66a7-4efb-bbb9-b70020704767" state="s63923d89-ab5d-4d73-99bc-04c44e7ba569" />
+        <cell char="c5bbfec66-fdf5-40d0-a4bd-a7f7e3a878a4" state="sdc549bcb-58f4-4e5b-84ed-3704b615116b" />
+        <cell char="c37490a95-4154-48d9-a8d4-08392ba0664a" state="s01e2a52c-4942-4258-a492-fb9ddc97c887" />
+        <cell char="c68e4c758-109a-4a85-b06e-b87a071e958c" state="s051fe1e2-9209-4174-964e-ef0b6f09abe9" />
+        <cell char="ccda88b30-64db-4269-899a-789d20df989d" state="s5271ff53-3c2c-447b-82d5-18cfa206a115" />
+        <cell char="cba735cc7-4d85-4379-a507-ef8166bf99c5" state="s451c72bc-8fba-4858-a799-cdf950f7a86e" />
+        <cell char="c3b527ab6-355d-49e3-8415-999ebcfed2d9" state="sa5212ed1-eeac-4789-ba42-a26ac98ca9cc" />
+        <cell char="c051f907f-73f3-4b1b-8b4e-621aed8e6ede" state="sbfd5f2d9-a512-4410-9397-05c82d681537" />
+        <cell char="c8a4a02ac-2464-4522-acaa-41a8021eaeaa" state="s7488f006-2966-4439-a6de-8864bf4879d5" />
+      </row>
+      <row id="re0cc1ee2-3b31-498b-bd30-b3a782578432" otu="tf5671db3-c61e-4de1-9068-ed7667e48758">
+        <cell char="c3f4b0658-a569-4784-9dc8-4764d04d0728" state="sbe6597ae-999c-4e88-ad41-36d2e79b9bb6" />
+        <cell char="c52085fa5-f6ca-4e30-af6a-1f54f6a73669" state="sa9cc2e80-cccb-4b50-b530-30c8148eaf86" />
+        <cell char="cf2d4a3f9-7bf9-47c2-a313-557aba5242b2" state="sa7e6c21f-fc3b-47dd-9947-132c5c7c3a4d" />
+        <cell char="c9a442fed-6d68-40e9-9bd9-9b6654d305a0" state="s11a59f95-0079-4d6c-b59e-568413e0f298" />
+        <cell char="cc1a74fd9-d3e8-4b3e-8d88-f115f7751629" state="s20542f4c-f7ec-45ef-bf4e-3ab06a9efbba" />
+        <cell char="c60bb4f03-d947-46dd-8e50-895183549d22" state="sb61d3b49-ec3a-488f-af59-898c428ceb49" />
+        <cell char="ceb60f327-639d-4e03-9018-d07797cddd90" state="se7f76d9a-6992-4dda-a23f-b7132ca88154" />
+        <cell char="c2a70d58f-6a3e-40fd-ab85-45dad7c124aa" state="s7e78bdd1-bd6d-48ae-8495-90b6778f97b3" />
+        <cell char="cad4303cb-efe3-49fb-a68c-0e7e93ecc98c" state="sea1f9f45-ae34-4d98-b899-f6177f56396d" />
+        <cell char="c7f331b2f-66a7-4efb-bbb9-b70020704767" state="s63923d89-ab5d-4d73-99bc-04c44e7ba569" />
+        <cell char="c5bbfec66-fdf5-40d0-a4bd-a7f7e3a878a4" state="sdc549bcb-58f4-4e5b-84ed-3704b615116b" />
+        <cell char="c37490a95-4154-48d9-a8d4-08392ba0664a" state="s01e2a52c-4942-4258-a492-fb9ddc97c887" />
+        <cell char="c68e4c758-109a-4a85-b06e-b87a071e958c" state="s051fe1e2-9209-4174-964e-ef0b6f09abe9" />
+        <cell char="ccda88b30-64db-4269-899a-789d20df989d" state="s5271ff53-3c2c-447b-82d5-18cfa206a115" />
+        <cell char="cba735cc7-4d85-4379-a507-ef8166bf99c5" state="s451c72bc-8fba-4858-a799-cdf950f7a86e" />
+        <cell char="c3b527ab6-355d-49e3-8415-999ebcfed2d9" state="sa5212ed1-eeac-4789-ba42-a26ac98ca9cc" />
+        <cell char="c051f907f-73f3-4b1b-8b4e-621aed8e6ede" state="sbfd5f2d9-a512-4410-9397-05c82d681537" />
+        <cell char="c8a4a02ac-2464-4522-acaa-41a8021eaeaa" state="s7488f006-2966-4439-a6de-8864bf4879d5" />
+      </row>
     </matrix>
   </characters>
-  <trees id="t0dbc109a-ad77-424a-9525-3c8948987073" otus="t435e72a2-db2b-428d-874e-803ec24ee3cf" />
+  <trees id="t64868c21-c871-44da-9719-dc5bda530db9" otus="t435e72a2-db2b-428d-874e-803ec24ee3cf" />
   <trees id="t032443ef-d576-4233-98d6-7ea42c8e16df" otus="t435e72a2-db2b-428d-874e-803ec24ee3cf" />
   <trees id="tf6f0cb83-67df-4ceb-81f0-01fb5faf0c54" otus="t435e72a2-db2b-428d-874e-803ec24ee3cf" />
 </nexml>
