@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1098/rspb.2005.3419</meta>
@@ -18,13 +18,30 @@
   <characters id="cb0c3880b7-f859-4635-b390-183d363435c0" xsi:type="StandardCells" otus="t435e72a2-db2b-428d-874e-803ec24ee3cf">
     <format>
       <states id="s8e4827e6-05cd-46be-bea6-a2a73d6c17aa" />
-      <states id="s091d1aca-5975-4dfb-8ff1-ef5b9fac61a1" />
+      <states id="s091d1aca-5975-4dfb-8ff1-ef5b9fac61a1">
+        <state id="sbe6597ae-999c-4e88-ad41-36d2e79b9bb6" label="basipterygium of male hypertrophied (versus not hypertrophied)" symbol="0" />
+      </states>
       <states id="s9f43b091-375c-4e13-916a-73157ea58d1d" />
       <states id="se4dc9101-db56-4fb8-87f2-1374633319c7" />
       <states id="sf317cb67-efd5-4aad-b1bc-90c09f479d08" />
       <states id="sebfb7b19-b0c3-4991-bf40-5310f71dea59" />
       <states id="seb59923d-9366-4d76-9f71-ef40cdcd8c5d" />
-      <states id="s2b9a5e3a-65c7-4712-a24c-a76decc93eb3" />
+      <states id="s2b9a5e3a-65c7-4712-a24c-a76decc93eb3">
+        <state id="sa9cc2e80-cccb-4b50-b530-30c8148eaf86" label="iii,5,ii, iii,6,i, iii,5,iii, iii,6,ii or iii,7,i" symbol="0" about="#sa9cc2e80-cccb-4b50-b530-30c8148eaf86">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500006" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="sc5153129-0889-44a9-91de-0a7832f22607" />
       <states id="s8c2ef7b3-daf4-4bff-916d-42a0caf3aca8" />
       <states id="s719600fc-e116-4dd2-9b8f-2c95f6c35a90" />
@@ -54,7 +71,7 @@
       <char id="c6883a0f9-e110-45ed-86d6-6294d473e788" label="Presence in adults (versus only in larvae) of a long post-anal larval-fin-fold along ventral edge of caudal peduncle, from posterior extremity of anal-fin base to caudal-fin base" states="s8e4827e6-05cd-46be-bea6-a2a73d6c17aa" about="#c6883a0f9-e110-45ed-86d6-6294d473e788">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 895</meta>
       </char>
-      <char id="c3f4b0658-a569-4784-9dc8-4764d04d0728" label="Basipterygium of male hypertrophied (versus not hypertrophied)" about="#c3f4b0658-a569-4784-9dc8-4764d04d0728" states="s091d1aca-5975-4dfb-8ff1-ef5b9fac61a1">
+      <char id="c3f4b0658-a569-4784-9dc8-4764d04d0728" label="Basipterygium" about="#c3f4b0658-a569-4784-9dc8-4764d04d0728" states="s091d1aca-5975-4dfb-8ff1-ef5b9fac61a1">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 895</meta>
       </char>
       <char id="c1956ec32-b4c5-4e9f-8888-36679107cbde" label="Abdominal vertebrae 7–13 with short haemal spines (versus haemal spines only on caudal vertebrae)" about="#c1956ec32-b4c5-4e9f-8888-36679107cbde" states="s9f43b091-375c-4e13-916a-73157ea58d1d">
@@ -72,7 +89,7 @@
       <char id="cc8cd06c9-0e31-452f-8c7d-dff006656180" label="Caudal peduncle very slender; dorsal-fin rays ii,3,ii or ii,4,i" about="#cc8cd06c9-0e31-452f-8c7d-dff006656180" states="seb59923d-9366-4d76-9f71-ef40cdcd8c5d">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 896</meta>
       </char>
-      <char id="c52085fa5-f6ca-4e30-af6a-1f54f6a73669" label="Anal-fin rays iii,5,ii, iii,6,i, iii,5,iii, iii,6,ii or iii,7,i" about="#c52085fa5-f6ca-4e30-af6a-1f54f6a73669" states="s2b9a5e3a-65c7-4712-a24c-a76decc93eb3">
+      <char id="c52085fa5-f6ca-4e30-af6a-1f54f6a73669" label="Anal-fin rays" about="#c52085fa5-f6ca-4e30-af6a-1f54f6a73669" states="s2b9a5e3a-65c7-4712-a24c-a76decc93eb3">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 896</meta>
       </char>
       <char id="cf2d4a3f9-7bf9-47c2-a313-557aba5242b2" label="Caudal-fin slightly emarginate, with 14 branched rays" about="#cf2d4a3f9-7bf9-47c2-a313-557aba5242b2" states="sc5153129-0889-44a9-91de-0a7832f22607">
@@ -159,6 +176,7 @@
       <row id="re0cc1ee2-3b31-498b-bd30-b3a782578432" otu="tf5671db3-c61e-4de1-9068-ed7667e48758" />
     </matrix>
   </characters>
+  <trees id="t91b7e4d8-ee05-4aa7-bfcb-12b61812125b" otus="t435e72a2-db2b-428d-874e-803ec24ee3cf" />
   <trees id="t032443ef-d576-4233-98d6-7ea42c8e16df" otus="t435e72a2-db2b-428d-874e-803ec24ee3cf" />
   <trees id="tf6f0cb83-67df-4ceb-81f0-01fb5faf0c54" otus="t435e72a2-db2b-428d-874e-803ec24ee3cf" />
 </nexml>
