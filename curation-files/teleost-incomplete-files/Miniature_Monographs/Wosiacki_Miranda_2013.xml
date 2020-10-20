@@ -51,12 +51,49 @@
     <otu id="te033ccd1-6149-432a-b05d-fc5ba7582afc" label="Cyphocharax vexillapinnus" about="#te033ccd1-6149-432a-b05d-fc5ba7582afc">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065986" />
     </otu>
+    <otu id="t86051165-d26c-439a-ae67-7d88556dc80c" label="Cyphocharax punctatus" about="#t86051165-d26c-439a-ae67-7d88556dc80c">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0065991" />
+    </otu>
   </otus>
   <characters id="cb55cee3ca-8623-4691-84a5-8fedd8a738bd" xsi:type="StandardCells" otus="t520327be-c674-4a57-ab0c-3cb3a88065e3">
     <format>
       <states id="scff3bbbe-4c00-407a-b1af-4913a63e9e14">
-        <state id="s0d66cbf2-9ea1-4931-b6ee-bc3f35d624d7" label="Cyphocharax aninha differs from its congeners (except C. vexillapinnus, C. gangamon, C. signatus, and C. punctatus) in having infraorbital sensory canal absent or extremely reduced, when present, in largest specimens (30.0 mm SL), to a fleshy or osseous canal in the fifth infraorbital " symbol="0" />
-        <state id="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" label="canal always present and complete" symbol="1" />
+        <state id="s0d66cbf2-9ea1-4931-b6ee-bc3f35d624d7" label="Cyphocharax aninha differs from its congeners (except C. vexillapinnus, C. gangamon, C. signatus, and C. punctatus) in having infraorbital sensory canal absent or extremely reduced, when present, in largest specimens (30.0 mm SL), to a fleshy or osseous canal in the fifth infraorbital " symbol="0" about="#s0d66cbf2-9ea1-4931-b6ee-bc3f35d624d7">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001811" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001811" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" label="canal always present and complete" symbol="1" about="#sa03d77f7-5e99-440f-82e9-6e3812c8f22d">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001811" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="s8555dac6-1a3a-4b79-9f2a-b651ba0168ff">
         <state id="s9eb774ff-f7b6-4324-8481-e2036f901f53" label="Cyphocharax aninha can be further distinguished from its congeners (except C. saladensis, C. vexillapinnus, C. signatus, C. punctatus, and juveniles of C. gangamon) in having four to nine, modally seven, pored lateral-line scales " symbol="0" />
@@ -593,7 +630,8 @@
       </char>
     </format>
     <matrix>
-      <row id="r497e934b-6c85-4193-b716-a4487c7bce84" otu="td7593297-93ba-4e1f-8a1f-2ff7806a50a9">
+      <row id="r1ba809d5-ce5b-415b-8801-c6abcd093379" otu="td7593297-93ba-4e1f-8a1f-2ff7806a50a9">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="s0d66cbf2-9ea1-4931-b6ee-bc3f35d624d7" />
         <cell char="cbb1d9f64-1cad-4d42-a247-a777e5b8cb07" state="sc26b94e2-1ff1-47ea-b944-b3ab0a697310" />
         <cell char="cb8fa30fc-e469-496f-a560-96198f43f567" state="scff32c12-3e64-47c6-a28b-3bfc7f8ad3a4" />
         <cell char="cdc1f842a-e32d-48f6-9b10-c4692de0beea" state="s80f78296-8fbc-4992-bafa-f754d661961f" />
@@ -613,23 +651,54 @@
         <cell char="c7aa26ced-7cd7-4b87-aaf8-9f0a4375f588" state="s49fdde23-3c09-473f-97a0-23e8b88d30e3" />
         <cell char="c5c28ff5b-d884-408e-b25d-b46f796eae8f" state="s86c253ce-8f99-4d99-834d-0bc672bfa931" />
       </row>
-      <row id="re6863666-b8e6-4cbf-8a5e-699a606f0137" otu="t330eac50-2605-4cb7-a95f-c1a58d7217fa" />
-      <row id="r1a077d10-9194-40f8-bfec-c755b77ad58b" otu="tfc1c4a46-670d-435a-9253-453ba1f214c8" />
-      <row id="ra8057bc1-c75f-4ff0-ad45-296e21dce85d" otu="t8ee9b99f-52ba-4ef4-8743-b5e9a0e358e1" />
-      <row id="r25581d13-7a0d-4f79-9325-95ba55e39e94" otu="tf9c143cd-ef10-44d8-9e9c-22751ccb7965" />
-      <row id="r0307ab72-4193-459a-977c-be355f6e9e65" otu="tdb7438db-956f-457a-a635-1a6f8548b396" />
-      <row id="rb2659ac0-77bb-42b9-bc8e-0168372e1247" otu="t88cf6ef6-7dc1-4b78-88fa-ec9cd3595aa2" />
-      <row id="r8b0d99bb-fede-4383-b917-c7c16ff341ea" otu="t7ca9bd0f-f78d-4121-8c94-9017431949a4" />
-      <row id="rfefcb03a-a78a-492c-ba62-b2c5a7436daf" otu="t2f1f57a3-6488-4dcf-ad50-fa10a541831c" />
-      <row id="r02802aef-e4a5-4e10-8f60-81d548e26585" otu="tf316e510-52d4-4f3d-9752-8ed01954059d" />
-      <row id="rd0613ecf-3da3-4da7-b6fd-36d9634206ee" otu="t3983c490-09a8-4f2e-9566-9d54096be1e3" />
-      <row id="r089c65e7-c577-41c1-adc0-d01d2716858d" otu="t02887c9f-915c-4f7c-b4bc-a252cdeb18e6" />
-      <row id="r78e1ab04-decf-409d-894d-b0ce31b65c01" otu="t11f04de1-6d79-48ec-9678-f5c571182e20" />
-      <row id="rb8efa280-a7e2-4b20-a2c3-29633bcf9c2b" otu="t612a20eb-39cc-4cea-959e-96ad2f25afea" />
-      <row id="rd1cf2024-bfc7-451d-a3ce-fd9d8cbb5965" otu="te033ccd1-6149-432a-b05d-fc5ba7582afc" />
+      <row id="r8ff0c6a2-55aa-4729-837d-3dbe6e982428" otu="t330eac50-2605-4cb7-a95f-c1a58d7217fa">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="rbc4b0153-861a-4d07-84ed-d910a6eecbbb" otu="tfc1c4a46-670d-435a-9253-453ba1f214c8">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="s0d66cbf2-9ea1-4931-b6ee-bc3f35d624d7" />
+      </row>
+      <row id="r9a3f4792-0558-451f-a1ee-18b80dbb116e" otu="t8ee9b99f-52ba-4ef4-8743-b5e9a0e358e1">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="r748bcb6d-83c0-4fde-b1b7-94ebf358f5c6" otu="tf9c143cd-ef10-44d8-9e9c-22751ccb7965">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="r24bc0469-a355-4679-8e69-497683393ba5" otu="tdb7438db-956f-457a-a635-1a6f8548b396">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="rf58e42e5-0424-414e-ad06-a499c5a6c07b" otu="t88cf6ef6-7dc1-4b78-88fa-ec9cd3595aa2">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="rd1314032-841d-417f-8236-8201b29374b0" otu="t7ca9bd0f-f78d-4121-8c94-9017431949a4">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="r633b6e6d-cacd-4ef5-a7f0-dc6afad9279e" otu="t2f1f57a3-6488-4dcf-ad50-fa10a541831c">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="s0d66cbf2-9ea1-4931-b6ee-bc3f35d624d7" />
+      </row>
+      <row id="r31cbef25-26a6-49c5-8562-4ca5d1197ed3" otu="tf316e510-52d4-4f3d-9752-8ed01954059d">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="rcc50064a-2958-4502-9032-3b8aeec8d767" otu="t3983c490-09a8-4f2e-9566-9d54096be1e3">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="r8672e85f-ee1b-4579-83a6-ae23635b0d2a" otu="t02887c9f-915c-4f7c-b4bc-a252cdeb18e6">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="rf66429b9-2ed8-4101-8203-8f60c2297f5b" otu="t11f04de1-6d79-48ec-9678-f5c571182e20">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="r180bc2e3-a427-4f24-937c-28d3d5145d70" otu="t612a20eb-39cc-4cea-959e-96ad2f25afea">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="sa03d77f7-5e99-440f-82e9-6e3812c8f22d" />
+      </row>
+      <row id="rbed50628-1eb4-4701-aabc-ab4e0f7a97f4" otu="te033ccd1-6149-432a-b05d-fc5ba7582afc">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="s0d66cbf2-9ea1-4931-b6ee-bc3f35d624d7" />
+      </row>
+      <row id="r643c5443-9d5e-4243-98d4-72630bd4333b" otu="t86051165-d26c-439a-ae67-7d88556dc80c">
+        <cell char="cad0655ac-5536-4295-8cb7-3b1c860d08f3" state="s0d66cbf2-9ea1-4931-b6ee-bc3f35d624d7" />
+      </row>
     </matrix>
   </characters>
-  <trees id="t541b61ea-9b0b-4a61-83c5-360e3f9891af" otus="t520327be-c674-4a57-ab0c-3cb3a88065e3" />
+  <trees id="t5d9b83d6-fb60-45f1-8718-34229b54ea7c" otus="t520327be-c674-4a57-ab0c-3cb3a88065e3" />
   <trees id="t1367ed33-0b7a-46dd-adc0-6cea78fa713f" otus="t520327be-c674-4a57-ab0c-3cb3a88065e3" />
   <trees id="te36930f4-b07d-41a9-b6e2-ff9b7cb699d8" otus="t520327be-c674-4a57-ab0c-3cb3a88065e3" />
   <trees id="t294ce5c7-6e1b-4403-89b7-f9e65609cabe" otus="t520327be-c674-4a57-ab0c-3cb3a88065e3" />
