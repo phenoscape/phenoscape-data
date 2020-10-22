@@ -787,9 +787,76 @@
           </meta>
         </state>
       </states>
-      <char about="#char511" id="char511" label="adipose fin" states="states510">
+      <states id="sec2dd014-2354-42cb-a3a7-d9c80b31c246">
+        <state id="s6858f73e-9554-480f-97c0-ba8866d62a46" label="presence of i,6 pelvic-fin rays (i,5 in one out of 50 specimens examined)" symbol="0" />
+        <state id="sc2227ff5-28f1-401a-bd66-0b7e29173cd4" label="i,5" symbol="1" />
+      </states>
+      <states id="sd0f06ff5-4a8c-4724-ad4c-309475f68238">
+        <state id="s2d029a83-9140-4f64-97f5-f647353f19be" label="two postcleithra" symbol="0" about="#s2d029a83-9140-4f64-97f5-f647353f19be">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000410" />
+                </phen:bearer>
+                <phen:quality count="2">
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sd314d712-84c6-43bf-8545-35e993d37d4c" label="postcleithra absent" symbol="1" about="#sd314d712-84c6-43bf-8545-35e993d37d4c">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000410" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="sd6a24ed7-5375-414f-81d9-67d871b7fce3">
+        <state id="sa1dce520-5cb8-437f-8391-2612be544ccd" label="shorter caudal peduncle (14 – 18 % SL)" symbol="0" about="#sa1dce520-5cb8-437f-8391-2612be544ccd">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000178" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000569" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="sb9dd7605-fce7-439e-931d-80567e8c0532" label="18 – 24 % SL" symbol="1" about="#sb9dd7605-fce7-439e-931d-80567e8c0532">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000178" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000570" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <char about="#char511" id="char511" label="Adipose fin" states="states510">
         <meta content="false" datatype="xsd:boolean" id="meta659" property="nr:selected" xsi:type="LiteralMeta" />
       </char>
+      <char id="c7233ec84-2343-4956-b770-995dcd6ca473" label="Pelvic fin rays" states="sec2dd014-2354-42cb-a3a7-d9c80b31c246" />
+      <char id="c2102e608-53bf-4184-9566-30e8ec99079c" label="Postcleithra" states="sd0f06ff5-4a8c-4724-ad4c-309475f68238" />
+      <char id="cf844d9e6-f38c-4818-b144-1a1093b3f97e" label="Caudal peduncle" states="sd6a24ed7-5375-414f-81d9-67d871b7fce3" />
     </format>
     <matrix>
       <row id="row519" otu="otu3">
@@ -860,12 +927,17 @@
       </row>
       <row id="row541" otu="otu91">
         <cell char="char511" state="state512" />
+        <cell char="c7233ec84-2343-4956-b770-995dcd6ca473" state="sc2227ff5-28f1-401a-bd66-0b7e29173cd4" />
+        <cell char="c2102e608-53bf-4184-9566-30e8ec99079c" state="sd314d712-84c6-43bf-8545-35e993d37d4c" />
+        <cell char="cf844d9e6-f38c-4818-b144-1a1093b3f97e" state="sb9dd7605-fce7-439e-931d-80567e8c0532" />
       </row>
       <row id="row542" otu="otu95">
         <cell char="char511" state="state512" />
       </row>
       <row id="row543" otu="otu99">
         <cell char="char511" state="state512" />
+        <cell char="c7233ec84-2343-4956-b770-995dcd6ca473" state="sc2227ff5-28f1-401a-bd66-0b7e29173cd4" />
+        <cell char="c2102e608-53bf-4184-9566-30e8ec99079c" state="sd314d712-84c6-43bf-8545-35e993d37d4c" />
       </row>
       <row id="row544" otu="otu103">
         <cell char="char511" state="state512" />
@@ -1158,12 +1230,15 @@
       <row id="row642" otu="otu495">
         <cell char="char511" state="state512" />
       </row>
-      <row id="r25e3fadb-a1e0-4b67-b1bf-8bfc8d9b339b" otu="ta49b0ff6-a199-4564-9d82-90f4c1f000d8">
+      <row id="r594d7571-60af-4cf7-b5d3-916c759d6c71" otu="ta49b0ff6-a199-4564-9d82-90f4c1f000d8">
         <cell char="char511" state="sbc5a102b-671f-4799-8ee7-b7ad7c6e23d6" />
+        <cell char="c7233ec84-2343-4956-b770-995dcd6ca473" state="s6858f73e-9554-480f-97c0-ba8866d62a46" />
+        <cell char="c2102e608-53bf-4184-9566-30e8ec99079c" state="s2d029a83-9140-4f64-97f5-f647353f19be" />
+        <cell char="cf844d9e6-f38c-4818-b144-1a1093b3f97e" state="sa1dce520-5cb8-437f-8391-2612be544ccd" />
       </row>
     </matrix>
   </characters>
-  <trees id="tc40e4bc8-4dca-451f-b3b0-ffd99e2ebea4" otus="otus1" />
+  <trees id="tced21c93-974c-483e-859b-a5ce2813aa67" otus="otus1" />
   <trees id="t785acd63-bc39-4afe-9fcb-d0c6e9373681" otus="otus1" />
   <trees id="t971ced78-5295-478c-a912-44a49c69ab03" otus="otus1" />
 </nex:nexml>
