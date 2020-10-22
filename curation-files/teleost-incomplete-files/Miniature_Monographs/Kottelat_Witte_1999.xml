@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
+  <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:identifier">https://www.semanticscholar.org/paper/Two-new-species-of-Microrasbora-from-Thailand-and-Kottelat-Witte/595b0cb4e14c7f82f988a3844aedc05c12adf672</meta>
+    <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Kottelat, M., and K. E. Witte. (1999) Two new species of Microrasbora from Thailand and Myanmar, with two new generic names for small Southeast Asian cyprinid fishes (Teleostei: Cyprinidae). Journal of South Asian Natural History, 4(1), 49-56</meta>
+    <meta xsi:type="LiteralMeta" property="dc:title">Kottelat and Witte (1999)</meta>
+  </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="t7e29045e-05e1-4972-91d4-b3bd7a7c5440" />
+  <otus id="t7e29045e-05e1-4972-91d4-b3bd7a7c5440">
+    <otu id="t0c325394-bfc1-4b1b-a3b0-d8945f132340" label="Microrasbora kubotai" about="#t0c325394-bfc1-4b1b-a3b0-d8945f132340">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_9046498" />
+    </otu>
+    <otu id="t931bcabe-05cd-4764-8c30-3cfb0c18231f" label="Microrasbora nana" about="#t931bcabe-05cd-4764-8c30-3cfb0c18231f">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_9046499" />
+    </otu>
+  </otus>
   <characters id="cb1cb25755-6d48-44fb-a180-946e41ac8202" xsi:type="StandardCells" otus="t7e29045e-05e1-4972-91d4-b3bd7a7c5440">
     <format>
       <states id="sb0c4f863-eef8-4c9c-9abd-10479910cad2" />
@@ -98,8 +110,12 @@
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 52</meta>
       </char>
     </format>
-    <matrix />
+    <matrix>
+      <row id="rf3e5d232-5532-4b46-9377-89634df842e1" otu="t0c325394-bfc1-4b1b-a3b0-d8945f132340" />
+      <row id="rbd225708-c3f6-4df9-8240-f302a76d81ff" otu="t931bcabe-05cd-4764-8c30-3cfb0c18231f" />
+    </matrix>
   </characters>
+  <trees id="tfb00b32c-6736-4203-9046-18bef30c7b1c" otus="t7e29045e-05e1-4972-91d4-b3bd7a7c5440" />
   <trees id="t6a620635-fecc-4e7b-9161-3313dfb02d03" otus="t7e29045e-05e1-4972-91d4-b3bd7a7c5440" />
   <trees id="t168f0f89-d3c3-4488-9f6c-8ae69478d5a0" otus="t7e29045e-05e1-4972-91d4-b3bd7a7c5440" />
 </nexml>
