@@ -5,7 +5,11 @@
     <meta xsi:type="LiteralMeta" property="dc:title">Johnson and Brothers (1993)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d" />
+  <otus id="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d">
+    <otu id="t93cf9652-944d-4ffc-87cf-159a96d19de6" label="" about="#t93cf9652-944d-4ffc-87cf-159a96d19de6">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0049794" />
+    </otu>
+  </otus>
   <characters id="cb4920534c-1af9-4e6e-a3c0-f70f2d7c8b12" xsi:type="StandardCells" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d">
     <format>
       <states id="se58fcadd-8dc3-4c8d-87f7-2486b7d0b5a3" />
@@ -96,7 +100,22 @@
       </states>
       <states id="s5231fbaa-bf30-4780-86fe-51f2fadf2520" />
       <states id="s0d312949-44f4-42d4-a63a-e13796c57d21" />
-      <states id="s076b11f1-77e6-4baa-836e-c035d1d86fde" />
+      <states id="s076b11f1-77e6-4baa-836e-c035d1d86fde">
+        <state id="sc1184429-3e0b-4a25-a2f8-20ef4b10db3b" label="first basibranchial is absent, and the second and third are represented by a continuous rod of cartilage articulating anteriorly with the basihyal" symbol="0" about="#sc1184429-3e0b-4a25-a2f8-20ef4b10db3b">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001915" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="s9eccc500-c42c-4446-9a33-1024a1386983" />
       <states id="s3854d354-0d40-40eb-99d2-8a92aad6a68f" />
       <states id="s39f5b2f1-1855-44dd-aa8f-da79994c61ab" />
@@ -1342,7 +1361,7 @@
       <char id="c046db102-bed1-4289-a8fa-b4094fdef09f" label="The relatively large spatulate basihyal is broadly bifurcate anteriorly with a narrow rod-like posterior portion" about="#c046db102-bed1-4289-a8fa-b4094fdef09f" states="s0d312949-44f4-42d4-a63a-e13796c57d21">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 452</meta>
       </char>
-      <char id="c4abd705e-02d9-4293-b315-2af455922b91" label="The first basibranchial is absent, and the second and third are represented by a continuous rod of cartilage articulating anteriorly with the basihyal" about="#c4abd705e-02d9-4293-b315-2af455922b91" states="s076b11f1-77e6-4baa-836e-c035d1d86fde">
+      <char id="c4abd705e-02d9-4293-b315-2af455922b91" label="Basibranchials" about="#c4abd705e-02d9-4293-b315-2af455922b91" states="s076b11f1-77e6-4baa-836e-c035d1d86fde">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 452</meta>
       </char>
       <char id="ca9bc9923-079a-4376-bb34-5126b1bcfade" label="The cartilage that appears to represent the fourth basibranchial is continuous posteriorly with the cartilaginous anterior tips of the fourth ceratobranchials" about="#ca9bc9923-079a-4376-bb34-5126b1bcfade" states="s9eccc500-c42c-4446-9a33-1024a1386983">
@@ -1610,8 +1629,11 @@
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 468</meta>
       </char>
     </format>
-    <matrix />
+    <matrix>
+      <row id="r10f1f8ef-98bd-4b22-a2a4-b1c077b6b969" otu="t93cf9652-944d-4ffc-87cf-159a96d19de6" />
+    </matrix>
   </characters>
+  <trees id="t1e490bd9-fdf8-44a7-b1c9-8d6739d44fee" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d" />
   <trees id="t9ff4312d-6516-44b3-8317-c4cacacb94f1" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d" />
   <trees id="t0d546c90-1564-4c74-8d21-8953f23e13c2" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d" />
 </nexml>
