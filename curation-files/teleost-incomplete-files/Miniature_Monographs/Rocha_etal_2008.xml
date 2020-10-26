@@ -151,7 +151,13 @@
       <states id="s6677a436-e27d-49e9-858e-c3346a98041f">
         <state id="s5701785b-1ad9-4b77-9850-ea1287bf5357" label="uniramous, origin anterior to gular fold and posterior to mandibular symphysis" symbol="0" />
       </states>
-      <states id="s059f48e3-2d8e-48b8-a83e-6681306e6143" />
+      <states id="s059f48e3-2d8e-48b8-a83e-6681306e6143">
+        <state id="sa785fb82-7b2f-4b6a-9dbd-6cc01079edc6" label="uniramous, origin at corner of mouth" symbol="0" about="#sa785fb82-7b2f-4b6a-9dbd-6cc01079edc6">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype />
+          </meta>
+        </state>
+      </states>
       <states id="sb6806543-afd0-4ce2-8573-0cd252788e8b" />
       <states id="s12e6b079-ee44-4a27-8e26-e91f98df6091" />
       <states id="s73346d48-e774-4fa3-9aac-078cc7b5f4dd" />
@@ -204,8 +210,46 @@
         </state>
       </states>
       <states id="se9e16f8a-ec89-405a-99a4-e554786f893d" />
-      <states id="s7e6c1117-6b99-42fd-86c3-cd8a282ac311" />
-      <states id="s3c0989e7-56eb-4b4d-a7f5-22627d157f73" />
+      <states id="s7e6c1117-6b99-42fd-86c3-cd8a282ac311">
+        <state id="s935e36cb-4e5c-467c-a01e-9f7c371f4574" label="with well-developed spine and four unbranched rays" symbol="0" about="#s935e36cb-4e5c-467c-a01e-9f7c371f4574">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001787" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:4500007" />
+                </phen:bearer>
+                <phen:quality count="4">
+                  <phen:typeref about="PATO:0000070" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s3c0989e7-56eb-4b4d-a7f5-22627d157f73">
+        <state id="sa514e4af-48a2-4d8c-890d-c18d4776a487" label="completely covered with small odontodes and with few small serrations along posterior margin from mid-length to distal tip" symbol="0" about="#sa514e4af-48a2-4d8c-890d-c18d4776a487">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002000" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="s4d2e158f-f96e-4095-b40f-dc018d5000af" />
       <states id="s04d9ad67-81c7-4cd8-bae5-a3313f776855" />
       <states id="s6918d56b-b5df-48e3-ade8-7cb98f787bda" />
@@ -396,7 +440,7 @@
       <char id="c98e9d835-8492-4f88-ba2f-46fbb05f29aa" label="Mental barbel" about="#c98e9d835-8492-4f88-ba2f-46fbb05f29aa" states="s6677a436-e27d-49e9-858e-c3346a98041f">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 324</meta>
       </char>
-      <char id="cdf4d1b7e-dd6f-4cb1-83ba-f1b829aa5f9b" label="Mandibular barbel uniramous, origin at corner of mouth" about="#cdf4d1b7e-dd6f-4cb1-83ba-f1b829aa5f9b" states="s059f48e3-2d8e-48b8-a83e-6681306e6143">
+      <char id="cdf4d1b7e-dd6f-4cb1-83ba-f1b829aa5f9b" label="Mandibular barbel" about="#cdf4d1b7e-dd6f-4cb1-83ba-f1b829aa5f9b" states="s059f48e3-2d8e-48b8-a83e-6681306e6143">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 324</meta>
       </char>
       <char id="c4e831b01-7bc6-46b3-8eda-3956445055c6" label="Small platelet at distal tip of rib on sixth vertebra bearing 3-16 small odontodes" about="#c4e831b01-7bc6-46b3-8eda-3956445055c6" states="sb6806543-afd0-4ce2-8573-0cd252788e8b">
@@ -417,10 +461,10 @@
       <char id="cae5e956a-e4ce-4ca7-a77a-6bbddcbb1768" label="Dorsal spine with small odontodes" about="#cae5e956a-e4ce-4ca7-a77a-6bbddcbb1768" states="se9e16f8a-ec89-405a-99a4-e554786f893d">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 324</meta>
       </char>
-      <char id="cf944963a-2996-4c91-a442-d4c65cf98e37" label="Pectoral fin with well-developed spine and four unbranched rays" about="#cf944963a-2996-4c91-a442-d4c65cf98e37" states="s7e6c1117-6b99-42fd-86c3-cd8a282ac311">
+      <char id="cf944963a-2996-4c91-a442-d4c65cf98e37" label="Pectoral fin" about="#cf944963a-2996-4c91-a442-d4c65cf98e37" states="s7e6c1117-6b99-42fd-86c3-cd8a282ac311">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 324</meta>
       </char>
-      <char id="c03ae1c18-9b02-497c-a88f-96aca7f72a44" label="Pectoral spine completely covered with small odontodes and with few small serrations along posterior margin from mid-length to distal tip" about="#c03ae1c18-9b02-497c-a88f-96aca7f72a44" states="s3c0989e7-56eb-4b4d-a7f5-22627d157f73">
+      <char id="c03ae1c18-9b02-497c-a88f-96aca7f72a44" label="Pectoral spine" about="#c03ae1c18-9b02-497c-a88f-96aca7f72a44" states="s3c0989e7-56eb-4b4d-a7f5-22627d157f73">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 324</meta>
       </char>
       <char id="c5a6ee828-30a1-4bac-bc72-6bd6d207b4ea" label="Pelvic fin with four unbranched rays; first ray thicker and with odontodes" about="#c5a6ee828-30a1-4bac-bc72-6bd6d207b4ea" states="s4d2e158f-f96e-4095-b40f-dc018d5000af">
@@ -488,7 +532,7 @@
       <row id="r6fa0100c-f8ff-419a-8696-1c5a0a32cfe1" otu="ta28824db-1dc4-4bc8-aa7a-5015a446e39f" />
     </matrix>
   </characters>
-  <trees id="te5fabf67-0f26-4085-b453-7ca5672e1b4d" otus="t61852316-9325-4eb9-8be1-39678f36247b" />
+  <trees id="tcf711218-04e6-494c-9d91-7f71c7076a9c" otus="t61852316-9325-4eb9-8be1-39678f36247b" />
   <trees id="tfe262e59-f8e4-4e0f-8d77-edbf87406e32" otus="t61852316-9325-4eb9-8be1-39678f36247b" />
   <trees id="t83aae116-5075-437e-b1cd-2919efc5c702" otus="t61852316-9325-4eb9-8be1-39678f36247b" />
   <trees id="t02f46766-29e0-4e08-a0e6-a6948c55ede4" otus="t61852316-9325-4eb9-8be1-39678f36247b" />
