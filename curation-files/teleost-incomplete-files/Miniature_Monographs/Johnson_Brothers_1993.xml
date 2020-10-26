@@ -17,8 +17,54 @@
   </otus>
   <characters id="cb4920534c-1af9-4e6e-a3c0-f70f2d7c8b12" xsi:type="StandardCells" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d">
     <format>
-      <states id="se58fcadd-8dc3-4c8d-87f7-2486b7d0b5a3" />
-      <states id="s1b33b4ac-aada-4a14-9634-a742da1f42c1" />
+      <states id="se58fcadd-8dc3-4c8d-87f7-2486b7d0b5a3">
+        <state id="sde123151-1886-4184-863f-b2dc3dd4c858" label="mature individuals of Schindleria possess well-developed sexually-dimorphic urogenital papillae similar to those seen in gobioids" symbol="0" about="#sde123151-1886-4184-863f-b2dc3dd4c858">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001118" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002451" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s1b33b4ac-aada-4a14-9634-a742da1f42c1">
+        <state id="s9a27b0a0-1d52-4ae3-8072-ee32b5c810ab" label="a large frontal fontanel, in which there is no ossification, is divided into anterior and posterior portions by a transverse bridge of cartilage, the epiphyseal bar, that joins the taeniae marginales near their midlength" symbol="0" about="#s9a27b0a0-1d52-4ae3-8072-ee32b5c810ab">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001502" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001739" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001740" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000467" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
       <states id="s710f6cc8-5e53-4b81-9db3-ceb45cd187f0">
         <state id="sb47beef0-0385-47a0-90ce-57889dbb9e63" label="a narrow, laminar parasphenoid ossification extends from near the anterior margin of the ethmoid plate along the ventral surface of the trabecula communis, expanding posteriorly to form a major portion of the floor of the cranial vault and joining a relatively well-ossified basioccipital" symbol="0" about="#sb47beef0-0385-47a0-90ce-57889dbb9e63">
           <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
@@ -1983,10 +2029,10 @@
           </meta>
         </state>
       </states>
-      <char id="c53849383-b40c-4862-8b5c-0e03e10aeacd" label="Mature individuals of Schindleria possess well-developed sexually-dimorphic urogenital papillae similar to those seen in gobioids" states="se58fcadd-8dc3-4c8d-87f7-2486b7d0b5a3" about="#c53849383-b40c-4862-8b5c-0e03e10aeacd">
+      <char id="c53849383-b40c-4862-8b5c-0e03e10aeacd" label="Urogenital papillae" states="se58fcadd-8dc3-4c8d-87f7-2486b7d0b5a3" about="#c53849383-b40c-4862-8b5c-0e03e10aeacd">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 446</meta>
       </char>
-      <char id="c67c12424-646b-4fea-97c5-b5d0df225b22" label="A large frontal fontanel, in which there is no ossification, is divided into anterior and posterior portions by a transverse bridge of cartilage, the epiphyseal bar, that joins the taeniae marginales near their midlength" about="#c67c12424-646b-4fea-97c5-b5d0df225b22" states="s1b33b4ac-aada-4a14-9634-a742da1f42c1">
+      <char id="c67c12424-646b-4fea-97c5-b5d0df225b22" label="Epiphyseal bar" about="#c67c12424-646b-4fea-97c5-b5d0df225b22" states="s1b33b4ac-aada-4a14-9634-a742da1f42c1">
         <meta xsi:type="LiteralMeta" property="rdfs:comment">p. 449</meta>
       </char>
       <char id="ce50fdb7e-9c2a-4ae1-bfc0-2e38962fda0e" label="Parasphenoid" about="#ce50fdb7e-9c2a-4ae1-bfc0-2e38962fda0e" states="s710f6cc8-5e53-4b81-9db3-ceb45cd187f0">
@@ -2337,6 +2383,8 @@
     </format>
     <matrix>
       <row id="r4b268ba4-2f11-4cea-8f43-766fe42ecb05" otu="t93cf9652-944d-4ffc-87cf-159a96d19de6">
+        <cell char="c53849383-b40c-4862-8b5c-0e03e10aeacd" state="sde123151-1886-4184-863f-b2dc3dd4c858" />
+        <cell char="c67c12424-646b-4fea-97c5-b5d0df225b22" state="s9a27b0a0-1d52-4ae3-8072-ee32b5c810ab" />
         <cell char="ce50fdb7e-9c2a-4ae1-bfc0-2e38962fda0e" state="sb47beef0-0385-47a0-90ce-57889dbb9e63" />
         <cell char="c1dded97d-75ef-40d2-aa5b-0641f1544ede" state="s9145da24-d750-4bab-a187-552f250df795" />
         <cell char="cb22d898b-ae76-4a53-8fd7-15e425170cc3" state="sb9c541ff-7273-4ddc-b37a-c6e6b688b17e" />
@@ -2360,6 +2408,7 @@
         <cell char="c0e57fb6b-edbb-401e-92c6-cc9594d2ee72" state="s2a89654e-a877-40c4-8739-745669ca8ff0" />
         <cell char="c6591c860-2941-4f21-b952-8728a65977e1" state="sad822739-05b9-4526-ac4b-ec6c90874a8b" />
         <cell char="c03751916-0922-484c-8279-96e3027a8206" state="s2bb261f5-791d-4b9e-8014-ee0ceb1e6c1c" />
+        <cell char="c046db102-bed1-4289-a8fa-b4094fdef09f" state="scddac9a0-7ac7-4f24-a531-b4cba5b6d8c1" />
         <cell char="c4abd705e-02d9-4293-b315-2af455922b91" state="sc1184429-3e0b-4a25-a2f8-20ef4b10db3b" />
         <cell char="ca9bc9923-079a-4376-bb34-5126b1bcfade" state="s9800f848-3bcc-406c-98b5-5ab11462e49c" />
         <cell char="c50a9fe05-96e7-438f-b45c-2d5a6490039c" state="s9832f69c-1012-4030-8af0-079a4a0227c4" />
@@ -2503,7 +2552,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="t45d60cbf-f6bb-493b-8cf7-0996601ce610" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d" />
+  <trees id="t51f0d5ea-ee30-4f82-846a-d4f927249acc" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d" />
   <trees id="ta0ea54de-b356-414b-a486-2b603df409ce" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d" />
   <trees id="tb439421b-f5af-48fa-be27-a03d1b09aa17" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d" />
   <trees id="t9ff4312d-6516-44b3-8317-c4cacacb94f1" otus="tce31a5f3-83e6-46c7-8df0-3aa026d2c63d" />
