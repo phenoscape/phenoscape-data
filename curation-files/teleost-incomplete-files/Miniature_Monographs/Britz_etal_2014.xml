@@ -2766,9 +2766,48 @@
         </state>
       </states>
       <states id="states451">
-        <state id="state647" symbol="0" label="similar in size or smaller than more posterior spines" about="#state647" />
-        <state id="state763" symbol="2" label="absent" about="#state763" />
-        <state id="state846" symbol="1" label="larger than more posterior spines" about="#state846" />
+        <state id="state647" symbol="0" label="similar in size or smaller than more posterior spines" about="#state647">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001546" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000117" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state763" symbol="2" label="absent" about="#state763">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001546" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state846" symbol="1" label="larger than more posterior spines" about="#state846">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001546" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000586" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states453">
         <state id="state723" symbol="0" label="no contact between lateral process of the second vertebral centrum and the outer arm of the os suspensorium or contact without fusion of the two structures" about="#state723" />
@@ -2880,7 +2919,13 @@
                   <phen:typeref about="UBERON:2001592" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141" />
+                  <phen:typeref about="PATO:0000141">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0002469" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001363" />
                   </phen:related_entity>
@@ -2897,7 +2942,7 @@
                   <phen:typeref about="UBERON:2001592" />
                 </phen:bearer>
                 <phen:quality>
-                  <phen:typeref about="PATO:0000141" />
+                  <phen:typeref about="PATO:0002469" />
                   <phen:related_entity>
                     <phen:typeref about="UBERON:2001363" />
                   </phen:related_entity>
@@ -2912,32 +2957,229 @@
         <state id="state814" symbol="1" label="dorsal prezygapophysis of fifth vertebral centrum abutting neural arch of fourth vertebral centrum" about="#state814" />
       </states>
       <states id="states465">
-        <state id="state652" symbol="0" label="autogenous" about="#state652" />
-        <state id="state700" symbol="1" label="fused to centra" about="#state700" />
+        <state id="state652" symbol="0" label="autogenous" about="#state652">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003109" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0002316" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state700" symbol="1" label="fused to centra" about="#state700">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0003109" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000642" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0016491" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states467">
         <state id="state653" symbol="0" label="ventral prezygapophyses separate from ventral postzygapophyses on caudal vertebrae" about="#state653" />
         <state id="state847" symbol="1" label="ventral prezygapophyses strongly interdigitating with ventral postzygapophyses on caudal vertebrae" about="#state847" />
       </states>
       <states id="states469">
-        <state id="state654" symbol="0" label="absent" about="#state654" />
-        <state id="state766" symbol="1" label="present" about="#state766" />
+        <state id="state654" symbol="0" label="absent" about="#state654">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002042" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001171" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state766" symbol="1" label="present" about="#state766">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2002042" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001961" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001171" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states471">
-        <state id="state655" symbol="0" label="absent or, when present, short" about="#state655" />
-        <state id="state815" symbol="1" label="elongate, projecting well into somatic musculature" about="#state815" />
+        <state id="state655" symbol="0" label="absent or, when present, short" about="#state655">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001392" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000462" />
+                </phen:quality>
+              </phen:phenotype_character>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001392" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000569" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state815" symbol="1" label="elongate, projecting well into somatic musculature" about="#state815">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001392" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000570" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states473">
-        <state id="state725" symbol="0" label="base with contact to vertebral column" about="#state725" />
-        <state id="state816" symbol="1" label="base without contact to vertebral column" about="#state816" />
+        <state id="state725" symbol="0" label="base with contact to vertebral column" about="#state725">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000525" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001961" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0010913" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state816" symbol="1" label="base without contact to vertebral column" about="#state816">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000525" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0010913" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states475">
-        <state id="state726" symbol="0" label="not surrounding anterior swim-bladder chamber" about="#state726" />
-        <state id="state862" symbol="1" label="completely surrounding anterior swim-bladder chamber" about="#state862" />
+        <state id="state726" symbol="0" label="not surrounding anterior swim-bladder chamber" about="#state726">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001171" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000140">
+                    <phen:qualifier relation="PHENOSCAPE:complement_of">
+                      <phen:holds_in_relation_to>
+                        <phen:typeref about="PATO:0005016" />
+                      </phen:holds_in_relation_to>
+                    </phen:qualifier>
+                  </phen:typeref>
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001277" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state862" symbol="1" label="completely surrounding anterior swim-bladder chamber" about="#state862">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2001171" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0005016" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:2001277" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states477">
-        <state id="state656" symbol="0" label="present" about="#state656" />
-        <state id="state863" symbol="1" label="absent" about="#state863" />
+        <state id="state656" symbol="0" label="present" about="#state656">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004743" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001961" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004741" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+        <state id="state863" symbol="1" label="absent" about="#state863">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:0004743" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0001505" />
+                  <phen:related_entity>
+                    <phen:typeref about="UBERON:0004741" />
+                  </phen:related_entity>
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
       </states>
       <states id="states479">
         <state id="state657" symbol="0" label="present" about="#state657">
@@ -4608,6 +4850,7 @@
       </char>
       <char about="#char454" id="char454" label="Connection between lateral process of the second vertebral centrum and the outer arm of the os suspensorium" states="states453">
         <meta content="false" datatype="xsd:boolean" id="meta1034" property="nr:selected" xsi:type="LiteralMeta" />
+        <meta xsi:type="LiteralMeta" property="rdfs:comment">to do</meta>
       </char>
       <char about="#char456" id="char456" label="Supraneural 2" states="states455">
         <meta content="false" datatype="xsd:boolean" id="meta1035" property="nr:selected" xsi:type="LiteralMeta" />
@@ -13934,7 +14177,7 @@
       </row>
     </matrix>
   </characters>
-  <trees id="ta3635ff6-c3ae-45a7-a921-ab1a5d3acc44" otus="otus1" />
+  <trees id="t33eeb85a-b6c8-4432-8a55-d0c06e0a9225" otus="otus1" />
   <trees id="tfd6f94ea-a95a-4d8d-808c-6a0b93f6ca56" otus="otus1" />
   <trees id="tb2a4ad8d-6577-4f7b-94e0-7a1c8fcc675b" otus="otus1" />
   <trees id="t704300f3-83ff-440c-8753-599a0170338c" otus="otus1" />
