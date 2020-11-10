@@ -2,11 +2,12 @@
 <nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
+    <meta xsi:type="LiteralMeta" property="dc:identifier">https://www.senckenberg.de/en/science/senckenberg-publications/scientific-journals/vertebrate-zoology-2/archiv/2016-vertebrate-zoology/</meta>
     <meta xsi:type="LiteralMeta" property="dc:bibliographicCitation">Henschel, E. (2016) A new catfish species of the Trichomycterus hasemani group (Siluriformes: Trichomycteridae), from the Branco river basin, northern Brazil. Vertebrate Zoology 66(2)117-123</meta>
     <meta xsi:type="LiteralMeta" property="dc:title">Henschel (2016)</meta>
   </meta>
   <meta xsi:type="LiteralMeta" property="dc:description" />
-  <otus id="td659ebbb-ada7-4033-b2cf-7c84a1d5a9f1">
+  <otus id="t27cc5d5e-239c-4b4a-aa97-cd60ba1870b1">
     <otu id="td14ecd8c-355a-436c-bc70-0a8cb2c48431" label="Trichomycterus wapixana" about="#td14ecd8c-355a-436c-bc70-0a8cb2c48431">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/http_//data.bioontology.org/provisional_classes/efff9090-0534-0139-256f-005056010074" />
     </otu>
@@ -16,14 +17,24 @@
     <otu id="tdb35b884-a6c8-4c92-8499-a9903afa7f2c" label="Trichomycterus johnsoni" about="#tdb35b884-a6c8-4c92-8499-a9903afa7f2c">
       <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_0061551" />
     </otu>
+    <otu id="t81d9836a-47a2-411e-8865-c0b3eb6071ea" label="Trichomycterus anhanga" about="#t81d9836a-47a2-411e-8865-c0b3eb6071ea">
+      <meta xsi:type="ResourceMeta" rel="dwc:taxonID" href="http://purl.obolibrary.org/obo/VTO_9046514" />
+    </otu>
   </otus>
-  <characters id="cb6cee38e7-55ff-4cfa-b7f4-d4d99820e2fd" xsi:type="StandardCells" otus="td659ebbb-ada7-4033-b2cf-7c84a1d5a9f1">
-    <format />
+  <characters id="cb6cee38e7-55ff-4cfa-b7f4-d4d99820e2fd" xsi:type="StandardCells" otus="t27cc5d5e-239c-4b4a-aa97-cd60ba1870b1">
+    <format>
+      <states id="s747f5a6b-5b92-473e-92c3-3316483f4272">
+        <state id="s0730e1a3-2e5c-4c43-8eb7-06959bdf038c" label="" symbol="0" />
+        <state id="sc07ae082-ab6b-41c5-af3a-b03097b65029" label="" symbol="1" />
+      </states>
+      <char id="c2f683f5d-cc06-4793-99b9-887de38492f2" label="" states="s747f5a6b-5b92-473e-92c3-3316483f4272" />
+    </format>
     <matrix>
-      <row id="r57ecbb15-da6b-436d-a516-1bbbfd738949" otu="td14ecd8c-355a-436c-bc70-0a8cb2c48431" />
-      <row id="rda0a69be-71f8-41e8-af30-e28cab54659a" otu="tf5d6f349-4073-44e0-83a1-4eccbbd9540f" />
-      <row id="r9162cfb5-7534-4ec6-8a52-c5655c1f318e" otu="tdb35b884-a6c8-4c92-8499-a9903afa7f2c" />
+      <row id="rc338028b-f24f-4f13-8b71-1e42a5aaa97d" otu="td14ecd8c-355a-436c-bc70-0a8cb2c48431" />
+      <row id="r70a042ca-dba9-4a40-aab1-2acb5091b43d" otu="tf5d6f349-4073-44e0-83a1-4eccbbd9540f" />
+      <row id="r3d62ed75-f853-4b1c-a7ee-bc84a3de139a" otu="tdb35b884-a6c8-4c92-8499-a9903afa7f2c" />
+      <row id="rfaf72e3e-d9f7-46b4-b4ff-98f71d5a8100" otu="t81d9836a-47a2-411e-8865-c0b3eb6071ea" />
     </matrix>
   </characters>
-  <trees id="ta967038e-535c-4753-a8a7-9053e2f2a038" otus="td659ebbb-ada7-4033-b2cf-7c84a1d5a9f1" />
+  <trees id="t31c8b341-c584-470c-9a61-0530ae57cbfe" otus="t27cc5d5e-239c-4b4a-aa97-cd60ba1870b1" />
 </nexml>
