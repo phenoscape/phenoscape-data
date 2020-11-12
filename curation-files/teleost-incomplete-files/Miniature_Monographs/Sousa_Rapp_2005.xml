@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
+<nexml xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:phen="http://www.bioontologies.org/obd/schema/pheno" xmlns:ps="http://vocab.phenoscape.org/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generator="Phenex null" version="0.9" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd">
   <meta xsi:type="LiteralMeta" property="dc:creator" />
   <meta xsi:type="ResourceMeta" rel="dc:source">
     <meta xsi:type="LiteralMeta" property="dc:identifier">https://doi.org/10.1590/S1679-62252005000400019</meta>
@@ -26,8 +26,12 @@
       <states id="s39261051-f992-48fd-a3f8-1e819a770de5">
         <state id="s2198da6b-0343-4867-bb04-33f1ebadab6f" label="strong scapular girdle with long, broad coracoid processes having distal tips enlarged and divergent" symbol="0" />
       </states>
-      <states id="s8c1460c0-fe4c-4916-ba85-e75b81f4aaee" />
-      <states id="sf94554b6-eaf8-4563-9a27-71ca23361226" />
+      <states id="s8c1460c0-fe4c-4916-ba85-e75b81f4aaee">
+        <state id="se4288284-70e0-49c2-8b83-a4d9b65c200f" label="" symbol="0" />
+      </states>
+      <states id="sf94554b6-eaf8-4563-9a27-71ca23361226">
+        <state id="s73e6b2d9-a516-4997-8bf9-de4e51dc8bea" label="" symbol="0" />
+      </states>
       <states id="s076a2dc5-fdd8-44cd-8e72-0d9fe3a3367e">
         <state id="s2ff494d8-9590-435c-ae0d-75feb165bc70" label="single fontanel oval shaped" symbol="0" />
       </states>
@@ -67,18 +71,94 @@
       <states id="sf8b46d92-fdd3-4c70-a334-b550591f8725">
         <state id="s501ea98d-8d68-4cec-88cf-8d328cc03d09" label="Ventral surface of coracoid process ornamented with well-defined longitudinal pattern of parallel grooves and ridges along its entire length. At posterior tip of coracoid, grooves and ridges curve outwards following expansion of process." symbol="0" />
       </states>
-      <states id="sf9c6fa7c-9732-4319-bd64-33afeffe4fea" />
-      <states id="s0034a511-aa76-40ad-bc4e-27c58c5266a9" />
+      <states id="sf9c6fa7c-9732-4319-bd64-33afeffe4fea">
+        <state id="sb98ade33-c13c-43ea-a278-17a46d861030" label="strongly ossified" symbol="0" />
+      </states>
+      <states id="s0034a511-aa76-40ad-bc4e-27c58c5266a9">
+        <state id="s108ba695-fb03-4b02-9744-2cadb7639fa4" label="pentagonal in cross-section with longitudinal groove along each lateral side, serrate along basal portion of anterior margin, posterior margin smooth" symbol="0" />
+      </states>
       <states id="s0dcf0e85-dd8f-4343-a4d3-ba56c608affb">
         <state id="sc0a392e5-eb8f-49eb-afa0-d1af326a4910" label="well developed, depressed and curved, its tip usually reaching anal-fin origin. Two or three grooves on both upper and lower surfaces of pectoral spine. Strong hook-like teeth present along anterior and posterior margins of pectoral spine; basal most teeth (i.e., first five) along anterior margin directed toward base of spine, more distal teeth directed toward spine tip; all teeth along posterior margin directed toward pectoral-spine base" symbol="0" />
       </states>
       <states id="sf2ab04c2-cb19-42b5-a1e4-8f620b8bb8e8">
         <state id="s30fa096c-2a88-49c1-9bb2-5574cc048252" label="vast majority of observed specimens with 26 lateral plates, each with single posteriorly directed spine." symbol="0" />
       </states>
-      <states id="sa036246b-ca3e-4a28-ba9a-680bd3b9438e" />
-      <states id="sfd52d3ae-f2be-40c1-afda-8e547433e659" />
-      <states id="s85f2d10f-86e0-4574-b72e-265e554a99fb" />
-      <states id="s73491e10-ee15-4566-b9f8-6fb3e28f36e1" />
+      <states id="sa036246b-ca3e-4a28-ba9a-680bd3b9438e">
+        <state id="sd45d1ab1-0899-43f3-9452-45dba2661ad4" label=" I,5." symbol="0" />
+      </states>
+      <states id="sfd52d3ae-f2be-40c1-afda-8e547433e659">
+        <state id="sedc89f76-c437-4330-8a56-01d443475fd9" label="I,4. " symbol="0" />
+      </states>
+      <states id="s85f2d10f-86e0-4574-b72e-265e554a99fb">
+        <state id="s90ae4504-4279-411a-9c86-b130216a76fe" label="7" symbol="0" />
+      </states>
+      <states id="s73491e10-ee15-4566-b9f8-6fb3e28f36e1">
+        <state id="sca5bf9e0-1575-4513-afd5-406fd2f5def2" label="moderately long, with 16 rays in total (branched and unbranched)" symbol="0" />
+      </states>
+      <states id="s1084d242-ea41-42e4-9813-078a0747b7d9">
+        <state id="s299d9d3e-d116-4a34-a04a-d78275a93c12" label="small, membranous." symbol="0" about="#s299d9d3e-d116-4a34-a04a-d78275a93c12">
+          <meta xsi:type="LiteralMeta" property="ps:describesPhenotype">
+            <phen:phenotype>
+              <phen:phenotype_character>
+                <phen:bearer>
+                  <phen:typeref about="UBERON:2000251" />
+                </phen:bearer>
+                <phen:quality>
+                  <phen:typeref about="PATO:0000587" />
+                </phen:quality>
+              </phen:phenotype_character>
+            </phen:phenotype>
+          </meta>
+        </state>
+      </states>
+      <states id="s026bdeed-ca2a-41d9-bca4-4975264fd726">
+        <state id="sa4234500-5e5a-4d05-951b-b1d9466267f9" label=" truncate to slightly emarginate, with 8,4 rays." symbol="0" />
+      </states>
+      <states id="sb1df6d46-1057-4d1f-abf9-66ac75bf50b0">
+        <state id="sb824af76-3291-47db-be63-49d9f59f714c" label="" symbol="0" />
+      </states>
+      <states id="s2f35ef07-f21c-42f7-ba18-6827f03b5f51">
+        <state id="s524ce0fd-0b0e-49ff-bd5c-16f648e079af" label="slender, slightly convergent and pointed coracoid processes" symbol="0" />
+        <state id="s6633cde8-d1f0-447f-acce-31566dbd00f7" label="coracoid processes more robust with knob-like divergent tips in P. lyra" symbol="1" />
+      </states>
+      <states id="s85b8d7e7-e1a9-44d6-8a61-95e91db00390">
+        <state id="s590889c4-30a3-4480-9066-8a5ebf049b8a" label="complete series of lateral line plates" symbol="0" />
+        <state id="s048c7264-4977-40d5-92b6-e5c634abe382" label="incomplete in P. cristata" symbol="1" />
+      </states>
+      <states id="sbb24e8fc-a8fc-4337-8705-0b3e1366728d" />
+      <states id="s93ac11c5-b552-4de4-b503-bb2ce41220b2">
+        <state id="sfa41ab44-bd22-41d8-ae2d-e22ee07373f6" label="anterior, orbital diameter slightly smaller than fontanel" symbol="0" />
+      </states>
+      <states id="s378882a6-c582-44e2-beb4-9c46692585a0">
+        <state id="sca1517c4-3250-4345-9d9d-e2e237324579" label="oval." symbol="0" />
+      </states>
+      <states id="s47498dd3-b4da-4663-9889-d93b9639fb90">
+        <state id="s2efb0154-3ae1-4742-9f95-9c9ccd49dca7" label="anterior nostril tubular and placed near border of snout. Posterior nostril nearer to orbit than to snout" symbol="0" />
+      </states>
+      <states id="s5e946a7a-7bc1-457d-a797-09db199b5a57">
+        <state id="s3213a184-16ad-4344-ba2f-c9cbfa30d497" label="" symbol="0" />
+      </states>
+      <states id="sa11c2b0c-5d13-4775-b33c-14dccd6db615">
+        <state id="sb86e28f2-b9e0-485c-a7e0-8f6e1ad58b2c" label="" symbol="0" />
+      </states>
+      <states id="s7f8eb5a2-9727-4b35-9ffd-64cb6b313c10">
+        <state id="s818b9811-307c-4cfb-b805-d6b8c7e221ec" label="" symbol="0" />
+      </states>
+      <states id="s26fbb92d-8a0d-41fc-b397-f8b9791bbb48">
+        <state id="sbf6e851c-4346-4e01-8e4e-c8b261b63a46" label="" symbol="0" />
+      </states>
+      <states id="sa1a47392-8ff3-43d4-bf5c-da7356e2e15d">
+        <state id="sd4909207-8bce-426c-9a21-84c180214eb9" label="" symbol="0" />
+      </states>
+      <states id="sbee500c0-bdba-462e-9aa6-e462fd5a5271">
+        <state id="s711284bf-3b51-44b0-9058-e0031e46e174" label="" symbol="0" />
+      </states>
+      <states id="saed88cb3-9d57-46a0-b3f8-f69bede702bf" />
+      <states id="s1a28fa1a-ff39-44ca-8233-eb2bff7dda4a" />
+      <states id="s64341c10-f006-4e06-84a2-585a3b86f638" />
+      <states id="s08bf6142-7f6c-4ef0-a7d1-655022acf61a" />
+      <states id="s95d16507-542d-4b9f-ac5d-0832a0701c70" />
+      <states id="s1ad6667e-87cd-42e6-bd35-0855ad1d51fd" />
       <char id="c5cd71dc3-6bc0-4ad5-8ad2-bb25f81aeb1b" label="" states="s24d99565-ca45-4367-80a8-84e3c32dab98" />
       <char id="c2b95d6e1-cc35-4217-9c41-e82d04922e37" label="" states="s39261051-f992-48fd-a3f8-1e819a770de5" />
       <char id="cf931b13a-b3be-480b-9295-bef3040be519" label="Head and scapular girdle strongly ossified, exposed." states="s8c1460c0-fe4c-4916-ba85-e75b81f4aaee" />
@@ -96,20 +176,70 @@
       <char id="cf088e7a9-7346-4055-96ac-c7477615113b" label="Postcleithral process " states="s844b2875-2ce1-415e-a32f-107d0e65d915" />
       <char id="c13968afd-3ec8-445d-b0ae-c1f27bf3a820" label="Coracoid processes " states="s3d3b7ff8-93a2-48f7-a75e-b8e4dfc54dbe" />
       <char id="cabcfa694-617d-47e9-9ec3-124f35b531ca" label="" states="sf8b46d92-fdd3-4c70-a334-b550591f8725" />
-      <char id="c8620f707-466e-4592-a6d6-0d110b5b8c88" label="Dorsal and pectoral spines strongly ossified." states="sf9c6fa7c-9732-4319-bd64-33afeffe4fea" />
-      <char id="ca07cdcd8-b497-4e8c-a164-8406040fefd8" label="Dorsal spine pentagonal in cross-section with longitudinal groove along each lateral side, serrate along basal portion of anterior margin, posterior margin smooth" states="s0034a511-aa76-40ad-bc4e-27c58c5266a9" />
+      <char id="c8620f707-466e-4592-a6d6-0d110b5b8c88" label="Dorsal and pectoral spines" states="sf9c6fa7c-9732-4319-bd64-33afeffe4fea" />
+      <char id="ca07cdcd8-b497-4e8c-a164-8406040fefd8" label="Dorsal spine" states="s0034a511-aa76-40ad-bc4e-27c58c5266a9" />
       <char id="c041f3dcc-d5f1-4d25-be7f-25e047459d69" label="Pectoral spine" states="s0dcf0e85-dd8f-4343-a4d3-ba56c608affb" />
       <char id="cfbba5dd3-813b-40c8-940d-7e8f726a5cf7" label="Lateral plates" states="sf2ab04c2-cb19-42b5-a1e4-8f620b8bb8e8" />
-      <char id="c4c6c89f5-fb9f-42c2-ab42-430770c05bcf" label="" states="sa036246b-ca3e-4a28-ba9a-680bd3b9438e" />
-      <char id="cfa1dbbe0-515f-4df2-96c2-f9020d1b23f3" label="" states="sfd52d3ae-f2be-40c1-afda-8e547433e659" />
-      <char id="c99c97ab1-b41d-437c-9c70-f3f766ffd0fb" label="" states="s85f2d10f-86e0-4574-b72e-265e554a99fb" />
-      <char id="c8f0b4e93-2360-4253-8396-1a747064ab50" label="" states="s73491e10-ee15-4566-b9f8-6fb3e28f36e1" />
+      <char id="c4c6c89f5-fb9f-42c2-ab42-430770c05bcf" label="Dorsal-fin rays" states="sa036246b-ca3e-4a28-ba9a-680bd3b9438e" />
+      <char id="cfa1dbbe0-515f-4df2-96c2-f9020d1b23f3" label="Pectoral-fin rays" states="sfd52d3ae-f2be-40c1-afda-8e547433e659" />
+      <char id="c99c97ab1-b41d-437c-9c70-f3f766ffd0fb" label="Pelvic-fin rays" states="s85f2d10f-86e0-4574-b72e-265e554a99fb" />
+      <char id="c8f0b4e93-2360-4253-8396-1a747064ab50" label="Anal fin" states="s73491e10-ee15-4566-b9f8-6fb3e28f36e1" />
+      <char id="cbb378c9b-059f-4863-a58c-944ad2f51517" label="Adipose fin" states="s1084d242-ea41-42e4-9813-078a0747b7d9" />
+      <char id="c47c5390f-644f-4578-acca-042133c90420" label="Caudal fin" states="s026bdeed-ca2a-41d9-bca4-4975264fd726" />
+      <char id="c0f901537-0151-4aa2-a2e6-c5f485127c8c" label="presence of at least one additional row of spines on dorsal wings of lateral plates, above lateral line (Fig. 9)." states="sb1df6d46-1057-4d1f-abf9-66ac75bf50b0" />
+      <char id="c98034bf0-4985-40b2-950f-b4761b7406ab" label="Coracoid processes" states="s2f35ef07-f21c-42f7-ba18-6827f03b5f51" />
+      <char id="ccf2234a8-c101-4c24-b088-1b9a2f1f581d" label="Lateral line plates" states="s85b8d7e7-e1a9-44d6-8a61-95e91db00390" />
+      <char id="cd7bb1b4f-ed65-43c0-90d3-5ede83e95e29" label="Head and nuchal plate shaped and ornamented as in P. lyra" states="sbb24e8fc-a8fc-4337-8705-0b3e1366728d" />
+      <char id="c05860d31-a6c4-4e80-967c-536c75e3ce45" label="Eye" states="s93ac11c5-b552-4de4-b503-bb2ce41220b2" />
+      <char id="c7b99e52b-1d15-49c6-8634-f44cca0eada9" label="Fontanel" states="s378882a6-c582-44e2-beb4-9c46692585a0" />
+      <char id="c26653956-fd80-4279-b153-3464352705f2" label="Nostril" states="s47498dd3-b4da-4663-9889-d93b9639fb90" />
+      <char id="c968e4ecc-dfba-4647-af67-1616dd83bf0e" label="" states="s5e946a7a-7bc1-457d-a797-09db199b5a57" />
+      <char id="ca93d459b-d629-4c60-a5cb-1d2c62f0b56a" label="" states="sa11c2b0c-5d13-4775-b33c-14dccd6db615" />
+      <char id="c91be1406-deb7-4146-8fb2-aaeee2d3fcec" label="" states="s7f8eb5a2-9727-4b35-9ffd-64cb6b313c10" />
+      <char id="c695a63a1-bc1c-4d0f-b00b-be963341d6ef" label="" states="s26fbb92d-8a0d-41fc-b397-f8b9791bbb48" />
+      <char id="c1a6ad3b0-0a79-4b84-bde8-cfea0c7b7d1b" label="" states="sa1a47392-8ff3-43d4-bf5c-da7356e2e15d" />
+      <char id="c01e6a411-45ea-460e-8a0e-21985b518828" label="" states="sbee500c0-bdba-462e-9aa6-e462fd5a5271" />
+      <char id="c81575e2e-e6c5-4f5f-9e31-8c2c248ed897" label="" states="saed88cb3-9d57-46a0-b3f8-f69bede702bf" />
+      <char id="c0f153644-310a-475c-8069-4d42ed93a1c6" label="" states="s1a28fa1a-ff39-44ca-8233-eb2bff7dda4a" />
+      <char id="c17210011-3be1-49c2-a2bb-20d7a333a650" label="" states="s64341c10-f006-4e06-84a2-585a3b86f638" />
+      <char id="cd6300796-ccd9-42ce-8776-8b5cd7414e34" label="" states="s08bf6142-7f6c-4ef0-a7d1-655022acf61a" />
+      <char id="cb1bd7bb9-0299-4844-ac6d-8c7599acb699" label="" states="s95d16507-542d-4b9f-ac5d-0832a0701c70" />
+      <char id="c017c59a1-2397-488c-9f7e-33decdc27b72" label="" states="s1ad6667e-87cd-42e6-bd35-0855ad1d51fd" />
     </format>
     <matrix>
       <row id="re2ffb058-d75d-489f-aeaa-000587ceb8e3" otu="t6e97edf6-806a-4083-94ab-abc0dce79d97" />
       <row id="ra32fdcb7-0762-43e5-b2a1-6279665532cd" otu="tea8ef069-7080-4a4a-b286-4f111f85f32d" />
-      <row id="r02d1bfd4-c881-438c-9f9f-e517c05845fd" otu="tbe18c0c6-d01e-4851-8cc2-acf46fa0683e" />
+      <row id="r02d1bfd4-c881-438c-9f9f-e517c05845fd" otu="tbe18c0c6-d01e-4851-8cc2-acf46fa0683e">
+        <cell char="c5cd71dc3-6bc0-4ad5-8ad2-bb25f81aeb1b" state="se7f25ef6-c1f8-4fdd-9aa9-bc15fc5411a4" />
+        <cell char="c2b95d6e1-cc35-4217-9c41-e82d04922e37" state="s2198da6b-0343-4867-bb04-33f1ebadab6f" />
+        <cell char="cf931b13a-b3be-480b-9295-bef3040be519" state="se4288284-70e0-49c2-8b83-a4d9b65c200f" />
+        <cell char="c39d3f8e4-738d-4f04-8a8e-6728f8706cb9" state="s73e6b2d9-a516-4997-8bf9-de4e51dc8bea" />
+        <cell char="c8b5cade8-5df5-4012-a2d7-3eff1a5cf316" state="s2ff494d8-9590-435c-ae0d-75feb165bc70" />
+        <cell char="cab1b1ceb-585e-485c-882c-4551647f3735" state="sdcf26f75-7aa9-4ff9-9eb4-46a86f01ef1c" />
+        <cell char="cc1f4b2f5-6547-470c-adde-47ce92b5f852" state="s6df3de24-5ec3-49c4-942e-665a2f4ffee8" />
+        <cell char="c4e35dbf4-e76b-40a1-8f91-037298edc4f8" state="s19abebec-af74-4e7a-af2b-17dd36a44986" />
+        <cell char="c5496126a-39d1-4d83-8e82-962dd8c2fa05" state="s8b76accf-63e9-4faf-b262-fe170dbde9ea" />
+        <cell char="ce8624bb1-3baf-4c45-9715-6fe956b168df" state="s698a7c12-4c4e-4ece-93f1-714cbeb69514" />
+        <cell char="c6dae4a56-bc1d-4135-bc82-0ba2832a54a2" state="s3acbf93b-1bfd-4d97-b5dd-8978b69a46c9" />
+        <cell char="c294a0762-95c7-432d-9f4c-de6dcaa57867" state="s91d0dd09-30d0-4fb9-8295-5981ce1c3a74" />
+        <cell char="c2b56103e-cc0d-474c-bfa6-f6c2a7971f24" state="sdf69fb41-1870-4350-b586-6871c3253672" />
+        <cell char="c8268c289-1531-474c-b6b6-e6d797fead60" state="sa02fae8e-d21a-49d8-98c7-1ce9162c7f87" />
+        <cell char="cf088e7a9-7346-4055-96ac-c7477615113b" state="sdfc5f05a-a349-490c-93b3-210af49cf30a" />
+        <cell char="c13968afd-3ec8-445d-b0ae-c1f27bf3a820" state="s8977ddab-06ac-4445-8d09-641864cef28c" />
+        <cell char="cabcfa694-617d-47e9-9ec3-124f35b531ca" state="s501ea98d-8d68-4cec-88cf-8d328cc03d09" />
+        <cell char="c8620f707-466e-4592-a6d6-0d110b5b8c88" state="sb98ade33-c13c-43ea-a278-17a46d861030" />
+        <cell char="ca07cdcd8-b497-4e8c-a164-8406040fefd8" state="s108ba695-fb03-4b02-9744-2cadb7639fa4" />
+        <cell char="c041f3dcc-d5f1-4d25-be7f-25e047459d69" state="sc0a392e5-eb8f-49eb-afa0-d1af326a4910" />
+        <cell char="cfbba5dd3-813b-40c8-940d-7e8f726a5cf7" state="s30fa096c-2a88-49c1-9bb2-5574cc048252" />
+        <cell char="c4c6c89f5-fb9f-42c2-ab42-430770c05bcf" state="sd45d1ab1-0899-43f3-9452-45dba2661ad4" />
+        <cell char="cfa1dbbe0-515f-4df2-96c2-f9020d1b23f3" state="sedc89f76-c437-4330-8a56-01d443475fd9" />
+        <cell char="c99c97ab1-b41d-437c-9c70-f3f766ffd0fb" state="s90ae4504-4279-411a-9c86-b130216a76fe" />
+        <cell char="c8f0b4e93-2360-4253-8396-1a747064ab50" state="sca5bf9e0-1575-4513-afd5-406fd2f5def2" />
+        <cell char="cbb378c9b-059f-4863-a58c-944ad2f51517" state="s299d9d3e-d116-4a34-a04a-d78275a93c12" />
+        <cell char="c47c5390f-644f-4578-acca-042133c90420" state="sa4234500-5e5a-4d05-951b-b1d9466267f9" />
+      </row>
     </matrix>
   </characters>
+  <trees id="taf897e2f-efce-464c-b086-7cde102f357a" otus="tfced8849-57c7-4d4f-89e9-94a0bc8fd8b8" />
   <trees id="t5df0464c-bb55-435f-9c5c-caa0502a4658" otus="tfced8849-57c7-4d4f-89e9-94a0bc8fd8b8" />
 </nexml>
